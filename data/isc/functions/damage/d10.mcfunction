@@ -1,0 +1,10 @@
+execute if score $damage isc.tmp matches 1 run damage @s 1 minecraft:magic by @s
+execute if score $damage isc.tmp matches 2 run damage @s 2 minecraft:magic by @s
+execute if score $damage isc.tmp matches 3 run damage @s 3 minecraft:magic by @s
+execute if score $damage isc.tmp matches 4 run damage @s 4 minecraft:magic by @s
+execute if score $damage isc.tmp matches 5 run damage @s 5 minecraft:magic by @s
+execute if score $damage isc.tmp matches 6 run damage @s 6 minecraft:magic by @s
+execute if score $damage isc.tmp matches 7 run damage @s 7 minecraft:magic by @s
+execute if score $damage isc.tmp matches 8 run damage @s 8 minecraft:magic by @s
+execute if score $damage isc.tmp matches 9 run damage @s 9 minecraft:magic by @s
+execute if score $damage isc.tmp matches 10 run damage @s 10 minecraft:magic by @s
