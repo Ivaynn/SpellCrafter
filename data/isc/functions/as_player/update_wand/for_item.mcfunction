@@ -21,6 +21,8 @@ execute if data storage isc:tmp {id:"minecraft:gold_nugget"} run function isc:sp
 execute if data storage isc:tmp {id:"minecraft:iron_ingot"} run function isc:spells/range_inc/wand
 execute if data storage isc:tmp {id:"minecraft:iron_nugget"} run function isc:spells/range_dec/wand
 execute if data storage isc:tmp {id:"minecraft:vex_spawn_egg"} run function isc:spells/summon_vex/wand
+execute if data storage isc:tmp {id:"minecraft:emerald"} run function isc:spells/multicast/wand
+
 
 # Next item
 data remove storage isc:tmp wand.items[0]

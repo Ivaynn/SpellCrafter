@@ -45,10 +45,12 @@ scoreboard players operation @s isc.age /= #100 isc.math
 
 
 # Save data for the stored spells (next projectiles)
-data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
+execute unless score $multicast isc.tmp matches 1 run data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
+execute if score $multicast isc.tmp matches 1 run function isc:spells/multicast/offset
 
 
 # Apply modifiers
+execute as @s[tag=isc.multicast] at @s run function isc:spells/multicast/cast
 execute as @s[tag=isc.random_dir] at @s run function isc:spells/random_dir/cast
 execute as @s[tag=isc.multishot] at @s run function isc:spells/multishot/cast
 execute as @s[tag=isc.duplicate] at @s run function isc:spells/duplicate/cast

@@ -18,3 +18,4 @@ give @s minecraft:gold_ingot 64
 give @s minecraft:iron_nugget 64
 give @s minecraft:iron_ingot 64
 give @s minecraft:vex_spawn_egg 64
+give @s minecraft:emerald 64
