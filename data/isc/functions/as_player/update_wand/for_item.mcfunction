@@ -22,6 +22,7 @@ execute if data storage isc:tmp {id:"minecraft:iron_ingot"} run function isc:spe
 execute if data storage isc:tmp {id:"minecraft:iron_nugget"} run function isc:spells/range_dec/wand
 execute if data storage isc:tmp {id:"minecraft:vex_spawn_egg"} run function isc:spells/summon_vex/wand
 execute if data storage isc:tmp {id:"minecraft:emerald"} run function isc:spells/multicast/wand
+execute if data storage isc:tmp {id:"minecraft:lever"} run function isc:spells/guide/wand
 
 
 # Next item

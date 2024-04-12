@@ -29,6 +29,7 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 
 # Modifiers
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"homing"}} run tag @s add isc.homing
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"guide"}} run tag @s add isc.guide
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"random_dir"}} run tag @s add isc.random_dir
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"duplicate"}} run tag @s add isc.duplicate
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"multishot"}} run tag @s add isc.multishot
