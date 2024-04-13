@@ -1,4 +1,6 @@
-#tellraw @a {"text":"> Reloaded!"}
+#> executed by #minecraft:load
+
+
 gamerule maxCommandChainLength 2147483647
 
 scoreboard objectives add isc.id dummy

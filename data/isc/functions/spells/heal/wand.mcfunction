@@ -1,3 +1,5 @@
+#> any
+# spell id / lore text / mana cost
 
 data modify storage isc:tmp wand.spells append value "heal"
 data modify storage isc:tmp lore append value '{"text":"✦ Heal","color":"green","italic":false}'

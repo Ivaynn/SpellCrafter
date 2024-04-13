@@ -1,7 +1,9 @@
-# Summons a new marker to continue the spell list
+#> as projectile, at @s
 
-data modify storage isc:tmp wand.spells set from entity @s data.isc.spells
 
+# Create a projectile with the spell data
 scoreboard players operation $id isc.tmp = @s isc.id
 data modify storage isc:tmp copy.rotation set from entity @s Rotation
+data modify storage isc:tmp wand.spells set from entity @s data.isc.spells
+
 execute summon minecraft:marker run function isc:as_projectile/summon

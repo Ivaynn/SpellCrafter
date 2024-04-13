@@ -1,4 +1,7 @@
-# Executed by any entity - damage self by the amound in $damage isc.tmp
+#> as target (any entity)
+# score "$id isc.tmp" must have the caster's id
+# score "$damage isc.tmp" must have the damage to deal (up to 50)
+# score "$blind isc.tmp" must have the blind value of the projectile
 
 
 # Check if this entity is the caster

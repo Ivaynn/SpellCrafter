@@ -1,13 +1,13 @@
-# Loops itself, gives tags for all modifiers
+#> as projectile, on summon, at @s
+#> recursive function (limited by length of storage "isc:tmp wand.spells")
+# storage "isc:tmp wand.spells" must have the spell list
 
-# tellraw @a ["",{"nbt":"wand.spells","storage":"isc:tmp"}]
 
-
-# If there are no more spells, return
+# If there are no more spells, the chain ends without a projectile --> return -1
 execute unless data storage isc:tmp wand.spells[0] run return -1
 
 
-# Initialize
+# Put the next spell of the chain in storage "isc:tmp wand.first"
 data modify storage isc:tmp wand.first set from storage isc:tmp wand.spells[0]
 data remove storage isc:tmp wand.spells[0]
 scoreboard players set $success isc.tmp 0
@@ -45,4 +45,5 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 
 
 # Next spell
+execute if score $success isc.tmp matches 0 run tellraw @a ["",{"text":"> Warning! ","color":"gold"},{"text":"Invalid spell id from caster #","color":"gray"},{"score":{"name":"$id","objective":"isc.tmp"},"color":"gray"}]
 execute if score $success isc.tmp matches 1 run return run function isc:as_projectile/cast

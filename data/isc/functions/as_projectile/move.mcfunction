@@ -1,9 +1,10 @@
-# Loops itself, number of iterations is equal to the projectile's speed
+#> [tick] as projectile, on summon, at @s
+#> recursive function (limited by score "$iter isc.tmp")
+
 
 # Block collision
 execute unless block ~ ~ ~ #isc:air run scoreboard players set @s isc.age 0
 execute if score @s isc.age matches 1.. if entity @s[tag=isc.fireball] if block ~ ~ ~ minecraft:water run scoreboard players set @s isc.age 0
-
 execute unless score @s isc.age matches 1.. run tp @s ^ ^ ^-0.25
 
 
@@ -12,12 +13,10 @@ execute if score @s isc.age matches 1.. unless score @s isc.blind matches 1.. as
 
 
 # Trail
-execute if score @s isc.age matches 1.. as @s[tag=isc.magic_missile] run function isc:spells/magic_missile/trail
-execute if score @s isc.age matches 1.. as @s[tag=isc.fireball] run function isc:spells/fireball/trail
-execute if score @s isc.age matches 1.. as @s[tag=isc.laser] run function isc:spells/laser/trail
+execute if score @s isc.age matches 1.. run function isc:as_projectile/trail
 
 
-# Move
+# Move --> 0.25 = 1/4 blocks --> 4 iterations = 1 block
 execute if score @s isc.age matches 1.. run tp @s ^ ^ ^0.25
 
 

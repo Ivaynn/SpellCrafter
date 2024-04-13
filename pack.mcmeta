@@ -1,6 +1,10 @@
 {
-  "pack": {
-    "pack_format": 26,
-    "description": "Spell Crafter by Ivaynn"
-  }
+    "pack": {
+        "pack_format": 26,
+        "supported_formats": {
+            "min_inclusive": 26,
+            "max_inclusive": 26
+        },
+        "description": "Ivaynn's SpellCrafter v1.0 - 1.20.4"
+    }
 }

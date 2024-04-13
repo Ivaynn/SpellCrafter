@@ -1,3 +1,5 @@
+#> any
+# spell id / lore text / mana cost
 
 data modify storage isc:tmp wand.spells append value "teleport"
 data modify storage isc:tmp lore append value '{"text":"✦ Teleport","color":"light_purple","italic":false}'

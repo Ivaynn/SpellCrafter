@@ -1,5 +1,15 @@
+#> as projectile, at @s
+# projectile hit
 
-particle minecraft:explosion ^ ^ ^ 0 0 0 0 0 force @a
-playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 2
+
+# Damage target
+scoreboard players operation $id isc.tmp = @s isc.id
+scoreboard players operation $damage isc.tmp = @s isc.damage
+scoreboard players operation $blind isc.tmp = @s isc.blind
 
 execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=..3,type=!#isc:untargetable] run function isc:damage/init
+
+
+# Effects
+particle minecraft:explosion ^ ^ ^ 0 0 0 0 0 force @a
+playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 2

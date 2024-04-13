@@ -1,5 +1,11 @@
+#> as projectile, on summon, at @s
+
+
+# Remove tag
 tag @s remove isc.multishot
 
+
+# Get relevant data to create a copy
 data modify storage isc:tmp copy.tags set from entity @s Tags
 data modify storage isc:tmp copy.rotation set from entity @s Rotation
 
@@ -9,5 +15,7 @@ scoreboard players operation $speed isc.tmp = @s isc.speed
 scoreboard players operation $range isc.tmp = @s isc.range
 scoreboard players operation $blind isc.tmp = @s isc.blind
 
+
+# Summon copies
 execute summon minecraft:marker run function isc:spells/multishot/summon_left
 execute summon minecraft:marker run function isc:spells/multishot/summon_right
