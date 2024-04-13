@@ -18,4 +18,4 @@ execute at @s run tp @s ~ ~ ~ ~-10 ~
 
 
 # If the projectile has random direction, apply it again
-execute if entity @s[tag=isc.random_dir] run function isc:spells/random_dir/cast
+execute if entity @s[tag=isc.spell.random_dir] run function isc:spells/random_dir/cast

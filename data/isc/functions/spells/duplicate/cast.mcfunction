@@ -2,7 +2,7 @@
 
 
 # Remove tag
-tag @s remove isc.duplicate
+tag @s remove isc.spell.duplicate
 
 
 # Get relevant data to create a copy

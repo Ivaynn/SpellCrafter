@@ -3,8 +3,8 @@
 
 
 # Hit targets
-execute as @s[tag=isc.magic_missile] run function isc:spells/magic_missile/hit
-execute as @s[tag=isc.fireball] run function isc:spells/fireball/hit
+execute as @s[tag=isc.spell.magic_missile] run function isc:spells/magic_missile/hit
+execute as @s[tag=isc.spell.fireball] run function isc:spells/fireball/hit
 
 
 # Next spell...

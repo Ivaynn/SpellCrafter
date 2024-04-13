@@ -1,7 +1,7 @@
 #> as projectile, on summon, at @s
 # projectile stats
 
-tag @s add isc.laser
+tag @s add isc.spell.laser
 
 
 # Base stats

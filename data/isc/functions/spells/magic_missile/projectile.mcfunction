@@ -1,7 +1,7 @@
 #> as projectile, on summon, at @s
 # projectile stats
 
-tag @s add isc.magic_missile
+tag @s add isc.spell.magic_missile
 
 
 # Base stats

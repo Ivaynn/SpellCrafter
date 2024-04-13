@@ -3,7 +3,7 @@
 
 
 # Remove tag
-tag @s remove isc.multicast
+tag @s remove isc.spell.multicast
 
 
 # Create a projectile with the spell data

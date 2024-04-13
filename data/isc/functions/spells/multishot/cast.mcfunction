@@ -2,7 +2,7 @@
 
 
 # Remove tag
-tag @s remove isc.multishot
+tag @s remove isc.spell.multishot
 
 
 # Get relevant data to create a copy

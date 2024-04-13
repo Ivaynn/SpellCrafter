@@ -4,7 +4,7 @@
 
 # Block collision
 execute unless block ~ ~ ~ #isc:air run scoreboard players set @s isc.age 0
-execute if score @s isc.age matches 1.. if entity @s[tag=isc.fireball] if block ~ ~ ~ minecraft:water run scoreboard players set @s isc.age 0
+execute if score @s isc.age matches 1.. if entity @s[tag=isc.spell.fireball] if block ~ ~ ~ minecraft:water run scoreboard players set @s isc.age 0
 execute unless score @s isc.age matches 1.. run tp @s ^ ^ ^-0.25
 
 

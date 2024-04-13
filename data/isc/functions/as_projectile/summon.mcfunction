@@ -55,15 +55,15 @@ execute unless score $multicast isc.tmp matches 1 run data modify entity @s data
 
 
 # If this is executed by multicast, prevent stacking & apply a random rotation offset
-execute if score $multicast isc.tmp matches 1 run tag @s remove isc.multicast
+execute if score $multicast isc.tmp matches 1 run tag @s remove isc.spell.multicast
 execute if score $multicast isc.tmp matches 1 run function isc:spells/multicast/offset
 
 
 # Apply tagged modifiers that create new projectiles - THEIR ORDER IS IMPORTANT!
-execute as @s[tag=isc.multicast] at @s run function isc:spells/multicast/cast
-execute as @s[tag=isc.multishot] at @s run function isc:spells/multishot/cast
-execute as @s[tag=isc.duplicate] at @s run function isc:spells/duplicate/cast
+execute as @s[tag=isc.spell.multicast] at @s run function isc:spells/multicast/cast
+execute as @s[tag=isc.spell.multishot] at @s run function isc:spells/multishot/cast
+execute as @s[tag=isc.spell.duplicate] at @s run function isc:spells/duplicate/cast
 
 
 # Apply other tagged modifiers
-execute as @s[tag=isc.random_dir] at @s run function isc:spells/random_dir/cast
+execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
