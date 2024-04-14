@@ -3,7 +3,7 @@
 
 
 # Damage nearby entities
-scoreboard players set $damage isc.tmp 15
+scoreboard players set $damage isc.tmp 12
 scoreboard players operation $id isc.tmp = @s isc.id
 scoreboard players operation $blind isc.tmp = @s isc.blind
 

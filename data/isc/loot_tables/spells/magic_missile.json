@@ -1,0 +1,99 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_nbt",
+            "tag": "{isc:{spell:{id:\"magic_missile\", mana:20, lore:'{\"text\":\"→ Magic Missile\",\"color\":\"gold\",\"italic\":false}'}}, RepairCost:2147483647}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "name": {
+                "text": "Magic Missile",
+                "color": "light_purple",
+                "italic": false
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                {
+                    "text": "❖ 20",
+                    "color": "aqua",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Shoots a magic missile",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Damage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "2 ❤",
+                            "color": "red"
+                        }
+                    ]
+                },
+                {
+                    "text": "Range: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "40",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": "Speed: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "40",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks/sec",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "→ Projectile",
+                    "color": "gold",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

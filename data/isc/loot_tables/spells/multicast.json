@@ -1,0 +1,55 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_nbt",
+            "tag": "{isc:{spell:{id:\"multicast\", mana:100, lore:'{\"text\":\"⛶ Multicast\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "name": {
+                "text": "Multicast",
+                "color": "light_purple",
+                "italic": false
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                {
+                    "text": "❖ 100",
+                    "color": "aqua",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Casts all the remaining spells simultaneously with reduced accuracy",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "⛶ Modifier",
+                    "color": "blue",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

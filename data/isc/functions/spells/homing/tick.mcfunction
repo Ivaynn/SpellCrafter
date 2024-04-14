@@ -1,14 +1,9 @@
 #> [tick] as projectile, at @s
 
 
-# Tag the caster
-scoreboard players operation $id isc.tmp = @s isc.id
-execute as @e[distance=0.1..30,type=#isc:caster,tag=!isc.spectator] if score @s isc.id = $id isc.tmp run tag @s add isc.tmp
-
-
 # Get rotation while facing the nearest target (excluding the caster)
-execute store result score $homing isc.tmp run tp @s ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=!#isc:untargetable,tag=!isc.tmp,tag=!isc.spectator] feet
-tag @e[distance=0.1..30,type=#isc:caster,tag=!isc.spectator] remove isc.tmp
+scoreboard players operation $id isc.tmp = @s isc.id
+execute store result score $homing isc.tmp run tp @s ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=!#isc:untargetable,tag=!isc.spectator,predicate=!isc:match_id] feet
 
 
 # If no target was found, stop here

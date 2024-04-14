@@ -1,0 +1,99 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_nbt",
+            "tag": "{isc:{spell:{id:\"fireball\", mana:25, lore:'{\"text\":\"→ Fireball\",\"color\":\"gold\",\"italic\":false}'}}, RepairCost:2147483647}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "name": {
+                "text": "Fireball",
+                "color": "light_purple",
+                "italic": false
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                {
+                    "text": "❖ 25",
+                    "color": "aqua",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Shoots a slow fireball",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Damage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "3 ❤",
+                            "color": "red"
+                        }
+                    ]
+                },
+                {
+                    "text": "Range: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "15",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": "Speed: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "15",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks/sec",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "→ Projectile",
+                    "color": "gold",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

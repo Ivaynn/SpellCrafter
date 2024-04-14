@@ -1,6 +1,10 @@
 #> [tick] as player, at @s
 
 
+# All players must have a caster id
+execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
+
+
 # Use wand
 execute if score @s isc.right_click matches 1.. run function isc:as_caster/use_wand
 scoreboard players set @s isc.right_click 0

@@ -1,0 +1,26 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "❖ 0",
+                "color": "aqua",
+                "italic": false
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": " empty",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "replace": true
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{isc:{wand:{valid:1b,mana:0,spells:[]}}}"
+    }
+]

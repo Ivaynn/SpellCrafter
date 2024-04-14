@@ -4,7 +4,7 @@
 
 # Teleport caster to this position
 scoreboard players operation $id isc.tmp = @s isc.id
-execute as @e[type=#isc:caster] if score @s isc.id = $id isc.tmp positioned ^ ^ ^-1 align xyz run tp @s ~.5 ~ ~.5
+execute as @e[limit=1,type=#isc:caster,predicate=isc:match_id] positioned ^ ^ ^-0.5 align xyz run tp @s ~.5 ~ ~.5
 
 
 # Effects

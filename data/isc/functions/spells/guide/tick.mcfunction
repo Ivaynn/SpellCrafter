@@ -3,7 +3,7 @@
 
 # Get caster's rotation
 scoreboard players operation $id isc.tmp = @s isc.id
-execute as @e[type=#isc:caster,tag=!isc.spectator] if score @s isc.id = $id isc.tmp run data modify storage isc:tmp copy.rotation set from entity @s Rotation
+execute as @e[limit=1,type=#isc:caster,tag=!isc.spectator,predicate=isc:match_id] run data modify storage isc:tmp copy.rotation set from entity @s Rotation
 
 execute store result score $target_r0 isc.tmp run data get storage isc:tmp copy.rotation[0] 1
 execute store result score $target_r1 isc.tmp run data get storage isc:tmp copy.rotation[1] 1

@@ -1,22 +1,22 @@
 
-give @s minecraft:carrot_on_a_stick
+loot give @s loot isc:wands/basic
 
-give @s minecraft:ghast_tear 64
-give @s minecraft:fire_charge 64
-give @s minecraft:tnt 64
-give @s minecraft:diamond 64
-give @s minecraft:target 64
-give @s minecraft:golden_apple 64
-give @s minecraft:lightning_rod 64
-give @s minecraft:ender_pearl 16
-give @s minecraft:blaze_powder 64
-give @s minecraft:chorus_fruit 64
-give @s minecraft:amethyst_shard 64
-give @s minecraft:arrow 64
-give @s minecraft:gold_nugget 64
-give @s minecraft:gold_ingot 64
-give @s minecraft:iron_nugget 64
-give @s minecraft:iron_ingot 64
-give @s minecraft:vex_spawn_egg 64
-give @s minecraft:emerald 64
-give @s minecraft:lever 64
+loot give @s loot isc:spells/duplicate
+loot give @s loot isc:spells/empower
+loot give @s loot isc:spells/explosion
+loot give @s loot isc:spells/fireball
+loot give @s loot isc:spells/guide
+loot give @s loot isc:spells/heal
+loot give @s loot isc:spells/homing
+loot give @s loot isc:spells/laser
+loot give @s loot isc:spells/magic_missile
+loot give @s loot isc:spells/multicast
+loot give @s loot isc:spells/multishot
+loot give @s loot isc:spells/random_dir
+loot give @s loot isc:spells/range_dec
+loot give @s loot isc:spells/range_inc
+loot give @s loot isc:spells/speed_dec
+loot give @s loot isc:spells/speed_inc
+loot give @s loot isc:spells/summon_lightning
+loot give @s loot isc:spells/summon_vex
+loot give @s loot isc:spells/teleport
