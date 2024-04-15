@@ -6,7 +6,7 @@ tag @s add isc.spell.fireball
 
 # Base stats
 scoreboard players add @s isc.speed 3
-scoreboard players add @s isc.range 15
+scoreboard players add @s isc.range 10
 scoreboard players add @s isc.damage 6
 
 

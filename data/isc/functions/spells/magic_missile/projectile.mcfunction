@@ -6,7 +6,7 @@ tag @s add isc.spell.magic_missile
 
 # Base stats
 scoreboard players add @s isc.speed 8
-scoreboard players add @s isc.range 40
+scoreboard players add @s isc.range 25
 scoreboard players add @s isc.damage 4
 
 

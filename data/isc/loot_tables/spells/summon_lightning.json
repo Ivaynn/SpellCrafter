@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"summon_lightning\", mana:250, lore:'{\"text\":\"✦ Summon Lightning\",\"color\":\"light_purple\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"summon_lightning\", mana:250, lore:'{\"text\":\"✦ Summon Lightning\",\"color\":\"red\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
@@ -46,7 +46,7 @@
                 },
                 {
                     "text": "✦ Instant",
-                    "color": "light_purple",
+                    "color": "red",
                     "italic": false
                 }
             ]

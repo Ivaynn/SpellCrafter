@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"explosion\", mana:50, lore:'{\"text\":\"✦ Explosion\",\"color\":\"red\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"explosion\", mana:75, lore:'{\"text\":\"✦ Explosion\",\"color\":\"red\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
@@ -29,7 +29,7 @@
             "entity": "this",
             "lore": [
                 {
-                    "text": "❖ 50",
+                    "text": "❖ 75",
                     "color": "aqua",
                     "italic": false
                 },
@@ -50,7 +50,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "6 ❤",
+                            "text": "8 ❤",
                             "color": "red"
                         }
                     ]

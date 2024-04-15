@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"range_dec\", mana:10, lore:'{\"text\":\"⛶ Range -\",\"color\":\"gray\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"range_dec\", mana:10, lore:'{\"text\":\"⛶ Range ↓\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "Range -",
+                "text": "Range ↓",
                 "color": "light_purple",
                 "italic": false
             }
@@ -50,7 +50,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "-10",
+                            "text": "-5",
                             "color": "red"
                         },
                         {

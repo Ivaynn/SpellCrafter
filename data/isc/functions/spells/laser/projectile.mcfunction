@@ -5,7 +5,7 @@ tag @s add isc.spell.laser
 
 
 # Base stats
-scoreboard players add @s isc.speed 999
+scoreboard players add @s isc.speed 9999
 scoreboard players add @s isc.range 5
 scoreboard players add @s isc.damage 8
 

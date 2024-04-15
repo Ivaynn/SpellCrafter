@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"speed_inc\", mana:20, lore:'{\"text\":\"⛶ Speed ↑\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"summon_bat\", mana:75, lore:'{\"text\":\"✦ Summon Bat\",\"color\":\"light_purple\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "Speed ↑",
+                "text": "Summon Bat",
                 "color": "light_purple",
                 "italic": false
             }
@@ -29,7 +29,7 @@
             "entity": "this",
             "lore": [
                 {
-                    "text": "❖ 20",
+                    "text": "❖ 75",
                     "color": "aqua",
                     "italic": false
                 },
@@ -37,12 +37,7 @@
                     "text": ""
                 },
                 {
-                    "text": "Increases the travel speed",
-                    "color": "gray",
-                    "italic": false
-                },
-                {
-                    "text": "of the next projectile",
+                    "text": "Summons a bat",
                     "color": "gray",
                     "italic": false
                 },
@@ -50,26 +45,8 @@
                     "text": ""
                 },
                 {
-                    "text": "Speed: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "+10",
-                            "color": "red"
-                        },
-                        {
-                            "text": " blocks/sec",
-                            "color": "dark_gray"
-                        }
-                    ]
-                },
-                {
-                    "text": ""
-                },
-                {
-                    "text": "⛶ Modifier",
-                    "color": "blue",
+                    "text": "✦ Instant",
+                    "color": "light_purple",
                     "italic": false
                 }
             ]

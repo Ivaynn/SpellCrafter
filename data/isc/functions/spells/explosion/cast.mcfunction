@@ -3,11 +3,7 @@
 
 
 # Damage nearby entities
-scoreboard players set $damage isc.tmp 12
-scoreboard players operation $id isc.tmp = @s isc.id
-scoreboard players operation $blind isc.tmp = @s isc.blind
-
-execute positioned ~ ~-1 ~ as @e[distance=..5,type=!#isc:untargetable] run function isc:damage/init
+execute positioned ~ ~-1 ~ as @e[distance=..5,type=!#isc:untargetable] run damage @s 16 minecraft:explosion by @s
 
 
 # Effects

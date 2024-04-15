@@ -20,3 +20,5 @@ loot give @s loot isc:spells/speed_inc
 loot give @s loot isc:spells/summon_lightning
 loot give @s loot isc:spells/summon_vex
 loot give @s loot isc:spells/teleport
+loot give @s loot isc:spells/summon_bat
+loot give @s loot isc:spells/summon_tnt

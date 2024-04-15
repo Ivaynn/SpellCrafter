@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"----------\", mana:999999999},lore:'{\"text\":\"? ----------\",\"color\":\"gray\",\"italic\":false}'}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"summon_tnt\", mana:200, lore:'{\"text\":\"✦ Summon TNT\",\"color\":\"red\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "----------",
+                "text": "Summon TNT",
                 "color": "light_purple",
                 "italic": false
             }
@@ -29,7 +29,7 @@
             "entity": "this",
             "lore": [
                 {
-                    "text": "❖ 999999999",
+                    "text": "❖ 200",
                     "color": "aqua",
                     "italic": false
                 },
@@ -37,7 +37,7 @@
                     "text": ""
                 },
                 {
-                    "text": "----------",
+                    "text": "Summons a TNT",
                     "color": "gray",
                     "italic": false
                 },
@@ -45,8 +45,8 @@
                     "text": ""
                 },
                 {
-                    "text": "? Type",
-                    "color": "gray",
+                    "text": "✦ Instant",
+                    "color": "red",
                     "italic": false
                 }
             ]

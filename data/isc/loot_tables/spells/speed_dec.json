@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"speed_dec\", mana:10, lore:'{\"text\":\"⛶ Speed -\",\"color\":\"gray\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"speed_dec\", mana:10, lore:'{\"text\":\"⛶ Speed ↓\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "Speed -",
+                "text": "Speed ↓",
                 "color": "light_purple",
                 "italic": false
             }
@@ -37,7 +37,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Decreases the travel speed of the next projectile",
+                    "text": "Decreases the travel speed",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "of the next projectile",
                     "color": "gray",
                     "italic": false
                 },
