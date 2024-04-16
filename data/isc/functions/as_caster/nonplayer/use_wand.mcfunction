@@ -10,7 +10,7 @@ scoreboard players set @s isc.cooldown 60
 
 
 # Cancel if the selected item isn't a usable wand
-execute unless data entity @s HandItems[0].tag.isc.wand.spells[0] run return 0
+execute unless data entity @s HandItems[0].tag.isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.5 2
 
 
 # Get spell data from selected item
@@ -19,7 +19,7 @@ execute store result score $mana isc.tmp run data get storage isc:tmp wand.mana
 
 
 # Spend mana | cancel if player doesn't have enough mana
-execute if score @s isc.mana < $mana isc.tmp run return 0
+execute if score @s isc.mana < $mana isc.tmp run return run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.5 2
 scoreboard players operation @s isc.mana -= $mana isc.tmp
 
 

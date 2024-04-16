@@ -30,7 +30,8 @@ execute if score $success isc.tmp matches 0 if data storage isc:tmp items[0] run
 
 
 # Custom sounds
-execute if score $success isc.tmp matches 1 run playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 1 1.2
+execute if score $success isc.tmp matches 1 run playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 1 1.2
+execute if score $success isc.tmp matches 0 run playsound minecraft:item.book.page_turn block @a ~ ~ ~ 0.5 1.8
 
 
 # Replace barrel

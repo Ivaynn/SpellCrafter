@@ -21,12 +21,13 @@ scoreboard players set $success isc.tmp 0
 execute as @a[limit=1,distance=..10,predicate=isc:match_id] store result score $success isc.tmp run function isc:as_table/open/as_player
 
 
+# Custom sounds
+execute if score $success isc.tmp matches 1 run playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 1 1.6
+execute if score $success isc.tmp matches 0 run playsound minecraft:item.book.page_turn block @a ~ ~ ~ 0.5 1.9
+
+
 # If wand information was not found, stop here
 execute if score $success isc.tmp matches 0 run return 0
-
-
-# Custom sounds
-playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 1 1.6
 
 
 # Convert spell data into items
