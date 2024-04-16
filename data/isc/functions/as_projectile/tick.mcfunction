@@ -1,6 +1,11 @@
 #> [tick] as projectile, at @s
 
 
+# Check projectile cap
+scoreboard players add $projectile_count isc.tmp 1
+execute if score $projectile_count isc.tmp > projectile_cap isc.options run return run kill @e[type=minecraft:marker,tag=isc.projectile]
+
+
 # Apply projectile direction modifiers --> they can't be active at the same time
 scoreboard players set $homing isc.tmp 0
 execute as @s[tag=isc.spell.homing,tag=!isc.laser] at @s run function isc:spells/homing/tick

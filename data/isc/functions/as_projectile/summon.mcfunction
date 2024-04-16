@@ -17,6 +17,11 @@ scoreboard players set @s isc.range 0
 scoreboard players set @s isc.damage 0
 
 
+# Reset modifier counters
+scoreboard players set $spell.clone isc.tmp 0
+scoreboard players set $spell.multishot isc.tmp 0
+
+
 # Blind: don't hit the caster for the first X ticks - $new_cast is 1 when this is the first projectile of a cast
 execute if score $new_cast isc.tmp matches 1 run scoreboard players set @s isc.blind 15
 execute unless score $new_cast isc.tmp matches 1 run scoreboard players set @s isc.blind 5
@@ -51,18 +56,18 @@ scoreboard players operation @s isc.age /= #100 isc.math
 
 
 # Save stored spells - if this is executed by multicast, don't save
-execute unless score $multicast isc.tmp matches 1 run data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
+execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
 
 
 # If this is executed by multicast, prevent stacking & apply a random rotation offset
-execute if score $multicast isc.tmp matches 1 run tag @s remove isc.spell.multicast
-execute if score $multicast isc.tmp matches 1 run function isc:spells/multicast/offset
+execute if score $spell.multicast isc.tmp matches 1 run tag @s remove isc.spell.multicast
+execute if score $spell.multicast isc.tmp matches 1 run function isc:spells/multicast/offset
 
 
-# Apply tagged modifiers that create new projectiles - THEIR ORDER IS IMPORTANT!
+# Apply modifiers that create new projectiles - THEIR ORDER IS IMPORTANT!
 execute as @s[tag=isc.spell.multicast] at @s run function isc:spells/multicast/cast
-execute as @s[tag=isc.spell.multishot] at @s run function isc:spells/multishot/cast
-execute as @s[tag=isc.spell.duplicate] at @s run function isc:spells/duplicate/cast
+execute if score $spell.multishot isc.tmp matches 1.. at @s run function isc:spells/multishot/cast
+execute if score $spell.clone isc.tmp matches 1.. at @s run function isc:spells/clone/cast
 
 
 # Apply other tagged modifiers

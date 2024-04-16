@@ -9,7 +9,7 @@ execute if data storage isc:tmp {iter:"heal"             } run return run loot i
 execute if data storage isc:tmp {iter:"teleport"         } run return run loot insert ~ ~ ~ loot isc:spells/teleport
 execute if data storage isc:tmp {iter:"summon_vex"       } run return run loot insert ~ ~ ~ loot isc:spells/summon_vex
 execute if data storage isc:tmp {iter:"summon_lightning" } run return run loot insert ~ ~ ~ loot isc:spells/summon_lightning
-execute if data storage isc:tmp {iter:"duplicate"        } run return run loot insert ~ ~ ~ loot isc:spells/duplicate
+execute if data storage isc:tmp {iter:"clone"            } run return run loot insert ~ ~ ~ loot isc:spells/clone
 execute if data storage isc:tmp {iter:"multishot"        } run return run loot insert ~ ~ ~ loot isc:spells/multishot
 execute if data storage isc:tmp {iter:"speed_inc"        } run return run loot insert ~ ~ ~ loot isc:spells/speed_inc
 execute if data storage isc:tmp {iter:"speed_dec"        } run return run loot insert ~ ~ ~ loot isc:spells/speed_dec

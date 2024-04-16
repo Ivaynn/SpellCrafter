@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"duplicate\", mana:200, lore:'{\"text\":\"⛶ Duplicate\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"clone\", mana:200, lore:'{\"text\":\"⛶ Clone\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "Duplicate",
+                "text": "Clone",
                 "color": "light_purple",
                 "italic": false
             }
@@ -37,12 +37,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Duplicates the next projectile, including",
+                    "text": "Clones the next projectile and all",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "all the remaining spells",
+                    "text": "the other remaining spells",
                     "color": "gray",
                     "italic": false
                 },

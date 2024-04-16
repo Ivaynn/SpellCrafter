@@ -29,16 +29,16 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_tnt"}} run function isc:spells/summon_tnt/cast 
 
 
-# Modifiers
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"homing"}} run tag @s add isc.spell.homing
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"guide"}} run tag @s add isc.spell.guide
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"random_dir"}} run tag @s add isc.spell.random_dir
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"duplicate"}} run tag @s add isc.spell.duplicate
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"multishot"}} run tag @s add isc.spell.multishot
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"multicast"}} run tag @s add isc.spell.multicast
+# Unstackable modifiers
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"homing"}} run function isc:spells/homing/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"guide"}} run function isc:spells/guide/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"random_dir"}} run function isc:spells/random_dir/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"multicast"}} run function isc:spells/multicast/add
 
 
-# Projectile stat modifiers
+# Stackable modifiers
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"clone"}} run function isc:spells/clone/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"multishot"}} run function isc:spells/multishot/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"speed_inc"}} run function isc:spells/speed_inc/cast 
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"speed_dec"}} run function isc:spells/speed_dec/cast 
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"range_inc"}} run function isc:spells/range_inc/cast 
@@ -47,5 +47,5 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 
 
 # Next spell
-execute if score $success isc.tmp matches 0 run tellraw @a ["",{"text":"> Warning! ","color":"gold"},{"text":"Invalid spell id from caster #","color":"gray"},{"score":{"name":"$id","objective":"isc.tmp"},"color":"gray"}]
+execute if score $success isc.tmp matches 0 if score warnings isc.options matches 1 run tellraw @a ["",{"text":"> Warning! ","color":"gold"},{"text":"Invalid spell id from caster #","color":"gray"},{"score":{"name":"$id","objective":"isc.tmp"},"color":"gray"}]
 execute if score $success isc.tmp matches 1 run return run function isc:as_projectile/cast

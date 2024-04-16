@@ -1,7 +1,7 @@
 
 loot give @s loot isc:wands/basic
 
-loot give @s loot isc:spells/duplicate
+loot give @s loot isc:spells/clone
 loot give @s loot isc:spells/empower
 loot give @s loot isc:spells/explosion
 loot give @s loot isc:spells/fireball
