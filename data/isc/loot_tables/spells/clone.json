@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"clone\", mana:200, lore:'{\"text\":\"⛶ Clone\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"clone\", mana:100, lore:'{\"text\":\"⛶ Clone\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
@@ -29,7 +29,7 @@
             "entity": "this",
             "lore": [
                 {
-                    "text": "❖ 200",
+                    "text": "❖ 100",
                     "color": "aqua",
                     "italic": false
                 },
@@ -37,12 +37,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Clones the next projectile and all",
+                    "text": "Clones the next projectile. Duplicates",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "the other remaining spells",
+                    "text": "the mana cost of all spells after this",
                     "color": "gray",
                     "italic": false
                 },

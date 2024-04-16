@@ -3,6 +3,7 @@
 #> execute summon (marker) at the previous projectile in the chain when it hits something (next_spell)
 #> execute summon (marker) at the position of the projectile with multicast
 # score "$id isc.tmp" must have the caster's id
+# score "$clone_count isc.tmp" must have the caster's clone counter
 # storage "isc:tmp copy.rotation" must have the projectile rotation
 # storage "isc:tmp wand.spells" must have the spell list
 
@@ -29,6 +30,7 @@ execute unless score $new_cast isc.tmp matches 1 run scoreboard players set @s i
 
 # Get stored rotation and id, defined before executing this
 scoreboard players operation @s isc.id = $id isc.tmp
+scoreboard players operation @s isc.clone = $clone_count isc.tmp
 data modify entity @s Rotation set from storage isc:tmp copy.rotation
 
 

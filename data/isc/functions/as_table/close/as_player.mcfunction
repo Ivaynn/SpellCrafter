@@ -19,7 +19,16 @@ data modify storage isc:tmp drop set value []
 
 # Iterate through all the items & save spell data to storages "isc:tmp wand" and "isc:tmp lore"
 execute store result score $iter isc.tmp run data get storage isc:tmp items
+scoreboard players set $clone_multiplier isc.tmp 1
 function isc:as_table/close/for_item
+
+
+# Drop non-spell items
+execute if data storage isc:tmp drop[0] run function isc:as_table/close/drop_extra
+
+
+# If no spells, clear wand
+execute unless data storage isc:tmp wand.spells[0] run return run item modify entity @s weapon isc:clear_wand
 
 
 # Save mana cost as json component - can't use "execute summon" because that shows an error in the console
@@ -30,10 +39,6 @@ execute as @e[distance=..0.01,type=minecraft:text_display,tag=isc.tmp] run funct
 
 # Update wand with data from storage
 item modify entity @s weapon isc:update_wand
-
-
-# Drop non-spell items
-execute if data storage isc:tmp drop[0] run function isc:as_table/close/drop_extra
 
 
 # Success

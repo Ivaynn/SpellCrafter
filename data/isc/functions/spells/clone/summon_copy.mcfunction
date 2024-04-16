@@ -10,6 +10,7 @@ scoreboard players operation @s isc.age = $age isc.tmp
 scoreboard players operation @s isc.speed = $speed isc.tmp
 scoreboard players operation @s isc.range = $range isc.tmp
 scoreboard players operation @s isc.blind = $blind isc.tmp
+scoreboard players operation @s isc.clone = $clone_count isc.tmp
 
 
 # If the projectile has random direction, apply it again

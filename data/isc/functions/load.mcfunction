@@ -14,6 +14,7 @@ scoreboard objectives add isc.range dummy
 scoreboard objectives add isc.damage dummy
 scoreboard objectives add isc.blind dummy
 scoreboard objectives add isc.cooldown dummy
+scoreboard objectives add isc.clone dummy
 
 scoreboard objectives add isc.math dummy
 scoreboard players set #2 isc.math 2
@@ -25,3 +26,4 @@ execute unless score range_mod isc.options matches 0..1000 run scoreboard player
 execute unless score damage_caster isc.options matches 0..1 run scoreboard players set damage_caster isc.options 0
 execute unless score projectile_cap isc.options matches 0.. run scoreboard players set projectile_cap isc.options 500
 execute unless score warnings isc.options matches 0..1 run scoreboard players set warnings isc.options 1
+execute unless score clone_limit isc.options matches 0.. run scoreboard players set clone_limit isc.options 10
