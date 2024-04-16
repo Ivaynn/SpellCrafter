@@ -12,7 +12,7 @@ data modify block ~ ~ ~ Lock set value "75NoYb40vYJvWC7cxWBKNsKqWUfdS1mCjRidmlhH
 # Empty barrel
 data remove storage isc:tmp items
 data modify storage isc:tmp items set from block ~ ~ ~ Items
-execute if data block ~ ~ ~ Items[0] run function isc:as_table/close/drop_items
+execute if data storage isc:tmp items[0] run function isc:as_table/close/drop_items
 
 
 # As player...
@@ -32,5 +32,6 @@ playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 1 1.6
 # Convert spell data into items
 scoreboard players set $iter isc.tmp 0
 data modify storage isc:tmp items set value []
+execute store success score $has_slots isc.tmp run data get storage isc:tmp wand.slots[0]
 function isc:as_table/open/for_spell
 data remove block ~ ~ ~ Items[{tag:{isc:{invalid:1b}}}]

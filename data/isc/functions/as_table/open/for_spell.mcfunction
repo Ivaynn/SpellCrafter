@@ -4,7 +4,8 @@
 
 
 # Insert item into barrel
-function isc:as_table/open/insert
+execute if score $has_slots isc.tmp matches 1 run function isc:as_table/open/insert
+execute if score $has_slots isc.tmp matches 0 run function isc:as_table/open/insert_fast
 
 
 # Next iteration...
