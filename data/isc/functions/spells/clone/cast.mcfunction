@@ -12,7 +12,12 @@ execute if score @s isc.clone > clone_limit isc.options if score warnings isc.op
 execute if score @s isc.clone > clone_limit isc.options run return 0
 
 
+# Multicast
+execute as @s[tag=isc.spell.multicast] run data remove entity @s data.isc
+
+
 # Get relevant data to create a copy
+data remove storage isc:tmp copy
 data modify storage isc:tmp copy.isc set from entity @s data.isc
 data modify storage isc:tmp copy.tags set from entity @s Tags
 data modify storage isc:tmp copy.rotation set from entity @s Rotation

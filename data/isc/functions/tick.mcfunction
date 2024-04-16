@@ -17,5 +17,5 @@ execute as @e[type=#isc:summon,tag=isc.summon] at @s run function isc:as_summon/
 execute as @e[type=minecraft:block_display,tag=isc.table] at @s run function isc:as_table/tick
 
 
-execute if score warnings isc.options matches 1 if score $projectile_count isc.tmp >= projectile_cap isc.options run tellraw @a ["",{"text":"> Warning! ","color":"gold"},{"text":"Projectile cap reached! ","color":"gray"},{"score":{"name":"$projectile_count","objective":"isc.tmp"},"color":"gray"}]
-# tellraw @a ["",{"score":{"name":"$projectile_count","objective":"isc.tmp"}}]
+# Projectile cap
+execute if score $projectile_count isc.tmp >= projectile_cap isc.options run function isc:clear_projectiles

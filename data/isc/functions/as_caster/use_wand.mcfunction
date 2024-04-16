@@ -23,7 +23,7 @@ scoreboard players operation @s isc.mana -= $mana isc.tmp
 scoreboard players set $new_cast isc.tmp 1
 scoreboard players operation $id isc.tmp = @s isc.id
 scoreboard players operation $clone_count isc.tmp = @s isc.clone
-data modify storage isc:tmp copy.rotation set from entity @s Rotation
+data modify storage isc:tmp rotation set from entity @s Rotation
 
 execute anchored eyes positioned ^ ^ ^0.4 summon minecraft:marker run function isc:as_projectile/summon
 

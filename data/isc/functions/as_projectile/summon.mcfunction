@@ -4,8 +4,12 @@
 #> execute summon (marker) at the position of the projectile with multicast
 # score "$id isc.tmp" must have the caster's id
 # score "$clone_count isc.tmp" must have the caster's clone counter
-# storage "isc:tmp copy.rotation" must have the projectile rotation
+# storage "isc:tmp rotation" must have the projectile rotation
 # storage "isc:tmp wand.spells" must have the spell list
+
+
+# Projectile cap
+execute if score $projectile_count isc.tmp >= projectile_cap isc.options run return run kill @s
 
 
 # Make this a projectile
@@ -31,7 +35,7 @@ execute unless score $new_cast isc.tmp matches 1 run scoreboard players set @s i
 # Get stored rotation and id, defined before executing this
 scoreboard players operation @s isc.id = $id isc.tmp
 scoreboard players operation @s isc.clone = $clone_count isc.tmp
-data modify entity @s Rotation set from storage isc:tmp copy.rotation
+data modify entity @s Rotation set from storage isc:tmp rotation
 
 
 # Go through the spells until the next projectile, applying modifiers and casting all instant spells along the way
@@ -61,16 +65,16 @@ scoreboard players operation @s isc.age /= #100 isc.math
 execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
 
 
-# If this is executed by multicast, prevent stacking & apply a random rotation offset
-execute if score $spell.multicast isc.tmp matches 1 run tag @s remove isc.spell.multicast
-execute if score $spell.multicast isc.tmp matches 1 run function isc:spells/multicast/offset
-
-
-# Apply modifiers that create new projectiles - THEIR ORDER IS IMPORTANT!
-execute as @s[tag=isc.spell.multicast] at @s run function isc:spells/multicast/cast
+# Apply modifiers that create new projectiles
 execute if score $spell.multishot isc.tmp matches 1.. at @s run function isc:spells/multishot/cast
 execute if score $spell.clone isc.tmp matches 1.. at @s run function isc:spells/clone/cast
 
 
 # Apply other tagged modifiers
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
+
+
+# Multicast
+execute if score $spell.multicast isc.tmp matches 1 run tag @s remove isc.spell.multicast
+execute if score $spell.multicast isc.tmp matches 1 run function isc:spells/multicast/offset
+execute as @s[tag=isc.spell.multicast] at @s run function isc:spells/multicast/cast

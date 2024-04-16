@@ -9,7 +9,7 @@ tag @s remove isc.spell.multicast
 # Create a projectile with the spell data
 scoreboard players operation $id isc.tmp = @s isc.id
 scoreboard players operation $clone_count isc.tmp = @s isc.clone
-data modify storage isc:tmp copy.rotation set from entity @s Rotation
+data modify storage isc:tmp rotation set from entity @s Rotation
 # (storage "isc:tmp wand.spells" is the same)
 
 scoreboard players set $spell.multicast isc.tmp 1

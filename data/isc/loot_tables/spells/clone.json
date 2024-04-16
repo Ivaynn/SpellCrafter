@@ -37,12 +37,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Clones the next projectile. Duplicates",
+                    "text": "Clones the next projectile. Duplicates the",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "the mana cost of all spells after this",
+                    "text": "mana cost of all clone modifiers after this",
                     "color": "gray",
                     "italic": false
                 },

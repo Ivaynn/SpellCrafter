@@ -3,6 +3,7 @@
 
 # Get data from the original projectile
 data modify entity @s Tags set from storage isc:tmp copy.tags
+data modify entity @s Rotation set from storage isc:tmp copy.rotation
 
 scoreboard players operation @s isc.id = $id isc.tmp
 scoreboard players operation @s isc.age = $age isc.tmp
@@ -17,7 +18,6 @@ execute if score $spell.multicast isc.tmp matches 1 run return run function isc:
 
 
 # Rotation
-data modify entity @s Rotation set from storage isc:tmp copy.rotation
 scoreboard players set $r0_offset isc.tmp -25
 scoreboard players operation $r0_offset isc.tmp *= $spell.multishot isc.tmp
 scoreboard players operation $r0_offset isc.tmp += $r0 isc.tmp
