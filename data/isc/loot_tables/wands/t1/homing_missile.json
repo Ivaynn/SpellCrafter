@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{wand:{valid:1b, mana:130, spells:[ \"range_inc\", \"range_inc\", \"speed_inc\", \"homing\",\"magic_missile\" ]}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:130, spells:[ \"range_inc\", \"range_inc\", \"speed_dec\", \"homing\",\"magic_missile\" ]}}}"
         },
         {
             "function": "minecraft:set_name",

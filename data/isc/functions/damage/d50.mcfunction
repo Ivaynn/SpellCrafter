@@ -1,10 +1,10 @@
-execute if score $damage isc.tmp matches 41 run damage @s 41 minecraft:magic by @s
-execute if score $damage isc.tmp matches 42 run damage @s 42 minecraft:magic by @s
-execute if score $damage isc.tmp matches 43 run damage @s 43 minecraft:magic by @s
-execute if score $damage isc.tmp matches 44 run damage @s 44 minecraft:magic by @s
-execute if score $damage isc.tmp matches 45 run damage @s 45 minecraft:magic by @s
-execute if score $damage isc.tmp matches 46 run damage @s 46 minecraft:magic by @s
-execute if score $damage isc.tmp matches 47 run damage @s 47 minecraft:magic by @s
-execute if score $damage isc.tmp matches 48 run damage @s 48 minecraft:magic by @s
-execute if score $damage isc.tmp matches 49 run damage @s 49 minecraft:magic by @s
-execute if score $damage isc.tmp matches 50 run damage @s 50 minecraft:magic by @s
+execute if score $damage isc.tmp matches 41 run damage @s 41 minecraft:magic
+execute if score $damage isc.tmp matches 42 run damage @s 42 minecraft:magic
+execute if score $damage isc.tmp matches 43 run damage @s 43 minecraft:magic
+execute if score $damage isc.tmp matches 44 run damage @s 44 minecraft:magic
+execute if score $damage isc.tmp matches 45 run damage @s 45 minecraft:magic
+execute if score $damage isc.tmp matches 46 run damage @s 46 minecraft:magic
+execute if score $damage isc.tmp matches 47 run damage @s 47 minecraft:magic
+execute if score $damage isc.tmp matches 48 run damage @s 48 minecraft:magic
+execute if score $damage isc.tmp matches 49 run damage @s 49 minecraft:magic
+execute if score $damage isc.tmp matches 50 run damage @s 50 minecraft:magic

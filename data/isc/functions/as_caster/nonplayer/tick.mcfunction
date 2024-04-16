@@ -2,8 +2,11 @@
 
 
 # Use wand
-execute unless score @s isc.cooldown matches 1.. run function isc:as_caster/nonplayer/use_wand
-scoreboard players remove @s isc.cooldown 1
+scoreboard players set $has_target isc.tmp 0
+execute on target run scoreboard players set $has_target isc.tmp 1
+
+execute if score $has_target isc.tmp matches 1 unless score @s isc.cooldown matches 1.. run function isc:as_caster/nonplayer/use_wand
+execute if score @s isc.cooldown matches 1.. run scoreboard players remove @s isc.cooldown 1
 
 
 # Mana regen

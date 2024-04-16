@@ -6,6 +6,7 @@ data remove storage isc:tmp drop
 data remove storage isc:tmp wand
 data remove storage isc:tmp copy
 data remove storage isc:tmp spell
+data remove storage isc:tmp rotation
 
 scoreboard objectives remove isc.id
 scoreboard objectives remove isc.tmp
@@ -18,6 +19,7 @@ scoreboard objectives remove isc.range
 scoreboard objectives remove isc.damage
 scoreboard objectives remove isc.blind
 scoreboard objectives remove isc.cooldown
+scoreboard objectives remove isc.clone
 scoreboard objectives remove isc.math
 scoreboard objectives remove isc.options
 

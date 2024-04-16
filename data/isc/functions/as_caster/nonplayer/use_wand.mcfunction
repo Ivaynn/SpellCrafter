@@ -6,7 +6,7 @@ execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
 
 
 # Cooldown
-scoreboard players set @s isc.cooldown 100
+scoreboard players set @s isc.cooldown 60
 
 
 # Cancel if the selected item isn't a usable wand
