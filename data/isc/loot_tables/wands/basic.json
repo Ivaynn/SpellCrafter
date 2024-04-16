@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{wand:{valid:1b,mana:0,spells:[]}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:0, spells:[], slots:[]}}}"
         },
         {
             "function": "minecraft:set_name",

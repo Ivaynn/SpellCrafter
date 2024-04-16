@@ -1,5 +1,5 @@
 #> executed by #minecraft:tick
-
+scoreboard players set #in_tick isc.tmp 1
 
 # Tag spectators
 tag @a[gamemode=spectator] add isc.spectator
@@ -19,3 +19,5 @@ execute as @e[type=minecraft:block_display,tag=isc.table] at @s run function isc
 
 # Projectile cap
 execute if score $projectile_count isc.tmp >= projectile_cap isc.options run function isc:clear_projectiles
+
+scoreboard players set #in_tick isc.tmp 0

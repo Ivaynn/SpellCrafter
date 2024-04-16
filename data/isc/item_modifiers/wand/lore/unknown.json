@@ -1,0 +1,22 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "❖ ?",
+                "color": "aqua",
+                "italic": false
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": " Unknown",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "replace": true
+    }
+]

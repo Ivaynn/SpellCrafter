@@ -12,7 +12,7 @@
                 "text": ""
             },
             {
-                "text": " empty",
+                "text": " Empty",
                 "color": "gray",
                 "italic": true
             }
@@ -21,6 +21,6 @@
     },
     {
         "function": "minecraft:set_nbt",
-        "tag": "{isc:{wand:{valid:1b,mana:0,spells:[]}}}"
+        "tag": "{isc:{wand:{valid:1b, mana:0, spells:[], slots:[]}}}"
     }
 ]

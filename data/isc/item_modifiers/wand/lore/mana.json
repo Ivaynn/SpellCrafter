@@ -1,0 +1,33 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "❖ ",
+                "color": "aqua",
+                "italic": false,
+                "extra": [
+                    {
+                        "score": {
+                            "name": "$mana",
+                            "objective": "isc.tmp"
+                        },
+                        "color": "aqua",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "text": ""
+            }
+        ],
+        "replace": true,
+        "conditions": [
+            {
+                "condition": "minecraft:reference",
+                "name": "isc:in_tick"
+            }
+        ]
+    }
+]

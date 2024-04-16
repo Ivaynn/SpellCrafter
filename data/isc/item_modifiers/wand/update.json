@@ -1,0 +1,26 @@
+[
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "isc:tmp"
+        },
+        "ops": [
+            {
+                "source": "wand",
+                "target": "isc.wand",
+                "op": "replace"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:reference",
+                "name": "isc:in_tick"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "isc:wand/lore/unknown"
+    }
+]

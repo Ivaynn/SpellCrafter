@@ -12,8 +12,8 @@ execute if data entity @s SelectedItem.tag.isc.wand.spells[0] run return 0
 
 # Reset scores & storages
 scoreboard players set $mana isc.tmp 0
-data modify storage isc:tmp wand set value {valid:1b, spells:[]}
-data modify storage isc:tmp lore set value ['{"text":""}','{"text":""}']
+data modify storage isc:tmp wand set value {valid:1b, spells:[], slots:[]}
+data modify storage isc:tmp lore set value []
 data modify storage isc:tmp drop set value []
 
 
@@ -28,17 +28,21 @@ execute if data storage isc:tmp drop[0] run function isc:as_table/close/drop_ext
 
 
 # If no spells, clear wand
-execute unless data storage isc:tmp wand.spells[0] run return run item modify entity @s weapon isc:clear_wand
+execute unless data storage isc:tmp wand.spells[0] run return run item modify entity @s weapon isc:wand/empty
 
 
 # Save mana cost as json component - can't use "execute summon" because that shows an error in the console
 execute store result storage isc:tmp wand.mana int 1 run scoreboard players get $mana isc.tmp
-summon minecraft:text_display ~ ~ ~ {Tags:["isc.tmp"], text:'{"text":""}', alignment:"center"}
-execute as @e[distance=..0.01,type=minecraft:text_display,tag=isc.tmp] run function isc:as_table/close/summon_text
 
 
 # Update wand with data from storage
-item modify entity @s weapon isc:update_wand
+item modify entity @s weapon isc:wand/update
+item modify entity @s weapon isc:wand/lore/mana
+
+
+# Add spells to item lore
+execute store result score $iter isc.tmp run data get storage isc:tmp lore
+function isc:as_table/close/for_lore
 
 
 # Success
