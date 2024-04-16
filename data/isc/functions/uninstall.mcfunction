@@ -5,6 +5,7 @@ data remove storage isc:tmp items
 data remove storage isc:tmp drop
 data remove storage isc:tmp wand
 data remove storage isc:tmp copy
+data remove storage isc:tmp spell
 
 scoreboard objectives remove isc.id
 scoreboard objectives remove isc.tmp

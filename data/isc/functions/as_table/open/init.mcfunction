@@ -33,3 +33,4 @@ playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 1 1.6
 scoreboard players set $iter isc.tmp 0
 data modify storage isc:tmp items set value []
 function isc:as_table/open/for_spell
+data remove block ~ ~ ~ Items[{tag:{isc:{invalid:1b}}}]
