@@ -12,7 +12,7 @@ execute unless score @s isc.age matches 1.. run tp @s ^ ^ ^-0.25
 
 
 # Entity collision
-execute if score @s isc.age matches 1.. unless score @s isc.blind matches 1.. as @s[tag=!isc.laser] positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#isc:untargetable,tag=!isc.spectator] run scoreboard players set @s isc.age 0
+execute if score @s isc.age matches 1.. unless score @s isc.blind matches 1.. as @s[tag=!isc.instant] positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#isc:untargetable,tag=!isc.spectator] run scoreboard players set @s isc.age 0
 
 
 # Trail

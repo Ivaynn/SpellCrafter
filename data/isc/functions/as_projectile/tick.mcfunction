@@ -9,12 +9,16 @@ execute as @s[tag=isc.kill] run return run kill @s
 
 # Apply projectile direction modifiers --> they can't be active at the same time
 scoreboard players set $homing isc.tmp 0
-execute as @s[tag=isc.spell.homing,tag=!isc.laser] at @s run function isc:spells/homing/tick
-execute unless score $homing isc.tmp matches 1 as @s[tag=isc.spell.guide,tag=!isc.laser] at @s run function isc:spells/guide/tick
+execute as @s[tag=isc.spell.homing,tag=!isc.instant] at @s run function isc:spells/homing/tick
+execute unless score $homing isc.tmp matches 1 as @s[tag=isc.spell.guide,tag=!isc.instant] at @s run function isc:spells/guide/tick
+execute unless score $homing isc.tmp matches 1 at @s[tag=!isc.instant] unless score @s isc.weight matches 0 run function isc:as_projectile/weight
 
 
-# Move projectile --> projectile speed = number of move iterations per tick
+# Move projectile --> projectile speed = number of move iterations per tick (max 1000)
 scoreboard players operation $iter isc.tmp = @s isc.speed
+execute as @s[tag=isc.instant] run scoreboard players set $iter isc.tmp 1000
+execute if score $iter isc.tmp matches 1001.. run scoreboard players set $iter isc.tmp 1000
+
 execute at @s run function isc:as_projectile/move
 
 

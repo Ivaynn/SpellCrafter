@@ -2,10 +2,10 @@
 # projectile stats
 
 tag @s add isc.spell.laser
+tag @s add isc.instant
 
 
 # Base stats
-scoreboard players add @s isc.speed 9999
 scoreboard players add @s isc.range 5
 scoreboard players add @s isc.damage 8
 

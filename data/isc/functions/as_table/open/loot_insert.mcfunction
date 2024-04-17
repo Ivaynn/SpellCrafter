@@ -29,3 +29,5 @@ execute if data storage isc:tmp {spell:"long_shot"        } run return run loot 
 execute if data storage isc:tmp {spell:"quick_shot"       } run return run loot insert ~ ~ ~ loot isc:spells/quick_shot
 execute if data storage isc:tmp {spell:"ghost"            } run return run loot insert ~ ~ ~ loot isc:spells/ghost
 execute if data storage isc:tmp {spell:"swap_places"      } run return run loot insert ~ ~ ~ loot isc:spells/swap_places
+execute if data storage isc:tmp {spell:"gravity"          } run return run loot insert ~ ~ ~ loot isc:spells/gravity
+execute if data storage isc:tmp {spell:"anti_gravity"     } run return run loot insert ~ ~ ~ loot isc:spells/anti_gravity

@@ -15,6 +15,7 @@ scoreboard objectives add isc.damage dummy
 scoreboard objectives add isc.blind dummy
 scoreboard objectives add isc.cooldown dummy
 scoreboard objectives add isc.clone dummy
+scoreboard objectives add isc.weight dummy
 
 scoreboard objectives add isc.math dummy
 scoreboard players set #2 isc.math 2
