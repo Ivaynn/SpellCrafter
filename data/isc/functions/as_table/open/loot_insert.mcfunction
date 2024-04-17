@@ -23,4 +23,8 @@ execute if data storage isc:tmp {spell:"guide"            } run return run loot 
 execute if data storage isc:tmp {spell:"summon_bat"       } run return run loot insert ~ ~ ~ loot isc:spells/summon_bat
 execute if data storage isc:tmp {spell:"summon_tnt"       } run return run loot insert ~ ~ ~ loot isc:spells/summon_tnt
 execute if data storage isc:tmp {spell:"counterspell"     } run return run loot insert ~ ~ ~ loot isc:spells/counterspell
-execute if data storage isc:tmp {spell:"revealing_bolt"     } run return run loot insert ~ ~ ~ loot isc:spells/revealing_bolt
+execute if data storage isc:tmp {spell:"revealing_bolt"   } run return run loot insert ~ ~ ~ loot isc:spells/revealing_bolt
+execute if data storage isc:tmp {spell:"heavy_shot"       } run return run loot insert ~ ~ ~ loot isc:spells/heavy_shot
+execute if data storage isc:tmp {spell:"long_shot"        } run return run loot insert ~ ~ ~ loot isc:spells/long_shot
+execute if data storage isc:tmp {spell:"quick_shot"       } run return run loot insert ~ ~ ~ loot isc:spells/quick_shot
+execute if data storage isc:tmp {spell:"ghost"            } run return run loot insert ~ ~ ~ loot isc:spells/ghost

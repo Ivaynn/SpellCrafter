@@ -3,8 +3,11 @@
 
 
 # Block collision
-execute unless block ~ ~ ~ #isc:air run scoreboard players set @s isc.age 0
-execute if score @s isc.age matches 1.. if entity @s[tag=isc.spell.fireball] if block ~ ~ ~ minecraft:water run scoreboard players set @s isc.age 0
+execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] unless block ^.2 ^.2 ^ #isc:air run scoreboard players set @s isc.age 0
+execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] unless block ^.2 ^-.2 ^ #isc:air run scoreboard players set @s isc.age 0
+execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] unless block ^-.2 ^-.2 ^ #isc:air run scoreboard players set @s isc.age 0
+execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] unless block ^-.2 ^-.2 ^ #isc:air run scoreboard players set @s isc.age 0
+execute if score @s isc.age matches 1.. if entity @s[tag=isc.spell.fireball] if block ~ ~ ~ minecraft:water run return run function isc:as_projectile/remove
 execute unless score @s isc.age matches 1.. run tp @s ^ ^ ^-0.25
 
 

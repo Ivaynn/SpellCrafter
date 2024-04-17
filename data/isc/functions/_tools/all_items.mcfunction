@@ -24,3 +24,7 @@ loot give @s loot isc:spells/summon_bat
 loot give @s loot isc:spells/summon_tnt
 loot give @s loot isc:spells/counterspell
 loot give @s loot isc:spells/revealing_bolt
+loot give @s loot isc:spells/heavy_shot
+loot give @s loot isc:spells/long_shot
+loot give @s loot isc:spells/quick_shot
+loot give @s loot isc:spells/ghost

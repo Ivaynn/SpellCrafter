@@ -1,0 +1,89 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_nbt",
+            "tag": "{isc:{spell:{id:\"quick_shot\", mana:35, lore:'{\"text\":\"⛶ Quick Shot\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "name": {
+                "text": "Quick Shot",
+                "color": "light_purple",
+                "italic": false
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                {
+                    "text": "❖ 35",
+                    "color": "aqua",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Greatly increases the speed",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "of the next projectile",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Damage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "-1 ❤",
+                            "color": "red"
+                        }
+                    ]
+                },
+                {
+                    "text": "Speed: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "+40",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks/sec",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "⛶ Modifier",
+                    "color": "blue",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

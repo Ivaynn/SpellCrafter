@@ -19,4 +19,4 @@ execute at @s run function isc:as_projectile/move
 
 
 # If age < 1, this projectile timed out or hit something
-execute unless score @s isc.age matches 1.. at @s run function isc:as_projectile/hit
+execute as @s[tag=!isc.kill] unless score @s isc.age matches 1.. at @s run function isc:as_projectile/hit

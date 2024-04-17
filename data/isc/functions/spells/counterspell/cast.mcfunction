@@ -4,7 +4,7 @@
 
 # Remove projectiles
 scoreboard players operation $id isc.tmp = @s isc.id
-execute as @e[distance=..15,type=minecraft:marker,tag=isc.projectile,predicate=!isc:match_id] at @s run function isc:spells/counterspell/as_projectile
+execute as @e[distance=..15,type=minecraft:marker,tag=isc.projectile,predicate=!isc:match_id] at @s run function isc:as_projectile/remove
 
 
 # Effects

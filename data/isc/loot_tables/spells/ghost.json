@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:carrot_on_a_stick"
+                    "name": "minecraft:enchanted_book"
                 }
             ]
         }
@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{wand:{valid:1b, mana:0, spells:[], slots:[]}}}"
+            "tag": "{isc:{spell:{id:\"ghost\", mana:75, lore:'{\"text\":\"⛶ Ghost\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "Basic Wand",
+                "text": "Ghost",
                 "color": "light_purple",
                 "italic": false
             }
@@ -29,7 +29,7 @@
             "entity": "this",
             "lore": [
                 {
-                    "text": "❖ 0",
+                    "text": "❖ 75",
                     "color": "aqua",
                     "italic": false
                 },
@@ -37,8 +37,22 @@
                     "text": ""
                 },
                 {
-                    "text": " Empty",
-                    "color": "gray"
+                    "text": "Makes the next projectile go",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "through blocks",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "⛶ Instant",
+                    "color": "blue",
+                    "italic": false
                 }
             ]
         }

@@ -36,6 +36,7 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"guide"}} run function isc:spells/guide/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"random_dir"}} run function isc:spells/random_dir/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"multicast"}} run function isc:spells/multicast/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"ghost"}} run function isc:spells/ghost/add
 
 
 # Stackable modifiers
@@ -46,6 +47,9 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"range_inc"}} run function isc:spells/range_inc/cast 
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"range_dec"}} run function isc:spells/range_dec/cast 
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"empower"}} run function isc:spells/empower/cast 
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"heavy_shot"}} run function isc:spells/heavy_shot/cast 
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"long_shot"}} run function isc:spells/long_shot/cast 
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"quick_shot"}} run function isc:spells/quick_shot/cast 
 
 
 # Next spell
