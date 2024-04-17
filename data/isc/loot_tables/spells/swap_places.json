@@ -1,0 +1,60 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_nbt",
+            "tag": "{isc:{spell:{id:\"swap_places\", mana:100, lore:'{\"text\":\"✦ Swap Places\",\"color\":\"light_purple\",\"italic\":false}'}}, RepairCost:2147483647}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "name": {
+                "text": "Swap Places",
+                "color": "light_purple",
+                "italic": false
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                {
+                    "text": "❖ 100",
+                    "color": "aqua",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "The caster swaps places with",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "the closest target",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "✦ Instant",
+                    "color": "light_purple",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

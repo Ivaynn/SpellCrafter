@@ -28,3 +28,4 @@ loot give @s loot isc:spells/heavy_shot
 loot give @s loot isc:spells/long_shot
 loot give @s loot isc:spells/quick_shot
 loot give @s loot isc:spells/ghost
+loot give @s loot isc:spells/swap_places
