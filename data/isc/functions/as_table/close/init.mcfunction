@@ -16,7 +16,7 @@ data remove block ~ ~ ~ Items
 
 
 # As player...
-scoreboard players operation @s isc.id = $id isc.tmp
+scoreboard players operation $id isc.tmp = @s isc.id
 scoreboard players set $success isc.tmp 0
 execute as @a[limit=1,distance=..10,predicate=isc:match_id] store result score $success isc.tmp run function isc:as_table/close/as_player
 

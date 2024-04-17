@@ -22,3 +22,4 @@ execute if data storage isc:tmp {spell:"multicast"        } run return run loot 
 execute if data storage isc:tmp {spell:"guide"            } run return run loot insert ~ ~ ~ loot isc:spells/guide
 execute if data storage isc:tmp {spell:"summon_bat"       } run return run loot insert ~ ~ ~ loot isc:spells/summon_bat
 execute if data storage isc:tmp {spell:"summon_tnt"       } run return run loot insert ~ ~ ~ loot isc:spells/summon_tnt
+execute if data storage isc:tmp {spell:"counterspell"     } run return run loot insert ~ ~ ~ loot isc:spells/counterspell

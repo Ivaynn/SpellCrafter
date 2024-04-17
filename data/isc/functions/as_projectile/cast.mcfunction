@@ -27,6 +27,7 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_vex"}} run function isc:spells/summon_vex/cast 
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_bat"}} run function isc:spells/summon_bat/cast 
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_tnt"}} run function isc:spells/summon_tnt/cast 
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"counterspell"}} run function isc:spells/counterspell/cast 
 
 
 # Unstackable modifiers

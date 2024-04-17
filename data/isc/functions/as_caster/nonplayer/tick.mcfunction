@@ -5,7 +5,8 @@
 scoreboard players set $has_target isc.tmp 0
 execute on target run scoreboard players set $has_target isc.tmp 1
 
-execute if score $has_target isc.tmp matches 1 unless score @s isc.cooldown matches 1.. run function isc:as_caster/nonplayer/use_wand
+execute if score $has_target isc.tmp matches 1 unless score @s isc.cooldown matches 1.. if predicate isc:holding_wand run function isc:as_caster/nonplayer/use_wand
+execute if score $has_target isc.tmp matches 0 as @s[type=minecraft:armor_stand] unless score @s isc.cooldown matches 1.. if predicate isc:holding_wand run function isc:as_caster/nonplayer/use_wand
 execute if score @s isc.cooldown matches 1.. run scoreboard players remove @s isc.cooldown 1
 
 
