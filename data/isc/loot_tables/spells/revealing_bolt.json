@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"laser\", mana:30, lore:'{\"text\":\"→ Laser\",\"color\":\"gold\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"revealing_bolt\", mana:15, lore:'{\"text\":\"→ Revealing Bolt\",\"color\":\"gold\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "Laser",
+                "text": "Revealing Bolt",
                 "color": "light_purple",
                 "italic": false
             }
@@ -29,7 +29,7 @@
             "entity": "this",
             "lore": [
                 {
-                    "text": "❖ 30",
+                    "text": "❖ 15",
                     "color": "aqua",
                     "italic": false
                 },
@@ -37,12 +37,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Shoots an instant bolt that damages",
+                    "text": "Shoots a slow projectile that reveals",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "everything on its path",
+                    "text": "enemies on its path",
                     "color": "gray",
                     "italic": false
                 },
@@ -55,7 +55,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "4 ❤",
+                            "text": "0 ❤",
                             "color": "red"
                         }
                     ]
@@ -66,11 +66,26 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "5",
+                            "text": "75",
                             "color": "red"
                         },
                         {
                             "text": " blocks",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": "Speed: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "10",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks/sec",
                             "color": "dark_gray"
                         }
                     ]

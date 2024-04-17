@@ -23,3 +23,4 @@ loot give @s loot isc:spells/teleport
 loot give @s loot isc:spells/summon_bat
 loot give @s loot isc:spells/summon_tnt
 loot give @s loot isc:spells/counterspell
+loot give @s loot isc:spells/revealing_bolt

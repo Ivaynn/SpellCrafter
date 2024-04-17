@@ -5,6 +5,7 @@
 # Hit targets
 execute as @s[tag=isc.spell.magic_missile] run function isc:spells/magic_missile/hit
 execute as @s[tag=isc.spell.fireball] run function isc:spells/fireball/hit
+execute as @s[tag=isc.spell.revealing_bolt] run function isc:spells/revealing_bolt/hit
 
 
 # Next spell...

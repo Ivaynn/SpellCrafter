@@ -17,6 +17,7 @@ scoreboard players set $success isc.tmp 0
 execute if data storage isc:tmp {wand:{first:"magic_missile"}} run return run function isc:spells/magic_missile/projectile
 execute if data storage isc:tmp {wand:{first:"fireball"}} run return run function isc:spells/fireball/projectile
 execute if data storage isc:tmp {wand:{first:"laser"}} run return run function isc:spells/laser/projectile
+execute if data storage isc:tmp {wand:{first:"revealing_bolt"}} run return run function isc:spells/revealing_bolt/projectile
 
 
 # Instant casts
