@@ -31,4 +31,5 @@ loot give @s loot isc:spells/ghost
 loot give @s loot isc:spells/swap_places
 loot give @s loot isc:spells/gravity
 loot give @s loot isc:spells/anti_gravity
-
+loot give @s loot isc:spells/instant
+loot give @s loot isc:spells/piercing

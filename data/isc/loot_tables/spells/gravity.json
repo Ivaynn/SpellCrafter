@@ -37,7 +37,12 @@
                     "text": ""
                 },
                 {
-                    "text": "The next projectile curves downward",
+                    "text": "Increases the weight of the",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "next projectile",
                     "color": "gray",
                     "italic": false
                 },

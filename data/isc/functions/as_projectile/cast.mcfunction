@@ -40,6 +40,8 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"ghost"}} run function isc:spells/ghost/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"gravity"}} run function isc:spells/gravity/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"anti_gravity"}} run function isc:spells/anti_gravity/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"instant"}} run function isc:spells/instant/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"piercing"}} run function isc:spells/piercing/add
 
 
 # Stackable modifiers

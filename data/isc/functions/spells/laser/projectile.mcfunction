@@ -2,7 +2,8 @@
 # projectile stats
 
 tag @s add isc.spell.laser
-tag @s add isc.instant
+tag @s add isc.spell.instant
+tag @s add isc.spell.piercing
 
 
 # Base stats

@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"anti_gravity\", mana:15, lore:'{\"text\":\"⛶ Anti-Gravity\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"instant\", mana:75, lore:'{\"text\":\"⛶ Instant\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "Anti-Gravity",
+                "text": "Instant",
                 "color": "light_purple",
                 "italic": false
             }
@@ -29,7 +29,7 @@
             "entity": "this",
             "lore": [
                 {
-                    "text": "❖ 15",
+                    "text": "❖ 75",
                     "color": "aqua",
                     "italic": false
                 },
@@ -37,12 +37,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Decreases the weight of the",
+                    "text": "Turns the next projectile into",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "next projectile",
+                    "text": "an instant burst of energy",
                     "color": "gray",
                     "italic": false
                 },

@@ -26,5 +26,6 @@ scoreboard objectives remove isc.options
 kill @e[tag=isc.table]
 kill @e[tag=isc.projectile]
 kill @e[tag=isc.summon]
+kill @e[tag=isc.target_dummy]
 
 tag @e remove isc.caster
