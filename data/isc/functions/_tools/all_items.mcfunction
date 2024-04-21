@@ -33,3 +33,4 @@ loot give @s loot isc:spells/gravity
 loot give @s loot isc:spells/anti_gravity
 loot give @s loot isc:spells/instant
 loot give @s loot isc:spells/piercing
+loot give @s loot isc:spells/arcane_reaper

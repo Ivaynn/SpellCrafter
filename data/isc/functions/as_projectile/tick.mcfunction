@@ -11,7 +11,11 @@ execute as @s[tag=isc.kill] run return run kill @s
 scoreboard players set $homing isc.tmp 0
 execute as @s[tag=isc.spell.homing,tag=!isc.spell.instant] at @s run function isc:spells/homing/tick
 execute unless score $homing isc.tmp matches 1 as @s[tag=isc.spell.guide,tag=!isc.spell.instant] at @s run function isc:spells/guide/tick
-execute unless score $homing isc.tmp matches 1 at @s[tag=!isc.spell.instant] unless score @s isc.weight matches 0 run function isc:as_projectile/weight
+execute unless score $homing isc.tmp matches 1 as @s[tag=!isc.spell.instant] unless score @s isc.weight matches 0 run function isc:as_projectile/weight
+
+
+# Special cases
+execute as @s[tag=isc.spell.arcane_reaper] run function isc:spells/arcane_reaper/tick
 
 
 # Move projectile --> projectile speed = number of move iterations per tick (max 1000)

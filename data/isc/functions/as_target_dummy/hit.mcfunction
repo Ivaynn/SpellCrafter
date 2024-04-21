@@ -8,4 +8,4 @@ data modify entity @s Health set value 100f
 
 # Tellraw
 scoreboard players remove $damage isc.tmp 100
-tellraw @a[distance=..25] ["",{"text":"<","color":"gray"},{"selector":"@s","color":"gray"},{"text":"> ","color":"gray"},{"score":{"name":"$damage","objective":"isc.tmp"},"color":"red"}]
+tellraw @a[distance=..100] ["",{"text":"<","color":"gray"},{"selector":"@s","color":"gray"},{"text":"> ","color":"gray"},{"score":{"name":"$damage","objective":"isc.tmp"},"color":"red"}]

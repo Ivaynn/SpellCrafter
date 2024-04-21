@@ -13,13 +13,13 @@
     "functions": [
         {
             "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"fireball\", mana:25, lore:'{\"text\":\"→ Fireball\",\"color\":\"gold\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "tag": "{isc:{spell:{id:\"arcane_reaper\", mana:50, lore:'{\"text\":\"→ Arcane Reaper\",\"color\":\"gold\",\"italic\":false}'}}, RepairCost:2147483647}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "name": {
-                "text": "Fireball",
+                "text": "Arcane Reaper",
                 "color": "light_purple",
                 "italic": false
             }
@@ -29,7 +29,7 @@
             "entity": "this",
             "lore": [
                 {
-                    "text": "❖ 25",
+                    "text": "❖ 50",
                     "color": "aqua",
                     "italic": false
                 },
@@ -37,7 +37,12 @@
                     "text": ""
                 },
                 {
-                    "text": "A slow fireball, weak to water",
+                    "text": "Devours nearby projectiles,",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "absorbing their power",
                     "color": "gray",
                     "italic": false
                 },
@@ -50,7 +55,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "3 ❤",
+                            "text": "1 ❤",
                             "color": "red"
                         }
                     ]
@@ -61,7 +66,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "10",
+                            "text": "5",
                             "color": "red"
                         },
                         {
@@ -76,7 +81,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "15",
+                            "text": "5",
                             "color": "red"
                         },
                         {

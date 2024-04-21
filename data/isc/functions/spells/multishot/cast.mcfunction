@@ -19,6 +19,7 @@ data modify storage isc:tmp copy.rotation set from entity @s Rotation
 scoreboard players operation $id isc.tmp = @s isc.id
 scoreboard players operation $age isc.tmp = @s isc.age
 scoreboard players operation $speed isc.tmp = @s isc.speed
+scoreboard players operation $damage isc.tmp = @s isc.damage
 scoreboard players operation $range isc.tmp = @s isc.range
 scoreboard players operation $blind isc.tmp = @s isc.blind
 
