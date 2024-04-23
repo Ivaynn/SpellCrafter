@@ -37,7 +37,7 @@ scoreboard players operation $r0_offset isc.tmp *= $spell.clone isc.tmp
 
 execute store result score $r0 isc.tmp run data get storage isc:tmp copy.rotation[0] 1
 scoreboard players operation $r0 isc.tmp -= $r0_offset isc.tmp
-execute store result entity @s Rotation[0] float 1 run scoreboard players get $r0 isc.tmp
+execute store result entity @s[tag=!isc.spell.arcane_reaper] Rotation[0] float 1 run scoreboard players get $r0 isc.tmp
 
 
 # Summon the clones
