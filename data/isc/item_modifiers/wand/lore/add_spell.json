@@ -2,6 +2,7 @@
     {
         "function": "minecraft:set_lore",
         "entity": "this",
+        "mode": "append",
         "lore": [
             {
                 "nbt": "lore[0]",
@@ -9,7 +10,6 @@
                 "interpret": true
             }
         ],
-        "replace": false,
         "conditions": [
             {
                 "condition": "minecraft:reference",

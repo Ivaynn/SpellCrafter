@@ -12,35 +12,22 @@
     ],
     "functions": [
         {
-            "function": "minecraft:set_nbt",
-            "tag": "{isc:{wand:{valid:1b, mana:0, spells:[], slots:[]}}}"
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true
+            }
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
-            "name": {
-                "text": "Basic Wand",
-                "color": "light_purple",
-                "italic": false
-            }
+            "target": "item_name",
+            "name": "Basic Wand"
         },
         {
-            "function": "minecraft:set_lore",
-            "entity": "this",
-            "lore": [
-                {
-                    "text": "❖ 0",
-                    "color": "aqua",
-                    "italic": false
-                },
-                {
-                    "text": ""
-                },
-                {
-                    "text": " Empty",
-                    "color": "gray"
-                }
-            ]
+            "function": "minecraft:reference",
+            "name": "isc:wand/empty"
         }
     ]
 }

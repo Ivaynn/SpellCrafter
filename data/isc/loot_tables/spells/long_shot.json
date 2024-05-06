@@ -12,21 +12,27 @@
     ],
     "functions": [
         {
-            "function": "minecraft:set_nbt",
-            "tag": "{isc:{spell:{id:\"long_shot\", mana:35, lore:'{\"text\":\"⛶ Long Shot\",\"color\":\"blue\",\"italic\":false}'}}, RepairCost:2147483647}"
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": false
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{isc:{spell:{id:\"long_shot\", mana:35, lore:'{\"text\":\"⛶ Long Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
-            "name": {
-                "text": "Long Shot",
-                "color": "light_purple",
-                "italic": false
-            }
+            "target": "item_name",
+            "name": "Long Shot"
         },
         {
             "function": "minecraft:set_lore",
             "entity": "this",
+            "mode": "replace_all",
             "lore": [
                 {
                     "text": "❖ 35",

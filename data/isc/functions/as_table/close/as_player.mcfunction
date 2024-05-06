@@ -7,7 +7,7 @@ execute unless predicate isc:holding_wand run return 0
 
 
 # Check if the held wand is empty
-execute if data entity @s SelectedItem.tag.isc.wand.spells[0] run return 0
+execute if data entity @s SelectedItem.components."minecraft:custom_data".isc.wand.spells[0] run return 0
 
 
 # Reset scores & storages

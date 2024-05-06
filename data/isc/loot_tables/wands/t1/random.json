@@ -5,11 +5,11 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "isc:wands/t1/homing_missile"
+                    "value": "isc:wands/t1/homing_missile"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "isc:wands/t1/long_laser"
+                    "value": "isc:wands/t1/long_laser"
                 }
             ]
         }

@@ -2,6 +2,7 @@
     {
         "function": "minecraft:set_lore",
         "entity": "this",
+        "mode": "replace_all",
         "lore": [
             {
                 "text": "❖ 0",
@@ -16,11 +17,10 @@
                 "color": "gray",
                 "italic": true
             }
-        ],
-        "replace": true
+        ]
     },
     {
-        "function": "minecraft:set_nbt",
+        "function": "minecraft:set_custom_data",
         "tag": "{isc:{wand:{valid:1b, mana:0, spells:[], slots:[]}}}"
     }
 ]

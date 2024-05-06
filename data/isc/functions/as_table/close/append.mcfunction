@@ -3,7 +3,7 @@
 
 
 # Check if item is not a spell --> add to "drop"
-execute unless data storage isc:tmp items[0].tag.isc.spell.id run return run data modify storage isc:tmp drop append from storage isc:tmp items[0]
+execute unless data storage isc:tmp items[0].components."minecraft:custom_data".isc.spell.id run return run data modify storage isc:tmp drop append from storage isc:tmp items[0]
 
 
 # Save spell slot
@@ -12,7 +12,7 @@ data modify storage isc:tmp wand.slots append from storage isc:tmp items[0].Slot
 
 # Get spell id & lore
 data remove storage isc:tmp spell
-data modify storage isc:tmp spell set from storage isc:tmp items[0].tag.isc.spell
+data modify storage isc:tmp spell set from storage isc:tmp items[0].components."minecraft:custom_data".isc.spell
 data modify storage isc:tmp wand.spells append from storage isc:tmp spell.id
 data modify storage isc:tmp lore append from storage isc:tmp spell.lore
 

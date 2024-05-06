@@ -15,5 +15,5 @@ scoreboard players operation $speed isc.tmp += $add isc.tmp
 
 
 # Remove self
-particle minecraft:dust 0.5 0 0 1 ~ ~ ~ 0.3 0.3 0.3 0 10 force @a
+particle minecraft:dust{color:[0.5,0.0,0.0],scale:1} ~ ~ ~ 0.3 0.3 0.3 0 10 force @a
 function isc:as_projectile/remove

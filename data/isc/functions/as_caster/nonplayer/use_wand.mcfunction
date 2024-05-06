@@ -10,11 +10,11 @@ scoreboard players set @s isc.cooldown 60
 
 
 # Cancel if the selected item isn't a usable wand
-execute unless data entity @s HandItems[0].tag.isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.5 2
+execute unless data entity @s HandItems[0].components."minecraft:custom_data".isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.5 2
 
 
 # Get spell data from selected item
-data modify storage isc:tmp wand set from entity @s HandItems[0].tag.isc.wand
+data modify storage isc:tmp wand set from entity @s HandItems[0].components."minecraft:custom_data".isc.wand
 execute store result score $mana isc.tmp run data get storage isc:tmp wand.mana
 
 

@@ -2,6 +2,7 @@
     {
         "function": "minecraft:set_lore",
         "entity": "this",
+        "mode": "replace_all",
         "lore": [
             {
                 "text": "❖ ",
@@ -22,7 +23,6 @@
                 "text": ""
             }
         ],
-        "replace": true,
         "conditions": [
             {
                 "condition": "minecraft:reference",

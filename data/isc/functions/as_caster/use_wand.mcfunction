@@ -6,11 +6,11 @@ execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
 
 
 # Cancel if the selected item isn't a usable wand
-execute unless data entity @s SelectedItem.tag.isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
 
 
 # Get spell data from selected item
-data modify storage isc:tmp wand set from entity @s SelectedItem.tag.isc.wand
+data modify storage isc:tmp wand set from entity @s SelectedItem.components."minecraft:custom_data".isc.wand
 execute store result score $mana isc.tmp run data get storage isc:tmp wand.mana
 
 

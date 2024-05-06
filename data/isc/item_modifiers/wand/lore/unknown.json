@@ -2,6 +2,7 @@
     {
         "function": "minecraft:set_lore",
         "entity": "this",
+        "mode": "replace_all",
         "lore": [
             {
                 "text": "❖ ?",
@@ -16,7 +17,6 @@
                 "color": "gray",
                 "italic": true
             }
-        ],
-        "replace": true
+        ]
     }
 ]

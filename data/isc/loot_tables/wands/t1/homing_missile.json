@@ -4,25 +4,16 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:carrot_on_a_stick"
+                    "type": "minecraft:loot_table",
+                    "value": "isc:wands/basic"
                 }
             ]
         }
     ],
     "functions": [
         {
-            "function": "minecraft:set_nbt",
+            "function": "minecraft:set_custom_data",
             "tag": "{isc:{wand:{valid:1b, mana:130, spells:[ \"range_inc\", \"range_inc\", \"speed_dec\", \"homing\",\"magic_missile\" ]}}}"
-        },
-        {
-            "function": "minecraft:set_name",
-            "entity": "this",
-            "name": {
-                "text": "Basic Wand",
-                "color": "light_purple",
-                "italic": false
-            }
         },
         {
             "function": "minecraft:reference",
