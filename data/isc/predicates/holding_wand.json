@@ -4,8 +4,10 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "tag": "isc:wand",
-                "nbt": "{isc:{wand:{valid:1b}}}"
+                "items": "#isc:wand",
+                "predicates": {
+                    "custom_data": "{isc:{wand:{valid:1b}}}"
+                }
             }
         }
     }

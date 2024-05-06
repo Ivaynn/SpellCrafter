@@ -10,7 +10,6 @@ data remove storage isc:tmp rotation
 
 scoreboard objectives remove isc.id
 scoreboard objectives remove isc.tmp
-scoreboard objectives remove isc.right_click
 scoreboard objectives remove isc.mana
 scoreboard objectives remove isc.max_mana
 scoreboard objectives remove isc.age

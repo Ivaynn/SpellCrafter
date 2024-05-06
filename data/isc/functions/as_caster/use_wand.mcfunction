@@ -5,7 +5,11 @@
 execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
 
 
-# Cancel if the selected item isn't a usable wand
+# Cancel if the selected item isn't a wand
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".isc run return 0
+
+
+# Cancel if the selected wand doesn't have spells
 execute unless data entity @s SelectedItem.components."minecraft:custom_data".isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
 
 

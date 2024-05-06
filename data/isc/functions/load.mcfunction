@@ -5,7 +5,6 @@ gamerule maxCommandChainLength 2147483647
 
 scoreboard objectives add isc.id dummy
 scoreboard objectives add isc.tmp dummy
-scoreboard objectives add isc.right_click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add isc.mana dummy
 scoreboard objectives add isc.max_mana dummy
 scoreboard objectives add isc.age dummy
@@ -28,3 +27,4 @@ execute unless score damage_caster isc.options matches 0..1 run scoreboard playe
 execute unless score projectile_cap isc.options matches 0.. run scoreboard players set projectile_cap isc.options 500
 execute unless score warnings isc.options matches 0..1 run scoreboard players set warnings isc.options 1
 execute unless score clone_limit isc.options matches 0.. run scoreboard players set clone_limit isc.options 10
+execute unless score cooldown isc.options matches 1.. run scoreboard players set cooldown isc.options 5
