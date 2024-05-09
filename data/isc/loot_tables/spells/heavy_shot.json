@@ -16,6 +16,7 @@
             "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
+                "minecraft:custom_model_data": 7280017,
                 "minecraft:enchantment_glint_override": false
             }
         },
