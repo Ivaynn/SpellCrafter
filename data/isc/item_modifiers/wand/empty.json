@@ -28,6 +28,6 @@
     },
     {
         "function": "minecraft:set_custom_data",
-        "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:20, spells:[], slots:[]}}}"
+        "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:4, spells:[], slots:[]}}}"
     }
 ]
