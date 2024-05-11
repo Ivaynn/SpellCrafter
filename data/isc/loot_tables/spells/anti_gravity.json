@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"anti_gravity\", mana:15, lore:'{\"text\":\"⛶ Anti-Gravity\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:\"anti_gravity\", mana:15, cooldown:0, lore:'{\"text\":\"⛶ Anti-Gravity\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,9 +36,16 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "❖ 15",
+                    "text": "◆ 15",
                     "color": "aqua",
-                    "italic": false
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 0",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
                 },
                 {
                     "text": ""

@@ -6,11 +6,17 @@ execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
 
 
 # Cooldown
-scoreboard players set @s isc.cooldown 60
+execute store result score @s isc.cooldown run data get entity @s HandItems[0].components."minecraft:custom_data".isc.wand.cooldown
+scoreboard players operation @s isc.cooldown > min_cooldown isc.options
+execute unless score @s isc.cooldown matches 1.. run scoreboard players set @s isc.cooldown 0
 
 
-# Cancel if the selected item isn't a usable wand
-execute unless data entity @s HandItems[0].components."minecraft:custom_data".isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.5 2
+# Cancel if the selected item isn't a wand
+execute unless data entity @s HandItems[0].components."minecraft:custom_data".isc run return 0
+
+
+# Cancel if the selected wand doesn't have spells
+execute unless data entity @s HandItems[0].components."minecraft:custom_data".isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
 
 
 # Get spell data from selected item

@@ -12,6 +12,7 @@ execute if data entity @s SelectedItem.components."minecraft:custom_data".isc.wa
 
 # Reset scores & storages
 scoreboard players set $mana isc.tmp 0
+scoreboard players set $cooldown isc.tmp 0
 data modify storage isc:tmp wand set value {valid:1b, spells:[], slots:[]}
 data modify storage isc:tmp lore set value []
 data modify storage isc:tmp drop set value []
@@ -31,13 +32,18 @@ execute if data storage isc:tmp drop[0] run function isc:as_table/close/drop_ext
 execute unless data storage isc:tmp wand.spells[0] run return run item modify entity @s weapon isc:wand/empty
 
 
-# Save mana cost as json component - can't use "execute summon" because that shows an error in the console
+# Save mana cost to object
 execute store result storage isc:tmp wand.mana int 1 run scoreboard players get $mana isc.tmp
+execute store result storage isc:tmp wand.cooldown int 1 run scoreboard players get $cooldown isc.tmp
+
+
+# Create storage with the cooldown in seconds format for the lore
+function isc:as_table/close/cooldown_sec
 
 
 # Update wand with data from storage
 item modify entity @s weapon isc:wand/update
-item modify entity @s weapon isc:wand/lore/mana
+item modify entity @s weapon isc:wand/lore/stats
 
 
 # Add spells to item lore

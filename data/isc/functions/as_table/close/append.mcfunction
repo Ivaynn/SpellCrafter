@@ -24,6 +24,12 @@ execute if data storage isc:tmp {spell:{id:"clone"}} run scoreboard players oper
 scoreboard players operation $mana isc.tmp += $add isc.tmp
 
 
+# Get spell cooldown
+scoreboard players set $add isc.tmp 0
+execute store result score $add isc.tmp run data get storage isc:tmp spell.cooldown
+scoreboard players operation $cooldown isc.tmp += $add isc.tmp
+
+
 # Mana cost overflow prevention
 execute unless score $mana isc.tmp matches 0.. run scoreboard players set $mana isc.tmp 2147483647
 

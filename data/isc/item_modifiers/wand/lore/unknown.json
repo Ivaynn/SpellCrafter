@@ -5,9 +5,16 @@
         "mode": "replace_all",
         "lore": [
             {
-                "text": "❖ ?",
+                "text": "◆ ?",
                 "color": "aqua",
-                "italic": false
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "   ⌚ ?",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
             },
             {
                 "text": ""

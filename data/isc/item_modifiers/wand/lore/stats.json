@@ -5,7 +5,7 @@
         "mode": "replace_all",
         "lore": [
             {
-                "text": "❖ ",
+                "text": "◆ ",
                 "color": "aqua",
                 "italic": false,
                 "extra": [
@@ -16,6 +16,16 @@
                         },
                         "color": "aqua",
                         "italic": false
+                    },
+                    {
+                        "text": "   ⌚ ",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "nbt": "time",
+                        "storage": "isc:tmp",
+                        "interpret": true
                     }
                 ]
             },

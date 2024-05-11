@@ -5,9 +5,16 @@
         "mode": "replace_all",
         "lore": [
             {
-                "text": "❖ 0",
+                "text": "◆ 0",
                 "color": "aqua",
-                "italic": false
+                "italic": false,
+                "extra":[
+                    {
+                        "text": "   ⌚ 0",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
             },
             {
                 "text": ""
@@ -21,6 +28,6 @@
     },
     {
         "function": "minecraft:set_custom_data",
-        "tag": "{isc:{wand:{valid:1b, mana:0, spells:[], slots:[]}}}"
+        "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:20, spells:[], slots:[]}}}"
     }
 ]

@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"empower\", mana:25, lore:'{\"text\":\"⛶ Empower\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:\"empower\", mana:25, cooldown:4, lore:'{\"text\":\"⛶ Empower\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,9 +36,16 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "❖ 25",
+                    "text": "◆ 25",
                     "color": "aqua",
-                    "italic": false
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 0.2",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
                 },
                 {
                     "text": ""

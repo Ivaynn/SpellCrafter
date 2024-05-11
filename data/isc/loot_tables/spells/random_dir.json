@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"random_dir\", mana:10, lore:'{\"text\":\"⛶ Random Direction\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:\"random_dir\", mana:10, cooldown:0, lore:'{\"text\":\"⛶ Random Direction\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,9 +36,16 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "❖ 10",
+                    "text": "◆ 10",
                     "color": "aqua",
-                    "italic": false
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 0",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
                 },
                 {
                     "text": ""

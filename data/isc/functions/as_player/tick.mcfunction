@@ -6,7 +6,6 @@ execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
 
 
 # Cooldown
-execute if score @s isc.cooldown > cooldown isc.options run scoreboard players operation @s isc.cooldown = cooldown isc.options
 execute if score @s isc.cooldown matches 1.. run scoreboard players remove @s isc.cooldown 1
 
 

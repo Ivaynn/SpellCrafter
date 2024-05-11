@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"summon_bat\", mana:75, lore:'{\"text\":\"✦ Summon Bat\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:\"summon_bat\", mana:75, cooldown:15, lore:'{\"text\":\"✦ Summon Bat\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,9 +36,16 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "❖ 75",
+                    "text": "◆ 75",
                     "color": "aqua",
-                    "italic": false
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 0.75",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
                 },
                 {
                     "text": ""

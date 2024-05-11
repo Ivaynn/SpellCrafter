@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"summon_lightning\", mana:250, lore:'{\"text\":\"✦ Summon Lightning\",\"color\":\"red\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:\"summon_lightning\", mana:250, cooldown:20, lore:'{\"text\":\"✦ Summon Lightning\",\"color\":\"red\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,9 +36,16 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "❖ 250",
+                    "text": "◆ 250",
                     "color": "aqua",
-                    "italic": false
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 1.0",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
                 },
                 {
                     "text": ""

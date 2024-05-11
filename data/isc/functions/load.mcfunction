@@ -19,6 +19,8 @@ scoreboard objectives add isc.weight dummy
 scoreboard objectives add isc.math dummy
 scoreboard players set #2 isc.math 2
 scoreboard players set #4 isc.math 4
+scoreboard players set #5 isc.math 5
+scoreboard players set #20 isc.math 20
 scoreboard players set #100 isc.math 100
 
 scoreboard objectives add isc.options dummy
@@ -28,4 +30,4 @@ execute unless score damage_caster isc.options matches 0..1 run scoreboard playe
 execute unless score projectile_cap isc.options matches 0.. run scoreboard players set projectile_cap isc.options 500
 execute unless score warnings isc.options matches 0..1 run scoreboard players set warnings isc.options 1
 execute unless score clone_limit isc.options matches 0.. run scoreboard players set clone_limit isc.options 10
-execute unless score cooldown isc.options matches 1.. run scoreboard players set cooldown isc.options 5
+execute unless score min_cooldown isc.options matches 1.. run scoreboard players set min_cooldown isc.options 1
