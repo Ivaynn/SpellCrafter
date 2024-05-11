@@ -25,7 +25,9 @@ execute store result score $mana isc.tmp run data get storage isc:tmp wand.mana
 
 
 # Spend mana | cancel if player doesn't have enough mana
-execute if score @s isc.mana < $mana isc.tmp run return run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
+execute if score @s isc.mana < $mana isc.tmp run scoreboard players set @s isc.cooldown 4
+execute if score @s isc.mana < $mana isc.tmp run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
+execute if score @s isc.mana < $mana isc.tmp run return 0
 scoreboard players operation @s isc.mana -= $mana isc.tmp
 
 

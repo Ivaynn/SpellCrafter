@@ -22,6 +22,7 @@ scoreboard objectives remove isc.cooldown
 scoreboard objectives remove isc.clone
 scoreboard objectives remove isc.math
 scoreboard objectives remove isc.options
+scoreboard objectives remove isc.weight
 
 kill @e[tag=isc.table]
 kill @e[tag=isc.projectile]
