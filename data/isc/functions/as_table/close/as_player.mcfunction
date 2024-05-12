@@ -30,7 +30,7 @@ execute if data storage isc:tmp drop[0] run function isc:as_table/close/drop_ext
 
 
 # If no spells, clear wand
-execute unless data storage isc:tmp wand.spells[0] run return run item modify entity @s weapon isc:wand/empty
+execute unless data storage isc:tmp wand.spells[0] run return run function isc:as_table/close/empty
 
 
 # Save mana cost to object

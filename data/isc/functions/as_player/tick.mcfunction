@@ -1,6 +1,10 @@
 #> [tick] as player, at @s
 
 
+# Infinite spells mode
+execute if score @s isc.inf_page matches 100.. run function isc:as_player/inf_spells/init
+
+
 # All players must have a caster id
 execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
 
