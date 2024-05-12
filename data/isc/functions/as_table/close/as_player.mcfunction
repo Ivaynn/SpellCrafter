@@ -16,6 +16,7 @@ scoreboard players set $cooldown isc.tmp 0
 data modify storage isc:tmp wand set value {valid:1b, spells:[], slots:[]}
 data modify storage isc:tmp lore set value []
 data modify storage isc:tmp drop set value []
+data modify storage isc:tmp wand.mod set from entity @s SelectedItem.components."minecraft:custom_data".isc.wand.mod
 
 
 # Iterate through all the items & save spell data to storages "isc:tmp wand" and "isc:tmp lore"
@@ -49,6 +50,10 @@ item modify entity @s weapon isc:wand/lore/stats
 # Add spells to item lore
 execute store result score $iter isc.tmp run data get storage isc:tmp lore
 function isc:as_table/close/for_lore
+
+
+# Wand modifiers
+item modify entity @s weapon isc:wand/lore/wand_mod
 
 
 # Success

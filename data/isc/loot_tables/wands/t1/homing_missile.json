@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:130, spells:[ \"range_inc\", \"range_inc\", \"speed_dec\", \"homing\",\"magic_missile\" ]}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:130, cooldown:5, spells:[ \"range_inc\", \"range_inc\", \"speed_dec\", \"homing\",\"magic_missile\" ]}}}"
         },
         {
             "function": "minecraft:reference",

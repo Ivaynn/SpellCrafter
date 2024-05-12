@@ -1,0 +1,26 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 1,
+        "size": 1,
+        "lore": [
+            {
+                "text": ""
+            },
+            {
+                "text": "⧈ Instant",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": ""
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": "{isc:{wand:{mod:\"instant\"}}}"
+    }
+]

@@ -10,7 +10,7 @@ tag @s remove isc.spell.multicast
 scoreboard players operation $id isc.tmp = @s isc.id
 scoreboard players operation $clone_count isc.tmp = @s isc.clone
 data modify storage isc:tmp rotation set from entity @s Rotation
-# (storage "isc:tmp wand.spells" is the same)
+# (storage "isc:tmp wand" is the same)
 
 scoreboard players set $spell.multicast isc.tmp 1
 execute summon minecraft:marker run function isc:as_projectile/summon

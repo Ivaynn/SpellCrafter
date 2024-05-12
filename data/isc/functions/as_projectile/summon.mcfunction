@@ -28,6 +28,11 @@ scoreboard players set $spell.clone isc.tmp 0
 scoreboard players set $spell.multishot isc.tmp 0
 
 
+# Check if wand has modifiers
+scoreboard players set $wand_mod isc.tmp 0
+execute if data storage isc:tmp wand.mod run scoreboard players set $wand_mod isc.tmp 1
+
+
 # Blind: don't hit the caster for the first X ticks - $new_cast is 1 when this is the first projectile of a cast
 execute if score $new_cast isc.tmp matches 1 run scoreboard players set @s isc.blind 15
 execute unless score $new_cast isc.tmp matches 1 run scoreboard players set @s isc.blind 5
@@ -39,8 +44,9 @@ scoreboard players operation @s isc.clone = $clone_count isc.tmp
 data modify entity @s Rotation set from storage isc:tmp rotation
 
 
-# Go through the spells until the next projectile, applying modifiers and casting all instant spells along the way
+# Go through the spells until the next projectile, applying modifiers and casting all instant spells along the way (prepend apply wand modifiers)
 data remove storage isc:tmp wand.first
+execute if score $wand_mod isc.tmp matches 1 run data modify storage isc:tmp wand.spells prepend from storage isc:tmp wand.mod
 execute store result score $result isc.tmp run function isc:as_projectile/cast
 
 
@@ -64,6 +70,7 @@ scoreboard players operation @s isc.age /= #100 isc.math
 
 # Save stored spells - if this is executed by multicast, don't save
 execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
+execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @s data.isc.mod set from storage isc:tmp wand.mod
 
 
 # Apply modifiers that create new projectiles

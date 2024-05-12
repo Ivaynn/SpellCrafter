@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:65, spells:[ \"long_shot\", \"laser\" ]}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:65, cooldown:15, spells:[ \"long_shot\", \"laser\" ]}}}"
         },
         {
             "function": "minecraft:reference",

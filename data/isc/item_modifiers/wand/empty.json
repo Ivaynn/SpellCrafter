@@ -21,7 +21,7 @@
             },
             {
                 "text": " Empty",
-                "color": "gray",
+                "color": "dark_gray",
                 "italic": true
             }
         ]
@@ -29,5 +29,9 @@
     {
         "function": "minecraft:set_custom_data",
         "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:4, spells:[], slots:[]}}}"
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "isc:wand/lore/wand_mod"
     }
 ]

@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "isc:wands/fire"
+                    "value": "isc:wands/basic"
                 }
             ]
         }
@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:360, cooldown:23, spells:[ \"homing\", \"revealing_bolt\", \"speed_dec\", \"multishot\", \"long_shot\", \"ghost\", \"homing\", \"piercing\", \"fireball\" ]}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:115, cooldown:18, mod:\"multicast\", spells:[ \"magic_missile\", \"homing\", \"fireball\", \"magic_missile\" ]}}}"
         },
         {
             "function": "minecraft:reference",
