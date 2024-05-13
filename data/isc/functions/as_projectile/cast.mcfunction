@@ -35,6 +35,7 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"inverse_teleport"}} run function isc:spells/inverse_teleport/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"sheep"}} run function isc:spells/sheep/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_pufferfish"}} run function isc:spells/summon_pufferfish/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"firework_rocket"}} run function isc:spells/firework_rocket/cast
 
 
 # Unstackable modifiers
