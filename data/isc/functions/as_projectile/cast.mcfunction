@@ -22,15 +22,16 @@ execute if data storage isc:tmp {wand:{first:"arcane_reaper"}} run return run fu
 
 
 # Instant casts
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"explosion"}} run function isc:spells/explosion/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"teleport"}} run function isc:spells/teleport/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_lightning"}} run function isc:spells/summon_lightning/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"heal"}} run function isc:spells/heal/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_vex"}} run function isc:spells/summon_vex/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_bat"}} run function isc:spells/summon_bat/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_tnt"}} run function isc:spells/summon_tnt/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"counterspell"}} run function isc:spells/counterspell/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"swap_places"}} run function isc:spells/swap_places/cast 
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"explosion"}} run function isc:spells/explosion/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"teleport"}} run function isc:spells/teleport/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_lightning"}} run function isc:spells/summon_lightning/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"heal"}} run function isc:spells/heal/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_vex"}} run function isc:spells/summon_vex/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_bat"}} run function isc:spells/summon_bat/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"summon_tnt"}} run function isc:spells/summon_tnt/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"counterspell"}} run function isc:spells/counterspell/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"double_teleport"}} run function isc:spells/double_teleport/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"inverse_teleport"}} run function isc:spells/inverse_teleport/cast
 
 
 # Unstackable modifiers
@@ -48,14 +49,14 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 # Stackable modifiers
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"clone"}} run function isc:spells/clone/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"multishot"}} run function isc:spells/multishot/add
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"speed_inc"}} run function isc:spells/speed_inc/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"speed_dec"}} run function isc:spells/speed_dec/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"range_inc"}} run function isc:spells/range_inc/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"range_dec"}} run function isc:spells/range_dec/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"empower"}} run function isc:spells/empower/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"heavy_shot"}} run function isc:spells/heavy_shot/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"long_shot"}} run function isc:spells/long_shot/cast 
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"quick_shot"}} run function isc:spells/quick_shot/cast 
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"speed_inc"}} run function isc:spells/speed_inc/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"speed_dec"}} run function isc:spells/speed_dec/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"range_inc"}} run function isc:spells/range_inc/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"range_dec"}} run function isc:spells/range_dec/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"empower"}} run function isc:spells/empower/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"heavy_shot"}} run function isc:spells/heavy_shot/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"long_shot"}} run function isc:spells/long_shot/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"quick_shot"}} run function isc:spells/quick_shot/cast
 
 
 # Next spell
