@@ -36,3 +36,4 @@ execute if data storage isc:tmp {spell:"instant"          } run return run loot 
 execute if data storage isc:tmp {spell:"piercing"         } run return run loot insert ~ ~ ~ loot isc:spells/piercing
 execute if data storage isc:tmp {spell:"arcane_reaper"    } run return run loot insert ~ ~ ~ loot isc:spells/arcane_reaper
 execute if data storage isc:tmp {spell:"inverse_teleport" } run return run loot insert ~ ~ ~ loot isc:spells/inverse_teleport
+execute if data storage isc:tmp {spell:"sheep"            } run return run loot insert ~ ~ ~ loot isc:spells/sheep

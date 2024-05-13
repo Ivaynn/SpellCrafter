@@ -14,7 +14,7 @@ loot replace entity @s inventory.12 loot isc:spells/summon_lightning
 loot replace entity @s inventory.13 loot isc:spells/summon_vex
 loot replace entity @s inventory.14 loot isc:spells/summon_bat
 loot replace entity @s inventory.15 loot isc:spells/summon_slime
-item replace entity @s inventory.16 with minecraft:air
+loot replace entity @s inventory.16 loot isc:spells/sheep
 
 item replace entity @s inventory.19 with minecraft:air
 item replace entity @s inventory.20 with minecraft:air

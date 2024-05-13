@@ -8,4 +8,4 @@ execute if score @s isc.cooldown matches 1 run data modify entity @s Invulnerabl
 
 # Despawn timer
 scoreboard players remove @s isc.age 1
-execute unless score @s isc.age matches 1.. at @s run function isc:as_summon/remove
+execute unless score @s isc.age matches 1.. at @s run function isc:as_summon/timeout

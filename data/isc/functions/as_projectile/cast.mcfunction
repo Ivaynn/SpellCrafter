@@ -33,6 +33,7 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"counterspell"}} run function isc:spells/counterspell/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"double_teleport"}} run function isc:spells/double_teleport/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"inverse_teleport"}} run function isc:spells/inverse_teleport/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"sheep"}} run function isc:spells/sheep/cast
 
 
 # Unstackable modifiers

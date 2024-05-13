@@ -1,6 +1,8 @@
 {
     "values": [
         "minecraft:vex",
-        "minecraft:bat"
+        "minecraft:bat",
+        "minecraft:slime",
+        "minecraft:sheep"
     ]
 }
