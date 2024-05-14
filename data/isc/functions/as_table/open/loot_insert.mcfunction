@@ -44,3 +44,4 @@ execute if data storage isc:tmp {spell:"harmless"         } run return run loot 
 execute if data storage isc:tmp {spell:"hidden"           } run return run loot insert ~ ~ ~ loot isc:spells/hidden
 execute if data storage isc:tmp {spell:"rainbow"          } run return run loot insert ~ ~ ~ loot isc:spells/rainbow
 execute if data storage isc:tmp {spell:"zigzag"           } run return run loot insert ~ ~ ~ loot isc:spells/zigzag
+execute if data storage isc:tmp {spell:"chaotic"          } run return run loot insert ~ ~ ~ loot isc:spells/chaotic

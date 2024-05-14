@@ -1,4 +1,4 @@
-#> [tick] as projectile, at @s
+#> as projectile, at @s
 
 scoreboard players operation $dir isc.tmp = @s isc.dist
 scoreboard players operation $dir isc.tmp %= #40 isc.math
