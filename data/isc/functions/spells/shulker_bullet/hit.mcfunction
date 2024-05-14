@@ -12,7 +12,7 @@ execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=.
 
 # Glowing
 scoreboard players operation $id isc.tmp = @s isc.id
-effect give @e[distance=..10,type=!#isc:untargetable,predicate=!isc:match_id,tag=!isc.spectator] minecraft:levitation 10 0 false
+effect give @e[distance=..3,limit=1,sort=nearest,type=!#isc:untargetable,predicate=!isc:match_id,tag=!isc.spectator] minecraft:levitation 10 0 false
 
 
 # Effects
