@@ -56,7 +56,12 @@
                     "italic": false
                 },
                 {
-                    "text": "an instant burst of energy",
+                    "text": "an instant burst of energy,",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "ignoring its speed",
                     "color": "gray",
                     "italic": false
                 },

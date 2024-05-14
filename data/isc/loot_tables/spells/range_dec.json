@@ -51,7 +51,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Decreases the range of the next projectile",
+                    "text": "Decreases the range of",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "the next projectile",
                     "color": "gray",
                     "italic": false
                 },

@@ -51,7 +51,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Gives the next projectile a random direction",
+                    "text": "Points the next projectile in",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "a random direction",
                     "color": "gray",
                     "italic": false
                 },

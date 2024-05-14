@@ -51,7 +51,7 @@
                     "text": ""
                 },
                 {
-                    "text": "Makes the next projectile go",
+                    "text": "Causes the next projectile to phase",
                     "color": "gray",
                     "italic": false
                 },

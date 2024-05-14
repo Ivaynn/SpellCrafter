@@ -51,12 +51,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Makes the next projectile follow the",
+                    "text": "Makes the next projectile follow",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "caster's facing direction",
+                    "text": "the caster's facing direction",
                     "color": "gray",
                     "italic": false
                 },

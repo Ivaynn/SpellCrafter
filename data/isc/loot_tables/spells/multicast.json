@@ -51,12 +51,17 @@
                     "text": ""
                 },
                 {
-                    "text": "Casts all remaining spells simultaneously",
+                    "text": "Casts all the remaining spells",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "with reduced accuracy",
+                    "text": "simultaneously with reduced",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "accuracy",
                     "color": "gray",
                     "italic": false
                 },

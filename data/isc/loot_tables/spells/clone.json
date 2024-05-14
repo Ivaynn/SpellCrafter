@@ -51,12 +51,22 @@
                     "text": ""
                 },
                 {
-                    "text": "Clones the next projectile. Duplicates the",
+                    "text": "Clones the next projectile, including",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "mana cost of all clone modifiers after this",
+                    "text": "every spell after it. Duplicates the",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "mana cost of other clone modifiers",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "after this one",
                     "color": "gray",
                     "italic": false
                 },

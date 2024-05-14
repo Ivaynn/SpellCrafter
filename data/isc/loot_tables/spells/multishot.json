@@ -51,7 +51,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Shoots two copies of the next projectile",
+                    "text": "Creates two copies of the next",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "projectile, one on each side",
                     "color": "gray",
                     "italic": false
                 },

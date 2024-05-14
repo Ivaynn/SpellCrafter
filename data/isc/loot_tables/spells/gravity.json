@@ -51,12 +51,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Increases the weight of the",
+                    "text": "Makes the next projectile",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "next projectile",
+                    "text": "curve downwards",
                     "color": "gray",
                     "italic": false
                 },

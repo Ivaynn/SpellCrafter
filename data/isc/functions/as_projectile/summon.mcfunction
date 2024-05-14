@@ -80,6 +80,7 @@ execute if score $spell.clone isc.tmp matches 1.. at @s run function isc:spells/
 
 # Apply other tagged modifiers
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
+execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 
 
 # Multicast
