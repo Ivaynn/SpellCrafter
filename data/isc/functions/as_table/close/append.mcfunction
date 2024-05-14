@@ -17,22 +17,23 @@ data modify storage isc:tmp wand.spells append from storage isc:tmp spell.id
 data modify storage isc:tmp lore append from storage isc:tmp spell.lore
 
 
-# Get spell mana cost
-scoreboard players set $add isc.tmp 0
-execute store result score $add isc.tmp run data get storage isc:tmp spell.mana
-execute if data storage isc:tmp {spell:{id:"clone"}} run scoreboard players operation $add isc.tmp *= $clone_multiplier isc.tmp
-scoreboard players operation $mana isc.tmp += $add isc.tmp
-
-
-# Get spell cooldown
+# Spell cooldown
 scoreboard players set $add isc.tmp 0
 execute store result score $add isc.tmp run data get storage isc:tmp spell.cooldown
 scoreboard players operation $cooldown isc.tmp += $add isc.tmp
 
 
-# Mana cost overflow prevention
-execute unless score $mana isc.tmp matches 0.. run scoreboard players set $mana isc.tmp 2147483647
+# Mana: prevent overflow - if clone multiplier is too high, just set mana cost to the integer limit
+execute if score $clone_multiplier isc.tmp matches 1024.. run return run scoreboard players set $mana isc.tmp 2147483647
 
+# Mana: get spell cost (can be positive or negative)
+scoreboard players set $add isc.tmp 0
+execute store result score $add isc.tmp run data get storage isc:tmp spell.mana
+execute if score $add isc.tmp matches ..-1 run scoreboard players set $is_negative isc.tmp 1
 
-# Clone multiplier
+# Mana: apply clone multiplier (exponential)
+execute if data storage isc:tmp {spell:{id:"clone"}} run scoreboard players operation $add isc.tmp *= $clone_multiplier isc.tmp
 execute if data storage isc:tmp {spell:{id:"clone"}} run scoreboard players operation $clone_multiplier isc.tmp *= #2 isc.math 
+
+# Mana: update
+scoreboard players operation $mana isc.tmp += $add isc.tmp

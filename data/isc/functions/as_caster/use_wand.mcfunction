@@ -24,6 +24,10 @@ data modify storage isc:tmp wand set from entity @s SelectedItem.components."min
 execute store result score $mana isc.tmp run data get storage isc:tmp wand.mana
 
 
+# Prevent players cast above the mana limit
+execute if score $mana isc.tmp matches 2147483647 if score @s isc.mana matches 2147483647 run scoreboard players set @s isc.mana 0
+
+
 # Spend mana | cancel if player doesn't have enough mana
 execute if score @s isc.mana < $mana isc.tmp run scoreboard players set @s isc.cooldown 4
 execute if score @s isc.mana < $mana isc.tmp run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.5 2

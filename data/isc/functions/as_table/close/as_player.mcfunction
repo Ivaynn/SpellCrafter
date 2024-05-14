@@ -33,7 +33,9 @@ execute if data storage isc:tmp drop[0] run function isc:as_table/close/drop_ext
 execute unless data storage isc:tmp wand.spells[0] run return run function isc:as_table/close/empty
 
 
-# Save mana cost to object
+# Save mana cost & cooldown to wand object
+execute unless score $mana isc.tmp matches 0.. run scoreboard players set $mana isc.tmp 0
+execute unless score $cooldown isc.tmp matches 0.. run scoreboard players set $cooldown isc.tmp 0
 execute store result storage isc:tmp wand.mana int 1 run scoreboard players get $mana isc.tmp
 execute store result storage isc:tmp wand.cooldown int 1 run scoreboard players get $cooldown isc.tmp
 
