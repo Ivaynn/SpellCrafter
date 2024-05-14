@@ -7,4 +7,4 @@ effect give @e[distance=..5,type=!#isc:untargetable,predicate=!isc:match_id,tag=
 
 
 # Effects
-particle minecraft:glow ~ ~ ~ 0 0 0 0 0 force @a
+execute as @s[tag=!isc.spell.hidden] run particle minecraft:glow ~ ~ ~ 0 0 0 0 0 force @a
