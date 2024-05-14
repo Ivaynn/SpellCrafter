@@ -1,4 +1,5 @@
-#> executed every tick, if score #tick is 1
+#> executed every tick, if score #tick is 1..
+scoreboard players add #tick isc.options 1
 scoreboard players set #in_tick isc.tmp 1
 
 # Tag spectators

@@ -21,6 +21,7 @@ scoreboard players set @s isc.speed 0
 scoreboard players set @s isc.range 0
 scoreboard players set @s isc.damage 0
 scoreboard players set @s isc.weight 0
+scoreboard players set @s isc.dist 0
 
 
 # Reset modifier counters
@@ -64,8 +65,6 @@ execute unless score @s isc.damage matches 0.. run scoreboard players set @s isc
 # Age = range * 4 * modifier / 100 --> 4 steps = 1 block (projectiles move in steps of 0.25)
 scoreboard players operation @s isc.age = @s isc.range
 scoreboard players operation @s isc.age *= #4 isc.math
-scoreboard players operation @s isc.age *= range_mod isc.options
-scoreboard players operation @s isc.age /= #100 isc.math
 
 
 # Save stored spells - if this is executed by multicast, don't save

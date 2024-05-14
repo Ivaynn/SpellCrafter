@@ -50,6 +50,7 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"harmless"}} run function isc:spells/harmless/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"hidden"}} run function isc:spells/hidden/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"rainbow"}} run function isc:spells/rainbow/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"zigzag"}} run function isc:spells/zigzag/add
 
 
 # Stackable modifiers

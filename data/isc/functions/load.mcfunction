@@ -16,6 +16,7 @@ scoreboard objectives add isc.cooldown dummy
 scoreboard objectives add isc.clone dummy
 scoreboard objectives add isc.weight dummy
 scoreboard objectives add isc.inf_page dummy
+scoreboard objectives add isc.dist dummy
 
 scoreboard objectives add isc.math dummy
 scoreboard players set #2 isc.math 2
@@ -23,11 +24,11 @@ scoreboard players set #4 isc.math 4
 scoreboard players set #5 isc.math 5
 scoreboard players set #6 isc.math 6
 scoreboard players set #20 isc.math 20
+scoreboard players set #40 isc.math 40
 scoreboard players set #100 isc.math 100
 
 scoreboard objectives add isc.options dummy
 scoreboard players set #tick isc.options 1
-execute unless score range_mod isc.options matches 0..1000 run scoreboard players set range_mod isc.options 100
 execute unless score damage_caster isc.options matches 0..1 run scoreboard players set damage_caster isc.options 1
 execute unless score projectile_cap isc.options matches 0.. run scoreboard players set projectile_cap isc.options 500
 execute unless score warnings isc.options matches 0..1 run scoreboard players set warnings isc.options 1

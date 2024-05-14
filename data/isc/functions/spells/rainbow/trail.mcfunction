@@ -1,6 +1,6 @@
 #> as projectile, at @s
 
-scoreboard players operation $color isc.tmp = @s isc.age
+scoreboard players operation $color isc.tmp = @s isc.dist
 scoreboard players operation $color isc.tmp %= #6 isc.math
 
 # R(100) > Y(110) > G(010) > C(011) > B(001) > M(101) > R...

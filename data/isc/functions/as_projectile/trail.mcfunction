@@ -1,6 +1,10 @@
 #> [tick] as projectile, at @s
 
 
+# Trajectory modifiers
+execute as @s[tag=isc.spell.zigzag] run function isc:spells/zigzag/trail
+
+
 # Special cases (does more than particles)
 execute as @s[tag=isc.spell.revealing_bolt] run function isc:spells/revealing_bolt/trail
 

@@ -13,7 +13,7 @@ loot replace entity @s inventory.11 loot isc:spells/guide
 loot replace entity @s inventory.12 loot isc:spells/random_dir
 loot replace entity @s inventory.13 loot isc:spells/gravity
 loot replace entity @s inventory.14 loot isc:spells/anti_gravity
-item replace entity @s inventory.15 with minecraft:air
+loot replace entity @s inventory.15 loot isc:spells/zigzag
 loot replace entity @s inventory.16 loot isc:spells/rainbow
 
 item replace entity @s inventory.19 with minecraft:air

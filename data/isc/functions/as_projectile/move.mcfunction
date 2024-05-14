@@ -2,6 +2,10 @@
 #> recursive function (limited by score "$iter isc.tmp")
 
 
+# Distance travelled
+scoreboard players add @s isc.dist 1
+
+
 # Block collision
 execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] unless block ^.2 ^.2 ^ #isc:air run scoreboard players set @s isc.age 0
 execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] unless block ^.2 ^-.2 ^ #isc:air run scoreboard players set @s isc.age 0
