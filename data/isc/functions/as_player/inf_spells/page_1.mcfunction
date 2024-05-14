@@ -18,7 +18,7 @@ loot replace entity @s inventory.16 loot isc:wands/mod/ghost
 
 loot replace entity @s inventory.19 loot isc:wands/mod/harmless
 loot replace entity @s inventory.20 loot isc:wands/mod/hidden
-item replace entity @s inventory.21 with minecraft:air
+loot replace entity @s inventory.20 loot isc:wands/mod/rainbow
 item replace entity @s inventory.22 with minecraft:air
 item replace entity @s inventory.23 with minecraft:air
 item replace entity @s inventory.24 with minecraft:air

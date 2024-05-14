@@ -9,6 +9,10 @@ execute as @s[tag=isc.spell.revealing_bolt] run function isc:spells/revealing_bo
 execute as @s[tag=isc.spell.hidden] run return 0
 
 
+# Rainbow replaces particles
+execute as @s[tag=isc.spell.rainbow] run return run function isc:spells/rainbow/trail
+
+
 # Simple particle trails
 execute as @s[tag=isc.spell.magic_missile] run function isc:spells/magic_missile/trail
 execute as @s[tag=isc.spell.fireball] run function isc:spells/fireball/trail

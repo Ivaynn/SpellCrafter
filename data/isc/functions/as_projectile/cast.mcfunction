@@ -45,12 +45,11 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"random_dir"}} run function isc:spells/random_dir/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"multicast"}} run function isc:spells/multicast/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"ghost"}} run function isc:spells/ghost/add
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"gravity"}} run function isc:spells/gravity/add
-execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"anti_gravity"}} run function isc:spells/anti_gravity/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"instant"}} run function isc:spells/instant/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"piercing"}} run function isc:spells/piercing/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"harmless"}} run function isc:spells/harmless/add
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"hidden"}} run function isc:spells/hidden/add
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"rainbow"}} run function isc:spells/rainbow/add
 
 
 # Stackable modifiers
@@ -64,6 +63,8 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"heavy_shot"}} run function isc:spells/heavy_shot/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"long_shot"}} run function isc:spells/long_shot/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"quick_shot"}} run function isc:spells/quick_shot/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"gravity"}} run function isc:spells/gravity/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"anti_gravity"}} run function isc:spells/anti_gravity/cast
 
 
 # Next spell

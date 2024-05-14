@@ -7,4 +7,6 @@ effect give @e[distance=..5,type=!#isc:untargetable,predicate=!isc:match_id,tag=
 
 
 # Effects
-execute as @s[tag=!isc.spell.hidden] run particle minecraft:glow ~ ~ ~ 0 0 0 0 0 force @a
+execute as @s[tag=isc.spell.hidden] run return 0
+execute as @s[tag=isc.spell.rainbow] run return run function isc:spells/rainbow/trail
+particle minecraft:glow ~ ~ ~ 0 0 0 0 0 force @a
