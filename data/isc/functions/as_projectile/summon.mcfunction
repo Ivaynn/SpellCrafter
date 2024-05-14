@@ -27,6 +27,7 @@ scoreboard players set @s isc.dist 0
 # Reset modifier counters
 scoreboard players set $spell.clone isc.tmp 0
 scoreboard players set $spell.multishot isc.tmp 0
+scoreboard players set $spell.remote_cast isc.tmp 0
 
 
 # Check if wand has modifiers
@@ -75,6 +76,7 @@ execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @
 # Apply modifiers that create new projectiles
 execute if score $spell.multishot isc.tmp matches 1.. at @s run function isc:spells/multishot/cast
 execute if score $spell.clone isc.tmp matches 1.. at @s run function isc:spells/clone/cast
+execute if score $spell.remote_cast isc.tmp matches 1.. run function isc:spells/remote_cast/cast
 
 
 # Apply other tagged modifiers

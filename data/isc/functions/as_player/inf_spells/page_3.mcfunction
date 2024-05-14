@@ -17,7 +17,7 @@ loot replace entity @s inventory.15 loot isc:spells/zigzag
 loot replace entity @s inventory.16 loot isc:spells/chaotic
 
 loot replace entity @s inventory.19 loot isc:spells/rainbow
-item replace entity @s inventory.20 with minecraft:air
+loot replace entity @s inventory.20 loot isc:spells/remote_cast
 item replace entity @s inventory.21 with minecraft:air
 item replace entity @s inventory.22 with minecraft:air
 item replace entity @s inventory.23 with minecraft:air

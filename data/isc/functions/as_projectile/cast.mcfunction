@@ -67,6 +67,7 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"quick_shot"}} run function isc:spells/quick_shot/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"gravity"}} run function isc:spells/gravity/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"anti_gravity"}} run function isc:spells/anti_gravity/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"remote_cast"}} run function isc:spells/remote_cast/add
 
 
 # Next spell
