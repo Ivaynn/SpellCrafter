@@ -39,3 +39,4 @@ execute if data storage isc:tmp {spell:"inverse_teleport" } run return run loot 
 execute if data storage isc:tmp {spell:"sheep"            } run return run loot insert ~ ~ ~ loot isc:spells/sheep
 execute if data storage isc:tmp {spell:"summon_pufferfish"} run return run loot insert ~ ~ ~ loot isc:spells/summon_pufferfish
 execute if data storage isc:tmp {spell:"firework_rocket"  } run return run loot insert ~ ~ ~ loot isc:spells/firework_rocket
+execute if data storage isc:tmp {spell:"shulker_bullet"   } run return run loot insert ~ ~ ~ loot isc:spells/shulker_bullet

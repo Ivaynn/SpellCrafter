@@ -7,6 +7,7 @@ execute as @s[tag=isc.spell.magic_missile] run function isc:spells/magic_missile
 execute as @s[tag=isc.spell.fireball] run function isc:spells/fireball/hit
 execute as @s[tag=isc.spell.revealing_bolt] run function isc:spells/revealing_bolt/hit
 execute as @s[tag=isc.spell.arcane_reaper] run function isc:spells/arcane_reaper/hit
+execute as @s[tag=isc.spell.shulker_bullet] run function isc:spells/shulker_bullet/hit
 
 
 # Next spell...

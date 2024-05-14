@@ -19,6 +19,7 @@ execute if data storage isc:tmp {wand:{first:"fireball"}} run return run functio
 execute if data storage isc:tmp {wand:{first:"laser"}} run return run function isc:spells/laser/projectile
 execute if data storage isc:tmp {wand:{first:"revealing_bolt"}} run return run function isc:spells/revealing_bolt/projectile
 execute if data storage isc:tmp {wand:{first:"arcane_reaper"}} run return run function isc:spells/arcane_reaper/projectile
+execute if data storage isc:tmp {wand:{first:"shulker_bullet"}} run return run function isc:spells/shulker_bullet/projectile
 
 
 # Instant casts
