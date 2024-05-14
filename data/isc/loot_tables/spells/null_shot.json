@@ -16,19 +16,19 @@
             "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
-                "minecraft:custom_model_data": 7280045,
+                "minecraft:custom_model_data": 7280046,
                 "minecraft:enchantment_glint_override": false
             }
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"remote_cast\", mana:20, cooldown:0, lore:'{\"text\":\"⛶ Remote Cast\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:\"null_shot\", mana:5, cooldown:30, lore:'{\"text\":\"→ Null Shot\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Remote Cast"
+            "name": "Null Shot"
         },
         {
             "function": "minecraft:set_lore",
@@ -36,12 +36,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 20",
+                    "text": "◆ 5",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0",
+                            "text": "   ⌚ 1.5",
                             "color": "gray",
                             "italic": false
                         }
@@ -51,12 +51,17 @@
                     "text": ""
                 },
                 {
-                    "text": "Casts the next projectile a",
+                    "text": "An empty projectile. Its true",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "short distance away",
+                    "text": "potential can be unlocked with",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "the right combinations",
                     "color": "gray",
                     "italic": false
                 },
@@ -64,8 +69,8 @@
                     "text": ""
                 },
                 {
-                    "text": "⛶ Modifier",
-                    "color": "blue",
+                    "text": "→ Projectile",
+                    "color": "gold",
                     "italic": false
                 }
             ]
