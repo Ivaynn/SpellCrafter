@@ -14,6 +14,10 @@ data remove storage isc:tmp wand.spells[0]
 scoreboard players set $success isc.tmp 0
 
 
+# Random spells
+execute if score $spell isc.tmp matches 50 run function isc:spells/random_spell/cast
+
+
 # Projectiles (return)
 execute if score $spell isc.tmp matches 1 run return run function isc:spells/magic_missile/projectile
 execute if score $spell isc.tmp matches 2 run return run function isc:spells/fireball/projectile
