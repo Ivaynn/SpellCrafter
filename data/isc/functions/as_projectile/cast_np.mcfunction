@@ -1,6 +1,7 @@
 #> as projectile, on summon, at @s
-scoreboard players set $success isc.tmp 1
+# score "$spell isc.tmp" must contain the spell id
 
+scoreboard players set $success isc.tmp 1
 
 # Instant casts
 execute if score $spell isc.tmp matches 4 run return run function isc:spells/explosion/cast

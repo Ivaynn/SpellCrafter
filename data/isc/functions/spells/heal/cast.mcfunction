@@ -10,7 +10,3 @@ effect give @e[distance=..4,type=#minecraft:undead,type=!#isc:untargetable] mine
 # Effects
 particle minecraft:heart ^ ^ ^ 0.5 0.5 0.5 0.4 5 force @a
 playsound minecraft:entity.player.levelup player @a ~ ~ ~ 1 1.5
-
-
-# Success check
-return 1

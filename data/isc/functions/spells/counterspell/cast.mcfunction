@@ -10,7 +10,3 @@ execute as @e[distance=..15,type=minecraft:marker,tag=isc.projectile,predicate=!
 # Effects
 particle minecraft:large_smoke ~ ~ ~ 3 3 3 0.6 50 force @a
 playsound minecraft:entity.illusioner.prepare_mirror master @a ~ ~ ~ 2 1.2
-
-
-# Success check
-return 1

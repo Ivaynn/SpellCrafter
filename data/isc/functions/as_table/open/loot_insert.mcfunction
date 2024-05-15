@@ -1,5 +1,5 @@
 #> as any
-# storage "isc:tmp spell" must contain the spell id
+# score "$spell isc.tmp" must contain the spell id
 
 execute if score $spell isc.tmp matches 1 run return run loot insert ~ ~ ~ loot isc:spells/magic_missile
 execute if score $spell isc.tmp matches 2 run return run loot insert ~ ~ ~ loot isc:spells/fireball

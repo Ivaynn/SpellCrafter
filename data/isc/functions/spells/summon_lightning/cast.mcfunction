@@ -4,7 +4,3 @@
 
 # Summon entity
 execute align xyz run summon minecraft:lightning_bolt ~.5 ~ ~.5 {Tags:["isc.summon"]}
-
-
-# Success check
-return 1

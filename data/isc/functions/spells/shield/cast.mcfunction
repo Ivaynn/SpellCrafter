@@ -9,7 +9,3 @@ effect give @e[distance=..4,type=!#isc:untargetable] minecraft:resistance 3 255 
 # Effects
 particle minecraft:enchanted_hit ~ ~ ~ .5 .5 .5 1 25 force @a
 playsound minecraft:item.armor.equip_chain player @a ~ ~ ~ 1 0.8
-
-
-# Success check
-return 1

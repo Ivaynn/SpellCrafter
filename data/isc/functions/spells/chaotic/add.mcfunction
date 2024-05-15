@@ -7,5 +7,3 @@ scoreboard players operation @s isc.range += $random isc.tmp
 
 execute store result score $random isc.tmp run random value -5..10
 scoreboard players operation @s isc.speed += $random isc.tmp
-
-return 1

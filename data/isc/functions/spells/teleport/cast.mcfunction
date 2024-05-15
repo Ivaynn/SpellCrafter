@@ -10,7 +10,3 @@ execute as @e[limit=1,type=#isc:caster,tag=!isc.spectator,predicate=isc:match_id
 # Effects
 particle minecraft:reverse_portal ~ ~ ~ 0.3 0.3 0.3 0.5 50 force @a
 playsound minecraft:entity.player.teleport player @a ~ ~ ~ 1 1
-
-
-# Success check
-return 1

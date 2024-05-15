@@ -1,4 +1,3 @@
 #> as projectile, on summon, at @s
 
 tag @s add isc.spell.instant
-return 1
