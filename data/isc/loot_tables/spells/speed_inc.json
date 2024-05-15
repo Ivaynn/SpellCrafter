@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"speed_inc\", mana:20, cooldown:0, lore:'{\"text\":\"⛶ Speed ↑\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:16, mana:20, cooldown:0, lore:'{\"text\":\"⛶ Speed ↑\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

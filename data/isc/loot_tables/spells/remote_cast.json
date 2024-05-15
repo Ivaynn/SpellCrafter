@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"remote_cast\", mana:20, cooldown:0, lore:'{\"text\":\"⛶ Remote Cast\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:45, mana:20, cooldown:0, lore:'{\"text\":\"⛶ Remote Cast\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

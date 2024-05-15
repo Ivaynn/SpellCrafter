@@ -32,7 +32,7 @@ execute if score $success isc.tmp matches 0 run return 0
 
 # Convert spell data into items
 scoreboard players set $iter isc.tmp 0
-data modify storage isc:tmp items set value []
+data remove storage isc:tmp items
 execute store success score $has_slots isc.tmp run data get storage isc:tmp wand.slots[0]
 function isc:as_table/open/for_spell
 data remove block ~ ~ ~ Items[{components:{"minecraft:custom_data":{isc:{invalid:1b}}}}]

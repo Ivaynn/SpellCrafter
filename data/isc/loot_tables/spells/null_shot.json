@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"null_shot\", mana:5, cooldown:4, lore:'{\"text\":\"→ Null Shot\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:46, mana:5, cooldown:4, lore:'{\"text\":\"→ Null Shot\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

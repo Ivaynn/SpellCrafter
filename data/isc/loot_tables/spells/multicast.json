@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"multicast\", mana:100, cooldown:0, lore:'{\"text\":\"⛶ Multicast\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:10, mana:100, cooldown:0, lore:'{\"text\":\"⛶ Multicast\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

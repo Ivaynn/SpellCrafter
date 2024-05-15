@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"quick_shot\", mana:35, cooldown:0, lore:'{\"text\":\"⛶ Quick Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:19, mana:35, cooldown:0, lore:'{\"text\":\"⛶ Quick Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"arcane_reaper\", mana:50, cooldown:20, lore:'{\"text\":\"→ Arcane Reaper\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:31, mana:50, cooldown:20, lore:'{\"text\":\"→ Arcane Reaper\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

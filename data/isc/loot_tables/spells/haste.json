@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"haste\", mana:0, cooldown:-10, lore:'{\"text\":\"✦ Haste\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:48, mana:0, cooldown:-10, lore:'{\"text\":\"✦ Haste\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

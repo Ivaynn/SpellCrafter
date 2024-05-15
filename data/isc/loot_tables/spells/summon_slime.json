@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"summon_slime\", mana:75, cooldown:15, lore:'{\"text\":\"✦ Summon Slime\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:35, mana:75, cooldown:15, lore:'{\"text\":\"✦ Summon Slime\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

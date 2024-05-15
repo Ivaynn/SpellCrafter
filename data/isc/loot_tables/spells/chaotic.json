@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"chaotic\", mana:15, cooldown:0, lore:'{\"text\":\"⛶ Chaotic\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:44, mana:15, cooldown:0, lore:'{\"text\":\"⛶ Chaotic\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:\"firework_rocket\", mana:100, cooldown:10, lore:'{\"text\":\"✦ Firework Rocket\",\"color\":\"red\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:38, mana:100, cooldown:10, lore:'{\"text\":\"✦ Firework Rocket\",\"color\":\"red\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
