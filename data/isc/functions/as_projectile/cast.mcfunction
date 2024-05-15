@@ -40,6 +40,7 @@ execute if score $success isc.tmp matches 0 store success score $success isc.tmp
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"firework_rocket"}} run function isc:spells/firework_rocket/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"refresh"}} run function isc:spells/refresh/cast
 execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"haste"}} run function isc:spells/haste/cast
+execute if score $success isc.tmp matches 0 store success score $success isc.tmp if data storage isc:tmp {wand:{first:"shield"}} run function isc:spells/shield/cast
 
 
 # Unstackable modifiers

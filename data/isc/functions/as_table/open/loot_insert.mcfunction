@@ -49,3 +49,4 @@ execute if data storage isc:tmp {spell:"remote_cast"      } run return run loot 
 execute if data storage isc:tmp {spell:"null_shot"        } run return run loot insert ~ ~ ~ loot isc:spells/null_shot
 execute if data storage isc:tmp {spell:"refresh"          } run return run loot insert ~ ~ ~ loot isc:spells/refresh
 execute if data storage isc:tmp {spell:"haste"            } run return run loot insert ~ ~ ~ loot isc:spells/haste
+execute if data storage isc:tmp {spell:"shield"           } run return run loot insert ~ ~ ~ loot isc:spells/shield
