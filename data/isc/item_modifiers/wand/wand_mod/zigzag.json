@@ -21,6 +21,6 @@
     },
     {
         "function": "minecraft:set_custom_data",
-        "tag": "{isc:{wand:{mod:\"zigzag\"}}}"
+        "tag": "{isc:{wand:{mod:43}}}"
     }
 ]

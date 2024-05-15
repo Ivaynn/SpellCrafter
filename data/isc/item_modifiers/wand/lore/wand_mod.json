@@ -10,7 +10,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"multicast\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:10}}}"
                             }
                         }
                     }
@@ -29,7 +29,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"instant\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:32}}}"
                             }
                         }
                     }
@@ -48,7 +48,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"random_dir\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:12}}}"
                             }
                         }
                     }
@@ -67,7 +67,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"homing\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:9}}}"
                             }
                         }
                     }
@@ -86,7 +86,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"piercing\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:33}}}"
                             }
                         }
                     }
@@ -105,7 +105,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"ghost\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:26}}}"
                             }
                         }
                     }
@@ -124,7 +124,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"guide\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:8}}}"
                             }
                         }
                     }
@@ -143,7 +143,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"harmless\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:40}}}"
                             }
                         }
                     }
@@ -162,7 +162,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"hidden\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:41}}}"
                             }
                         }
                     }
@@ -181,7 +181,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"rainbow\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:42}}}"
                             }
                         }
                     }
@@ -200,7 +200,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"zigzag\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:43}}}"
                             }
                         }
                     }
@@ -219,7 +219,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:\"chaotic\"}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:44}}}"
                             }
                         }
                     }

@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:115, cooldown:18, mod:\"multicast\", spells:[ \"magic_missile\", \"homing\", \"fireball\", \"magic_missile\" ]}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:115, cooldown:18, mod:10, spells:[ 1, 9, 2, 1 ]}}}"
         },
         {
             "function": "minecraft:reference",

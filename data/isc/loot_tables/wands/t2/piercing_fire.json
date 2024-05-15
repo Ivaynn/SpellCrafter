@@ -13,7 +13,7 @@
     "functions": [
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:360, cooldown:23, spells:[ \"homing\", \"revealing_bolt\", \"speed_dec\", \"multishot\", \"long_shot\", \"ghost\", \"homing\", \"piercing\", \"fireball\" ]}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:360, cooldown:23, spells:[ 9, 30, 15, 11, 18, 26, 9, 33, 2 ]}}}"
         },
         {
             "function": "minecraft:reference",

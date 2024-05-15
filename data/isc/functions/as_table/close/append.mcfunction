@@ -32,8 +32,10 @@ execute store result score $add isc.tmp run data get storage isc:tmp spell.mana
 execute if score $add isc.tmp matches ..-1 run scoreboard players set $is_negative isc.tmp 1
 
 # Mana: apply clone multiplier (exponential)
-execute if data storage isc:tmp {spell:{id:"clone"}} run scoreboard players operation $add isc.tmp *= $clone_multiplier isc.tmp
-execute if data storage isc:tmp {spell:{id:"clone"}} run scoreboard players operation $clone_multiplier isc.tmp *= #2 isc.math 
+scoreboard players set $spell isc.tmp 0
+execute store result score $spell isc.tmp run data get storage isc:tmp spell.id
+execute if score $spell isc.tmp matches 6 run scoreboard players operation $add isc.tmp *= $clone_multiplier isc.tmp
+execute if score $spell isc.tmp matches 6 run scoreboard players operation $clone_multiplier isc.tmp *= #2 isc.math 
 
 # Mana: update
 scoreboard players operation $mana isc.tmp += $add isc.tmp
