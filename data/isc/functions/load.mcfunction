@@ -26,8 +26,9 @@ scoreboard players set #4 isc.math 4
 scoreboard players set #5 isc.math 5
 scoreboard players set #6 isc.math 6
 scoreboard players set #10 isc.math 10
+scoreboard players set #16 isc.math 16
 scoreboard players set #20 isc.math 20
-scoreboard players set #40 isc.math 40
+scoreboard players set #32 isc.math 32
 scoreboard players set #100 isc.math 100
 
 scoreboard objectives add isc.options dummy

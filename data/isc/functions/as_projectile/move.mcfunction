@@ -24,7 +24,7 @@ execute if score @s isc.age matches 1.. run function isc:as_projectile/trail
 
 
 # Move --> 0.25 = 1/4 blocks --> 4 iterations = 1 block
-execute if score @s isc.age matches 1.. run tp @s ^ ^ ^0.25
+execute if score @s isc.age matches 1.. at @s run tp @s ^ ^ ^0.25
 
 
 # Next iteration

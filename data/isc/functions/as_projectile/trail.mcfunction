@@ -4,6 +4,7 @@
 # Trajectory modifiers
 execute as @s[tag=isc.spell.zigzag] run function isc:spells/zigzag/trail
 execute as @s[tag=isc.spell.chaotic] run function isc:spells/chaotic/trail
+execute as @s[tag=isc.spell.spiral] run function isc:spells/spiral/trail
 
 
 # Special cases (does more than particles)

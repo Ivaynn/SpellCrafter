@@ -226,5 +226,24 @@
                 }
             }
         ]
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "isc:wand/wand_mod/spiral",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:51}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
     }
 ]
