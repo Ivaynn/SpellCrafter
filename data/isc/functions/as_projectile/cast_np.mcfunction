@@ -24,18 +24,18 @@ execute if score $spell isc.tmp matches 49 run return run function isc:spells/sh
 
 
 # Unstackable modifiers
-execute if score $spell isc.tmp matches 8 run return run function isc:spells/guide/add
-execute if score $spell isc.tmp matches 9 run return run function isc:spells/homing/add
-execute if score $spell isc.tmp matches 10 run return run function isc:spells/multicast/add
-execute if score $spell isc.tmp matches 12 run return run function isc:spells/random_dir/add
-execute if score $spell isc.tmp matches 26 run return run function isc:spells/ghost/add
-execute if score $spell isc.tmp matches 32 run return run function isc:spells/instant/add
-execute if score $spell isc.tmp matches 33 run return run function isc:spells/piercing/add
-execute if score $spell isc.tmp matches 40 run return run function isc:spells/harmless/add
-execute if score $spell isc.tmp matches 41 run return run function isc:spells/hidden/add
-execute if score $spell isc.tmp matches 42 run return run function isc:spells/rainbow/add
-execute if score $spell isc.tmp matches 43 run return run function isc:spells/zigzag/add
-execute if score $spell isc.tmp matches 44 run return run function isc:spells/chaotic/add
+execute if score $spell isc.tmp matches 8 run return run tag @s add isc.spell.guide
+execute if score $spell isc.tmp matches 9 run return run tag @s add isc.spell.homing
+execute if score $spell isc.tmp matches 10 run return run tag @s add isc.spell.multicast
+execute if score $spell isc.tmp matches 12 run return run tag @s add isc.spell.random_dir
+execute if score $spell isc.tmp matches 26 run return run tag @s add isc.spell.ghost
+execute if score $spell isc.tmp matches 32 run return run tag @s add isc.spell.instant
+execute if score $spell isc.tmp matches 33 run return run tag @s add isc.spell.piercing
+execute if score $spell isc.tmp matches 40 run return run tag @s add isc.spell.harmless
+execute if score $spell isc.tmp matches 41 run return run tag @s add isc.spell.hidden
+execute if score $spell isc.tmp matches 42 run return run tag @s add isc.spell.rainbow
+execute if score $spell isc.tmp matches 43 run return run tag @s add isc.spell.zigzag
+execute if score $spell isc.tmp matches 44 run return run tag @s add isc.spell.chaotic
 
 
 # Stackable modifiers
