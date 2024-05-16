@@ -5,10 +5,6 @@
 execute if score @s isc.inf_page matches 100.. run function isc:as_player/inf_spells/init
 
 
-# All players must have a caster id
-execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
-
-
 # Cooldown
 execute if score @s isc.cooldown matches 1.. run scoreboard players remove @s isc.cooldown 1
 

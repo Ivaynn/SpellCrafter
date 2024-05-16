@@ -25,6 +25,7 @@ scoreboard objectives remove isc.options
 scoreboard objectives remove isc.weight
 scoreboard objectives remove isc.inf_page
 scoreboard objectives remove isc.dist
+scoreboard objectives remove isc.toggle
 
 kill @e[tag=isc.table]
 kill @e[tag=isc.projectile]

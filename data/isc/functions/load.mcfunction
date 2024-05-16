@@ -18,6 +18,8 @@ scoreboard objectives add isc.weight dummy
 scoreboard objectives add isc.inf_page dummy
 scoreboard objectives add isc.dist dummy
 
+scoreboard objectives add isc.toggle trigger
+
 scoreboard objectives add isc.math dummy
 scoreboard players set #2 isc.math 2
 scoreboard players set #4 isc.math 4
