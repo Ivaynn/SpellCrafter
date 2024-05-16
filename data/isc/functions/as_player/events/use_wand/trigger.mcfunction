@@ -11,4 +11,4 @@ execute if score @s isc.cooldown matches 1.. run return 0
 
 
 # Use wand
-function isc:as_caster/use_wand
+function isc:as_caster/player/use_wand
