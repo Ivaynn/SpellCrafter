@@ -22,6 +22,7 @@ scoreboard players operation $speed isc.tmp = @s isc.speed
 scoreboard players operation $damage isc.tmp = @s isc.damage
 scoreboard players operation $range isc.tmp = @s isc.range
 scoreboard players operation $blind isc.tmp = @s isc.blind
+scoreboard players operation $dist isc.tmp = @s isc.dist
 
 
 # Summon copies

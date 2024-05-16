@@ -11,10 +11,11 @@ scoreboard players operation @s isc.speed = $speed isc.tmp
 scoreboard players operation @s isc.damage = $damage isc.tmp
 scoreboard players operation @s isc.range = $range isc.tmp
 scoreboard players operation @s isc.blind = $blind isc.tmp
+scoreboard players operation @s isc.dist = $dist isc.tmp
 
 
-# If the projectile has random direction, apply it again
-execute if entity @s[tag=isc.spell.random_dir] run return run function isc:spells/random_dir/cast
+# Re-apply direction modifiers
+execute as @s[tag=isc.spell.random_dir] run return run function isc:spells/random_dir/cast
 execute if score $spell.multicast isc.tmp matches 1 run return run function isc:spells/multicast/offset
 
 
