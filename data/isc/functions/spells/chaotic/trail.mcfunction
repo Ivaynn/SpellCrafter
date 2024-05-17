@@ -1,9 +1,9 @@
 #> as projectile, at @s
 
-scoreboard players operation $dir isc.tmp = @s isc.dist
-scoreboard players operation $dir isc.tmp %= #20 isc.math
+scoreboard players operation $rem isc.tmp = @s isc.dist
+scoreboard players operation $rem isc.tmp %= #20 isc.math
 
-execute if score $dir isc.tmp matches 1.. run return 0
+execute if score $rem isc.tmp matches 1.. run return 0
 
 
 # Generate random rotation offset

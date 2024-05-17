@@ -5,7 +5,7 @@ loot replace entity @s inventory.2 loot isc:spells/multishot
 loot replace entity @s inventory.3 loot isc:spells/ghost
 loot replace entity @s inventory.4 loot isc:spells/piercing
 loot replace entity @s inventory.5 loot isc:spells/instant
-item replace entity @s inventory.6 with minecraft:air
+loot replace entity @s inventory.6 loot isc:spells/scaling
 item replace entity @s inventory.7 with minecraft:air
 
 loot replace entity @s inventory.10 loot isc:spells/remote_cast
