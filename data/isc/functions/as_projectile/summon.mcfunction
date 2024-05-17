@@ -88,6 +88,7 @@ execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir
 execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 execute as @s[tag=isc.spell.chaotic] at @s run function isc:spells/chaotic/cast
 execute as @s[tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
+execute as @s[tag=isc.spell.anchored] run scoreboard players set @s isc.speed 1
 
 
 # Multicast
