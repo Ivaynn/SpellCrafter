@@ -19,6 +19,7 @@ execute if score $spell isc.tmp matches 36 run return run function isc:spells/sh
 execute if score $spell isc.tmp matches 37 run return run function isc:spells/summon_pufferfish/cast
 execute if score $spell isc.tmp matches 38 run return run function isc:spells/firework_rocket/cast
 execute if score $spell isc.tmp matches 49 run return run function isc:spells/shield/cast
+execute if score $spell isc.tmp matches 56 run return run function isc:spells/summon_fangs/cast
 
 
 # Special instant casts
