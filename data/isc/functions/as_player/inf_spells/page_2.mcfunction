@@ -16,7 +16,7 @@ loot replace entity @s inventory.14 loot isc:spells/range_dec
 loot replace entity @s inventory.15 loot isc:spells/range_inc
 loot replace entity @s inventory.16 loot isc:spells/long_shot
 
-item replace entity @s inventory.19 with minecraft:air
+loot replace entity @s inventory.19 loot isc:spells/drill
 item replace entity @s inventory.20 with minecraft:air
 item replace entity @s inventory.21 with minecraft:air
 loot replace entity @s inventory.22 loot isc:spells/null_shot

@@ -10,6 +10,7 @@ execute as @s[tag=isc.spell.arcane_reaper] run function isc:spells/arcane_reaper
 execute as @s[tag=isc.spell.shulker_bullet] run function isc:spells/shulker_bullet/hit
 execute as @s[tag=isc.spell.poison_dart] run function isc:spells/poison_dart/hit
 execute as @s[tag=isc.spell.freezing_bolt] run function isc:spells/freezing_bolt/hit
+execute as @s[tag=isc.spell.drill] run function isc:spells/drill/hit
 
 
 # Next spell...

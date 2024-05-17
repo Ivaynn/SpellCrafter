@@ -28,6 +28,7 @@ execute if score $spell isc.tmp matches 39 run return run function isc:spells/sh
 execute if score $spell isc.tmp matches 46 run return run function isc:spells/null_shot/projectile
 execute if score $spell isc.tmp matches 53 run return run function isc:spells/poison_dart/projectile
 execute if score $spell isc.tmp matches 57 run return run function isc:spells/freezing_bolt/projectile
+execute if score $spell isc.tmp matches 58 run return run function isc:spells/drill/projectile
 
 
 # Non-projectiles (no return)

@@ -10,6 +10,7 @@ execute as @s[tag=isc.spell.spiral] run function isc:spells/spiral/trail
 # Special cases (does more than particles)
 execute as @s[tag=isc.spell.revealing_bolt] run function isc:spells/revealing_bolt/trail
 execute as @s[tag=isc.spell.freezing_bolt] run function isc:spells/freezing_bolt/trail
+execute as @s[tag=isc.spell.drill] run function isc:spells/drill/trail
 
 
 # Hidden skips all functions that are just particles
