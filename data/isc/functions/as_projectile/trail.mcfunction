@@ -25,3 +25,4 @@ execute as @s[tag=isc.spell.fireball] run function isc:spells/fireball/trail
 execute as @s[tag=isc.spell.laser] run function isc:spells/laser/trail
 execute as @s[tag=isc.spell.arcane_reaper] run function isc:spells/arcane_reaper/trail
 execute as @s[tag=isc.spell.shulker_bullet] run function isc:spells/shulker_bullet/trail
+execute as @s[tag=isc.spell.poison_dart] run function isc:spells/poison_dart/trail

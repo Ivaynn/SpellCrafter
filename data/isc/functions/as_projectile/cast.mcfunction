@@ -26,6 +26,7 @@ execute if score $spell isc.tmp matches 30 run return run function isc:spells/re
 execute if score $spell isc.tmp matches 31 run return run function isc:spells/arcane_reaper/projectile
 execute if score $spell isc.tmp matches 39 run return run function isc:spells/shulker_bullet/projectile
 execute if score $spell isc.tmp matches 46 run return run function isc:spells/null_shot/projectile
+execute if score $spell isc.tmp matches 53 run return run function isc:spells/poison_dart/projectile
 
 
 # Non-projectiles (no return)

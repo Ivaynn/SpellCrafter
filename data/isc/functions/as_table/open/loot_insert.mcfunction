@@ -53,3 +53,4 @@ execute if score $spell isc.tmp matches 49 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 50 run return run loot insert ~ ~ ~ loot isc:spells/random_spell
 execute if score $spell isc.tmp matches 51 run return run loot insert ~ ~ ~ loot isc:spells/spiral
 execute if score $spell isc.tmp matches 52 run return run loot insert ~ ~ ~ loot isc:spells/shuffle
+execute if score $spell isc.tmp matches 53 run return run loot insert ~ ~ ~ loot isc:spells/poison_dart
