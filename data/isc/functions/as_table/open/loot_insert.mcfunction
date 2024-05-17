@@ -59,3 +59,4 @@ execute if score $spell isc.tmp matches 55 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 56 run return run loot insert ~ ~ ~ loot isc:spells/summon_fangs
 execute if score $spell isc.tmp matches 57 run return run loot insert ~ ~ ~ loot isc:spells/freezing_bolt
 execute if score $spell isc.tmp matches 58 run return run loot insert ~ ~ ~ loot isc:spells/drill
+execute if score $spell isc.tmp matches 59 run return run loot insert ~ ~ ~ loot isc:spells/anchored
