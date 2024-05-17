@@ -12,4 +12,4 @@ scoreboard players add @s isc.damage 2
 
 
 # Effects
-playsound minecraft:entity.splash_potion.throw player @a ~ ~ ~ 1 1.25
+playsound minecraft:entity.splash_potion.throw player @a ^ ^ ^3 2 1.25

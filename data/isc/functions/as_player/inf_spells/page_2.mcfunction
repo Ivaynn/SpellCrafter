@@ -11,7 +11,7 @@ loot replace entity @s inventory.7 loot isc:spells/heavy_shot
 loot replace entity @s inventory.10 loot isc:spells/arcane_reaper
 loot replace entity @s inventory.11 loot isc:spells/shulker_bullet
 loot replace entity @s inventory.12 loot isc:spells/poison_dart
-item replace entity @s inventory.13 with minecraft:air
+loot replace entity @s inventory.13 loot isc:spells/freezing_bolt
 loot replace entity @s inventory.14 loot isc:spells/range_dec
 loot replace entity @s inventory.15 loot isc:spells/range_inc
 loot replace entity @s inventory.16 loot isc:spells/long_shot
