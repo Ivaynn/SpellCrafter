@@ -3,7 +3,7 @@
 loot replace entity @s inventory.1 loot isc:spells/random_spell
 loot replace entity @s inventory.2 loot isc:spells/refresh
 loot replace entity @s inventory.3 loot isc:spells/haste
-item replace entity @s inventory.4 with minecraft:air
+loot replace entity @s inventory.4 loot isc:spells/shuffle
 item replace entity @s inventory.5 with minecraft:air
 item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air

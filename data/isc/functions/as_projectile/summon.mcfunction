@@ -32,7 +32,7 @@ scoreboard players set $spell.remote_cast isc.tmp 0
 
 # Check if wand has modifiers
 scoreboard players set $wand_mod isc.tmp 0
-execute if data storage isc:tmp wand.mod run scoreboard players set $wand_mod isc.tmp 1
+execute store result score $wand_mod isc.tmp run data get storage isc:tmp wand.mod
 
 
 # Blind: don't hit the caster for the first X ticks - $new_cast is 1 when this is the first projectile of a cast
@@ -48,8 +48,12 @@ data modify entity @s Rotation set from storage isc:tmp rotation
 
 # Go through the spells until the next projectile, applying modifiers and casting all instant spells along the way (prepend apply wand modifiers)
 data remove storage isc:tmp wand.first
-execute if score $wand_mod isc.tmp matches 1 run data modify storage isc:tmp wand.spells prepend from storage isc:tmp wand.mod
+execute if score $wand_mod isc.tmp matches 1.. run data modify storage isc:tmp wand.spells prepend from storage isc:tmp wand.mod
 execute store result score $result isc.tmp run function isc:as_projectile/cast
+
+
+# Special case: shuffle - this mod only applies once
+execute if score $wand_mod isc.tmp matches 52 run scoreboard players set $wand_mod isc.tmp 0
 
 
 # If $result is -1, the chain ends without a projectile - stop here
@@ -70,7 +74,7 @@ scoreboard players operation @s isc.age *= #4 isc.math
 
 # Save stored spells - if this is executed by multicast, don't save
 execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
-execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @s data.isc.mod set from storage isc:tmp wand.mod
+execute unless score $spell.multicast isc.tmp matches 1 if score $wand_mod isc.tmp matches 1.. run data modify entity @s data.isc.mod set from storage isc:tmp wand.mod
 
 
 # Apply modifiers that create new projectiles

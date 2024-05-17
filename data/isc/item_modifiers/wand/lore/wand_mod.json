@@ -245,5 +245,24 @@
                 }
             }
         ]
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "isc:wand/wand_mod/shuffle",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:52}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
     }
 ]

@@ -21,6 +21,7 @@ execute if score $spell isc.tmp matches 38 run return run function isc:spells/fi
 execute if score $spell isc.tmp matches 47 run return run function isc:spells/refresh/cast
 execute if score $spell isc.tmp matches 48 run return run function isc:spells/haste/cast
 execute if score $spell isc.tmp matches 49 run return run function isc:spells/shield/cast
+execute if score $spell isc.tmp matches 52 run return run function isc:spells/shuffle/cast
 
 
 # Unstackable modifiers
