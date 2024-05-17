@@ -51,12 +51,17 @@
                     "text": ""
                 },
                 {
-                    "text": "Stops the next projectile",
+                    "text": "Stops the next projectile from",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "from moving",
+                    "text": "moving. Its lifetime depends on",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "its range and speed",
                     "color": "gray",
                     "italic": false
                 },
