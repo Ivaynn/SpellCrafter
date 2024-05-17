@@ -15,6 +15,7 @@ scoreboard players operation @s isc.dist = $dist isc.tmp
 
 
 # Re-apply direction modifiers
+execute as @s[tag=isc.spell.aim_assist] run return run function isc:spells/aim_assist/cast
 execute as @s[tag=isc.spell.random_dir] run return run function isc:spells/random_dir/cast
 execute if score $spell.multicast isc.tmp matches 1 run return run function isc:spells/multicast/offset
 

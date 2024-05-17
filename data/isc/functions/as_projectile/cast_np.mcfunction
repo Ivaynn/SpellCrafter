@@ -38,6 +38,7 @@ execute if score $spell isc.tmp matches 42 run return run tag @s add isc.spell.r
 execute if score $spell isc.tmp matches 43 run return run tag @s add isc.spell.zigzag
 execute if score $spell isc.tmp matches 44 run return run tag @s add isc.spell.chaotic
 execute if score $spell isc.tmp matches 51 run return run tag @s add isc.spell.spiral
+execute if score $spell isc.tmp matches 54 run return run tag @s add isc.spell.aim_assist
 
 
 # Stackable modifiers

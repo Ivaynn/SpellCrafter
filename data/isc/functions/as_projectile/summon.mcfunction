@@ -87,6 +87,7 @@ execute if score $spell.remote_cast isc.tmp matches 1.. run function isc:spells/
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
 execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 execute as @s[tag=isc.spell.chaotic] at @s run function isc:spells/chaotic/cast
+execute as @s[tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
 
 
 # Multicast
