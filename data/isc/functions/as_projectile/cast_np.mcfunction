@@ -18,16 +18,19 @@ execute if score $spell isc.tmp matches 35 run return run function isc:spells/su
 execute if score $spell isc.tmp matches 36 run return run function isc:spells/sheep/cast
 execute if score $spell isc.tmp matches 37 run return run function isc:spells/summon_pufferfish/cast
 execute if score $spell isc.tmp matches 38 run return run function isc:spells/firework_rocket/cast
-execute if score $spell isc.tmp matches 47 run return run function isc:spells/refresh/cast
-execute if score $spell isc.tmp matches 48 run return run function isc:spells/haste/cast
 execute if score $spell isc.tmp matches 49 run return run function isc:spells/shield/cast
+
+
+# Special instant casts
+execute if score $spell isc.tmp matches 10 run return run tag @s add isc.spell.multicast
+execute if score $spell isc.tmp matches 47 run return 1
+execute if score $spell isc.tmp matches 48 run return 1
 execute if score $spell isc.tmp matches 52 run return run function isc:spells/shuffle/cast
 
 
 # Unstackable modifiers
 execute if score $spell isc.tmp matches 8 run return run tag @s add isc.spell.guide
 execute if score $spell isc.tmp matches 9 run return run tag @s add isc.spell.homing
-execute if score $spell isc.tmp matches 10 run return run tag @s add isc.spell.multicast
 execute if score $spell isc.tmp matches 12 run return run tag @s add isc.spell.random_dir
 execute if score $spell isc.tmp matches 26 run return run tag @s add isc.spell.ghost
 execute if score $spell isc.tmp matches 32 run return run tag @s add isc.spell.instant
