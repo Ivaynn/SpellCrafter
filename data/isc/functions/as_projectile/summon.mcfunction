@@ -35,9 +35,9 @@ scoreboard players set $wand_mod isc.tmp 0
 execute store result score $wand_mod isc.tmp run data get storage isc:tmp wand.mod
 
 
-# Blind: don't hit the caster for the first X ticks - $new_cast is 1 when this is the first projectile of a cast
-execute if score $new_cast isc.tmp matches 1 run scoreboard players set @s isc.blind 15
-execute unless score $new_cast isc.tmp matches 1 run scoreboard players set @s isc.blind 5
+# Blind: don't hit the caster for the first X steps - $new_cast is 1 when this is the first projectile of a cast
+execute if score $new_cast isc.tmp matches 1 run scoreboard players set @s isc.blind 10
+execute unless score $new_cast isc.tmp matches 1 run scoreboard players set @s isc.blind 0
 
 
 # Get stored rotation and id, defined before executing this
