@@ -2,6 +2,7 @@
 
 
 # Cooldown
+execute unless score @s isc.cooldown matches 1.. run scoreboard players set @s isc.cooldown 0
 execute if score @s isc.cooldown matches 1.. run scoreboard players remove @s isc.cooldown 1
 
 

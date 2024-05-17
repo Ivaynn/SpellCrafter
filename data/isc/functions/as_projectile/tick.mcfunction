@@ -3,7 +3,7 @@
 
 # Check projectile cap
 scoreboard players add $projectile_count isc.tmp 1
-execute if score $projectile_count isc.tmp >= projectile_cap isc.options run return run kill @s
+execute if score $projectile_count isc.tmp > projectile_cap isc.options run return run kill @s
 execute as @s[tag=isc.kill] run return run kill @s
 
 

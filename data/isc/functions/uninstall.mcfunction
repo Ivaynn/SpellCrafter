@@ -8,6 +8,7 @@ data remove storage isc:tmp copy
 data remove storage isc:tmp spell
 data remove storage isc:tmp rotation
 data remove storage isc:tmp time
+data remove storage isc:tmp tmp
 
 scoreboard objectives remove isc.id
 scoreboard objectives remove isc.tmp

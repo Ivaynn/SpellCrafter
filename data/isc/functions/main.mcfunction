@@ -17,6 +17,6 @@ execute as @e[type=minecraft:iron_golem,tag=isc.target_dummy] at @s run function
 
 
 # Projectile cap
-execute if score $projectile_count isc.tmp >= projectile_cap isc.options run function isc:clear_projectiles
+execute if score $projectile_count isc.tmp > projectile_cap isc.options run function isc:clear_projectiles
 
 scoreboard players set #in_tick isc.tmp 0

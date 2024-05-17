@@ -9,7 +9,7 @@
 
 
 # Projectile cap
-execute if score $projectile_count isc.tmp >= projectile_cap isc.options run return run kill @s
+execute if score $projectile_count isc.tmp > projectile_cap isc.options run return run kill @s
 
 
 # Make this a projectile

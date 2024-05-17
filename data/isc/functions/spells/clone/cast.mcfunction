@@ -8,8 +8,8 @@ execute if score $projectile_count isc.tmp > projectile_cap isc.options run retu
 
 # Check clone cap
 scoreboard players operation @s isc.clone += $spell.clone isc.tmp
-execute if score @s isc.clone > clone_limit isc.options if score warnings isc.options matches 1 run tellraw @a ["",{"text":"> Warning! ","color":"gold"},{"text":"Clone limit reached! ","color":"gray"},{"score":{"name":"@s","objective":"isc.clone"},"color":"gray"}]
-execute if score @s isc.clone > clone_limit isc.options run return 0
+execute if score @s isc.clone matches 11.. if score warnings isc.options matches 1 run tellraw @a ["",{"text":"> Warning! ","color":"gold"},{"text":"Clone limit reached! ","color":"gray"},{"score":{"name":"@s","objective":"isc.clone"},"color":"gray"}]
+execute if score @s isc.clone matches 11.. run return 0
 
 
 # Multicast
