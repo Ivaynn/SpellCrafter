@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:paper"
+        },
+        "title": {
+            "text": "✦ Instant  "
+        },
+        "description": [
+            {
+                "text": "Spells that cast instantly",
+                "color": "gray"
+            }
+        ],
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "isc:spells/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

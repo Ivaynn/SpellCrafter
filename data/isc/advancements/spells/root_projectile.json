@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:paper"
+        },
+        "title": {
+            "text": "→ Projectile   "
+        },
+        "description": [
+            {
+                "text": "Spells that shoot projectiles",
+                "color": "gray"
+            }
+        ],
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "isc:spells/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

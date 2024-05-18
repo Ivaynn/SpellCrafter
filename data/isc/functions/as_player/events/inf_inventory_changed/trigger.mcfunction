@@ -1,5 +1,5 @@
 #> advancement reward
-advancement revoke @s only isc:inf_inventory_changed
+advancement revoke @s only isc:events/inf_inventory_changed
 
 
 # Schedule inventory update for this tick (advancement rewards trigger out of normal tick, which causes issues)

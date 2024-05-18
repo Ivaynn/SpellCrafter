@@ -1,0 +1,89 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:enchanted_book",
+            "components": {
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_model_data": 7280031
+            }
+        },
+        "title": {
+            "text": "Arcane Reaper                 "
+        },
+        "description": [
+            {
+                "text": "\n◆ 50",
+                "color": "aqua"
+            },
+            {
+                "text": "   ⌚ 1.0\n\n",
+                "color": "gray"
+            },
+            {
+                "text": "Devours nearby projectiles, absorbing their power\n",
+                "color": "gray"
+            },
+            {
+                "text": "\nDamage: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "1 ❤",
+                        "color": "red"
+                    }
+                ]
+            },
+            {
+                "text": "\nRange: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "5",
+                        "color": "red"
+                    },
+                    {
+                        "text": " blocks",
+                        "color": "dark_gray"
+                    }
+                ]
+            },
+            {
+                "text": "\nSpeed: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "5",
+                        "color": "red"
+                    },
+                    {
+                        "text": " blocks/sec",
+                        "color": "dark_gray"
+                    }
+                ]
+            },
+            {
+                "text": "\n"
+            }
+        ],
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "parent": "isc:spells/revealing_bolt",
+    "criteria": {
+        "spell": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:enchanted_book",
+                        "predicates": {
+                            "minecraft:custom_data": "{isc:{spell:{id:31}}}"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

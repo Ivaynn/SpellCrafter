@@ -1,5 +1,5 @@
 #> advancement reward
-advancement revoke @s only isc:use_wand
+advancement revoke @s only isc:events/use_wand
 
 
 # If player is not a caster, stop here

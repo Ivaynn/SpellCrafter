@@ -1,5 +1,5 @@
 #> advancement reward
-advancement revoke @s only isc:open_barrel
+advancement revoke @s only isc:events/open_barrel
 
 
 # Raycast search
