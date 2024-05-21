@@ -72,7 +72,7 @@
     },
     "parent": "isc:spells/arcane_reaper",
     "criteria": {
-        "spell": {
+        "book": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "player": [
@@ -98,6 +98,39 @@
                     }
                 ]
             }
+        },
+        "wand": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "isc.inf_page": {
+                                    "min": 1
+                                }
+                            }
+                        }
+                    }
+                ],
+                "items": [
+                    {
+                        "items": "minecraft:stick",
+                        "predicates": {
+                            "minecraft:custom_data": "{isc:{wand:{mod:39}}}"
+                        }
+                    }
+                ]
+            }
         }
-    }
+    },
+    "requirements": [
+        [
+            "book",
+            "wand"
+        ]
+    ]
 }
