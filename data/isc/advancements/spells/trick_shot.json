@@ -4,15 +4,15 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280061
+                "minecraft:custom_model_data": 7280062
             }
         },
         "title": {
-            "text": "Return                        "
+            "text": "Trick Shot                    "
         },
         "description": [
             {
-                "text": "\n◆ 15",
+                "text": "\n◆ 10",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Causes the next projectile to slow down, then accelerate back towards its initial position\n",
+                "text": "Causes the next projectile to shoot backwards\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/piercing",
+    "parent": "isc:spells/return",
     "criteria": {
         "book": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:61}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:62}}}"
                         }
                     }
                 ]
@@ -79,7 +79,7 @@
                     {
                         "items": "minecraft:stick",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{wand:{mod:61}}}"
+                            "minecraft:custom_data": "{isc:{wand:{mod:62}}}"
                         }
                     }
                 ]

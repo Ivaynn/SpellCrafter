@@ -16,19 +16,19 @@
             "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
-                "minecraft:custom_model_data": 7280061,
+                "minecraft:custom_model_data": 7280062,
                 "minecraft:enchantment_glint_override": false
             }
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:61, mana:15, cooldown:0, lore:'{\"text\":\"⛶ Return\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:62, mana:10, cooldown:0, lore:'{\"text\":\"⛶ Trick Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Return"
+            "name": "Trick Shot"
         },
         {
             "function": "minecraft:set_lore",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 15",
+                    "text": "◆ 10",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
@@ -56,12 +56,7 @@
                     "italic": false
                 },
                 {
-                    "text": "slow down, then accelerate",
-                    "color": "gray",
-                    "italic": false
-                },
-                {
-                    "text": "back towards its initial position",
+                    "text": "shoot backwards",
                     "color": "gray",
                     "italic": false
                 },
