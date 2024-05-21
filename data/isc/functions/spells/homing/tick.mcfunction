@@ -10,7 +10,11 @@ execute store result score $homing isc.tmp run tp @s ~ ~-1 ~ facing entity @e[li
 execute if score $homing isc.tmp matches 0 run return 0
 
 
-# Save rotation while facing the target & reset rotation
+# Negative speed
+execute if score @s isc.speed matches ..-1 at @s run tp @s ~ ~ ~ facing ^ ^ ^-1
+
+
+# Save rotation
 execute store result score $target_r0 isc.tmp run data get entity @s Rotation[0] 1
 execute store result score $target_r1 isc.tmp run data get entity @s Rotation[1] 1
 

@@ -9,6 +9,7 @@ tag @s add isc.spell.piercing
 # Base stats
 scoreboard players add @s isc.range 5
 scoreboard players add @s isc.damage 8
+scoreboard players set @s isc.speed 1000
 
 
 # Effects

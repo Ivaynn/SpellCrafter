@@ -17,11 +17,14 @@ scoreboard objectives add isc.clone dummy
 scoreboard objectives add isc.weight dummy
 scoreboard objectives add isc.inf_page dummy
 scoreboard objectives add isc.dist dummy
+scoreboard objectives add isc.tick dummy
 
 scoreboard objectives add isc.toggle trigger
 
 scoreboard objectives add isc.math dummy
+scoreboard players set #n1 isc.math -1
 scoreboard players set #2 isc.math 2
+scoreboard players set #3 isc.math 3
 scoreboard players set #4 isc.math 4
 scoreboard players set #5 isc.math 5
 scoreboard players set #6 isc.math 6
