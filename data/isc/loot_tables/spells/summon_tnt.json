@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:24, mana:200, cooldown:60, lore:'{\"text\":\"✦ Summon TNT\",\"color\":\"red\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:24, mana:200, cooldown:60, lore:'{\"text\":\"✦ Summon TNT\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -60,7 +60,7 @@
                 },
                 {
                     "text": "✦ Instant",
-                    "color": "red",
+                    "color": "light_purple",
                     "italic": false
                 }
             ]

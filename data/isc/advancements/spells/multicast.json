@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_instant",
+    "parent": "isc:spells/root_special",
     "criteria": {
         "book": {
             "trigger": "minecraft:inventory_changed",

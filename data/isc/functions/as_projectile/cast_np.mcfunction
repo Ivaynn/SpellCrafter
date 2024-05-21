@@ -22,7 +22,7 @@ execute if score $spell isc.tmp matches 49 run return run function isc:spells/sh
 execute if score $spell isc.tmp matches 56 run return run function isc:spells/summon_fangs/cast
 
 
-# Special instant casts
+# Special
 execute if score $spell isc.tmp matches 10 run return run tag @s add isc.spell.multicast
 execute if score $spell isc.tmp matches 47 run return 1
 execute if score $spell isc.tmp matches 48 run return 1

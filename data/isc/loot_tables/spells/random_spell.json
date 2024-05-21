@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:50, mana:20, cooldown:5, lore:'{\"text\":\"⚂ Random Spell\",\"color\":\"white\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:50, mana:20, cooldown:5, lore:'{\"text\":\"⚝ Random Spell\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -59,8 +59,8 @@
                     "text": ""
                 },
                 {
-                    "text": "⚂ Random",
-                    "color": "white",
+                    "text": "⚝ Special",
+                    "color": "dark_aqua",
                     "italic": false
                 }
             ]

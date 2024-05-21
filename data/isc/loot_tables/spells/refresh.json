@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:47, mana:-50, cooldown:0, lore:'{\"text\":\"✦ Refresh\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:47, mana:-50, cooldown:0, lore:'{\"text\":\"⚝ Refresh\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -59,7 +59,7 @@
                     "text": ""
                 },
                 {
-                    "text": "✦ Instant",
+                    "text": "⚝ Special",
                     "color": "dark_aqua",
                     "italic": false
                 }

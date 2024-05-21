@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:4, mana:75, cooldown:5, lore:'{\"text\":\"✦ Explosion\",\"color\":\"red\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:4, mana:75, cooldown:5, lore:'{\"text\":\"✦ Explosion\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -74,7 +74,7 @@
                 },
                 {
                     "text": "✦ Instant",
-                    "color": "red",
+                    "color": "light_purple",
                     "italic": false
                 }
             ]
