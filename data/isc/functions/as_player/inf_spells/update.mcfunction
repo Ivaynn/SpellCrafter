@@ -6,17 +6,17 @@ clear @s minecraft:arrow[minecraft:custom_data={isc:{gui:1}}]
 clear @s minecraft:arrow[minecraft:custom_data={isc:{gui:2}}]
 clear @s minecraft:spectral_arrow[minecraft:custom_data={isc:{gui:3}}]
 clear @s minecraft:spectral_arrow[minecraft:custom_data={isc:{gui:4}}]
-clear @s minecraft:red_dye[minecraft:custom_data={isc:{gui:5}}]
-clear @s minecraft:blaze_powder[minecraft:custom_data={isc:{gui:6}}]
+clear @s minecraft:bucket[minecraft:custom_data={isc:{gui:5}}]
+clear @s minecraft:bucket[minecraft:custom_data={isc:{gui:6}}]
 
 
 # Place buttons
-item replace entity @s inventory.0 with minecraft:arrow[minecraft:item_name="Previous",minecraft:custom_data={isc:{gui:1}}]
-item replace entity @s inventory.8 with minecraft:arrow[minecraft:item_name="Next",minecraft:custom_data={isc:{gui:2}}]
-item replace entity @s inventory.9 with minecraft:spectral_arrow[minecraft:item_name="First",minecraft:custom_data={isc:{gui:3}}]
-item replace entity @s inventory.17 with minecraft:spectral_arrow[minecraft:item_name="Last",minecraft:custom_data={isc:{gui:4}}]
-item replace entity @s inventory.18 with minecraft:red_dye[minecraft:item_name="Exit",minecraft:custom_data={isc:{gui:5}}]
-item replace entity @s inventory.26 with minecraft:blaze_powder[minecraft:item_name="Trash",minecraft:custom_data={isc:{gui:6}}]
+item replace entity @s inventory.0 with minecraft:arrow[minecraft:item_name='{"text":"Previous Page"}',minecraft:custom_data={isc:{gui:1}}]
+item replace entity @s inventory.8 with minecraft:arrow[minecraft:item_name='{"text":"Next Page"}',minecraft:custom_data={isc:{gui:2}}]
+item replace entity @s inventory.9 with minecraft:spectral_arrow[minecraft:item_name='{"text":"First Page"}',minecraft:custom_data={isc:{gui:3}}]
+item replace entity @s inventory.17 with minecraft:spectral_arrow[minecraft:item_name='{"text":"Last Page"}',minecraft:custom_data={isc:{gui:4}}]
+item replace entity @s inventory.18 with minecraft:bucket[minecraft:item_name='{"text":"Trash"}',minecraft:custom_data={isc:{gui:5}}]
+item replace entity @s inventory.26 with minecraft:bucket[minecraft:item_name='{"text":"Trash"}',minecraft:custom_data={isc:{gui:6}}]
 
 
 # Pages

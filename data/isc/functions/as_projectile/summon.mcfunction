@@ -77,19 +77,22 @@ execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @
 execute unless score $spell.multicast isc.tmp matches 1 if score $wand_mod isc.tmp matches 1.. run data modify entity @s data.isc.mod set from storage isc:tmp wand.mod
 
 
+# Apply tagged modifiers (before creating new projectiles)
+execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
+execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
+execute as @s[tag=!isc.spell.random_dir,tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
+execute as @s[tag=isc.spell.anchored] run scoreboard players set @s isc.speed 1
+execute as @s[tag=isc.spell.trick_shot] at @s run function isc:spells/trick_shot/cast
+
+
 # Apply modifiers that create new projectiles
 execute if score $spell.multishot isc.tmp matches 1.. at @s run function isc:spells/multishot/cast
 execute if score $spell.clone isc.tmp matches 1.. at @s run function isc:spells/clone/cast
 execute if score $spell.remote_cast isc.tmp matches 1.. run function isc:spells/remote_cast/cast
 
 
-# Apply other tagged modifiers
-execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
-execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
-execute as @s[tag=isc.spell.chaotic] at @s run function isc:spells/chaotic/cast
-execute as @s[tag=!isc.spell.random_dir,tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
-execute as @s[tag=isc.spell.anchored] run scoreboard players set @s isc.speed 1
-execute as @s[tag=isc.spell.trick_shot] at @s run tp @s ~ ~ ~ facing ^ ^ ^-1
+# Apply tagged modifiers (after creating new projectiles)
+execute as @s[tag=isc.spell.chaotic] run function isc:spells/chaotic/cast
 
 
 # Multicast

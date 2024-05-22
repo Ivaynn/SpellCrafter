@@ -16,12 +16,13 @@ scoreboard players operation @s isc.clone = $clone_count isc.tmp
 scoreboard players operation @s isc.dist = $dist isc.tmp
 
 
-# Re-apply direction modifiers
-execute as @s[tag=isc.spell.aim_assist] run return run function isc:spells/aim_assist/cast
+# Re-apply certain modifiers
+execute as @s[tag=isc.spell.chaotic] run function isc:spells/chaotic/cast
 execute as @s[tag=isc.spell.random_dir] run return run function isc:spells/random_dir/cast
+execute as @s[tag=isc.spell.aim_assist] run return run function isc:spells/aim_assist/cast
 execute if score $spell.multicast isc.tmp matches 1 run return run function isc:spells/multicast/offset
 
 
-# Rotate
+# Rotation
 scoreboard players add $r0 isc.tmp 20
 execute store result entity @s Rotation[0] float 1 run scoreboard players get $r0 isc.tmp

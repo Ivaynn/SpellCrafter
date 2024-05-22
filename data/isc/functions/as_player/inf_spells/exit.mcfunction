@@ -1,6 +1,11 @@
 #> as player
 
-clear @s minecraft:red_dye[minecraft:custom_data={isc:{gui:5}}]
+clear @s minecraft:arrow[minecraft:custom_data={isc:{gui:1}}]
+clear @s minecraft:arrow[minecraft:custom_data={isc:{gui:2}}]
+clear @s minecraft:spectral_arrow[minecraft:custom_data={isc:{gui:3}}]
+clear @s minecraft:spectral_arrow[minecraft:custom_data={isc:{gui:4}}]
+clear @s minecraft:bucket[minecraft:custom_data={isc:{gui:5}}]
+clear @s minecraft:bucket[minecraft:custom_data={isc:{gui:6}}]
 
 item replace entity @s inventory.0 with minecraft:air
 item replace entity @s inventory.1 with minecraft:air
