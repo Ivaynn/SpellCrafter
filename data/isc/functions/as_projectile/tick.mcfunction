@@ -19,6 +19,7 @@ execute unless score $homing isc.tmp matches 1 as @s[tag=!isc.spell.instant] unl
 execute as @s[tag=isc.spell.arcane_reaper] run function isc:spells/arcane_reaper/tick
 execute as @s[tag=isc.spell.scaling] run function isc:spells/scaling/tick
 execute as @s[tag=isc.spell.return] run function isc:spells/return/tick
+execute as @s[tag=isc.spell.boomerang] run function isc:spells/boomerang/tick
 
 
 # Move projectile --> projectile speed = number of move iterations per tick (max 1000)

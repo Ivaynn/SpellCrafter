@@ -63,3 +63,4 @@ execute if score $spell isc.tmp matches 59 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 60 run return run loot insert ~ ~ ~ loot isc:spells/black_hole
 execute if score $spell isc.tmp matches 61 run return run loot insert ~ ~ ~ loot isc:spells/return
 execute if score $spell isc.tmp matches 62 run return run loot insert ~ ~ ~ loot isc:spells/trick_shot
+execute if score $spell isc.tmp matches 63 run return run loot insert ~ ~ ~ loot isc:spells/boomerang

@@ -11,6 +11,7 @@ execute as @s[tag=isc.spell.shulker_bullet] run function isc:spells/shulker_bull
 execute as @s[tag=isc.spell.poison_dart] run function isc:spells/poison_dart/hit
 execute as @s[tag=isc.spell.freezing_bolt] run function isc:spells/freezing_bolt/hit
 execute as @s[tag=isc.spell.drill] run function isc:spells/drill/hit
+execute as @s[tag=isc.spell.boomerang] run function isc:spells/boomerang/hit
 
 
 # Next spell...

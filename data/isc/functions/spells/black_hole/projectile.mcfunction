@@ -18,4 +18,4 @@ scoreboard players set @s isc.damage 0
 
 
 # Effects
-playsound minecraft:block.beacon.activate master @a ~ ~ ~ 2 0.8
+playsound minecraft:block.beacon.activate player @a ~ ~ ~ 2 0.8
