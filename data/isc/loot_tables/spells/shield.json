@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:49, mana:10, cooldown:10, lore:'{\"text\":\"✦ Shield\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:49, mana:75, cooldown:100, lore:'{\"text\":\"✦ Shield\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,12 +36,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 10",
+                    "text": "◆ 75",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.5",
+                            "text": "   ⌚ 5.0",
                             "color": "gray",
                             "italic": false
                         }
