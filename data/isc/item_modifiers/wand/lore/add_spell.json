@@ -9,12 +9,6 @@
                 "storage": "isc:tmp",
                 "interpret": true
             }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:reference",
-                "name": "isc:in_tick"
-            }
         ]
     }
 ]

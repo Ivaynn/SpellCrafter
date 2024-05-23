@@ -32,12 +32,6 @@
             {
                 "text": ""
             }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:reference",
-                "name": "isc:in_tick"
-            }
         ]
     }
 ]

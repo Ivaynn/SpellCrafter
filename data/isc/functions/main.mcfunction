@@ -1,6 +1,5 @@
 #> executed every tick, if score #tick is 1..
 scoreboard players add #tick isc.options 1
-scoreboard players set #in_tick isc.tmp 1
 
 
 # Count projectiles check threshold and avoid lag
@@ -18,5 +17,3 @@ execute as @e[type=minecraft:iron_golem,tag=isc.target_dummy] at @s run function
 
 # Projectile cap
 execute if score $projectile_count isc.tmp > projectile_cap isc.options run function isc:clear_projectiles
-
-scoreboard players set #in_tick isc.tmp 0
