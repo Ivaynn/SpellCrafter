@@ -4,7 +4,7 @@
 
 # Damage nearby entities
 scoreboard players operation $id isc.tmp = @s isc.id
-execute positioned ~ ~-1 ~ as @e[distance=..4,type=!#isc:untargetable] run damage @s 6 minecraft:player_explosion by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute positioned ~ ~-1 ~ as @e[distance=..4,type=!#isc:untargetable] run damage @s 6 minecraft:player_explosion by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,tag=!isc.untargetable,predicate=isc:match_id]
 
 
 # Effects

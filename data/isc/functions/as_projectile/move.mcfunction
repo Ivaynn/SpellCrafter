@@ -18,8 +18,8 @@ execute unless score @s isc.age matches 1.. if score @s isc.speed matches ..-1 r
 
 # Entity collision
 execute as @s[tag=isc.spell.piercing] if score @s isc.damage matches ..0 unless score @s isc.blind matches 1.. run scoreboard players set @s isc.blind 1
-execute if score @s isc.age matches 1.. if score @s isc.blind matches 1.. at @s positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#isc:untargetable,tag=!isc.spectator,predicate=!isc:match_id] run function isc:as_projectile/hit_entity
-execute if score @s isc.age matches 1.. unless score @s isc.blind matches 1.. at @s positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#isc:untargetable,tag=!isc.spectator] run function isc:as_projectile/hit_entity
+execute if score @s isc.age matches 1.. if score @s isc.blind matches 1.. at @s positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,tag=!isc.untargetable,predicate=!isc:match_id] run function isc:as_projectile/hit_entity
+execute if score @s isc.age matches 1.. unless score @s isc.blind matches 1.. at @s positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#isc:untargetable,tag=!isc.spectator,tag=!isc.untargetable] run function isc:as_projectile/hit_entity
 execute if score @s isc.blind matches 1.. run scoreboard players remove @s isc.blind 1
 
 

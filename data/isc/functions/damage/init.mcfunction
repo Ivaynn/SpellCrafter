@@ -3,6 +3,10 @@
 # score "$damage isc.tmp" must have the damage to deal (up to 100)
 
 
+# Check if this entity is untargetable
+execute as @s[tag=isc.untargetable] run return 0
+
+
 # Check if this entity is the caster
 execute unless score damage_caster isc.options matches 1 if score @s isc.id = $id isc.tmp run return 0
 

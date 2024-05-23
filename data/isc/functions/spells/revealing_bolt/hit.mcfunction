@@ -12,8 +12,8 @@ execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=.
 
 # Glowing
 scoreboard players operation $id isc.tmp = @s isc.id
-execute unless score damage_caster isc.options matches 1 run effect give @e[distance=..10,type=!#isc:untargetable,predicate=!isc:match_id,tag=!isc.spectator] minecraft:glowing 15 0 false
-execute if score damage_caster isc.options matches 1 run effect give @e[distance=..10,type=!#isc:untargetable,tag=!isc.spectator] minecraft:glowing 15 0 false
+execute unless score damage_caster isc.options matches 1 run effect give @e[distance=..10,type=!#isc:untargetable,predicate=!isc:match_id,tag=!isc.spectator,tag=!isc.untargetable] minecraft:glowing 15 0 false
+execute if score damage_caster isc.options matches 1 run effect give @e[distance=..10,type=!#isc:untargetable,tag=!isc.spectator,tag=!isc.untargetable] minecraft:glowing 15 0 false
 
 
 # Effects
