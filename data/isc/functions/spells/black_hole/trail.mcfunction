@@ -7,3 +7,4 @@ execute if score @s isc.dist matches 151..250 run function isc:spells/black_hole
 execute if score @s isc.dist matches 251..375 run function isc:spells/black_hole/stage5
 execute if score @s isc.dist matches 376..525 run function isc:spells/black_hole/stage6
 execute if score @s isc.dist matches 526.. run function isc:spells/black_hole/stage7
+effect give @e[distance=..3,type=!#isc:untargetable,tag=!isc.spectator] minecraft:slow_falling 1 0 true

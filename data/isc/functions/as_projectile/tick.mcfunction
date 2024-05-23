@@ -1,5 +1,6 @@
 #> [tick] as projectile, at @s
 scoreboard players add @s isc.tick 1
+scoreboard players operation $id isc.tmp = @s isc.id
 
 
 # Check projectile cap
