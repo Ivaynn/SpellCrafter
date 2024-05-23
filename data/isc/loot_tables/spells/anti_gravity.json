@@ -22,13 +22,13 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:29, mana:15, cooldown:0, lore:'{\"text\":\"⛶ Anti-Gravity\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:29, mana:15, cooldown:0, lore:'{\"text\":\"⛶ Curve Up\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Anti-Gravity"
+            "name": "Curve Up"
         },
         {
             "function": "minecraft:set_lore",

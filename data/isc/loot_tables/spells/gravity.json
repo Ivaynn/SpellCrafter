@@ -22,13 +22,13 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:28, mana:15, cooldown:0, lore:'{\"text\":\"⛶ Gravity\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:28, mana:15, cooldown:0, lore:'{\"text\":\"⛶ Curve Down\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Gravity"
+            "name": "Curve Down"
         },
         {
             "function": "minecraft:set_lore",
