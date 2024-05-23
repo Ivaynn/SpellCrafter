@@ -6,8 +6,8 @@ clear @s minecraft:arrow[minecraft:custom_data={isc:{gui:1}}]
 clear @s minecraft:arrow[minecraft:custom_data={isc:{gui:2}}]
 clear @s minecraft:spectral_arrow[minecraft:custom_data={isc:{gui:3}}]
 clear @s minecraft:spectral_arrow[minecraft:custom_data={isc:{gui:4}}]
-clear @s minecraft:bucket[minecraft:custom_data={isc:{gui:5}}]
-clear @s minecraft:bucket[minecraft:custom_data={isc:{gui:6}}]
+clear @s minecraft:lava_bucket[minecraft:custom_data={isc:{gui:5}}]
+clear @s minecraft:lava_bucket[minecraft:custom_data={isc:{gui:6}}]
 
 
 # Place buttons
@@ -15,8 +15,8 @@ item replace entity @s inventory.0 with minecraft:arrow[minecraft:item_name='{"t
 item replace entity @s inventory.8 with minecraft:arrow[minecraft:item_name='{"text":"Next Page"}',minecraft:custom_data={isc:{gui:2}}]
 item replace entity @s inventory.9 with minecraft:spectral_arrow[minecraft:item_name='{"text":"First Page"}',minecraft:custom_data={isc:{gui:3}}]
 item replace entity @s inventory.17 with minecraft:spectral_arrow[minecraft:item_name='{"text":"Last Page"}',minecraft:custom_data={isc:{gui:4}}]
-item replace entity @s inventory.18 with minecraft:bucket[minecraft:item_name='{"text":"Trash"}',minecraft:custom_data={isc:{gui:5}}]
-item replace entity @s inventory.26 with minecraft:bucket[minecraft:item_name='{"text":"Trash"}',minecraft:custom_data={isc:{gui:6}}]
+item replace entity @s inventory.18 with minecraft:lava_bucket[minecraft:item_name='{"text":"Trash"}',minecraft:custom_data={isc:{gui:5}}]
+item replace entity @s inventory.26 with minecraft:lava_bucket[minecraft:item_name='{"text":"Trash"}',minecraft:custom_data={isc:{gui:6}}]
 
 
 # Pages

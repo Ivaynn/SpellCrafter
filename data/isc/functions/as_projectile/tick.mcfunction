@@ -33,4 +33,5 @@ execute at @s run function isc:as_projectile/move
 
 
 # If age < 1, this projectile timed out or hit something
+scoreboard players set @s[tag=isc.spell.harmless] isc.damage 0
 execute as @s[tag=!isc.kill] unless score @s isc.age matches 1.. at @s run function isc:as_projectile/hit
