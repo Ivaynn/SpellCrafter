@@ -1,7 +1,7 @@
 #> as projectile, on summon, at @s
 
 
-execute store result score $spell isc.tmp run random value 1..52
+execute store result score $spell isc.tmp run random value 1..63
 
 
 # Exceptions

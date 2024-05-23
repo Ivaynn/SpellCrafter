@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:17, mana:35, cooldown:0, lore:'{\"text\":\"⛶ Heavy Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:17, mana:150, cooldown:10, lore:'{\"text\":\"⛶ Heavy Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,12 +36,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 35",
+                    "text": "◆ 150",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0",
+                            "text": "   ⌚ 0.5",
                             "color": "gray",
                             "italic": false
                         }

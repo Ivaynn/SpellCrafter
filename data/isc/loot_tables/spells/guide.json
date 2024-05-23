@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:8, mana:40, cooldown:0, lore:'{\"text\":\"⛶ Guide\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:8, mana:80, cooldown:0, lore:'{\"text\":\"⛶ Guide\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 40",
+                    "text": "◆ 80",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
