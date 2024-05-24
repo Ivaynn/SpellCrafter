@@ -7,6 +7,7 @@ scoreboard objectives add isc.id dummy
 scoreboard objectives add isc.tmp dummy
 scoreboard objectives add isc.mana dummy
 scoreboard objectives add isc.max_mana dummy
+scoreboard objectives add isc.mana_reg dummy
 scoreboard objectives add isc.age dummy
 scoreboard objectives add isc.speed dummy
 scoreboard objectives add isc.range dummy

@@ -14,6 +14,7 @@ scoreboard objectives remove isc.id
 scoreboard objectives remove isc.tmp
 scoreboard objectives remove isc.mana
 scoreboard objectives remove isc.max_mana
+scoreboard objectives remove isc.mana_reg
 scoreboard objectives remove isc.age
 scoreboard objectives remove isc.speed
 scoreboard objectives remove isc.range
