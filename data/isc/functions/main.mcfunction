@@ -12,7 +12,7 @@ execute as @e[type=minecraft:marker,tag=isc.projectile] at @s run function isc:a
 execute as @e[type=#isc:caster,type=!minecraft:player,tag=isc.caster] at @s run function isc:as_caster/nonplayer/tick
 execute as @e[type=#isc:summon,tag=isc.summon] at @s run function isc:as_summon/tick
 execute as @e[type=minecraft:block_display,tag=isc.table] at @s run function isc:as_table/tick
-execute as @e[type=minecraft:villager,tag=isc.target_dummy] at @s run function isc:as_target_dummy/tick
+execute as @e[type=minecraft:iron_golem,tag=isc.target_dummy] at @s run function isc:as_target_dummy/tick
 
 
 # Projectile cap
