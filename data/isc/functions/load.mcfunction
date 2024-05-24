@@ -19,6 +19,7 @@ scoreboard objectives add isc.inf_page dummy
 scoreboard objectives add isc.dist dummy
 scoreboard objectives add isc.tick dummy
 
+scoreboard objectives add isc.actionbar trigger
 scoreboard objectives add isc.toggle trigger
 
 scoreboard objectives add isc.math dummy

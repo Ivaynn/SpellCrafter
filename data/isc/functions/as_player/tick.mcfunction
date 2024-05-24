@@ -3,6 +3,7 @@
 
 # Infinite spells mode
 execute if score @s isc.inf_page matches 100.. run function isc:as_player/inf_spells/init
+execute as @s[tag=isc.inf_mana] run scoreboard players operation @s isc.mana = @s isc.max_mana
 
 
 # Stop projectiles from hitting spectators
@@ -17,6 +18,7 @@ execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
 # Triggers
 execute as @a unless score @s isc.toggle matches 0 run function isc:as_player/trigger_toggle
 scoreboard players enable @a isc.toggle
+scoreboard players enable @a isc.actionbar
 
 
 # Caster
