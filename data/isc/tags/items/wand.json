@@ -1,6 +1,7 @@
 {
     "values": [
         "minecraft:blaze_rod",
-        "minecraft:stick"
+        "minecraft:stick",
+        "minecraft:bone"
     ]
 }

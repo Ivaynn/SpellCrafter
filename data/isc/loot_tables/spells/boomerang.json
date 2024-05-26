@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:63, mana:30, cooldown:10, lore:'{\"text\":\"→ Boomerang\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:63, mana:45, cooldown:10, lore:'{\"text\":\"→ Boomerang\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 30",
+                    "text": "◆ 45",
                     "color": "aqua",
                     "italic": false,
                     "extra": [

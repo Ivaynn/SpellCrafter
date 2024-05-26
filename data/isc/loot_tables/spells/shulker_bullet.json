@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:39, mana:90, cooldown:50, lore:'{\"text\":\"→ Shulker Bullet\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:39, mana:150, cooldown:50, lore:'{\"text\":\"→ Shulker Bullet\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 90",
+                    "text": "◆ 150",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
