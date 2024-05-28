@@ -4,24 +4,37 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280050
+                "minecraft:custom_model_data": 7280064
             }
         },
         "title": {
-            "text": "Random Spell                  "
+            "text": "Sharp                         "
         },
         "description": [
             {
-                "text": "\n◆ 20",
+                "text": "\n◆ 25",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.25\n\n",
+                "text": "   ⌚ 0\n\n",
                 "color": "gray"
             },
             {
-                "text": "Casts a random spell\n",
+                "text": "Increases the wand's attack damage\n",
                 "color": "gray"
+            },
+            {
+                "text": "\nDamage: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "+1 ❤",
+                        "color": "red"
+                    }
+                ]
+            },
+            {
+                "text": "\n"
             }
         ],
         "frame": "goal",
@@ -29,7 +42,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_special",
+    "parent": "isc:spells/haste",
     "criteria": {
         "book": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +65,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:50}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:64}}}"
                         }
                     }
                 ]
@@ -79,7 +92,7 @@
                     {
                         "items": "minecraft:stick",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{wand:{mod:50}}}"
+                            "minecraft:custom_data": "{isc:{wand:{mod:64}}}"
                         }
                     }
                 ]

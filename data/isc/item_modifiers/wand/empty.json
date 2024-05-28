@@ -8,7 +8,7 @@
                 "text": "◆ 0",
                 "color": "aqua",
                 "italic": false,
-                "extra":[
+                "extra": [
                     {
                         "text": "   ⌚ 0",
                         "color": "gray",
@@ -25,6 +25,12 @@
                 "italic": true
             }
         ]
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "!minecraft:attribute_modifiers": {}
+        }
     },
     {
         "function": "minecraft:set_custom_data",

@@ -15,6 +15,12 @@ data remove storage isc:tmp spell
 data modify storage isc:tmp spell set from storage isc:tmp items[0].components."minecraft:custom_data".isc.spell
 data modify storage isc:tmp wand.spells append from storage isc:tmp spell.id
 data modify storage isc:tmp lore append from storage isc:tmp spell.lore
+scoreboard players set $spell isc.tmp 0
+execute store result score $spell isc.tmp run data get storage isc:tmp spell.id
+
+
+# Special cases
+execute if score $spell isc.tmp matches 64 run scoreboard players add $spell.sharp isc.tmp 1
 
 
 # Spell cooldown
@@ -32,8 +38,6 @@ execute store result score $add isc.tmp run data get storage isc:tmp spell.mana
 execute if score $add isc.tmp matches ..-1 run scoreboard players set $is_negative isc.tmp 1
 
 # Mana: apply clone multiplier (exponential)
-scoreboard players set $spell isc.tmp 0
-execute store result score $spell isc.tmp run data get storage isc:tmp spell.id
 execute if score $spell isc.tmp matches 6 run scoreboard players operation $add isc.tmp *= $clone_multiplier isc.tmp
 execute if score $spell isc.tmp matches 6 run scoreboard players operation $clone_multiplier isc.tmp *= #2 isc.math 
 
