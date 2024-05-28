@@ -16,6 +16,10 @@ execute unless score $damage isc.tmp matches 1.. run return 0
 execute if score $damage isc.tmp matches 101.. run scoreboard players set $damage isc.tmp 100
 
 
+# Check if entity is on damage cooldown
+execute unless entity @s[nbt={HurtTime:0s}] run return 0
+
+
 # Damage
 execute if score $damage isc.tmp matches 1..10 run function isc:damage/d10
 execute if score $damage isc.tmp matches 11..20 run function isc:damage/d20
