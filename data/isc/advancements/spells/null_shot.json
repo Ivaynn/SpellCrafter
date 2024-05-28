@@ -20,8 +20,18 @@
                 "color": "gray"
             },
             {
-                "text": "An empty projectile. Its true potential can be unlocked with the right combinations\n",
+                "text": "Stationary, its true potential can be unlocked with the right combinations...\n",
                 "color": "gray"
+            },
+            {
+                "text": "\nDamage: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "0 ❤",
+                        "color": "red"
+                    }
+                ]
             },
             {
                 "text": "\nRange: ",
@@ -33,20 +43,6 @@
                     },
                     {
                         "text": " blocks",
-                        "color": "dark_gray"
-                    }
-                ]
-            },
-            {
-                "text": "\nSpeed: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "0",
-                        "color": "red"
-                    },
-                    {
-                        "text": " blocks/sec",
                         "color": "dark_gray"
                     }
                 ]

@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:1, mana:20, cooldown:5, lore:'{\"text\":\"→ Magic Missile\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:1, mana:20, cooldown:12, lore:'{\"text\":\"→ Magic Missile\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -41,7 +41,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.25",
+                            "text": "   ⌚ 0.6",
                             "color": "gray",
                             "italic": false
                         }
