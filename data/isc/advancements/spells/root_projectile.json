@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:paper"
+            "id": "minecraft:filled_map"
         },
         "title": {
-            "text": "→ Projectile   "
+            "text": "→ Projectile"
         },
         "description": [
             {
@@ -12,15 +12,240 @@
                 "color": "gray"
             }
         ],
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false
     },
     "parent": "isc:spells/root",
     "criteria": {
-        "requirement": {
-            "trigger": "minecraft:tick"
+        "isc:magic_missile": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/magic_missile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:fireball": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/fireball": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:laser": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/laser": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:revealing_bolt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/revealing_bolt": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:arcane_reaper": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/arcane_reaper": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:shulker_bullet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/shulker_bullet": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:null_shot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/null_shot": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:poison_dart": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/poison_dart": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:freezing_bolt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/freezing_bolt": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:drill": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/drill": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:black_hole": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/black_hole": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:boomerang": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/boomerang": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     }
 }
