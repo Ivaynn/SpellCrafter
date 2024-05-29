@@ -3,7 +3,7 @@
 
 # Get caster's rotation
 scoreboard players operation $id isc.tmp = @s isc.id
-data modify entity @s Rotation set from entity @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,tag=!isc.untargetable,predicate=isc:match_id] Rotation 
+data modify entity @s Rotation set from entity @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id] Rotation 
 
 
 # Negative speed

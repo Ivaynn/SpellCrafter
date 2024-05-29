@@ -7,7 +7,7 @@ data merge entity @s {LifeTime:0,FireworksItem:{id:"minecraft:firework_rocket",c
 
 
 # Get owner
-data modify entity @s Owner set from entity @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,tag=!isc.untargetable,predicate=isc:match_id] UUID
+data modify entity @s Owner set from entity @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id] UUID
 
 
 # LifeTime

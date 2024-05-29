@@ -3,7 +3,7 @@
 
 # Get rotation while facing the nearest target (excluding the caster)
 scoreboard players operation $id isc.tmp = @s isc.id
-execute store result score $homing isc.tmp run tp @s ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=!#isc:untargetable,tag=!isc.spectator,tag=!isc.untargetable,predicate=!isc:match_id] feet
+execute store result score $homing isc.tmp run tp @s ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,predicate=!isc:match_id] feet
 
 
 # If no target was found, stop here

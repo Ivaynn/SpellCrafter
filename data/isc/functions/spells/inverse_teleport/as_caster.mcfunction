@@ -7,7 +7,7 @@ execute at @s run playsound minecraft:entity.player.teleport player @a ~ ~ ~ 1 1
 
 
 # Teleport target to caster
-tp @e[distance=..0.001,limit=1,type=!#isc:untargetable,tag=!isc.spectator,tag=!isc.untargetable,predicate=!isc:match_id] @s
+tp @e[distance=..0.001,limit=1,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,predicate=!isc:match_id] @s
 
 
 # Effects at the target pos
