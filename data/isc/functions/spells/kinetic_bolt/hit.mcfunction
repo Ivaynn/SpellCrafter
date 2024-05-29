@@ -17,11 +17,9 @@ execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=.
 
 
 # Effects
-execute if score @s isc.speed matches 30.. run particle minecraft:explosion ^ ^ ^ 0 0 0 0 0 force @a
-
-execute if score @s isc.speed matches 9.. run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 2
-execute if score @s isc.speed matches 10..19 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.9
-execute if score @s isc.speed matches 20..29 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.8
-execute if score @s isc.speed matches 30..39 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.7
-execute if score @s isc.speed matches 40..49 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.6
-execute if score @s isc.speed matches 50.. run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.5
+execute if score @s isc.speed matches ..4 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.7
+execute if score @s isc.speed matches 5..8 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.6
+execute if score @s isc.speed matches 10..12 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.5
+execute if score @s isc.speed matches 13..16 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.4
+execute if score @s isc.speed matches 17..20 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.3
+execute if score @s isc.speed matches 21.. run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.2
