@@ -25,6 +25,8 @@ execute if score @s isc.inf_page matches 102 run function isc:as_player/inf_spel
 execute if score @s isc.inf_page matches 103 run function isc:as_player/inf_spells/page_3
 execute if score @s isc.inf_page matches 104 run function isc:as_player/inf_spells/page_4
 execute if score @s isc.inf_page matches 105 run function isc:as_player/inf_spells/page_5
+execute if score @s isc.inf_page matches 106 run function isc:as_player/inf_spells/page_6
+execute if score @s isc.inf_page matches 107 run function isc:as_player/inf_spells/page_7
 
 
 # Resume event triggers

@@ -31,6 +31,7 @@ execute if score $spell isc.tmp matches 57 run return run function isc:spells/fr
 execute if score $spell isc.tmp matches 58 run return run function isc:spells/drill/projectile
 execute if score $spell isc.tmp matches 60 run return run function isc:spells/black_hole/projectile
 execute if score $spell isc.tmp matches 63 run return run function isc:spells/boomerang/projectile
+execute if score $spell isc.tmp matches 65 run return run function isc:spells/kinetic_bolt/projectile
 
 
 # Non-projectiles (no return)
