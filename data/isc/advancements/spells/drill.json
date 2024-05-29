@@ -70,9 +70,9 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/boomerang",
+    "parent": "isc:spells/root_projectile",
     "criteria": {
-        "book": {
+        "isc:book": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "player": [
@@ -99,7 +99,7 @@
                 ]
             }
         },
-        "wand": {
+        "isc:wand": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "player": [
@@ -129,8 +129,8 @@
     },
     "requirements": [
         [
-            "book",
-            "wand"
+            "isc:book",
+            "isc:wand"
         ]
     ]
 }

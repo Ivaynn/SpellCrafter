@@ -48,7 +48,7 @@
     },
     "parent": "isc:spells/long_shot",
     "criteria": {
-        "book": {
+        "isc:book": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "player": [
@@ -75,7 +75,7 @@
                 ]
             }
         },
-        "wand": {
+        "isc:wand": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "player": [
@@ -105,8 +105,8 @@
     },
     "requirements": [
         [
-            "book",
-            "wand"
+            "isc:book",
+            "isc:wand"
         ]
     ]
 }
