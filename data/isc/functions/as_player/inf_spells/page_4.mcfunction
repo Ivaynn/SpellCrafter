@@ -13,8 +13,8 @@ loot replace entity @s inventory.11 loot isc:spells/spiral
 loot replace entity @s inventory.12 loot isc:spells/zigzag
 loot replace entity @s inventory.13 loot isc:spells/return
 loot replace entity @s inventory.14 loot isc:spells/trick_shot
-item replace entity @s inventory.15 with minecraft:air
-item replace entity @s inventory.16 with minecraft:air
+loot replace entity @s inventory.15 loot isc:spells/hidden
+loot replace entity @s inventory.16 loot isc:spells/rainbow
 
 item replace entity @s inventory.19 with minecraft:air
 item replace entity @s inventory.20 with minecraft:air

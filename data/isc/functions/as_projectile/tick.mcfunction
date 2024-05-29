@@ -21,6 +21,7 @@ execute as @s[tag=isc.spell.arcane_reaper] run function isc:spells/arcane_reaper
 execute as @s[tag=isc.spell.scaling] run function isc:spells/scaling/tick
 execute as @s[tag=isc.spell.return] run function isc:spells/return/tick
 execute as @s[tag=isc.spell.boomerang] run function isc:spells/boomerang/tick
+execute as @s[tag=isc.spell.accelerate] run function isc:spells/accelerate/tick
 
 
 # Move projectile --> projectile speed = number of move iterations per tick (max 1000)
@@ -28,6 +29,7 @@ scoreboard players operation $iter isc.tmp = @s isc.speed
 execute if score $iter isc.tmp matches ..-1 run scoreboard players operation $iter isc.tmp *= #n1 isc.math
 execute as @s[tag=isc.spell.instant] run scoreboard players set $iter isc.tmp 1000
 execute if score $iter isc.tmp matches 1001.. run scoreboard players set $iter isc.tmp 1000
+execute as @s[tag=isc.spell.anchored] run scoreboard players set $iter isc.tmp 1
 
 execute at @s run function isc:as_projectile/move
 

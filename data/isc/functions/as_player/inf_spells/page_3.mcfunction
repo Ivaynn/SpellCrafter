@@ -19,7 +19,7 @@ loot replace entity @s inventory.16 loot isc:spells/gravity
 loot replace entity @s inventory.19 loot isc:spells/speed_dec
 loot replace entity @s inventory.20 loot isc:spells/speed_inc
 loot replace entity @s inventory.21 loot isc:spells/quick_shot
-loot replace entity @s inventory.22 loot isc:spells/instant
-loot replace entity @s inventory.23 loot isc:spells/ghost
-loot replace entity @s inventory.24 loot isc:spells/hidden
-loot replace entity @s inventory.25 loot isc:spells/rainbow
+loot replace entity @s inventory.22 loot isc:spells/accelerate
+loot replace entity @s inventory.23 loot isc:spells/instant
+loot replace entity @s inventory.24 loot isc:spells/ghost
+item replace entity @s inventory.25 with minecraft:air

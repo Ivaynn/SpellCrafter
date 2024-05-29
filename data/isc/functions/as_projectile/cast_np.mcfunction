@@ -48,6 +48,7 @@ execute if score $spell isc.tmp matches 55 run return run tag @s add isc.spell.s
 execute if score $spell isc.tmp matches 59 run return run tag @s add isc.spell.anchored
 execute if score $spell isc.tmp matches 61 run return run tag @s add isc.spell.return
 execute if score $spell isc.tmp matches 62 run return run tag @s add isc.spell.trick_shot
+execute if score $spell isc.tmp matches 66 run return run tag @s add isc.spell.accelerate
 
 
 # Stackable modifiers

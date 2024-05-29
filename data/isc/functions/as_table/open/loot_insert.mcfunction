@@ -66,3 +66,4 @@ execute if score $spell isc.tmp matches 62 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 63 run return run loot insert ~ ~ ~ loot isc:spells/boomerang
 execute if score $spell isc.tmp matches 64 run return run loot insert ~ ~ ~ loot isc:spells/sharp
 execute if score $spell isc.tmp matches 65 run return run loot insert ~ ~ ~ loot isc:spells/kinetic_bolt
+execute if score $spell isc.tmp matches 66 run return run loot insert ~ ~ ~ loot isc:spells/accelerate

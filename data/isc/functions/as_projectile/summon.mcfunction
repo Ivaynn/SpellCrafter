@@ -81,7 +81,6 @@ execute unless score $spell.multicast isc.tmp matches 1 if score $wand_mod isc.t
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
 execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 execute as @s[tag=!isc.spell.random_dir,tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
-execute as @s[tag=isc.spell.anchored] run scoreboard players set @s isc.speed 1
 execute as @s[tag=isc.spell.trick_shot] at @s run function isc:spells/trick_shot/cast
 
 
