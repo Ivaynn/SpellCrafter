@@ -341,6 +341,25 @@
                     }
                 ]
             }
+        },
+        "isc:angry_goat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/angry_goat": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     }
 }

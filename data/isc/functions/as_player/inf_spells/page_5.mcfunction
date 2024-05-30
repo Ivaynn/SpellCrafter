@@ -21,5 +21,5 @@ loot replace entity @s inventory.20 loot isc:spells/summon_bat
 loot replace entity @s inventory.21 loot isc:spells/summon_slime
 loot replace entity @s inventory.22 loot isc:spells/sheep
 loot replace entity @s inventory.23 loot isc:spells/summon_pufferfish
-item replace entity @s inventory.24 with minecraft:air
+loot replace entity @s inventory.24 loot isc:spells/angry_goat
 item replace entity @s inventory.25 with minecraft:air
