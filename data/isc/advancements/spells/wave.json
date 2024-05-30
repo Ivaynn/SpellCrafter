@@ -4,15 +4,15 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280059
+                "minecraft:custom_model_data": 7280067
             }
         },
         "title": {
-            "text": "Anchored                      "
+            "text": "Wave                          "
         },
         "description": [
             {
-                "text": "\n◆ 5",
+                "text": "\n◆ 25",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Stops the next projectile from moving. Its lifetime depends on its range\n",
+                "text": "Gives the next projectile a wave trajectory\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_modifier",
+    "parent": "isc:spells/zigzag",
     "criteria": {
         "isc:book": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:59}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:67}}}"
                         }
                     }
                 ]
@@ -79,7 +79,7 @@
                     {
                         "items": "minecraft:stick",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{wand:{mod:59}}}"
+                            "minecraft:custom_data": "{isc:{wand:{mod:67}}}"
                         }
                     }
                 ]

@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/hidden",
+    "parent": "isc:spells/anti_gravity",
     "criteria": {
         "isc:book": {
             "trigger": "minecraft:inventory_changed",

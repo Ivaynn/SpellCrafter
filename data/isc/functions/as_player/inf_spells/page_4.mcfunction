@@ -5,16 +5,16 @@ loot replace entity @s inventory.2 loot isc:spells/aim_assist
 loot replace entity @s inventory.3 loot isc:spells/homing
 loot replace entity @s inventory.4 loot isc:spells/guide
 item replace entity @s inventory.5 with minecraft:air
-item replace entity @s inventory.6 with minecraft:air
-item replace entity @s inventory.7 with minecraft:air
+loot replace entity @s inventory.6 loot isc:spells/hidden
+loot replace entity @s inventory.7 loot isc:spells/rainbow
 
 loot replace entity @s inventory.10 loot isc:spells/chaotic
 loot replace entity @s inventory.11 loot isc:spells/spiral
 loot replace entity @s inventory.12 loot isc:spells/zigzag
-loot replace entity @s inventory.13 loot isc:spells/return
-loot replace entity @s inventory.14 loot isc:spells/trick_shot
-loot replace entity @s inventory.15 loot isc:spells/hidden
-loot replace entity @s inventory.16 loot isc:spells/rainbow
+loot replace entity @s inventory.13 loot isc:spells/wave
+item replace entity @s inventory.14 with minecraft:air
+loot replace entity @s inventory.15 loot isc:spells/return
+loot replace entity @s inventory.16 loot isc:spells/trick_shot
 
 item replace entity @s inventory.19 with minecraft:air
 item replace entity @s inventory.20 with minecraft:air
