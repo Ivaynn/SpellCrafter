@@ -67,7 +67,7 @@ execute unless score @s isc.speed matches 1.. run scoreboard players set @s isc.
 execute unless score @s isc.damage matches 0.. run scoreboard players set @s isc.damage 0
 
 
-# Age = range * 4 * modifier / 100 --> 4 steps = 1 block (projectiles move in steps of 0.25)
+# Age = range * 4 --> 4 steps = 1 block (projectiles move in steps of 0.25)
 scoreboard players operation @s isc.age = @s isc.range
 scoreboard players operation @s isc.age *= #4 isc.math
 
@@ -81,6 +81,7 @@ execute unless score $spell.multicast isc.tmp matches 1 if score $wand_mod isc.t
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
 execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 execute as @s[tag=!isc.spell.random_dir,tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
+execute as @s[tag=isc.spell.warp] at @s run function isc:spells/warp/cast
 execute as @s[tag=isc.spell.trick_shot] at @s run function isc:spells/trick_shot/cast
 
 

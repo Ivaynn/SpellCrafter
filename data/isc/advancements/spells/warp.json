@@ -4,15 +4,15 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280042
+                "minecraft:custom_model_data": 7280068
             }
         },
         "title": {
-            "text": "Rainbow                       "
+            "text": "Warp                          "
         },
         "description": [
             {
-                "text": "\n◆ 20",
+                "text": "\n◆ 70",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Replaces the next projectile's trail with a colorful one\n",
+                "text": "Teleports the next projectile to the nearest target\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/hidden",
+    "parent": "isc:spells/homing",
     "criteria": {
         "isc:book": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:42}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:68}}}"
                         }
                     }
                 ]
@@ -79,7 +79,7 @@
                     {
                         "items": "minecraft:stick",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{wand:{mod:42}}}"
+                            "minecraft:custom_data": "{isc:{wand:{mod:68}}}"
                         }
                     }
                 ]

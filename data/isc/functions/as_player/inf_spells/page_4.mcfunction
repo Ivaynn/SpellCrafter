@@ -3,8 +3,8 @@
 loot replace entity @s inventory.1 loot isc:spells/random_dir
 loot replace entity @s inventory.2 loot isc:spells/aim_assist
 loot replace entity @s inventory.3 loot isc:spells/homing
-loot replace entity @s inventory.4 loot isc:spells/guide
-item replace entity @s inventory.5 with minecraft:air
+loot replace entity @s inventory.4 loot isc:spells/warp
+loot replace entity @s inventory.5 loot isc:spells/guide
 loot replace entity @s inventory.6 loot isc:spells/hidden
 loot replace entity @s inventory.7 loot isc:spells/rainbow
 

@@ -1,6 +1,3 @@
-#> as any
-# score "$spell isc.tmp" must contain the spell id
-
 execute if score $spell isc.tmp matches 1 run return run loot insert ~ ~ ~ loot isc:spells/magic_missile
 execute if score $spell isc.tmp matches 2 run return run loot insert ~ ~ ~ loot isc:spells/fireball
 execute if score $spell isc.tmp matches 3 run return run loot insert ~ ~ ~ loot isc:spells/laser
@@ -68,3 +65,4 @@ execute if score $spell isc.tmp matches 64 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 65 run return run loot insert ~ ~ ~ loot isc:spells/kinetic_bolt
 execute if score $spell isc.tmp matches 66 run return run loot insert ~ ~ ~ loot isc:spells/accelerate
 execute if score $spell isc.tmp matches 67 run return run loot insert ~ ~ ~ loot isc:spells/wave
+execute if score $spell isc.tmp matches 68 run return run loot insert ~ ~ ~ loot isc:spells/warp
