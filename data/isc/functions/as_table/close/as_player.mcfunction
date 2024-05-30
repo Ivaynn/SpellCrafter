@@ -13,11 +13,16 @@ execute if data entity @s SelectedItem.components."minecraft:custom_data".isc.wa
 # Reset scores & storages
 scoreboard players set $mana isc.tmp 0
 scoreboard players set $cooldown isc.tmp 0
-scoreboard players set $spell.sharp isc.tmp 0
-data modify storage isc:tmp wand set value {valid:1b, spells:[], slots:[]}
+data modify storage isc:tmp wand set value {valid:1b, spells:[], slots:[], owner:0}
 data modify storage isc:tmp lore set value []
 data modify storage isc:tmp drop set value []
 data modify storage isc:tmp wand.mod set from entity @s SelectedItem.components."minecraft:custom_data".isc.wand.mod
+
+
+# Special spells that modify the wand item
+scoreboard players set $spell.sharp isc.tmp 0
+scoreboard players set $spell.secret isc.tmp 0
+scoreboard players set $spell.locked isc.tmp 0
 
 
 # Iterate through all the items & save spell data to storages "isc:tmp wand" and "isc:tmp lore"
@@ -36,6 +41,7 @@ execute unless data storage isc:tmp wand.spells[0] run return run function isc:a
 
 # Special cases
 execute if score $spell.sharp isc.tmp matches 1.. run item modify entity @s weapon isc:wand/sharp
+execute if score $spell.locked isc.tmp matches 1 store result storage isc:tmp wand.owner int 1 run scoreboard players get @s isc.id
 
 
 # Save mana cost & cooldown to wand object

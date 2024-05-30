@@ -28,6 +28,8 @@ execute if score $spell isc.tmp matches 47 run return 1
 execute if score $spell isc.tmp matches 48 run return 1
 execute if score $spell isc.tmp matches 52 run return run function isc:spells/shuffle/cast
 execute if score $spell isc.tmp matches 64 run return 1
+execute if score $spell isc.tmp matches 69 run return 1
+execute if score $spell isc.tmp matches 70 run return 1
 
 
 # Unstackable modifiers

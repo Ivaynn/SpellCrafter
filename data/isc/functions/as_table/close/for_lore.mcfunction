@@ -4,6 +4,10 @@
 # score "$iter isc.tmp" must contain the number of elements of the array
 
 
+# Special case: secret
+execute if score $spell.secret isc.tmp matches 1 run function isc:spells/secret/cast
+
+
 # Add lore line
 item modify entity @s weapon isc:wand/lore/add_spell
 data remove storage isc:tmp lore[0]

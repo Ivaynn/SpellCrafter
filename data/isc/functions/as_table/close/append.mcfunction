@@ -21,6 +21,8 @@ execute store result score $spell isc.tmp run data get storage isc:tmp spell.id
 
 # Special cases
 execute if score $spell isc.tmp matches 64 run scoreboard players add $spell.sharp isc.tmp 1
+execute if score $spell isc.tmp matches 69 run scoreboard players set $spell.secret isc.tmp 1
+execute if score $spell isc.tmp matches 70 run scoreboard players set $spell.locked isc.tmp 1
 
 
 # Spell cooldown

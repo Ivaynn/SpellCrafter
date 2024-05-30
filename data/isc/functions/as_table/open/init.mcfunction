@@ -18,7 +18,7 @@ execute if data storage isc:tmp items[0] run function isc:as_table/close/drop_it
 # As player...
 scoreboard players operation @s isc.id = $id isc.tmp
 scoreboard players set $success isc.tmp 0
-execute as @a[limit=1,distance=..10,predicate=isc:match_id] store result score $success isc.tmp run function isc:as_table/open/as_player
+execute as @a[limit=1,distance=..10,predicate=isc:match_id] run function isc:as_table/open/as_player
 
 
 # Custom sounds
