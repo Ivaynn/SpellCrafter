@@ -68,3 +68,4 @@ execute if score $spell isc.tmp matches 67 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 68 run return run loot insert ~ ~ ~ loot isc:spells/warp
 execute if score $spell isc.tmp matches 69 run return run loot insert ~ ~ ~ loot isc:spells/secret
 execute if score $spell isc.tmp matches 70 run return run loot insert ~ ~ ~ loot isc:spells/locked
+execute if score $spell isc.tmp matches 71 run return run loot insert ~ ~ ~ loot isc:spells/cleanse

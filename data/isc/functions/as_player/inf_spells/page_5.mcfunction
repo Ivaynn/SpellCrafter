@@ -4,7 +4,7 @@ loot replace entity @s inventory.1 loot isc:spells/teleport
 loot replace entity @s inventory.2 loot isc:spells/inverse_teleport
 loot replace entity @s inventory.3 loot isc:spells/double_teleport
 loot replace entity @s inventory.4 loot isc:spells/counterspell
-item replace entity @s inventory.5 with minecraft:air
+loot replace entity @s inventory.5 loot isc:spells/cleanse
 loot replace entity @s inventory.6 loot isc:spells/heal
 loot replace entity @s inventory.7 loot isc:spells/shield
 

@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:56, mana:40, cooldown:0, lore:'{\"text\":\"✦ Summon Fangs\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:56, mana:40, cooldown:20, lore:'{\"text\":\"✦ Summon Fangs\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -41,7 +41,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0",
+                            "text": "   ⌚ 1.0",
                             "color": "gray",
                             "italic": false
                         }

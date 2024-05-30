@@ -20,6 +20,7 @@ execute if score $spell isc.tmp matches 37 run return run function isc:spells/su
 execute if score $spell isc.tmp matches 38 run return run function isc:spells/firework_rocket/cast
 execute if score $spell isc.tmp matches 49 run return run function isc:spells/shield/cast
 execute if score $spell isc.tmp matches 56 run return run function isc:spells/summon_fangs/cast
+execute if score $spell isc.tmp matches 71 run return run function isc:spells/cleanse/cast
 
 
 # Special
