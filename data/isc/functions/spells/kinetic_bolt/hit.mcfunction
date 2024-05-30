@@ -8,18 +8,17 @@ scoreboard players operation $blind isc.tmp = @s isc.blind
 
 scoreboard players set $damage isc.tmp 0
 scoreboard players operation $damage isc.tmp = @s isc.speed
-scoreboard players operation $damage isc.tmp /= #2 isc.math
 scoreboard players operation $damage isc.tmp += @s isc.damage
-execute as @s[tag=isc.spell.instant] run scoreboard players set $damage isc.tmp 50
-execute if score $damage isc.tmp matches 51.. run scoreboard players set $damage isc.tmp 50
 
-execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=..3,type=!#isc:untargetable] run function isc:damage/init
+scoreboard players set $success isc.tmp 0
+execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=..3,type=!#isc:untargetable] store result score $success isc.tmp run function isc:damage/init
+execute if score $success isc.tmp matches 0 run return 0
 
 
 # Effects
-execute if score @s isc.speed matches ..4 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.7
-execute if score @s isc.speed matches 5..8 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.6
-execute if score @s isc.speed matches 10..12 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.5
-execute if score @s isc.speed matches 13..16 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.4
-execute if score @s isc.speed matches 17..20 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.3
-execute if score @s isc.speed matches 21.. run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.2
+execute if score @s isc.speed matches 4..7 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 2
+execute if score @s isc.speed matches 8..11 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.8
+execute if score @s isc.speed matches 12..15 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.6
+execute if score @s isc.speed matches 16..19 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.4
+execute if score @s isc.speed matches 20..23 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2.5 1.2
+execute if score @s isc.speed matches 24.. run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 3 1.0

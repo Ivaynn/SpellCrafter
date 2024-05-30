@@ -35,5 +35,6 @@ kill @e[tag=isc.table]
 kill @e[tag=isc.projectile]
 kill @e[tag=isc.summon]
 kill @e[tag=isc.target_dummy]
+kill @e[tag=isc.dummy_text]
 
 tag @e remove isc.caster

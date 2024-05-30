@@ -31,3 +31,5 @@ execute if score $damage isc.tmp matches 61..70 run function isc:damage/d70
 execute if score $damage isc.tmp matches 71..80 run function isc:damage/d80
 execute if score $damage isc.tmp matches 81..90 run function isc:damage/d90
 execute if score $damage isc.tmp matches 91..100 run function isc:damage/d100
+
+return 1
