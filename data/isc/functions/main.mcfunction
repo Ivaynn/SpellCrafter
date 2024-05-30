@@ -13,6 +13,7 @@ execute as @e[type=#isc:caster,type=!minecraft:player,tag=isc.caster] at @s run 
 execute as @e[type=#isc:summon,tag=isc.summon] at @s run function isc:as_summon/tick
 execute as @e[type=minecraft:block_display,tag=isc.table] at @s run function isc:as_table/tick
 execute as @e[type=minecraft:iron_golem,tag=isc.target_dummy] at @s run function isc:as_target_dummy/tick
+execute as @e[type=minecraft:text_display,tag=isc.dummy_text] at @s run function isc:as_target_dummy/text/tick
 
 
 # Projectile cap
