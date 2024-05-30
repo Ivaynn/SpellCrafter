@@ -20,7 +20,7 @@
     "parent": "isc:spells/root",
     "criteria": {
         "isc:explosion": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -39,7 +39,7 @@
             }
         },
         "isc:heal": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -58,7 +58,7 @@
             }
         },
         "isc:summon_lightning": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -77,7 +77,7 @@
             }
         },
         "isc:summon_vex": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -96,7 +96,7 @@
             }
         },
         "isc:teleport": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -115,7 +115,7 @@
             }
         },
         "isc:summon_bat": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -134,7 +134,7 @@
             }
         },
         "isc:summon_tnt": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -153,7 +153,7 @@
             }
         },
         "isc:counterspell": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -172,7 +172,7 @@
             }
         },
         "isc:double_teleport": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -191,7 +191,7 @@
             }
         },
         "isc:inverse_teleport": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -210,7 +210,7 @@
             }
         },
         "isc:summon_slime": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -229,7 +229,7 @@
             }
         },
         "isc:sheep": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -248,7 +248,7 @@
             }
         },
         "isc:summon_pufferfish": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -267,7 +267,7 @@
             }
         },
         "isc:firework_rocket": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -286,7 +286,7 @@
             }
         },
         "isc:shield": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -305,7 +305,7 @@
             }
         },
         "isc:summon_fangs": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -324,7 +324,7 @@
             }
         },
         "isc:cleanse": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -343,7 +343,7 @@
             }
         },
         "isc:angry_goat": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {

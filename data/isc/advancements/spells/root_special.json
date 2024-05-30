@@ -20,7 +20,7 @@
     "parent": "isc:spells/root",
     "criteria": {
         "isc:multicast": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -39,7 +39,7 @@
             }
         },
         "isc:refresh": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -58,7 +58,7 @@
             }
         },
         "isc:haste": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -77,7 +77,7 @@
             }
         },
         "isc:random_spell": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -96,7 +96,7 @@
             }
         },
         "isc:shuffle": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -115,7 +115,7 @@
             }
         },
         "isc:sharp": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -134,7 +134,7 @@
             }
         },
         "isc:secret": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -153,7 +153,7 @@
             }
         },
         "isc:locked": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
