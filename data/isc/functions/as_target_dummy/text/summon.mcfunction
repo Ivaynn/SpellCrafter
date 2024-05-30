@@ -24,4 +24,4 @@ data modify entity @s text set value '[" ",{"color":"red","score":{"name":"$dama
 
 
 # Lifetime
-scoreboard players set @s isc.age 60
+scoreboard players set @s isc.age 100
