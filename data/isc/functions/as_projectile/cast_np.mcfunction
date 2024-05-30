@@ -22,6 +22,8 @@ execute if score $spell isc.tmp matches 49 run return run function isc:spells/sh
 execute if score $spell isc.tmp matches 56 run return run function isc:spells/summon_fangs/cast
 execute if score $spell isc.tmp matches 71 run return run function isc:spells/cleanse/cast
 execute if score $spell isc.tmp matches 72 run return run function isc:spells/angry_goat/cast
+execute if score $spell isc.tmp matches 73 run return run function isc:spells/smoke_bomb/cast
+execute if score $spell isc.tmp matches 74 run return run function isc:spells/flash/cast
 
 
 # Special
