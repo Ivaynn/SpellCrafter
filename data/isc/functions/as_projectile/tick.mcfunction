@@ -9,11 +9,13 @@ execute if score $projectile_count isc.tmp > projectile_cap isc.options run retu
 execute as @s[tag=isc.kill] run return run kill @s
 
 
-# Apply projectile direction modifiers --> they can't be active at the same time
-scoreboard players set $homing isc.tmp 0
+# Apply projectile direction modifiers --> they are mutually exclusive: homing* > guide > follow* > ... ( * = may fail if no valid entity is in range )
+scoreboard players set $spell.homing isc.tmp 0
+scoreboard players set $spell.follow isc.tmp 0
 execute as @s[tag=isc.spell.homing,tag=!isc.spell.instant] at @s run function isc:spells/homing/tick
-execute unless score $homing isc.tmp matches 1 as @s[tag=isc.spell.guide,tag=!isc.spell.instant] at @s run function isc:spells/guide/tick
-execute unless score $homing isc.tmp matches 1 as @s[tag=!isc.spell.instant] unless score @s isc.weight matches 0 run function isc:as_projectile/weight
+execute unless score $spell.homing isc.tmp matches 1 as @s[tag=isc.spell.guide,tag=!isc.spell.instant] at @s run function isc:spells/guide/tick
+execute unless score $spell.homing isc.tmp matches 1 as @s[tag=isc.spell.follow,tag=!isc.spell.guide,tag=!isc.spell.instant] run function isc:spells/follow/tick
+execute unless score $spell.homing isc.tmp matches 1 unless score $spell.follow isc.tmp matches 1 as @s[tag=!isc.spell.instant] unless score @s isc.weight matches 0 run function isc:as_projectile/weight
 
 
 # Special cases
@@ -24,13 +26,19 @@ execute as @s[tag=isc.spell.boomerang] run function isc:spells/boomerang/tick
 execute as @s[tag=isc.spell.accelerate] run function isc:spells/accelerate/tick
 
 
-# Move projectile --> projectile speed = number of move iterations per tick (max 1000)
+# Get number of move iterations per tick
 scoreboard players operation $iter isc.tmp = @s isc.speed
 execute if score $iter isc.tmp matches ..-1 run scoreboard players operation $iter isc.tmp *= #n1 isc.math
-execute as @s[tag=isc.spell.instant] run scoreboard players set $iter isc.tmp 1000
-execute if score $iter isc.tmp matches 1001.. run scoreboard players set $iter isc.tmp 1000
-execute as @s[tag=isc.spell.anchored] run scoreboard players set $iter isc.tmp 1
 
+
+# Special cases with a fixed speed
+execute as @s[tag=isc.spell.instant] run scoreboard players set $iter isc.tmp 1000
+execute as @s[tag=isc.spell.anchored] run scoreboard players set $iter isc.tmp 1
+execute as @s[tag=isc.spell.follow] if score $spell.follow isc.tmp matches 1 run scoreboard players set $iter isc.tmp 1
+
+
+# Move projectile
+execute if score $iter isc.tmp matches 1001.. run scoreboard players set $iter isc.tmp 1000
 execute at @s run function isc:as_projectile/move
 
 

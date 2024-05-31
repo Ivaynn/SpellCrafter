@@ -1,13 +1,13 @@
 #> [tick] as projectile, at @s
 
 
-# Get rotation while facing the nearest target (excluding the caster)
+# Get rotation while facing the caster
 scoreboard players operation $id isc.tmp = @s isc.id
-execute store result score $spell.homing isc.tmp run tp @s ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,predicate=!isc:match_id] feet
+execute store result score $spell.follow isc.tmp run tp @s ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..15,sort=nearest,type=#isc:caster,tag=isc.caster,predicate=isc:match_id,tag=!isc.spectator] feet
 
 
 # If no target was found, stop here
-execute if score $spell.homing isc.tmp matches 0 run return 0
+execute if score $spell.follow isc.tmp matches 0 run return 0
 
 
 # Negative speed
