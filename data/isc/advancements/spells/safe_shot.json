@@ -4,15 +4,15 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280076
+                "minecraft:custom_model_data": 7280077
             }
         },
         "title": {
-            "text": "Follow                        "
+            "text": "Safe Shot                     "
         },
         "description": [
             {
-                "text": "\n◆ 50",
+                "text": "\n◆ 25",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Makes the next projectile follow you\n",
+                "text": "Prevents the next projectile from hitting you\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/rainbow",
+    "parent": "isc:spells/follow",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:76}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:77}}}"
                         }
                     }
                 ]

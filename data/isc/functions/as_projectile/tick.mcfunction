@@ -9,6 +9,11 @@ execute if score $projectile_count isc.tmp > projectile_cap isc.options run retu
 execute as @s[tag=isc.kill] run return run kill @s
 
 
+# Check if spell should damage caster
+scoreboard players set $spell.safe_shot isc.tmp 0
+execute as @s[tag=isc.spell.safe_shot] run scoreboard players set $spell.safe_shot isc.tmp 1
+
+
 # Apply projectile direction modifiers --> they are mutually exclusive: homing* > guide > follow* > ... ( * = may fail if no valid entity is in range )
 scoreboard players set $spell.homing isc.tmp 0
 scoreboard players set $spell.follow isc.tmp 0

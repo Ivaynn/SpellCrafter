@@ -74,3 +74,4 @@ execute if score $spell isc.tmp matches 73 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 74 run return run loot insert ~ ~ ~ loot isc:spells/flash
 execute if score $spell isc.tmp matches 75 run return run loot insert ~ ~ ~ loot isc:spells/flying_pig
 execute if score $spell isc.tmp matches 76 run return run loot insert ~ ~ ~ loot isc:spells/follow
+execute if score $spell isc.tmp matches 77 run return run loot insert ~ ~ ~ loot isc:spells/safe_shot

@@ -9,6 +9,7 @@ execute as @s[tag=isc.untargetable] run return 0
 
 # Check if this entity is the caster
 execute unless score damage_caster isc.options matches 1 if score @s isc.id = $id isc.tmp run return 0
+execute if score $spell.safe_shot isc.tmp matches 1 if score @s isc.id = $id isc.tmp run return 0
 
 
 # Check if damage value is valid

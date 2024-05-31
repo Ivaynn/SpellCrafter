@@ -13,7 +13,8 @@ execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=.
 # Slowness
 scoreboard players operation $id isc.tmp = @s isc.id
 execute unless score damage_caster isc.options matches 1 run effect give @e[distance=..3,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,predicate=!isc:match_id] minecraft:slowness 10 2 false
-execute if score damage_caster isc.options matches 1 run effect give @e[distance=..3,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator] minecraft:slowness 10 2 false
+execute if score damage_caster isc.options matches 1 as @s[tag=!isc.spell.safe_shot] run effect give @e[distance=..3,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator] minecraft:slowness 10 2 false
+execute if score damage_caster isc.options matches 1 as @s[tag=isc.spell.safe_shot] run effect give @e[distance=..3,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,predicate=!isc:match_id] minecraft:slowness 10 2 false
 
 
 # Effects
