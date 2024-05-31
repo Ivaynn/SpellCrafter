@@ -12,6 +12,7 @@ scoreboard players operation @s isc.damage = $damage isc.tmp
 scoreboard players operation @s isc.range = $range isc.tmp
 scoreboard players operation @s isc.blind = $blind isc.tmp
 scoreboard players operation @s isc.dist = $dist isc.tmp
+scoreboard players operation @s isc.weight = $weight isc.tmp
 
 
 # Re-apply certain modifiers

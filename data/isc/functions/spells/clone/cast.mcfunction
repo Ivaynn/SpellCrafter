@@ -30,6 +30,7 @@ scoreboard players operation $range isc.tmp = @s isc.range
 scoreboard players operation $blind isc.tmp = @s isc.blind
 scoreboard players operation $clone_count isc.tmp = @s isc.clone
 scoreboard players operation $dist isc.tmp = @s isc.dist
+scoreboard players operation $weight isc.tmp = @s isc.weight
 
 
 # Starting rotation offset
