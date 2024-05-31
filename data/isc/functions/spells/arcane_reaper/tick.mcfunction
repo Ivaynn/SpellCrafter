@@ -1,5 +1,4 @@
 #> [tick] as projectile, at @s
-# projectile hit
 
 
 # Set stats to 0
@@ -12,7 +11,7 @@ scoreboard players set $speed isc.tmp 0
 
 # Get stats of nearby projectiles
 tag @s add isc.self
-execute as @e[distance=..5,type=minecraft:marker,tag=!isc.self,tag=!isc.kill] at @s run function isc:spells/arcane_reaper/as_proj
+execute as @e[distance=..5,type=minecraft:marker,tag=!isc.self,tag=!isc.kill,tag=isc.projectile] at @s run function isc:spells/arcane_reaper/as_proj
 tag @s remove isc.self
 
 

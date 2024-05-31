@@ -4,11 +4,11 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280058
+                "minecraft:custom_model_data": 7280078
             }
         },
         "title": {
-            "text": "Drill                         "
+            "text": "Arcane Shield                 "
         },
         "description": [
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "A slow projectile that destroys blocks on its path\n",
+                "text": "Stops all enemy projectiles in a small radius\n",
                 "color": "gray"
             },
             {
@@ -28,7 +28,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "2 ❤",
+                        "text": "0 ❤",
                         "color": "red"
                     }
                 ]
@@ -38,7 +38,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "5",
+                        "text": "100",
                         "color": "red"
                     },
                     {
@@ -52,7 +52,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "5",
+                        "text": "0",
                         "color": "red"
                     },
                     {
@@ -70,7 +70,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/healing_circle",
+    "parent": "isc:spells/root_projectile",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -93,7 +93,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:58}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:78}}}"
                         }
                     }
                 ]

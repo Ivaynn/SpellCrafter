@@ -1,6 +1,10 @@
 #> [tick] as projectile, at @s
 
 
+# Return if speed is 0
+execute if score @s isc.speed matches 0 run return 0
+
+
 # Get caster's rotation
 scoreboard players operation $id isc.tmp = @s isc.id
 data modify entity @s Rotation set from entity @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id] Rotation 

@@ -32,6 +32,10 @@ execute as @s[tag=!isc.spell.anchored] if score @s isc.speed matches 1.. if scor
 execute as @s[tag=!isc.spell.anchored] if score @s isc.speed matches ..-1 if score @s isc.age matches 1.. at @s run tp @s ^ ^ ^-0.25
 
 
+# Special cases
+execute if score @s isc.speed matches 0 as @s[tag=!isc.spell.anchored] if score $spell.follow isc.tmp matches 1 if score @s isc.age matches 1.. at @s run tp @s ^ ^ ^0.25
+
+
 # Next iteration
 scoreboard players remove @s isc.age 1
 scoreboard players remove $iter isc.tmp 1

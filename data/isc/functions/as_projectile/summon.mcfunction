@@ -63,7 +63,7 @@ execute if score $result isc.tmp matches -1 run return 0
 
 # Make sure projectile stats aren't negative
 execute unless score @s isc.range matches 0.. run scoreboard players set @s isc.range 0
-execute unless score @s isc.speed matches 1.. run scoreboard players set @s isc.speed 1
+execute unless score @s isc.speed matches 0.. run scoreboard players set @s isc.speed 0
 execute unless score @s isc.damage matches 0.. run scoreboard players set @s isc.damage 0
 
 

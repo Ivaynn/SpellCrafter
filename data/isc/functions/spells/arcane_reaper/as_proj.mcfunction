@@ -1,5 +1,4 @@
 #> as (other) projectile, at @s
-# projectile hit
 
 
 scoreboard players set $success isc.tmp 1
