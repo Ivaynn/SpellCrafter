@@ -8,6 +8,7 @@ execute if score @s isc.cooldown matches 1 run data modify entity @s Invulnerabl
 
 # Tick
 execute as @s[type=minecraft:goat] at @s run function isc:spells/angry_goat/tick
+execute as @s[type=minecraft:pig] at @s run function isc:spells/flying_pig/tick
 
 
 # Despawn timer

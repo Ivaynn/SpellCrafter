@@ -1,4 +1,4 @@
-#> execute summon (goat) at the projectile's position
+#> [tick] as goat
 
 scoreboard players operation $rem isc.tmp = @s isc.age
 scoreboard players operation $rem isc.tmp %= #10 isc.math
