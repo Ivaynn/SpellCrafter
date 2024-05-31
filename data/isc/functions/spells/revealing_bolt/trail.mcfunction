@@ -3,7 +3,7 @@
 
 # Glowing
 scoreboard players operation $id isc.tmp = @s isc.id
-effect give @e[distance=..5,type=!#isc:untargetable,predicate=!isc:match_id] minecraft:glowing 5 0 false
+effect give @e[distance=..5,type=!#isc:untargetable,tag=!isc.untargetable,predicate=!isc:match_id] minecraft:glowing 5 0 false
 
 
 # Effects

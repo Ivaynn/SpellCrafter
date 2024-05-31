@@ -13,8 +13,8 @@ execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=.
 # Poison
 scoreboard players operation $id isc.tmp = @s isc.id
 execute unless score damage_caster isc.options matches 1 run effect give @e[distance=..3,limit=1,sort=nearest,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,predicate=!isc:match_id] minecraft:poison 5 0 false
-execute if score damage_caster isc.options matches 1 as @s[tag=!isc.spell.safe_shot] run effect give @e[distance=..3,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator] minecraft:poison 5 0 false
-execute if score damage_caster isc.options matches 1 as @s[tag=isc.spell.safe_shot] run effect give @e[distance=..3,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,predicate=!isc:match_id] minecraft:poison 5 0 false
+execute if score damage_caster isc.options matches 1 as @s[tag=!isc.spell.safe_shot] run effect give @e[distance=..3,limit=1,sort=nearest,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator] minecraft:poison 5 0 false
+execute if score damage_caster isc.options matches 1 as @s[tag=isc.spell.safe_shot] run effect give @e[distance=..3,limit=1,sort=nearest,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator,predicate=!isc:match_id] minecraft:poison 5 0 false
 
 
 # Effects

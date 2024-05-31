@@ -13,6 +13,9 @@ execute as @s[tag=isc.spell.revealing_bolt] run return run function isc:spells/r
 execute as @s[tag=isc.spell.freezing_bolt] run return run function isc:spells/freezing_bolt/trail
 execute as @s[tag=isc.spell.drill] run return run function isc:spells/drill/trail
 execute as @s[tag=isc.spell.black_hole] run return run function isc:spells/black_hole/trail
+execute as @s[tag=isc.spell.arcane_shield] run return run function isc:spells/arcane_shield/trail
+execute as @s[tag=isc.spell.healing_circle] run return run function isc:spells/healing_circle/trail
+execute as @s[tag=isc.spell.toxic_cloud] run return run function isc:spells/toxic_cloud/trail
 
 
 # Hidden skips all functions that are just particles
@@ -32,5 +35,3 @@ execute as @s[tag=isc.spell.shulker_bullet] run function isc:spells/shulker_bull
 execute as @s[tag=isc.spell.poison_dart] run function isc:spells/poison_dart/trail
 execute as @s[tag=isc.spell.boomerang] run function isc:spells/boomerang/trail
 execute as @s[tag=isc.spell.kinetic_bolt] run function isc:spells/kinetic_bolt/trail
-execute as @s[tag=isc.spell.arcane_shield] run function isc:spells/arcane_shield/trail
-execute as @s[tag=isc.spell.healing_circle] run function isc:spells/healing_circle/trail

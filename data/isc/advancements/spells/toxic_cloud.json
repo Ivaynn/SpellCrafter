@@ -4,15 +4,15 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280058
+                "minecraft:custom_model_data": 7280080
             }
         },
         "title": {
-            "text": "Drill                         "
+            "text": "Toxic Cloud                   "
         },
         "description": [
             {
-                "text": "\n◆ 120",
+                "text": "\n◆ 80",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "A slow projectile that destroys blocks on its path\n",
+                "text": "A toxic cloud that applies poison to all nearby targets\n",
                 "color": "gray"
             },
             {
@@ -28,7 +28,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "2 ❤",
+                        "text": "0 ❤",
                         "color": "red"
                     }
                 ]
@@ -38,7 +38,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "5",
+                        "text": "60",
                         "color": "red"
                     },
                     {
@@ -52,7 +52,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "5",
+                        "text": "0",
                         "color": "red"
                     },
                     {
@@ -70,7 +70,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/toxic_cloud",
+    "parent": "isc:spells/healing_circle",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -93,7 +93,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:58}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:80}}}"
                         }
                     }
                 ]

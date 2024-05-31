@@ -34,6 +34,7 @@ execute if score $spell isc.tmp matches 63 run return run function isc:spells/bo
 execute if score $spell isc.tmp matches 65 run return run function isc:spells/kinetic_bolt/projectile
 execute if score $spell isc.tmp matches 78 run return run function isc:spells/arcane_shield/projectile
 execute if score $spell isc.tmp matches 79 run return run function isc:spells/healing_circle/projectile
+execute if score $spell isc.tmp matches 80 run return run function isc:spells/toxic_cloud/projectile
 
 
 # Non-projectiles (no return)

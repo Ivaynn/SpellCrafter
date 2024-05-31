@@ -16,6 +16,7 @@ execute as @s[tag=isc.spell.null_shot] run function isc:spells/null_shot/hit
 execute as @s[tag=isc.spell.kinetic_bolt] run function isc:spells/kinetic_bolt/hit
 execute as @s[tag=isc.spell.arcane_shield] run function isc:spells/arcane_shield/hit
 execute as @s[tag=isc.spell.healing_circle] run function isc:spells/healing_circle/hit
+execute as @s[tag=isc.spell.toxic_cloud] run function isc:spells/toxic_cloud/hit
 
 
 # Next spell...

@@ -77,3 +77,4 @@ execute if score $spell isc.tmp matches 76 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 77 run return run loot insert ~ ~ ~ loot isc:spells/safe_shot
 execute if score $spell isc.tmp matches 78 run return run loot insert ~ ~ ~ loot isc:spells/arcane_shield
 execute if score $spell isc.tmp matches 79 run return run loot insert ~ ~ ~ loot isc:spells/healing_circle
+execute if score $spell isc.tmp matches 80 run return run loot insert ~ ~ ~ loot isc:spells/toxic_cloud

@@ -3,7 +3,7 @@
 
 
 # Shield targets
-effect give @e[distance=..4,type=!#isc:untargetable] minecraft:resistance 3 255 true
+effect give @e[distance=..4,type=!#isc:untargetable,tag=!isc.untargetable] minecraft:resistance 3 255 true
 
 
 # Effects

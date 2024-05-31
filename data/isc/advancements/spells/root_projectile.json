@@ -303,6 +303,25 @@
                     }
                 ]
             }
+        },
+        "isc:toxic_cloud": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/toxic_cloud": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     }
 }
