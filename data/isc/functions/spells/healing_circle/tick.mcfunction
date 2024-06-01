@@ -1,5 +1,11 @@
 #> [tick] as projectile, at @s
 
+
+# Effects
+particle minecraft:entity_effect{color:[1.0,0.5,0.8,1.00]} ~ ~-1 ~ 1.8 0 1.8 0 5 force @a
+
+
+# Apply the effect every X ticks
 scoreboard players operation $rem isc.tmp = @s isc.tick
 scoreboard players operation $rem isc.tmp %= #20 isc.math
 

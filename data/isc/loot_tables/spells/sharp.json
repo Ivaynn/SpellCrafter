@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:64, mana:25, cooldown:0, lore:'{\"text\":\"⚝ Sharp\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:64, mana:0, cooldown:0, lore:'{\"text\":\"⚝ Sharp\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 25",
+                    "text": "◆ 0",
                     "color": "aqua",
                     "italic": false,
                     "extra": [

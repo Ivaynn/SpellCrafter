@@ -1,6 +1,17 @@
 #> [tick] as projectile, at @s
 
 
+# Effects
+particle minecraft:enchanted_hit ~ ~2 ~ 0.7 0.1 0.7 0 5 force @a
+particle minecraft:enchanted_hit ~ ~-2 ~ 0.7 0.1 0.7 0 5 force @a
+
+particle minecraft:enchanted_hit ~2 ~ ~ 0 0.7 0.7 0.1 5 force @a
+particle minecraft:enchanted_hit ~-2 ~ ~ 0 0.7 0.7 0.1 5 force @a
+
+particle minecraft:enchanted_hit ~ ~ ~2 0.7 0.7 0.1 0 5 force @a
+particle minecraft:enchanted_hit ~ ~ ~-2 0.7 0.7 0.1 0 5 force @a
+
+
 # Get stats of nearby projectiles
 scoreboard players set $count isc.tmp 0
 tag @s add isc.self
