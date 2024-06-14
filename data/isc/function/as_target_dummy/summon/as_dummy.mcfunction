@@ -2,4 +2,4 @@
 
 tag @s add isc.target_dummy
 
-data merge entity @s {PersistenceRequired:1b,PlayerCreated:1b,Health:500.0f,Attributes:[{Name:"minecraft:generic.max_health",Base:500},{Name:"minecraft:generic.movement_speed",Base:-100}]}
+data merge entity @s {PersistenceRequired:1b,PlayerCreated:1b,Health:500.0f,attributes:[{id:"minecraft:generic.max_health",base:500},{id:"minecraft:generic.movement_speed",base:-100}]}

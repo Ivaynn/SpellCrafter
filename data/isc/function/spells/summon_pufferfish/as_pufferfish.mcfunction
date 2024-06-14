@@ -8,7 +8,7 @@ scoreboard players set @s isc.age 400
 
 
 # Update entity NBT
-data merge entity @s {Invulnerable:1b,DeathLootTable:"empty",PersistenceRequired:1b,PuffState:2,Air:1000,Attributes:[{Name:"minecraft:generic.safe_fall_distance",Base:1000}]}
+data merge entity @s {Invulnerable:1b,DeathLootTable:"empty",PersistenceRequired:1b,PuffState:2,Air:1000,attributes:[{id:"minecraft:generic.safe_fall_distance",base:1000}]}
 
 
 # Get caster's id
