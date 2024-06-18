@@ -60,6 +60,7 @@ execute if score $spell isc.tmp matches 67 run return run tag @s add isc.spell.w
 execute if score $spell isc.tmp matches 68 run return run tag @s add isc.spell.warp
 execute if score $spell isc.tmp matches 76 run return run tag @s add isc.spell.follow
 execute if score $spell isc.tmp matches 77 run return run tag @s add isc.spell.safe_shot
+execute if score $spell isc.tmp matches 81 run return run tag @s add isc.spell.bouncy
 
 
 # Stackable modifiers

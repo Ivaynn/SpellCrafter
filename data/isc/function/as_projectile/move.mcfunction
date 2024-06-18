@@ -1,4 +1,4 @@
-#> [tick] as projectile, on summon, at @s
+#> [tick] as projectile, at @s
 #> recursive function (limited by score "$iter isc.tmp")
 
 
@@ -7,11 +7,16 @@ scoreboard players add @s isc.dist 1
 
 
 # Block collision
-execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] at @s unless block ^.2 ^.2 ^ #isc:air run scoreboard players set @s isc.age 0
-execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] at @s unless block ^.2 ^-.2 ^ #isc:air run scoreboard players set @s isc.age 0
-execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] at @s unless block ^-.2 ^.2 ^ #isc:air run scoreboard players set @s isc.age 0
-execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] at @s unless block ^-.2 ^-.2 ^ #isc:air run scoreboard players set @s isc.age 0
+scoreboard players set $wall_hit isc.tmp 0
+execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] at @s unless block ^.2 ^.2 ^ #isc:air run scoreboard players add $wall_hit isc.tmp 1
+execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] at @s unless block ^.2 ^-.2 ^ #isc:air run scoreboard players add $wall_hit isc.tmp 1
+execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] at @s unless block ^-.2 ^.2 ^ #isc:air run scoreboard players add $wall_hit isc.tmp 1
+execute if score @s isc.age matches 1.. as @s[tag=!isc.spell.ghost] at @s unless block ^-.2 ^-.2 ^ #isc:air run scoreboard players add $wall_hit isc.tmp 1
 execute if score @s isc.age matches 1.. if entity @s[tag=isc.spell.fireball] if block ~ ~ ~ minecraft:water run return run function isc:spells/fireball/extinguish
+
+execute if score $wall_hit isc.tmp matches 1.. as @s[tag=!isc.spell.bouncy] run scoreboard players set @s isc.age 0
+execute if score $wall_hit isc.tmp matches 1.. as @s[tag=isc.spell.bouncy] positioned ^ ^ ^-0.25 run function isc:spells/bouncy/init
+
 execute unless score @s isc.age matches 1.. if score @s isc.speed matches 1.. run tp @s ^ ^ ^-0.25
 execute unless score @s isc.age matches 1.. if score @s isc.speed matches ..-1 run tp @s ^ ^ ^0.25
 
