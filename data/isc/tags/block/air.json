@@ -1,11 +1,23 @@
 {
     "values":[
-        "minecraft:air",
-        "minecraft:cave_air",
-        "minecraft:void_air",
         "minecraft:light",
         "minecraft:structure_void",
         "minecraft:water",
-        "minecraft:lava"
+        "minecraft:lava",
+
+        "#minecraft:air",
+        "#minecraft:all_signs",
+        "#minecraft:banners",
+        "#minecraft:buttons",
+        "#minecraft:candles",
+        "#minecraft:cave_vines",
+        "#minecraft:coral_plants",
+        "#minecraft:fire",
+        "#minecraft:flower_pots",
+        "#minecraft:flowers",
+        "#minecraft:pressure_plates",
+        "#minecraft:rails",
+        "#minecraft:saplings",
+        "#minecraft:wool_carpets"
     ]
 }

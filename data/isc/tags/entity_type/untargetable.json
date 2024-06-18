@@ -4,6 +4,7 @@
         "minecraft:arrow",
         "minecraft:block_display",
         "minecraft:boat",
+        "minecraft:breeze_wind_charge",
         "minecraft:chest_boat",
         "minecraft:chest_minecart",
         "minecraft:command_block_minecart",
@@ -17,7 +18,6 @@
         "minecraft:falling_block",
         "minecraft:fireball",
         "minecraft:firework_rocket",
-        "minecraft:fishing_bobber",
         "minecraft:furnace_minecart",
         "minecraft:glow_item_frame",
         "minecraft:hopper_minecart",
@@ -30,6 +30,7 @@
         "minecraft:llama_spit",
         "minecraft:marker",
         "minecraft:minecart",
+        "minecraft:ominous_item_spawner",
         "minecraft:painting",
         "minecraft:potion",
         "minecraft:shulker_bullet",
@@ -41,6 +42,7 @@
         "minecraft:tnt",
         "minecraft:tnt_minecart",
         "minecraft:trident",
+        "minecraft:wind_charge",
         "minecraft:wither_skull"
     ]
 }
