@@ -6,6 +6,7 @@
         "minecraft:sheep",
         "minecraft:pufferfish",
         "minecraft:goat",
-        "minecraft:pig"
+        "minecraft:pig",
+        "minecraft:wind_charge"
     ]
 }
