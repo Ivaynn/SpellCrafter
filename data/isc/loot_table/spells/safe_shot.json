@@ -56,7 +56,12 @@
                     "italic": false
                 },
                 {
-                    "text": "from hitting you",
+                    "text": "from hitting you, but reduces",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "its damage",
                     "color": "gray",
                     "italic": false
                 },

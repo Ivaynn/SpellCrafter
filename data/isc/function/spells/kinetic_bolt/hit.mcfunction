@@ -11,7 +11,7 @@ scoreboard players operation $damage isc.tmp = @s isc.speed
 scoreboard players operation $damage isc.tmp += @s isc.damage
 
 scoreboard players set $success isc.tmp 0
-execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=..3,type=!#isc:untargetable] store result score $success isc.tmp run function isc:damage/init
+execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=..3,type=!#isc:untargetable] store result score $success isc.tmp run function isc:damage/add
 execute if score $success isc.tmp matches 0 run return 0
 
 

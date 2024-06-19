@@ -1,5 +1,5 @@
 
-fill ~ ~ ~ ~ ~ ~ minecraft:air replace #isc:mineable
+execute unless block ~ ~ ~ #minecraft:wither_immune run setblock ~ ~ ~ minecraft:air destroy
 
 particle minecraft:dust{color:[0,0,0],scale:2} ~ ~ ~ 0.3 0.3 0.3 0 3 force @a
 particle minecraft:portal ~ ~-.3 ~ 0.3 0.3 0.3 0.3 3 force @a

@@ -1,10 +1,10 @@
-execute if score $damage isc.tmp matches 51 run damage @s 51 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 52 run damage @s 52 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 53 run damage @s 53 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 54 run damage @s 54 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 55 run damage @s 55 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 56 run damage @s 56 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 57 run damage @s 57 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 58 run damage @s 58 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 59 run damage @s 59 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
-execute if score $damage isc.tmp matches 60 run damage @s 60 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id]
+execute if score @s isc.damage matches 51 run damage @s 51 minecraft:arrow
+execute if score @s isc.damage matches 52 run damage @s 52 minecraft:arrow
+execute if score @s isc.damage matches 53 run damage @s 53 minecraft:arrow
+execute if score @s isc.damage matches 54 run damage @s 54 minecraft:arrow
+execute if score @s isc.damage matches 55 run damage @s 55 minecraft:arrow
+execute if score @s isc.damage matches 56 run damage @s 56 minecraft:arrow
+execute if score @s isc.damage matches 57 run damage @s 57 minecraft:arrow
+execute if score @s isc.damage matches 58 run damage @s 58 minecraft:arrow
+execute if score @s isc.damage matches 59 run damage @s 59 minecraft:arrow
+execute if score @s isc.damage matches 60 run damage @s 60 minecraft:arrow

@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Creates two copies of the next projectile, one on each side\n",
+                "text": "Creates two copies of the next projectile, one on each side. Copies deal reduced damage\n",
                 "color": "gray"
             }
         ],

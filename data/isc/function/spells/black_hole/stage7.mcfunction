@@ -1,7 +1,34 @@
 
-fill ~2 ~1 ~1 ~-2 ~-1 ~-1 minecraft:air replace #isc:mineable
-fill ~1 ~2 ~1 ~-1 ~-2 ~-1 minecraft:air replace #isc:mineable
-fill ~1 ~1 ~2 ~-1 ~-1 ~-2 minecraft:air replace #isc:mineable
+execute unless block ~ ~ ~ #minecraft:wither_immune run setblock ~ ~ ~ minecraft:air destroy
+
+execute unless block ~ ~1 ~ #minecraft:wither_immune run setblock ~ ~1 ~ minecraft:air destroy
+execute unless block ~ ~-1 ~ #minecraft:wither_immune run setblock ~ ~-1 ~ minecraft:air destroy
+execute unless block ~1 ~ ~ #minecraft:wither_immune run setblock ~1 ~ ~ minecraft:air destroy
+execute unless block ~-1 ~ ~ #minecraft:wither_immune run setblock ~-1 ~ ~ minecraft:air destroy
+execute unless block ~ ~ ~1 #minecraft:wither_immune run setblock ~ ~ ~1 minecraft:air destroy
+execute unless block ~ ~ ~-1 #minecraft:wither_immune run setblock ~ ~ ~-1 minecraft:air destroy
+
+execute unless block ~1 ~1 ~ #minecraft:wither_immune run setblock ~1 ~1 ~ minecraft:air destroy
+execute unless block ~1 ~-1 ~ #minecraft:wither_immune run setblock ~1 ~-1 ~ minecraft:air destroy
+execute unless block ~-1 ~1 ~ #minecraft:wither_immune run setblock ~-1 ~1 ~ minecraft:air destroy
+execute unless block ~-1 ~-1 ~ #minecraft:wither_immune run setblock ~-1 ~-1 ~ minecraft:air destroy
+execute unless block ~ ~1 ~1 #minecraft:wither_immune run setblock ~ ~1 ~1 minecraft:air destroy
+execute unless block ~ ~1 ~-1 #minecraft:wither_immune run setblock ~ ~1 ~-1 minecraft:air destroy
+execute unless block ~ ~-1 ~1 #minecraft:wither_immune run setblock ~ ~-1 ~1 minecraft:air destroy
+execute unless block ~ ~-1 ~-1 #minecraft:wither_immune run setblock ~ ~-1 ~-1 minecraft:air destroy
+execute unless block ~1 ~ ~1 #minecraft:wither_immune run setblock ~1 ~ ~1 minecraft:air destroy
+execute unless block ~1 ~ ~-1 #minecraft:wither_immune run setblock ~1 ~ ~-1 minecraft:air destroy
+execute unless block ~-1 ~ ~1 #minecraft:wither_immune run setblock ~-1 ~ ~1 minecraft:air destroy
+execute unless block ~-1 ~ ~-1 #minecraft:wither_immune run setblock ~-1 ~ ~-1 minecraft:air destroy
+
+execute unless block ~1 ~1 ~1 #minecraft:wither_immune run setblock ~1 ~1 ~1 minecraft:air destroy
+execute unless block ~1 ~1 ~-1 #minecraft:wither_immune run setblock ~1 ~1 ~-1 minecraft:air destroy
+execute unless block ~1 ~-1 ~1 #minecraft:wither_immune run setblock ~1 ~-1 ~1 minecraft:air destroy
+execute unless block ~1 ~-1 ~-1 #minecraft:wither_immune run setblock ~1 ~-1 ~-1 minecraft:air destroy
+execute unless block ~-1 ~1 ~1 #minecraft:wither_immune run setblock ~-1 ~1 ~1 minecraft:air destroy
+execute unless block ~-1 ~1 ~-1 #minecraft:wither_immune run setblock ~-1 ~1 ~-1 minecraft:air destroy
+execute unless block ~-1 ~-1 ~1 #minecraft:wither_immune run setblock ~-1 ~-1 ~1 minecraft:air destroy
+execute unless block ~-1 ~-1 ~-1 #minecraft:wither_immune run setblock ~-1 ~-1 ~-1 minecraft:air destroy
 
 particle minecraft:dust{color:[0,0,0],scale:4} ~ ~ ~ 0.7 0.7 0.7 0 10 force @a
 particle minecraft:portal ~ ~-.3 ~ 0.7 0.7 0.7 0.7 7 force @a

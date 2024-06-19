@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Conceals the next projectile's trail, rendering it invisible\n",
+                "text": "Conceals the next projectile's trail, but reduces its damage\n",
                 "color": "gray"
             }
         ],

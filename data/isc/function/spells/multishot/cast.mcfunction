@@ -26,6 +26,10 @@ scoreboard players operation $dist isc.tmp = @s isc.dist
 scoreboard players operation $weight isc.tmp = @s isc.weight
 
 
+# Nerf: copies deal reduces damage
+scoreboard players operation $damage isc.tmp /= #2 isc.math
+
+
 # Summon copies
 execute store result score $r0 isc.tmp run data get storage isc:tmp copy.rotation[0] 1
 function isc:spells/multishot/for_copy

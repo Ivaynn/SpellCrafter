@@ -1,6 +1,11 @@
 #> any
 # remove entity with smoke particles instead of the default death animation
 
+
+# Dismount any passengers
+execute on passengers run ride @s dismount
+
+
 # Effects
 execute at @s run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 1.5
 effect give @s minecraft:invisibility infinite 0 true

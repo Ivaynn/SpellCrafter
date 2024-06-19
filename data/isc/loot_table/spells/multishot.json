@@ -56,7 +56,12 @@
                     "italic": false
                 },
                 {
-                    "text": "projectile, one on each side",
+                    "text": "projectile, one on each side.",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "Copies deal reduced damage",
                     "color": "gray",
                     "italic": false
                 },

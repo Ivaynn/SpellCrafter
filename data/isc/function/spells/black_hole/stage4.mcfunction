@@ -1,5 +1,12 @@
 
-fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:air replace #isc:mineable
+execute unless block ~ ~ ~ #minecraft:wither_immune run setblock ~ ~ ~ minecraft:air destroy
+
+execute unless block ~ ~1 ~ #minecraft:wither_immune run setblock ~ ~1 ~ minecraft:air destroy
+execute unless block ~ ~-1 ~ #minecraft:wither_immune run setblock ~ ~-1 ~ minecraft:air destroy
+execute unless block ~1 ~ ~ #minecraft:wither_immune run setblock ~1 ~ ~ minecraft:air destroy
+execute unless block ~-1 ~ ~ #minecraft:wither_immune run setblock ~-1 ~ ~ minecraft:air destroy
+execute unless block ~ ~ ~1 #minecraft:wither_immune run setblock ~ ~ ~1 minecraft:air destroy
+execute unless block ~ ~ ~-1 #minecraft:wither_immune run setblock ~ ~ ~-1 minecraft:air destroy
 
 particle minecraft:dust{color:[0,0,0],scale:3} ~ ~ ~ 0.3 0.3 0.3 0 3 force @a
 particle minecraft:portal ~ ~-.3 ~ 0.4 0.4 0.4 0.4 4 force @a

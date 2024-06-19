@@ -8,7 +8,7 @@ scoreboard players set @s isc.age 100
 
 
 # Update entity NBT
-data merge entity @s {Invulnerable:1b,DeathLootTable:"empty",PersistenceRequired:1b,Saddle:1b}
+data merge entity @s {Invulnerable:1b,DeathLootTable:"empty",PersistenceRequired:1b,Saddle:1b,AbsorptionAmount:2048f,attributes:[{id:"minecraft:generic.armor",base:30},{id:"minecraft:generic.max_absorption",base:2048},{id:"minecraft:generic.movement_speed",base:-100}]}
 
 
 # Get caster's id

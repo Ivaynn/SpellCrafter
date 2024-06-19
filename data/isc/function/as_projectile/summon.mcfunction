@@ -83,6 +83,8 @@ execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cas
 execute as @s[tag=!isc.spell.random_dir,tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
 execute as @s[tag=isc.spell.warp] at @s run function isc:spells/warp/cast
 execute as @s[tag=isc.spell.trick_shot] at @s run function isc:spells/trick_shot/cast
+execute as @s[tag=isc.spell.safe_shot] at @s run function isc:spells/safe_shot/cast
+execute as @s[tag=isc.spell.hidden] at @s run function isc:spells/hidden/cast
 
 
 # Apply modifiers that create new projectiles
