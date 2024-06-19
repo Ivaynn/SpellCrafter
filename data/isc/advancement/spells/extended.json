@@ -4,11 +4,11 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280064
+                "minecraft:custom_model_data": 7280083
             }
         },
         "title": {
-            "text": "Sharp                         "
+            "text": "Extended                      "
         },
         "description": [
             {
@@ -20,16 +20,20 @@
                 "color": "gray"
             },
             {
-                "text": "Increases the wand's attack damage\n",
+                "text": "Increases the wand's attack range\n",
                 "color": "gray"
             },
             {
-                "text": "\nDamage: ",
+                "text": "\nRange: ",
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "+1 ❤",
+                        "text": "+1",
                         "color": "red"
+                    },
+                    {
+                        "text": " blocks",
+                        "color": "dark_gray"
                     }
                 ]
             },
@@ -42,7 +46,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_special",
+    "parent": "isc:spells/sharp",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -65,7 +69,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:64}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:83}}}"
                         }
                     }
                 ]

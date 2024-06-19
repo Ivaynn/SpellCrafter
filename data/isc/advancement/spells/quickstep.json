@@ -4,11 +4,11 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280064
+                "minecraft:custom_model_data": 7280084
             }
         },
         "title": {
-            "text": "Sharp                         "
+            "text": "Quickstep                     "
         },
         "description": [
             {
@@ -20,21 +20,8 @@
                 "color": "gray"
             },
             {
-                "text": "Increases the wand's attack damage\n",
+                "text": "Increases your speed while holding the wand\n",
                 "color": "gray"
-            },
-            {
-                "text": "\nDamage: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "+1 ❤",
-                        "color": "red"
-                    }
-                ]
-            },
-            {
-                "text": "\n"
             }
         ],
         "frame": "goal",
@@ -42,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_special",
+    "parent": "isc:spells/extended",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -65,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:64}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:84}}}"
                         }
                     }
                 ]

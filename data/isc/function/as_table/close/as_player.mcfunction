@@ -21,6 +21,8 @@ data modify storage isc:tmp wand.mod set from entity @s SelectedItem.components.
 
 # Special spells that modify the wand item
 scoreboard players set $spell.sharp isc.tmp 0
+scoreboard players set $spell.extended isc.tmp 0
+scoreboard players set $spell.quickstep isc.tmp 0
 scoreboard players set $spell.secret isc.tmp 0
 scoreboard players set $spell.locked isc.tmp 0
 
@@ -40,7 +42,12 @@ execute unless data storage isc:tmp wand.spells[0] run return run function isc:a
 
 
 # Special cases
-execute if score $spell.sharp isc.tmp matches 1.. run item modify entity @s weapon isc:wand/sharp
+scoreboard players set $set_attributes isc.tmp 0
+execute if score $spell.sharp isc.tmp matches 1.. run scoreboard players set $set_attributes isc.tmp 1 
+execute if score $spell.extended isc.tmp matches 1.. run scoreboard players set $set_attributes isc.tmp 1 
+execute if score $spell.quickstep isc.tmp matches 1.. run scoreboard players set $set_attributes isc.tmp 1 
+execute if score $set_attributes isc.tmp matches 1 run item modify entity @s weapon isc:wand/set_attributes
+
 execute if score $spell.locked isc.tmp matches 1 store result storage isc:tmp wand.owner int 1 run scoreboard players get @s isc.id
 
 

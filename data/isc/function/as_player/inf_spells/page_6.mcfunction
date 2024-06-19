@@ -4,13 +4,13 @@ loot replace entity @s inventory.1 loot isc:spells/multicast
 loot replace entity @s inventory.2 loot isc:spells/shuffle
 loot replace entity @s inventory.3 loot isc:spells/refresh
 loot replace entity @s inventory.4 loot isc:spells/haste
-loot replace entity @s inventory.5 loot isc:spells/sharp
-loot replace entity @s inventory.6 loot isc:spells/secret
-loot replace entity @s inventory.7 loot isc:spells/locked
+loot replace entity @s inventory.5 loot isc:spells/secret
+loot replace entity @s inventory.6 loot isc:spells/locked
+loot replace entity @s inventory.7 loot isc:spells/random_spell
 
-loot replace entity @s inventory.10 loot isc:spells/random_spell
-item replace entity @s inventory.11 with minecraft:air
-item replace entity @s inventory.12 with minecraft:air
+loot replace entity @s inventory.10 loot isc:spells/sharp
+loot replace entity @s inventory.11 loot isc:spells/extended
+loot replace entity @s inventory.12 loot isc:spells/quickstep
 item replace entity @s inventory.13 with minecraft:air
 item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air

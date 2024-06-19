@@ -80,3 +80,5 @@ execute if score $spell isc.tmp matches 79 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 80 run return run loot insert ~ ~ ~ loot isc:spells/toxic_cloud
 execute if score $spell isc.tmp matches 81 run return run loot insert ~ ~ ~ loot isc:spells/bouncy
 execute if score $spell isc.tmp matches 82 run return run loot insert ~ ~ ~ loot isc:spells/wind_charge
+execute if score $spell isc.tmp matches 83 run return run loot insert ~ ~ ~ loot isc:spells/extended
+execute if score $spell isc.tmp matches 84 run return run loot insert ~ ~ ~ loot isc:spells/quickstep

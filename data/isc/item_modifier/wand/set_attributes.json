@@ -1,0 +1,67 @@
+[
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "id": "isc:spell.sharp",
+                "attribute": "minecraft:generic.attack_damage",
+                "amount": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$spell.sharp"
+                    },
+                    "score": "isc.tmp",
+                    "scale": 2
+                },
+                "operation": "add_value",
+                "slot": "mainhand"
+            },
+            {
+                "id": "isc:spell.extended.entity",
+                "attribute": "minecraft:player.entity_interaction_range",
+                "amount": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$spell.extended"
+                    },
+                    "score": "isc.tmp",
+                    "scale": 1
+                },
+                "operation": "add_value",
+                "slot": "mainhand"
+            },
+            {
+                "id": "isc:spell.extended.block",
+                "attribute": "minecraft:player.block_interaction_range",
+                "amount": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$spell.extended"
+                    },
+                    "score": "isc.tmp",
+                    "scale": 1
+                },
+                "operation": "add_value",
+                "slot": "mainhand"
+            },
+            {
+                "id": "isc:spell.quickstep",
+                "attribute": "minecraft:generic.movement_speed",
+                "amount": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$spell.quickstep"
+                    },
+                    "score": "isc.tmp",
+                    "scale": 0.2
+                },
+                "operation": "add_multiplied_base",
+                "slot": "mainhand"
+            }
+        ]
+    }
+]

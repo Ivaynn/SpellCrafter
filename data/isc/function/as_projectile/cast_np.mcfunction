@@ -36,6 +36,8 @@ execute if score $spell isc.tmp matches 52 run return run function isc:spells/sh
 execute if score $spell isc.tmp matches 64 run return 1
 execute if score $spell isc.tmp matches 69 run return 1
 execute if score $spell isc.tmp matches 70 run return 1
+execute if score $spell isc.tmp matches 83 run return 1
+execute if score $spell isc.tmp matches 84 run return 1
 
 
 # Unstackable modifiers
