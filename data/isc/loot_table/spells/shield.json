@@ -56,7 +56,7 @@
                     "italic": false
                 },
                 {
-                    "text": "area, stopping all damage",
+                    "text": "radius, stopping all damage",
                     "color": "gray",
                     "italic": false
                 },

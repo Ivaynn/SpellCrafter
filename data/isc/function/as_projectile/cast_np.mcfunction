@@ -26,6 +26,8 @@ execute if score $spell isc.tmp matches 73 run return run function isc:spells/sm
 execute if score $spell isc.tmp matches 74 run return run function isc:spells/flash/cast
 execute if score $spell isc.tmp matches 75 run return run function isc:spells/flying_pig/cast
 execute if score $spell isc.tmp matches 82 run return run function isc:spells/wind_charge/cast
+execute if score $spell isc.tmp matches 85 run return run function isc:spells/diverge/cast
+execute if score $spell isc.tmp matches 86 run return run function isc:spells/converge/cast
 
 
 # Special

@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Shields targets in a small area, stopping all damage for a brief moment\n",
+                "text": "Shields targets in a small radius, stopping all damage for a brief moment\n",
                 "color": "gray"
             }
         ],

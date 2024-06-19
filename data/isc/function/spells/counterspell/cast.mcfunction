@@ -3,7 +3,6 @@
 
 
 # Remove projectiles
-scoreboard players operation $id isc.tmp = @s isc.id
 execute as @e[distance=..15,type=minecraft:marker,tag=isc.projectile] at @s run function isc:spells/counterspell/as_proj
 
 

@@ -4,11 +4,11 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280071
+                "minecraft:custom_model_data": 7280086
             }
         },
         "title": {
-            "text": "Cleanse                       "
+            "text": "Convergent Force              "
         },
         "description": [
             {
@@ -16,11 +16,11 @@
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 2.0\n\n",
+                "text": "   ⌚ 1.5\n\n",
                 "color": "gray"
             },
             {
-                "text": "Clears all effects from targets in a small radius\n",
+                "text": "Makes projectiles in a large radius point towards this\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_instant",
+    "parent": "isc:spells/diverge",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:71}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:86}}}"
                         }
                     }
                 ]

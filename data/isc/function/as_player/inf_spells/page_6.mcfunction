@@ -17,8 +17,8 @@ item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air
 
 loot replace entity @s inventory.19 loot isc:spells/wind_charge
-item replace entity @s inventory.20 with minecraft:air
-item replace entity @s inventory.21 with minecraft:air
+loot replace entity @s inventory.20 loot isc:spells/diverge
+loot replace entity @s inventory.21 loot isc:spells/converge
 item replace entity @s inventory.22 with minecraft:air
 item replace entity @s inventory.23 with minecraft:air
 item replace entity @s inventory.24 with minecraft:air

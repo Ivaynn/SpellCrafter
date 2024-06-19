@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Stops all projectiles in a large area\n",
+                "text": "Stops all projectiles in a large radius\n",
                 "color": "gray"
             }
         ],

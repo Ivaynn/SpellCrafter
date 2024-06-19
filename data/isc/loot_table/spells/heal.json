@@ -51,7 +51,7 @@
                     "text": ""
                 },
                 {
-                    "text": "Heals targets in a small area",
+                    "text": "Heals targets in a small radius",
                     "color": "gray",
                     "italic": false
                 },

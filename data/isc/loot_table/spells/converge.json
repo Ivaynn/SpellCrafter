@@ -16,19 +16,19 @@
             "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
-                "minecraft:custom_model_data": 7280004,
+                "minecraft:custom_model_data": 7280086,
                 "minecraft:enchantment_glint_override": false
             }
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:4, mana:75, cooldown:5, lore:'{\"text\":\"✦ Explosion\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:86, mana:50, cooldown:30, lore:'{\"text\":\"✦ Convergent Force\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Explosion"
+            "name": "Convergent Force"
         },
         {
             "function": "minecraft:set_lore",
@@ -36,12 +36,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 75",
+                    "text": "◆ 50",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.25",
+                            "text": "   ⌚ 1.5",
                             "color": "gray",
                             "italic": false
                         }
@@ -51,23 +51,14 @@
                     "text": ""
                 },
                 {
-                    "text": "Deals damage in a large radius",
+                    "text": "Makes projectiles in a large",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": ""
-                },
-                {
-                    "text": "Damage: ",
+                    "text": "radius point towards this",
                     "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "8 ❤",
-                            "color": "red"
-                        }
-                    ]
+                    "italic": false
                 },
                 {
                     "text": ""
