@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/summon_lightning",
+    "parent": "isc:spells/wind_charge",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

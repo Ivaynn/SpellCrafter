@@ -16,10 +16,10 @@ item replace entity @s inventory.14 with minecraft:air
 loot replace entity @s inventory.15 loot isc:spells/secret
 loot replace entity @s inventory.16 loot isc:spells/locked
 
-loot replace entity @s inventory.19 loot isc:spells/wind_charge
-loot replace entity @s inventory.20 loot isc:spells/diverge
-loot replace entity @s inventory.21 loot isc:spells/converge
-item replace entity @s inventory.22 with minecraft:air
+loot replace entity @s inventory.19 loot isc:spells/flash
+loot replace entity @s inventory.20 loot isc:spells/smoke_bomb
+loot replace entity @s inventory.21 loot isc:spells/diverge
+loot replace entity @s inventory.22 loot isc:spells/converge
 item replace entity @s inventory.23 with minecraft:air
 item replace entity @s inventory.24 with minecraft:air
 item replace entity @s inventory.25 with minecraft:air
