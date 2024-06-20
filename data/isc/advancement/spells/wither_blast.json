@@ -4,23 +4,23 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280004
+                "minecraft:custom_model_data": 7280091
             }
         },
         "title": {
-            "text": "Explosion                     "
+            "text": "Wither Blast                  "
         },
         "description": [
             {
-                "text": "\n◆ 75",
+                "text": "\n◆ 50",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.5\n\n",
+                "text": "   ⌚ 1.5\n\n",
                 "color": "gray"
             },
             {
-                "text": "Deals damage in a large radius\n",
+                "text": "Shoots a projectile that applies the wither effect\n",
                 "color": "gray"
             },
             {
@@ -28,8 +28,36 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "5 ❤",
+                        "text": "4 ❤",
                         "color": "red"
+                    }
+                ]
+            },
+            {
+                "text": "\nRange: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "50",
+                        "color": "red"
+                    },
+                    {
+                        "text": " blocks",
+                        "color": "dark_gray"
+                    }
+                ]
+            },
+            {
+                "text": "\nSpeed: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "25",
+                        "color": "red"
+                    },
+                    {
+                        "text": " blocks/sec",
+                        "color": "dark_gray"
                     }
                 ]
             },
@@ -42,7 +70,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_instant",
+    "parent": "isc:spells/kinetic_bolt",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -65,7 +93,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:4}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:91}}}"
                         }
                     }
                 ]

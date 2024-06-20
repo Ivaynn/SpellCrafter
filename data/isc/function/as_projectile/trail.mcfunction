@@ -13,6 +13,7 @@ execute as @s[tag=isc.spell.revealing_bolt] run return run function isc:spells/r
 execute as @s[tag=isc.spell.freezing_bolt] run return run function isc:spells/freezing_bolt/trail
 execute as @s[tag=isc.spell.drill] run return run function isc:spells/drill/trail
 execute as @s[tag=isc.spell.black_hole] run return run function isc:spells/black_hole/trail
+execute as @s[tag=isc.spell.wither_blast] run return run function isc:spells/wither_blast/trail
 
 
 # Hidden skips all functions that are just particles

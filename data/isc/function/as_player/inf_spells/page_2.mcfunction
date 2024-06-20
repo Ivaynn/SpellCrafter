@@ -11,7 +11,7 @@ loot replace entity @s inventory.7 loot isc:spells/poison_dart
 loot replace entity @s inventory.10 loot isc:spells/freezing_bolt
 loot replace entity @s inventory.11 loot isc:spells/boomerang
 loot replace entity @s inventory.12 loot isc:spells/kinetic_bolt
-item replace entity @s inventory.13 with minecraft:air
+loot replace entity @s inventory.13 loot isc:spells/wither_blast
 item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air
