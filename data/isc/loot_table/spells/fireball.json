@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:2, mana:25, cooldown:8, lore:'{\"text\":\"→ Fireball\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:2, mana:25, cooldown:20, lore:'{\"text\":\"→ Fireball\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -41,7 +41,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.4",
+                            "text": "   ⌚ 1.0",
                             "color": "gray",
                             "italic": false
                         }

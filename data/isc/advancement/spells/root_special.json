@@ -208,6 +208,44 @@
                     }
                 ]
             }
+        },
+        "isc:double_cast": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/double_cast": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:triple_cast": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/triple_cast": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     }
 }

@@ -73,8 +73,8 @@ scoreboard players operation @s isc.age *= #4 isc.math
 
 
 # Save stored spells - if this is executed by multicast, don't save
-execute unless score $spell.multicast isc.tmp matches 1 run data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
-execute unless score $spell.multicast isc.tmp matches 1 if score $wand_mod isc.tmp matches 1.. run data modify entity @s data.isc.mod set from storage isc:tmp wand.mod
+execute unless score $spell.multicast isc.tmp matches 1.. run data modify entity @s data.isc.spells set from storage isc:tmp wand.spells
+execute unless score $spell.multicast isc.tmp matches 1.. if score $wand_mod isc.tmp matches 1.. run data modify entity @s data.isc.mod set from storage isc:tmp wand.mod
 
 
 # Apply tagged modifiers (before creating new projectiles)
@@ -98,6 +98,4 @@ execute as @s[tag=isc.spell.chaotic] run function isc:spells/chaotic/cast
 
 
 # Multicast
-execute if score $spell.multicast isc.tmp matches 1 run tag @s remove isc.spell.multicast
-execute if score $spell.multicast isc.tmp matches 1 run function isc:spells/multicast/offset
-execute as @s[tag=isc.spell.multicast] at @s run function isc:spells/multicast/cast
+execute if score $spell.multicast isc.tmp matches 1.. at @s run function isc:spells/multicast/cast

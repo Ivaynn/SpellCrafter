@@ -2,8 +2,8 @@
 
 
 # Generate random rotation offset
-execute store result score $offset_r0 isc.tmp run random value -15..15
-execute store result score $offset_r1 isc.tmp run random value -15..15
+execute store result score $offset_r0 isc.tmp run random value -20..20
+execute store result score $offset_r1 isc.tmp run random value -20..20
 
 
 # Get current rotation

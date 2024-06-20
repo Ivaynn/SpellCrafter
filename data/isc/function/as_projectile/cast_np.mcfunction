@@ -31,7 +31,7 @@ execute if score $spell isc.tmp matches 86 run return run function isc:spells/co
 
 
 # Special
-execute if score $spell isc.tmp matches 10 run return run tag @s add isc.spell.multicast
+execute if score $spell isc.tmp matches 10 run return run scoreboard players add $spell.multicast isc.tmp 30
 execute if score $spell isc.tmp matches 47 run return 1
 execute if score $spell isc.tmp matches 48 run return 1
 execute if score $spell isc.tmp matches 52 run return run function isc:spells/shuffle/cast
@@ -40,6 +40,8 @@ execute if score $spell isc.tmp matches 69 run return 1
 execute if score $spell isc.tmp matches 70 run return 1
 execute if score $spell isc.tmp matches 83 run return 1
 execute if score $spell isc.tmp matches 84 run return 1
+execute if score $spell isc.tmp matches 88 run return run scoreboard players add $spell.multicast isc.tmp 1
+execute if score $spell isc.tmp matches 89 run return run scoreboard players add $spell.multicast isc.tmp 2
 
 
 # Unstackable modifiers

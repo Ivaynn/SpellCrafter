@@ -4,15 +4,15 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280010
+                "minecraft:custom_model_data": 7280088
             }
         },
         "title": {
-            "text": "Multicast                     "
+            "text": "Double Cast                   "
         },
         "description": [
             {
-                "text": "\n◆ 100",
+                "text": "\n◆ 60",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Casts all the remaining spells simultaneously with reduced accuracy\n",
+                "text": "Casts one extra projectile simultaneously with reduced accuracy\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/triple_cast",
+    "parent": "isc:spells/root_special",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:10}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:88}}}"
                         }
                     }
                 ]

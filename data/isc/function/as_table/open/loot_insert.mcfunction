@@ -85,3 +85,5 @@ execute if score $spell isc.tmp matches 84 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 85 run return run loot insert ~ ~ ~ loot isc:spells/diverge
 execute if score $spell isc.tmp matches 86 run return run loot insert ~ ~ ~ loot isc:spells/converge
 execute if score $spell isc.tmp matches 87 run return run loot insert ~ ~ ~ loot isc:spells/orbit
+execute if score $spell isc.tmp matches 88 run return run loot insert ~ ~ ~ loot isc:spells/double_cast
+execute if score $spell isc.tmp matches 89 run return run loot insert ~ ~ ~ loot isc:spells/triple_cast

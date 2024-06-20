@@ -8,7 +8,7 @@ execute if score $projectile_count isc.tmp > projectile_cap isc.options run retu
 
 
 # Multicast
-execute as @s[tag=isc.spell.multicast] run data remove entity @s data.isc
+execute if score $spell.multicast isc.tmp matches 1.. run data remove entity @s data.isc
 
 
 # Get relevant data to create a copy
