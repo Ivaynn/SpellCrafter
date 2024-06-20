@@ -14,13 +14,8 @@ scoreboard players set $spell.safe_shot isc.tmp 0
 execute as @s[tag=isc.spell.safe_shot] run scoreboard players set $spell.safe_shot isc.tmp 1
 
 
-# Apply projectile direction modifiers --> they are mutually exclusive: homing* > guide > follow* > ... ( * = may fail if no valid entity is in range )
-scoreboard players set $spell.homing isc.tmp 0
-scoreboard players set $spell.follow isc.tmp 0
-execute as @s[tag=isc.spell.homing,tag=!isc.spell.instant] at @s run function isc:spells/homing/tick
-execute unless score $spell.homing isc.tmp matches 1 as @s[tag=isc.spell.guide,tag=!isc.spell.instant] at @s run function isc:spells/guide/tick
-execute unless score $spell.homing isc.tmp matches 1 as @s[tag=isc.spell.follow,tag=!isc.spell.guide,tag=!isc.spell.instant] run function isc:spells/follow/tick
-execute unless score $spell.homing isc.tmp matches 1 unless score $spell.follow isc.tmp matches 1 as @s[tag=!isc.spell.instant] unless score @s isc.weight matches 0 run function isc:as_projectile/weight
+# Apply projectile direction modifiers
+function isc:as_projectile/trajectory_modifiers
 
 
 # Special cases

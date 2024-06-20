@@ -1,14 +1,13 @@
 #> [tick] as projectile, at @s
 
 
-# Return if speed is 0
-execute if score @s isc.speed matches 0 run return 0
-
-
-# Get caster's rotation
+# Get rotation while facing the caster
 scoreboard players operation $id isc.tmp = @s isc.id
-execute store result score $spell.guide isc.tmp run data modify entity @s Rotation set from entity @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id] Rotation 
-execute if score $spell.guide isc.tmp matches 0 run return 0
+execute store result score $spell.orbit isc.tmp positioned ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=#isc:caster,tag=isc.caster,predicate=isc:match_id,tag=!isc.spectator] feet rotated ~90 ~ run tp @s ~ ~ ~ ~ ~
+
+
+# If no target was found, stop here
+execute if score $spell.orbit isc.tmp matches 0 run return 0
 
 
 # Negative speed

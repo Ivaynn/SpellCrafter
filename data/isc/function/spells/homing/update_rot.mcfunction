@@ -1,6 +1,7 @@
 #> [tick] as projectile, at @s (homing)
 #> [tick] as projectile, at @s (guide)
 #> [tick] as projectile, at @s (follow)
+#> [tick] as projectile, at @s (orbit)
 
 
 # Get current rotation
