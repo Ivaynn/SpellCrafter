@@ -1,5 +1,13 @@
 #> as target (any entity)
 
+
+# If this entity is on damage cooldown, re-schedule this
+scoreboard players set $hurt_time isc.tmp 0
+execute store result score $hurt_time isc.tmp run data get entity @s HurtTime
+execute if score $hurt_time isc.tmp matches 1.. run return run schedule function isc:damage/scheduled 1t replace
+
+
+# Damage entity
 execute if score @s isc.damage matches 101.. run scoreboard players set @s isc.damage 100
 
 execute if score @s isc.damage matches 1..10 run function isc:damage/d10
