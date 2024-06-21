@@ -25,6 +25,7 @@ scoreboard players set $spell.extended isc.tmp 0
 scoreboard players set $spell.quickstep isc.tmp 0
 scoreboard players set $spell.secret isc.tmp 0
 scoreboard players set $spell.locked isc.tmp 0
+scoreboard players set $spell.skip isc.tmp 0
 
 
 # Iterate through all the items & save spell data to storages "isc:tmp wand" and "isc:tmp lore"

@@ -43,6 +43,7 @@ execute if score $spell isc.tmp matches 83 run return 1
 execute if score $spell isc.tmp matches 84 run return 1
 execute if score $spell isc.tmp matches 88 run return run scoreboard players add $spell.multicast isc.tmp 1
 execute if score $spell isc.tmp matches 89 run return run scoreboard players add $spell.multicast isc.tmp 2
+execute if score $spell isc.tmp matches 92 run return run function isc:spells/skip/cast
 
 
 # Unstackable modifiers
