@@ -11,11 +11,12 @@ execute unless data storage isc:tmp wand.spells[0] run return -1
 scoreboard players set $spell isc.tmp 0
 execute store result score $spell isc.tmp run data get storage isc:tmp wand.spells[0]
 data remove storage isc:tmp wand.spells[0]
-scoreboard players set $success isc.tmp 0
 
 
-# Random spells
-execute if score $spell isc.tmp matches 50 run function isc:spells/random_spell/cast
+# Spells that turn into other spells
+execute if score $spell isc.tmp matches 50 store result score $spell isc.tmp run data get storage isc:tmp wand.spells[0]
+execute if score $spell isc.tmp matches 93 store result score $spell isc.tmp run data get storage isc:tmp wand.spells[-1]
+execute unless score $spell isc.tmp matches 1.. run return -1
 
 
 # Projectiles (return)
@@ -39,6 +40,7 @@ execute if score $spell isc.tmp matches 91 run return run function isc:spells/wi
 
 
 # Non-projectiles (no return)
+scoreboard players set $success isc.tmp 0
 function isc:as_projectile/cast_np
 
 

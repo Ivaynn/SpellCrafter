@@ -22,13 +22,13 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:50, mana:20, cooldown:5, lore:'{\"text\":\"⚝ Random Spell\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:50, mana:0, cooldown:0, lore:'{\"text\":\"⚝ Echo\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Random Spell"
+            "name": "Echo"
         },
         {
             "function": "minecraft:set_lore",
@@ -36,12 +36,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 20",
+                    "text": "◆ 0",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.25",
+                            "text": "   ⌚ 0",
                             "color": "gray",
                             "italic": false
                         }
@@ -51,7 +51,7 @@
                     "text": ""
                 },
                 {
-                    "text": "Casts a random spell",
+                    "text": "Casts a copy of the next spell",
                     "color": "gray",
                     "italic": false
                 },

@@ -76,7 +76,7 @@
                 ]
             }
         },
-        "isc:random_spell": {
+        "isc:echo": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -87,7 +87,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "isc:spells/random_spell": true
+                                    "isc:spells/echo": true
                                 }
                             }
                         }
@@ -259,6 +259,25 @@
                                 "type": "minecraft:player",
                                 "advancements": {
                                     "isc:spells/skip": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:final_echo": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/final_echo": true
                                 }
                             }
                         }
