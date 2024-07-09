@@ -1,10 +1,10 @@
-execute if score @s isc.damage matches 91 run damage @s 91 minecraft:arrow
-execute if score @s isc.damage matches 92 run damage @s 92 minecraft:arrow
-execute if score @s isc.damage matches 93 run damage @s 93 minecraft:arrow
-execute if score @s isc.damage matches 94 run damage @s 94 minecraft:arrow
-execute if score @s isc.damage matches 95 run damage @s 95 minecraft:arrow
-execute if score @s isc.damage matches 96 run damage @s 96 minecraft:arrow
-execute if score @s isc.damage matches 97 run damage @s 97 minecraft:arrow
-execute if score @s isc.damage matches 98 run damage @s 98 minecraft:arrow
-execute if score @s isc.damage matches 99 run damage @s 99 minecraft:arrow
-execute if score @s isc.damage matches 100 run damage @s 100 minecraft:arrow
+execute if score @s isc.damage matches 91 run damage @s 91 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 92 run damage @s 92 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 93 run damage @s 93 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 94 run damage @s 94 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 95 run damage @s 95 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 96 run damage @s 96 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 97 run damage @s 97 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 98 run damage @s 98 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 99 run damage @s 99 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]
+execute if score @s isc.damage matches 100 run damage @s 100 minecraft:arrow by @e[limit=1,type=#isc:caster,tag=isc.caster,tag=!isc.spectator,predicate=isc:match_id]

@@ -14,7 +14,10 @@ execute if score $spell.safe_shot isc.tmp matches 1 if score @s isc.id = $id isc
 
 # Check if damage value is valid
 execute unless score $damage isc.tmp matches 1.. run return 0
-execute if score $damage isc.tmp matches 101.. run scoreboard players set $damage isc.tmp 100
+
+
+# Save damage source
+scoreboard players operation @s isc.damage_src = $id isc.tmp
 
 
 # Damage

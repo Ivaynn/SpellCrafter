@@ -30,6 +30,7 @@ scoreboard objectives remove isc.dist
 scoreboard objectives remove isc.toggle
 scoreboard objectives remove isc.tick
 scoreboard objectives remove isc.actionbar
+scoreboard objectives remove isc.damage_src
 
 kill @e[tag=isc.table]
 kill @e[tag=isc.projectile]
