@@ -47,7 +47,6 @@ data modify entity @s Rotation set from storage isc:tmp rotation
 
 
 # Go through the spells until the next projectile, applying modifiers and casting all instant spells along the way (prepend apply wand modifiers)
-data remove storage isc:tmp wand.first
 execute if score $wand_mod isc.tmp matches 1.. run data modify storage isc:tmp wand.spells prepend from storage isc:tmp wand.mod
 execute store result score $result isc.tmp run function isc:as_projectile/cast
 

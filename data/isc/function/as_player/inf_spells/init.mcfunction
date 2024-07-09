@@ -11,4 +11,4 @@ execute unless data entity @s Inventory[{Slot:35b,id:"minecraft:arrow",component
 function isc:as_player/inf_spells/update
 
 scoreboard players operation $id isc.tmp = @s isc.id
-execute as @e[distance=..50,sort=nearest,type=minecraft:block_display,tag=isc.table,predicate=isc:match_id] at @s positioned ~ ~-1 ~ run function isc:as_player/inf_spells/as_table 
+execute as @e[distance=..50,sort=nearest,type=minecraft:block_display,tag=isc.table,predicate=isc:match_id] at @s positioned ~ ~-1 ~ run function isc:as_player/inf_spells/as_table

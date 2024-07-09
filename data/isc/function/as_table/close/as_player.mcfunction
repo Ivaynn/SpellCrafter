@@ -16,6 +16,7 @@ scoreboard players set $cooldown isc.tmp 0
 data modify storage isc:tmp wand set value {valid:1b, spells:[], slots:[], owner:0}
 data modify storage isc:tmp lore set value []
 data modify storage isc:tmp drop set value []
+data modify storage isc:tmp keep set value []
 data modify storage isc:tmp wand.mod set from entity @s SelectedItem.components."minecraft:custom_data".isc.wand.mod
 
 
@@ -28,18 +29,23 @@ scoreboard players set $spell.locked isc.tmp 0
 scoreboard players set $spell.skip isc.tmp 0
 
 
-# Iterate through all the items & save spell data to storages "isc:tmp wand" and "isc:tmp lore"
+# Separate items in storages "isc:tmp keep" and "isc:tmp drop" for spells and non-spells, respectively
 execute store result score $iter isc.tmp run data get storage isc:tmp items
-scoreboard players set $clone_multiplier isc.tmp 1
 function isc:as_table/close/for_item
 
 
-# Drop non-spell items
+# Drop non-spells
 execute if data storage isc:tmp drop[0] run function isc:as_table/close/drop_extra
 
 
 # If no spells, clear wand
-execute unless data storage isc:tmp wand.spells[0] run return run function isc:as_table/close/empty
+execute unless data storage isc:tmp keep[0] run return run function isc:as_table/close/empty
+
+
+# Iterate through all the spells & save spell data to storages "isc:tmp wand" and "isc:tmp lore"
+execute store result score $iter isc.tmp run data get storage isc:tmp keep
+scoreboard players set $clone_multiplier isc.tmp 1
+function isc:as_table/close/for_spell
 
 
 # Special cases

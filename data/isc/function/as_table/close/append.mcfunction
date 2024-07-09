@@ -2,21 +2,22 @@
 # storage "isc:tmp wand.spells" must start empty
 
 
-# Check if item is not a spell --> add to "drop"
-execute unless data storage isc:tmp items[0].components."minecraft:custom_data".isc.spell.id run return run data modify storage isc:tmp drop append from storage isc:tmp items[0]
-
-
 # Save spell slot
-data modify storage isc:tmp wand.slots append from storage isc:tmp items[0].Slot
+data modify storage isc:tmp wand.slots append from storage isc:tmp keep[0].Slot
 
 
 # Get spell id & lore
 data remove storage isc:tmp spell
-data modify storage isc:tmp spell set from storage isc:tmp items[0].components."minecraft:custom_data".isc.spell
+data modify storage isc:tmp spell set from storage isc:tmp keep[0].components."minecraft:custom_data".isc.spell
 data modify storage isc:tmp wand.spells append from storage isc:tmp spell.id
 data modify storage isc:tmp lore append from storage isc:tmp spell.lore
 scoreboard players set $spell isc.tmp 0
 execute store result score $spell isc.tmp run data get storage isc:tmp spell.id
+
+
+# Special cases: spells that turn into other spells (while keeping their own mana cost and cooldown - only their id changes)
+execute if score $spell isc.tmp matches 93 store result score $spell isc.tmp run data get storage isc:tmp keep[-1].components."minecraft:custom_data".isc.spell.id
+execute if score $spell isc.tmp matches 50 store result score $spell isc.tmp run data get storage isc:tmp keep[1].components."minecraft:custom_data".isc.spell.id
 
 
 # Special cases

@@ -12,15 +12,15 @@
         },
         "description": [
             {
-                "text": "\n◆ 0",
+                "text": "\n◆ 25",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0\n\n",
+                "text": "   ⌚ 0.2\n\n",
                 "color": "gray"
             },
             {
-                "text": "Casts a copy of the next spell\n",
+                "text": "Turns into a copy of the next spell in the wand\n",
                 "color": "gray"
             }
         ],

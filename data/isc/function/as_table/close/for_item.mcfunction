@@ -1,10 +1,16 @@
 #> recursive function (limited by score "$iter isc.tmp")
 #> as any
-# storage "isc:tmp wand.spells" must start empty
+# storage "isc:tmp drop" must start empty
+# storage "isc:tmp keep" must start empty
 
 
-# Append data to storage lists (wand.spells, lore, drop)
-function isc:as_table/close/append
+scoreboard players set $is_spell isc.tmp 0
+execute if data storage isc:tmp items[0].components."minecraft:custom_data".isc.spell.id run scoreboard players set $is_spell isc.tmp 1
+
+
+# Separate spells and non-spells
+execute if score $is_spell isc.tmp matches 0 run data modify storage isc:tmp drop append from storage isc:tmp items[0]
+execute if score $is_spell isc.tmp matches 1 run data modify storage isc:tmp keep append from storage isc:tmp items[0]
 
 
 # Next item
