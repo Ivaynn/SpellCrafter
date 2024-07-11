@@ -27,7 +27,7 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Fool's Wand"
+            "name": "Basic Wand"
         },
         {
             "function": "minecraft:set_lore",
@@ -35,17 +35,17 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 0",
+                    "text": "◆ 10",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0",
+                            "text": "   ⌚ 0.2",
                             "color": "gray",
                             "italic": false
                         },
                         {
-                            "text": "   ❒ 0/0",
+                            "text": "   ❒ 0/27",
                             "color": "dark_gray",
                             "italic": false
                         }
@@ -63,7 +63,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:4, spells:[], slots:[], mod:0, cap:0}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:10, cooldown:4, spells:[], slots:[], mod:0, cap:27, base_mana:10, base_cooldown:4}}}"
         }
     ]
 }

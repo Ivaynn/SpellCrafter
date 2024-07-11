@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "isc:wands/basic_27"
+                    "value": "isc:wands/basic"
                 }
             ]
         }

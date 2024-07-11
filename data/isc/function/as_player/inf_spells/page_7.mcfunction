@@ -1,20 +1,20 @@
 #> as player
 
-loot replace entity @s inventory.0 loot isc:wands/mod/shuffle
-loot replace entity @s inventory.1 loot isc:wands/mod/multicast
-loot replace entity @s inventory.2 loot isc:wands/mod/instant
-loot replace entity @s inventory.3 loot isc:wands/mod/homing
-loot replace entity @s inventory.4 loot isc:wands/mod/guide
-loot replace entity @s inventory.5 loot isc:wands/mod/piercing
-loot replace entity @s inventory.6 loot isc:wands/mod/ghost
-loot replace entity @s inventory.7 loot isc:wands/mod/harmless
+item replace entity @s inventory.0 with minecraft:air
+item replace entity @s inventory.1 with minecraft:air
+item replace entity @s inventory.2 with minecraft:air
+item replace entity @s inventory.3 with minecraft:air
+item replace entity @s inventory.4 with minecraft:air
+item replace entity @s inventory.5 with minecraft:air
+item replace entity @s inventory.6 with minecraft:air
+item replace entity @s inventory.7 with minecraft:air
 
-loot replace entity @s inventory.9 loot isc:wands/mod/hidden
-loot replace entity @s inventory.10 loot isc:wands/mod/rainbow
-loot replace entity @s inventory.11 loot isc:wands/mod/zigzag
-loot replace entity @s inventory.12 loot isc:wands/mod/spiral
-loot replace entity @s inventory.13 loot isc:wands/mod/chaotic
-loot replace entity @s inventory.14 loot isc:wands/mod/random_dir
+item replace entity @s inventory.9 with minecraft:air
+item replace entity @s inventory.10 with minecraft:air
+item replace entity @s inventory.11 with minecraft:air
+item replace entity @s inventory.12 with minecraft:air
+item replace entity @s inventory.13 with minecraft:air
+item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air
 

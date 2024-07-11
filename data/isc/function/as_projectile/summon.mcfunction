@@ -46,8 +46,14 @@ scoreboard players operation @s isc.clone = $clone_count isc.tmp
 data modify entity @s Rotation set from storage isc:tmp rotation
 
 
-# Go through the spells until the next projectile, applying modifiers and casting all instant spells along the way (prepend apply wand modifiers)
-execute if score $wand_mod isc.tmp matches 1.. run data modify storage isc:tmp wand.spells prepend from storage isc:tmp wand.mod
+# Wand modifiers
+scoreboard players set $allowed_mod isc.tmp 0
+execute store result score $allowed_mod isc.tmp run function isc:as_projectile/wand_mods
+execute if score $allowed_mod isc.tmp matches 1 if score $wand_mod isc.tmp matches 1.. run data modify storage isc:tmp wand.spells prepend from storage isc:tmp wand.mod
+execute if score $allowed_mod isc.tmp matches 0 run scoreboard players set $wand_mod isc.tmp 0
+
+
+# Go through the spells until the next projectile, applying modifiers and casting all instant spells along the way
 execute store result score $result isc.tmp run function isc:as_projectile/cast
 
 

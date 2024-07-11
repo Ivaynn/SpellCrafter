@@ -10,9 +10,9 @@
                 "text": ""
             },
             {
-                "text": "Unknown Wand Modifier",
+                "text": "Invalid Wand Modifier!",
                 "color": "red",
-                "italic": true
+                "italic": false
             },
             {
                 "text": ""
@@ -22,104 +22,13 @@
             {
                 "condition": "minecraft:inverted",
                 "term": {
-                    "condition": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "equipment": {
-                            "mainhand": {
-                                "predicates": {
-                                    "minecraft:custom_data": "{isc:{wand:{mod:0}}}"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Magic Missile",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:1}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Fireball",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:2}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Laser",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:3}}}"
-                            }
-                        }
-                    }
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "isc:tmp",
+                        "path": "wand.mod"
+                    },
+                    "range": 0
                 }
             }
         ]
@@ -139,17 +48,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:4}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 4
             }
         ]
     },
@@ -168,17 +73,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:5}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 5
             }
         ]
     },
@@ -197,17 +98,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:6}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 6
             }
         ]
     },
@@ -226,17 +123,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:7}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 7
             }
         ]
     },
@@ -255,17 +148,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:8}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 8
             }
         ]
     },
@@ -284,17 +173,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:9}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 9
             }
         ]
     },
@@ -313,17 +198,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:10}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 10
             }
         ]
     },
@@ -342,17 +223,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:11}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 11
             }
         ]
     },
@@ -371,17 +248,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:12}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 12
             }
         ]
     },
@@ -400,17 +273,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:13}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 13
             }
         ]
     },
@@ -429,17 +298,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:14}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 14
             }
         ]
     },
@@ -458,17 +323,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:15}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 15
             }
         ]
     },
@@ -487,17 +348,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:16}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 16
             }
         ]
     },
@@ -516,17 +373,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:17}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 17
             }
         ]
     },
@@ -545,17 +398,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:18}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 18
             }
         ]
     },
@@ -574,17 +423,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:19}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 19
             }
         ]
     },
@@ -603,17 +448,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:20}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 20
             }
         ]
     },
@@ -632,17 +473,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:21}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 21
             }
         ]
     },
@@ -661,17 +498,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:22}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 22
             }
         ]
     },
@@ -690,17 +523,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:23}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 23
             }
         ]
     },
@@ -719,17 +548,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:24}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 24
             }
         ]
     },
@@ -748,17 +573,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:25}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 25
             }
         ]
     },
@@ -777,17 +598,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:26}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 26
             }
         ]
     },
@@ -806,17 +623,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:27}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 27
             }
         ]
     },
@@ -835,17 +648,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:28}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 28
             }
         ]
     },
@@ -864,75 +673,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:29}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Revealing Bolt",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:30}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Arcane Reaper",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:31}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 29
             }
         ]
     },
@@ -951,17 +698,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:32}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 32
             }
         ]
     },
@@ -980,17 +723,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:33}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 33
             }
         ]
     },
@@ -1009,17 +748,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:34}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 34
             }
         ]
     },
@@ -1038,17 +773,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:35}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 35
             }
         ]
     },
@@ -1067,17 +798,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:36}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 36
             }
         ]
     },
@@ -1096,17 +823,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:37}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 37
             }
         ]
     },
@@ -1125,46 +848,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:38}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Shulker Bullet",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:39}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 38
             }
         ]
     },
@@ -1183,17 +873,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:40}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 40
             }
         ]
     },
@@ -1212,17 +898,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:41}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 41
             }
         ]
     },
@@ -1241,17 +923,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:42}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 42
             }
         ]
     },
@@ -1270,17 +948,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:43}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 43
             }
         ]
     },
@@ -1299,17 +973,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:44}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 44
             }
         ]
     },
@@ -1328,104 +998,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:45}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Null Shot",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:46}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Refresh",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:47}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Haste",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:48}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 45
             }
         ]
     },
@@ -1444,46 +1023,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:49}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Echo",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:50}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 49
             }
         ]
     },
@@ -1502,17 +1048,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:51}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 51
             }
         ]
     },
@@ -1531,46 +1073,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:52}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Poison Dart",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:53}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 52
             }
         ]
     },
@@ -1589,17 +1098,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:54}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 54
             }
         ]
     },
@@ -1618,17 +1123,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:55}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 55
             }
         ]
     },
@@ -1647,75 +1148,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:56}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Freezing Bolt",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:57}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Drill",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:58}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 56
             }
         ]
     },
@@ -1734,46 +1173,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:59}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Black Hole",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:60}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 59
             }
         ]
     },
@@ -1792,17 +1198,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:61}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 61
             }
         ]
     },
@@ -1821,104 +1223,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:62}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Boomerang",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:63}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Sharp",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:64}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Kinetic Bolt",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:65}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 62
             }
         ]
     },
@@ -1937,17 +1248,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:66}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 66
             }
         ]
     },
@@ -1966,17 +1273,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:67}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 67
             }
         ]
     },
@@ -1995,75 +1298,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:68}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Secret",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:69}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Locked",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:70}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 68
             }
         ]
     },
@@ -2082,17 +1323,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:71}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 71
             }
         ]
     },
@@ -2111,17 +1348,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:72}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 72
             }
         ]
     },
@@ -2140,17 +1373,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:73}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 73
             }
         ]
     },
@@ -2169,17 +1398,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:74}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 74
             }
         ]
     },
@@ -2198,17 +1423,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:75}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 75
             }
         ]
     },
@@ -2227,17 +1448,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:76}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 76
             }
         ]
     },
@@ -2256,104 +1473,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:77}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Arcane Shield",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:78}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Healing Circle",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:79}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Toxic Cloud",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:80}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 77
             }
         ]
     },
@@ -2372,17 +1498,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:81}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 81
             }
         ]
     },
@@ -2401,75 +1523,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:82}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Extended",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:83}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Quickstep",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:84}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 82
             }
         ]
     },
@@ -2488,17 +1548,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:85}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 85
             }
         ]
     },
@@ -2517,17 +1573,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:86}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 86
             }
         ]
     },
@@ -2546,75 +1598,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:87}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Double Cast",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:88}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Triple Cast",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:89}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 87
             }
         ]
     },
@@ -2633,104 +1623,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:90}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "→ Wither Blast",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:91}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Skip",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:92}}}"
-                            }
-                        }
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
-                "text": "⚝ Final Echo",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:93}}}"
-                            }
-                        }
-                    }
-                }
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 90
             }
         ]
     }
