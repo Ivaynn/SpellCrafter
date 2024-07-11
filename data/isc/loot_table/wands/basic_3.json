@@ -35,12 +35,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 0",
+                    "text": "◆ 5",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0",
+                            "text": "   ⌚ 0.2",
                             "color": "gray",
                             "italic": false
                         },
@@ -63,7 +63,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:4, spells:[], slots:[], mod:0, cap:3}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:4, spells:[], slots:[], mod:0, cap:3, base_mana:5, base_cooldown:4}}}"
         }
     ]
 }

@@ -13,6 +13,5 @@ execute if score $owner isc.tmp matches 1.. unless score @s isc.id = $owner isc.
 # Put wand information on storage & clear wand
 data remove storage isc:tmp wand
 data modify storage isc:tmp wand set from entity @s SelectedItem.components."minecraft:custom_data".isc.wand
-item modify entity @s weapon isc:wand/empty
-item modify entity @s weapon isc:wand/lore/wand_mod
+function isc:as_table/close/empty
 scoreboard players set $success isc.tmp 1
