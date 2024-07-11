@@ -16,19 +16,19 @@
             "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
-                "minecraft:custom_model_data": 7280058,
+                "minecraft:custom_model_data": 7280094,
                 "minecraft:enchantment_glint_override": false
             }
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:58, mana:40, cooldown:4, lore:'{\"text\":\"→ Drill\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:94, mana:60, cooldown:4, lore:'{\"text\":\"→ Big Drill\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Drill"
+            "name": "Big Drill"
         },
         {
             "function": "minecraft:set_lore",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 40",
+                    "text": "◆ 60",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
@@ -51,7 +51,12 @@
                     "text": ""
                 },
                 {
-                    "text": "A slow projectile that destroys",
+                    "text": "An upgraded version of the Drill,",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "a slow projectile that destroys",
                     "color": "gray",
                     "italic": false
                 },

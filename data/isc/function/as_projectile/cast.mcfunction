@@ -37,6 +37,7 @@ execute if score $spell isc.tmp matches 78 run return run function isc:spells/ar
 execute if score $spell isc.tmp matches 79 run return run function isc:spells/healing_circle/projectile
 execute if score $spell isc.tmp matches 80 run return run function isc:spells/toxic_cloud/projectile
 execute if score $spell isc.tmp matches 91 run return run function isc:spells/wither_blast/projectile
+execute if score $spell isc.tmp matches 94 run return run function isc:spells/big_drill/projectile
 
 
 # Non-projectiles (no return)

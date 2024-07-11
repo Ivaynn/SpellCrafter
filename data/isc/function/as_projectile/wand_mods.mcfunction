@@ -91,3 +91,4 @@ execute if score $wand_mod isc.tmp matches 90 run return 1
 execute if score $wand_mod isc.tmp matches 91 run return 0
 execute if score $wand_mod isc.tmp matches 92 run return 0
 execute if score $wand_mod isc.tmp matches 93 run return 0
+execute if score $wand_mod isc.tmp matches 94 run return 0
