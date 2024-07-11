@@ -15,8 +15,8 @@ execute unless score @s isc.cooldown matches 1.. run scoreboard players set @s i
 execute unless data entity @s SelectedItem.components."minecraft:custom_data".isc run return 0
 
 
-# Cancel if the selected wand doesn't have spells
-execute unless data entity @s SelectedItem.components."minecraft:custom_data".isc.wand.spells[0] run return run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
+# Cancel if the selected wand doesn't have spells (or wand modifiers)
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".isc.wand.spells[0] unless data entity @s SelectedItem.components."minecraft:custom_data".isc.wand.mod run return run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
 
 
 # Get spell data from selected item

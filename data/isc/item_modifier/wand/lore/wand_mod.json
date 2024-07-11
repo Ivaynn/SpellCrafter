@@ -1,16 +1,35 @@
 [
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/multicast",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 1,
+        "size": 1,
+        "lore": [
+            {
+                "text": ""
+            },
+            {
+                "text": "Unknown Wand Modifier",
+                "color": "red",
+                "italic": true
+            },
+            {
+                "text": ""
+            }
+        ],
         "conditions": [
             {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:10}}}"
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "minecraft:custom_data": "{isc:{wand:{mod:0}}}"
+                                }
                             }
                         }
                     }
@@ -19,8 +38,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/instant",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Magic Missile",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -29,7 +58,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:32}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:1}}}"
                             }
                         }
                     }
@@ -38,8 +67,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/random_dir",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Fireball",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -48,7 +87,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:12}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:2}}}"
                             }
                         }
                     }
@@ -57,8 +96,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/homing",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Laser",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -67,7 +116,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:9}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:3}}}"
                             }
                         }
                     }
@@ -76,8 +125,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/piercing",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Explosion",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -86,7 +145,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:33}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:4}}}"
                             }
                         }
                     }
@@ -95,8 +154,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/ghost",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Heal",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -105,7 +174,7 @@
                     "equipment": {
                         "mainhand": {
                             "predicates": {
-                                "minecraft:custom_data": "{isc:{wand:{mod:26}}}"
+                                "minecraft:custom_data": "{isc:{wand:{mod:5}}}"
                             }
                         }
                     }
@@ -114,8 +183,76 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/guide",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Clone",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:6}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Empower",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:7}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Guide",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -133,8 +270,917 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/harmless",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Homing",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:9}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Multicast",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:10}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Multishot",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:11}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Random Direction",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:12}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Range ↓",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:13}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Range ↑",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:14}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Speed ↓",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:15}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Speed ↑",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:16}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Heavy Shot",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:17}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Long Shot",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:18}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Quick Shot",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:19}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Summon Lightning",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:20}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Summon Vex",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:21}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Teleport",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:22}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Summon Bat",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:23}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Summon TNT",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:24}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Counterspell",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:25}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Ghost",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:26}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Double Teleport",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:27}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Curve Down",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:28}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Curve Up",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:29}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Revealing Bolt",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:30}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Arcane Reaper",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:31}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Instant",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:32}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Piercing",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:33}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Inverse Teleport",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:34}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Summon Slime",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:35}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Sheep",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:36}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Summon Pufferfish",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:37}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Firework Rocket",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:38}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Shulker Bullet",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:39}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Harmless",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -152,8 +1198,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/hidden",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Hidden",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -171,8 +1227,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/rainbow",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Rainbow",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -190,8 +1256,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/zigzag",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Zigzag",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -209,8 +1285,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/chaotic",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Chaotic",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -228,8 +1314,192 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/spiral",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Remote Cast",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:45}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Null Shot",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:46}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Refresh",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:47}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Haste",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:48}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Shield",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:49}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Echo",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:50}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Spiral",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -247,8 +1517,18 @@
         ]
     },
     {
-        "function": "minecraft:reference",
-        "name": "isc:wand/wand_mod/shuffle",
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Shuffle",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "conditions": [
             {
                 "condition": "minecraft:entity_properties",
@@ -258,6 +1538,1195 @@
                         "mainhand": {
                             "predicates": {
                                 "minecraft:custom_data": "{isc:{wand:{mod:52}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Poison Dart",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:53}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Aim Assist",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:54}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Scaling",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:55}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Summon Fangs",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:56}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Freezing Bolt",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:57}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Drill",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:58}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Anchored",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:59}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Black Hole",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:60}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Return",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:61}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Trick Shot",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:62}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Boomerang",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:63}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Sharp",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:64}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Kinetic Bolt",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:65}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Accelerate",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:66}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Wave",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:67}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Warp",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:68}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Secret",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:69}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Locked",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:70}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Cleanse",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:71}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Angry Goat",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:72}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Smoke Bomb",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:73}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Flash",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:74}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Flying Pig",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:75}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Follow",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:76}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Safe Shot",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:77}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Arcane Shield",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:78}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Healing Circle",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:79}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Toxic Cloud",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:80}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Bouncy",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:81}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Wind Charge",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:82}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Extended",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:83}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Quickstep",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:84}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Divergent Force",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:85}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Convergent Force",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:86}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Orbit",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:87}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Double Cast",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:88}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Triple Cast",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:89}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "✦ Large Explosion",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:90}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "→ Wither Blast",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:91}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Skip",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:92}}}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Final Echo",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": "{isc:{wand:{mod:93}}}"
                             }
                         }
                     }

@@ -12,8 +12,28 @@
     ],
     "functions": [
         {
-            "function": "minecraft:reference",
-            "name": "isc:wand/wand_mod/guide"
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_section",
+            "offset": 1,
+            "size": 1,
+            "lore": [
+                {
+                    "text": ""
+                },
+                {
+                    "text": "⛶ Guide",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{isc:{wand:{mod:8}}}"
         }
     ]
 }

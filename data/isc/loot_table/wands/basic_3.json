@@ -63,7 +63,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:4, spells:[], slots:[], mod:0, cap:3, base_mana:5, base_cooldown:4}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:5, cooldown:4, spells:[], slots:[], mod:0, cap:3, base_mana:5, base_cooldown:4}}}"
         }
     ]
 }

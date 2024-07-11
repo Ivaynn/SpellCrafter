@@ -87,7 +87,7 @@ execute store result score $iter isc.tmp run data get storage isc:tmp lore
 function isc:as_table/close/for_lore
 
 
-# Wand modifiers
+# Wand modifier
 item modify entity @s weapon isc:wand/lore/wand_mod
 
 
