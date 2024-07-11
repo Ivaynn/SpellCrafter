@@ -77,6 +77,7 @@ execute unless score $spell.multicast isc.tmp matches 1.. if score $wand_mod isc
 
 
 # Apply tagged modifiers (before creating new projectiles)
+execute if score $spell.remote_cast isc.tmp matches 1.. run function isc:spells/remote_cast/cast
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
 execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 execute as @s[tag=!isc.spell.random_dir,tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
@@ -89,7 +90,6 @@ execute as @s[tag=isc.spell.hidden] at @s run function isc:spells/hidden/cast
 # Apply modifiers that create new projectiles
 execute if score $spell.multishot isc.tmp matches 1.. at @s run function isc:spells/multishot/cast
 execute if score $spell.clone isc.tmp matches 1.. at @s run function isc:spells/clone/cast
-execute if score $spell.remote_cast isc.tmp matches 1.. run function isc:spells/remote_cast/cast
 
 
 # Apply tagged modifiers (after creating new projectiles)
