@@ -13,11 +13,12 @@ execute if data entity @s SelectedItem.components."minecraft:custom_data".isc.wa
 # Reset scores & storages
 scoreboard players set $mana isc.tmp 0
 scoreboard players set $cooldown isc.tmp 0
-data modify storage isc:tmp wand set value {valid:1b, spells:[], slots:[], owner:0}
+data modify storage isc:tmp wand set value {valid:1b, spells:[], slots:[], owner:0, cap:0, mod:0}
 data modify storage isc:tmp lore set value []
 data modify storage isc:tmp drop set value []
 data modify storage isc:tmp keep set value []
 data modify storage isc:tmp wand.mod set from entity @s SelectedItem.components."minecraft:custom_data".isc.wand.mod
+data modify storage isc:tmp wand.cap set from entity @s SelectedItem.components."minecraft:custom_data".isc.wand.cap
 
 
 # Special spells that modify the wand item
@@ -29,7 +30,8 @@ scoreboard players set $spell.locked isc.tmp 0
 scoreboard players set $spell.skip isc.tmp 0
 
 
-# Separate items in storages "isc:tmp keep" and "isc:tmp drop" for spells and non-spells, respectively
+# Separate items in storages "isc:tmp keep" and "isc:tmp drop"
+execute store result score $spell_cap isc.tmp run data get storage isc:tmp wand.cap
 execute store result score $iter isc.tmp run data get storage isc:tmp items
 function isc:as_table/close/for_item
 
@@ -70,6 +72,8 @@ function isc:as_table/close/cooldown_sec
 
 
 # Update wand with data from storage
+execute store result score $spell_count isc.tmp run data get storage isc:tmp wand.spells
+execute store result score $spell_cap isc.tmp run data get storage isc:tmp wand.cap
 item modify entity @s weapon isc:wand/update
 item modify entity @s weapon isc:wand/lore/stats
 

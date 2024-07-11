@@ -13,6 +13,17 @@
                         "text": "   ⌚ 0",
                         "color": "gray",
                         "italic": false
+                    },
+                    {
+                        "text": "   ❒ 0/",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "nbt": "SelectedItem.components.\"minecraft:custom_data\".isc.wand.cap",
+                        "entity": "@s",
+                        "color": "dark_gray",
+                        "italic": false
                     }
                 ]
             },

@@ -26,6 +26,32 @@
                         "nbt": "time",
                         "storage": "isc:tmp",
                         "interpret": true
+                    },
+                    {
+                        "text": "   ❒ ",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "score": {
+                            "name": "$spell_count",
+                            "objective": "isc.tmp"
+                        },
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "/",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "score": {
+                            "name": "$spell_cap",
+                            "objective": "isc.tmp"
+                        },
+                        "color": "dark_gray",
+                        "italic": false
                     }
                 ]
             },
