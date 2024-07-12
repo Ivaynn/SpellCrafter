@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:95, mana:0, cooldown:0, lore:'{\"text\":\"⚝ Reverse\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:95, mana:25, cooldown:4, lore:'{\"text\":\"⚝ Reverse\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,12 +36,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 0",
+                    "text": "◆ 25",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0",
+                            "text": "   ⌚ 0.2",
                             "color": "gray",
                             "italic": false
                         }

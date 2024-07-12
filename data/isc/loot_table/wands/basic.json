@@ -27,7 +27,7 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Basic Wand"
+            "name": "God Wand"
         },
         {
             "function": "minecraft:set_lore",
@@ -35,12 +35,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 10",
+                    "text": "◆ 0",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.2",
+                            "text": "   ⌚ 0",
                             "color": "gray",
                             "italic": false
                         },
@@ -63,7 +63,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:10, cooldown:4, spells:[], slots:[], mod:0, cap:27, base_mana:10, base_cooldown:4}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:0, cooldown:0, spells:[], slots:[], mod:0, cap:27, base_mana:0, base_cooldown:0}}}"
         }
     ]
 }

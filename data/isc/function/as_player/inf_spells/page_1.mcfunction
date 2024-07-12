@@ -25,7 +25,7 @@ item replace entity @s inventory.5 with minecraft:paper[minecraft:item_name='{"t
 item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
 
-item replace entity @s inventory.9 with minecraft:air
+loot replace entity @s inventory.9 loot isc:wands/basic
 item replace entity @s inventory.10 with minecraft:air
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:paper[minecraft:item_name='{"text":"Base Mana ↓"}',minecraft:custom_data={isc:{gui:6}}]
