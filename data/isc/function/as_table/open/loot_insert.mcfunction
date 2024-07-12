@@ -92,3 +92,4 @@ execute if score $spell isc.tmp matches 91 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 92 run return run loot insert ~ ~ ~ loot isc:spells/skip
 execute if score $spell isc.tmp matches 93 run return run loot insert ~ ~ ~ loot isc:spells/final_echo
 execute if score $spell isc.tmp matches 94 run return run loot insert ~ ~ ~ loot isc:spells/big_drill
+execute if score $spell isc.tmp matches 95 run return run loot insert ~ ~ ~ loot isc:spells/reverse

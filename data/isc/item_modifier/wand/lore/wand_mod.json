@@ -1632,5 +1632,30 @@
                 "range": 90
             }
         ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⚝ Reverse",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 95
+            }
+        ]
     }
 ]
