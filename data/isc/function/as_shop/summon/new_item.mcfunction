@@ -1,0 +1,27 @@
+#> as shop
+
+
+# New spell
+execute on passengers as @s[tag=isc.shop.item] run loot replace entity @s contents loot isc:shop/spell
+
+
+# Get spell data
+data remove storage isc:tmp spell
+execute on passengers as @s[tag=isc.shop.item] run data modify storage isc:tmp spell set from entity @s item.components."minecraft:custom_data".isc.spell
+
+
+# Get price
+execute store result score $shop.tier isc.tmp run data get storage isc:tmp spell.tier
+execute unless score $shop.tier isc.tmp matches 1..5 run scoreboard players set $shop.tier isc.tmp 1
+
+execute if score $shop.tier isc.tmp matches 1 store result score $shop.value isc.tmp run random value 6..7
+execute if score $shop.tier isc.tmp matches 2 store result score $shop.value isc.tmp run random value 8..9
+execute if score $shop.tier isc.tmp matches 3 store result score $shop.value isc.tmp run random value 10..11
+execute if score $shop.tier isc.tmp matches 4 store result score $shop.value isc.tmp run random value 12..13
+execute if score $shop.tier isc.tmp matches 5 store result score $shop.value isc.tmp run random value 14..15
+execute unless score $shop.value isc.tmp matches 1.. run scoreboard players set $shop.value isc.tmp 1
+
+
+# Save price
+scoreboard players operation @s isc.shop.value = $shop.value isc.tmp
+execute on passengers as @s[tag=isc.shop.text] run data modify entity @s text set value '{"score":{"name":"$shop.value","objective":"isc.tmp"},"color":"green"}'
