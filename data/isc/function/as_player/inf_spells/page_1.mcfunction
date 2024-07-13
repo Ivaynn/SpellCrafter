@@ -16,7 +16,7 @@ clear @s minecraft:red_stained_glass_pane[minecraft:custom_data={isc:{gui:10}}]
 
 
 # Menu items
-item replace entity @s inventory.0 with minecraft:air
+loot replace entity @s inventory.0 loot isc:wands/t0/starter
 item replace entity @s inventory.1 with minecraft:air
 item replace entity @s inventory.2 with minecraft:air
 item replace entity @s inventory.3 with minecraft:paper[minecraft:item_name='{"text":"Slots ↓"}',minecraft:custom_data={isc:{gui:4}}]

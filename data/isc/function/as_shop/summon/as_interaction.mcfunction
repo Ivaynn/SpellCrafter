@@ -16,4 +16,4 @@ tag @s remove isc.shop.tmp
 
 
 # Get item
-function isc:as_shop/summon/new_item
+function isc:as_shop/summon/new_item/init

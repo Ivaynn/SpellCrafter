@@ -3,7 +3,7 @@
 
 
 # Header
-tellraw @s ["\n",{"text":"          ","strikethrough": true,"color":"dark_gray"},{"text":" SpellCrafter Shop ","color":"dark_gray"},{"text":"          ","strikethrough": true,"color":"dark_gray"}]
+tellraw @s ["\n\n\n",{"text":"          ","strikethrough": true,"color":"dark_gray"},{"text":" SpellCrafter Shop ","color":"dark_gray"},{"text":"          ","strikethrough": true,"color":"dark_gray"}]
 
 
 # Item Name
