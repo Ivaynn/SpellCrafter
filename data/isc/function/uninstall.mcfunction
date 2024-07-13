@@ -31,11 +31,13 @@ scoreboard objectives remove isc.toggle
 scoreboard objectives remove isc.tick
 scoreboard objectives remove isc.actionbar
 scoreboard objectives remove isc.damage_src
+scoreboard objectives remove isc.shop.value
 
 kill @e[tag=isc.table]
 kill @e[tag=isc.projectile]
 kill @e[tag=isc.summon]
 kill @e[tag=isc.target_dummy]
 kill @e[tag=isc.dummy_text]
+kill @e[tag=isc.shop]
 
 tag @e remove isc.caster
