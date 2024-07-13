@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:80, mana:80, cooldown:40, lore:'{\"text\":\"→ Toxic Cloud\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:80, mana:80, cooldown:40, tier:3, lore:'{\"text\":\"→ Toxic Cloud\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

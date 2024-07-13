@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:92, mana:0, cooldown:0, lore:'{\"text\":\"⚝ Skip\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:92, mana:0, cooldown:0, tier:4, lore:'{\"text\":\"⚝ Skip\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

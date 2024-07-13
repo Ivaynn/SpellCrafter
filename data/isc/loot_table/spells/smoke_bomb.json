@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:73, mana:40, cooldown:30, lore:'{\"text\":\"✦ Smoke Bomb\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:73, mana:40, cooldown:30, tier:3, lore:'{\"text\":\"✦ Smoke Bomb\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

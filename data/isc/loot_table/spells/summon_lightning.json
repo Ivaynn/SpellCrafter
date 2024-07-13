@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:20, mana:250, cooldown:20, lore:'{\"text\":\"✦ Summon Lightning\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:20, mana:250, cooldown:20, tier:5, lore:'{\"text\":\"✦ Summon Lightning\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

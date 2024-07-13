@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:27, mana:100, cooldown:15, lore:'{\"text\":\"✦ Double Teleport\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:27, mana:100, cooldown:15, tier:4, lore:'{\"text\":\"✦ Double Teleport\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

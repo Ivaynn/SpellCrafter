@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:55, mana:55, cooldown:0, lore:'{\"text\":\"⛶ Scaling\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:55, mana:55, cooldown:0, tier:3, lore:'{\"text\":\"⛶ Scaling\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

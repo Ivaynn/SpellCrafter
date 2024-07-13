@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:53, mana:35, cooldown:6, lore:'{\"text\":\"→ Poison Dart\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:53, mana:35, cooldown:6, tier:2, lore:'{\"text\":\"→ Poison Dart\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

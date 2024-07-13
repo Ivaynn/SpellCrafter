@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:41, mana:30, cooldown:0, lore:'{\"text\":\"⛶ Hidden\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:41, mana:30, cooldown:0, tier:5, lore:'{\"text\":\"⛶ Hidden\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

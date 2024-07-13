@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:36, mana:150, cooldown:30, lore:'{\"text\":\"✦ Sheep\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:36, mana:150, cooldown:30, tier:3, lore:'{\"text\":\"✦ Sheep\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

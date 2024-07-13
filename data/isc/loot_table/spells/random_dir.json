@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:12, mana:10, cooldown:0, lore:'{\"text\":\"⛶ Random Direction\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:12, mana:10, cooldown:0, tier:1, lore:'{\"text\":\"⛶ Random Direction\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

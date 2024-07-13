@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:17, mana:150, cooldown:10, lore:'{\"text\":\"⛶ Heavy Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:17, mana:150, cooldown:10, tier:3, lore:'{\"text\":\"⛶ Heavy Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",

@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:57, mana:40, cooldown:25, lore:'{\"text\":\"→ Freezing Bolt\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:57, mana:40, cooldown:25, tier:2, lore:'{\"text\":\"→ Freezing Bolt\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
