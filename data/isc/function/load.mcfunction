@@ -21,6 +21,7 @@ scoreboard objectives add isc.dist dummy
 scoreboard objectives add isc.tick dummy
 scoreboard objectives add isc.damage_src dummy
 scoreboard objectives add isc.shop.value dummy
+scoreboard objectives add isc.shop.uses dummy
 
 scoreboard objectives add isc.actionbar trigger
 scoreboard objectives add isc.toggle trigger

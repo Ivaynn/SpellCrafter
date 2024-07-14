@@ -1,13 +1,24 @@
 #> executed by a new interaction entity
 
+# Inputs
+execute unless score $shop.id isc.tmp matches 0.. run scoreboard players set $shop.id isc.tmp 0
+execute unless score $shop.type isc.tmp matches 0.. run scoreboard players set $shop.type isc.tmp 0
+execute unless score $shop.uses isc.tmp matches 1.. run scoreboard players set $shop.uses isc.tmp 1
+execute unless score $shop.value isc.tmp matches 1.. run scoreboard players set $shop.value isc.tmp 1
+
+scoreboard players operation @s isc.id = $shop.id isc.tmp
+scoreboard players operation @s isc.shop.uses = $shop.uses isc.tmp
+scoreboard players operation @s isc.shop.value = $shop.value isc.tmp
+
+
+# Interaction entity data
 tag @s add isc.shop
 tag @s add isc.shop.tmp
 tag @s add isc.shop.interaction
-
-scoreboard players set @s isc.shop.value 999
-scoreboard players operation @s isc.id = $shop.id isc.tmp
-
 data merge entity @s {width:0.45f,height:0.6f,response:1b}
+
+
+# Summon item display
 execute summon minecraft:item_display run function isc:as_shop/summon/as_item_display
 
 

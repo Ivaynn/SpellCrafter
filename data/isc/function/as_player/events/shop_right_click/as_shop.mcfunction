@@ -33,7 +33,11 @@ execute on passengers as @s[tag=isc.shop.item] run data modify storage isc:tmp i
 execute as @p[distance=..0.001,tag=isc.shop.tmp] at @s anchored eyes positioned ^ ^-0.25 ^-0.25 run function isc:as_player/events/shop_right_click/summon_item
 
 
+# Shop uses
+scoreboard players remove @s isc.shop.uses 1
+execute unless score @s isc.shop.uses matches 1.. run function isc:as_shop/remove
+
+
 # Complete
 execute at @s run particle minecraft:happy_villager ~ ~.3 ~ .15 .15 .15 1 5 normal
-function isc:as_shop/remove
 scoreboard players set $shop.result isc.tmp 3

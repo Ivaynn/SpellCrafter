@@ -27,7 +27,7 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Starter Wand"
+            "name": "Beginner's Wand"
         },
         {
             "function": "minecraft:set_lore",
@@ -35,17 +35,17 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 45",
+                    "text": "◆ 20",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 1.5",
+                            "text": "   ⌚ 0.75",
                             "color": "gray",
                             "italic": false
                         },
                         {
-                            "text": "   ❒ 1/4",
+                            "text": "   ❒ 0/4",
                             "color": "dark_gray",
                             "italic": false
                         }
@@ -55,15 +55,15 @@
                     "text": ""
                 },
                 {
-                    "text": "→ Magic Missile",
-                    "color": "gold",
-                    "italic": false
+                    "text": " Empty",
+                    "color": "dark_gray",
+                    "italic": true
                 }
             ]
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{wand:{valid:1b, mana:45, cooldown:30, spells:[1], slots:[], mod:0, cap:4, base_mana:25, base_cooldown:15}}}"
+            "tag": "{isc:{wand:{valid:1b, mana:20, cooldown:15, spells:[], slots:[], mod:0, cap:4, base_mana:20, base_cooldown:15}}}"
         }
     ]
 }
