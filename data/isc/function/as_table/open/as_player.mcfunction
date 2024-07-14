@@ -7,7 +7,7 @@ execute unless predicate isc:holding_wand run return 0
 
 # Locked wand
 execute store result score $owner isc.tmp run data get entity @s SelectedItem.components."minecraft:custom_data".isc.wand.owner
-execute if score $owner isc.tmp matches 1.. unless score @s isc.id = $owner isc.tmp run return run tellraw @s ["",{"text":"<SpellCrafter> ","color":"dark_aqua"},{"text":"This wand is locked!","color":"gray"}]
+execute if score $owner isc.tmp matches 1.. unless score @s isc.id = $owner isc.tmp run return run tellraw @s ["",{"text":"> ","color":"red","bold":true},{"text":"This wand is locked!","color":"gray"}]
 
 
 # Put wand information on storage & clear wand

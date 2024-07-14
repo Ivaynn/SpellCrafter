@@ -8,6 +8,10 @@ data remove entity @s interaction
 execute if score $shop.this isc.tmp matches 0 run return 0
 
 
+# Check if this is the correct player
+execute if score @s isc.id matches 1.. unless score @p[distance=..0.001,tag=isc.shop.tmp] isc.id = @s isc.id run return run scoreboard players set $shop.result isc.tmp 2
+
+
 # Check if player has enough currency to buy the item
 scoreboard players set $player_xp isc.tmp 0
 execute store result score $player_xp isc.tmp run xp query @p[distance=..0.001,tag=isc.shop.tmp] levels
@@ -31,4 +35,5 @@ execute as @p[distance=..0.001,tag=isc.shop.tmp] at @s anchored eyes positioned 
 
 # Complete
 execute at @s run particle minecraft:happy_villager ~ ~.3 ~ .15 .15 .15 1 5 normal
-scoreboard players set $shop.result isc.tmp 2
+function isc:as_shop/remove
+scoreboard players set $shop.result isc.tmp 3
