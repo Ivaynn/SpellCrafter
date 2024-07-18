@@ -5,6 +5,10 @@
 execute unless score @s isc.id matches 1.. run function isc:as_caster/new_id
 
 
+# If caster is on cooldown, stop here
+execute if score @s isc.cooldown matches 1.. run return 0
+
+
 # Cooldown
 execute store result score @s isc.cooldown run data get entity @s HandItems[0].components."minecraft:custom_data".isc.wand.cooldown
 scoreboard players operation @s isc.cooldown > min_cooldown isc.options

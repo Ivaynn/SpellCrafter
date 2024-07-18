@@ -30,6 +30,7 @@ execute if score $spell isc.tmp matches 82 run return run function isc:spells/wi
 execute if score $spell isc.tmp matches 85 run return run function isc:spells/diverge/cast
 execute if score $spell isc.tmp matches 86 run return run function isc:spells/converge/cast
 execute if score $spell isc.tmp matches 90 run return run function isc:spells/large_explosion/cast
+execute if score $spell isc.tmp matches 97 run return run function isc:spells/forced_cast/cast
 
 
 # Special
