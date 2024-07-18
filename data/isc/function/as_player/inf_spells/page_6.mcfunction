@@ -14,8 +14,8 @@ loot replace entity @s inventory.10 loot isc:spells/extended
 loot replace entity @s inventory.11 loot isc:spells/quickstep
 loot replace entity @s inventory.12 loot isc:spells/skip
 loot replace entity @s inventory.13 loot isc:spells/echo
-loot replace entity @s inventory.14 loot isc:spells/final_echo
-item replace entity @s inventory.15 with minecraft:air
+loot replace entity @s inventory.14 loot isc:spells/chaotic_echo
+loot replace entity @s inventory.15 loot isc:spells/final_echo
 loot replace entity @s inventory.16 loot isc:spells/secret
 
 loot replace entity @s inventory.18 loot isc:spells/flash

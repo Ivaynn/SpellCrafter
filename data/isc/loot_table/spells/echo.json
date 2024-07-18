@@ -51,12 +51,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Turns into a copy of the",
+                    "text": "Casts a copy of the next",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "next spell in the wand",
+                    "text": "spell in the wand",
                     "color": "gray",
                     "italic": false
                 },

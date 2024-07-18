@@ -2,6 +2,7 @@
 # score "$spell isc.tmp" must contain the spell id
 
 scoreboard players set $success isc.tmp 1
+execute if score $spell isc.tmp matches 0 run return 1
 
 # Instant casts
 execute if score $spell isc.tmp matches 4 run return run function isc:spells/explosion/cast
@@ -47,6 +48,7 @@ execute if score $spell isc.tmp matches 89 run return run scoreboard players add
 execute if score $spell isc.tmp matches 92 run return run function isc:spells/skip/cast
 execute if score $spell isc.tmp matches 93 run return 1
 execute if score $spell isc.tmp matches 95 run return run function isc:spells/reverse/cast
+execute if score $spell isc.tmp matches 96 run return 1
 
 
 # Unstackable modifiers

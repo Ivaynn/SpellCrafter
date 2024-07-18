@@ -12,7 +12,7 @@
         },
         "description": [
             {
-                "text": "\n◆ 25",
+                "text": "\n◆ 30",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Turns into a copy of the last spell in the wand\n",
+                "text": "Casts a copy of the last spell in the wand\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/echo",
+    "parent": "isc:spells/chaotic_echo",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

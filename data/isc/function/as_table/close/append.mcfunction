@@ -15,11 +15,6 @@ scoreboard players set $spell isc.tmp 0
 execute store result score $spell isc.tmp run data get storage isc:tmp spell.id
 
 
-# Special cases: spells that turn into other spells (while keeping their own mana cost and cooldown - only their id changes)
-execute if score $spell isc.tmp matches 93 store result score $spell isc.tmp run data get storage isc:tmp keep[-1].components."minecraft:custom_data".isc.spell.id
-execute if score $spell isc.tmp matches 50 store result score $spell isc.tmp run data get storage isc:tmp keep[1].components."minecraft:custom_data".isc.spell.id
-
-
 # Special cases
 execute if score $spell isc.tmp matches 64 run scoreboard players add $spell.sharp isc.tmp 1
 execute if score $spell isc.tmp matches 69 run scoreboard players set $spell.secret isc.tmp 1

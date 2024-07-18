@@ -13,10 +13,11 @@ execute store result score $spell isc.tmp run data get storage isc:tmp wand.spel
 data remove storage isc:tmp wand.spells[0]
 
 
-# Spells that turn into other spells
-execute if score $spell isc.tmp matches 93 store result score $spell isc.tmp run data get storage isc:tmp wand.spells[-1]
-execute if score $spell isc.tmp matches 50 store result score $spell isc.tmp run data get storage isc:tmp wand.spells[0]
-execute unless score $spell isc.tmp matches 1.. run return -1
+# Spells that turn into other spells (echo)
+execute if score $spell isc.tmp matches 50 run function isc:spells/echo/cast
+execute if score $spell isc.tmp matches 96 run function isc:spells/chaotic_echo/cast
+execute if score $spell isc.tmp matches 93 run function isc:spells/final_echo/cast
+execute unless score $spell isc.tmp matches 0.. run return -1
 
 
 # Projectiles (return)
