@@ -20,6 +20,7 @@ execute as @s[tag=isc.spell.toxic_cloud] run function isc:spells/toxic_cloud/hit
 execute as @s[tag=isc.spell.wither_blast] run function isc:spells/wither_blast/hit
 execute as @s[tag=isc.spell.big_drill] run function isc:spells/big_drill/hit
 execute as @s[tag=isc.spell.vampiric_shot] run function isc:spells/vampiric_shot/hit
+execute as @s[tag=isc.spell.drain_bolt] run function isc:spells/drain_bolt/hit
 
 # Next spell...
 execute if data entity @s data.isc.spells[0] run function isc:as_projectile/next_spell

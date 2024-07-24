@@ -13,9 +13,8 @@ execute if score $damage isc.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=.
 
 # If a target is hit, heal caster
 execute unless score $success isc.tmp matches 1.. run return 0
-scoreboard players operation $id isc.tmp = @s isc.id
-effect give @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id,type=!#minecraft:undead,tag=!isc.untargetable,tag=!isc.spectator] minecraft:instant_health 1 0 true
-effect give @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id,type=#minecraft:undead,tag=!isc.untargetable,tag=!isc.spectator] minecraft:instant_damage 1 0 true
+effect give @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id,type=!#minecraft:undead,tag=!isc.spectator] minecraft:instant_health 1 0 true
+effect give @e[limit=1,type=#isc:caster,tag=isc.caster,predicate=isc:match_id,type=#minecraft:undead,tag=!isc.spectator] minecraft:instant_damage 1 0 true
 
 
 # Effects

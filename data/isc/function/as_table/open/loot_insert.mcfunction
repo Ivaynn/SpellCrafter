@@ -96,3 +96,4 @@ execute if score $spell isc.tmp matches 95 run return run loot insert ~ ~ ~ loot
 execute if score $spell isc.tmp matches 96 run return run loot insert ~ ~ ~ loot isc:spells/chaotic_echo
 execute if score $spell isc.tmp matches 97 run return run loot insert ~ ~ ~ loot isc:spells/forced_cast
 execute if score $spell isc.tmp matches 98 run return run loot insert ~ ~ ~ loot isc:spells/vampiric_shot
+execute if score $spell isc.tmp matches 99 run return run loot insert ~ ~ ~ loot isc:spells/drain_bolt

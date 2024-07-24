@@ -40,6 +40,7 @@ execute if score $spell isc.tmp matches 80 run return run function isc:spells/to
 execute if score $spell isc.tmp matches 91 run return run function isc:spells/wither_blast/projectile
 execute if score $spell isc.tmp matches 94 run return run function isc:spells/big_drill/projectile
 execute if score $spell isc.tmp matches 98 run return run function isc:spells/vampiric_shot/projectile
+execute if score $spell isc.tmp matches 99 run return run function isc:spells/drain_bolt/projectile
 
 
 # Non-projectiles (no return)
