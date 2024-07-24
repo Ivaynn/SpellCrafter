@@ -18,11 +18,11 @@ item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air
 
-item replace entity @s inventory.18 with minecraft:air
-loot replace entity @s inventory.19 loot isc:spells/arcane_shield
-loot replace entity @s inventory.20 loot isc:spells/healing_circle
-loot replace entity @s inventory.21 loot isc:spells/toxic_cloud
-loot replace entity @s inventory.22 loot isc:spells/drill
-loot replace entity @s inventory.23 loot isc:spells/big_drill
-loot replace entity @s inventory.24 loot isc:spells/black_hole
-loot replace entity @s inventory.25 loot isc:spells/null_shot
+loot replace entity @s inventory.18 loot isc:spells/arcane_shield
+loot replace entity @s inventory.19 loot isc:spells/healing_circle
+loot replace entity @s inventory.20 loot isc:spells/toxic_cloud
+loot replace entity @s inventory.21 loot isc:spells/drill
+loot replace entity @s inventory.22 loot isc:spells/big_drill
+loot replace entity @s inventory.23 loot isc:spells/black_hole
+loot replace entity @s inventory.24 loot isc:spells/null_shot
+loot replace entity @s inventory.25 loot isc:spells/mirror_shot

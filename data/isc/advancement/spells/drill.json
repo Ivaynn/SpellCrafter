@@ -70,7 +70,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/toxic_cloud",
+    "parent": "isc:spells/root_projectile",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

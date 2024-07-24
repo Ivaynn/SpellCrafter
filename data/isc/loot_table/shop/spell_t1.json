@@ -497,6 +497,11 @@
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/drain_bolt",
                     "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/mirror_shot",
+                    "weight": 4
                 }
             ]
         }

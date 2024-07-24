@@ -27,6 +27,7 @@ execute as @s[tag=isc.spell.accelerate] run function isc:spells/accelerate/tick
 execute as @s[tag=isc.spell.arcane_shield] run function isc:spells/arcane_shield/tick
 execute as @s[tag=isc.spell.healing_circle] run function isc:spells/healing_circle/tick
 execute as @s[tag=isc.spell.toxic_cloud] run function isc:spells/toxic_cloud/tick
+execute as @s[tag=isc.spell.mirror_shot] run function isc:spells/mirror_shot/tick
 
 
 # Get number of move iterations per tick
