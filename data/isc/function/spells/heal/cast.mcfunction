@@ -3,8 +3,8 @@
 
 
 # Heal targets
-effect give @e[distance=..4,type=!#minecraft:undead,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator] minecraft:instant_health 1 0 true
-effect give @e[distance=..4,type=#minecraft:undead,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator] minecraft:instant_damage 1 0 true
+effect give @e[distance=..4,type=!#minecraft:undead,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator] minecraft:instant_health 1 1 true
+effect give @e[distance=..4,type=#minecraft:undead,type=!#isc:untargetable,tag=!isc.untargetable,tag=!isc.spectator] minecraft:instant_damage 1 1 true
 
 
 # Effects

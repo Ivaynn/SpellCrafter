@@ -502,6 +502,11 @@
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/mirror_shot",
                     "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/healing_bolt",
+                    "weight": 4
                 }
             ]
         }

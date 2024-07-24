@@ -56,7 +56,12 @@
                     "italic": false
                 },
                 {
-                    "text": "poison to all nearby targets",
+                    "text": "a strong poison to targets",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "in a small radius",
                     "color": "gray",
                     "italic": false
                 },

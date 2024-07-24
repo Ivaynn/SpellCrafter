@@ -4,23 +4,23 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280080
+                "minecraft:custom_model_data": 7280101
             }
         },
         "title": {
-            "text": "Toxic Cloud                   "
+            "text": "Healing Bolt                  "
         },
         "description": [
             {
-                "text": "\n◆ 80",
+                "text": "\n◆ 60",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 2.0\n\n",
+                "text": "   ⌚ 1.25\n\n",
                 "color": "gray"
             },
             {
-                "text": "A toxic cloud that applies a strong poison to targets in a small radius\n",
+                "text": "A projectile that heals its targets\n",
                 "color": "gray"
             },
             {
@@ -38,7 +38,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "60",
+                        "text": "15",
                         "color": "red"
                     },
                     {
@@ -52,12 +52,22 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "0",
+                        "text": "50",
                         "color": "red"
                     },
                     {
                         "text": " blocks/sec",
                         "color": "dark_gray"
+                    }
+                ]
+            },
+            {
+                "text": "\nHeal: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "2 ❤",
+                        "color": "red"
                     }
                 ]
             },
@@ -70,7 +80,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/healing_circle",
+    "parent": "isc:spells/root_projectile",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -93,7 +103,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:80}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:101}}}"
                         }
                     }
                 ]

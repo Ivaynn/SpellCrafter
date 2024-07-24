@@ -22,6 +22,7 @@ execute as @s[tag=isc.spell.big_drill] run function isc:spells/big_drill/hit
 execute as @s[tag=isc.spell.vampiric_shot] run function isc:spells/vampiric_shot/hit
 execute as @s[tag=isc.spell.drain_bolt] run function isc:spells/drain_bolt/hit
 execute as @s[tag=isc.spell.mirror_shot] run function isc:spells/mirror_shot/hit
+execute as @s[tag=isc.spell.healing_bolt] run function isc:spells/healing_bolt/hit
 
 # Next spell...
 execute if data entity @s data.isc.spells[0] run function isc:as_projectile/next_spell

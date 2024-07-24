@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:5, mana:50, cooldown:60, tier:3, lore:'{\"text\":\"✦ Heal\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:5, mana:95, cooldown:60, tier:3, lore:'{\"text\":\"✦ Heal\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 50",
+                    "text": "◆ 95",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
@@ -64,7 +64,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "2 ❤",
+                            "text": "4 ❤",
                             "color": "red"
                         }
                     ]

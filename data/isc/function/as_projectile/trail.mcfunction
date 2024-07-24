@@ -36,3 +36,4 @@ execute as @s[tag=isc.spell.boomerang] run function isc:spells/boomerang/trail
 execute as @s[tag=isc.spell.kinetic_bolt] run function isc:spells/kinetic_bolt/trail
 execute as @s[tag=isc.spell.vampiric_shot] run function isc:spells/vampiric_shot/trail
 execute as @s[tag=isc.spell.drain_bolt] run function isc:spells/drain_bolt/trail
+execute as @s[tag=isc.spell.healing_bolt] run function isc:spells/healing_bolt/trail
