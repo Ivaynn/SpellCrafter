@@ -34,3 +34,4 @@ execute as @s[tag=isc.spell.shulker_bullet] run function isc:spells/shulker_bull
 execute as @s[tag=isc.spell.poison_dart] run function isc:spells/poison_dart/trail
 execute as @s[tag=isc.spell.boomerang] run function isc:spells/boomerang/trail
 execute as @s[tag=isc.spell.kinetic_bolt] run function isc:spells/kinetic_bolt/trail
+execute as @s[tag=isc.spell.vampiric_shot] run function isc:spells/vampiric_shot/trail

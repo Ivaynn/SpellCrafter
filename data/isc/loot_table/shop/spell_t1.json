@@ -487,6 +487,11 @@
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/forced_cast",
                     "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/vampiric_shot",
+                    "weight": 4
                 }
             ]
         }
