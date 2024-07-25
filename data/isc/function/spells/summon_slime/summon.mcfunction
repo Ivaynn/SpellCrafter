@@ -1,9 +1,6 @@
 #> as projectile, on summon, at @s
+#> recursive (limited by score "$spell.summon_slime isc.tmp")
 # instant cast
-
-
-# Limit
-execute if score $spell.summon_slime isc.tmp matches 30.. run scoreboard players set $spell.summon_slime isc.tmp 30
 
 
 # Summon entity
@@ -15,5 +12,7 @@ execute align xyz positioned ~.5 ~ ~.5 as @e[limit=1,distance=..0.001,type=minec
 playsound minecraft:entity.slime.squish_small player @a ~ ~ ~ 1 1
 
 
-# Reset counter
-scoreboard players set $spell.summon_slime isc.tmp 0
+# Counter
+scoreboard players remove $spell.summon_slime isc.tmp 5
+execute if score $spell.summon_slime isc.tmp matches ..0 run scoreboard players set $spell.summon_slime isc.tmp 0
+execute if score $spell.summon_slime isc.tmp matches 1.. run function isc:spells/summon_slime/summon

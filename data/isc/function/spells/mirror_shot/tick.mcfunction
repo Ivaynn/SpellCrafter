@@ -11,7 +11,7 @@ scoreboard players set $speed isc.tmp 0
 
 # Get stats of nearby projectiles
 tag @s add isc.self
-execute as @e[limit=1,distance=..50,sort=nearest,type=minecraft:marker,tag=!isc.self,tag=!isc.kill,tag=isc.projectile] at @s run function isc:spells/mirror_shot/as_proj
+execute as @e[limit=1,distance=..50,sort=nearest,type=minecraft:marker,tag=!isc.self,tag=!isc.kill,tag=isc.projectile,tag=!isc.spell.mirror_shot] at @s run function isc:spells/mirror_shot/as_proj
 tag @s remove isc.self
 
 
