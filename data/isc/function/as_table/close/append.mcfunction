@@ -46,5 +46,8 @@ execute if score $add isc.tmp matches ..-1 run scoreboard players set $is_negati
 execute if score $spell isc.tmp matches 6 run scoreboard players operation $add isc.tmp *= $clone_multiplier isc.tmp
 execute if score $spell isc.tmp matches 6 run scoreboard players operation $clone_multiplier isc.tmp *= #2 isc.math 
 
+# Mana: apply cost reductions
+execute if score $spell isc.tmp matches 52 run function isc:spells/shuffle/mana_cost
+
 # Mana: update
 scoreboard players operation $mana isc.tmp += $add isc.tmp

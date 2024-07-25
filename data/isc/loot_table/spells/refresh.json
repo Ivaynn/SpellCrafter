@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:47, mana:-50, cooldown:0, tier:4, lore:'{\"text\":\"⚝ Refresh\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:47, mana:-100, cooldown:0, tier:4, lore:'{\"text\":\"⚝ Refresh\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ -50",
+                    "text": "◆ -100",
                     "color": "aqua",
                     "italic": false,
                     "extra": [

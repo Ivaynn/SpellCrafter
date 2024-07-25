@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Randomly sorts all spells after this one\n",
+                "text": "Randomly sorts all spells after this one, reducing their mana cost\n",
                 "color": "gray"
             }
         ],

@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:44, mana:15, cooldown:0, tier:3, lore:'{\"text\":\"⛶ Chaotic\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:44, mana:15, cooldown:-8, tier:3, lore:'{\"text\":\"⛶ Chaotic\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -41,7 +41,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0",
+                            "text": "   ⌚ -0.4",
                             "color": "gray",
                             "italic": false
                         }

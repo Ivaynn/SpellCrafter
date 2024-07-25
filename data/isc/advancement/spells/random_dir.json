@@ -12,11 +12,11 @@
         },
         "description": [
             {
-                "text": "\n◆ 10",
+                "text": "\n◆ 5",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0\n\n",
+                "text": "   ⌚ -0.25\n\n",
                 "color": "gray"
             },
             {

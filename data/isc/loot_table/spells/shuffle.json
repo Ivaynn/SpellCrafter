@@ -56,7 +56,12 @@
                     "italic": false
                 },
                 {
-                    "text": "after this one",
+                    "text": "after this one, reducing",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "their mana cost",
                     "color": "gray",
                     "italic": false
                 },
