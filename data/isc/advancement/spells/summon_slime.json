@@ -12,7 +12,7 @@
         },
         "description": [
             {
-                "text": "\n◆ 75",
+                "text": "\n◆ 40",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Summons a slime. Its size increases with every consecutive copy of this spell\n",
+                "text": "Summons a slime. Consecutive copies of this spell merge to increase the slime's size\n",
                 "color": "gray"
             }
         ],

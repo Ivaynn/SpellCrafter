@@ -28,6 +28,7 @@ scoreboard players set @s isc.dist 0
 scoreboard players set $spell.clone isc.tmp 0
 scoreboard players set $spell.multishot isc.tmp 0
 scoreboard players set $spell.remote_cast isc.tmp 0
+scoreboard players set $spell.summon_slime isc.tmp 0
 
 
 # Check if wand has modifiers

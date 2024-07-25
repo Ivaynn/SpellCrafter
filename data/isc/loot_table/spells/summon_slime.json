@@ -22,7 +22,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:35, mana:75, cooldown:15, tier:2, lore:'{\"text\":\"✦ Summon Slime\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:35, mana:40, cooldown:15, tier:2, lore:'{\"text\":\"✦ Summon Slime\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -36,7 +36,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 75",
+                    "text": "◆ 40",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
@@ -51,17 +51,17 @@
                     "text": ""
                 },
                 {
-                    "text": "Summons a slime. Its size",
+                    "text": "Summons a slime. Consecutive",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "increases with every consecutive",
+                    "text": "copies of this spell merge to",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "copy of this spell",
+                    "text": "increase the slime's size",
                     "color": "gray",
                     "italic": false
                 },

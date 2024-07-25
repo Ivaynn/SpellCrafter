@@ -3,14 +3,18 @@
 # storage "isc:tmp wand.spells" must have the spell list
 
 
-# If there are no more spells, the chain ends without a projectile --> return -1
-execute unless data storage isc:tmp wand.spells[0] run return -1
+# If there are no more spells, the chain ends without a projectile
+execute unless data storage isc:tmp wand.spells[0] run return run function isc:as_projectile/last_spell
 
 
 # Put the next spell of the chain in score "$spell isc.tmp"
 scoreboard players set $spell isc.tmp 0
 execute store result score $spell isc.tmp run data get storage isc:tmp wand.spells[0]
 data remove storage isc:tmp wand.spells[0]
+
+
+# Spells that have consecutive copies stack: they trigger after the last copy
+execute if score $spell.summon_slime isc.tmp matches 1.. unless score $spell isc.tmp matches 35 run function isc:spells/summon_slime/summon
 
 
 # Spells that turn into other spells (echo)
