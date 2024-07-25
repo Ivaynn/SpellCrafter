@@ -28,6 +28,9 @@ scoreboard players set @s isc.dist 0
 scoreboard players set $spell.clone isc.tmp 0
 scoreboard players set $spell.multishot isc.tmp 0
 scoreboard players set $spell.remote_cast isc.tmp 0
+scoreboard players set $spell.remote_up isc.tmp 0
+scoreboard players set $spell.remote_down isc.tmp 0
+scoreboard players set $spell.remote_back isc.tmp 0
 scoreboard players set $spell.summon_slime isc.tmp 0
 
 
@@ -83,15 +86,24 @@ execute unless score $spell.multicast isc.tmp matches 1.. run data modify entity
 execute unless score $spell.multicast isc.tmp matches 1.. if score $wand_mod isc.tmp matches 1.. run data modify entity @s data.isc.mod set from storage isc:tmp wand.mod
 
 
-# Apply tagged modifiers (before creating new projectiles)
+# Apply remote cast modifiers (first, so that they always use the original rotation)
 execute if score $spell.remote_cast isc.tmp matches 1.. run function isc:spells/remote_cast/cast
+execute if score $spell.remote_up isc.tmp matches 1.. run function isc:spells/remote_up/cast
+execute if score $spell.remote_down isc.tmp matches 1.. run function isc:spells/remote_down/cast
+execute if score $spell.remote_back isc.tmp matches 1.. run function isc:spells/remote_back/cast
+
+
+# Apply modifiers that affect the rotation
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
-execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 execute as @s[tag=isc.spell.aim_assist,tag=!isc.spell.random_dir] at @s run function isc:spells/aim_assist/cast
 execute as @s[tag=isc.spell.aim_up,tag=!isc.spell.random_dir,tag=!isc.spell.aim_assist,tag=!isc.spell.aim_down] at @s run function isc:spells/aim_up/cast
 execute as @s[tag=isc.spell.aim_down,tag=!isc.spell.random_dir,tag=!isc.spell.aim_assist,tag=!isc.spell.aim_up] at @s run function isc:spells/aim_down/cast
+
+
+# Apply other tagged modifiers
 execute as @s[tag=isc.spell.warp] at @s run function isc:spells/warp/cast
 execute as @s[tag=isc.spell.trick_shot] at @s run function isc:spells/trick_shot/cast
+execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 execute as @s[tag=isc.spell.safe_shot] at @s run function isc:spells/safe_shot/cast
 execute as @s[tag=isc.spell.hidden] at @s run function isc:spells/hidden/cast
 
@@ -101,7 +113,7 @@ execute if score $spell.multishot isc.tmp matches 1.. at @s run function isc:spe
 execute if score $spell.clone isc.tmp matches 1.. at @s run function isc:spells/clone/cast
 
 
-# Apply tagged modifiers (after creating new projectiles)
+# Apply tagged modifiers that shouldn't affect copies (new projectiles)
 execute as @s[tag=isc.spell.chaotic] run function isc:spells/chaotic/cast
 
 

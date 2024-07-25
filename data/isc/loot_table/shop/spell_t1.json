@@ -516,12 +516,27 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/aim_up",
-                    "weight": 10
+                    "weight": 7
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/aim_down",
-                    "weight": 10
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/remote_up",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/remote_down",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/remote_back",
+                    "weight": 7
                 }
             ]
         }

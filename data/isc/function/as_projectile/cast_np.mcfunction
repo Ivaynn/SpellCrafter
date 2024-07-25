@@ -94,6 +94,9 @@ execute if score $spell isc.tmp matches 19 run return run function isc:spells/qu
 execute if score $spell isc.tmp matches 28 run return run function isc:spells/gravity/cast
 execute if score $spell isc.tmp matches 29 run return run function isc:spells/anti_gravity/cast
 execute if score $spell isc.tmp matches 45 run return run function isc:spells/remote_cast/add
+execute if score $spell isc.tmp matches 105 run return run function isc:spells/remote_up/add
+execute if score $spell isc.tmp matches 106 run return run function isc:spells/remote_down/add
+execute if score $spell isc.tmp matches 107 run return run function isc:spells/remote_back/add
 
 
 # If it reaches this point, spell not found

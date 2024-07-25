@@ -1732,5 +1732,80 @@
                 "range": 104
             }
         ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Remote Cast: Up",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 105
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Remote Cast: Down",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 106
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Remote Cast: Back",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 107
+            }
+        ]
     }
 ]

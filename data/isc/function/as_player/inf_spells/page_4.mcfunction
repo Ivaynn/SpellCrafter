@@ -19,11 +19,11 @@ loot replace entity @s inventory.14 loot isc:spells/trick_shot
 item replace entity @s inventory.15 with minecraft:air
 loot replace entity @s inventory.16 loot isc:spells/hidden
 
-loot replace entity @s inventory.18 loot isc:spells/aim_up
-loot replace entity @s inventory.19 loot isc:spells/aim_down
-item replace entity @s inventory.20 with minecraft:air
-item replace entity @s inventory.21 with minecraft:air
-item replace entity @s inventory.22 with minecraft:air
-item replace entity @s inventory.23 with minecraft:air
+loot replace entity @s inventory.18 loot isc:spells/remote_cast
+loot replace entity @s inventory.19 loot isc:spells/remote_back
+loot replace entity @s inventory.20 loot isc:spells/remote_up
+loot replace entity @s inventory.21 loot isc:spells/remote_down
+loot replace entity @s inventory.22 loot isc:spells/aim_up
+loot replace entity @s inventory.23 loot isc:spells/aim_down
 item replace entity @s inventory.24 with minecraft:air
 item replace entity @s inventory.25 with minecraft:air

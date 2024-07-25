@@ -13,7 +13,7 @@ loot replace entity @s inventory.9 loot isc:spells/range_dec
 loot replace entity @s inventory.10 loot isc:spells/range_inc
 loot replace entity @s inventory.11 loot isc:spells/long_shot
 loot replace entity @s inventory.12 loot isc:spells/anchored
-loot replace entity @s inventory.13 loot isc:spells/remote_cast
+item replace entity @s inventory.13 with minecraft:air
 loot replace entity @s inventory.14 loot isc:spells/piercing
 item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air

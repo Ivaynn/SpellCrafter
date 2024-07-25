@@ -102,3 +102,6 @@ execute if score $spell isc.tmp matches 101 run return run loot insert ~ ~ ~ loo
 execute if score $spell isc.tmp matches 102 run return run loot insert ~ ~ ~ loot isc:spells/soul_link
 execute if score $spell isc.tmp matches 103 run return run loot insert ~ ~ ~ loot isc:spells/aim_up
 execute if score $spell isc.tmp matches 104 run return run loot insert ~ ~ ~ loot isc:spells/aim_down
+execute if score $spell isc.tmp matches 105 run return run loot insert ~ ~ ~ loot isc:spells/remote_up
+execute if score $spell isc.tmp matches 106 run return run loot insert ~ ~ ~ loot isc:spells/remote_down
+execute if score $spell isc.tmp matches 107 run return run loot insert ~ ~ ~ loot isc:spells/remote_back

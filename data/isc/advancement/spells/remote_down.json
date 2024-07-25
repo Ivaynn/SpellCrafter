@@ -4,15 +4,15 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280103
+                "minecraft:custom_model_data": 7280106
             }
         },
         "title": {
-            "text": "Aim Up                        "
+            "text": "Remote Cast: Down             "
         },
         "description": [
             {
-                "text": "\n◆ 10",
+                "text": "\n◆ 15",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Points the next projectile up\n",
+                "text": "Casts the next projectile a short distance below\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/remote_down",
+    "parent": "isc:spells/remote_up",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:103}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:106}}}"
                         }
                     }
                 ]
