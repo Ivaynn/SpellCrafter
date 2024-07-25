@@ -721,6 +721,44 @@
                     }
                 ]
             }
+        },
+        "isc:aim_up": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/aim_up": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:aim_down": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/aim_down": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     }
 }

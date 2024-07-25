@@ -22,13 +22,13 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:2, mana:25, cooldown:20, tier:1, lore:'{\"text\":\"→ Fireball\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:2, mana:25, cooldown:20, tier:1, lore:'{\"text\":\"→ Fire Bolt\",\"color\":\"gold\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Fireball"
+            "name": "Fire Bolt"
         },
         {
             "function": "minecraft:set_lore",
@@ -51,12 +51,7 @@
                     "text": ""
                 },
                 {
-                    "text": "A slow fireball that can",
-                    "color": "gray",
-                    "italic": false
-                },
-                {
-                    "text": "be extinguished by water",
+                    "text": "A slow fire projectile",
                     "color": "gray",
                     "italic": false
                 },

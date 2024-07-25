@@ -86,7 +86,9 @@ execute unless score $spell.multicast isc.tmp matches 1.. if score $wand_mod isc
 execute if score $spell.remote_cast isc.tmp matches 1.. run function isc:spells/remote_cast/cast
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
 execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
-execute as @s[tag=!isc.spell.random_dir,tag=isc.spell.aim_assist] at @s run function isc:spells/aim_assist/cast
+execute as @s[tag=isc.spell.aim_assist,tag=!isc.spell.random_dir] at @s run function isc:spells/aim_assist/cast
+execute as @s[tag=isc.spell.aim_up,tag=!isc.spell.random_dir,tag=!isc.spell.aim_assist,tag=!isc.spell.aim_down] at @s run function isc:spells/aim_up/cast
+execute as @s[tag=isc.spell.aim_down,tag=!isc.spell.random_dir,tag=!isc.spell.aim_assist,tag=!isc.spell.aim_up] at @s run function isc:spells/aim_down/cast
 execute as @s[tag=isc.spell.warp] at @s run function isc:spells/warp/cast
 execute as @s[tag=isc.spell.trick_shot] at @s run function isc:spells/trick_shot/cast
 execute as @s[tag=isc.spell.safe_shot] at @s run function isc:spells/safe_shot/cast

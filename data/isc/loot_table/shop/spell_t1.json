@@ -512,6 +512,16 @@
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/soul_link",
                     "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/aim_up",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/aim_down",
+                    "weight": 10
                 }
             ]
         }

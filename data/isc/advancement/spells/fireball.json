@@ -8,7 +8,7 @@
             }
         },
         "title": {
-            "text": "Fireball                      "
+            "text": "Fire Bolt                     "
         },
         "description": [
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "A slow fireball that can be extinguished by water\n",
+                "text": "A slow fire projectile\n",
                 "color": "gray"
             },
             {
