@@ -43,6 +43,7 @@ execute if score $spell isc.tmp matches 98 run return run function isc:spells/va
 execute if score $spell isc.tmp matches 99 run return run function isc:spells/drain_bolt/projectile
 execute if score $spell isc.tmp matches 100 run return run function isc:spells/mirror_shot/projectile
 execute if score $spell isc.tmp matches 101 run return run function isc:spells/healing_bolt/projectile
+execute if score $spell isc.tmp matches 102 run return run function isc:spells/soul_link/projectile
 
 
 # Non-projectiles (no return)

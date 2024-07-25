@@ -507,6 +507,11 @@
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/healing_bolt",
                     "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/soul_link",
+                    "weight": 2
                 }
             ]
         }

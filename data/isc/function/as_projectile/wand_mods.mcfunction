@@ -99,3 +99,4 @@ execute if score $wand_mod isc.tmp matches 98 run return 0
 execute if score $wand_mod isc.tmp matches 99 run return 0
 execute if score $wand_mod isc.tmp matches 100 run return 0
 execute if score $wand_mod isc.tmp matches 101 run return 0
+execute if score $wand_mod isc.tmp matches 102 run return 0
