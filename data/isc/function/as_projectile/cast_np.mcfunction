@@ -78,6 +78,9 @@ execute if score $spell isc.tmp matches 81 run return run tag @s add isc.spell.b
 execute if score $spell isc.tmp matches 87 run return run tag @s add isc.spell.orbit
 execute if score $spell isc.tmp matches 103 run return run tag @s add isc.spell.aim_up
 execute if score $spell isc.tmp matches 104 run return run tag @s add isc.spell.aim_down
+execute if score $spell isc.tmp matches 108 run return run tag @s add isc.spell.casters_call
+execute if score $spell isc.tmp matches 109 run return run tag @s add isc.spell.casters_pull
+execute if score $spell isc.tmp matches 110 run return run tag @s add isc.spell.casters_aim
 
 
 # Stackable modifiers

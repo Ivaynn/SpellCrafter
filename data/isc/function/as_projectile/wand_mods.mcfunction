@@ -105,3 +105,6 @@ execute if score $wand_mod isc.tmp matches 104 run return 1
 execute if score $wand_mod isc.tmp matches 105 run return 1
 execute if score $wand_mod isc.tmp matches 106 run return 1
 execute if score $wand_mod isc.tmp matches 107 run return 1
+execute if score $wand_mod isc.tmp matches 108 run return 1
+execute if score $wand_mod isc.tmp matches 109 run return 1
+execute if score $wand_mod isc.tmp matches 110 run return 1

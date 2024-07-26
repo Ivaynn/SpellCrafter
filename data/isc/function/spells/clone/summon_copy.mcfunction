@@ -20,7 +20,9 @@ scoreboard players operation @s isc.weight = $weight isc.tmp
 # Re-apply certain modifiers
 execute as @s[tag=isc.spell.chaotic] run function isc:spells/chaotic/cast
 execute as @s[tag=isc.spell.random_dir] run return run function isc:spells/random_dir/cast
-execute as @s[tag=isc.spell.aim_assist] run return run function isc:spells/aim_assist/cast
+execute as @s[tag=isc.spell.casters_aim] run return run function isc:spells/casters_aim/cast
+execute as @s[tag=isc.spell.casters_pull,tag=!isc.spell.casters_aim] run return run function isc:spells/casters_pull/cast
+execute as @s[tag=isc.spell.aim_assist,tag=!isc.spell.casters_aim,tag=!isc.spell.casters_pull] run return run function isc:spells/aim_assist/cast
 execute if score $spell.multicast isc.tmp matches 1 run return run function isc:spells/multicast/offset
 
 

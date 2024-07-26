@@ -1807,5 +1807,80 @@
                 "range": 107
             }
         ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Caster's Call",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 108
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Caster's Pull",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 109
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "text": "⛶ Caster's Aim",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "isc:tmp",
+                    "path": "wand.mod"
+                },
+                "range": 110
+            }
+        ]
     }
 ]

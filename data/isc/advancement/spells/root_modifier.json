@@ -816,6 +816,63 @@
                     }
                 ]
             }
+        },
+        "isc:casters_call": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/casters_call": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:casters_pull": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/casters_pull": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "isc:casters_aim": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "isc:spells/casters_aim": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     }
 }

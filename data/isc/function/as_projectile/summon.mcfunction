@@ -93,15 +93,18 @@ execute if score $spell.remote_down isc.tmp matches 1.. run function isc:spells/
 execute if score $spell.remote_back isc.tmp matches 1.. run function isc:spells/remote_back/cast
 
 
-# Apply modifiers that affect the rotation
+# Apply modifiers that affect the initial rotation (they are mutually exclusive)
 execute as @s[tag=isc.spell.random_dir] at @s run function isc:spells/random_dir/cast
-execute as @s[tag=isc.spell.aim_assist,tag=!isc.spell.random_dir] at @s run function isc:spells/aim_assist/cast
-execute as @s[tag=isc.spell.aim_up,tag=!isc.spell.random_dir,tag=!isc.spell.aim_assist,tag=!isc.spell.aim_down] at @s run function isc:spells/aim_up/cast
-execute as @s[tag=isc.spell.aim_down,tag=!isc.spell.random_dir,tag=!isc.spell.aim_assist,tag=!isc.spell.aim_up] at @s run function isc:spells/aim_down/cast
+execute as @s[tag=isc.spell.casters_aim,tag=!isc.spell.random_dir] at @s run function isc:spells/casters_aim/cast
+execute as @s[tag=isc.spell.casters_pull,tag=!isc.spell.random_dir,tag=!isc.spell.casters_aim] at @s run function isc:spells/casters_pull/cast
+execute as @s[tag=isc.spell.aim_assist,tag=!isc.spell.random_dir,tag=!isc.spell.casters_aim,tag=!isc.spell.casters_pull] at @s run function isc:spells/aim_assist/cast
+execute as @s[tag=isc.spell.aim_up,tag=!isc.spell.random_dir,tag=!isc.spell.casters_aim,tag=!isc.spell.casters_pull,tag=!isc.spell.aim_assist,tag=!isc.spell.aim_down] at @s run function isc:spells/aim_up/cast
+execute as @s[tag=isc.spell.aim_down,tag=!isc.spell.random_dir,tag=!isc.spell.casters_aim,tag=!isc.spell.casters_pull,tag=!isc.spell.aim_assist,tag=!isc.spell.aim_up] at @s run function isc:spells/aim_down/cast
 
 
 # Apply other tagged modifiers
-execute as @s[tag=isc.spell.warp] at @s run function isc:spells/warp/cast
+execute as @s[tag=isc.spell.warp,tag=!isc.spell.casters_call] at @s run function isc:spells/warp/cast
+execute as @s[tag=isc.spell.casters_call] at @s run function isc:spells/casters_call/cast
 execute as @s[tag=isc.spell.trick_shot] at @s run function isc:spells/trick_shot/cast
 execute as @s[tag=isc.spell.harmless] at @s run function isc:spells/harmless/cast
 execute as @s[tag=isc.spell.safe_shot] at @s run function isc:spells/safe_shot/cast

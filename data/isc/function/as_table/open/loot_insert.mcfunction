@@ -105,3 +105,6 @@ execute if score $spell isc.tmp matches 104 run return run loot insert ~ ~ ~ loo
 execute if score $spell isc.tmp matches 105 run return run loot insert ~ ~ ~ loot isc:spells/remote_up
 execute if score $spell isc.tmp matches 106 run return run loot insert ~ ~ ~ loot isc:spells/remote_down
 execute if score $spell isc.tmp matches 107 run return run loot insert ~ ~ ~ loot isc:spells/remote_back
+execute if score $spell isc.tmp matches 108 run return run loot insert ~ ~ ~ loot isc:spells/casters_call
+execute if score $spell isc.tmp matches 109 run return run loot insert ~ ~ ~ loot isc:spells/casters_pull
+execute if score $spell isc.tmp matches 110 run return run loot insert ~ ~ ~ loot isc:spells/casters_aim

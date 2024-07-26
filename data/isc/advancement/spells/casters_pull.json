@@ -4,51 +4,24 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280046
+                "minecraft:custom_model_data": 7280109
             }
         },
         "title": {
-            "text": "Null Shot                     "
+            "text": "Caster's Pull                 "
         },
         "description": [
             {
-                "text": "\n◆ 5",
+                "text": "\n◆ 10",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.2\n\n",
+                "text": "   ⌚ 0\n\n",
                 "color": "gray"
             },
             {
-                "text": "Stationary, Its lifetime depends on its range\n",
+                "text": "Points the next projectile at you\n",
                 "color": "gray"
-            },
-            {
-                "text": "\nDamage: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "0 ❤",
-                        "color": "red"
-                    }
-                ]
-            },
-            {
-                "text": "\nRange: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "25",
-                        "color": "red"
-                    },
-                    {
-                        "text": " blocks",
-                        "color": "dark_gray"
-                    }
-                ]
-            },
-            {
-                "text": "\n"
             }
         ],
         "frame": "goal",
@@ -56,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/black_hole",
+    "parent": "isc:spells/casters_call",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -79,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:46}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:109}}}"
                         }
                     }
                 ]
