@@ -38,3 +38,4 @@ execute as @s[tag=isc.spell.vampiric_shot] run function isc:spells/vampiric_shot
 execute as @s[tag=isc.spell.drain_bolt] run function isc:spells/drain_bolt/trail
 execute as @s[tag=isc.spell.healing_bolt] run function isc:spells/healing_bolt/trail
 execute as @s[tag=isc.spell.soul_link] run function isc:spells/soul_link/trail
+execute as @s[tag=isc.spell.delayed_cast] run function isc:spells/delayed_cast/trail

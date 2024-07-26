@@ -70,7 +70,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_projectile",
+    "parent": "isc:spells/revealing_bolt",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

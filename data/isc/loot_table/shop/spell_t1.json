@@ -552,6 +552,11 @@
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/casters_aim",
                     "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/delayed_cast",
+                    "weight": 2
                 }
             ]
         }
