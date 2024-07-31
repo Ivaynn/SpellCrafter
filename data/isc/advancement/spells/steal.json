@@ -4,23 +4,23 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280050
+                "minecraft:custom_model_data": 7280113
             }
         },
         "title": {
-            "text": "Echo                          "
+            "text": "Steal                         "
         },
         "description": [
             {
-                "text": "\n◆ 25",
+                "text": "\n◆ 50",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.2\n\n",
+                "text": "   ⌚ 0.5\n\n",
                 "color": "gray"
             },
             {
-                "text": "Casts a copy of the next spell in the wand\n",
+                "text": "Gives you the ownership of all projectiles in a large radius\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_special",
+    "parent": "isc:spells/transfer",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:50}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:113}}}"
                         }
                     }
                 ]

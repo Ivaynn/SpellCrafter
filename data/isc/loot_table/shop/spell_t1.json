@@ -562,6 +562,11 @@
                     "type": "minecraft:loot_table",
                     "value": "isc:spells/transfer",
                     "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "isc:spells/steal",
+                    "weight": 2
                 }
             ]
         }

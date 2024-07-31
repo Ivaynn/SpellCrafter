@@ -19,7 +19,7 @@ loot replace entity @s inventory.15 loot isc:spells/final_echo
 loot replace entity @s inventory.16 loot isc:spells/secret
 
 loot replace entity @s inventory.18 loot isc:spells/transfer
-item replace entity @s inventory.19 with minecraft:air
+loot replace entity @s inventory.19 loot isc:spells/steal
 item replace entity @s inventory.20 with minecraft:air
 item replace entity @s inventory.21 with minecraft:air
 item replace entity @s inventory.22 with minecraft:air

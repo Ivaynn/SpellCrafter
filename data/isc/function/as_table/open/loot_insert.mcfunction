@@ -110,3 +110,4 @@ execute if score $spell isc.tmp matches 109 run return run loot insert ~ ~ ~ loo
 execute if score $spell isc.tmp matches 110 run return run loot insert ~ ~ ~ loot isc:spells/casters_aim
 execute if score $spell isc.tmp matches 111 run return run loot insert ~ ~ ~ loot isc:spells/delayed_cast
 execute if score $spell isc.tmp matches 112 run return run loot insert ~ ~ ~ loot isc:spells/transfer
+execute if score $spell isc.tmp matches 113 run return run loot insert ~ ~ ~ loot isc:spells/steal
