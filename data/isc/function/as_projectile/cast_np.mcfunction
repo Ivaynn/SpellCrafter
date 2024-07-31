@@ -49,6 +49,7 @@ execute if score $spell isc.tmp matches 92 run return run function isc:spells/sk
 execute if score $spell isc.tmp matches 93 run return 1
 execute if score $spell isc.tmp matches 95 run return run function isc:spells/reverse/cast
 execute if score $spell isc.tmp matches 96 run return 1
+execute if score $spell isc.tmp matches 112 run return run function isc:spells/transfer/cast
 
 
 # Unstackable modifiers

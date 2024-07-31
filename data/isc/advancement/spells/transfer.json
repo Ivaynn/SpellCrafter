@@ -4,15 +4,15 @@
             "id": "minecraft:enchanted_book",
             "components": {
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": 7280069
+                "minecraft:custom_model_data": 7280112
             }
         },
         "title": {
-            "text": "Secret                        "
+            "text": "Transfer                      "
         },
         "description": [
             {
-                "text": "\n◆ 0",
+                "text": "\n◆ 5",
                 "color": "aqua"
             },
             {
@@ -20,7 +20,7 @@
                 "color": "gray"
             },
             {
-                "text": "Obfuscates the spells on the wand's item description\n",
+                "text": "Transfers the ownership of all spells after this to the nearest caster, excluding you\n",
                 "color": "gray"
             }
         ],
@@ -29,7 +29,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "isc:spells/root_special",
+    "parent": "isc:spells/locked",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -52,7 +52,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{isc:{spell:{id:69}}}"
+                            "minecraft:custom_data": "{isc:{spell:{id:112}}}"
                         }
                     }
                 ]

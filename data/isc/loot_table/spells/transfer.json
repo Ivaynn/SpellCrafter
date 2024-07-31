@@ -16,19 +16,19 @@
             "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
-                "minecraft:custom_model_data": 7280090,
+                "minecraft:custom_model_data": 7280112,
                 "minecraft:enchantment_glint_override": false
             }
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{isc:{spell:{id:90, mana:150, cooldown:20, tier:5, lore:'{\"text\":\"✦ Large Explosion\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{isc:{spell:{id:112, mana:5, cooldown:0, tier:4, lore:'{\"text\":\"⚝ Transfer\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Large Explosion"
+            "name": "Transfer"
         },
         {
             "function": "minecraft:set_lore",
@@ -36,12 +36,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 150",
+                    "text": "◆ 5",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 1.0",
+                            "text": "   ⌚ 0",
                             "color": "gray",
                             "italic": false
                         }
@@ -51,12 +51,17 @@
                     "text": ""
                 },
                 {
-                    "text": "Deals great damage",
+                    "text": "Transfers the ownership of all",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "in a large radius",
+                    "text": "spells after this to the nearest",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "caster, excluding you",
                     "color": "gray",
                     "italic": false
                 },
@@ -64,22 +69,8 @@
                     "text": ""
                 },
                 {
-                    "text": "Damage: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "10 ❤",
-                            "color": "red"
-                        }
-                    ]
-                },
-                {
-                    "text": ""
-                },
-                {
-                    "text": "✦ Instant",
-                    "color": "light_purple",
+                    "text": "⚝ Special",
+                    "color": "dark_aqua",
                     "italic": false
                 }
             ]

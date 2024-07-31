@@ -51,12 +51,17 @@
                     "text": ""
                 },
                 {
-                    "text": "Stationary, lasts for 5 seconds",
+                    "text": "Stationary, lasts for",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "or until something touches it",
+                    "text": "5 seconds or until",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "something touches it",
                     "color": "gray",
                     "italic": false
                 },
