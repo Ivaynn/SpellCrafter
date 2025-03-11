@@ -1,0 +1,78 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "spellcrafter.homing"
+                    ]
+                }
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{spell:{id:9, mana:120, cooldown:0, tier:5, lore:'{\"text\":\"⛶ Homing\",\"color\":\"blue\",\"italic\":false}'}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": "Homing"
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "text": "◆ 120",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 0",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Makes the next projectile follow",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "the nearest target",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "⛶ Modifier",
+                    "color": "blue",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

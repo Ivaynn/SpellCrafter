@@ -1,0 +1,574 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/magic_missile",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/fireball",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/laser",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/explosion",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/heal",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/clone",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/empower",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/guide",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/homing",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/multicast",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/multishot",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/random_dir",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/range_dec",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/range_inc",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/speed_dec",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/speed_inc",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/heavy_shot",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/long_shot",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/quick_shot",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/summon_lightning",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/summon_vex",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/teleport",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/summon_bat",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/summon_tnt",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/counterspell",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/ghost",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/double_teleport",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/gravity",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/anti_gravity",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/revealing_bolt",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/arcane_reaper",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/instant",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/piercing",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/inverse_teleport",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/summon_slime",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/sheep",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/summon_pufferfish",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/firework_rocket",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/shulker_bullet",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/harmless",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/hidden",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/rainbow",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/zigzag",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/chaotic",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/remote_cast",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/null_shot",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/refresh",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/haste",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/shield",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/echo",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/spiral",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/shuffle",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/poison_dart",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/aim_assist",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/scaling",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/summon_fangs",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/freezing_bolt",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/drill",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/anchored",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/black_hole",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/return",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/trick_shot",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/boomerang",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/sharp",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/kinetic_bolt",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/accelerate",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/wave",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/warp",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/secret",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/locked",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/cleanse",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/angry_goat",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/smoke_bomb",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/flash",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/flying_pig",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/follow",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/safe_shot",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/arcane_shield",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/healing_circle",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/toxic_cloud",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/bouncy",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/wind_charge",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/extended",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/quickstep",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/diverge",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/converge",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/orbit",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/double_cast",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/triple_cast",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/large_explosion",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/wither_blast",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/skip",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/final_echo",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/big_drill",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/reverse",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/chaotic_echo",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/forced_cast",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/vampiric_shot",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/drain_bolt",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/mirror_shot",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/healing_bolt",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/soul_link",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/aim_up",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/aim_down",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/remote_up",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/remote_down",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/remote_back",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/casters_call",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/casters_pull",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/casters_aim",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/delayed_cast",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/transfer",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/steal",
+                    "weight": 4
+                }
+            ]
+        }
+    ]
+}

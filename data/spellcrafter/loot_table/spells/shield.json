@@ -1,0 +1,83 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "spellcrafter.shield"
+                    ]
+                }
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{spell:{id:49, mana:75, cooldown:100, tier:4, lore:'{\"text\":\"✦ Shield\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": "Shield"
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "text": "◆ 75",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 5.0",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Shields targets in a small",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "radius, stopping all damage",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "for a brief moment",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "✦ Instant",
+                    "color": "light_purple",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

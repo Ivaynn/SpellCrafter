@@ -1,0 +1,122 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "spellcrafter.shulker_bullet"
+                    ]
+                }
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{spell:{id:39, mana:150, cooldown:50, tier:4, lore:'{\"text\":\"→ Shulker Bullet\",\"color\":\"gold\",\"italic\":false}'}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": "Shulker Bullet"
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "text": "◆ 150",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 2.5",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "A homing shulker bullet that",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "inflicts levitation on its target",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Damage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "1 ❤",
+                            "color": "red"
+                        }
+                    ]
+                },
+                {
+                    "text": "Range: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "40",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": "Speed: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "5",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks/sec",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "→ Projectile",
+                    "color": "gold",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

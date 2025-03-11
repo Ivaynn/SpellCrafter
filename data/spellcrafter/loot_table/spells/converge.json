@@ -1,0 +1,78 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "spellcrafter.converge"
+                    ]
+                }
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{spell:{id:86, mana:50, cooldown:30, tier:3, lore:'{\"text\":\"✦ Convergent Force\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": "Convergent Force"
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "text": "◆ 50",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 1.5",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Makes projectiles in a large",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "radius point towards this",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "✦ Instant",
+                    "color": "light_purple",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

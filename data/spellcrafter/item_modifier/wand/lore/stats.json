@@ -1,0 +1,63 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            {
+                "text": "◆ ",
+                "color": "aqua",
+                "italic": false,
+                "extra": [
+                    {
+                        "score": {
+                            "name": "$mana",
+                            "objective": "spellcrafter.tmp"
+                        },
+                        "color": "aqua",
+                        "italic": false
+                    },
+                    {
+                        "text": "   ⌚ ",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "nbt": "time",
+                        "storage": "spellcrafter:tmp",
+                        "interpret": true
+                    },
+                    {
+                        "text": "   ❒ ",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "score": {
+                            "name": "$spell_count",
+                            "objective": "spellcrafter.tmp"
+                        },
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "/",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "score": {
+                            "name": "$spell_cap",
+                            "objective": "spellcrafter.tmp"
+                        },
+                        "color": "dark_gray",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "text": ""
+            }
+        ]
+    }
+]

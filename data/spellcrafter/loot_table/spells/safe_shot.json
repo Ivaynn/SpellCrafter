@@ -1,0 +1,83 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "spellcrafter.safe_shot"
+                    ]
+                }
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{spell:{id:77, mana:25, cooldown:0, tier:2, lore:'{\"text\":\"⛶ Safe Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": "Safe Shot"
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "text": "◆ 25",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 0",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Prevents the next projectile",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "from hitting you, but reduces",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "its damage",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "⛶ Modifier",
+                    "color": "blue",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:wands/basic"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{wand:{valid:1b, mana:130, cooldown:5, spells:[ 14, 14, 15, 9, 1 ]}}}"
+        },
+        {
+            "function": "minecraft:reference",
+            "name": "spellcrafter:wand/lore/unknown"
+        }
+    ]
+}

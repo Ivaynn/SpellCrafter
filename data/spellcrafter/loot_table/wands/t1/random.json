@@ -1,0 +1,17 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:wands/t1/homing_missile"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:wands/t1/long_laser"
+                }
+            ]
+        }
+    ]
+}

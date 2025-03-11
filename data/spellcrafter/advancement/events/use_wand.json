@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "spellcrafter:holding_wand"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "spellcrafter:as_player/events/use_wand/trigger"
+    }
+}

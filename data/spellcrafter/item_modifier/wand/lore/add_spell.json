@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "append",
+        "lore": [
+            {
+                "nbt": "lore[0]",
+                "storage": "spellcrafter:tmp",
+                "interpret": true
+            }
+        ]
+    }
+]

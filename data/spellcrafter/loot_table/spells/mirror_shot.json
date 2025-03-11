@@ -1,0 +1,107 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "spellcrafter.mirror_shot"
+                    ]
+                }
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{spell:{id:100, mana:85, cooldown:15, tier:3, lore:'{\"text\":\"→ Mirror Shot\",\"color\":\"gold\",\"italic\":false}'}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": "Mirror Shot"
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "text": "◆ 85",
+                    "color": "aqua",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "   ⌚ 0.75",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Stationary, turns into a copy",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "of the nearest projectile",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Damage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "0 ❤",
+                            "color": "red"
+                        }
+                    ]
+                },
+                {
+                    "text": "Range: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "0",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "→ Projectile",
+                    "color": "gold",
+                    "italic": false
+                }
+            ]
+        }
+    ]
+}

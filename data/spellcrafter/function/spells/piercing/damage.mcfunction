@@ -1,0 +1,14 @@
+#> as projectile, at @s
+
+scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
+scoreboard players operation $damage spellcrafter.tmp = @s spellcrafter.damage
+scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
+
+
+execute unless score $damage spellcrafter.tmp matches 1.. run return 0
+
+# If target is caster, check blind time
+# After blind time, hit caster anyway
+# Don't add damage if target is already damaged - this fixes a bug where every step would increase the damage to the target
+execute if score @s spellcrafter.blind matches 1.. positioned ~ ~-1 ~ as @e[distance=..2,type=!#spellcrafter:untargetable,predicate=!spellcrafter:match_id] unless score @s spellcrafter.damage matches 1.. run function spellcrafter:damage/add
+execute unless score @s spellcrafter.blind matches 1.. positioned ~ ~-1 ~ as @e[distance=..2,type=!#spellcrafter:untargetable] unless score @s spellcrafter.damage matches 1.. run function spellcrafter:damage/add

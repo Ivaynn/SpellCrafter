@@ -1,0 +1,22 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "spellcrafter:wand/lore/stats"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "append",
+        "lore": [
+            {
+                "text": " Empty",
+                "color": "dark_gray",
+                "italic": true
+            }
+        ]
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "spellcrafter:wand/lore/wand_mod"
+    }
+]

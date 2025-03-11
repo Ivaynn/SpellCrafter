@@ -1,0 +1,517 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:filled_map"
+        },
+        "title": {
+            "text": "✦ Instant"
+        },
+        "description": [
+            {
+                "text": "Spells that cast instantly",
+                "color": "gray"
+            }
+        ],
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "spellcrafter:spells/root",
+    "criteria": {
+        "spellcrafter:explosion": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/explosion": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:heal": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/heal": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:summon_lightning": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/summon_lightning": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:summon_vex": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/summon_vex": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:teleport": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/teleport": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:summon_bat": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/summon_bat": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:summon_tnt": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/summon_tnt": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:counterspell": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/counterspell": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:double_teleport": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/double_teleport": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:inverse_teleport": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/inverse_teleport": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:summon_slime": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/summon_slime": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:sheep": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/sheep": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:summon_pufferfish": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/summon_pufferfish": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:firework_rocket": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/firework_rocket": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:shield": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/shield": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:summon_fangs": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/summon_fangs": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:cleanse": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/cleanse": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:angry_goat": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/angry_goat": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:smoke_bomb": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/smoke_bomb": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:flash": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/flash": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:flying_pig": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/flying_pig": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:wind_charge": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/wind_charge": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:diverge": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/diverge": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:converge": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/converge": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:large_explosion": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/large_explosion": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:forced_cast": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/forced_cast": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+#> as projectile, on summon, at @s
+# projectile stats
+
+tag @s add spellcrafter.spell.freezing_bolt
+
+
+# Base stats
+scoreboard players add @s spellcrafter.speed 7
+scoreboard players add @s spellcrafter.range 15
+scoreboard players add @s spellcrafter.damage 4
+
+
+# Effects
+playsound minecraft:entity.snow_golem.hurt player @a ^ ^ ^3 2 0.8
