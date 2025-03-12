@@ -11,4 +11,4 @@ execute if score @s spellcrafter.cooldown matches 1.. run return 0
 
 
 # Use wand
-function spellcrafter:as_caster/player/use_wand
+function spellcrafter:as_caster/use_wand

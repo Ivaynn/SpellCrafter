@@ -3,7 +3,7 @@
         "function": "minecraft:set_components",
         "components": {
             "minecraft:consumable": {
-                "animation": "bow",
+                "animation": "none",
                 "consume_seconds": 2147483647,
                 "has_consume_particles": false,
                 "on_consume_effects": []
