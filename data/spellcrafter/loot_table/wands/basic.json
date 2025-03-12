@@ -27,7 +27,7 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "God Wand"
+            "name": "Legendary Wand"
         },
         {
             "function": "minecraft:set_lore",

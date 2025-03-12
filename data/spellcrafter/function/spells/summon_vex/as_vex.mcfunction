@@ -8,7 +8,7 @@ scoreboard players set @s spellcrafter.age 600
 
 
 # Update entity NBT
-data merge entity @s {Invulnerable:1b,DeathLootTable:"",PersistenceRequired:1b,HandItems:[{id:"minecraft:iron_sword",Count:1b},{}],HandDropChances:[-99999.000F,0.085F]}
+data merge entity @s {Invulnerable:1b,DeathLootTable:"",PersistenceRequired:1b,HandItems:[{id:"minecraft:iron_sword",count:1},{}],HandDropChances:[-99999.000F,0.085F]}
 
 
 # Get caster's id

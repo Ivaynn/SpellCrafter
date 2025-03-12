@@ -3,3 +3,4 @@
 
 say break
 kill @s[type=!minecraft:player]
+setblock ~ ~-1 ~ minecraft:air
