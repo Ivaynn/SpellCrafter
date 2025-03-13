@@ -6,5 +6,5 @@ data merge entity @s {PersistenceRequired:1b, ArmorItems:[{},{},{},{id:"minecraf
 loot replace entity @s weapon loot spellcrafter:wands/t1/random
 
 scoreboard players set @s spellcrafter.mana 0
-scoreboard players set @s spellcrafter.max_mana 500
-scoreboard players set @s spellcrafter.mana_reg 1
+scoreboard players set @s spellcrafter.max_mana 5000
+scoreboard players set @s spellcrafter.mana_reg 10

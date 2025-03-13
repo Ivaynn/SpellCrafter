@@ -5,14 +5,14 @@
 execute unless score @s spellcrafter.cooldown matches 1.. run scoreboard players set @s spellcrafter.cooldown 0
 execute if score @s spellcrafter.cooldown matches 1.. run scoreboard players remove @s spellcrafter.cooldown 1
 
-scoreboard players operation $cooldown.this spellcrafter.tmp = @s spellcrafter.cooldown
-execute unless score @s spellcrafter.cooldown matches 1.. if predicate spellcrafter:holding_wand run function spellcrafter:as_caster/player/get_cooldown
+scoreboard players set $cooldown.this spellcrafter.tmp 0
+execute if predicate spellcrafter:holding_wand run function spellcrafter:as_caster/player/get_cooldown
 
 
 # Mana
 execute unless score @s spellcrafter.mana matches 0.. run scoreboard players set @s spellcrafter.mana 0
-execute unless score @s spellcrafter.max_mana matches 1.. run scoreboard players set @s spellcrafter.max_mana 100
-execute unless score @s spellcrafter.mana_reg matches 1.. run scoreboard players set @s spellcrafter.mana_reg 1
+execute unless score @s spellcrafter.max_mana matches 1.. run scoreboard players set @s spellcrafter.max_mana 1000
+execute unless score @s spellcrafter.mana_reg matches 1.. run scoreboard players set @s spellcrafter.mana_reg 10
 
 scoreboard players operation @s spellcrafter.mana += @s spellcrafter.mana_reg
 scoreboard players operation @s spellcrafter.mana < @s spellcrafter.max_mana
