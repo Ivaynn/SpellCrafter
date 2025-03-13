@@ -3,7 +3,7 @@ scoreboard players operation $mana spellcrafter.tmp = @s spellcrafter.mana
 scoreboard players operation $mana spellcrafter.tmp *= #100 spellcrafter.math
 scoreboard players operation $mana spellcrafter.tmp /= @s spellcrafter.max_mana
 
-scoreboard players operation $cooldown spellcrafter.tmp = @s spellcrafter.cooldown
+scoreboard players operation $cooldown spellcrafter.tmp = $cooldown.this spellcrafter.tmp
 scoreboard players add $cooldown spellcrafter.tmp 19
 scoreboard players operation $cooldown spellcrafter.tmp /= #20 spellcrafter.math
 

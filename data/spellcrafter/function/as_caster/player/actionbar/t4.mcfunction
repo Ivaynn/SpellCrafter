@@ -1,8 +1,8 @@
 
-scoreboard players operation $d0 spellcrafter.tmp = @s spellcrafter.cooldown
+scoreboard players operation $d0 spellcrafter.tmp = $cooldown.this spellcrafter.tmp
 scoreboard players operation $d0 spellcrafter.tmp /= #20 spellcrafter.math
 
-scoreboard players operation $d1 spellcrafter.tmp = @s spellcrafter.cooldown
+scoreboard players operation $d1 spellcrafter.tmp = $cooldown.this spellcrafter.tmp
 scoreboard players operation $d1 spellcrafter.tmp %= #20 spellcrafter.math
 scoreboard players operation $d1 spellcrafter.tmp *= #5 spellcrafter.math
 

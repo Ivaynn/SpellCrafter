@@ -6,32 +6,34 @@ execute as @s[tag=!spellcrafter.caster] run return 0
 execute unless score @s spellcrafter.id matches 1.. run function spellcrafter:as_caster/new_id
 
 
-# Get held wand item
+# Cancel if caster is on priority cooldown
+execute if score @s spellcrafter.cooldown matches 1.. run return 0
+
+
+# Get hand item
 data modify storage spellcrafter:tmp mainhand set value {}
 execute as @s[type=minecraft:player] run data modify storage spellcrafter:tmp mainhand set from entity @s SelectedItem
 execute as @s[type=!minecraft:player] run data modify storage spellcrafter:tmp mainhand set from entity @s HandItems[0]
 
 
-# Cancel if item isn't a wand
-execute unless data storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter run return 0
+# Cancel if item isn't a wand - how was this function called??
+execute unless data storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand run return 0
 
 
 # Cancel if the wand doesn't have spells
-execute unless data storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.spells[0] run return run playsound minecraft:entity.item.break player @s ~ ~ ~ 0.5 2
+execute unless data storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.spells[0] run return run function spellcrafter:as_caster/use_fail
 
 
 # Handle cooldown
-execute if score @s spellcrafter.cooldown matches 1.. run return 0
-execute store result score @s spellcrafter.cooldown run data get storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.cooldown
-scoreboard players operation @s spellcrafter.cooldown > min_cooldown spellcrafter.options
-execute unless score @s spellcrafter.cooldown matches 1.. run scoreboard players set @s spellcrafter.cooldown 0
+scoreboard players set $cooldown.this spellcrafter.tmp 0
+execute as @s[type=minecraft:player] run function spellcrafter:as_caster/player/get_cooldown
+execute as @s[type=!minecraft:player] run function spellcrafter:as_caster/nonplayer/get_cooldown
+execute if score $cooldown.this spellcrafter.tmp matches 1.. run return run scoreboard players set @s spellcrafter.cooldown 4
 
 
 # Spend mana or cancel if caster doesn't have enough mana
 execute store result score $mana spellcrafter.tmp run data get storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.mana
-execute if score @s spellcrafter.mana < $mana spellcrafter.tmp run scoreboard players set @s spellcrafter.cooldown 20
-execute if score @s spellcrafter.mana < $mana spellcrafter.tmp run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.5 2
-execute if score @s spellcrafter.mana < $mana spellcrafter.tmp run return 0
+execute if score @s spellcrafter.mana < $mana spellcrafter.tmp run return run function spellcrafter:as_caster/use_fail
 scoreboard players operation @s spellcrafter.mana -= $mana spellcrafter.tmp
 
 
@@ -48,3 +50,9 @@ execute anchored eyes positioned ^ ^ ^0.4 summon minecraft:marker run function s
 
 # Clear
 scoreboard players set $new_cast spellcrafter.tmp 0
+
+
+# Update wand item - save gametime in item data
+execute if score $cooldown.this spellcrafter.tmp matches -1 run return 0
+execute store result storage spellcrafter:tmp wand.gametime int 1 run scoreboard players get $gametime spellcrafter.tmp
+item modify entity @s weapon spellcrafter:wand/init_cooldown
