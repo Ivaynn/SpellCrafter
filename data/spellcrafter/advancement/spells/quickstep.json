@@ -24,7 +24,7 @@
                 "color": "gray"
             },
             {
-                "text": "Increases your speed while holding the wand\n",
+                "text": "Increases your movement speed, but drains your mana while holding the wand\n",
                 "color": "gray"
             }
         ],

@@ -10,10 +10,14 @@ execute if score $has_target spellcrafter.tmp matches 0 as @s[type=minecraft:arm
 execute if score @s spellcrafter.cooldown matches 1.. run scoreboard players remove @s spellcrafter.cooldown 1
 
 
-# Mana regen
-execute unless score @s spellcrafter.mana matches 0.. run scoreboard players set @s spellcrafter.mana 0
-execute unless score @s spellcrafter.max_mana matches 0.. run scoreboard players set @s spellcrafter.max_mana 0
-execute unless score @s spellcrafter.mana_reg matches 0.. run scoreboard players set @s spellcrafter.mana_reg 0
+# Mana
+scoreboard players set $mana_drain spellcrafter.tmp 0
+execute if predicate spellcrafter:holding_wand store result score $mana_drain spellcrafter.tmp run data get entity @s HandItems[0].components."minecraft:custom_data".spellcrafter.wand.drain
+scoreboard players operation @s spellcrafter.mana -= $mana_drain spellcrafter.tmp
 
 scoreboard players operation @s spellcrafter.mana += @s spellcrafter.mana_reg
 scoreboard players operation @s spellcrafter.mana < @s spellcrafter.max_mana
+
+execute unless score @s spellcrafter.mana matches 0.. run scoreboard players set @s spellcrafter.mana 0
+execute unless score @s spellcrafter.max_mana matches 1.. run scoreboard players set @s spellcrafter.max_mana 0
+execute unless score @s spellcrafter.mana_reg matches 1.. run scoreboard players set @s spellcrafter.mana_reg 0

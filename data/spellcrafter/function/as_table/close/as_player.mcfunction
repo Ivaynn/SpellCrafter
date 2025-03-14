@@ -54,13 +54,18 @@ scoreboard players set $clone_multiplier spellcrafter.tmp 1
 function spellcrafter:as_table/close/for_spell
 
 
-# Special cases
-scoreboard players set $set_attributes spellcrafter.tmp 0
-execute if score $spell.sharp spellcrafter.tmp matches 1.. run scoreboard players set $set_attributes spellcrafter.tmp 1 
-execute if score $spell.extended spellcrafter.tmp matches 1.. run scoreboard players set $set_attributes spellcrafter.tmp 1 
-execute if score $spell.quickstep spellcrafter.tmp matches 1.. run scoreboard players set $set_attributes spellcrafter.tmp 1 
-execute if score $set_attributes spellcrafter.tmp matches 1 run item modify entity @s weapon spellcrafter:wand/set_attributes
+# Special case: attribute spells -> calculate and save mana drain
+scoreboard players set $attribute_drain spellcrafter.tmp 0
+scoreboard players operation $attribute_drain spellcrafter.tmp += $spell.sharp spellcrafter.tmp
+scoreboard players operation $attribute_drain spellcrafter.tmp += $spell.extended spellcrafter.tmp
+scoreboard players operation $attribute_drain spellcrafter.tmp += $spell.quickstep spellcrafter.tmp
+scoreboard players operation $attribute_drain spellcrafter.tmp *= #15 spellcrafter.math
 
+execute store result storage spellcrafter:tmp wand.drain int 1 run scoreboard players get $attribute_drain spellcrafter.tmp
+execute if score $attribute_drain spellcrafter.tmp matches 1.. run item modify entity @s weapon spellcrafter:wand/set_attributes
+
+
+# Special case: locked -> store owner id
 execute if score $spell.locked spellcrafter.tmp matches 1 store result storage spellcrafter:tmp wand.owner int 1 run scoreboard players get @s spellcrafter.id
 
 
