@@ -11,4 +11,4 @@ scoreboard players add @s spellcrafter.damage 8
 
 
 # Effects
-playsound minecraft:entity.wither.shoot player @a ^ ^ ^3 2 1.0
+playsound minecraft:entity.wither.shoot player @a ^ ^ ^2 2 1.0

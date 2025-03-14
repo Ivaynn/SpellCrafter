@@ -12,4 +12,4 @@ scoreboard players add @s spellcrafter.damage 2
 
 
 # Effects
-playsound minecraft:entity.splash_potion.throw player @a ^ ^ ^3 2 1.25
+playsound minecraft:entity.splash_potion.throw player @a ^ ^ ^2 2 1.25

@@ -11,4 +11,4 @@ scoreboard players add @s spellcrafter.damage 6
 
 
 # Effects
-playsound minecraft:item.firecharge.use player @a ^ ^ ^3 2 1.2
+playsound minecraft:item.firecharge.use player @a ^ ^ ^2 2 1.2

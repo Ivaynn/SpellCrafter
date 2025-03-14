@@ -7,4 +7,4 @@ execute summon minecraft:wind_charge run function spellcrafter:spells/wind_charg
 
 
 # Effects
-playsound minecraft:entity.breeze.shoot player @a ^ ^ ^3 1 1
+playsound minecraft:entity.breeze.shoot player @a ^ ^ ^2 1 1

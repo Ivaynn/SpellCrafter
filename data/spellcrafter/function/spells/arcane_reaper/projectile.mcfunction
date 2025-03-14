@@ -11,4 +11,4 @@ scoreboard players add @s spellcrafter.damage 2
 
 
 # Effects
-playsound minecraft:entity.evoker.prepare_summon player @a ^ ^ ^3 2 1.5
+playsound minecraft:entity.evoker.prepare_summon player @a ^ ^ ^2 2 1.5

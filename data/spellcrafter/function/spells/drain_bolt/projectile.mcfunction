@@ -11,4 +11,4 @@ scoreboard players add @s spellcrafter.damage 0
 
 
 # Effects
-playsound minecraft:entity.allay.item_taken player @a ^ ^ ^3 2 0.8
+playsound minecraft:entity.allay.item_taken player @a ^ ^ ^2 2 0.8

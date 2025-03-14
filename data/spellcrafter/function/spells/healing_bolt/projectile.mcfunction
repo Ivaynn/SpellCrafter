@@ -11,4 +11,4 @@ scoreboard players add @s spellcrafter.damage 0
 
 
 # Effects
-playsound minecraft:entity.breeze.jump player @a ^ ^ ^3 2 1.4
+playsound minecraft:entity.breeze.jump player @a ^ ^ ^2 2 1.4

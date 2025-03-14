@@ -13,4 +13,4 @@ scoreboard players set @s spellcrafter.speed 1000
 
 
 # Effects
-playsound minecraft:block.beacon.activate player @a ^ ^ ^3 2 2
+playsound minecraft:block.beacon.activate player @a ^ ^ ^2 2 2

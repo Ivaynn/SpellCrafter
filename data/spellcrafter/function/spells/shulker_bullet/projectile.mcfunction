@@ -12,4 +12,4 @@ scoreboard players add @s spellcrafter.damage 2
 
 
 # Effects
-playsound minecraft:entity.shulker.shoot player @a ^ ^ ^3 2 1.2
+playsound minecraft:entity.shulker.shoot player @a ^ ^ ^2 2 1.2

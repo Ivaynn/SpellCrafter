@@ -11,4 +11,4 @@ scoreboard players add @s spellcrafter.damage 0
 
 
 # Effects
-playsound minecraft:entity.glow_squid.ambient player @a ^ ^ ^3 2 1.5
+playsound minecraft:entity.glow_squid.ambient player @a ^ ^ ^2 2 1.5

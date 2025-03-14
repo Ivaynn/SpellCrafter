@@ -11,4 +11,4 @@ scoreboard players add @s spellcrafter.damage 4
 
 
 # Effects
-playsound minecraft:entity.phantom.hurt player @a ^ ^ ^3 2 0.7
+playsound minecraft:entity.phantom.hurt player @a ^ ^ ^2 2 0.7

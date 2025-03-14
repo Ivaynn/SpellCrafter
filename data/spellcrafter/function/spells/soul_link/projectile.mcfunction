@@ -11,4 +11,4 @@ scoreboard players add @s spellcrafter.damage 12
 
 
 # Effects
-playsound minecraft:entity.vex.death player @a ^ ^ ^3 2 0.8
+playsound minecraft:entity.vex.death player @a ^ ^ ^2 2 0.8

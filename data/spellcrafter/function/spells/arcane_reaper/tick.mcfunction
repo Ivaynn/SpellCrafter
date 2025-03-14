@@ -32,4 +32,4 @@ execute if score $speed spellcrafter.tmp matches 1.. run scoreboard players oper
 
 
 # Effects
-playsound minecraft:entity.evoker.prepare_summon player @a ^ ^ ^3 2 1.8
+playsound minecraft:entity.evoker.prepare_summon player @a ^ ^ ^2 2 1.8
