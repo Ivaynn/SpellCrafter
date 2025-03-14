@@ -16,6 +16,7 @@ execute as @s[tag=spellcrafter.spell.safe_shot] run scoreboard players set $spel
 
 # Apply projectile direction modifiers
 function spellcrafter:as_projectile/trajectory_modifiers
+execute as @s[tag=spellcrafter.spell.height_lock] at @s run function spellcrafter:spells/height_lock/tick
 
 
 # Special cases

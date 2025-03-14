@@ -6,17 +6,17 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.aim_up"
+                        "spellcrafter.height_lock"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Aim Up                        "
+            "text": "Height Lock                   "
         },
         "description": [
             {
-                "text": "\n◆ 10",
+                "text": "\n◆ 15",
                 "color": "aqua"
             },
             {
@@ -24,7 +24,7 @@
                 "color": "gray"
             },
             {
-                "text": "Points the next projectile up\n",
+                "text": "Forces the next projectile to maintain a constant height\n",
                 "color": "gray"
             }
         ],
@@ -33,7 +33,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/height_lock",
+    "parent": "spellcrafter:spells/root_modifier",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -56,7 +56,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{spellcrafter:{spell:{id:103}}}"
+                            "minecraft:custom_data": "{spellcrafter:{spell:{id:114}}}"
                         }
                     }
                 ]

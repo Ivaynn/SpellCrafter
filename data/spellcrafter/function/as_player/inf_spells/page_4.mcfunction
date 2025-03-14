@@ -24,6 +24,6 @@ loot replace entity @s inventory.20 loot spellcrafter:spells/remote_up
 loot replace entity @s inventory.21 loot spellcrafter:spells/remote_down
 loot replace entity @s inventory.22 loot spellcrafter:spells/aim_up
 loot replace entity @s inventory.23 loot spellcrafter:spells/aim_down
-loot replace entity @s inventory.24 loot spellcrafter:spells/hidden
-loot replace entity @s inventory.25 loot spellcrafter:spells/rainbow
+loot replace entity @s inventory.24 loot spellcrafter:spells/height_lock
+item replace entity @s inventory.25 with minecraft:air
 

@@ -111,3 +111,4 @@ execute if score $spell spellcrafter.tmp matches 110 run return run loot insert 
 execute if score $spell spellcrafter.tmp matches 111 run return run loot insert ~ ~ ~ loot spellcrafter:spells/delayed_cast
 execute if score $spell spellcrafter.tmp matches 112 run return run loot insert ~ ~ ~ loot spellcrafter:spells/transfer
 execute if score $spell spellcrafter.tmp matches 113 run return run loot insert ~ ~ ~ loot spellcrafter:spells/steal
+execute if score $spell spellcrafter.tmp matches 114 run return run loot insert ~ ~ ~ loot spellcrafter:spells/height_lock

@@ -567,6 +567,11 @@
                     "type": "minecraft:loot_table",
                     "value": "spellcrafter:spells/steal",
                     "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "spellcrafter:spells/height_lock",
+                    "weight": 7
                 }
             ]
         }
