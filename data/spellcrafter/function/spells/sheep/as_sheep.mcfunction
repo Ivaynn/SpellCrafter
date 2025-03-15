@@ -8,7 +8,7 @@ scoreboard players set @s spellcrafter.age 60
 
 
 # Update entity NBT
-data merge entity @s {Invulnerable:0b,DeathLootTable:"",PersistenceRequired:1b,attributes:[{id:"minecraft:armor",base:30},{id:"minecraft:knockback_resistance",base:1},{id:"minecraft:movement_speed",base:0.5}]}
+data merge entity @s {Invulnerable:0b,DeathLootTable:"spellcrafter:empty",PersistenceRequired:1b,attributes:[{id:"minecraft:armor",base:30},{id:"minecraft:knockback_resistance",base:1},{id:"minecraft:movement_speed",base:0.5}]}
 damage @s 1 minecraft:player_attack by @s
 
 

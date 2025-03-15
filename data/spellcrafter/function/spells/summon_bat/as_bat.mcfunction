@@ -8,7 +8,7 @@ scoreboard players set @s spellcrafter.age 400
 
 
 # Update entity NBT
-data merge entity @s {Invulnerable:1b,DeathLootTable:"",PersistenceRequired:1b}
+data merge entity @s {Invulnerable:1b,DeathLootTable:"spellcrafter:empty",PersistenceRequired:1b}
 
 
 # Get caster's id
