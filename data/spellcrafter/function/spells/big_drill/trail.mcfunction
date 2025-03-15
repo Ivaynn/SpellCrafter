@@ -2,17 +2,7 @@
 
 
 # Mine (3x3)
-execute positioned ^ ^ ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-
-execute positioned ^.8 ^ ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^-.8 ^ ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^ ^.8 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^ ^-.8 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-
-execute positioned ^.8 ^.8 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^.8 ^-.8 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^-.8 ^.8 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^-.8 ^-.8 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
+execute if score destructive_spells spellcrafter.options matches 1 run function spellcrafter:spells/big_drill/setblock
 
 
 # Effects

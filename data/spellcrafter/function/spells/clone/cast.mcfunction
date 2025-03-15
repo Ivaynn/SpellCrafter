@@ -8,7 +8,7 @@ execute if score $projectile_count spellcrafter.tmp > projectile_cap spellcrafte
 
 # Check clone cap
 scoreboard players operation @s spellcrafter.clone += $spell.clone spellcrafter.tmp
-execute if score @s spellcrafter.clone matches 11.. if score warnings spellcrafter.options matches 1 run tellraw @a ["",{"text":"> Warning! ","color":"gold"},{"text":"Clone limit reached! ","color":"gray"},{"score":{"name":"@s","objective":"spellcrafter.clone"},"color":"gray"}]
+execute if score @s spellcrafter.clone matches 11.. if score warnings spellcrafter.options matches 1 run tellraw @a ["",{"text":"[WARNING] ","color":"gold"},{"text":"Clone limit reached! ","color":"gray"},{"score":{"name":"@s","objective":"spellcrafter.clone"},"color":"gray"}]
 execute if score @s spellcrafter.clone matches 11.. run return 0
 
 

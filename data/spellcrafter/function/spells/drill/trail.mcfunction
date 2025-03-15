@@ -2,10 +2,7 @@
 
 
 # Mine
-execute positioned ^.2 ^.2 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^.2 ^-.2 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^-.2 ^.2 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
-execute positioned ^-.2 ^-.2 ^ if block ~ ~ ~ #minecraft:mineable/pickaxe run setblock ~ ~ ~ minecraft:air destroy
+execute if score destructive_spells spellcrafter.options matches 1 run function spellcrafter:spells/drill/setblock
 
 
 # Effects

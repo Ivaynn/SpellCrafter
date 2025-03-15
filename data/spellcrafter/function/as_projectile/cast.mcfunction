@@ -57,5 +57,5 @@ function spellcrafter:as_projectile/cast_np
 
 
 # Next spell
-execute if score $success spellcrafter.tmp matches 0 if score warnings spellcrafter.options matches 1 run tellraw @a ["",{"text":"> Warning! ","color":"gold"},{"text":"Invalid spell id from caster #","color":"gray"},{"score":{"name":"$id","objective":"spellcrafter.tmp"},"color":"gray"}]
+execute if score $success spellcrafter.tmp matches 0 if score warnings spellcrafter.options matches 1 run tellraw @a ["",{"text":"[WARNING] ","color":"gold"},{"text":"Invalid spell id from caster #","color":"gray"},{"score":{"name":"$id","objective":"spellcrafter.tmp"},"color":"gray"}]
 execute if score $success spellcrafter.tmp matches 1 run return run function spellcrafter:as_projectile/cast
