@@ -4,6 +4,7 @@
 #> execute summon (marker) at the position of the projectile with multicast
 # score "$id spellcrafter.tmp" must have the caster's id
 # score "$clone_count spellcrafter.tmp" must have the caster's clone counter
+# score "$new_cast spellcrafter.tmp" must be 1 if this is the first projectile in the list
 # storage "spellcrafter:tmp rotation" must have the projectile rotation
 # storage "spellcrafter:tmp wand.spells" must have the spell list
 
@@ -113,6 +114,11 @@ execute if score $spell.clone spellcrafter.tmp matches 1.. at @s run function sp
 
 # Apply tagged modifiers that shouldn't affect copies (new projectiles)
 execute as @s[tag=spellcrafter.spell.chaotic] run function spellcrafter:spells/chaotic/cast
+
+
+# Play projectile cast sounds
+execute if score $new_cast spellcrafter.tmp matches 1 at @s rotated as @s positioned ^ ^ ^2 run function spellcrafter:as_projectile/play_cast_sound
+execute unless score $new_cast spellcrafter.tmp matches 1 at @s rotated as @s run function spellcrafter:as_projectile/play_cast_sound
 
 
 # Multicast

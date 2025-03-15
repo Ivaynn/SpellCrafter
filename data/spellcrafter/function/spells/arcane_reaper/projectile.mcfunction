@@ -3,12 +3,6 @@
 
 tag @s add spellcrafter.spell.arcane_reaper
 
-
-# Base stats
 scoreboard players add @s spellcrafter.speed 1
 scoreboard players add @s spellcrafter.range 5
 scoreboard players add @s spellcrafter.damage 2
-
-
-# Effects
-playsound minecraft:entity.evoker.prepare_summon player @a ^ ^ ^2 2 1.5
