@@ -13,7 +13,7 @@ execute as @e[type=minecraft:marker,tag=spellcrafter.projectile] at @s run funct
 execute as @e[type=#spellcrafter:caster,type=!minecraft:player,tag=spellcrafter.caster] at @s run function spellcrafter:as_caster/nonplayer/tick
 execute as @e[type=#spellcrafter:summon,tag=spellcrafter.summon] at @s run function spellcrafter:as_summon/tick
 execute as @e[type=minecraft:block_display,tag=spellcrafter.table] at @s run function spellcrafter:as_table/tick
-execute as @e[type=minecraft:iron_golem,tag=spellcrafter.target_dummy] at @s run function spellcrafter:as_target_dummy/tick
+execute as @e[type=minecraft:allay,tag=spellcrafter.target_dummy] at @s run function spellcrafter:as_target_dummy/tick
 execute as @e[type=minecraft:text_display,tag=spellcrafter.dummy_text] at @s run function spellcrafter:as_target_dummy/text/tick
 
 

@@ -20,8 +20,8 @@ execute as @s[tag=spellcrafter.spell.soul_link] run playsound minecraft:entity.v
 
 
 # Special case: kinetic bolt's pitch depends on its starting speed
-execute as @s[tag=spellcrafter.kinetic_bolt.boomerang] if score @s spellcrafter.speed matches ..2 run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.2
-execute as @s[tag=spellcrafter.kinetic_bolt.boomerang] if score @s spellcrafter.speed matches 3..5 run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.3
-execute as @s[tag=spellcrafter.kinetic_bolt.boomerang] if score @s spellcrafter.speed matches 6..8 run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.4
-execute as @s[tag=spellcrafter.kinetic_bolt.boomerang] if score @s spellcrafter.speed matches 9..11 run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.5
-execute as @s[tag=spellcrafter.kinetic_bolt.boomerang] if score @s spellcrafter.speed matches 12.. run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.6
+execute as @s[tag=spellcrafter.spell.kinetic_bolt] if score @s spellcrafter.speed matches ..2 run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.2
+execute as @s[tag=spellcrafter.spell.kinetic_bolt] if score @s spellcrafter.speed matches 3..5 run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.3
+execute as @s[tag=spellcrafter.spell.kinetic_bolt] if score @s spellcrafter.speed matches 6..8 run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.4
+execute as @s[tag=spellcrafter.spell.kinetic_bolt] if score @s spellcrafter.speed matches 9..11 run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.5
+execute as @s[tag=spellcrafter.spell.kinetic_bolt] if score @s spellcrafter.speed matches 12.. run playsound minecraft:entity.firework_rocket.shoot player @a ^ ^ ^2 2 1.6
