@@ -2,7 +2,7 @@
 
 
 # If barrel is locked, someone else is using it
-execute if data block ~ ~ ~ Lock run return 0
+execute if data block ~ ~ ~ lock run return 0
 
 
 # Success

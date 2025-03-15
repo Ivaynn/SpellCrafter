@@ -6,7 +6,7 @@ stopsound @a[distance=..10] block minecraft:block.barrel.close
 
 
 # Unlock barrel
-data remove block ~ ~ ~ Lock
+data remove block ~ ~ ~ lock
 
 
 # Put item data in storage & clear items

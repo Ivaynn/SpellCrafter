@@ -6,7 +6,7 @@ stopsound @a[distance=..10] block minecraft:block.barrel.open
 
 
 # Lock barrel (max anvil name is 50 characters long, this is 100 random characters)
-data modify block ~ ~ ~ Lock set value "75NoYb40vYJvWC7cxWBKNsKqWUfdS1mCjRidmlhHY8xz1WFuNxOrLQ31DpYjjY19YXn0D6Fg0dfG846NpOn4Vzyj8oNscbDrteMU"
+data merge block ~ ~ ~ {lock:{components:{"minecraft:custom_data":{spellcrafter:{table_lock:1}}}}}
 
 
 # Empty barrel
