@@ -61,7 +61,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "spellcrafter:spells/random_dir",
-                    "weight": 7
+                    "weight": 5
                 },
                 {
                     "type": "minecraft:loot_table",
@@ -551,7 +551,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "spellcrafter:spells/casters_aim",
-                    "weight": 5
+                    "weight": 6
                 },
                 {
                     "type": "minecraft:loot_table",

@@ -26,7 +26,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:12, mana:5, cooldown:-5, tier:1, lore:'{\"text\":\"⛶ Random Direction\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{id:12, mana:0, cooldown:-10, tier:3, lore:'{\"text\":\"⛶ Random Direction\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -40,12 +40,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 5",
+                    "text": "◆ 0",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ -0.25",
+                            "text": "   ⌚ -0.5",
                             "color": "gray",
                             "italic": false
                         }

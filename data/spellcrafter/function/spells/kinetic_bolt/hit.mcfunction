@@ -8,6 +8,7 @@ scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
 
 scoreboard players set $damage spellcrafter.tmp 0
 scoreboard players operation $damage spellcrafter.tmp = @s spellcrafter.speed
+execute unless score $damage spellcrafter.tmp matches 1.. run scoreboard players operation $damage spellcrafter.tmp *= #n1 spellcrafter.math
 scoreboard players operation $damage spellcrafter.tmp += @s spellcrafter.damage
 
 scoreboard players set $success spellcrafter.tmp 0

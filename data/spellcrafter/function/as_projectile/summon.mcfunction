@@ -94,12 +94,7 @@ execute if score $spell.remote_back spellcrafter.tmp matches 1.. run function sp
 
 
 # Apply modifiers that affect the initial rotation (they are mutually exclusive)
-execute as @s[tag=spellcrafter.spell.random_dir] at @s run function spellcrafter:spells/random_dir/cast
-execute as @s[tag=spellcrafter.spell.casters_aim,tag=!spellcrafter.spell.random_dir] at @s run function spellcrafter:spells/casters_aim/cast
-execute as @s[tag=spellcrafter.spell.casters_pull,tag=!spellcrafter.spell.random_dir,tag=!spellcrafter.spell.casters_aim] at @s run function spellcrafter:spells/casters_pull/cast
-execute as @s[tag=spellcrafter.spell.aim_assist,tag=!spellcrafter.spell.random_dir,tag=!spellcrafter.spell.casters_aim,tag=!spellcrafter.spell.casters_pull] at @s run function spellcrafter:spells/aim_assist/cast
-execute as @s[tag=spellcrafter.spell.aim_up,tag=!spellcrafter.spell.random_dir,tag=!spellcrafter.spell.casters_aim,tag=!spellcrafter.spell.casters_pull,tag=!spellcrafter.spell.aim_assist,tag=!spellcrafter.spell.aim_down] at @s run function spellcrafter:spells/aim_up/cast
-execute as @s[tag=spellcrafter.spell.aim_down,tag=!spellcrafter.spell.random_dir,tag=!spellcrafter.spell.casters_aim,tag=!spellcrafter.spell.casters_pull,tag=!spellcrafter.spell.aim_assist,tag=!spellcrafter.spell.aim_up] at @s run function spellcrafter:spells/aim_down/cast
+function spellcrafter:as_projectile/apply_me_modifiers
 
 
 # Apply other tagged modifiers

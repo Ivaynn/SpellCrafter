@@ -17,15 +17,16 @@ scoreboard players operation @s spellcrafter.weight = $weight spellcrafter.tmp
 
 # Re-apply certain modifiers
 execute as @s[tag=spellcrafter.spell.chaotic] run function spellcrafter:spells/chaotic/cast
-execute as @s[tag=spellcrafter.spell.random_dir] run return run function spellcrafter:spells/random_dir/cast
-execute as @s[tag=spellcrafter.spell.casters_aim] run return run function spellcrafter:spells/casters_aim/cast
-execute as @s[tag=spellcrafter.spell.casters_pull,tag=!spellcrafter.spell.casters_aim] run return run function spellcrafter:spells/casters_pull/cast
-execute as @s[tag=spellcrafter.spell.aim_assist,tag=!spellcrafter.spell.casters_aim,tag=!spellcrafter.spell.casters_pull] run return run function spellcrafter:spells/aim_assist/cast
+
+function spellcrafter:as_projectile/apply_me_modifiers
+execute if score $spell.has_initial_rot spellcrafter.tmp matches 0 run return 0
+
+
+# If it has multicast, the offset should be from that and not multishot
 execute if score $spell.multicast spellcrafter.tmp matches 1 run return run function spellcrafter:spells/multicast/offset
 
 
 # Rotation
-scoreboard players set $r0_offset spellcrafter.tmp 25
 scoreboard players operation $r0_offset spellcrafter.tmp *= $spell.multishot spellcrafter.tmp
 scoreboard players operation $r0_offset spellcrafter.tmp += $r0 spellcrafter.tmp
 

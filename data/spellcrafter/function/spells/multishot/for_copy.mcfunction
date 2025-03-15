@@ -3,8 +3,11 @@
 
 
 # Summon copies
-execute at @s summon minecraft:marker run function spellcrafter:spells/multishot/summon_left
-execute at @s summon minecraft:marker run function spellcrafter:spells/multishot/summon_right
+scoreboard players set $r0_offset spellcrafter.tmp -25
+execute at @s summon minecraft:marker run function spellcrafter:spells/multishot/summon_copy
+
+scoreboard players set $r0_offset spellcrafter.tmp 25
+execute at @s summon minecraft:marker run function spellcrafter:spells/multishot/summon_copy
 
 
 # Next iteration
