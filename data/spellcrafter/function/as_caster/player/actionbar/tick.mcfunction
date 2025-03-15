@@ -1,7 +1,12 @@
 #> [tick] as player, at @s
 
 
+
 # Get data
+scoreboard players set $cooldown.this spellcrafter.tmp 0
+execute if score shared_cooldowns spellcrafter.options matches 1 run scoreboard players operation $cooldown.this spellcrafter.tmp = @s spellcrafter.cooldown
+execute unless score shared_cooldowns spellcrafter.options matches 1 if predicate spellcrafter:holding_wand run function spellcrafter:as_caster/player/get_cooldown
+
 scoreboard players operation $actionbar.cooldown spellcrafter.tmp = $cooldown.this spellcrafter.tmp
 scoreboard players operation $actionbar.mana spellcrafter.tmp = @s spellcrafter.mana
 scoreboard players operation $actionbar.mana spellcrafter.tmp /= #10 spellcrafter.math

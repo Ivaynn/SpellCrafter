@@ -5,9 +5,6 @@
 execute unless score @s spellcrafter.cooldown matches 1.. run scoreboard players set @s spellcrafter.cooldown 0
 execute if score @s spellcrafter.cooldown matches 1.. run scoreboard players remove @s spellcrafter.cooldown 1
 
-scoreboard players set $cooldown.this spellcrafter.tmp 0
-execute if predicate spellcrafter:holding_wand run function spellcrafter:as_caster/player/get_cooldown
-
 
 # Mana
 scoreboard players set $mana_drain spellcrafter.tmp 0

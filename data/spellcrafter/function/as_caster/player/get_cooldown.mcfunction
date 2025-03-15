@@ -1,6 +1,10 @@
 #> [tick] as player, at @s
 
 
+# If option "shared_cooldowns" is set to "true", use the non-player cooldown system
+execute if score shared_cooldowns spellcrafter.options matches 1 run return run function spellcrafter:as_caster/nonplayer/get_cooldown
+
+
 # Get wand cooldown -> if it's zero, stop here and return -1 to signal that the wand item doesn't need an update
 execute store result score $cooldown.total spellcrafter.tmp run data get entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.cooldown
 scoreboard players operation $cooldown.total spellcrafter.tmp > min_cooldown spellcrafter.options
