@@ -1,7 +1,6 @@
 #> as target dummy, at @s
 
 tag @s add spellcrafter.caster
-tag @s add spellcrafter.untargetable
 
 data merge entity @s {Invulnerable:1b, Glowing:true}
 
