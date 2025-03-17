@@ -26,3 +26,7 @@ function spellcrafter:as_table/close/cooldown_sec
 item modify entity @s weapon spellcrafter:wand/update
 item modify entity @s weapon spellcrafter:wand/empty
 item modify entity @s weapon spellcrafter:wand/lore/empty
+
+
+# Success
+return 1
