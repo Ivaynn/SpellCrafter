@@ -6,7 +6,7 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.heal"
+                        "spellcrafter.spell.heal"
                     ]
                 }
             }

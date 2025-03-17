@@ -19,7 +19,7 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.null_shot"
+                        "spellcrafter.spell.null_shot"
                     ]
                 }
             }

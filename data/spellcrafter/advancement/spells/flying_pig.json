@@ -6,7 +6,7 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.flying_pig"
+                        "spellcrafter.spell.flying_pig"
                     ]
                 }
             }

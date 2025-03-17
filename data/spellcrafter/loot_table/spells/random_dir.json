@@ -19,7 +19,7 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.random_dir"
+                        "spellcrafter.spell.random_dir"
                     ]
                 }
             }
