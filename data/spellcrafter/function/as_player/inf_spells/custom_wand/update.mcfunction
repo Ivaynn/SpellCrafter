@@ -27,20 +27,23 @@ execute store result score $wand_mod spellcrafter.tmp run data get entity @s Inv
 scoreboard players set $allowed_mod spellcrafter.tmp 0
 execute store result score $allowed_mod spellcrafter.tmp run function spellcrafter:as_projectile/wand_mods
 execute if score $allowed_mod spellcrafter.tmp matches 1 store result storage spellcrafter:tmp wand.mod int 1 run scoreboard players get $wand_mod spellcrafter.tmp
-execute if score $allowed_mod spellcrafter.tmp matches 0 run item replace entity @s inventory.22 with minecraft:red_stained_glass_pane[minecraft:item_name='{"text":"Wand Modifier"}',minecraft:custom_data={spellcrafter:{gui:11}}]
+execute if score $allowed_mod spellcrafter.tmp matches 0 run item replace entity @s inventory.22 with minecraft:knowledge_book[minecraft:item_name='{"text":"Wand Modifier"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:10}},minecraft:custom_model_data={"strings":["spellcrafter.gui.empty_modifier"]}]
 execute if score $allowed_mod spellcrafter.tmp matches 0 run scoreboard players set $wand_mod spellcrafter.tmp 0
 
 
 
 # Buttons
-execute unless data entity @s Inventory[{Slot:12b,id:"minecraft:paper",components:{"minecraft:custom_data":{spellcrafter:{gui:4}}}}] run scoreboard players remove $spell_cap spellcrafter.tmp 1
-execute unless data entity @s Inventory[{Slot:14b,id:"minecraft:paper",components:{"minecraft:custom_data":{spellcrafter:{gui:5}}}}] run scoreboard players add $spell_cap spellcrafter.tmp 1
+execute unless data entity @s Inventory[{Slot:12b,id:"minecraft:knowledge_book",components:{"minecraft:custom_data":{spellcrafter:{gui:4}}}}] run scoreboard players remove $spell_cap spellcrafter.tmp 1
+execute unless data entity @s Inventory[{Slot:14b,id:"minecraft:knowledge_book",components:{"minecraft:custom_data":{spellcrafter:{gui:5}}}}] run scoreboard players add $spell_cap spellcrafter.tmp 1
 
-execute unless data entity @s Inventory[{Slot:21b,id:"minecraft:paper",components:{"minecraft:custom_data":{spellcrafter:{gui:6}}}}] run scoreboard players remove $mana spellcrafter.tmp 5
-execute unless data entity @s Inventory[{Slot:23b,id:"minecraft:paper",components:{"minecraft:custom_data":{spellcrafter:{gui:7}}}}] run scoreboard players add $mana spellcrafter.tmp 5
+execute unless data entity @s Inventory[{Slot:21b,id:"minecraft:knowledge_book",components:{"minecraft:custom_data":{spellcrafter:{gui:8}}}}] run scoreboard players remove $cooldown spellcrafter.tmp 5
+execute unless data entity @s Inventory[{Slot:23b,id:"minecraft:knowledge_book",components:{"minecraft:custom_data":{spellcrafter:{gui:9}}}}] run scoreboard players add $cooldown spellcrafter.tmp 5
 
-execute unless data entity @s Inventory[{Slot:30b,id:"minecraft:paper",components:{"minecraft:custom_data":{spellcrafter:{gui:8}}}}] run scoreboard players remove $cooldown spellcrafter.tmp 5
-execute unless data entity @s Inventory[{Slot:32b,id:"minecraft:paper",components:{"minecraft:custom_data":{spellcrafter:{gui:9}}}}] run scoreboard players add $cooldown spellcrafter.tmp 5
+execute unless data entity @s Inventory[{Slot:30b,id:"minecraft:knowledge_book",components:{"minecraft:custom_data":{spellcrafter:{gui:6}}}}] run scoreboard players remove $mana spellcrafter.tmp 5
+execute unless data entity @s Inventory[{Slot:32b,id:"minecraft:knowledge_book",components:{"minecraft:custom_data":{spellcrafter:{gui:7}}}}] run scoreboard players add $mana spellcrafter.tmp 5
+
+execute unless data entity @s Inventory[{Slot:13b,id:"minecraft:knowledge_book",components:{"minecraft:custom_data":{spellcrafter:{gui:11}}}}] run say change appearance
+
 
 
 # Check limits

@@ -2,15 +2,15 @@
 
 
 # Clear buttons (held item)
-clear @s minecraft:arrow[minecraft:custom_data={spellcrafter:{gui:1}}]
-clear @s minecraft:lava_bucket[minecraft:custom_data={spellcrafter:{gui:2}}]
-clear @s minecraft:arrow[minecraft:custom_data={spellcrafter:{gui:3}}]
+clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:1}}]
+clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:2}}]
+clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:3}}]
 
 
 # Place buttons
-item replace entity @s inventory.8 with minecraft:arrow[minecraft:item_name='{"text":"Previous Page"}',minecraft:custom_data={spellcrafter:{gui:1}}]
-item replace entity @s inventory.17 with minecraft:lava_bucket[minecraft:item_name='{"text":"Trash"}',minecraft:custom_data={spellcrafter:{gui:2}}]
-item replace entity @s inventory.26 with minecraft:arrow[minecraft:item_name='{"text":"Next Page"}',minecraft:custom_data={spellcrafter:{gui:3}}]
+item replace entity @s inventory.8 with minecraft:knowledge_book[minecraft:item_name='{"text":"Previous Page"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:1}},minecraft:custom_model_data={"strings":["spellcrafter.gui.arrow_up"]}]
+item replace entity @s inventory.17 with minecraft:knowledge_book[minecraft:item_name='{"text":"Trash"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:2}},minecraft:custom_model_data={"strings":["spellcrafter.gui.trash"]}]
+item replace entity @s inventory.26 with minecraft:knowledge_book[minecraft:item_name='{"text":"Next Page"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:3}},minecraft:custom_model_data={"strings":["spellcrafter.gui.arrow_down"]}]
 
 
 # Pages

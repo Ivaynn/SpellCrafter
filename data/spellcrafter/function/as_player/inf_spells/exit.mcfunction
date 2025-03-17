@@ -1,11 +1,8 @@
 #> as player
 
-clear @s minecraft:arrow[minecraft:custom_data={spellcrafter:{gui:1}}]
-clear @s minecraft:arrow[minecraft:custom_data={spellcrafter:{gui:2}}]
-clear @s minecraft:spectral_arrow[minecraft:custom_data={spellcrafter:{gui:3}}]
-clear @s minecraft:spectral_arrow[minecraft:custom_data={spellcrafter:{gui:4}}]
-clear @s minecraft:lava_bucket[minecraft:custom_data={spellcrafter:{gui:5}}]
-clear @s minecraft:lava_bucket[minecraft:custom_data={spellcrafter:{gui:6}}]
+clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:1}}]
+clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:2}}]
+clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:3}}]
 
 item replace entity @s inventory.0 with minecraft:air
 item replace entity @s inventory.1 with minecraft:air
