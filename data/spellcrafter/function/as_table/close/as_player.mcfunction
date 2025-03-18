@@ -96,5 +96,9 @@ function spellcrafter:as_table/close/for_lore
 item modify entity @s weapon spellcrafter:wand/lore/wand_mod
 
 
+# Prevent cooldown reset abuse
+scoreboard players set @s spellcrafter.cooldown 10
+
+
 # Success
 return 1

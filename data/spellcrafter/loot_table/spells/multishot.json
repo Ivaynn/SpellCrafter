@@ -26,7 +26,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:11, mana:50, cooldown:0, tier:3, lore:'{\"text\":\"⛶ Multishot\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{id:11, mana:50, cooldown:40, tier:3, lore:'{\"text\":\"⛶ Multishot\",\"color\":\"blue\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -45,7 +45,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0",
+                            "text": "   ⌚ 2.0",
                             "color": "gray",
                             "italic": false
                         }
