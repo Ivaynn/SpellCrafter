@@ -1,12 +1,6 @@
 #> as player
 
 
-# Clear buttons (held item)
-clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:1}}]
-clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:2}}]
-clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:3}}]
-
-
 # Place buttons
 item replace entity @s inventory.8 with minecraft:knowledge_book[minecraft:item_name='{"text":"Previous Page"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:1}},minecraft:custom_model_data={"strings":["spellcrafter.gui.arrow_up"]}]
 item replace entity @s inventory.17 with minecraft:knowledge_book[minecraft:item_name='{"text":"Trash"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:2}},minecraft:custom_model_data={"strings":["spellcrafter.gui.trash"]}]
@@ -21,6 +15,21 @@ execute if score @s spellcrafter.inf_page matches 104 run function spellcrafter:
 execute if score @s spellcrafter.inf_page matches 105 run function spellcrafter:as_player/inf_spells/page_5
 execute if score @s spellcrafter.inf_page matches 106 run function spellcrafter:as_player/inf_spells/page_6
 execute if score @s spellcrafter.inf_page matches 107 run function spellcrafter:as_player/inf_spells/page_7
+
+
+# Clear buttons (held item)
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:1}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:2}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:3}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:4}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:5}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:6}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:7}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:8}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:9}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:10}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:11}}] run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:12}}] run item replace entity @s player.cursor with minecraft:air
 
 
 # Resume event triggers

@@ -2,7 +2,8 @@
 
 
 # Reset
-execute unless items entity @s inventory.13 #spellcrafter:wand run function spellcrafter:as_player/inf_spells/custom_wand/reset
+execute unless items entity @s inventory.13 #spellcrafter:wand run return run function spellcrafter:as_player/inf_spells/custom_wand/clear_wand
+execute if items entity @s player.cursor minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:12}}] run function spellcrafter:as_player/inf_spells/custom_wand/get_mod
 
 
 # Get current wand stats
@@ -27,7 +28,7 @@ execute store result score $wand_mod spellcrafter.tmp run data get entity @s Inv
 scoreboard players set $allowed_mod spellcrafter.tmp 0
 execute store result score $allowed_mod spellcrafter.tmp run function spellcrafter:as_projectile/wand_mods
 execute if score $allowed_mod spellcrafter.tmp matches 1 store result storage spellcrafter:tmp wand.mod int 1 run scoreboard players get $wand_mod spellcrafter.tmp
-execute if score $allowed_mod spellcrafter.tmp matches 0 run item replace entity @s inventory.22 with minecraft:knowledge_book[minecraft:item_name='{"text":"Wand Modifier"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:10}},minecraft:custom_model_data={"strings":["spellcrafter.gui.empty_modifier"]}]
+execute if score $allowed_mod spellcrafter.tmp matches 0 run function spellcrafter:as_player/inf_spells/custom_wand/clear_mod
 execute if score $allowed_mod spellcrafter.tmp matches 0 run scoreboard players set $wand_mod spellcrafter.tmp 0
 
 

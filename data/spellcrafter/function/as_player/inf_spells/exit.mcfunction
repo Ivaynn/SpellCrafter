@@ -1,8 +1,6 @@
 #> as player
 
-clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:1}}]
-clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:2}}]
-clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{gui:3}}]
+clear @s minecraft:knowledge_book[minecraft:custom_data={spellcrafter:{clear_item:1}}]
 
 item replace entity @s inventory.0 with minecraft:air
 item replace entity @s inventory.1 with minecraft:air
