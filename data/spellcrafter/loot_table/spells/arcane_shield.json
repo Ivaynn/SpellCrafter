@@ -16,12 +16,7 @@
             "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
-                "minecraft:enchantment_glint_override": false,
-                "minecraft:custom_model_data": {
-                    "strings": [
-                        "spellcrafter.spell.arcane_shield"
-                    ]
-                }
+                "minecraft:enchantment_glint_override": false
             }
         },
         {
@@ -117,6 +112,15 @@
                     "italic": false
                 }
             ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.spell.arcane_shield"
+                ],
+                "mode": "replace_all"
+            }
         }
     ]
 }
