@@ -1,0 +1,64 @@
+[
+    {
+        "function": "minecraft:copy_custom_data",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "spellcrafter:tmp"
+        },
+        "ops": [
+            {
+                "source": "wand.skin",
+                "target": "spellcrafter.wand.skin",
+                "op": "replace"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [],
+            "mode": "replace_all"
+        },
+        "conditions": []
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [
+                "spellcrafter.wand.leaf"
+            ],
+            "mode": "replace_all"
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "spellcrafter:tmp",
+                    "path": "wand.skin"
+                },
+                "range": 1
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [
+                "spellcrafter.wand.ice"
+            ],
+            "mode": "replace_all"
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "spellcrafter:tmp",
+                    "path": "wand.skin"
+                },
+                "range": 2
+            }
+        ]
+    }
+]

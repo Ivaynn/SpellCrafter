@@ -63,7 +63,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{wand:{valid:1b, mana:10, cooldown:10, spells:[], slots:[], mod:0, cap:9, base_mana:10, base_cooldown:10}}}"
+            "tag": "{spellcrafter:{wand:{valid:1b, mana:10, cooldown:10, spells:[], slots:[], mod:0, cap:9, base_mana:10, base_cooldown:10, skin:0}}}"
         }
     ]
 }

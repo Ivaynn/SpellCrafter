@@ -26,7 +26,7 @@ item replace entity @s inventory.14 with minecraft:knowledge_book[minecraft:item
 item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air
 
-loot replace entity @s inventory.18 loot spellcrafter:wands/leaf
+item replace entity @s inventory.18 with minecraft:air
 item replace entity @s inventory.19 with minecraft:air
 item replace entity @s inventory.20 with minecraft:air
 item replace entity @s inventory.21 with minecraft:knowledge_book[minecraft:item_name='{"text":"Base Mana ↓"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:6}},minecraft:custom_model_data={"strings":["spellcrafter.gui.mana_down"]}]

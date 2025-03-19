@@ -13,7 +13,7 @@ execute if data entity @s SelectedItem.components."minecraft:custom_data".spellc
 # Reset scores & storages
 scoreboard players set $mana spellcrafter.tmp 0
 scoreboard players set $cooldown spellcrafter.tmp 0
-data modify storage spellcrafter:tmp wand set value {valid:1b, spells:[], slots:[], owner:0, mod:0, cap:0, cooldown:0, mana:0, base_cooldown:0, base_mana:0}
+data modify storage spellcrafter:tmp wand set value {valid:1b, spells:[], slots:[], owner:0, mod:0, cap:0, cooldown:0, mana:0, base_cooldown:0, base_mana:0, skin:0}
 data modify storage spellcrafter:tmp lore set value []
 data modify storage spellcrafter:tmp drop set value []
 data modify storage spellcrafter:tmp keep set value []
@@ -97,7 +97,7 @@ item modify entity @s weapon spellcrafter:wand/lore/wand_mod_add
 
 
 # Prevent cooldown reset abuse
-scoreboard players set @s spellcrafter.cooldown 10
+scoreboard players set @s spellcrafter.cooldown 4
 
 
 # Success
