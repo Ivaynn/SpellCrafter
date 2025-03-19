@@ -7,8 +7,8 @@
         },
         "ops": [
             {
-                "source": "wand",
-                "target": "spellcrafter.wand",
+                "source": "inf_save.new",
+                "target": "spellcrafter.inf_save",
                 "op": "replace"
             }
         ]

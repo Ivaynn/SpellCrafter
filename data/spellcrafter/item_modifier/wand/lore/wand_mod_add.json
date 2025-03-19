@@ -1,0 +1,40 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 1,
+        "size": 1,
+        "lore": [
+            {
+                "text": ""
+            },
+            {
+                "text": "Invalid Wand Modifier!",
+                "color": "red",
+                "italic": false
+            },
+            {
+                "text": ""
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "spellcrafter:tmp",
+                        "path": "wand.mod"
+                    },
+                    "range": 0
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "spellcrafter:wand/lore/wand_mod_replace"
+    }
+]

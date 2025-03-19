@@ -17,6 +17,6 @@
     },
     {
         "function": "minecraft:reference",
-        "name": "spellcrafter:wand/lore/wand_mod"
+        "name": "spellcrafter:wand/lore/wand_mod_add"
     }
 ]

@@ -93,7 +93,7 @@ function spellcrafter:as_table/close/for_lore
 
 
 # Wand modifier
-item modify entity @s weapon spellcrafter:wand/lore/wand_mod
+item modify entity @s weapon spellcrafter:wand/lore/wand_mod_add
 
 
 # Prevent cooldown reset abuse

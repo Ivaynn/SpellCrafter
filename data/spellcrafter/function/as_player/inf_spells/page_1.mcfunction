@@ -4,7 +4,7 @@
 # Update custom wand
 execute if score $page_changed spellcrafter.tmp matches 1 run function spellcrafter:as_player/inf_spells/custom_wand/clear_wand
 execute if score $page_changed spellcrafter.tmp matches 1 run function spellcrafter:as_player/inf_spells/custom_wand/clear_mod
-execute unless score $page_changed spellcrafter.tmp matches 1 run function spellcrafter:as_player/inf_spells/custom_wand/update
+function spellcrafter:as_player/inf_spells/custom_wand/update
 
 
 # Menu items
@@ -12,7 +12,7 @@ loot replace entity @s inventory.0 loot spellcrafter:wands/t0/starter
 item replace entity @s inventory.1 with minecraft:air
 item replace entity @s inventory.2 with minecraft:air
 item replace entity @s inventory.3 with minecraft:knowledge_book[minecraft:item_name='{"text":"Slots ↓"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:4}},minecraft:custom_model_data={"strings":["spellcrafter.gui.slots_down"]}]
-item replace entity @s inventory.4 with minecraft:knowledge_book[minecraft:item_name='{"text":"Appearance"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:11}},minecraft:custom_model_data={"strings":["spellcrafter.gui.appearance"]}]
+# inventory.4 -> appearance (wand info backup)
 item replace entity @s inventory.5 with minecraft:knowledge_book[minecraft:item_name='{"text":"Slots ↑"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:5}},minecraft:custom_model_data={"strings":["spellcrafter.gui.slots_up"]}]
 item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
