@@ -60,5 +60,125 @@
                 "range": 2
             }
         ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [
+                "spellcrafter.wand.fire"
+            ],
+            "mode": "replace_all"
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "spellcrafter:tmp",
+                    "path": "wand.skin"
+                },
+                "range": 3
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [
+                "spellcrafter.wand.baguetti"
+            ],
+            "mode": "replace_all"
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "spellcrafter:tmp",
+                    "path": "wand.skin"
+                },
+                "range": 4
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [
+                "spellcrafter.wand.obsidian"
+            ],
+            "mode": "replace_all"
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "spellcrafter:tmp",
+                    "path": "wand.skin"
+                },
+                "range": 5
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [
+                "spellcrafter.wand.light"
+            ],
+            "mode": "replace_all"
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "spellcrafter:tmp",
+                    "path": "wand.skin"
+                },
+                "range": 6
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [
+                "spellcrafter.wand.gem"
+            ],
+            "mode": "replace_all"
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "spellcrafter:tmp",
+                    "path": "wand.skin"
+                },
+                "range": 7
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+            "values": [
+                "spellcrafter.wand.thor"
+            ],
+            "mode": "replace_all"
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "spellcrafter:tmp",
+                    "path": "wand.skin"
+                },
+                "range": 8
+            }
+        ]
     }
 ]

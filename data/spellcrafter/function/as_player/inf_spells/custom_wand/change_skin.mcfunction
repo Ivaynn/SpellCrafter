@@ -13,7 +13,7 @@ data modify storage spellcrafter:tmp inf_save.new.mod set from entity @s Invento
 scoreboard players set $skin_id spellcrafter.tmp 0
 execute store result score $skin_id spellcrafter.tmp run data get storage spellcrafter:tmp inf_save.new.wand.skin
 scoreboard players add $skin_id spellcrafter.tmp 1
-execute unless score $skin_id spellcrafter.tmp matches 0..2 run scoreboard players set $skin_id spellcrafter.tmp 0
+execute unless score $skin_id spellcrafter.tmp matches 0..8 run scoreboard players set $skin_id spellcrafter.tmp 0
 execute store result storage spellcrafter:tmp inf_save.new.wand.skin int 1 run scoreboard players get $skin_id spellcrafter.tmp
 
 
