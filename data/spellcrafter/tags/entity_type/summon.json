@@ -7,6 +7,7 @@
         "minecraft:pufferfish",
         "minecraft:goat",
         "minecraft:pig",
-        "minecraft:wind_charge"
+        "minecraft:wind_charge",
+        "minecraft:item_display"
     ]
 }

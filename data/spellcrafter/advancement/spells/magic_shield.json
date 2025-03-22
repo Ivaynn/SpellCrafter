@@ -6,67 +6,26 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.spell.magic_missile"
+                        "spellcrafter.spell.magic_shield"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Magic Missile                 "
+            "text": "Magic Shield                  "
         },
         "description": [
             {
-                "text": "\n◆ 20",
+                "text": "\n◆ 15",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.75\n\n",
+                "text": "   ⌚ 0.5\n\n",
                 "color": "gray"
             },
             {
-                "text": "Basic offensive magic\n",
+                "text": "Basic defensive magic\n",
                 "color": "gray"
-            },
-            {
-                "text": "\nDamage: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "2 ❤",
-                        "color": "red"
-                    }
-                ]
-            },
-            {
-                "text": "\nRange: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "25",
-                        "color": "red"
-                    },
-                    {
-                        "text": " blocks",
-                        "color": "dark_gray"
-                    }
-                ]
-            },
-            {
-                "text": "\nSpeed: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "40",
-                        "color": "red"
-                    },
-                    {
-                        "text": " blocks/sec",
-                        "color": "dark_gray"
-                    }
-                ]
-            },
-            {
-                "text": "\n"
             }
         ],
         "frame": "goal",
@@ -74,7 +33,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/root_projectile",
+    "parent": "spellcrafter:spells/root_instant",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -97,7 +56,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{spellcrafter:{spell:{id:1}}}"
+                            "minecraft:custom_data": "{spellcrafter:{spell:{id:116}}}"
                         }
                     }
                 ]

@@ -512,6 +512,44 @@
                     }
                 ]
             }
+        },
+        "spellcrafter:magic_barrier": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/magic_barrier": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:magic_shield": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/magic_shield": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     }
 }

@@ -19,4 +19,4 @@ scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
 # Random color
 execute store result entity @s Color byte 1 run random value 0..15
 
-playsound minecraft:entity.tnt.primed player @a ^ ^ ^2 2 1.3
+playsound minecraft:entity.tnt.primed player @a ~ ~ ~ 2 1.3

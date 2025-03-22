@@ -29,6 +29,7 @@ execute as @s[tag=spellcrafter.spell.arcane_shield] run function spellcrafter:sp
 execute as @s[tag=spellcrafter.spell.healing_circle] run function spellcrafter:spells/healing_circle/tick
 execute as @s[tag=spellcrafter.spell.toxic_cloud] run function spellcrafter:spells/toxic_cloud/tick
 execute as @s[tag=spellcrafter.spell.mirror_shot] run function spellcrafter:spells/mirror_shot/tick
+scoreboard players set @s[tag=spellcrafter.spell.harmless] spellcrafter.damage 0
 
 
 # Get number of move iterations per tick
@@ -42,11 +43,16 @@ execute as @s[tag=spellcrafter.spell.anchored] run scoreboard players set $iter 
 execute as @s[tag=spellcrafter.spell.follow] if score $spell.follow spellcrafter.tmp matches 1 run scoreboard players set $iter spellcrafter.tmp 1
 
 
+# Get damage to be dealt to shields
+scoreboard players operation $shield_damage spellcrafter.tmp = @s spellcrafter.damage
+execute unless score $shield_damage spellcrafter.tmp matches 1.. run scoreboard players set $shield_damage spellcrafter.tmp 1
+scoreboard players operation $shield_damage spellcrafter.tmp *= #5 spellcrafter.math
+
+
 # Move projectile
 execute if score $iter spellcrafter.tmp matches 1001.. run scoreboard players set $iter spellcrafter.tmp 1000
 execute at @s run function spellcrafter:as_projectile/move
 
 
 # If age < 1, this projectile timed out or hit something
-scoreboard players set @s[tag=spellcrafter.spell.harmless] spellcrafter.damage 0
 execute as @s[tag=!spellcrafter.kill] unless score @s spellcrafter.age matches 1.. at @s run function spellcrafter:as_projectile/hit

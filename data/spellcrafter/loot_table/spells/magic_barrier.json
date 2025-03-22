@@ -21,13 +21,13 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:1, mana:20, cooldown:15, tier:1, lore:'{\"text\":\"→ Magic Missile\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{id:115, mana:50, cooldown:40, tier:3, lore:'{\"text\":\"✦ Magic Barrier\",\"color\":\"light_purple\",\"italic\":false}'}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Magic Missile"
+            "name": "Magic Barrier"
         },
         {
             "function": "minecraft:set_lore",
@@ -35,12 +35,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 20",
+                    "text": "◆ 50",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.75",
+                            "text": "   ⌚ 2.0",
                             "color": "gray",
                             "italic": false
                         }
@@ -50,7 +50,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Basic offensive magic",
+                    "text": "A large and unbreakable shield",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "that blocks projectiles",
                     "color": "gray",
                     "italic": false
                 },
@@ -58,52 +63,8 @@
                     "text": ""
                 },
                 {
-                    "text": "Damage: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "2 ❤",
-                            "color": "red"
-                        }
-                    ]
-                },
-                {
-                    "text": "Range: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "25",
-                            "color": "red"
-                        },
-                        {
-                            "text": " blocks",
-                            "color": "dark_gray"
-                        }
-                    ]
-                },
-                {
-                    "text": "Speed: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "40",
-                            "color": "red"
-                        },
-                        {
-                            "text": " blocks/sec",
-                            "color": "dark_gray"
-                        }
-                    ]
-                },
-                {
-                    "text": ""
-                },
-                {
-                    "text": "→ Projectile",
-                    "color": "gold",
+                    "text": "✦ Instant",
+                    "color": "light_purple",
                     "italic": false
                 }
             ]
@@ -112,7 +73,7 @@
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.spell.magic_missile"
+                    "spellcrafter.spell.magic_barrier"
                 ],
                 "mode": "replace_all"
             }

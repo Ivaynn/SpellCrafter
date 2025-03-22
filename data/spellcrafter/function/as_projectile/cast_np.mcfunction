@@ -30,6 +30,8 @@ execute if score $spell spellcrafter.tmp matches 85 run return run function spel
 execute if score $spell spellcrafter.tmp matches 86 run return run function spellcrafter:spells/converge/cast
 execute if score $spell spellcrafter.tmp matches 90 run return run function spellcrafter:spells/large_explosion/cast
 execute if score $spell spellcrafter.tmp matches 97 run return run function spellcrafter:spells/forced_cast/cast
+execute if score $spell spellcrafter.tmp matches 115 run return run function spellcrafter:spells/magic_barrier/cast
+execute if score $spell spellcrafter.tmp matches 116 run return run function spellcrafter:spells/magic_shield/cast
 
 
 # Special

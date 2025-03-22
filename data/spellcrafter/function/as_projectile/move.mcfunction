@@ -30,6 +30,7 @@ execute if score @s spellcrafter.blind matches 1.. run scoreboard players remove
 
 # Trail
 execute if score @s spellcrafter.age matches 1.. run function spellcrafter:as_projectile/trail
+execute unless score @s spellcrafter.age matches 1.. run return 0
 
 
 # Move --> 0.25 = 1/4 blocks --> 4 iterations = 1 block
