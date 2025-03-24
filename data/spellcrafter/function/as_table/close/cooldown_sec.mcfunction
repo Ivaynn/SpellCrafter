@@ -1,4 +1,5 @@
-#> as player, at barrel (player id matches table id)
+#> as player, at barrel
+#> as item_display, at @s
 # score "$cooldown spellcrafter.tmp" must contain cooldown in ticks
 
 # less than 1 -> return "0"
