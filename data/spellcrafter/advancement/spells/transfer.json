@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Transfer                      "
+            "text": "Transfer                      ",
+            "color": "#ff55ff"
         },
         "description": [
             {

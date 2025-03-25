@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Empower                       "
+            "text": "Empower                       ",
+            "color": "#55ffff"
         },
         "description": [
             {

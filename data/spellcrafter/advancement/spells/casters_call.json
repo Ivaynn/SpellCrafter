@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Caster's Call                 "
+            "text": "Caster's Call                 ",
+            "color": "#55ffff"
         },
         "description": [
             {

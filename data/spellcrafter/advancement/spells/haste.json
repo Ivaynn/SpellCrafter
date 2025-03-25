@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Haste                         "
+            "text": "Haste                         ",
+            "color": "#ff55ff"
         },
         "description": [
             {

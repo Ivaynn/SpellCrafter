@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Spiral                        "
+            "text": "Spiral                        ",
+            "color": "#ffff55"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Remote Cast: Down             "
+            "text": "Remote Cast: Down             ",
+            "color": "#ffff55"
         },
         "description": [
             {

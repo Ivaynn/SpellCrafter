@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Toxic Cloud                   "
+            "text": "Toxic Cloud                   ",
+            "color": "#55ffff"
         },
         "description": [
             {

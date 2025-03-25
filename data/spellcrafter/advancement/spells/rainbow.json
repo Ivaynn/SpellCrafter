@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Rainbow                       "
+            "text": "Rainbow                       ",
+            "color": "#55ffff"
         },
         "description": [
             {

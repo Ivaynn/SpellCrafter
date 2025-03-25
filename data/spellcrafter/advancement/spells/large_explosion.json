@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Large Explosion               "
+            "text": "Large Explosion               ",
+            "color": "#ff5555"
         },
         "description": [
             {

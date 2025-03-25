@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Wind Charge                   "
+            "text": "Wind Charge                   ",
+            "color": "#55ffff"
         },
         "description": [
             {

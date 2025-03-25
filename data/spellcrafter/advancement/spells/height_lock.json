@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Height Lock                   "
+            "text": "Height Lock                   ",
+            "color": "#ffffff"
         },
         "description": [
             {

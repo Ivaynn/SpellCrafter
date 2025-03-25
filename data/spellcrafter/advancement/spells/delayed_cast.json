@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Delayed Cast                  "
+            "text": "Delayed Cast                  ",
+            "color": "#ff55ff"
         },
         "description": [
             {

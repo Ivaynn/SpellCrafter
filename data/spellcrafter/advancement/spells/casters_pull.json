@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Caster's Pull                 "
+            "text": "Caster's Pull                 ",
+            "color": "#55ffff"
         },
         "description": [
             {

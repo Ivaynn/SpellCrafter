@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Shulker Bullet                "
+            "text": "Shulker Bullet                ",
+            "color": "#ff55ff"
         },
         "description": [
             {

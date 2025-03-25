@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Curve Down                    "
+            "text": "Curve Down                    ",
+            "color": "#ffffff"
         },
         "description": [
             {

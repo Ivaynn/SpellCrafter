@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Wither Blast                  "
+            "text": "Wither Blast                  ",
+            "color": "#55ffff"
         },
         "description": [
             {

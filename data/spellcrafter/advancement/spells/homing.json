@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Homing                        "
+            "text": "Homing                        ",
+            "color": "#ff5555"
         },
         "description": [
             {

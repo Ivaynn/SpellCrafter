@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Heal                          "
+            "text": "Heal                          ",
+            "color": "#55ffff"
         },
         "description": [
             {

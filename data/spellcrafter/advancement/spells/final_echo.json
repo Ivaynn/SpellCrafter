@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Final Echo                    "
+            "text": "Final Echo                    ",
+            "color": "#ff5555"
         },
         "description": [
             {

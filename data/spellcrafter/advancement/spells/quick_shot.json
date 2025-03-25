@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Quick Shot                    "
+            "text": "Quick Shot                    ",
+            "color": "#55ffff"
         },
         "description": [
             {

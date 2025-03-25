@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Vampiric Shot                 "
+            "text": "Vampiric Shot                 ",
+            "color": "#55ffff"
         },
         "description": [
             {

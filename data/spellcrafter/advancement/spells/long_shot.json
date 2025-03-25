@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Long Shot                     "
+            "text": "Long Shot                     ",
+            "color": "#55ffff"
         },
         "description": [
             {

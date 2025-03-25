@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Aim Assist                    "
+            "text": "Aim Assist                    ",
+            "color": "#55ffff"
         },
         "description": [
             {

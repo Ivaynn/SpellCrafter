@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Firework Rocket               "
+            "text": "Firework Rocket               ",
+            "color": "#55ffff"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Soul Link                     "
+            "text": "Soul Link                     ",
+            "color": "#ff55ff"
         },
         "description": [
             {

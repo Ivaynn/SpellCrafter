@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Divergent Force               "
+            "text": "Divergent Force               ",
+            "color": "#55ffff"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Double Cast                   "
+            "text": "Double Cast                   ",
+            "color": "#ffff55"
         },
         "description": [
             {

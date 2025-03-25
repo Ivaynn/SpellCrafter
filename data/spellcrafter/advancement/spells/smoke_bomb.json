@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Smoke Bomb                    "
+            "text": "Smoke Bomb                    ",
+            "color": "#55ffff"
         },
         "description": [
             {

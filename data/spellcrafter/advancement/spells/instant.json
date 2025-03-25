@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Instant                       "
+            "text": "Instant                       ",
+            "color": "#ff5555"
         },
         "description": [
             {

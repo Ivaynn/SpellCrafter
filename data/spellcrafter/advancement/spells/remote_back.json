@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Remote Cast: Back             "
+            "text": "Remote Cast: Back             ",
+            "color": "#ffff55"
         },
         "description": [
             {

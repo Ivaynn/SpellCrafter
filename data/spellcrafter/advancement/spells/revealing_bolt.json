@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Revealing Bolt                "
+            "text": "Revealing Bolt                ",
+            "color": "#55ffff"
         },
         "description": [
             {

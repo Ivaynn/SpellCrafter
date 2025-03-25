@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Multishot                     "
+            "text": "Multishot                     ",
+            "color": "#55ffff"
         },
         "description": [
             {

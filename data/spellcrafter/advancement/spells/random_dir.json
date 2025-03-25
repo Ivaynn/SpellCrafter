@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Random Direction              "
+            "text": "Random Direction              ",
+            "color": "#55ffff"
         },
         "description": [
             {

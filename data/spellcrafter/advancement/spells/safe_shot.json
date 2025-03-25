@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Safe Shot                     "
+            "text": "Safe Shot                     ",
+            "color": "#ffff55"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Aim Up                        "
+            "text": "Aim Up                        ",
+            "color": "#ffff55"
         },
         "description": [
             {

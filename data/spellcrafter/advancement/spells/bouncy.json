@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Bouncy                        "
+            "text": "Bouncy                        ",
+            "color": "#ffff55"
         },
         "description": [
             {

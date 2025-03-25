@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Sharp                         "
+            "text": "Sharp                         ",
+            "color": "#ff55ff"
         },
         "description": [
             {

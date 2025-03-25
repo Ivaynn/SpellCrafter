@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Caster's Aim                  "
+            "text": "Caster's Aim                  ",
+            "color": "#ffff55"
         },
         "description": [
             {

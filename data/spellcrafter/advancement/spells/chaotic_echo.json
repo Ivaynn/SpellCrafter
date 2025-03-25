@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Chaotic Echo                  "
+            "text": "Chaotic Echo                  ",
+            "color": "#ff5555"
         },
         "description": [
             {

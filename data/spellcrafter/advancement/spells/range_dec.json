@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Range ↓                       "
+            "text": "Range ↓                       ",
+            "color": "#ffff55"
         },
         "description": [
             {

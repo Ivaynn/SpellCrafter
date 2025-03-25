@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Clone                         "
+            "text": "Clone                         ",
+            "color": "#ff5555"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Forced Cast                   "
+            "text": "Forced Cast                   ",
+            "color": "#55ffff"
         },
         "description": [
             {

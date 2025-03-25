@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Explosion                     "
+            "text": "Explosion                     ",
+            "color": "#ff55ff"
         },
         "description": [
             {

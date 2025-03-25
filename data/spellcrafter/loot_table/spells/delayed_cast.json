@@ -27,7 +27,10 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Delayed Cast"
+            "name": {
+                "text": "Delayed Cast",
+                "color": "#ff55ff"
+            }
         },
         {
             "function": "minecraft:set_lore",

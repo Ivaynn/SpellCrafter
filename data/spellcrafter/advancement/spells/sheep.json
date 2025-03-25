@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Sheep                         "
+            "text": "Sheep                         ",
+            "color": "#55ffff"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Trick Shot                    "
+            "text": "Trick Shot                    ",
+            "color": "#55ffff"
         },
         "description": [
             {

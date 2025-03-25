@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Summon Slime                  "
+            "text": "Summon Slime                  ",
+            "color": "#ffff55"
         },
         "description": [
             {

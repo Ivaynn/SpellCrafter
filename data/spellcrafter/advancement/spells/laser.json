@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Laser                         "
+            "text": "Laser                         ",
+            "color": "#55ffff"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Poison Dart                   "
+            "text": "Poison Dart                   ",
+            "color": "#ffff55"
         },
         "description": [
             {

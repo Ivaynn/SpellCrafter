@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Accelerate                    "
+            "text": "Accelerate                    ",
+            "color": "#ffff55"
         },
         "description": [
             {

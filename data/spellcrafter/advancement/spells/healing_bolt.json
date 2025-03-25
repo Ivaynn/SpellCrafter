@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Healing Bolt                  "
+            "text": "Healing Bolt                  ",
+            "color": "#55ffff"
         },
         "description": [
             {

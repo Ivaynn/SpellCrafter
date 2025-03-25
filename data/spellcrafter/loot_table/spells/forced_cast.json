@@ -27,7 +27,10 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Forced Cast"
+            "name": {
+                "text": "Forced Cast",
+                "color": "#55ffff"
+            }
         },
         {
             "function": "minecraft:set_lore",

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Reverse                       "
+            "text": "Reverse                       ",
+            "color": "#ff55ff"
         },
         "description": [
             {

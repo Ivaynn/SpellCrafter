@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Arcane Reaper                 "
+            "text": "Arcane Reaper                 ",
+            "color": "#ff5555"
         },
         "description": [
             {

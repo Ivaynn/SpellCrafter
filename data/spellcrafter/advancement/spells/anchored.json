@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Anchored                      "
+            "text": "Anchored                      ",
+            "color": "#55ffff"
         },
         "description": [
             {

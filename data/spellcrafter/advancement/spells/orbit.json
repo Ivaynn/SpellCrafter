@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Orbit                         "
+            "text": "Orbit                         ",
+            "color": "#ffff55"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Guide                         "
+            "text": "Guide                         ",
+            "color": "#ffff55"
         },
         "description": [
             {

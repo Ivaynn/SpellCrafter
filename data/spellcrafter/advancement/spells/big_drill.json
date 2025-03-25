@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Big Drill                     "
+            "text": "Big Drill                     ",
+            "color": "#55ffff"
         },
         "description": [
             {

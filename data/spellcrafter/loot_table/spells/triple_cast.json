@@ -27,7 +27,10 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Triple Cast"
+            "name": {
+                "text": "Triple Cast",
+                "color": "#55ffff"
+            }
         },
         {
             "function": "minecraft:set_lore",

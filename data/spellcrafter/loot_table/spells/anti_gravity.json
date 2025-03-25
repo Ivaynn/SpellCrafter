@@ -27,7 +27,10 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Curve Up"
+            "name": {
+                "text": "Curve Up",
+                "color": "#ffffff"
+            }
         },
         {
             "function": "minecraft:set_lore",

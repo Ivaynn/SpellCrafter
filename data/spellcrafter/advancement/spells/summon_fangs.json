@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Summon Fangs                  "
+            "text": "Summon Fangs                  ",
+            "color": "#ffff55"
         },
         "description": [
             {

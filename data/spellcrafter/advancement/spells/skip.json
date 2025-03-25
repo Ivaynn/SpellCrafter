@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Skip                          "
+            "text": "Skip                          ",
+            "color": "#ff55ff"
         },
         "description": [
             {

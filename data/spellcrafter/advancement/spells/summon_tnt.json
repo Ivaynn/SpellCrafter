@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Summon TNT                    "
+            "text": "Summon TNT                    ",
+            "color": "#ff55ff"
         },
         "description": [
             {

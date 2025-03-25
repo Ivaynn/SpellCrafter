@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Curve Up                      "
+            "text": "Curve Up                      ",
+            "color": "#ffffff"
         },
         "description": [
             {

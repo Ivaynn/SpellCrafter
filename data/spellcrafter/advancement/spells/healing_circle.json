@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Healing Circle                "
+            "text": "Healing Circle                ",
+            "color": "#55ffff"
         },
         "description": [
             {

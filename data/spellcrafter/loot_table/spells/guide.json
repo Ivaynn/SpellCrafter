@@ -27,7 +27,10 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Guide"
+            "name": {
+                "text": "Guide",
+                "color": "#ffff55"
+            }
         },
         {
             "function": "minecraft:set_lore",

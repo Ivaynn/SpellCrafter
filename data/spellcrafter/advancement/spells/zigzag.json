@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Zigzag                        "
+            "text": "Zigzag                        ",
+            "color": "#ffff55"
         },
         "description": [
             {

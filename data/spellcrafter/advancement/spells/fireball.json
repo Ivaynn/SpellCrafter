@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Fire Bolt                     "
+            "text": "Fire Bolt                     ",
+            "color": "#ffffff"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Magic Barrier                 "
+            "text": "Magic Barrier                 ",
+            "color": "#55ffff"
         },
         "description": [
             {

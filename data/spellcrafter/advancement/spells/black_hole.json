@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Black Hole                    "
+            "text": "Black Hole                    ",
+            "color": "#ff5555"
         },
         "description": [
             {

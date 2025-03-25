@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Warp                          "
+            "text": "Warp                          ",
+            "color": "#ff5555"
         },
         "description": [
             {

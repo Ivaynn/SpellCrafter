@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Triple Cast                   "
+            "text": "Triple Cast                   ",
+            "color": "#55ffff"
         },
         "description": [
             {

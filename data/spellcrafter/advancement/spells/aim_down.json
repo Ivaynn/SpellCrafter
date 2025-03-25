@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Aim Down                      "
+            "text": "Aim Down                      ",
+            "color": "#ffff55"
         },
         "description": [
             {

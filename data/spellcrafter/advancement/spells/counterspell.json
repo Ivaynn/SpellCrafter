@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Counterspell                  "
+            "text": "Counterspell                  ",
+            "color": "#55ffff"
         },
         "description": [
             {

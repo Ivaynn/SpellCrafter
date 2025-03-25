@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Summon Lightning              "
+            "text": "Summon Lightning              ",
+            "color": "#ff5555"
         },
         "description": [
             {

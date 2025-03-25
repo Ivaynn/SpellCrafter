@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Locked                        "
+            "text": "Locked                        ",
+            "color": "#ffff55"
         },
         "description": [
             {

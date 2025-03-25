@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Freezing Bolt                 "
+            "text": "Freezing Bolt                 ",
+            "color": "#ffff55"
         },
         "description": [
             {

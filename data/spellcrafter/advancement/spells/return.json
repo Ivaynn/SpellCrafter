@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Return                        "
+            "text": "Return                        ",
+            "color": "#55ffff"
         },
         "description": [
             {

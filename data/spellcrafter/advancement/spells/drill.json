@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Drill                         "
+            "text": "Drill                         ",
+            "color": "#ffff55"
         },
         "description": [
             {

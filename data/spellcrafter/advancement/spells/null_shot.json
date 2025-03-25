@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Null Shot                     "
+            "text": "Null Shot                     ",
+            "color": "#ff55ff"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Summon Bat                    "
+            "text": "Summon Bat                    ",
+            "color": "#ffff55"
         },
         "description": [
             {

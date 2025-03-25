@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Speed ↑                       "
+            "text": "Speed ↑                       ",
+            "color": "#ffffff"
         },
         "description": [
             {

@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Shuffle                       "
+            "text": "Shuffle                       ",
+            "color": "#ffff55"
         },
         "description": [
             {

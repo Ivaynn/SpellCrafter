@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Magic Missile                 "
+            "text": "Magic Missile                 ",
+            "color": "#ffffff"
         },
         "description": [
             {

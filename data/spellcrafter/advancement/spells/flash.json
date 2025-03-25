@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Flash                         "
+            "text": "Flash                         ",
+            "color": "#55ffff"
         },
         "description": [
             {

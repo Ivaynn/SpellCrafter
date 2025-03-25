@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Wave                          "
+            "text": "Wave                          ",
+            "color": "#ffff55"
         },
         "description": [
             {

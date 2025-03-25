@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Angry Goat                    "
+            "text": "Angry Goat                    ",
+            "color": "#55ffff"
         },
         "description": [
             {

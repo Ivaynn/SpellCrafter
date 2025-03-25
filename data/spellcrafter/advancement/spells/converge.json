@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Convergent Force              "
+            "text": "Convergent Force              ",
+            "color": "#55ffff"
         },
         "description": [
             {

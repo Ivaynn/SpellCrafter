@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Follow                        "
+            "text": "Follow                        ",
+            "color": "#55ffff"
         },
         "description": [
             {

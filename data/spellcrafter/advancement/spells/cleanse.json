@@ -12,7 +12,8 @@
             }
         },
         "title": {
-            "text": "Cleanse                       "
+            "text": "Cleanse                       ",
+            "color": "#ffff55"
         },
         "description": [
             {
