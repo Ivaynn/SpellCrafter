@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:63, mana:45, cooldown:10, tier:2, lore:'{\"text\":\"→ Boomerang\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:63, mana:45, cooldown:10, tier:2, lore:{\"text\":\"→ Boomerang\",\"color\":\"gold\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

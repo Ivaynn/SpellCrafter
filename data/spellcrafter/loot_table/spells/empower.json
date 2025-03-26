@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:7, mana:80, cooldown:4, tier:3, lore:'{\"text\":\"⛶ Empower\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:7, mana:80, cooldown:4, tier:3, lore:{\"text\":\"⛶ Empower\",\"color\":\"blue\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

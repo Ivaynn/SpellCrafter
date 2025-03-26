@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": "#spellcrafter:spell",
+                "predicates": {
+                    "custom_data": "{spellcrafter:{spell:{valid:1b}}}"
+                }
+            }
+        }
+    }
+}

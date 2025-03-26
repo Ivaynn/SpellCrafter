@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:88, mana:60, cooldown:0, tier:2, lore:'{\"text\":\"⚝ Double Cast\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:88, mana:60, cooldown:0, tier:2, lore:{\"text\":\"⚝ Double Cast\",\"color\":\"dark_aqua\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

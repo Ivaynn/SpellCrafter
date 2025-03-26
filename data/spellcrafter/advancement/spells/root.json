@@ -14,7 +14,7 @@
             }
         ],
         "frame": "task",
-        "background": "minecraft:textures/block/black_concrete_powder.png",
+        "background": "minecraft:block/black_concrete_powder",
         "show_toast": true,
         "announce_to_chat": false
     },

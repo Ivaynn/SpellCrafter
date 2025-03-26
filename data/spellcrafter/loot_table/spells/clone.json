@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:6, mana:100, cooldown:40, tier:5, lore:'{\"text\":\"⛶ Clone\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:6, mana:100, cooldown:40, tier:5, lore:{\"text\":\"⛶ Clone\",\"color\":\"blue\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

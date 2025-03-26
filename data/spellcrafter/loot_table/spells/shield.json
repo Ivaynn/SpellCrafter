@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:49, mana:75, cooldown:100, tier:4, lore:'{\"text\":\"✦ Shield\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:49, mana:75, cooldown:100, tier:4, lore:{\"text\":\"✦ Shield\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

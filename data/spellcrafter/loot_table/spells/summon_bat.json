@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:23, mana:60, cooldown:15, tier:2, lore:'{\"text\":\"✦ Summon Bat\",\"color\":\"light_purple\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:23, mana:60, cooldown:15, tier:2, lore:{\"text\":\"✦ Summon Bat\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

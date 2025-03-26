@@ -14,5 +14,5 @@ execute if score dummy_text spellcrafter.options matches 1 run return run tellra
 
 # Text: floating
 execute on attacker run scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
-summon minecraft:text_display ~ ~ ~ {Tags:["spellcrafter.dummy_text"], text:'{"text":""}',billboard:"center",alignment:"center",background:16777215,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]}}
+summon minecraft:text_display ~ ~ ~ {Tags:["spellcrafter.dummy_text"], text:{"text":""},billboard:"center",alignment:"center",background:16777215,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]}}
 execute positioned ~ ~ ~ as @e[distance=..0.001,limit=1,type=minecraft:text_display,tag=spellcrafter.dummy_text] run function spellcrafter:as_target_dummy/text/summon

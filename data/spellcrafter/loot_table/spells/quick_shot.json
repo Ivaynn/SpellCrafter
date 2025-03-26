@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:19, mana:75, cooldown:5, tier:3, lore:'{\"text\":\"⛶ Quick Shot\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:19, mana:75, cooldown:5, tier:3, lore:{\"text\":\"⛶ Quick Shot\",\"color\":\"blue\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

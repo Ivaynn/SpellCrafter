@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:9, mana:120, cooldown:0, tier:5, lore:'{\"text\":\"⛶ Homing\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:9, mana:120, cooldown:0, tier:5, lore:{\"text\":\"⛶ Homing\",\"color\":\"blue\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

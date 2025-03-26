@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:114, mana:15, cooldown:0, tier:1, lore:'{\"text\":\"⛶ Height Lock\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:114, mana:15, cooldown:0, tier:1, lore:{\"text\":\"⛶ Height Lock\",\"color\":\"blue\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

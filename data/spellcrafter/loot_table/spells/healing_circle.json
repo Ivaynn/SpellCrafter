@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:79, mana:100, cooldown:40, tier:3, lore:'{\"text\":\"→ Healing Circle\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:79, mana:100, cooldown:40, tier:3, lore:{\"text\":\"→ Healing Circle\",\"color\":\"gold\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

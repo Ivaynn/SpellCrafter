@@ -3,11 +3,11 @@
 
 
 # Header
-tellraw @s ["\n\n\n",{"text":"          ","strikethrough": true,"color":"dark_gray"},{"text":" SpellCrafter Shop ","color":"dark_gray"},{"text":"          ","strikethrough": true,"color":"dark_gray"}]
+tellraw @s ["\\n\\n\\n",{"text":"          ","strikethrough": true,"color":"dark_gray"},{"text":" SpellCrafter Shop ","color":"dark_gray"},{"text":"          ","strikethrough": true,"color":"dark_gray"}]
 
 
 # Item Name
-tellraw @p[distance=..10,tag=spellcrafter.shop.tmp] ["\n   ",{"nbt":"item.components.\"minecraft:item_name\"","storage":"spellcrafter:tmp","interpret":true,"color":"light_purple"}]
+tellraw @p[distance=..10,tag=spellcrafter.shop.tmp] ["\\n   ",{"nbt":"item.components.\"minecraft:item_name\"","storage":"spellcrafter:tmp","interpret":true,"color":"light_purple"}]
 
 
 # Item lore

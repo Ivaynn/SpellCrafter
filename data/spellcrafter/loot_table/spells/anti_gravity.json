@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:29, mana:15, cooldown:0, tier:1, lore:'{\"text\":\"⛶ Curve Up\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:29, mana:15, cooldown:0, tier:1, lore:{\"text\":\"⛶ Curve Up\",\"color\":\"blue\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

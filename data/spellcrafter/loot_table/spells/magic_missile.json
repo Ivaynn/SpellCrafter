@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:1, mana:20, cooldown:15, tier:1, lore:'{\"text\":\"→ Magic Missile\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:1, mana:20, cooldown:15, tier:1, lore:{\"text\":\"→ Magic Missile\",\"color\":\"gold\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

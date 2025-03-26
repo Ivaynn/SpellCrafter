@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:96, mana:20, cooldown:4, tier:5, lore:'{\"text\":\"⚝ Chaotic Echo\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:96, mana:20, cooldown:4, tier:5, lore:{\"text\":\"⚝ Chaotic Echo\",\"color\":\"dark_aqua\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

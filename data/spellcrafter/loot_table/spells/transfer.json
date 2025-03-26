@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:112, mana:25, cooldown:0, tier:4, lore:'{\"text\":\"⚝ Transfer\",\"color\":\"dark_aqua\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:112, mana:25, cooldown:0, tier:4, lore:{\"text\":\"⚝ Transfer\",\"color\":\"dark_aqua\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

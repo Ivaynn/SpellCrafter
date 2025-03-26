@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:46, mana:0, cooldown:4, tier:4, lore:'{\"text\":\"→ Null Shot\",\"color\":\"gold\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:46, mana:0, cooldown:4, tier:4, lore:{\"text\":\"→ Null Shot\",\"color\":\"gold\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:76, mana:50, cooldown:0, tier:3, lore:'{\"text\":\"⛶ Follow\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:76, mana:50, cooldown:0, tier:3, lore:{\"text\":\"⛶ Follow\",\"color\":\"blue\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",

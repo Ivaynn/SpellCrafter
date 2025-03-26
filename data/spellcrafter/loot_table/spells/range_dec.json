@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{id:13, mana:20, cooldown:0, tier:2, lore:'{\"text\":\"⛶ Range ↓\",\"color\":\"blue\",\"italic\":false}'}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:13, mana:20, cooldown:0, tier:2, lore:{\"text\":\"⛶ Range ↓\",\"color\":\"blue\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
