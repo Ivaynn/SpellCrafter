@@ -30,6 +30,12 @@
             "name": "Wand"
         },
         {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "custom_name",
+            "name": "Wand"
+        },
+        {
             "function": "minecraft:set_custom_data",
             "tag": "{spellcrafter:{}}"
         }

@@ -2,11 +2,10 @@
 
 
 tag @s add spellcrafter.caster
-data merge entity @s {PersistenceRequired:1b, equipment:{head:{id:"minecraft:stone_button",count:1}}, drop_chances:{mainhand:1000000,head:0}, attributes:[{id:"minecraft:follow_range",base:40}]}
+data merge entity @s {PersistenceRequired:1b, DeathLootTable:"spellcrafter:empty", equipment:{head:{id:"minecraft:stone_button",count:1}}, drop_chances:{mainhand:1000000,head:0}, attributes:[{id:"minecraft:follow_range",base:40}]}
 
 
 # Get random wand
-scoreboard players set $gen.tier spellcrafter.tmp 2
 execute summon minecraft:item_display run function spellcrafter:wand_generator/as_item
 item replace entity @s weapon from entity @e[limit=1,distance=..0.001,type=minecraft:item_display,tag=spellcrafter.gen] contents
 kill @e[limit=1,distance=..0.001,type=minecraft:item_display,tag=spellcrafter.gen]
