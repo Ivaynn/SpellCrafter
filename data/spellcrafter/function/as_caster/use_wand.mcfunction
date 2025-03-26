@@ -13,7 +13,7 @@ execute if score @s spellcrafter.cooldown matches 1.. run return 0
 # Get hand item
 data modify storage spellcrafter:tmp mainhand set value {}
 execute as @s[type=minecraft:player] run data modify storage spellcrafter:tmp mainhand set from entity @s SelectedItem
-execute as @s[type=!minecraft:player] run data modify storage spellcrafter:tmp mainhand set from entity @s HandItems[0]
+execute as @s[type=!minecraft:player] run data modify storage spellcrafter:tmp mainhand set from entity @s equipment.mainhand
 
 
 # Cancel if item isn't a wand - how was this function called??

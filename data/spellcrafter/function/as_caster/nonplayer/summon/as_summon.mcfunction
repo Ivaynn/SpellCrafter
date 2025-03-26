@@ -2,7 +2,7 @@
 
 
 tag @s add spellcrafter.caster
-data merge entity @s {PersistenceRequired:1b, ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1}], HandDropChances:[1000F,-1000F], ArmorDropChances:[-1000F,-1000F,-1000F,-1000F], attributes:[{id:"minecraft:follow_range",base:40}]}
+data merge entity @s {PersistenceRequired:1b, equipment:{head:{id:"minecraft:stone_button",count:1}}, drop_chances:{mainhand:1000000,head:0}, attributes:[{id:"minecraft:follow_range",base:40}]}
 loot replace entity @s weapon loot spellcrafter:wands/t1/random
 
 scoreboard players set @s spellcrafter.mana 5000
