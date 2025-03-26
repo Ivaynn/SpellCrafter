@@ -26,7 +26,7 @@ item replace entity @s inventory.14 with minecraft:knowledge_book[minecraft:item
 item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air
 
-function spellcrafter:as_player/inf_spells/random_wand
+execute unless items entity @s inventory.18 #spellcrafter:wand run function spellcrafter:as_player/inf_spells/random_wand
 item replace entity @s inventory.19 with minecraft:air
 item replace entity @s inventory.20 with minecraft:air
 item replace entity @s inventory.21 with minecraft:knowledge_book[minecraft:item_name='{"text":"Base Mana ↓"}',minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:6}},minecraft:custom_model_data={"strings":["spellcrafter.gui.mana_down"]}]

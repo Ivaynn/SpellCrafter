@@ -3,7 +3,7 @@
 
 
 # Get number of spells after this one
-execute store result score $reduction spellcrafter.tmp run data get storage spellcrafter:tmp keep
+scoreboard players operation $reduction spellcrafter.tmp = $iter spellcrafter.tmp
 scoreboard players remove $reduction spellcrafter.tmp 1
 
 # Apply cost reduction
