@@ -3,6 +3,9 @@
 kill @s
 
 
+# NOTE: most of these commands are duplicated in "spellcrafter:as_table/..."
+
+
 # Wand base stats
 scoreboard players set $mana spellcrafter.tmp 0
 scoreboard players set $cooldown spellcrafter.tmp 0
@@ -54,18 +57,11 @@ execute if score $gen.tier spellcrafter.tmp matches 4 store result score $gen.sp
 execute if score $gen.tier spellcrafter.tmp matches 5 store result score $gen.spell_count spellcrafter.tmp run random value 6..11
 
 
-
-
-## TODO - generate spell list and save it to storage "spellcrafter:tmp gen.spells"
-data modify storage spellcrafter:tmp gen set value {spells:[1,2,3]}
-
-
-
-
-## TODO small chance to have a random wand mod
-data modify storage spellcrafter:tmp wand.mod set value 14
-
-
+# Get a random spell modifier
+execute store result score $wand_mod spellcrafter.tmp run random value 1..1000
+scoreboard players set $allowed_mod spellcrafter.tmp 0
+execute store result score $allowed_mod spellcrafter.tmp run function spellcrafter:as_projectile/wand_mods
+execute if score $allowed_mod spellcrafter.tmp matches 1 store result storage spellcrafter:tmp wand.mod int 1 run scoreboard players get $wand_mod spellcrafter.tmp
 
 
 # Get spell base stats
@@ -73,9 +69,13 @@ scoreboard players operation $mana spellcrafter.tmp = $base_mana spellcrafter.tm
 scoreboard players operation $cooldown spellcrafter.tmp = $base_cooldown spellcrafter.tmp
 
 
+# 
+scoreboard players set $gen.last_proj spellcrafter.tmp 0
+
+
 # Iterate through the generated spell list
 scoreboard players set $clone_multiplier spellcrafter.tmp 1
-execute store result score $iter spellcrafter.tmp run data get storage spellcrafter:tmp gen.spells
+scoreboard players operation $iter spellcrafter.tmp = $gen.spell_count spellcrafter.tmp
 function spellcrafter:wand_generator/for_spell
 
 
@@ -124,3 +124,13 @@ item modify entity @s contents spellcrafter:wand/lore/wand_mod_add
 
 # Save to storage
 data modify storage spellcrafter:tmp gen set from entity @s item
+
+
+# Inf menu
+execute if score $gen.inf_menu spellcrafter.tmp matches 1 run item replace entity @p[distance=..0.001] inventory.18 from entity @s contents
+
+
+# Reset scores
+scoreboard players set $gen.tier spellcrafter.tmp 0
+scoreboard players set $gen.type spellcrafter.tmp 0
+scoreboard players set $gen.inf_menu spellcrafter.tmp 0
