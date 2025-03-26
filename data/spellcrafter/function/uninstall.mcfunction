@@ -40,5 +40,6 @@ kill @e[tag=spellcrafter.summon]
 kill @e[tag=spellcrafter.target_dummy]
 kill @e[tag=spellcrafter.dummy_text]
 kill @e[tag=spellcrafter.shop]
+kill @e[tag=spellcrafter.gen]
 
 tag @e remove spellcrafter.caster

@@ -1,6 +1,6 @@
 #> execute summon (item_display) at @s
 # score "$gen.tier spellcrafter.tmp" contains the tier of the generated wand
-kill @s
+tag @s add spellcrafter.gen
 
 
 # NOTE: most of these commands are duplicated in "spellcrafter:as_table/..."
@@ -69,11 +69,8 @@ scoreboard players operation $mana spellcrafter.tmp = $base_mana spellcrafter.tm
 scoreboard players operation $cooldown spellcrafter.tmp = $base_cooldown spellcrafter.tmp
 
 
-# 
-scoreboard players set $gen.last_proj spellcrafter.tmp 0
-
-
 # Iterate through the generated spell list
+scoreboard players set $gen.last_proj spellcrafter.tmp 0
 scoreboard players set $clone_multiplier spellcrafter.tmp 1
 scoreboard players operation $iter spellcrafter.tmp = $gen.spell_count spellcrafter.tmp
 function spellcrafter:wand_generator/for_spell
@@ -122,15 +119,6 @@ function spellcrafter:wand_generator/for_lore
 item modify entity @s contents spellcrafter:wand/lore/wand_mod_add
 
 
-# Save to storage
-data modify storage spellcrafter:tmp gen set from entity @s item
-
-
-# Inf menu
-execute if score $gen.inf_menu spellcrafter.tmp matches 1 run item replace entity @p[distance=..0.001] inventory.18 from entity @s contents
-
-
 # Reset scores
 scoreboard players set $gen.tier spellcrafter.tmp 0
 scoreboard players set $gen.type spellcrafter.tmp 0
-scoreboard players set $gen.inf_menu spellcrafter.tmp 0
