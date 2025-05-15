@@ -20,7 +20,7 @@ execute at @s run tp @s ^ ^ ^1.5
 
 
 # Text
-data modify entity @s text set value '[" ",{"color":"red","score":{"name":"$damage","objective":"spellcrafter.tmp"}}," "]'
+data modify entity @s text set value [" ",{"color":"red","score":{"name":"$damage","objective":"spellcrafter.tmp"}}," "]
 
 
 # Lifetime
