@@ -6,26 +6,26 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.spell.flying_pig"
+                        "spellcrafter.spell.summon_magma"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Flying Pig                    ",
-            "color": "#ff5555"
+            "text": "Summon Magma Cube             ",
+            "color": "#55ffff"
         },
         "description": [
             {
-                "text": "\n◆ 150",
+                "text": "\n◆ 45",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.75\n\n",
+                "text": "   ⌚ 1.0\n\n",
                 "color": "gray"
             },
             {
-                "text": "Summons a magical flying pig\n",
+                "text": "Summons a magma cube. Consecutive copies of this spell merge to increase the magma cube's size\n",
                 "color": "gray"
             }
         ],
@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/wind_charge",
+    "parent": "spellcrafter:spells/summon_slime",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

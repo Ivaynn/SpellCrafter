@@ -399,7 +399,7 @@
                 ]
             }
         },
-        "spellcrafter:flying_pig": {
+        "spellcrafter:summon_magma": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -410,7 +410,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "spellcrafter:spells/flying_pig": true
+                                    "spellcrafter:spells/summon_magma": true
                                 }
                             }
                         }

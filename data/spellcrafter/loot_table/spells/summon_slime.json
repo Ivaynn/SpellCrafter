@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:35, mana:40, cooldown:15, tier:2, lore:{\"text\":\"✦ Summon Slime\",\"color\":\"light_purple\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:35, mana:25, cooldown:10, tier:2, lore:{\"text\":\"✦ Summon Slime\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -38,12 +38,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 40",
+                    "text": "◆ 25",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.75",
+                            "text": "   ⌚ 0.5",
                             "color": "gray",
                             "italic": false
                         }
@@ -53,17 +53,17 @@
                     "text": ""
                 },
                 {
-                    "text": "Summons a slime. Consecutive",
+                    "text": "Summons a slime. Consecutive copies",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "copies of this spell merge to",
+                    "text": "of this spell merge to create a",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "increase the slime's size",
+                    "text": "tower of slimes",
                     "color": "gray",
                     "italic": false
                 },

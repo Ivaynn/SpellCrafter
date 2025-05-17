@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/root_instant",
+    "parent": "spellcrafter:spells/summon_bat",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

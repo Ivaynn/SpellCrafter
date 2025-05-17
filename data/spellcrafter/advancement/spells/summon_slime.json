@@ -17,15 +17,15 @@
         },
         "description": [
             {
-                "text": "\n◆ 40",
+                "text": "\n◆ 25",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.75\n\n",
+                "text": "   ⌚ 0.5\n\n",
                 "color": "gray"
             },
             {
-                "text": "Summons a slime. Consecutive copies of this spell merge to increase the slime's size\n",
+                "text": "Summons a slime. Consecutive copies of this spell merge to create a tower of slimes\n",
                 "color": "gray"
             }
         ],
@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/summon_bat",
+    "parent": "spellcrafter:spells/summon_vex",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

@@ -15,6 +15,7 @@ data remove storage spellcrafter:tmp wand.spells[0]
 
 # Spells that have consecutive copies stack: they trigger after the last copy
 execute if score $spell.summon_slime spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 35 run function spellcrafter:spells/summon_slime/summon
+execute if score $spell.summon_magma spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 75 run function spellcrafter:spells/summon_magma/summon
 
 
 # Spells that turn into other spells (echo)

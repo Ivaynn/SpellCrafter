@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/summon_vex",
+    "parent": "spellcrafter:spells/root_instant",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

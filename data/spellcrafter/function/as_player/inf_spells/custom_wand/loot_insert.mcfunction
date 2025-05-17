@@ -72,7 +72,7 @@ execute if score $spell spellcrafter.tmp matches 71 run return run loot replace 
 execute if score $spell spellcrafter.tmp matches 72 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/angry_goat
 execute if score $spell spellcrafter.tmp matches 73 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/smoke_bomb
 execute if score $spell spellcrafter.tmp matches 74 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/flash
-execute if score $spell spellcrafter.tmp matches 75 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/flying_pig
+execute if score $spell spellcrafter.tmp matches 75 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/summon_magma
 execute if score $spell spellcrafter.tmp matches 76 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/follow
 execute if score $spell spellcrafter.tmp matches 77 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/safe_shot
 execute if score $spell spellcrafter.tmp matches 78 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/arcane_shield

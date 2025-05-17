@@ -24,7 +24,7 @@ execute if score $spell spellcrafter.tmp matches 71 run return run function spel
 execute if score $spell spellcrafter.tmp matches 72 run return run function spellcrafter:spells/angry_goat/cast
 execute if score $spell spellcrafter.tmp matches 73 run return run function spellcrafter:spells/smoke_bomb/cast
 execute if score $spell spellcrafter.tmp matches 74 run return run function spellcrafter:spells/flash/cast
-execute if score $spell spellcrafter.tmp matches 75 run return run function spellcrafter:spells/flying_pig/cast
+execute if score $spell spellcrafter.tmp matches 75 run return run function spellcrafter:spells/summon_magma/cast
 execute if score $spell spellcrafter.tmp matches 82 run return run function spellcrafter:spells/wind_charge/cast
 execute if score $spell spellcrafter.tmp matches 85 run return run function spellcrafter:spells/diverge/cast
 execute if score $spell spellcrafter.tmp matches 86 run return run function spellcrafter:spells/converge/cast

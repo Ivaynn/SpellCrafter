@@ -3,10 +3,10 @@
         "minecraft:vex",
         "minecraft:bat",
         "minecraft:slime",
+        "minecraft:magma_cube",
         "minecraft:sheep",
         "minecraft:pufferfish",
         "minecraft:goat",
-        "minecraft:pig",
         "minecraft:wind_charge",
         "minecraft:item_display"
     ]
