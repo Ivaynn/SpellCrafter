@@ -228,7 +228,7 @@
                 ]
             }
         },
-        "spellcrafter:sheep": {
+        "spellcrafter:summon_endermite": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -239,7 +239,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "spellcrafter:spells/sheep": true
+                                    "spellcrafter:spells/summon_endermite": true
                                 }
                             }
                         }

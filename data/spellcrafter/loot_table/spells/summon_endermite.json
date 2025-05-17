@@ -21,14 +21,14 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:36, mana:150, cooldown:30, tier:3, lore:{\"text\":\"✦ Sheep\",\"color\":\"light_purple\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:36, mana:150, cooldown:20, tier:3, lore:{\"text\":\"✦ Summon Endermite\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": {
-                "text": "Sheep",
+                "text": "Summon Endermite",
                 "color": "#55ffff"
             }
         },
@@ -43,7 +43,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 1.5",
+                            "text": "   ⌚ 1.0",
                             "color": "gray",
                             "italic": false
                         }
@@ -53,7 +53,7 @@
                     "text": ""
                 },
                 {
-                    "text": "Sheep",
+                    "text": "Summons an endermite",
                     "color": "gray",
                     "italic": false
                 },
@@ -71,7 +71,7 @@
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.spell.sheep"
+                    "spellcrafter.spell.summon_endermite"
                 ],
                 "mode": "replace_all"
             }

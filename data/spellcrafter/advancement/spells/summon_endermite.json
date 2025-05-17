@@ -6,13 +6,13 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.spell.sheep"
+                        "spellcrafter.spell.summon_endermite"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Sheep                         ",
+            "text": "Summon Endermite              ",
             "color": "#55ffff"
         },
         "description": [
@@ -21,11 +21,11 @@
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 1.5\n\n",
+                "text": "   ⌚ 1.0\n\n",
                 "color": "gray"
             },
             {
-                "text": "Sheep\n",
+                "text": "Summons an endermite\n",
                 "color": "gray"
             }
         ],

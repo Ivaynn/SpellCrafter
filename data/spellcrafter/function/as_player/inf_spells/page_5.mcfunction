@@ -22,7 +22,7 @@ loot replace entity @s inventory.18 loot spellcrafter:spells/summon_vex
 loot replace entity @s inventory.19 loot spellcrafter:spells/summon_bat
 loot replace entity @s inventory.20 loot spellcrafter:spells/summon_slime
 loot replace entity @s inventory.21 loot spellcrafter:spells/summon_magma
-loot replace entity @s inventory.22 loot spellcrafter:spells/sheep
+loot replace entity @s inventory.22 loot spellcrafter:spells/summon_endermite
 loot replace entity @s inventory.23 loot spellcrafter:spells/summon_pufferfish
 loot replace entity @s inventory.24 loot spellcrafter:spells/angry_goat
 item replace entity @s inventory.25 with minecraft:air

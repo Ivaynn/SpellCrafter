@@ -1,10 +1,10 @@
 {
     "values": [
-        "minecraft:vex",
         "minecraft:bat",
+        "minecraft:vex",
         "minecraft:slime",
         "minecraft:magma_cube",
-        "minecraft:sheep",
+        "minecraft:endermite",
         "minecraft:pufferfish",
         "minecraft:goat",
         "minecraft:wind_charge",
