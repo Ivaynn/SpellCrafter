@@ -31,15 +31,12 @@ scoreboard objectives remove spellcrafter.toggle
 scoreboard objectives remove spellcrafter.tick
 scoreboard objectives remove spellcrafter.actionbar
 scoreboard objectives remove spellcrafter.damage_src
-scoreboard objectives remove spellcrafter.shop.value
-scoreboard objectives remove spellcrafter.shop.uses
 
 kill @e[tag=spellcrafter.table]
 kill @e[tag=spellcrafter.projectile]
 kill @e[tag=spellcrafter.summon]
 kill @e[tag=spellcrafter.target_dummy]
 kill @e[tag=spellcrafter.dummy_text]
-kill @e[tag=spellcrafter.shop]
 kill @e[tag=spellcrafter.gen]
 
 tag @e remove spellcrafter.caster
