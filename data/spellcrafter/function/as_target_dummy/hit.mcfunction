@@ -12,8 +12,12 @@ scoreboard players remove $damage spellcrafter.tmp 2048
 scoreboard players operation $damage spellcrafter.tmp *= #n1 spellcrafter.math
 
 
+# Text: none
+execute if score dummy_text spellcrafter.options matches 2 run return 0
+
+
 # Text: chat
-execute if score dummy_text spellcrafter.options matches 1 run return run tellraw @a[distance=..100] ["",{"text":"<Target Dummy> ","color":"gray"},{"score":{"name":"$damage","objective":"spellcrafter.tmp"},"color":"red"}]
+execute if score dummy_text spellcrafter.options matches 1 run return run tellraw @a[distance=..50] ["<",{"selector":"@s"},"> ",{"text":"-","color":"red"},{"score":{"name":"$damage","objective":"spellcrafter.tmp"},"color":"red"}]
 
 
 # Text: floating
