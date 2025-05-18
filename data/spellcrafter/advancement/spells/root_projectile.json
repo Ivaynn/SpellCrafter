@@ -209,7 +209,7 @@
                 ]
             }
         },
-        "spellcrafter:black_hole": {
+        "spellcrafter:resonant_pulse": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -220,7 +220,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "spellcrafter:spells/black_hole": true
+                                    "spellcrafter:spells/resonant_pulse": true
                                 }
                             }
                         }

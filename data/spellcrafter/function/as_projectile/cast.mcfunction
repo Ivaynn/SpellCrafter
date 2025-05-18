@@ -36,7 +36,7 @@ execute if score $spell spellcrafter.tmp matches 46 run return run function spel
 execute if score $spell spellcrafter.tmp matches 53 run return run function spellcrafter:spells/poison_dart/projectile
 execute if score $spell spellcrafter.tmp matches 57 run return run function spellcrafter:spells/freezing_bolt/projectile
 execute if score $spell spellcrafter.tmp matches 58 run return run function spellcrafter:spells/drill/projectile
-execute if score $spell spellcrafter.tmp matches 60 run return run function spellcrafter:spells/black_hole/projectile
+execute if score $spell spellcrafter.tmp matches 60 run return run function spellcrafter:spells/resonant_pulse/projectile
 execute if score $spell spellcrafter.tmp matches 63 run return run function spellcrafter:spells/boomerang/projectile
 execute if score $spell spellcrafter.tmp matches 65 run return run function spellcrafter:spells/kinetic_bolt/projectile
 execute if score $spell spellcrafter.tmp matches 78 run return run function spellcrafter:spells/arcane_shield/projectile

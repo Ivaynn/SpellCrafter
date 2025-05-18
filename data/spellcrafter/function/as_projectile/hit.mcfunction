@@ -23,6 +23,7 @@ execute as @s[tag=spellcrafter.spell.drain_bolt] run function spellcrafter:spell
 execute as @s[tag=spellcrafter.spell.mirror_shot] run function spellcrafter:spells/mirror_shot/hit
 execute as @s[tag=spellcrafter.spell.healing_bolt] run function spellcrafter:spells/healing_bolt/hit
 execute as @s[tag=spellcrafter.spell.soul_link] run function spellcrafter:spells/soul_link/hit
+execute as @s[tag=spellcrafter.spell.resonant_pulse] run function spellcrafter:spells/resonant_pulse/hit
 
 
 # Next spell...

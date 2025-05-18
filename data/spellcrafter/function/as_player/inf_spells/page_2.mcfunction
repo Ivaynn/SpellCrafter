@@ -23,6 +23,6 @@ loot replace entity @s inventory.19 loot spellcrafter:spells/healing_circle
 loot replace entity @s inventory.20 loot spellcrafter:spells/toxic_cloud
 loot replace entity @s inventory.21 loot spellcrafter:spells/drill
 loot replace entity @s inventory.22 loot spellcrafter:spells/big_drill
-loot replace entity @s inventory.23 loot spellcrafter:spells/black_hole
+loot replace entity @s inventory.23 loot spellcrafter:spells/resonant_pulse
 loot replace entity @s inventory.24 loot spellcrafter:spells/null_shot
 loot replace entity @s inventory.25 loot spellcrafter:spells/delayed_cast

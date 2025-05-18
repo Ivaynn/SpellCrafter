@@ -61,7 +61,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/black_hole",
+    "parent": "spellcrafter:spells/resonant_pulse",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

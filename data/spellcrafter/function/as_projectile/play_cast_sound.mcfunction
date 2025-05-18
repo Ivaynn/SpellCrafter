@@ -17,6 +17,7 @@ execute as @s[tag=spellcrafter.spell.vampiric_shot] run playsound minecraft:enti
 execute as @s[tag=spellcrafter.spell.drain_bolt] run playsound minecraft:entity.allay.item_taken player @a ~ ~ ~ 2 0.8
 execute as @s[tag=spellcrafter.spell.healing_bolt] run playsound minecraft:entity.breeze.jump player @a ~ ~ ~ 2 1.4
 execute as @s[tag=spellcrafter.spell.soul_link] run playsound minecraft:entity.vex.death player @a ~ ~ ~ 2 0.8
+execute as @s[tag=spellcrafter.spell.resonant_pulse] run playsound minecraft:entity.warden.attack_impact player @a ~ ~ ~ 2 0.8
 
 
 # Special case: kinetic bolt's pitch depends on its starting speed

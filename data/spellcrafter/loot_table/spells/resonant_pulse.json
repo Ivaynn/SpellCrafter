@@ -21,15 +21,15 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:60, mana:250, cooldown:150, tier:5, lore:{\"text\":\"→ Black Hole\",\"color\":\"gold\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:60, mana:20, cooldown:5, tier:2, lore:{\"text\":\"→ Resonant Pulse\",\"color\":\"gold\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": {
-                "text": "Black Hole",
-                "color": "#ff5555"
+                "text": "Resonant Pulse",
+                "color": "#ffff55"
             }
         },
         {
@@ -38,12 +38,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 250",
+                    "text": "◆ 20",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 7.5",
+                            "text": "   ⌚ 0.25",
                             "color": "gray",
                             "italic": false
                         }
@@ -53,19 +53,58 @@
                     "text": ""
                 },
                 {
-                    "text": "Stationary, grows in size and",
+                    "text": "Consecutive copies of this",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "damage over time, consuming",
+                    "text": "spell merge to form ...",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "everything around it",
+                    "text": ""
+                },
+                {
+                    "text": "Damage: ",
                     "color": "gray",
-                    "italic": false
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "1 ❤",
+                            "color": "red"
+                        }
+                    ]
+                },
+                {
+                    "text": "Range: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "5",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": "Speed: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "10",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks/sec",
+                            "color": "dark_gray"
+                        }
+                    ]
                 },
                 {
                     "text": ""
@@ -81,7 +120,7 @@
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.spell.black_hole"
+                    "spellcrafter.spell.resonant_pulse"
                 ],
                 "mode": "replace_all"
             }

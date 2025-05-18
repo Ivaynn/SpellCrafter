@@ -20,7 +20,6 @@ execute as @s[tag=!spellcrafter.spell.anchored,tag=spellcrafter.spell.wave] run 
 execute as @s[tag=spellcrafter.spell.revealing_bolt] run return run function spellcrafter:spells/revealing_bolt/trail
 execute as @s[tag=spellcrafter.spell.freezing_bolt] run return run function spellcrafter:spells/freezing_bolt/trail
 execute as @s[tag=spellcrafter.spell.drill] run return run function spellcrafter:spells/drill/trail
-execute as @s[tag=spellcrafter.spell.black_hole] run return run function spellcrafter:spells/black_hole/trail
 execute as @s[tag=spellcrafter.spell.wither_blast] run return run function spellcrafter:spells/wither_blast/trail
 execute as @s[tag=spellcrafter.spell.big_drill] run return run function spellcrafter:spells/big_drill/trail
 
@@ -47,3 +46,4 @@ execute as @s[tag=spellcrafter.spell.drain_bolt] run function spellcrafter:spell
 execute as @s[tag=spellcrafter.spell.healing_bolt] run function spellcrafter:spells/healing_bolt/trail
 execute as @s[tag=spellcrafter.spell.soul_link] run function spellcrafter:spells/soul_link/trail
 execute as @s[tag=spellcrafter.spell.delayed_cast] run function spellcrafter:spells/delayed_cast/trail
+execute as @s[tag=spellcrafter.spell.resonant_pulse] run function spellcrafter:spells/resonant_pulse/trail
