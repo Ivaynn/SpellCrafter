@@ -3,6 +3,7 @@
 
 # Tag, invulnerability timer, despawn timer
 tag @s add spellcrafter.summon
+tag @s add spellcrafter.spell.wind_charge
 scoreboard players set @s spellcrafter.cooldown 1
 scoreboard players set @s spellcrafter.age 60
 

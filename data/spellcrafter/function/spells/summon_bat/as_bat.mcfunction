@@ -3,6 +3,7 @@
 
 # Tag, invulnerability timer, despawn timer
 tag @s add spellcrafter.summon
+tag @s add spellcrafter.spell.summon_bat
 scoreboard players set @s spellcrafter.cooldown 10
 scoreboard players set @s spellcrafter.age 400
 

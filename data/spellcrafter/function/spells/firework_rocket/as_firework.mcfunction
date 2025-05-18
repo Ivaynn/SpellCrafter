@@ -3,6 +3,7 @@
 
 # Init
 tag @s add spellcrafter.summon
+tag @s add spellcrafter.spell.firework_rocket
 data merge entity @s {LifeTime:0,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",has_twinkle:false,has_trail:false,colors:[I;0]}]}}}}
 
 

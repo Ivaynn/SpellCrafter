@@ -3,6 +3,7 @@
 
 # Tag, invulnerability timer, despawn timer
 tag @s add spellcrafter.summon
+tag @s add spellcrafter.spell.angry_goat
 scoreboard players set @s spellcrafter.cooldown 1200
 scoreboard players set @s spellcrafter.age 600
 
