@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:89, mana:80, cooldown:0, tier:3, lore:{\"text\":\"⚝ Triple Cast\",\"color\":\"dark_aqua\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:89, mana:80, cooldown:0, tier:2, lore:{\"text\":\"⚝ Triple Cast\",\"color\":\"dark_aqua\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -29,7 +29,7 @@
             "target": "item_name",
             "name": {
                 "text": "Triple Cast",
-                "color": "#55ffff"
+                "color": "#ffff55"
             }
         },
         {
