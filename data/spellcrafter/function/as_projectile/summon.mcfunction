@@ -75,7 +75,7 @@ execute if score $result spellcrafter.tmp matches -1 run return 0
 
 # Make sure projectile stats aren't negative
 execute unless score @s spellcrafter.range matches 0.. run scoreboard players set @s spellcrafter.range 0
-execute unless score @s spellcrafter.speed matches 0.. run scoreboard players set @s spellcrafter.speed 0
+execute unless score @s spellcrafter.speed matches 1.. run scoreboard players set @s spellcrafter.speed 1
 execute unless score @s spellcrafter.damage matches 0.. run scoreboard players set @s spellcrafter.damage 0
 
 
