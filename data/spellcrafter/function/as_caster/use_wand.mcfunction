@@ -1,7 +1,14 @@
 #> as caster, at @s
 
 
+# Check if entity is alive (the advancement can trigger if the player is dead. yes, really)
+tag @s add spellcrafter.tmp
+tag @e[type=#spellcrafter:caster,distance=..0.001,tag=spellcrafter.tmp] remove spellcrafter.tmp
+execute as @s[tag=spellcrafter.tmp] run return run tag @s remove spellcrafter.tmp
+
+
 # Validate entity as a caster
+execute as @s[type=!#spellcrafter:caster] run return 0
 execute as @s[tag=!spellcrafter.caster] run return 0
 execute unless score @s spellcrafter.id matches 1.. run function spellcrafter:as_caster/new_id
 
