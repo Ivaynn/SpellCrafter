@@ -6,26 +6,26 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.spell.summon_pufferfish"
+                        "spellcrafter.spell.summon_arrow"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Summon Pufferfish             ",
+            "text": "Summon Arrow                  ",
             "color": "#ffff55"
         },
         "description": [
             {
-                "text": "\n◆ 80",
+                "text": "\n◆ 5",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.5\n\n",
+                "text": "   ⌚ 1.0\n\n",
                 "color": "gray"
             },
             {
-                "text": "Summons a sneaky pufferfish\n",
+                "text": "Shoots an arrow with your facing direction\n",
                 "color": "gray"
             }
         ],
@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/summon_endermite",
+    "parent": "spellcrafter:spells/wind_charge",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

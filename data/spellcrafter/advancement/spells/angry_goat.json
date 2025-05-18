@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/summon_pufferfish",
+    "parent": "spellcrafter:spells/summon_endermite",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

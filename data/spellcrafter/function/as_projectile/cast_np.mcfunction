@@ -16,7 +16,7 @@ execute if score $spell spellcrafter.tmp matches 27 run return run function spel
 execute if score $spell spellcrafter.tmp matches 34 run return run function spellcrafter:spells/inverse_teleport/cast
 execute if score $spell spellcrafter.tmp matches 35 run return run function spellcrafter:spells/summon_slime/cast
 execute if score $spell spellcrafter.tmp matches 36 run return run function spellcrafter:spells/summon_endermite/cast
-execute if score $spell spellcrafter.tmp matches 37 run return run function spellcrafter:spells/summon_pufferfish/cast
+execute if score $spell spellcrafter.tmp matches 37 run return run function spellcrafter:spells/summon_arrow/cast
 execute if score $spell spellcrafter.tmp matches 38 run return run function spellcrafter:spells/firework_rocket/cast
 execute if score $spell spellcrafter.tmp matches 49 run return run function spellcrafter:spells/shield/cast
 execute if score $spell spellcrafter.tmp matches 56 run return run function spellcrafter:spells/summon_fangs/cast

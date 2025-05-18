@@ -8,7 +8,6 @@ execute if score @s spellcrafter.cooldown matches 1 run data modify entity @s In
 
 # Tick
 execute as @s[type=minecraft:goat] at @s run function spellcrafter:spells/angry_goat/tick
-execute as @s[type=minecraft:wind_charge] at @s run function spellcrafter:spells/wind_charge/tick
 
 
 # Despawn timer

@@ -34,7 +34,7 @@ execute if score $spell spellcrafter.tmp matches 33 run return run loot replace 
 execute if score $spell spellcrafter.tmp matches 34 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/inverse_teleport
 execute if score $spell spellcrafter.tmp matches 35 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/summon_slime
 execute if score $spell spellcrafter.tmp matches 36 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/summon_endermite
-execute if score $spell spellcrafter.tmp matches 37 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/summon_pufferfish
+execute if score $spell spellcrafter.tmp matches 37 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/summon_arrow
 execute if score $spell spellcrafter.tmp matches 38 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/firework_rocket
 execute if score $spell spellcrafter.tmp matches 39 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/shulker_bullet
 execute if score $spell spellcrafter.tmp matches 40 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/harmless

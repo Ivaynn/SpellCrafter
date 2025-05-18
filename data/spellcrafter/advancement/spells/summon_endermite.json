@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/wind_charge",
+    "parent": "spellcrafter:spells/summon_magma",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

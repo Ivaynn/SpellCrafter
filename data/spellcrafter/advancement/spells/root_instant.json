@@ -247,7 +247,7 @@
                 ]
             }
         },
-        "spellcrafter:summon_pufferfish": {
+        "spellcrafter:summon_arrow": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -258,7 +258,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "spellcrafter:spells/summon_pufferfish": true
+                                    "spellcrafter:spells/summon_arrow": true
                                 }
                             }
                         }
