@@ -4,7 +4,7 @@
 # Tag, invulnerability timer, despawn timer
 tag @s add spellcrafter.summon
 tag @s add spellcrafter.spell.summon_arrow
-scoreboard players set @s spellcrafter.cooldown 1
+scoreboard players set @s spellcrafter.cooldown 0
 scoreboard players set @s spellcrafter.age 200
 
 
@@ -13,8 +13,8 @@ scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
 
 
 # Change arrow nbt
-data merge entity @s {pickup:0b,item:{id:"minecraft:kelp",count:1}}
-data modify entity @s Owner set from entity @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] UUID
+data merge entity @s {pickup:0b}
+data modify entity @s Owner set from entity @e[limit=1,distance=..100,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] UUID
 
 
 # Shoot with player's facing direction
@@ -22,7 +22,7 @@ execute store result score $x0 spellcrafter.tmp run data get entity @s Pos[0] 10
 execute store result score $y0 spellcrafter.tmp run data get entity @s Pos[1] 100
 execute store result score $z0 spellcrafter.tmp run data get entity @s Pos[2] 100
 
-execute rotated as @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] run tp @s ^ ^ ^1
+execute rotated as @e[limit=1,distance=..100,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] run tp @s ^ ^ ^1 ~180 0
 
 execute store result score $x1 spellcrafter.tmp run data get entity @s Pos[0] 100
 execute store result score $y1 spellcrafter.tmp run data get entity @s Pos[1] 100

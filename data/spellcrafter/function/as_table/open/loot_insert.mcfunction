@@ -114,3 +114,4 @@ execute if score $spell spellcrafter.tmp matches 113 run return run loot insert 
 execute if score $spell spellcrafter.tmp matches 114 run return run loot insert ~ ~ ~ loot spellcrafter:spells/height_lock
 execute if score $spell spellcrafter.tmp matches 115 run return run loot insert ~ ~ ~ loot spellcrafter:spells/magic_barrier
 execute if score $spell spellcrafter.tmp matches 116 run return run loot insert ~ ~ ~ loot spellcrafter:spells/magic_shield
+execute if score $spell spellcrafter.tmp matches 117 run return run loot insert ~ ~ ~ loot spellcrafter:spells/arrow_rain

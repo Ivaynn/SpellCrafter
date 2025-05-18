@@ -550,6 +550,25 @@
                     }
                 ]
             }
+        },
+        "spellcrafter:arrow_rain": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/arrow_rain": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     }
 }
