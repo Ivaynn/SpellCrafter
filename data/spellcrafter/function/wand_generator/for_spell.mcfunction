@@ -7,23 +7,27 @@
 # Projectile or modifier (1, 2)
 scoreboard players set $gen.type spellcrafter.tmp 2
 
-execute store result score $gen.random spellcrafter.tmp run random value 1..5
-execute unless score $gen.last_proj spellcrafter.tmp matches 1..4 run scoreboard players set $gen.type spellcrafter.tmp 1
+execute store result score $gen.random spellcrafter.tmp run random value 1..15
+scoreboard players add $gen.last_proj spellcrafter.tmp 1
+execute if score $iter spellcrafter.tmp matches 1 run scoreboard players add $gen.last_proj spellcrafter.tmp 4
 
-execute if score $gen.last_proj spellcrafter.tmp matches 1..2 if score $gen.random spellcrafter.tmp matches ..1 run scoreboard players set $gen.type spellcrafter.tmp 1
-execute if score $gen.last_proj spellcrafter.tmp matches 3..4 if score $gen.random spellcrafter.tmp matches ..2 run scoreboard players set $gen.type spellcrafter.tmp 1
+execute unless score $gen.last_proj spellcrafter.tmp matches 1..5 run scoreboard players set $gen.type spellcrafter.tmp 1
 
-execute if score $iter spellcrafter.tmp matches 1 run scoreboard players set $gen.type spellcrafter.tmp 1
+execute if score $gen.last_proj spellcrafter.tmp matches 1 if score $gen.random spellcrafter.tmp matches ..1 run scoreboard players set $gen.type spellcrafter.tmp 1
+execute if score $gen.last_proj spellcrafter.tmp matches 2 if score $gen.random spellcrafter.tmp matches ..2 run scoreboard players set $gen.type spellcrafter.tmp 1
+execute if score $gen.last_proj spellcrafter.tmp matches 3 if score $gen.random spellcrafter.tmp matches ..3 run scoreboard players set $gen.type spellcrafter.tmp 1
+execute if score $gen.last_proj spellcrafter.tmp matches 4 if score $gen.random spellcrafter.tmp matches ..4 run scoreboard players set $gen.type spellcrafter.tmp 1
+execute if score $gen.last_proj spellcrafter.tmp matches 5 if score $gen.random spellcrafter.tmp matches ..5 run scoreboard players set $gen.type spellcrafter.tmp 1
 
 
-# Instant or special (3, 4)
-execute store result score $gen.random spellcrafter.tmp run random value 1..20
-execute if score $gen.random spellcrafter.tmp matches 20 run scoreboard players set $gen.type spellcrafter.tmp 4
-execute if score $gen.random spellcrafter.tmp matches 15..19 run scoreboard players set $gen.type spellcrafter.tmp 3
+# Instant or special (3, 4) - only replace modifiers
+execute if score $gen.type spellcrafter.tmp matches 2 store result score $gen.random spellcrafter.tmp run random value 1..20
+execute if score $gen.type spellcrafter.tmp matches 2 if score $gen.random spellcrafter.tmp matches 20 run scoreboard players set $gen.type spellcrafter.tmp 4
+execute if score $gen.type spellcrafter.tmp matches 2 if score $gen.random spellcrafter.tmp matches 15..19 run scoreboard players set $gen.type spellcrafter.tmp 3
 
 
 # Update "last_proj" counter
-execute if score $gen.type spellcrafter.tmp matches 1 run scoreboard players set $gen.last_proj spellcrafter.tmp 4
+execute if score $gen.type spellcrafter.tmp matches 1 run scoreboard players set $gen.last_proj spellcrafter.tmp 0
 
 
 # Insert item
