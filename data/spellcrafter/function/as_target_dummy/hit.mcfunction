@@ -1,10 +1,14 @@
 #> as target dummy, at @s
 
 
+# Fix double message if spells deal damage in 2 consecutive ticks
+execute if score @s spellcrafter.damage matches 1.. run return 0
+
+
 # Calculate damage taken
-execute store result score $damage spellcrafter.tmp run data get entity @s Health
-data modify entity @s Health set value 1024.0f
-scoreboard players remove $damage spellcrafter.tmp 1024
+execute store result score $damage spellcrafter.tmp run data get entity @s AbsorptionAmount
+data merge entity @s {AbsorptionAmount:2048.0f, Health:1024.0f, attributes:[{id:"minecraft:max_health",base:1024.0},{id:"minecraft:max_absorption",base:2048.0}]}
+scoreboard players remove $damage spellcrafter.tmp 2048
 scoreboard players operation $damage spellcrafter.tmp *= #n1 spellcrafter.math
 
 

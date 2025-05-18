@@ -1,5 +1,4 @@
 #> executed every tick, if score #tick is 1..
-scoreboard players add #tick spellcrafter.options 1
 
 
 # Count projectiles check threshold and avoid lag
