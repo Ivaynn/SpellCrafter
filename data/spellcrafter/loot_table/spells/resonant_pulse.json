@@ -58,7 +58,12 @@
                     "italic": false
                 },
                 {
-                    "text": "spell merge to form ...",
+                    "text": "spell merge into a stronger",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "projectile",
                     "color": "gray",
                     "italic": false
                 },
@@ -71,7 +76,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "1 ❤",
+                            "text": "1.5 ❤",
                             "color": "red"
                         }
                     ]
@@ -82,7 +87,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "5",
+                            "text": "10",
                             "color": "red"
                         },
                         {
@@ -97,7 +102,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "10",
+                            "text": "20",
                             "color": "red"
                         },
                         {

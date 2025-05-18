@@ -10,6 +10,13 @@ execute unless data storage spellcrafter:tmp wand.spells[0] run return run funct
 # Put the next spell of the chain in score "$spell spellcrafter.tmp"
 scoreboard players set $spell spellcrafter.tmp 0
 execute store result score $spell spellcrafter.tmp run data get storage spellcrafter:tmp wand.spells[0]
+
+
+# Special case: stackable projectile
+execute if score $spell.resonant_pulse spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 60 run return run function spellcrafter:spells/resonant_pulse/projectile
+
+
+# Remove current spell from queue
 data remove storage spellcrafter:tmp wand.spells[0]
 
 
@@ -36,7 +43,7 @@ execute if score $spell spellcrafter.tmp matches 46 run return run function spel
 execute if score $spell spellcrafter.tmp matches 53 run return run function spellcrafter:spells/poison_dart/projectile
 execute if score $spell spellcrafter.tmp matches 57 run return run function spellcrafter:spells/freezing_bolt/projectile
 execute if score $spell spellcrafter.tmp matches 58 run return run function spellcrafter:spells/drill/projectile
-execute if score $spell spellcrafter.tmp matches 60 run return run function spellcrafter:spells/resonant_pulse/projectile
+# 60 -> resonant_pulse -> special cast
 execute if score $spell spellcrafter.tmp matches 63 run return run function spellcrafter:spells/boomerang/projectile
 execute if score $spell spellcrafter.tmp matches 65 run return run function spellcrafter:spells/kinetic_bolt/projectile
 execute if score $spell spellcrafter.tmp matches 78 run return run function spellcrafter:spells/arcane_shield/projectile

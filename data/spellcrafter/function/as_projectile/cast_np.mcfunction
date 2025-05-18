@@ -3,6 +3,10 @@
 
 scoreboard players set $success spellcrafter.tmp 1
 
+# Stackable projectiles
+execute if score $spell spellcrafter.tmp matches 60 run return run function spellcrafter:spells/resonant_pulse/add
+
+
 # Instant casts
 execute if score $spell spellcrafter.tmp matches 4 run return run function spellcrafter:spells/explosion/cast
 execute if score $spell spellcrafter.tmp matches 5 run return run function spellcrafter:spells/heal/cast

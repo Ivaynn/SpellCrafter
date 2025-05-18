@@ -25,7 +25,7 @@
                 "color": "gray"
             },
             {
-                "text": "Consecutive copies of this spell merge to form ...\n",
+                "text": "Consecutive copies of this spell merge into a stronger projectile\n",
                 "color": "gray"
             },
             {
@@ -33,7 +33,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "1 ❤",
+                        "text": "1.5 ❤",
                         "color": "red"
                     }
                 ]
@@ -43,7 +43,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "5",
+                        "text": "10",
                         "color": "red"
                     },
                     {
@@ -57,7 +57,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "10",
+                        "text": "20",
                         "color": "red"
                     },
                     {
