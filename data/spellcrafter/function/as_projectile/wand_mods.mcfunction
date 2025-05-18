@@ -3,7 +3,7 @@ execute if score $wand_mod spellcrafter.tmp matches 2 run return 0
 execute if score $wand_mod spellcrafter.tmp matches 3 run return 0
 execute if score $wand_mod spellcrafter.tmp matches 4 run return 0
 execute if score $wand_mod spellcrafter.tmp matches 5 run return 0
-execute if score $wand_mod spellcrafter.tmp matches 6 run return 1
+execute if score $wand_mod spellcrafter.tmp matches 6 run return 0
 execute if score $wand_mod spellcrafter.tmp matches 7 run return 1
 execute if score $wand_mod spellcrafter.tmp matches 8 run return 1
 execute if score $wand_mod spellcrafter.tmp matches 9 run return 1

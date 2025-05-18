@@ -57,8 +57,11 @@ execute if score $gen.tier spellcrafter.tmp matches 4 store result score $gen.sp
 execute if score $gen.tier spellcrafter.tmp matches 5 store result score $gen.spell_count spellcrafter.tmp run random value 6..11
 
 
-# Get a random spell modifier
-execute store result score $wand_mod spellcrafter.tmp run random value 1..1000
+# Get a random spell modifier (shuffle: 25%, multicast: 10%, reverse: 5%)
+execute store result score $wand_mod spellcrafter.tmp run random value -400..600
+execute if score $wand_mod spellcrafter.tmp matches -250..0 run scoreboard players set $wand_mod spellcrafter.tmp 52
+execute if score $wand_mod spellcrafter.tmp matches -350..-251 run scoreboard players set $wand_mod spellcrafter.tmp 10
+execute if score $wand_mod spellcrafter.tmp matches -400..-351 run scoreboard players set $wand_mod spellcrafter.tmp 95
 scoreboard players set $allowed_mod spellcrafter.tmp 0
 execute store result score $allowed_mod spellcrafter.tmp run function spellcrafter:as_projectile/wand_mods
 execute if score $allowed_mod spellcrafter.tmp matches 1 store result storage spellcrafter:tmp wand.mod int 1 run scoreboard players get $wand_mod spellcrafter.tmp

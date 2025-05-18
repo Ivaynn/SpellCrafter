@@ -7,31 +7,6 @@
         "size": 1,
         "lore": [
             {
-                "text": "⛶ Clone",
-                "color": "gray",
-                "italic": false
-            }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:value_check",
-                "value": {
-                    "type": "minecraft:storage",
-                    "storage": "spellcrafter:tmp",
-                    "path": "wand.mod"
-                },
-                "range": 6
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_section",
-        "offset": 2,
-        "size": 1,
-        "lore": [
-            {
                 "text": "⛶ Empower",
                 "color": "gray",
                 "italic": false
