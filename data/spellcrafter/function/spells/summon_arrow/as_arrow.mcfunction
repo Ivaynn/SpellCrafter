@@ -13,7 +13,7 @@ scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
 
 
 # Change arrow nbt
-data merge entity @s {pickup:0b}
+data merge entity @s {pickup:2b}
 data modify entity @s Owner set from entity @e[limit=1,distance=..100,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] UUID
 
 
