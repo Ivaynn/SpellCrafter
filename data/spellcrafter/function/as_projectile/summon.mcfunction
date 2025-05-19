@@ -35,6 +35,7 @@ scoreboard players set $spell.remote_back spellcrafter.tmp 0
 scoreboard players set $spell.summon_slime spellcrafter.tmp 0
 scoreboard players set $spell.summon_magma spellcrafter.tmp 0
 scoreboard players set $spell.resonant_pulse spellcrafter.tmp 0
+scoreboard players set $spell.summon_explosive spellcrafter.tmp 0
 
 
 # Check if wand has modifiers

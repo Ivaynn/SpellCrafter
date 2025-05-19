@@ -6,26 +6,26 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.spell.summon_tnt"
+                        "spellcrafter.spell.summon_explosive"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Summon TNT                    ",
-            "color": "#ff55ff"
+            "text": "Summon Explosive              ",
+            "color": "#ffff55"
         },
         "description": [
             {
-                "text": "\n◆ 200",
+                "text": "\n◆ 50",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 3.0\n\n",
+                "text": "   ⌚ 0.5\n\n",
                 "color": "gray"
             },
             {
-                "text": "Summons a TNT\n",
+                "text": "Summons a small explosive. Consecutive copies of this spell merge to summon a larger explosive\n",
                 "color": "gray"
             }
         ],

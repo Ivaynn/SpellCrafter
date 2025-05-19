@@ -14,7 +14,7 @@ execute if score $spell spellcrafter.tmp matches 20 run return run function spel
 execute if score $spell spellcrafter.tmp matches 21 run return run function spellcrafter:spells/summon_vex/cast
 execute if score $spell spellcrafter.tmp matches 22 run return run function spellcrafter:spells/teleport/cast
 execute if score $spell spellcrafter.tmp matches 23 run return run function spellcrafter:spells/summon_bat/cast
-execute if score $spell spellcrafter.tmp matches 24 run return run function spellcrafter:spells/summon_tnt/cast
+execute if score $spell spellcrafter.tmp matches 24 run return run function spellcrafter:spells/summon_explosive/cast
 execute if score $spell spellcrafter.tmp matches 25 run return run function spellcrafter:spells/counterspell/cast
 execute if score $spell spellcrafter.tmp matches 27 run return run function spellcrafter:spells/double_teleport/cast
 execute if score $spell spellcrafter.tmp matches 34 run return run function spellcrafter:spells/inverse_teleport/cast

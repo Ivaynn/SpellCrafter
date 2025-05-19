@@ -133,7 +133,7 @@
                 ]
             }
         },
-        "spellcrafter:summon_tnt": {
+        "spellcrafter:summon_explosive": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -144,7 +144,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "spellcrafter:spells/summon_tnt": true
+                                    "spellcrafter:spells/summon_explosive": true
                                 }
                             }
                         }
