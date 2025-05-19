@@ -1,4 +1,4 @@
-#> [tick] as goat
+#> [tick] as goat, at @s
 
 scoreboard players operation $rem spellcrafter.tmp = @s spellcrafter.age
 scoreboard players operation $rem spellcrafter.tmp %= #10 spellcrafter.math
