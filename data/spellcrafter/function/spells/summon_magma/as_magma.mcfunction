@@ -13,7 +13,8 @@ execute if score $spell.summon_magma spellcrafter.tmp matches 5.. run scoreboard
 
 # Get custom name
 data modify storage spellcrafter:tmp summon.name set value []
-execute summon minecraft:text_display run function spellcrafter:spells/summon_magma/as_text
+execute summon minecraft:text_display run function spellcrafter:as_summon/owner_name
+data modify storage spellcrafter:tmp summon.name append value "'s Magma Cube"
 data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
 
 

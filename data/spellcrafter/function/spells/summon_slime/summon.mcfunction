@@ -5,7 +5,8 @@
 
 # Get custom name
 data modify storage spellcrafter:tmp summon.name set value []
-execute summon minecraft:text_display run function spellcrafter:spells/summon_slime/as_text
+execute summon minecraft:text_display run function spellcrafter:as_summon/owner_name
+data modify storage spellcrafter:tmp summon.name append value "'s Slime"
 
 
 # Summon entities
