@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:72, mana:120, cooldown:40, tier:3, lore:{\"text\":\"✦ Angry Goat\",\"color\":\"light_purple\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:72, mana:120, cooldown:60, tier:3, lore:{\"text\":\"✦ Angry Goat\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -43,7 +43,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 2.0",
+                            "text": "   ⌚ 3.0",
                             "color": "gray",
                             "italic": false
                         }

@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:35, mana:25, cooldown:10, tier:2, lore:{\"text\":\"✦ Summon Slime\",\"color\":\"light_purple\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:35, mana:25, cooldown:20, tier:2, lore:{\"text\":\"✦ Summon Slime\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -43,7 +43,7 @@
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.5",
+                            "text": "   ⌚ 1.0",
                             "color": "gray",
                             "italic": false
                         }
