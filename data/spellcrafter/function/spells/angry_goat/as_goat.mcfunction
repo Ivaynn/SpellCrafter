@@ -15,5 +15,11 @@ effect give @s minecraft:strength infinite 1 false
 effect give @s minecraft:fire_resistance infinite 2 false
 
 
+# Get custom name
+data modify storage spellcrafter:tmp summon.name set value []
+execute summon minecraft:text_display run function spellcrafter:spells/angry_goat/as_text
+data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
+
+
 # Get caster's id
 scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp

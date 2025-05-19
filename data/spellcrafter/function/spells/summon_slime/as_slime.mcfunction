@@ -6,7 +6,10 @@
 tag @s remove spellcrafter.tmp
 scoreboard players set @s spellcrafter.cooldown 10
 scoreboard players set @s spellcrafter.age 600
+
 scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
+data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
+
 data merge entity @s {Size:0,Health:4.0f,attributes:[{id:"minecraft:scale",base:2},{id:"minecraft:max_health",base:4},{id:"minecraft:movement_speed",base:0.4},{id:"minecraft:jump_strength",base:0.50}]}
 
 

@@ -14,4 +14,5 @@ execute at @s run tp @s ~ -999 ~
 
 
 # Remove entity
+data remove entity @s CustomName
 kill @s[type=!minecraft:player]

@@ -12,5 +12,11 @@ scoreboard players set @s spellcrafter.age 600
 data merge entity @s {Invulnerable:1b,DeathLootTable:"spellcrafter:empty",PersistenceRequired:1b,equipment:{mainhand:{id:"minecraft:iron_sword",count:1}},drop_chances:{mainhand:0}}
 
 
+# Get custom name
+data modify storage spellcrafter:tmp summon.name set value []
+execute summon minecraft:text_display run function spellcrafter:spells/summon_vex/as_text
+data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
+
+
 # Get caster's id
 scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp

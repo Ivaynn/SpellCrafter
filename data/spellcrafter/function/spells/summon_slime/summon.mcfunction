@@ -3,6 +3,11 @@
 # instant cast
 
 
+# Get custom name
+data modify storage spellcrafter:tmp summon.name set value []
+execute summon minecraft:text_display run function spellcrafter:spells/summon_slime/as_text
+
+
 # Summon entities
 scoreboard players operation $spell.summon_slime.stack spellcrafter.tmp = $spell.summon_slime spellcrafter.tmp
 execute if score $spell.summon_slime.stack spellcrafter.tmp matches 6.. run scoreboard players set $spell.summon_slime.stack spellcrafter.tmp 5

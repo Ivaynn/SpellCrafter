@@ -11,6 +11,12 @@ execute if score $spell.summon_magma spellcrafter.tmp matches 4 run scoreboard p
 execute if score $spell.summon_magma spellcrafter.tmp matches 5.. run scoreboard players set @s spellcrafter.age 600
 
 
+# Get custom name
+data modify storage spellcrafter:tmp summon.name set value []
+execute summon minecraft:text_display run function spellcrafter:spells/summon_magma/as_text
+data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
+
+
 # Get caster's id
 scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
 
