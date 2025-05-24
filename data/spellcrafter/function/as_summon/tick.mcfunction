@@ -12,6 +12,7 @@ execute as @s[type=minecraft:endermite,tag=spellcrafter.spell.summon_endermite] 
 execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.summon_crystal] at @s run function spellcrafter:spells/summon_crystal/tick
 execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.healing_circle] at @s run function spellcrafter:spells/healing_circle/tick
 execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.healing_crystal] at @s run function spellcrafter:spells/healing_crystal/tick
+execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.chaotic_crystal] at @s run function spellcrafter:spells/chaotic_crystal/tick
 
 
 # Despawn timer

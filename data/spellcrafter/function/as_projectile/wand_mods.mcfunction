@@ -117,3 +117,4 @@ execute if score $wand_mod spellcrafter.tmp matches 116 run return 0
 execute if score $wand_mod spellcrafter.tmp matches 117 run return 0
 execute if score $wand_mod spellcrafter.tmp matches 118 run return 0
 execute if score $wand_mod spellcrafter.tmp matches 119 run return 0
+execute if score $wand_mod spellcrafter.tmp matches 120 run return 0

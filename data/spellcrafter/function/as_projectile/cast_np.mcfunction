@@ -39,6 +39,7 @@ execute if score $spell spellcrafter.tmp matches 116 run return run function spe
 execute if score $spell spellcrafter.tmp matches 117 run return run function spellcrafter:spells/arrow_rain/cast
 execute if score $spell spellcrafter.tmp matches 118 run return run function spellcrafter:spells/healing_circle/cast
 execute if score $spell spellcrafter.tmp matches 119 run return run function spellcrafter:spells/healing_crystal/cast
+execute if score $spell spellcrafter.tmp matches 120 run return run function spellcrafter:spells/chaotic_crystal/cast
 
 
 # Special

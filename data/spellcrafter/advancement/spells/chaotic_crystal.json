@@ -6,18 +6,18 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.spell.summon_crystal"
+                        "spellcrafter.spell.chaotic_crystal"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Overcharged Crystal           ",
+            "text": "Chaotic Crystal               ",
             "color": "#ffff55"
         },
         "description": [
             {
-                "text": "\n◆ 50",
+                "text": "\n◆ 30",
                 "color": "aqua"
             },
             {
@@ -25,7 +25,7 @@
                 "color": "gray"
             },
             {
-                "text": "Summons a magic crystal that shoots lasers. Consecutive copies of this spell merge to empower the crystal\n",
+                "text": "Summons a magic crystal that shoots random projectiles. Consecutive copies of this spell merge to empower the crystal\n",
                 "color": "gray"
             }
         ],
@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/root_instant",
+    "parent": "spellcrafter:spells/healing_crystal",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -57,7 +57,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{spellcrafter:{spell:{id:24}}}"
+                            "minecraft:custom_data": "{spellcrafter:{spell:{id:120}}}"
                         }
                     }
                 ]

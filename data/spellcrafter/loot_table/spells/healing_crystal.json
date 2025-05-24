@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:119, mana:150, cooldown:60, tier:4, lore:{\"text\":\"✦ Healing Crystal\",\"color\":\"light_purple\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:119, mana:50, cooldown:15, tier:3, lore:{\"text\":\"✦ Healing Crystal\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -29,7 +29,7 @@
             "target": "item_name",
             "name": {
                 "text": "Healing Crystal",
-                "color": "#ff55ff"
+                "color": "#55ffff"
             }
         },
         {
@@ -38,12 +38,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 150",
+                    "text": "◆ 50",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 3.0",
+                            "text": "   ⌚ 0.75",
                             "color": "gray",
                             "italic": false
                         }
@@ -53,12 +53,22 @@
                     "text": ""
                 },
                 {
-                    "text": "Summons a magic crystal that",
+                    "text": "Summons a magic crystal that shoots",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "shoots healing bolts at you",
+                    "text": "healing bolts at you. Consecutive",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "copies of this spell merge to empower",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "the crystal",
                     "color": "gray",
                     "italic": false
                 },

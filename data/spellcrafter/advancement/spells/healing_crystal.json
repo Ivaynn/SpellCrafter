@@ -13,19 +13,19 @@
         },
         "title": {
             "text": "Healing Crystal               ",
-            "color": "#ff55ff"
+            "color": "#55ffff"
         },
         "description": [
             {
-                "text": "\n◆ 150",
+                "text": "\n◆ 50",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 3.0\n\n",
+                "text": "   ⌚ 0.75\n\n",
                 "color": "gray"
             },
             {
-                "text": "Summons a magic crystal that shoots healing bolts at you\n",
+                "text": "Summons a magic crystal that shoots healing bolts at you. Consecutive copies of this spell merge to empower the crystal\n",
                 "color": "gray"
             }
         ],

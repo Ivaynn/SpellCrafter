@@ -37,6 +37,8 @@ scoreboard players set $spell.summon_slime spellcrafter.tmp 0
 scoreboard players set $spell.summon_magma spellcrafter.tmp 0
 scoreboard players set $spell.resonant_pulse spellcrafter.tmp 0
 scoreboard players set $spell.summon_crystal spellcrafter.tmp 0
+scoreboard players set $spell.healing_crystal spellcrafter.tmp 0
+scoreboard players set $spell.chaotic_crystal spellcrafter.tmp 0
 
 
 # Check if wand has modifiers

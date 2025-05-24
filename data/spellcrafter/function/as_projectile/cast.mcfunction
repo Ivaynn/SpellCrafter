@@ -31,6 +31,8 @@ data remove storage spellcrafter:tmp wand.spells[0]
 execute if score $spell.summon_slime spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 35 run function spellcrafter:spells/summon_slime/summon
 execute if score $spell.summon_magma spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 75 run function spellcrafter:spells/summon_magma/summon
 execute if score $spell.summon_crystal spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 24 run function spellcrafter:spells/summon_crystal/summon
+execute if score $spell.healing_crystal spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 119 run function spellcrafter:spells/healing_crystal/summon
+execute if score $spell.chaotic_crystal spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 120 run function spellcrafter:spells/chaotic_crystal/summon
 
 
 # Projectiles (return)

@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/summon_crystal",
+    "parent": "spellcrafter:spells/summon_fangs",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

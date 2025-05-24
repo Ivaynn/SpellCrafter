@@ -21,14 +21,14 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:24, mana:50, cooldown:10, tier:2, lore:{\"text\":\"✦ Overcharged Crystal\",\"color\":\"light_purple\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:120, mana:30, cooldown:10, tier:2, lore:{\"text\":\"✦ Chaotic Crystal\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": {
-                "text": "Overcharged Crystal",
+                "text": "Chaotic Crystal",
                 "color": "#ffff55"
             }
         },
@@ -38,7 +38,7 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 50",
+                    "text": "◆ 30",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
@@ -58,12 +58,12 @@
                     "italic": false
                 },
                 {
-                    "text": "lasers. Consecutive copies of this",
+                    "text": "random projectiles. Consecutive copies",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "spell merge to empower the crystal",
+                    "text": "of this spell merge to empower the crystal",
                     "color": "gray",
                     "italic": false
                 },
@@ -81,7 +81,7 @@
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.spell.summon_crystal"
+                    "spellcrafter.spell.chaotic_crystal"
                 ],
                 "mode": "replace_all"
             }

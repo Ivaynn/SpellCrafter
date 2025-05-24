@@ -5,7 +5,7 @@ particle minecraft:dust{color:[0.2,0.0,0.4],scale:1.5} ~ ~ ~ 0.4 0.4 0.4 0 1 nor
 tp @s ~ ~ ~ ~5 ~
 
 
-# Shoot every 1 second
+# Shoot every X seconds
 scoreboard players operation $rem spellcrafter.tmp = @s spellcrafter.age
 scoreboard players operation $rem spellcrafter.tmp %= #40 spellcrafter.math
 execute unless score $rem spellcrafter.tmp matches 1 run return 0
