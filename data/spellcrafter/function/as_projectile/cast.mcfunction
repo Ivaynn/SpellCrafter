@@ -12,6 +12,13 @@ scoreboard players set $spell spellcrafter.tmp 0
 execute store result score $spell spellcrafter.tmp run data get storage spellcrafter:tmp wand.spells[0]
 
 
+# Special case: spells that turn into other spells (echo variants)
+execute if score $spell spellcrafter.tmp matches 50 run function spellcrafter:spells/echo/cast
+execute if score $spell spellcrafter.tmp matches 96 run function spellcrafter:spells/chaotic_echo/cast
+execute if score $spell spellcrafter.tmp matches 93 run function spellcrafter:spells/final_echo/cast
+execute unless score $spell spellcrafter.tmp matches 1.. run return -1
+
+
 # Special case: stackable projectile
 execute if score $spell.resonant_pulse spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 60 run return run function spellcrafter:spells/resonant_pulse/projectile
 
@@ -24,13 +31,6 @@ data remove storage spellcrafter:tmp wand.spells[0]
 execute if score $spell.summon_slime spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 35 run function spellcrafter:spells/summon_slime/summon
 execute if score $spell.summon_magma spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 75 run function spellcrafter:spells/summon_magma/summon
 execute if score $spell.summon_crystal spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 24 run function spellcrafter:spells/summon_crystal/summon
-
-
-# Spells that turn into other spells (echo)
-execute if score $spell spellcrafter.tmp matches 50 run function spellcrafter:spells/echo/cast
-execute if score $spell spellcrafter.tmp matches 96 run function spellcrafter:spells/chaotic_echo/cast
-execute if score $spell spellcrafter.tmp matches 93 run function spellcrafter:spells/final_echo/cast
-execute unless score $spell spellcrafter.tmp matches 1.. run return -1
 
 
 # Projectiles (return)
