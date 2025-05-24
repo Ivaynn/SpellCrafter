@@ -6,27 +6,54 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.spell.summon_explosive"
+                        "spellcrafter.spell.crystal_laser"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Summon Explosive              ",
-            "color": "#ffff55"
+            "text": "Crystal Laser                 ",
+            "color": "#55ffff"
         },
         "description": [
             {
-                "text": "\n◆ 50",
+                "text": "\n◆ 60",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.5\n\n",
+                "text": "   ⌚ 2.0\n\n",
                 "color": "gray"
             },
             {
-                "text": "Summons a small explosive. Consecutive copies of this spell merge to summon a larger explosive\n",
+                "text": "An instant bolt that damages everything on its path\n",
                 "color": "gray"
+            },
+            {
+                "text": "\nDamage: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "3 ❤",
+                        "color": "red"
+                    }
+                ]
+            },
+            {
+                "text": "\nRange: ",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": "10",
+                        "color": "red"
+                    },
+                    {
+                        "text": " blocks",
+                        "color": "dark_gray"
+                    }
+                ]
+            },
+            {
+                "text": "\n"
             }
         ],
         "frame": "goal",
@@ -34,7 +61,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/summon_fangs",
+    "parent": "spellcrafter:spells/laser",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -57,7 +84,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{spellcrafter:{spell:{id:24}}}"
+                            "minecraft:custom_data": "{spellcrafter:{spell:{id:79}}}"
                         }
                     }
                 ]

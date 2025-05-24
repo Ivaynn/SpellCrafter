@@ -21,7 +21,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:79, mana:100, cooldown:40, tier:3, lore:{\"text\":\"→ Healing Circle\",\"color\":\"gold\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:118, mana:100, cooldown:40, tier:3, lore:{\"text\":\"✦ Healing Circle\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -71,52 +71,8 @@
                     "text": ""
                 },
                 {
-                    "text": "Damage: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "0 ❤",
-                            "color": "red"
-                        }
-                    ]
-                },
-                {
-                    "text": "Range: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "100",
-                            "color": "red"
-                        },
-                        {
-                            "text": " blocks",
-                            "color": "dark_gray"
-                        }
-                    ]
-                },
-                {
-                    "text": "Speed: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "0",
-                            "color": "red"
-                        },
-                        {
-                            "text": " blocks/sec",
-                            "color": "dark_gray"
-                        }
-                    ]
-                },
-                {
-                    "text": ""
-                },
-                {
-                    "text": "→ Projectile",
-                    "color": "gold",
+                    "text": "✦ Instant",
+                    "color": "light_purple",
                     "italic": false
                 }
             ]

@@ -285,7 +285,7 @@
                 ]
             }
         },
-        "spellcrafter:healing_circle": {
+        "spellcrafter:crystal_laser": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -296,7 +296,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "spellcrafter:spells/healing_circle": true
+                                    "spellcrafter:spells/crystal_laser": true
                                 }
                             }
                         }

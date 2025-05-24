@@ -75,7 +75,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/arcane_reaper",
+    "parent": "spellcrafter:spells/crystal_laser",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

@@ -75,7 +75,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/root_projectile",
+    "parent": "spellcrafter:spells/arcane_reaper",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

@@ -3,7 +3,8 @@
 
 execute as @s[tag=spellcrafter.spell.magic_barrier] run return run function spellcrafter:spells/magic_barrier/break
 execute as @s[tag=spellcrafter.spell.magic_shield] run return run function spellcrafter:spells/magic_shield/timeout
-execute as @s[tag=spellcrafter.spell.summon_explosive] run return run function spellcrafter:spells/summon_explosive/timeout
+execute as @s[tag=spellcrafter.spell.summon_crystal] run return run function spellcrafter:spells/summon_crystal/timeout
+execute as @s[tag=spellcrafter.spell.healing_circle] run return run function spellcrafter:spells/healing_circle/timeout
 execute as @s[tag=spellcrafter.spell.summon_arrow] run return run kill @s
 execute as @s[tag=spellcrafter.spell.arrow_rain] run return run kill @s
 

@@ -133,7 +133,7 @@
                 ]
             }
         },
-        "spellcrafter:summon_explosive": {
+        "spellcrafter:summon_crystal": {
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
@@ -144,7 +144,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "spellcrafter:spells/summon_explosive": true
+                                    "spellcrafter:spells/summon_crystal": true
                                 }
                             }
                         }
@@ -563,6 +563,25 @@
                                 "type": "minecraft:player",
                                 "advancements": {
                                     "spellcrafter:spells/arrow_rain": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spellcrafter:healing_circle": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "spellcrafter:spells/healing_circle": true
                                 }
                             }
                         }

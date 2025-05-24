@@ -36,6 +36,7 @@ execute as @s[tag=spellcrafter.spell.rainbow] run return run function spellcraft
 execute as @s[tag=spellcrafter.spell.magic_missile] run function spellcrafter:spells/magic_missile/trail
 execute as @s[tag=spellcrafter.spell.fireball] run function spellcrafter:spells/fireball/trail
 execute as @s[tag=spellcrafter.spell.laser] run function spellcrafter:spells/laser/trail
+execute as @s[tag=spellcrafter.spell.crystal_laser] run function spellcrafter:spells/crystal_laser/trail
 execute as @s[tag=spellcrafter.spell.arcane_reaper] run function spellcrafter:spells/arcane_reaper/trail
 execute as @s[tag=spellcrafter.spell.shulker_bullet] run function spellcrafter:spells/shulker_bullet/trail
 execute as @s[tag=spellcrafter.spell.poison_dart] run function spellcrafter:spells/poison_dart/trail

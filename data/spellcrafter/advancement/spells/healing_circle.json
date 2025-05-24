@@ -27,47 +27,6 @@
             {
                 "text": "A large circle that gives regeneration to targets in a small radius\n",
                 "color": "gray"
-            },
-            {
-                "text": "\nDamage: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "0 ❤",
-                        "color": "red"
-                    }
-                ]
-            },
-            {
-                "text": "\nRange: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "100",
-                        "color": "red"
-                    },
-                    {
-                        "text": " blocks",
-                        "color": "dark_gray"
-                    }
-                ]
-            },
-            {
-                "text": "\nSpeed: ",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": "0",
-                        "color": "red"
-                    },
-                    {
-                        "text": " blocks/sec",
-                        "color": "dark_gray"
-                    }
-                ]
-            },
-            {
-                "text": "\n"
             }
         ],
         "frame": "goal",
@@ -75,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/arcane_shield",
+    "parent": "spellcrafter:spells/magic_barrier",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -98,7 +57,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{spellcrafter:{spell:{id:79}}}"
+                            "minecraft:custom_data": "{spellcrafter:{spell:{id:118}}}"
                         }
                     }
                 ]

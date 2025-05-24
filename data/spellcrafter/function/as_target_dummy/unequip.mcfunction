@@ -1,7 +1,5 @@
 #> as target dummy, at @s
 
-tag @s remove spellcrafter.caster
-
 data merge entity @s {Invulnerable:0b, Glowing:false}
 
 scoreboard players reset @s spellcrafter.mana

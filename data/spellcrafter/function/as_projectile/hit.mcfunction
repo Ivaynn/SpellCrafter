@@ -14,7 +14,6 @@ execute as @s[tag=spellcrafter.spell.drill] run function spellcrafter:spells/dri
 execute as @s[tag=spellcrafter.spell.boomerang] run function spellcrafter:spells/boomerang/hit
 execute as @s[tag=spellcrafter.spell.kinetic_bolt] run function spellcrafter:spells/kinetic_bolt/hit
 execute as @s[tag=spellcrafter.spell.arcane_shield] run function spellcrafter:spells/arcane_shield/hit
-execute as @s[tag=spellcrafter.spell.healing_circle] run function spellcrafter:spells/healing_circle/hit
 execute as @s[tag=spellcrafter.spell.toxic_cloud] run function spellcrafter:spells/toxic_cloud/hit
 execute as @s[tag=spellcrafter.spell.wither_blast] run function spellcrafter:spells/wither_blast/hit
 execute as @s[tag=spellcrafter.spell.big_drill] run function spellcrafter:spells/big_drill/hit

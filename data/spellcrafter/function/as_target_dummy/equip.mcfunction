@@ -1,7 +1,5 @@
 #> as target dummy, at @s
 
-tag @s add spellcrafter.caster
-
 data merge entity @s {Invulnerable:1b, Glowing:true}
 
 scoreboard players set @s spellcrafter.mana 10000

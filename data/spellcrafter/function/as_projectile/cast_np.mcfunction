@@ -14,7 +14,7 @@ execute if score $spell spellcrafter.tmp matches 20 run return run function spel
 execute if score $spell spellcrafter.tmp matches 21 run return run function spellcrafter:spells/summon_vex/cast
 execute if score $spell spellcrafter.tmp matches 22 run return run function spellcrafter:spells/teleport/cast
 execute if score $spell spellcrafter.tmp matches 23 run return run function spellcrafter:spells/summon_bat/cast
-execute if score $spell spellcrafter.tmp matches 24 run return run function spellcrafter:spells/summon_explosive/cast
+execute if score $spell spellcrafter.tmp matches 24 run return run function spellcrafter:spells/summon_crystal/cast
 execute if score $spell spellcrafter.tmp matches 25 run return run function spellcrafter:spells/counterspell/cast
 execute if score $spell spellcrafter.tmp matches 27 run return run function spellcrafter:spells/double_teleport/cast
 execute if score $spell spellcrafter.tmp matches 34 run return run function spellcrafter:spells/inverse_teleport/cast
@@ -37,6 +37,7 @@ execute if score $spell spellcrafter.tmp matches 97 run return run function spel
 execute if score $spell spellcrafter.tmp matches 115 run return run function spellcrafter:spells/magic_barrier/cast
 execute if score $spell spellcrafter.tmp matches 116 run return run function spellcrafter:spells/magic_shield/cast
 execute if score $spell spellcrafter.tmp matches 117 run return run function spellcrafter:spells/arrow_rain/cast
+execute if score $spell spellcrafter.tmp matches 118 run return run function spellcrafter:spells/healing_circle/cast
 
 
 # Special

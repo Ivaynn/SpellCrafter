@@ -1,5 +1,6 @@
 #> execute summon (marker) at the player's eye position (use_wand)
 #> execute summon (marker) at the non-player caster's eye position (use_wand)
+#> execute summon (marker) at the fake caster's position
 #> execute summon (marker) at the previous projectile in the chain when it hits something (next_spell)
 #> execute summon (marker) at the position of the projectile with multicast
 # score "$id spellcrafter.tmp" must have the caster's id
@@ -35,7 +36,7 @@ scoreboard players set $spell.remote_back spellcrafter.tmp 0
 scoreboard players set $spell.summon_slime spellcrafter.tmp 0
 scoreboard players set $spell.summon_magma spellcrafter.tmp 0
 scoreboard players set $spell.resonant_pulse spellcrafter.tmp 0
-scoreboard players set $spell.summon_explosive spellcrafter.tmp 0
+scoreboard players set $spell.summon_crystal spellcrafter.tmp 0
 
 
 # Check if wand has modifiers

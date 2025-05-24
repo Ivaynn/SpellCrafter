@@ -12,7 +12,7 @@ loot replace entity @s inventory.7 loot spellcrafter:spells/shield
 loot replace entity @s inventory.9 loot spellcrafter:spells/explosion
 loot replace entity @s inventory.10 loot spellcrafter:spells/large_explosion
 loot replace entity @s inventory.11 loot spellcrafter:spells/firework_rocket
-loot replace entity @s inventory.12 loot spellcrafter:spells/summon_explosive
+loot replace entity @s inventory.12 loot spellcrafter:spells/summon_crystal
 loot replace entity @s inventory.13 loot spellcrafter:spells/summon_lightning
 loot replace entity @s inventory.14 loot spellcrafter:spells/summon_fangs
 loot replace entity @s inventory.15 loot spellcrafter:spells/wind_charge

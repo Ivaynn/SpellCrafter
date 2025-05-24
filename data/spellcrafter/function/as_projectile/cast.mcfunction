@@ -23,7 +23,7 @@ data remove storage spellcrafter:tmp wand.spells[0]
 # Spells that have consecutive copies stack: they trigger after the last copy
 execute if score $spell.summon_slime spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 35 run function spellcrafter:spells/summon_slime/summon
 execute if score $spell.summon_magma spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 75 run function spellcrafter:spells/summon_magma/summon
-execute if score $spell.summon_explosive spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 24 run function spellcrafter:spells/summon_explosive/summon
+execute if score $spell.summon_crystal spellcrafter.tmp matches 1.. unless score $spell spellcrafter.tmp matches 24 run function spellcrafter:spells/summon_crystal/summon
 
 
 # Spells that turn into other spells (echo)
@@ -48,7 +48,7 @@ execute if score $spell spellcrafter.tmp matches 58 run return run function spel
 execute if score $spell spellcrafter.tmp matches 63 run return run function spellcrafter:spells/boomerang/projectile
 execute if score $spell spellcrafter.tmp matches 65 run return run function spellcrafter:spells/kinetic_bolt/projectile
 execute if score $spell spellcrafter.tmp matches 78 run return run function spellcrafter:spells/arcane_shield/projectile
-execute if score $spell spellcrafter.tmp matches 79 run return run function spellcrafter:spells/healing_circle/projectile
+execute if score $spell spellcrafter.tmp matches 79 run return run function spellcrafter:spells/crystal_laser/projectile
 execute if score $spell spellcrafter.tmp matches 80 run return run function spellcrafter:spells/toxic_cloud/projectile
 execute if score $spell spellcrafter.tmp matches 91 run return run function spellcrafter:spells/wither_blast/projectile
 execute if score $spell spellcrafter.tmp matches 94 run return run function spellcrafter:spells/big_drill/projectile

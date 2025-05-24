@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/root_modifier",
+    "parent": "spellcrafter:spells/aim_down",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",

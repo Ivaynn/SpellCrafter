@@ -6,7 +6,7 @@ loot replace entity @s inventory.2 loot spellcrafter:spells/diverge
 loot replace entity @s inventory.3 loot spellcrafter:spells/converge
 loot replace entity @s inventory.4 loot spellcrafter:spells/magic_shield
 loot replace entity @s inventory.5 loot spellcrafter:spells/magic_barrier
-item replace entity @s inventory.6 with minecraft:air
+loot replace entity @s inventory.6 loot spellcrafter:spells/healing_circle
 item replace entity @s inventory.7 with minecraft:air
 
 item replace entity @s inventory.9 with minecraft:air

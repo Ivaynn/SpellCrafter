@@ -21,14 +21,14 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:3, mana:30, cooldown:20, tier:2, lore:{\"text\":\"→ Laser\",\"color\":\"gold\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:24, mana:50, cooldown:10, tier:2, lore:{\"text\":\"✦ Summon Crystal\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": {
-                "text": "Laser",
+                "text": "Summon Crystal",
                 "color": "#ffff55"
             }
         },
@@ -38,12 +38,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 30",
+                    "text": "◆ 50",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 1.0",
+                            "text": "   ⌚ 0.5",
                             "color": "gray",
                             "italic": false
                         }
@@ -53,12 +53,17 @@
                     "text": ""
                 },
                 {
-                    "text": "An instant bolt that damages",
+                    "text": "Summons a magic crystal that shoots",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "everything on its path",
+                    "text": "lasers. Consecutive copies of this",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "spell merge to empower the crystal.",
                     "color": "gray",
                     "italic": false
                 },
@@ -66,37 +71,8 @@
                     "text": ""
                 },
                 {
-                    "text": "Damage: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "2 ❤",
-                            "color": "red"
-                        }
-                    ]
-                },
-                {
-                    "text": "Range: ",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": "5",
-                            "color": "red"
-                        },
-                        {
-                            "text": " blocks",
-                            "color": "dark_gray"
-                        }
-                    ]
-                },
-                {
-                    "text": ""
-                },
-                {
-                    "text": "→ Projectile",
-                    "color": "gold",
+                    "text": "✦ Instant",
+                    "color": "light_purple",
                     "italic": false
                 }
             ]
@@ -105,7 +81,7 @@
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.spell.laser"
+                    "spellcrafter.spell.summon_crystal"
                 ],
                 "mode": "replace_all"
             }

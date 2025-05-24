@@ -21,15 +21,15 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:24, mana:50, cooldown:10, tier:2, lore:{\"text\":\"✦ Summon Explosive\",\"color\":\"light_purple\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:79, mana:60, cooldown:40, tier:3, lore:{\"text\":\"→ Crystal Laser\",\"color\":\"gold\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": {
-                "text": "Summon Explosive",
-                "color": "#ffff55"
+                "text": "Crystal Laser",
+                "color": "#55ffff"
             }
         },
         {
@@ -38,12 +38,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 50",
+                    "text": "◆ 60",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.5",
+                            "text": "   ⌚ 2.0",
                             "color": "gray",
                             "italic": false
                         }
@@ -53,17 +53,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Summons a small explosive. Consecutive",
+                    "text": "An instant bolt that damages",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "copies of this spell merge to summon a",
-                    "color": "gray",
-                    "italic": false
-                },
-                {
-                    "text": "larger explosive",
+                    "text": "everything on its path",
                     "color": "gray",
                     "italic": false
                 },
@@ -71,8 +66,37 @@
                     "text": ""
                 },
                 {
-                    "text": "✦ Instant",
-                    "color": "light_purple",
+                    "text": "Damage: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "3 ❤",
+                            "color": "red"
+                        }
+                    ]
+                },
+                {
+                    "text": "Range: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": "10",
+                            "color": "red"
+                        },
+                        {
+                            "text": " blocks",
+                            "color": "dark_gray"
+                        }
+                    ]
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "text": "→ Projectile",
+                    "color": "gold",
                     "italic": false
                 }
             ]
@@ -81,7 +105,7 @@
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.spell.summon_explosive"
+                    "spellcrafter.spell.crystal_laser"
                 ],
                 "mode": "replace_all"
             }

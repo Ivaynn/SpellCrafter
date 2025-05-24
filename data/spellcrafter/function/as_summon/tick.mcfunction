@@ -9,6 +9,8 @@ execute if score @s spellcrafter.cooldown matches 1 run data modify entity @s In
 # Tick
 execute as @s[type=minecraft:goat,tag=spellcrafter.spell.angry_goat] at @s run function spellcrafter:spells/angry_goat/tick
 execute as @s[type=minecraft:endermite,tag=spellcrafter.spell.summon_endermite] at @s run function spellcrafter:spells/summon_endermite/tick
+execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.summon_crystal] at @s run function spellcrafter:spells/summon_crystal/tick
+execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.healing_circle] at @s run function spellcrafter:spells/healing_circle/tick
 
 
 # Despawn timer

@@ -13,7 +13,7 @@
         },
         "title": {
             "text": "Laser                         ",
-            "color": "#55ffff"
+            "color": "#ffff55"
         },
         "description": [
             {
@@ -21,7 +21,7 @@
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 1.5\n\n",
+                "text": "   ⌚ 1.0\n\n",
                 "color": "gray"
             },
             {
@@ -33,7 +33,7 @@
                 "color": "gray",
                 "extra": [
                     {
-                        "text": "4 ❤",
+                        "text": "2 ❤",
                         "color": "red"
                     }
                 ]
