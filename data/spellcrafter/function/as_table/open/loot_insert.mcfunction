@@ -116,3 +116,4 @@ execute if score $spell spellcrafter.tmp matches 115 run return run loot insert 
 execute if score $spell spellcrafter.tmp matches 116 run return run loot insert ~ ~ ~ loot spellcrafter:spells/magic_shield
 execute if score $spell spellcrafter.tmp matches 117 run return run loot insert ~ ~ ~ loot spellcrafter:spells/arrow_rain
 execute if score $spell spellcrafter.tmp matches 118 run return run loot insert ~ ~ ~ loot spellcrafter:spells/healing_circle
+execute if score $spell spellcrafter.tmp matches 119 run return run loot insert ~ ~ ~ loot spellcrafter:spells/healing_crystal

@@ -9,8 +9,8 @@ loot replace entity @s inventory.5 loot spellcrafter:spells/magic_barrier
 loot replace entity @s inventory.6 loot spellcrafter:spells/healing_circle
 item replace entity @s inventory.7 with minecraft:air
 
-item replace entity @s inventory.9 with minecraft:air
-item replace entity @s inventory.10 with minecraft:air
+loot replace entity @s inventory.9 loot spellcrafter:spells/summon_crystal
+loot replace entity @s inventory.10 loot spellcrafter:spells/healing_crystal
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:air
 item replace entity @s inventory.13 with minecraft:air

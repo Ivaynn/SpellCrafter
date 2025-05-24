@@ -21,15 +21,15 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:24, mana:50, cooldown:10, tier:2, lore:{\"text\":\"✦ Overcharged Crystal\",\"color\":\"light_purple\",\"italic\":false}}}}"
+            "tag": "{spellcrafter:{spell:{valid:1b, id:119, mana:150, cooldown:60, tier:4, lore:{\"text\":\"✦ Healing Crystal\",\"color\":\"light_purple\",\"italic\":false}}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": {
-                "text": "Overcharged Crystal",
-                "color": "#ffff55"
+                "text": "Healing Crystal",
+                "color": "#ff55ff"
             }
         },
         {
@@ -38,12 +38,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 50",
+                    "text": "◆ 150",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 0.5",
+                            "text": "   ⌚ 3.0",
                             "color": "gray",
                             "italic": false
                         }
@@ -53,17 +53,12 @@
                     "text": ""
                 },
                 {
-                    "text": "Summons a magic crystal that shoots",
+                    "text": "Summons a magic crystal that",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "text": "lasers. Consecutive copies of this",
-                    "color": "gray",
-                    "italic": false
-                },
-                {
-                    "text": "spell merge to empower the crystal.",
+                    "text": "shoots healing bolts at you",
                     "color": "gray",
                     "italic": false
                 },
@@ -81,7 +76,7 @@
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.spell.summon_crystal"
+                    "spellcrafter.spell.healing_crystal"
                 ],
                 "mode": "replace_all"
             }

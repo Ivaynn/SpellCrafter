@@ -6,26 +6,26 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_model_data": {
                     "strings": [
-                        "spellcrafter.spell.summon_crystal"
+                        "spellcrafter.spell.healing_crystal"
                     ]
                 }
             }
         },
         "title": {
-            "text": "Overcharged Crystal           ",
-            "color": "#ffff55"
+            "text": "Healing Crystal               ",
+            "color": "#ff55ff"
         },
         "description": [
             {
-                "text": "\n◆ 50",
+                "text": "\n◆ 150",
                 "color": "aqua"
             },
             {
-                "text": "   ⌚ 0.5\n\n",
+                "text": "   ⌚ 3.0\n\n",
                 "color": "gray"
             },
             {
-                "text": "Summons a magic crystal that shoots lasers. Consecutive copies of this spell merge to empower the crystal.\n",
+                "text": "Summons a magic crystal that shoots healing bolts at you\n",
                 "color": "gray"
             }
         ],
@@ -34,7 +34,7 @@
         "announce_to_chat": false,
         "hidden": true
     },
-    "parent": "spellcrafter:spells/summon_fangs",
+    "parent": "spellcrafter:spells/summon_crystal",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
@@ -57,7 +57,7 @@
                     {
                         "items": "minecraft:enchanted_book",
                         "predicates": {
-                            "minecraft:custom_data": "{spellcrafter:{spell:{id:24}}}"
+                            "minecraft:custom_data": "{spellcrafter:{spell:{id:119}}}"
                         }
                     }
                 ]

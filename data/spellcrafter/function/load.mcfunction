@@ -37,6 +37,7 @@ scoreboard players set #16 spellcrafter.math 16
 scoreboard players set #20 spellcrafter.math 20
 scoreboard players set #32 spellcrafter.math 32
 scoreboard players set #40 spellcrafter.math 40
+scoreboard players set #60 spellcrafter.math 60
 scoreboard players set #100 spellcrafter.math 100
 
 scoreboard objectives add spellcrafter.options dummy
