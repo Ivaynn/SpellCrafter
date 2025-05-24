@@ -37,4 +37,5 @@ execute if score $random spellcrafter.tmp matches 9 run data modify storage spel
 
 # Create projectile
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
+data modify storage spellcrafter:tmp wand.spells prepend value 44
 execute summon minecraft:marker run function spellcrafter:as_projectile/summon
