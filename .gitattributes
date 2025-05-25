@@ -1,0 +1,10 @@
+* text=auto
+
+*.mcfunction text eol=lf
+*.mcmeta text
+*.json text
+*.png binary
+
+LICENCE text
+*.md text diff=markdown
+*.py text diff=python
