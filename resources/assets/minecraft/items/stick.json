@@ -1,0 +1,75 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/stick"
+        },
+        "cases": [
+            {
+                "when": "spellcrafter.wand.stick",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/stick"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.leaf",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/leaf"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.ice",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/ice"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.fire",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/fire"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.baguetti",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/baguetti"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.obsidian",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/obsidian"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.light",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/light"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.gem",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/gem"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.zeus",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/zeus"
+                }
+            }
+        ]
+    }
+}

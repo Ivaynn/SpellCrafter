@@ -1,0 +1,96 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/knowledge_book"
+        },
+        "cases": [
+            {
+                "when": "spellcrafter.gui.arrow_up",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/arrow_up"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.arrow_down",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/arrow_down"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.trash",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/trash"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.slots_up",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/slots_up"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.slots_down",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/slots_down"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.mana_up",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/mana_up"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.mana_down",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/mana_down"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.cooldown_up",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/cooldown_up"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.cooldown_down",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/cooldown_down"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.empty_modifier",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/empty_modifier"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.appearance",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/appearance"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.empty_wand",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/empty_wand"
+                }
+            }
+        ]
+    }
+}

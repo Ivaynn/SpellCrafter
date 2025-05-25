@@ -1,0 +1,1850 @@
+[
+  {
+    "id": 1,
+    "name": "magic_missile",
+    "displayName": "Magic Missile",
+    "parent": "root_projectile",
+    "tier": 1,
+    "mana": 20,
+    "cooldown": 15,
+    "type": "projectile",
+    "description": [
+      "Basic offensive magic"
+    ],
+    "stats": {
+      "damage": 4,
+      "range": 25,
+      "speed": 8
+    }
+  },
+  {
+    "id": 2,
+    "name": "fireball",
+    "displayName": "Fire Bolt",
+    "parent": "magic_missile",
+    "tier": 1,
+    "mana": 25,
+    "cooldown": 20,
+    "type": "projectile",
+    "description": [
+      "A slow fire projectile"
+    ],
+    "stats": {
+      "damage": 6,
+      "range": 10,
+      "speed": 3
+    }
+  },
+  {
+    "id": 3,
+    "name": "laser",
+    "displayName": "Laser",
+    "parent": "fireball",
+    "tier": 2,
+    "mana": 30,
+    "cooldown": 20,
+    "type": "projectile",
+    "description": [
+      "An instant bolt that damages",
+      "everything on its path"
+    ],
+    "stats": {
+      "damage": 4,
+      "range": 5
+    }
+  },
+  {
+    "id": 4,
+    "name": "explosion",
+    "displayName": "Explosion",
+    "parent": "root_instant",
+    "tier": 4,
+    "mana": 75,
+    "cooldown": 10,
+    "type": "instant",
+    "description": [
+      "Deals damage in",
+      "a large radius"
+    ],
+    "stats": {
+      "damage": 10
+    }
+  },
+  {
+    "id": 5,
+    "name": "heal",
+    "displayName": "Heal",
+    "parent": "cleanse",
+    "tier": 3,
+    "mana": 95,
+    "cooldown": 60,
+    "type": "instant",
+    "description": [
+      "Heals targets in a small radius"
+    ],
+    "stats": {
+      "heal": 8
+    }
+  },
+  {
+    "id": 6,
+    "name": "clone",
+    "displayName": "Clone",
+    "parent": "root_modifier",
+    "tier": 5,
+    "mana": 100,
+    "cooldown": 40,
+    "type": "modifier",
+    "description": [
+      "Clones the next projectile, including",
+      "every spell after it. Duplicates the",
+      "mana cost of other clone modifiers",
+      "after this one"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "empower",
+    "displayName": "Empower",
+    "parent": "harmless",
+    "tier": 3,
+    "mana": 80,
+    "cooldown": 4,
+    "type": "modifier",
+    "description": [
+      "Increases the damage of",
+      "the next projectile"
+    ],
+    "stats": {
+      "damage_mod": 2
+    }
+  },
+  {
+    "id": 8,
+    "name": "guide",
+    "displayName": "Guide",
+    "parent": "warp",
+    "tier": 2,
+    "mana": 80,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Makes the next projectile follow",
+      "your facing direction"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "homing",
+    "displayName": "Homing",
+    "parent": "aim_assist",
+    "tier": 5,
+    "mana": 120,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Makes the next projectile follow",
+      "the nearest target"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "multicast",
+    "displayName": "Multicast",
+    "parent": "triple_cast",
+    "tier": 2,
+    "mana": 100,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Casts all the remaining spells",
+      "simultaneously with reduced",
+      "accuracy"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "multishot",
+    "displayName": "Multishot",
+    "parent": "clone",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 40,
+    "type": "modifier",
+    "description": [
+      "Creates two copies of the next",
+      "projectile, one on each side.",
+      "Copies deal reduced damage"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "random_dir",
+    "displayName": "Random Direction",
+    "parent": "orbit",
+    "tier": 3,
+    "mana": 0,
+    "cooldown": -10,
+    "type": "modifier",
+    "description": [
+      "Points the next projectile in",
+      "a random direction"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "range_dec",
+    "displayName": "Range ↓",
+    "parent": "root_modifier",
+    "tier": 2,
+    "mana": 20,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Decreases the range of",
+      "the next projectile"
+    ],
+    "stats": {
+      "range_mod": -5
+    }
+  },
+  {
+    "id": 14,
+    "name": "range_inc",
+    "displayName": "Range ↑",
+    "parent": "range_dec",
+    "tier": 1,
+    "mana": 40,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Increases the range of",
+      "the next projectile"
+    ],
+    "stats": {
+      "range_mod": 5
+    }
+  },
+  {
+    "id": 15,
+    "name": "speed_dec",
+    "displayName": "Speed ↓",
+    "parent": "long_shot",
+    "tier": 2,
+    "mana": 20,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Decreases the travel speed",
+      "of the next projectile"
+    ],
+    "stats": {
+      "speed_mod": -2
+    }
+  },
+  {
+    "id": 16,
+    "name": "speed_inc",
+    "displayName": "Speed ↑",
+    "parent": "speed_dec",
+    "tier": 1,
+    "mana": 40,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Increases the travel speed",
+      "of the next projectile"
+    ],
+    "stats": {
+      "speed_mod": 2
+    }
+  },
+  {
+    "id": 17,
+    "name": "heavy_shot",
+    "displayName": "Heavy Shot",
+    "parent": "empower",
+    "tier": 3,
+    "mana": 150,
+    "cooldown": 10,
+    "type": "modifier",
+    "description": [
+      "Greatly increases the damage",
+      "of the next projectile"
+    ],
+    "stats": {
+      "damage_mod": 4,
+      "range_mod": -10,
+      "speed_mod": -4
+    }
+  },
+  {
+    "id": 18,
+    "name": "long_shot",
+    "displayName": "Long Shot",
+    "parent": "range_inc",
+    "tier": 3,
+    "mana": 75,
+    "cooldown": 5,
+    "type": "modifier",
+    "description": [
+      "Greatly increases the range",
+      "of the next projectile"
+    ],
+    "stats": {
+      "damage_mod": -2,
+      "range_mod": 20
+    }
+  },
+  {
+    "id": 19,
+    "name": "quick_shot",
+    "displayName": "Quick Shot",
+    "parent": "speed_inc",
+    "tier": 3,
+    "mana": 75,
+    "cooldown": 5,
+    "type": "modifier",
+    "description": [
+      "Greatly increases the speed",
+      "of the next projectile"
+    ],
+    "stats": {
+      "damage_mod": -2,
+      "speed_mod": 8
+    }
+  },
+  {
+    "id": 20,
+    "name": "summon_lightning",
+    "displayName": "Summon Lightning",
+    "parent": "summon_fangs",
+    "tier": 5,
+    "mana": 250,
+    "cooldown": 60,
+    "type": "instant",
+    "description": [
+      "Summons a lightning bolt"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "summon_vex",
+    "displayName": "Summon Vex",
+    "parent": "summon_bat",
+    "tier": 3,
+    "mana": 100,
+    "cooldown": 60,
+    "type": "instant",
+    "description": [
+      "Summons a vex"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "teleport",
+    "displayName": "Teleport",
+    "parent": "root_instant",
+    "tier": 4,
+    "mana": 150,
+    "cooldown": 10,
+    "type": "instant",
+    "description": [
+      "Instantly teleports you to",
+      "the location of this spell"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "summon_bat",
+    "displayName": "Summon Bat",
+    "parent": "root_instant",
+    "tier": 2,
+    "mana": 60,
+    "cooldown": 60,
+    "type": "instant",
+    "description": [
+      "Summons a bat"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "summon_crystal",
+    "displayName": "Overcharged Crystal",
+    "parent": "root_instant",
+    "tier": 2,
+    "mana": 50,
+    "cooldown": 10,
+    "type": "instant",
+    "description": [
+      "Summons a magic crystal that shoots",
+      "lasers. Consecutive copies of this",
+      "spell merge to empower the crystal"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "counterspell",
+    "displayName": "Counterspell",
+    "parent": "double_teleport",
+    "tier": 3,
+    "mana": 100,
+    "cooldown": 10,
+    "type": "instant",
+    "description": [
+      "Stops all projectiles in a",
+      "large radius"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "ghost",
+    "displayName": "Ghost",
+    "parent": "multishot",
+    "tier": 4,
+    "mana": 75,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Causes the next projectile to",
+      "phase through blocks"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "double_teleport",
+    "displayName": "Double Teleport",
+    "parent": "inverse_teleport",
+    "tier": 4,
+    "mana": 100,
+    "cooldown": 15,
+    "type": "instant",
+    "description": [
+      "You swap places with",
+      "the closest target"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "gravity",
+    "displayName": "Curve Down",
+    "parent": "root_modifier",
+    "tier": 1,
+    "mana": 15,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Makes the next projectile",
+      "curve downwards"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "anti_gravity",
+    "displayName": "Curve Up",
+    "parent": "gravity",
+    "tier": 1,
+    "mana": 15,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Makes the next projectile",
+      "curve upwards"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "revealing_bolt",
+    "displayName": "Revealing Bolt",
+    "parent": "root_projectile",
+    "tier": 3,
+    "mana": 40,
+    "cooldown": 15,
+    "type": "projectile",
+    "description": [
+      "A slow projectile that reveals",
+      "enemies on its path"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 75,
+      "speed": 2
+    }
+  },
+  {
+    "id": 31,
+    "name": "arcane_reaper",
+    "displayName": "Arcane Reaper",
+    "parent": "root_projectile",
+    "tier": 5,
+    "mana": 50,
+    "cooldown": 20,
+    "type": "projectile",
+    "description": [
+      "Devours nearby projectiles,",
+      "absorbing their power"
+    ],
+    "stats": {
+      "damage": 2,
+      "range": 5,
+      "speed": 1
+    }
+  },
+  {
+    "id": 32,
+    "name": "instant",
+    "displayName": "Instant",
+    "parent": "accelerate",
+    "tier": 5,
+    "mana": 75,
+    "cooldown": 50,
+    "type": "modifier",
+    "description": [
+      "Turns the next projectile into",
+      "an instant burst of energy,",
+      "ignoring its speed"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "piercing",
+    "displayName": "Piercing",
+    "parent": "ghost",
+    "tier": 3,
+    "mana": 80,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Causes the next projectile to",
+      "pierce through targets, dealing",
+      "reduced damage"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "inverse_teleport",
+    "displayName": "Inverse Teleport",
+    "parent": "teleport",
+    "tier": 4,
+    "mana": 100,
+    "cooldown": 15,
+    "type": "instant",
+    "description": [
+      "Teleports the closest target",
+      "to you"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "summon_slime",
+    "displayName": "Summon Slime",
+    "parent": "summon_vex",
+    "tier": 2,
+    "mana": 25,
+    "cooldown": 20,
+    "type": "instant",
+    "description": [
+      "Summons a slime. Consecutive copies",
+      "of this spell merge to create a",
+      "tower of slimes"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "summon_endermite",
+    "displayName": "Summon Endermite",
+    "parent": "summon_magma",
+    "tier": 3,
+    "mana": 150,
+    "cooldown": 60,
+    "type": "instant",
+    "description": [
+      "Summons an endermite"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "summon_arrow",
+    "displayName": "Summon Arrow",
+    "parent": "wind_charge",
+    "tier": 2,
+    "mana": 5,
+    "cooldown": 20,
+    "type": "instant",
+    "description": [
+      "Shoots an arrow with",
+      "your facing direction"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "firework_rocket",
+    "displayName": "Firework Rocket",
+    "parent": "large_explosion",
+    "tier": 3,
+    "mana": 100,
+    "cooldown": 10,
+    "type": "instant",
+    "description": [
+      "Launches a random firework rocket"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "shulker_bullet",
+    "displayName": "Shulker Bullet",
+    "parent": "revealing_bolt",
+    "tier": 4,
+    "mana": 150,
+    "cooldown": 50,
+    "type": "projectile",
+    "description": [
+      "A homing shulker bullet that",
+      "inflicts levitation on its target"
+    ],
+    "stats": {
+      "damage": 2,
+      "range": 40,
+      "speed": 1
+    }
+  },
+  {
+    "id": 40,
+    "name": "harmless",
+    "displayName": "Harmless",
+    "parent": "root_modifier",
+    "tier": 2,
+    "mana": 5,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Prevents the next projectile",
+      "from dealing any damage"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "hidden",
+    "displayName": "Hidden",
+    "parent": "anchored",
+    "tier": 5,
+    "mana": 30,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Conceals the next projectile's",
+      "trail, but reduces its damage"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "rainbow",
+    "displayName": "Rainbow",
+    "parent": "hidden",
+    "tier": 3,
+    "mana": 20,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Replaces the next projectile's",
+      "trail with a colorful one"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "zigzag",
+    "displayName": "Zigzag",
+    "parent": "spiral",
+    "tier": 2,
+    "mana": 25,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Gives the next projectile a",
+      "Z-shaped trajectory"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "chaotic",
+    "displayName": "Chaotic",
+    "parent": "anti_gravity",
+    "tier": 3,
+    "mana": 15,
+    "cooldown": -8,
+    "type": "modifier",
+    "description": [
+      "Gives the next projectile an",
+      "unpredictable trajectory with",
+      "random speed and range"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "remote_cast",
+    "displayName": "Remote Cast",
+    "parent": "root_modifier",
+    "tier": 3,
+    "mana": 20,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Casts the next projectile",
+      "a short distance forward"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "null_shot",
+    "displayName": "Null Shot",
+    "parent": "mirror_shot",
+    "tier": 4,
+    "mana": 0,
+    "cooldown": 4,
+    "type": "projectile",
+    "description": [
+      "An empty projectile"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "refresh",
+    "displayName": "Refresh",
+    "parent": "multicast",
+    "tier": 4,
+    "mana": -100,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Reduces the wand's mana cost"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "haste",
+    "displayName": "Haste",
+    "parent": "refresh",
+    "tier": 4,
+    "mana": 0,
+    "cooldown": -20,
+    "type": "special",
+    "description": [
+      "Reduces the wand's cooldown"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "shield",
+    "displayName": "Shield",
+    "parent": "heal",
+    "tier": 4,
+    "mana": 75,
+    "cooldown": 100,
+    "type": "instant",
+    "description": [
+      "Shields targets in a small",
+      "radius, stopping all damage",
+      "for a brief moment"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "echo",
+    "displayName": "Echo",
+    "parent": "root_special",
+    "tier": 5,
+    "mana": 25,
+    "cooldown": 4,
+    "type": "special",
+    "description": [
+      "Casts a copy of the next",
+      "spell in the wand"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "spiral",
+    "displayName": "Spiral",
+    "parent": "chaotic",
+    "tier": 2,
+    "mana": 25,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Gives the next projectile a",
+      "spiral trajectory"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "shuffle",
+    "displayName": "Shuffle",
+    "parent": "final_echo",
+    "tier": 1,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Randomly sorts all spells",
+      "after this one, reducing",
+      "their mana cost"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "poison_dart",
+    "displayName": "Poison Dart",
+    "parent": "toxic_cloud",
+    "tier": 2,
+    "mana": 35,
+    "cooldown": 6,
+    "type": "projectile",
+    "description": [
+      "A quick projectile that inflicts",
+      "poison on its target"
+    ],
+    "stats": {
+      "damage": 2,
+      "range": 40,
+      "speed": 8
+    }
+  },
+  {
+    "id": 54,
+    "name": "aim_assist",
+    "displayName": "Aim Assist",
+    "parent": "random_dir",
+    "tier": 3,
+    "mana": 30,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Points the next projectile at",
+      "the nearest target"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "scaling",
+    "displayName": "Scaling",
+    "parent": "heavy_shot",
+    "tier": 3,
+    "mana": 55,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Gradually increases the damage",
+      "of the next projectile over time"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "summon_fangs",
+    "displayName": "Summon Fangs",
+    "parent": "firework_rocket",
+    "tier": 2,
+    "mana": 40,
+    "cooldown": 30,
+    "type": "instant",
+    "description": [
+      "Summons evoker fangs at every",
+      "target in a small radius"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "freezing_bolt",
+    "displayName": "Freezing Bolt",
+    "parent": "poison_dart",
+    "tier": 2,
+    "mana": 40,
+    "cooldown": 25,
+    "type": "projectile",
+    "description": [
+      "Freezes its surroundings",
+      "and slows targets"
+    ],
+    "stats": {
+      "damage": 4,
+      "range": 15,
+      "speed": 7
+    }
+  },
+  {
+    "id": 58,
+    "name": "drill",
+    "displayName": "Drill",
+    "parent": "root_projectile",
+    "tier": 2,
+    "mana": 40,
+    "cooldown": 4,
+    "type": "projectile",
+    "description": [
+      "A slow projectile that destroys",
+      "blocks on its path"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 2,
+      "speed": 5
+    }
+  },
+  {
+    "id": 59,
+    "name": "anchored",
+    "displayName": "Anchored",
+    "parent": "root_modifier",
+    "tier": 3,
+    "mana": 5,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Stops the next projectile from",
+      "moving. Its lifetime depends on",
+      "its range"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "resonant_pulse",
+    "displayName": "Resonant Pulse",
+    "parent": "big_drill",
+    "tier": 2,
+    "mana": 20,
+    "cooldown": 5,
+    "type": "projectile",
+    "description": [
+      "Consecutive copies of this",
+      "spell merge into a stronger",
+      "projectile"
+    ],
+    "stats": {
+      "damage": 3,
+      "range": 10,
+      "speed": 4
+    }
+  },
+  {
+    "id": 61,
+    "name": "return",
+    "displayName": "Return",
+    "parent": "piercing",
+    "tier": 3,
+    "mana": 15,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Causes the next projectile to",
+      "slow down, then accelerate",
+      "back towards its initial position"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "trick_shot",
+    "displayName": "Trick Shot",
+    "parent": "return",
+    "tier": 3,
+    "mana": 10,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Causes the next projectile to",
+      "shoot backwards"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "boomerang",
+    "displayName": "Boomerang",
+    "parent": "kinetic_bolt",
+    "tier": 2,
+    "mana": 45,
+    "cooldown": 10,
+    "type": "projectile",
+    "description": [
+      "A quick projectile that returns",
+      "to its initial position"
+    ],
+    "stats": {
+      "damage": 10,
+      "range": 55,
+      "speed": 10
+    }
+  },
+  {
+    "id": 64,
+    "name": "sharp",
+    "displayName": "Sharp",
+    "parent": "root_special",
+    "tier": 4,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Increases the wand's attack",
+      "damage, but drains your mana",
+      "while holding it"
+    ],
+    "stats": {
+      "damage_mod": 2
+    }
+  },
+  {
+    "id": 65,
+    "name": "kinetic_bolt",
+    "displayName": "Kinetic Bolt",
+    "parent": "crystal_laser",
+    "tier": 3,
+    "mana": 60,
+    "cooldown": 15,
+    "type": "projectile",
+    "description": [
+      "Deals more damage the",
+      "faster it moves"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 15,
+      "speed": 2
+    }
+  },
+  {
+    "id": 66,
+    "name": "accelerate",
+    "displayName": "Accelerate",
+    "parent": "scaling",
+    "tier": 2,
+    "mana": 40,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Gradually increases the speed",
+      "of the next projectile over time"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "wave",
+    "displayName": "Wave",
+    "parent": "zigzag",
+    "tier": 2,
+    "mana": 25,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Gives the next projectile a",
+      "wave trajectory"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "warp",
+    "displayName": "Warp",
+    "parent": "homing",
+    "tier": 5,
+    "mana": 70,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Teleports the next projectile",
+      "to the nearest target"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "secret",
+    "displayName": "Secret",
+    "parent": "root_special",
+    "tier": 2,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Obfuscates the spells on the",
+      "wand's item description"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "locked",
+    "displayName": "Locked",
+    "parent": "secret",
+    "tier": 2,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Prevents other players from",
+      "editing the wand"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "cleanse",
+    "displayName": "Cleanse",
+    "parent": "root_instant",
+    "tier": 2,
+    "mana": 50,
+    "cooldown": 40,
+    "type": "instant",
+    "description": [
+      "Clears all effects from",
+      "targets in a small radius"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "angry_goat",
+    "displayName": "Angry Goat",
+    "parent": "summon_endermite",
+    "tier": 3,
+    "mana": 120,
+    "cooldown": 60,
+    "type": "instant",
+    "description": [
+      "Summons an angry goat"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "smoke_bomb",
+    "displayName": "Smoke Bomb",
+    "parent": "shield",
+    "tier": 3,
+    "mana": 40,
+    "cooldown": 30,
+    "type": "instant",
+    "description": [
+      "Creates a smoke bomb that",
+      "turns targets invisible for",
+      "a brief moment"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "flash",
+    "displayName": "Flash",
+    "parent": "smoke_bomb",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 40,
+    "type": "instant",
+    "description": [
+      "Blinds anyone looking at it"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "summon_magma",
+    "displayName": "Summon Magma Cube",
+    "parent": "summon_slime",
+    "tier": 3,
+    "mana": 45,
+    "cooldown": 20,
+    "type": "instant",
+    "description": [
+      "Summons a magma cube. Consecutive",
+      "copies of this spell merge to",
+      "increase the magma cube's size"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "follow",
+    "displayName": "Follow",
+    "parent": "rainbow",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Makes the next projectile",
+      "follow you"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "safe_shot",
+    "displayName": "Safe Shot",
+    "parent": "follow",
+    "tier": 2,
+    "mana": 25,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Prevents the next projectile",
+      "from hitting you, but reduces",
+      "its damage"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "arcane_shield",
+    "displayName": "Arcane Shield",
+    "parent": "arcane_reaper",
+    "tier": 4,
+    "mana": 120,
+    "cooldown": 40,
+    "type": "projectile",
+    "description": [
+      "Stops all enemy projectiles",
+      "in a small radius"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 100,
+      "speed": 0
+    }
+  },
+  {
+    "id": 79,
+    "name": "crystal_laser",
+    "displayName": "Crystal Laser",
+    "parent": "laser",
+    "tier": 3,
+    "mana": 60,
+    "cooldown": 40,
+    "type": "projectile",
+    "description": [
+      "An instant bolt that damages",
+      "everything on its path"
+    ],
+    "stats": {
+      "damage": 6,
+      "range": 15
+    }
+  },
+  {
+    "id": 80,
+    "name": "toxic_cloud",
+    "displayName": "Toxic Cloud",
+    "parent": "arcane_shield",
+    "tier": 3,
+    "mana": 80,
+    "cooldown": 40,
+    "type": "projectile",
+    "description": [
+      "A toxic cloud that applies",
+      "a strong poison to targets",
+      "in a small radius"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 60,
+      "speed": 0
+    }
+  },
+  {
+    "id": 81,
+    "name": "bouncy",
+    "displayName": "Bouncy",
+    "parent": "safe_shot",
+    "tier": 2,
+    "mana": 35,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Makes the next projectile",
+      "bounce on walls"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "wind_charge",
+    "displayName": "Wind Charge",
+    "parent": "root_instant",
+    "tier": 3,
+    "mana": 80,
+    "cooldown": 10,
+    "type": "instant",
+    "description": [
+      "Shoots a wind charge with",
+      "your facing direction"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "extended",
+    "displayName": "Extended",
+    "parent": "sharp",
+    "tier": 4,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Increases the wand's attack",
+      "range, but drains your mana",
+      "while holding it"
+    ],
+    "stats": {
+      "range_mod": 1
+    }
+  },
+  {
+    "id": 84,
+    "name": "quickstep",
+    "displayName": "Quickstep",
+    "parent": "extended",
+    "tier": 4,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Increases your movement",
+      "speed, but drains your mana",
+      "while holding the wand"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "diverge",
+    "displayName": "Divergent Force",
+    "parent": "counterspell",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 30,
+    "type": "instant",
+    "description": [
+      "Makes projectiles in a large",
+      "radius point away from this"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "converge",
+    "displayName": "Convergent Force",
+    "parent": "diverge",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 30,
+    "type": "instant",
+    "description": [
+      "Makes projectiles in a large",
+      "radius point towards this"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "orbit",
+    "displayName": "Orbit",
+    "parent": "root_modifier",
+    "tier": 2,
+    "mana": 20,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Makes the next projectile",
+      "orbit around you"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "double_cast",
+    "displayName": "Double Cast",
+    "parent": "root_special",
+    "tier": 2,
+    "mana": 60,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Casts one extra projectile",
+      "simultaneously with reduced",
+      "accuracy"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "triple_cast",
+    "displayName": "Triple Cast",
+    "parent": "double_cast",
+    "tier": 2,
+    "mana": 80,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Casts two extra projectiles",
+      "simultaneously with reduced",
+      "accuracy"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "large_explosion",
+    "displayName": "Large Explosion",
+    "parent": "explosion",
+    "tier": 5,
+    "mana": 150,
+    "cooldown": 20,
+    "type": "instant",
+    "description": [
+      "Deals great damage",
+      "in a large radius"
+    ],
+    "stats": {
+      "damage": 20
+    }
+  },
+  {
+    "id": 91,
+    "name": "wither_blast",
+    "displayName": "Wither Blast",
+    "parent": "freezing_bolt",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 30,
+    "type": "projectile",
+    "description": [
+      "Shoots a projectile that applies",
+      "the wither effect"
+    ],
+    "stats": {
+      "damage": 8,
+      "range": 50,
+      "speed": 5
+    }
+  },
+  {
+    "id": 92,
+    "name": "skip",
+    "displayName": "Skip",
+    "parent": "reverse",
+    "tier": 4,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Skips the next spell. Sets its",
+      "cooldown and mana cost to 0"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "final_echo",
+    "displayName": "Final Echo",
+    "parent": "chaotic_echo",
+    "tier": 5,
+    "mana": 30,
+    "cooldown": 4,
+    "type": "special",
+    "description": [
+      "Casts a copy of the last",
+      "spell in the wand"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "big_drill",
+    "displayName": "Big Drill",
+    "parent": "drill",
+    "tier": 3,
+    "mana": 60,
+    "cooldown": 4,
+    "type": "projectile",
+    "description": [
+      "An upgraded version of the Drill,",
+      "a slow projectile that destroys",
+      "blocks on its path"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 2,
+      "speed": 5
+    }
+  },
+  {
+    "id": 95,
+    "name": "reverse",
+    "displayName": "Reverse",
+    "parent": "shuffle",
+    "tier": 4,
+    "mana": 25,
+    "cooldown": 4,
+    "type": "special",
+    "description": [
+      "Inverts the order of all",
+      "spells after this one"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "chaotic_echo",
+    "displayName": "Chaotic Echo",
+    "parent": "echo",
+    "tier": 5,
+    "mana": 20,
+    "cooldown": 4,
+    "type": "special",
+    "description": [
+      "Casts a copy of a random",
+      "spell after this one"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "forced_cast",
+    "displayName": "Forced Cast",
+    "parent": "flash",
+    "tier": 3,
+    "mana": 45,
+    "cooldown": 5,
+    "type": "instant",
+    "description": [
+      "Forces the nearest target's",
+      "wand to fire"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "vampiric_shot",
+    "displayName": "Vampiric Shot",
+    "parent": "soul_link",
+    "tier": 3,
+    "mana": 40,
+    "cooldown": 12,
+    "type": "projectile",
+    "description": [
+      "A projectile that heals you",
+      "if it hits a target"
+    ],
+    "stats": {
+      "damage": 4,
+      "range": 15,
+      "speed": 10,
+      "heal": 4
+    }
+  },
+  {
+    "id": 99,
+    "name": "drain_bolt",
+    "displayName": "Drain Bolt",
+    "parent": "vampiric_shot",
+    "tier": 4,
+    "mana": 100,
+    "cooldown": 10,
+    "type": "projectile",
+    "description": [
+      "A projectile that steals a",
+      "fraction of the target's",
+      "mana for you"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 15,
+      "speed": 10
+    }
+  },
+  {
+    "id": 100,
+    "name": "mirror_shot",
+    "displayName": "Mirror Shot",
+    "parent": "resonant_pulse",
+    "tier": 3,
+    "mana": 85,
+    "cooldown": 15,
+    "type": "projectile",
+    "description": [
+      "Stationary, turns into a copy",
+      "of the nearest projectile"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 0
+    }
+  },
+  {
+    "id": 101,
+    "name": "healing_bolt",
+    "displayName": "Healing Bolt",
+    "parent": "shulker_bullet",
+    "tier": 3,
+    "mana": 60,
+    "cooldown": 25,
+    "type": "projectile",
+    "description": [
+      "A projectile that heals",
+      "its targets"
+    ],
+    "stats": {
+      "damage": 0,
+      "range": 15,
+      "speed": 10,
+      "heal": 4
+    }
+  },
+  {
+    "id": 102,
+    "name": "soul_link",
+    "displayName": "Soul Link",
+    "parent": "healing_bolt",
+    "tier": 4,
+    "mana": 70,
+    "cooldown": 30,
+    "type": "projectile",
+    "description": [
+      "A projectile that also damages",
+      "you when it hits a target"
+    ],
+    "stats": {
+      "damage": 12,
+      "range": 50,
+      "speed": 20
+    }
+  },
+  {
+    "id": 103,
+    "name": "aim_up",
+    "displayName": "Aim Up",
+    "parent": "height_lock",
+    "tier": 2,
+    "mana": 10,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Points the next projectile up"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "aim_down",
+    "displayName": "Aim Down",
+    "parent": "aim_up",
+    "tier": 2,
+    "mana": 10,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Points the next projectile down"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "remote_up",
+    "displayName": "Remote Cast: Up",
+    "parent": "remote_back",
+    "tier": 2,
+    "mana": 15,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Casts the next projectile",
+      "a short distance above"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "remote_down",
+    "displayName": "Remote Cast: Down",
+    "parent": "remote_up",
+    "tier": 2,
+    "mana": 15,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Casts the next projectile",
+      "a short distance below"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "remote_back",
+    "displayName": "Remote Cast: Back",
+    "parent": "remote_cast",
+    "tier": 2,
+    "mana": 15,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Casts the next projectile",
+      "a short distance behind"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "casters_call",
+    "displayName": "Caster's Call",
+    "parent": "aim_down",
+    "tier": 3,
+    "mana": 15,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Teleports the next projectile",
+      "to you"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "casters_pull",
+    "displayName": "Caster's Pull",
+    "parent": "casters_call",
+    "tier": 3,
+    "mana": 10,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Points the next projectile",
+      "at you"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "casters_aim",
+    "displayName": "Caster's Aim",
+    "parent": "casters_pull",
+    "tier": 2,
+    "mana": 5,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Gives the next projectile",
+      "your facing direction"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "delayed_cast",
+    "displayName": "Delayed Cast",
+    "parent": "null_shot",
+    "tier": 4,
+    "mana": 10,
+    "cooldown": 4,
+    "type": "projectile",
+    "description": [
+      "Stationary, lasts for",
+      "5 seconds or until",
+      "something touches it"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "transfer",
+    "displayName": "Transfer",
+    "parent": "locked",
+    "tier": 4,
+    "mana": 25,
+    "cooldown": 0,
+    "type": "special",
+    "description": [
+      "Transfers the ownership of all",
+      "spells after this to the nearest",
+      "caster, excluding you"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "steal",
+    "displayName": "Steal",
+    "parent": "transfer",
+    "tier": 4,
+    "mana": 50,
+    "cooldown": 10,
+    "type": "special",
+    "description": [
+      "Gives you the ownership of all",
+      "projectiles in a large radius"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "height_lock",
+    "displayName": "Height Lock",
+    "parent": "root_modifier",
+    "tier": 1,
+    "mana": 15,
+    "cooldown": 0,
+    "type": "modifier",
+    "description": [
+      "Forces the next projectile to",
+      "maintain a constant height"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "magic_barrier",
+    "displayName": "Magic Barrier",
+    "parent": "magic_shield",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 40,
+    "type": "instant",
+    "description": [
+      "A large and unbreakable shield",
+      "that blocks projectiles"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "magic_shield",
+    "displayName": "Magic Shield",
+    "parent": "root_instant",
+    "tier": 1,
+    "mana": 15,
+    "cooldown": 10,
+    "type": "instant",
+    "description": [
+      "Basic defensive magic"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "arrow_rain",
+    "displayName": "Arrow Rain",
+    "parent": "summon_arrow",
+    "tier": 3,
+    "mana": 25,
+    "cooldown": 30,
+    "type": "instant",
+    "description": [
+      "Arrows fall from the sky,",
+      "damaging everything in a",
+      "small radius"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "healing_circle",
+    "displayName": "Healing Circle",
+    "parent": "magic_barrier",
+    "tier": 3,
+    "mana": 100,
+    "cooldown": 40,
+    "type": "instant",
+    "description": [
+      "A large circle that gives",
+      "regeneration to targets",
+      "in a small radius"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "healing_crystal",
+    "displayName": "Healing Crystal",
+    "parent": "summon_crystal",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 15,
+    "type": "instant",
+    "description": [
+      "Summons a magic crystal that shoots",
+      "healing bolts at you. Consecutive",
+      "copies of this spell merge to empower",
+      "the crystal"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "chaotic_crystal",
+    "displayName": "Chaotic Crystal",
+    "parent": "healing_crystal",
+    "tier": 2,
+    "mana": 30,
+    "cooldown": 10,
+    "type": "instant",
+    "description": [
+      "Summons a magic crystal that shoots",
+      "random projectiles. Consecutive copies",
+      "of this spell merge to empower the crystal"
+    ]
+  }
+]
