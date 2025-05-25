@@ -8,6 +8,7 @@
     "mana": 20,
     "cooldown": 15,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Basic offensive magic"
     ],
@@ -26,6 +27,7 @@
     "mana": 25,
     "cooldown": 20,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A slow fire projectile"
     ],
@@ -44,6 +46,7 @@
     "mana": 30,
     "cooldown": 20,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "An instant bolt that damages",
       "everything on its path"
@@ -62,6 +65,7 @@
     "mana": 75,
     "cooldown": 10,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Deals damage in",
       "a large radius"
@@ -79,6 +83,7 @@
     "mana": 95,
     "cooldown": 60,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Heals targets in a small radius"
     ],
@@ -95,6 +100,7 @@
     "mana": 100,
     "cooldown": 40,
     "type": "modifier",
+    "wandModifier": false,
     "description": [
       "Clones the next projectile, including",
       "every spell after it. Duplicates the",
@@ -111,6 +117,7 @@
     "mana": 80,
     "cooldown": 4,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Increases the damage of",
       "the next projectile"
@@ -128,6 +135,7 @@
     "mana": 80,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Makes the next projectile follow",
       "your facing direction"
@@ -142,6 +150,7 @@
     "mana": 120,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Makes the next projectile follow",
       "the nearest target"
@@ -156,6 +165,7 @@
     "mana": 100,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": true,
     "description": [
       "Casts all the remaining spells",
       "simultaneously with reduced",
@@ -171,6 +181,7 @@
     "mana": 50,
     "cooldown": 40,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Creates two copies of the next",
       "projectile, one on each side.",
@@ -186,6 +197,7 @@
     "mana": 0,
     "cooldown": -10,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Points the next projectile in",
       "a random direction"
@@ -200,6 +212,7 @@
     "mana": 20,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Decreases the range of",
       "the next projectile"
@@ -217,6 +230,7 @@
     "mana": 40,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Increases the range of",
       "the next projectile"
@@ -234,6 +248,7 @@
     "mana": 20,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Decreases the travel speed",
       "of the next projectile"
@@ -251,6 +266,7 @@
     "mana": 40,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Increases the travel speed",
       "of the next projectile"
@@ -268,6 +284,7 @@
     "mana": 150,
     "cooldown": 10,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Greatly increases the damage",
       "of the next projectile"
@@ -287,6 +304,7 @@
     "mana": 75,
     "cooldown": 5,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Greatly increases the range",
       "of the next projectile"
@@ -305,6 +323,7 @@
     "mana": 75,
     "cooldown": 5,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Greatly increases the speed",
       "of the next projectile"
@@ -323,6 +342,7 @@
     "mana": 250,
     "cooldown": 60,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons a lightning bolt"
     ]
@@ -336,6 +356,7 @@
     "mana": 100,
     "cooldown": 60,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons a vex"
     ]
@@ -349,6 +370,7 @@
     "mana": 150,
     "cooldown": 10,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Instantly teleports you to",
       "the location of this spell"
@@ -363,6 +385,7 @@
     "mana": 60,
     "cooldown": 60,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons a bat"
     ]
@@ -376,6 +399,7 @@
     "mana": 50,
     "cooldown": 10,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons a magic crystal that shoots",
       "lasers. Consecutive copies of this",
@@ -391,6 +415,7 @@
     "mana": 100,
     "cooldown": 10,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Stops all projectiles in a",
       "large radius"
@@ -405,6 +430,7 @@
     "mana": 75,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Causes the next projectile to",
       "phase through blocks"
@@ -419,6 +445,7 @@
     "mana": 100,
     "cooldown": 15,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "You swap places with",
       "the closest target"
@@ -433,6 +460,7 @@
     "mana": 15,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Makes the next projectile",
       "curve downwards"
@@ -447,6 +475,7 @@
     "mana": 15,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Makes the next projectile",
       "curve upwards"
@@ -461,6 +490,7 @@
     "mana": 40,
     "cooldown": 15,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A slow projectile that reveals",
       "enemies on its path"
@@ -480,6 +510,7 @@
     "mana": 50,
     "cooldown": 20,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Devours nearby projectiles,",
       "absorbing their power"
@@ -499,6 +530,7 @@
     "mana": 75,
     "cooldown": 50,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Turns the next projectile into",
       "an instant burst of energy,",
@@ -514,6 +546,7 @@
     "mana": 80,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Causes the next projectile to",
       "pierce through targets, dealing",
@@ -529,6 +562,7 @@
     "mana": 100,
     "cooldown": 15,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Teleports the closest target",
       "to you"
@@ -543,6 +577,7 @@
     "mana": 25,
     "cooldown": 20,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons a slime. Consecutive copies",
       "of this spell merge to create a",
@@ -558,6 +593,7 @@
     "mana": 150,
     "cooldown": 60,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons an endermite"
     ]
@@ -571,6 +607,7 @@
     "mana": 5,
     "cooldown": 20,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Shoots an arrow with",
       "your facing direction"
@@ -585,6 +622,7 @@
     "mana": 100,
     "cooldown": 10,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Launches a random firework rocket"
     ]
@@ -598,6 +636,7 @@
     "mana": 150,
     "cooldown": 50,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A homing shulker bullet that",
       "inflicts levitation on its target"
@@ -617,6 +656,7 @@
     "mana": 5,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Prevents the next projectile",
       "from dealing any damage"
@@ -631,6 +671,7 @@
     "mana": 30,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Conceals the next projectile's",
       "trail, but reduces its damage"
@@ -645,6 +686,7 @@
     "mana": 20,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Replaces the next projectile's",
       "trail with a colorful one"
@@ -659,6 +701,7 @@
     "mana": 25,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Gives the next projectile a",
       "Z-shaped trajectory"
@@ -673,6 +716,7 @@
     "mana": 15,
     "cooldown": -8,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Gives the next projectile an",
       "unpredictable trajectory with",
@@ -688,6 +732,7 @@
     "mana": 20,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Casts the next projectile",
       "a short distance forward"
@@ -702,6 +747,7 @@
     "mana": 0,
     "cooldown": 4,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "An empty projectile"
     ]
@@ -715,6 +761,7 @@
     "mana": -100,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Reduces the wand's mana cost"
     ]
@@ -728,6 +775,7 @@
     "mana": 0,
     "cooldown": -20,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Reduces the wand's cooldown"
     ]
@@ -741,6 +789,7 @@
     "mana": 75,
     "cooldown": 100,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Shields targets in a small",
       "radius, stopping all damage",
@@ -756,6 +805,7 @@
     "mana": 25,
     "cooldown": 4,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Casts a copy of the next",
       "spell in the wand"
@@ -770,6 +820,7 @@
     "mana": 25,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Gives the next projectile a",
       "spiral trajectory"
@@ -784,6 +835,7 @@
     "mana": 0,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": true,
     "description": [
       "Randomly sorts all spells",
       "after this one, reducing",
@@ -799,6 +851,7 @@
     "mana": 35,
     "cooldown": 6,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A quick projectile that inflicts",
       "poison on its target"
@@ -818,6 +871,7 @@
     "mana": 30,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Points the next projectile at",
       "the nearest target"
@@ -832,6 +886,7 @@
     "mana": 55,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Gradually increases the damage",
       "of the next projectile over time"
@@ -846,6 +901,7 @@
     "mana": 40,
     "cooldown": 30,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons evoker fangs at every",
       "target in a small radius"
@@ -860,6 +916,7 @@
     "mana": 40,
     "cooldown": 25,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Freezes its surroundings",
       "and slows targets"
@@ -879,6 +936,7 @@
     "mana": 40,
     "cooldown": 4,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A slow projectile that destroys",
       "blocks on its path"
@@ -898,6 +956,7 @@
     "mana": 5,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Stops the next projectile from",
       "moving. Its lifetime depends on",
@@ -913,6 +972,7 @@
     "mana": 20,
     "cooldown": 5,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Consecutive copies of this",
       "spell merge into a stronger",
@@ -933,6 +993,7 @@
     "mana": 15,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Causes the next projectile to",
       "slow down, then accelerate",
@@ -948,6 +1009,7 @@
     "mana": 10,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Causes the next projectile to",
       "shoot backwards"
@@ -962,6 +1024,7 @@
     "mana": 45,
     "cooldown": 10,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A quick projectile that returns",
       "to its initial position"
@@ -981,6 +1044,7 @@
     "mana": 0,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Increases the wand's attack",
       "damage, but drains your mana",
@@ -999,6 +1063,7 @@
     "mana": 60,
     "cooldown": 15,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Deals more damage the",
       "faster it moves"
@@ -1018,6 +1083,7 @@
     "mana": 40,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Gradually increases the speed",
       "of the next projectile over time"
@@ -1032,6 +1098,7 @@
     "mana": 25,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Gives the next projectile a",
       "wave trajectory"
@@ -1046,6 +1113,7 @@
     "mana": 70,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Teleports the next projectile",
       "to the nearest target"
@@ -1060,6 +1128,7 @@
     "mana": 0,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Obfuscates the spells on the",
       "wand's item description"
@@ -1074,6 +1143,7 @@
     "mana": 0,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Prevents other players from",
       "editing the wand"
@@ -1088,6 +1158,7 @@
     "mana": 50,
     "cooldown": 40,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Clears all effects from",
       "targets in a small radius"
@@ -1102,6 +1173,7 @@
     "mana": 120,
     "cooldown": 60,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons an angry goat"
     ]
@@ -1115,6 +1187,7 @@
     "mana": 40,
     "cooldown": 30,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Creates a smoke bomb that",
       "turns targets invisible for",
@@ -1130,6 +1203,7 @@
     "mana": 50,
     "cooldown": 40,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Blinds anyone looking at it"
     ]
@@ -1143,6 +1217,7 @@
     "mana": 45,
     "cooldown": 20,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons a magma cube. Consecutive",
       "copies of this spell merge to",
@@ -1158,6 +1233,7 @@
     "mana": 50,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Makes the next projectile",
       "follow you"
@@ -1172,6 +1248,7 @@
     "mana": 25,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Prevents the next projectile",
       "from hitting you, but reduces",
@@ -1187,6 +1264,7 @@
     "mana": 120,
     "cooldown": 40,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Stops all enemy projectiles",
       "in a small radius"
@@ -1206,6 +1284,7 @@
     "mana": 60,
     "cooldown": 40,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "An instant bolt that damages",
       "everything on its path"
@@ -1224,6 +1303,7 @@
     "mana": 80,
     "cooldown": 40,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A toxic cloud that applies",
       "a strong poison to targets",
@@ -1244,6 +1324,7 @@
     "mana": 35,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Makes the next projectile",
       "bounce on walls"
@@ -1258,6 +1339,7 @@
     "mana": 80,
     "cooldown": 10,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Shoots a wind charge with",
       "your facing direction"
@@ -1272,6 +1354,7 @@
     "mana": 0,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Increases the wand's attack",
       "range, but drains your mana",
@@ -1290,6 +1373,7 @@
     "mana": 0,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Increases your movement",
       "speed, but drains your mana",
@@ -1305,6 +1389,7 @@
     "mana": 50,
     "cooldown": 30,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Makes projectiles in a large",
       "radius point away from this"
@@ -1319,6 +1404,7 @@
     "mana": 50,
     "cooldown": 30,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Makes projectiles in a large",
       "radius point towards this"
@@ -1333,6 +1419,7 @@
     "mana": 20,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Makes the next projectile",
       "orbit around you"
@@ -1347,6 +1434,7 @@
     "mana": 60,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Casts one extra projectile",
       "simultaneously with reduced",
@@ -1362,6 +1450,7 @@
     "mana": 80,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Casts two extra projectiles",
       "simultaneously with reduced",
@@ -1377,6 +1466,7 @@
     "mana": 150,
     "cooldown": 20,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Deals great damage",
       "in a large radius"
@@ -1394,6 +1484,7 @@
     "mana": 50,
     "cooldown": 30,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Shoots a projectile that applies",
       "the wither effect"
@@ -1413,6 +1504,7 @@
     "mana": 0,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Skips the next spell. Sets its",
       "cooldown and mana cost to 0"
@@ -1427,6 +1519,7 @@
     "mana": 30,
     "cooldown": 4,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Casts a copy of the last",
       "spell in the wand"
@@ -1441,6 +1534,7 @@
     "mana": 60,
     "cooldown": 4,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "An upgraded version of the Drill,",
       "a slow projectile that destroys",
@@ -1461,6 +1555,7 @@
     "mana": 25,
     "cooldown": 4,
     "type": "special",
+    "wandModifier": true,
     "description": [
       "Inverts the order of all",
       "spells after this one"
@@ -1475,6 +1570,7 @@
     "mana": 20,
     "cooldown": 4,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Casts a copy of a random",
       "spell after this one"
@@ -1489,6 +1585,7 @@
     "mana": 45,
     "cooldown": 5,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Forces the nearest target's",
       "wand to fire"
@@ -1503,6 +1600,7 @@
     "mana": 40,
     "cooldown": 12,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A projectile that heals you",
       "if it hits a target"
@@ -1523,6 +1621,7 @@
     "mana": 100,
     "cooldown": 10,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A projectile that steals a",
       "fraction of the target's",
@@ -1543,6 +1642,7 @@
     "mana": 85,
     "cooldown": 15,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Stationary, turns into a copy",
       "of the nearest projectile"
@@ -1561,6 +1661,7 @@
     "mana": 60,
     "cooldown": 25,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A projectile that heals",
       "its targets"
@@ -1581,6 +1682,7 @@
     "mana": 70,
     "cooldown": 30,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "A projectile that also damages",
       "you when it hits a target"
@@ -1600,6 +1702,7 @@
     "mana": 10,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Points the next projectile up"
     ]
@@ -1613,6 +1716,7 @@
     "mana": 10,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Points the next projectile down"
     ]
@@ -1626,6 +1730,7 @@
     "mana": 15,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Casts the next projectile",
       "a short distance above"
@@ -1640,6 +1745,7 @@
     "mana": 15,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Casts the next projectile",
       "a short distance below"
@@ -1654,6 +1760,7 @@
     "mana": 15,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Casts the next projectile",
       "a short distance behind"
@@ -1668,6 +1775,7 @@
     "mana": 15,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Teleports the next projectile",
       "to you"
@@ -1682,6 +1790,7 @@
     "mana": 10,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Points the next projectile",
       "at you"
@@ -1696,6 +1805,7 @@
     "mana": 5,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Gives the next projectile",
       "your facing direction"
@@ -1710,6 +1820,7 @@
     "mana": 10,
     "cooldown": 4,
     "type": "projectile",
+    "wandModifier": false,
     "description": [
       "Stationary, lasts for",
       "5 seconds or until",
@@ -1725,6 +1836,7 @@
     "mana": 25,
     "cooldown": 0,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Transfers the ownership of all",
       "spells after this to the nearest",
@@ -1740,6 +1852,7 @@
     "mana": 50,
     "cooldown": 10,
     "type": "special",
+    "wandModifier": false,
     "description": [
       "Gives you the ownership of all",
       "projectiles in a large radius"
@@ -1754,6 +1867,7 @@
     "mana": 15,
     "cooldown": 0,
     "type": "modifier",
+    "wandModifier": true,
     "description": [
       "Forces the next projectile to",
       "maintain a constant height"
@@ -1768,6 +1882,7 @@
     "mana": 50,
     "cooldown": 40,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "A large and unbreakable shield",
       "that blocks projectiles"
@@ -1782,6 +1897,7 @@
     "mana": 15,
     "cooldown": 10,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Basic defensive magic"
     ]
@@ -1795,6 +1911,7 @@
     "mana": 25,
     "cooldown": 30,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Arrows fall from the sky,",
       "damaging everything in a",
@@ -1810,6 +1927,7 @@
     "mana": 100,
     "cooldown": 40,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "A large circle that gives",
       "regeneration to targets",
@@ -1825,6 +1943,7 @@
     "mana": 50,
     "cooldown": 15,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons a magic crystal that shoots",
       "healing bolts at you. Consecutive",
@@ -1841,6 +1960,7 @@
     "mana": 30,
     "cooldown": 10,
     "type": "instant",
+    "wandModifier": false,
     "description": [
       "Summons a magic crystal that shoots",
       "random projectiles. Consecutive copies",
