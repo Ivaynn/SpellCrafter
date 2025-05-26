@@ -31,6 +31,9 @@ class SpellType(Enum):
         if self == SpellType.INSTANT: return 'light_purple'
         if self == SpellType.SPECIAL: return 'dark_aqua'
         raise ValueError
+    
+    def __str__(self) -> str:
+        return self.name.lower().capitalize()
 
 class SpellTier(Enum):
     COMMON = 1
@@ -58,6 +61,9 @@ class SpellStats:
     range_mod: int|None = None
     speed_mod: int|None = None
 
+    def __bool__(self) -> bool:
+        return any(stat is not None for stat in self.__dict__.values())
+
 class Spell:
     def __init__(self, d: dict):
         self.id = int(d['id'])
@@ -70,7 +76,7 @@ class Spell:
         self.type = SpellType[str(d['type']).upper()]
         self.wand_mod = bool(d.get('wandModifier', False))
         self.description: list[str] = d['description']
-        self.stats = None
+        self.stats = SpellStats()
 
         if 'stats' in d.keys():
             stats: dict = d['stats']
@@ -86,12 +92,62 @@ class Spell:
 
     def get_loot_table(self) -> dict:
         d = LOOT_TABLE.copy()
-        # TODO
+
+        lore: list[dict] = [{'text':f'◆ {self.mana}','color':'aqua','italic':False,'extra':[{'text':f'   ⌚ {round_cooldown(self.cooldown/20)}','color':'gray','italic':False}]}]
+        lore.append({'text':''})
+        lore.extend([{'text':line,'color':'gray','italic':False} for line in self.description])
+        if self.stats:
+            lore.append({'text':''})
+        if self.stats.damage is not None:
+            lore.append({'text':'Damage: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.damage/2)} ❤','color':'red'}]})
+        if self.stats.range is not None:
+            lore.append({'text':'Range: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.range)}','color':'red'},{'text':' blocks','color':'dark_gray'}]})
+        if self.stats.speed is not None:
+            lore.append({'text':'Speed: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.speed*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
+        if self.stats.damage_mod is not None:
+            lore.append({'text':'Damage: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat_mod(self.stats.damage_mod/2)} ❤','color':'red'}]})
+        if self.stats.range_mod is not None:
+            lore.append({'text':'Range: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat_mod(self.stats.range_mod)}','color':'red'},{'text':' blocks','color':'dark_gray'}]})
+        if self.stats.speed_mod is not None:
+            lore.append({'text':'Speed: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
+        if self.stats.heal is not None:
+            lore.append({'text':'Heal: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
+        lore.extend([{'text':''},{'text':f'{self.type.icon} {self.type}','color':f'{self.type.color}','italic':False}])
+
+        d['functions'][1]['tag'] = f'{{spellcrafter:{{spell:{{valid:1b, id:{self.id}, mana:{self.mana}, cooldown:{self.cooldown}, tier:{self.tier.value}, lore:{{"text":"{self.type.icon} {self.display_name.replace('\'', '\\\'')}","color":"{self.type.color}","italic":false}}}}}}}}'
+        d['functions'][2]['name'] = {'text': self.display_name, 'color': self.tier.color}
+        d['functions'][3]['lore'] = lore
+        d['functions'][4]['strings']['values'][0] = f'spellcrafter.spell.{self.name}'
         return d
 
     def get_advancement(self) -> dict:
         d = ADVANCEMENT.copy()
-        # TODO
+
+        desc: list[dict] = [{'text':f'\n◆ {self.mana}','color':'aqua'},{'text':f'   ⌚ {round_cooldown(self.cooldown/20)}\n\n','color':'gray'}]
+        desc.append({'text':' '.join(self.description)+'\n','color':'gray'})
+        if self.stats.damage is not None:
+            desc.append({'text':'\nDamage: ','color':'gray','extra':[{'text':f'{round_stat(self.stats.damage/2)} ❤','color':'red'}]})
+        if self.stats.range is not None:
+            desc.append({'text':'\nRange: ','color':'gray','extra':[{'text':f'{round_stat(self.stats.range)}','color':'red'},{'text':' blocks','color':'dark_gray'}]})
+        if self.stats.speed is not None:
+            desc.append({'text':'\nSpeed: ','color':'gray','extra':[{'text':f'{round_stat(self.stats.speed*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
+        if self.stats.damage_mod is not None:
+            desc.append({'text':'\nDamage: ','color':'gray','extra':[{'text':f'{round_stat_mod(self.stats.damage_mod/2)} ❤','color':'red'}]})
+        if self.stats.range_mod is not None:
+            desc.append({'text':'\nRange: ','color':'gray','extra':[{'text':f'{round_stat_mod(self.stats.range_mod)}','color':'red'},{'text':' blocks','color':'dark_gray'}]})
+        if self.stats.speed_mod is not None:
+            desc.append({'text':'\nSpeed: ','color':'gray','extra':[{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
+        if self.stats.heal is not None:
+            desc.append({'text':'\nHeal: ','color':'gray','extra':[{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
+        if self.stats:
+            desc.append({'text':'\n'})
+
+        d['display']['icon']['components']['minecraft:custom_model_data']['strings'][0] = f'spellcrafter.spell.{self.name}'
+        d['display']['title']['text'] = self.display_name + ' '*(30-len(self.display_name))
+        d['display']['title']['color'] = self.tier.color
+        d['display']['description'] = desc
+        d['parent'] = f'spellcrafter:spells/{self.parent}'
+        d['criteria']['requirement']['conditions']['items'][0]['predicates']['minecraft:custom_data'] = f'{{spellcrafter:{{spell:{{id:{self.id}}}}}}}'
         return d
 
     def __str__(self) -> str:
@@ -100,6 +156,20 @@ class Spell:
     def __repr__(self) -> str:
         return f'Spell({self.display_name})'
 
+def round_cooldown(value: float, precision: int = 2) -> int|float:
+    return 0 if value == 0 else round(value, precision)
+
+def round_stat(value: float) -> int|float:
+    return int(value) if value % 1 == 0 else value
+
+def round_stat_mod(value: float) -> str:
+    value = round_stat(value)
+    if value < 0:
+        return '-' + str(abs(value))
+    elif value > 0:
+        return '+' + str(value)
+    else:
+        return '0'
 
 def main() -> None:
 
@@ -112,12 +182,15 @@ def main() -> None:
     for spell in data:
         spells.append(Spell(spell))
 
-    # Link parents to spell objects
     for spell in spells:
-        parent = [s for s in spells if s.name==spell.parent]
-        spell.parent = parent[0] if parent else spell.parent
+        loot_table = spell.get_loot_table()
+        with open(f'{datapack_root}/data/spellcrafter/loot_table/spells/{spell}.json', 'w', encoding='utf-8') as f:
+            json.dump(loot_table, f, indent=4, ensure_ascii=False)
 
-    # TODO
+        advancement = spell.get_advancement()
+        with open(f'{datapack_root}/data/spellcrafter/advancement/spells/{spell}.json', 'w', encoding='utf-8') as f:
+            json.dump(advancement, f, indent=4, ensure_ascii=False)
+
     pass
 
 

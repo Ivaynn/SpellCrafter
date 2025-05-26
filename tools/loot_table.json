@@ -21,25 +21,27 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{spell:{valid:1b, id:%id%, mana:%mana%, cooldown:%cooldown%, tier:%tier%, lore:{\"text\":\"%icon% %name%\",\"color\":\"%color%\",\"italic\":false}}}}"
+            "tag": "..."
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": ""
+            "name": "..."
         },
         {
             "function": "minecraft:set_lore",
             "entity": "this",
             "mode": "replace_all",
-            "lore": ""
+            "lore": [
+                "..."
+            ]
         },
         {
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.spell.%id%"
+                    "..."
                 ],
                 "mode": "replace_all"
             }
