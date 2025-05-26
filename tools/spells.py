@@ -4,11 +4,26 @@ from enum import Enum
 from pathlib import Path
 from dataclasses import dataclass
 
-with open('loot_table.json', 'r', encoding='utf-8') as f:
-    LOOT_TABLE: dict = json.load(f)
+def read_json(file_path: Path|str):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data
 
-with open('advancement.json', 'r', encoding='utf-8') as f:
-    ADVANCEMENT: dict = json.load(f)
+def save_json(data: dict|list, file_path: Path|str, indent=None):
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=indent, ensure_ascii=False)
+
+def read_mcfunction(file_path: Path|str):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        text = f.read()
+    return text
+
+def save_mcfunction(text: str, file_path: Path|str):
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(text)
+
+LOOT_TABLE: dict = read_json('loot_table.json')
+ADVANCEMENT: dict = read_json('advancement.json')
 
 class SpellType(Enum):
     PROJECTILE = 1
@@ -33,7 +48,7 @@ class SpellType(Enum):
         raise ValueError
     
     def __str__(self) -> str:
-        return self.name.lower().capitalize()
+        return self.name.lower()
 
 class SpellTier(Enum):
     COMMON = 1
@@ -112,9 +127,9 @@ class Spell:
             lore.append({'text':'Speed: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
         if self.stats.heal is not None:
             lore.append({'text':'Heal: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
-        lore.extend([{'text':''},{'text':f'{self.type.icon} {self.type}','color':f'{self.type.color}','italic':False}])
+        lore.extend([{'text':''},{'text':f'{self.type.icon} {str(self.type).capitalize()}','color':f'{self.type.color}','italic':False}])
 
-        d['functions'][1]['tag'] = f'{{spellcrafter:{{spell:{{valid:1b, id:{self.id}, mana:{self.mana}, cooldown:{self.cooldown}, tier:{self.tier.value}, lore:{{"text":"{self.type.icon} {self.display_name.replace('\'', '\\\'')}","color":"{self.type.color}","italic":false}}}}}}}}'
+        d['functions'][1]['tag'] = f'{{spellcrafter:{{spell:{{valid:1b,id:{self.id},mana:{self.mana},cooldown:{self.cooldown},tier:{self.tier.value},lore:{{"text":"{self.type.icon} {self.display_name.replace('\'','\\\'')}","color":"{self.type.color}","italic":false}}}}}}}}'
         d['functions'][2]['name'] = {'text': self.display_name, 'color': self.tier.color}
         d['functions'][3]['lore'] = lore
         d['functions'][4]['strings']['values'][0] = f'spellcrafter.spell.{self.name}'
@@ -175,8 +190,7 @@ def main() -> None:
 
     datapack_root = Path('../datapack')
     resources_root = Path('../resources')
-    with open('spells.json', 'r', encoding='utf-8') as f:
-        data: list[dict] = json.load(f)
+    data = read_json('spells.json')
 
     spells: list[Spell] = []
     for spell in data:
@@ -184,13 +198,35 @@ def main() -> None:
 
     for spell in spells:
         loot_table = spell.get_loot_table()
-        with open(f'{datapack_root}/data/spellcrafter/loot_table/spells/{spell}.json', 'w', encoding='utf-8') as f:
-            json.dump(loot_table, f, indent=4, ensure_ascii=False)
-
         advancement = spell.get_advancement()
-        with open(f'{datapack_root}/data/spellcrafter/advancement/spells/{spell}.json', 'w', encoding='utf-8') as f:
-            json.dump(advancement, f, indent=4, ensure_ascii=False)
+        save_json(loot_table, datapack_root / f'data/spellcrafter/loot_table/spells/{spell}.json')
+        save_json(advancement, datapack_root / f'data/spellcrafter/advancement/spells/{spell}.json')
 
+    for spell_type in SpellType:
+        json_path = datapack_root / f'data/spellcrafter/advancement/spells/root_{spell_type}.json'
+        advancement = read_json(json_path)
+        advancement["criteria"] = {}
+        for spell in [s for s in spells if s.type == spell_type]:
+            advancement["criteria"][f"spellcrafter:{spell}"] = \
+                {"trigger": "minecraft:tick",
+                    "conditions": {
+                        "player": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type_specific": {
+                                        "type": "minecraft:player",
+                                        "advancements": {
+                                            f"spellcrafter:spells/{spell}": True
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+        save_json(advancement, json_path)
     pass
 
 
