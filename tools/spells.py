@@ -3,6 +3,115 @@ import json
 from enum import Enum
 from pathlib import Path
 from dataclasses import dataclass
+from copy import deepcopy
+
+ADVANCEMENT = {
+    "display": {
+        "icon": {
+            "id": "minecraft:enchanted_book",
+            "components": {
+                "minecraft:enchantment_glint_override": False,
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "..."
+                    ]
+                }
+            }
+        },
+        "title": {
+            "text": "...",
+            "color": "..."
+        },
+        "description": [
+            "..."
+        ],
+        "frame": "goal",
+        "show_toast": False,
+        "announce_to_chat": False,
+        "hidden": True
+    },
+    "parent": "...",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "spellcrafter.inf_page": {
+                                    "min": 1
+                                }
+                            }
+                        }
+                    }
+                ],
+                "items": [
+                    {
+                        "items": "minecraft:enchanted_book",
+                        "predicates": {
+                            "minecraft:custom_data": "..."
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+LOOT_TABLE = {
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": False
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "..."
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": "..."
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "..."
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "..."
+                ],
+                "mode": "replace_all"
+            }
+        }
+    ]
+}
 
 def read_json(file_path: Path|str):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -21,9 +130,6 @@ def read_mcfunction(file_path: Path|str):
 def save_mcfunction(text: str, file_path: Path|str):
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(text)
-
-LOOT_TABLE: dict = read_json('loot_table.json')
-ADVANCEMENT: dict = read_json('advancement.json')
 
 class SpellType(Enum):
     PROJECTILE = 1
@@ -106,7 +212,7 @@ class Spell:
             )
 
     def get_loot_table(self) -> dict:
-        d = LOOT_TABLE.copy()
+        d = deepcopy(LOOT_TABLE)
 
         lore: list[dict] = [{'text':f'◆ {self.mana}','color':'aqua','italic':False,'extra':[{'text':f'   ⌚ {round_cooldown(self.cooldown/20)}','color':'gray','italic':False}]}]
         lore.append({'text':''})
@@ -136,7 +242,7 @@ class Spell:
         return d
 
     def get_advancement(self) -> dict:
-        d = ADVANCEMENT.copy()
+        d = deepcopy(ADVANCEMENT)
 
         desc: list[dict] = [{'text':f'\n◆ {self.mana}','color':'aqua'},{'text':f'   ⌚ {round_cooldown(self.cooldown/20)}\n\n','color':'gray'}]
         desc.append({'text':' '.join(self.description)+'\n','color':'gray'})
@@ -188,6 +294,7 @@ def round_stat_mod(value: float) -> str:
 
 def main() -> None:
 
+    # Initialize: create objects for every spell in 'spells.json'
     datapack_root = Path('../datapack')
     resources_root = Path('../resources')
     data = read_json('spells.json')
@@ -196,12 +303,22 @@ def main() -> None:
     for spell in data:
         spells.append(Spell(spell))
 
+
+
+    # ------------------------------------------------------------
+    # Advancements and loot tables for every spell
+    # ------------------------------------------------------------
     for spell in spells:
         loot_table = spell.get_loot_table()
         advancement = spell.get_advancement()
         save_json(loot_table, datapack_root / f'data/spellcrafter/loot_table/spells/{spell}.json')
         save_json(advancement, datapack_root / f'data/spellcrafter/advancement/spells/{spell}.json')
 
+
+
+    # ------------------------------------------------------------
+    # Advancement roots used for tracking of unlocked spells
+    # ------------------------------------------------------------
     for spell_type in SpellType:
         json_path = datapack_root / f'data/spellcrafter/advancement/spells/root_{spell_type}.json'
         advancement = read_json(json_path)
@@ -227,7 +344,150 @@ def main() -> None:
                     }
                 }
         save_json(advancement, json_path)
-    pass
+
+
+
+    # ------------------------------------------------------------
+    # Wand modifiers: mcfunction and item modifier json
+    # ------------------------------------------------------------
+    wand_mods = []
+    function_text = ''
+    for spell in spells:
+        function_text += f'execute if score $wand_mod spellcrafter.tmp matches {spell.id} run return {int(spell.wand_mod)}\n'
+        if not spell.wand_mod:
+            continue
+        if spell.type == SpellType.PROJECTILE and spell.wand_mod:
+            raise ValueError('A projectile cannot be a wand modifier.')
+        wand_mods.append(
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "mode": "replace_section",
+                "offset": 2,
+                "size": 1,
+                "lore": [
+                    {
+                        "text": f'{spell.type.icon} {spell.display_name}',
+                        "color": 'gray',
+                        "italic": False
+                    }
+                ],
+                "conditions": [
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:storage",
+                            "storage": "spellcrafter:tmp",
+                            "path": "wand.mod"
+                        },
+                        "range": spell.id
+                    }
+                ]
+            }
+        )
+    save_json(wand_mods, datapack_root / f'data/spellcrafter/item_modifier/wand/lore/wand_mod_replace.json')
+    save_mcfunction(function_text, datapack_root / f'data/spellcrafter/function/as_projectile/wand_mods.mcfunction')
+
+
+
+    # ------------------------------------------------------------
+    # Random spell generator: conditional loot table
+    # ------------------------------------------------------------
+    WEIGHTS =  [[ 10, 6, 3, 2, 2 ],
+                [  7, 9, 6, 3, 3 ],
+                [  3, 4, 8, 6, 4 ],
+                [  0, 1, 3, 7, 5 ],
+                [  0, 0, 0, 2, 6 ]]
+    POOL = {
+        "rolls": 1,
+        "entries": [],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$gen.tier"
+                    },
+                    "score": "spellcrafter.tmp"
+                },
+                "range": 1
+            },
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$gen.type"
+                    },
+                    "score": "spellcrafter.tmp"
+                },
+                "range": 1
+            }
+        ]
+    }
+
+    random_spell = {'pools': []}
+
+    # Go through all possible combinations of $gen.tier and $gen.type
+    for gen_tier in SpellTier:
+        for gen_type in SpellType:
+
+            # Create a pool for this combination
+            pool = deepcopy(POOL)
+            pool['conditions'][0]['range'] = gen_tier.value
+            pool['conditions'][1]['range'] = gen_type.value
+
+            # Create entries for spells with this $gen.type
+            for spell in [s for s in spells if s.type == gen_type]:
+
+                # Get weight for this combination
+                weight = WEIGHTS[spell.tier.value-1][gen_tier.value-1]
+                if not weight > 0:
+                    continue
+
+                # Add to existing entry if this weight is already in use
+                new_weight = True
+                for entry in pool['entries']:
+                    if weight == entry['weight']:
+                        entry['value']['pools'][0]['entries'].append(
+                            {
+                                'type': 'minecraft:loot_table',
+                                'value': f'spellcrafter:spells/{spell}'
+                            }
+                        )
+                        new_weight = False
+
+                # Create new entry if this weight is new
+                if new_weight:
+                    pool['entries'].append(
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": {
+                                "pools": [
+                                    {
+                                        "rolls": 1,
+                                        "entries": [
+                                            {
+                                                'type': 'minecraft:loot_table',
+                                                'value': f'spellcrafter:spells/{spell}'
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "weight": weight
+                        })
+
+            # Save the created pool (unless it has no entries)
+            if pool['entries']:
+                random_spell['pools'].append(pool)
+
+    save_json(random_spell, datapack_root / f'data/spellcrafter/loot_table/random_spell.json')
+
+
 
 
 if __name__ == '__main__':
