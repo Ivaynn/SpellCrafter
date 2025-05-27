@@ -1,6 +1,1 @@
-{
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "spellcrafter:item/spell/summon_magma"
-    }
-}
+{"parent": "minecraft:item/generated", "textures": {"layer0": "spellcrafter:item/spell/summon_magma"}}

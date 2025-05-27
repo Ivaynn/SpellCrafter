@@ -489,6 +489,71 @@ def main() -> None:
 
 
 
+    # ------------------------------------------------------------
+    # "Table" mcfunctions
+    # ------------------------------------------------------------
+    mcfunction = ''
+    for spell in spells:
+        mcfunction += f'execute if score $spell spellcrafter.tmp matches {spell.id} run return run loot replace entity @s inventory.22 loot spellcrafter:spells/{spell}\n'
+    save_mcfunction(mcfunction, datapack_root / 'data/spellcrafter/function/as_player/inf_spells/custom_wand/loot_insert.mcfunction')
+
+    mcfunction = ''
+    for spell in spells:
+        mcfunction += f'execute if score $spell spellcrafter.tmp matches {spell.id} run return run loot insert ~ ~ ~ loot spellcrafter:spells/{spell}\n'
+    save_mcfunction(mcfunction, datapack_root / 'data/spellcrafter/function/as_table/open/loot_insert.mcfunction')
+
+
+
+    # ------------------------------------------------------------
+    # Resource pack - override for minecraft:enchanted_book
+    # ------------------------------------------------------------
+    enchanted_book = {
+        'model': {
+            "type": "minecraft:select",
+            "property": "minecraft:custom_model_data",
+            "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/enchanted_book"
+            },
+            "cases": []
+        }
+    }
+    for spell in spells:
+        enchanted_book['model']['cases'].append(
+            {
+                "when": f"spellcrafter.spell.{spell}",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": f"spellcrafter:item/spell/{spell}"
+                }
+            }
+        )
+    save_json(enchanted_book, resources_root / 'assets/minecraft/items/enchanted_book.json')
+
+
+
+    # ------------------------------------------------------------
+    # Resource pack - create model json for every spell
+    # ------------------------------------------------------------
+    for spell in spells:
+        model = {
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": f"spellcrafter:item/spell/{spell}"
+            }
+        }
+        save_json(model, resources_root / f'assets/spellcrafter/models/item/spell/{spell}.json')
+
+
+
+    # ------------------------------------------------------------
+    # Done!
+    # ------------------------------------------------------------
+    print('Success!')
+    print('- Projectile stats must be updated manually in their \'projectile.mcfunction\'')
+    print('- PNG files for new spells must be created manually')
+    print('- New spells must be added to multiple files manually. Check similar spells')
+
 
 if __name__ == '__main__':
     main()

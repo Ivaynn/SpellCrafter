@@ -1,6 +1,1 @@
-{
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "spellcrafter:item/spell/aim_down"
-    }
-}
+{"parent": "minecraft:item/generated", "textures": {"layer0": "spellcrafter:item/spell/aim_down"}}
