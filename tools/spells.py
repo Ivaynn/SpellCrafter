@@ -568,6 +568,18 @@ def main() -> None:
 
 
     # ------------------------------------------------------------
+    # Resource pack - lang files - check keys
+    # ------------------------------------------------------------
+    for lang_file in Path(resources_root / 'assets/spellcrafter/lang/').iterdir():
+        lang2: dict = read_json(lang_file)
+        for k in lang.keys() - lang2.keys():
+            print(f"WARN: expected key '{k}' not found in '{lang_file.name}'")
+        for k in lang2.keys() - lang.keys():
+            print(f"WARN: unexpected key '{k}' found in '{lang_file.name}'")
+
+
+
+    # ------------------------------------------------------------
     # Done!
     # ------------------------------------------------------------
     print('Success!')
