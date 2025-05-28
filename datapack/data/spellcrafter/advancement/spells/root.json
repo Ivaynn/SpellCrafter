@@ -9,7 +9,8 @@
         "title": "SpellCrafter",
         "description": [
             {
-                "text": "Your collection",
+                "translate": "spellcrafter.advancement.root",
+                "fallback": "Your collection",
                 "color": "gray"
             }
         ],

@@ -9,9 +9,15 @@
         "mode": "append",
         "lore": [
             {
-                "text": " Empty",
-                "color": "dark_gray",
-                "italic": true
+                "text": " ",
+                "extra": [
+                    {
+                        "translate": "spellcrafter.wand.empty",
+                        "fallback": "Empty",
+                        "color": "dark_gray",
+                        "italic": true
+                    }
+                ]
             }
         ]
     },

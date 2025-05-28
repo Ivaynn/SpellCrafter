@@ -27,7 +27,20 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Legendary Wand"
+            "name": {
+                "translate": "spellcrafter.wand.name",
+                "fallback": "Wand"
+            }
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "custom_name",
+            "name": {
+                "translate": "spellcrafter.wand.name",
+                "fallback": "Wand",
+                "italic": false
+            }
         },
         {
             "function": "minecraft:set_lore",
@@ -55,9 +68,15 @@
                     "text": ""
                 },
                 {
-                    "text": " Empty",
-                    "color": "dark_gray",
-                    "italic": true
+                    "text": " ",
+                    "extra": [
+                        {
+                            "translate": "spellcrafter.wand.empty",
+                            "fallback": "Empty",
+                            "color": "dark_gray",
+                            "italic": true
+                        }
+                    ]
                 }
             ]
         },

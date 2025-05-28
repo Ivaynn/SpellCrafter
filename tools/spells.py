@@ -18,10 +18,9 @@ ADVANCEMENT = {
                 }
             }
         },
-        "title": {
-            "text": "...",
-            "color": "..."
-        },
+        "title": [
+            "..."
+        ],
         "description": [
             "..."
         ],
@@ -216,27 +215,27 @@ class Spell:
 
         lore: list[dict] = [{'text':f'◆ {self.mana}','color':'aqua','italic':False,'extra':[{'text':f'   ⌚ {round_cooldown(self.cooldown/20)}','color':'gray','italic':False}]}]
         lore.append({'text':''})
-        lore.extend([{'text':line,'color':'gray','italic':False} for line in self.description])
+        lore.extend([{'translate':f'spellcrafter.spell.{self}.description.{i+1}','fallback':line,'color':'gray','italic':False} for i, line in enumerate(self.description)])
         if self.stats:
             lore.append({'text':''})
         if self.stats.damage is not None:
-            lore.append({'text':'Damage: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.damage/2)} ❤','color':'red'}]})
+            lore.append({'translate':'spellcrafter.stat.damage.name','fallback':'Damage','color':'gray','italic':False,'extra':[{'text':': '},{'text':f'{round_stat(self.stats.damage/2)} ❤','color':'red'}]})
         if self.stats.range is not None:
-            lore.append({'text':'Range: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.range)}','color':'red'},{'text':' blocks','color':'dark_gray'}]})
+            lore.append({'translate':'spellcrafter.stat.range.name','fallback':'Range','color':'gray','italic':False,'extra':[{'text':': '},{'text':f'{round_stat(self.stats.range)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.range.unit','fallback':'blocks','color':'dark_gray'}]})
         if self.stats.speed is not None:
-            lore.append({'text':'Speed: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.speed*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
+            lore.append({'translate':'spellcrafter.stat.speed.name','fallback':'Speed','color':'gray','italic':False,'extra':[{'text':': '},{'text':f'{round_stat(self.stats.speed*5)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.speed.unit','fallback':'blocks/s','color':'dark_gray'}]})
         if self.stats.damage_mod is not None:
-            lore.append({'text':'Damage: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat_mod(self.stats.damage_mod/2)} ❤','color':'red'}]})
+            lore.append({'translate':'spellcrafter.stat.damage.name','fallback':'Damage','color':'gray','italic':False,'extra':[{'text':': '},{'text':f'{round_stat_mod(self.stats.damage_mod/2)} ❤','color':'red'}]})
         if self.stats.range_mod is not None:
-            lore.append({'text':'Range: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat_mod(self.stats.range_mod)}','color':'red'},{'text':' blocks','color':'dark_gray'}]})
+            lore.append({'translate':'spellcrafter.stat.range.name','fallback':'Range','color':'gray','italic':False,'extra':[{'text':': '},{'text':f'{round_stat_mod(self.stats.range_mod)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.range.unit','fallback':'blocks','color':'dark_gray'}]})
         if self.stats.speed_mod is not None:
-            lore.append({'text':'Speed: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
+            lore.append({'translate':'spellcrafter.stat.speed.name','fallback':'Speed','color':'gray','italic':False,'extra':[{'text':': '},{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.speed.unit','fallback':'blocks/s','color':'dark_gray'}]})
         if self.stats.heal is not None:
-            lore.append({'text':'Heal: ','color':'gray','italic':False,'extra':[{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
-        lore.extend([{'text':''},{'text':f'{self.type.icon} {str(self.type).capitalize()}','color':f'{self.type.color}','italic':False}])
+            lore.append({'translate':'spellcrafter.stat.heal.name','fallback':'Heal','color':'gray','italic':False,'extra':[{'text':': '},{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
+        lore.extend([{'text':''},{'text':f'{self.type.icon} ','color':f'{self.type.color}','italic':False,'extra':[{'translate':f'spellcrafter.type.{self.type}','fallback':str(self.type).capitalize()}]}])
 
-        d['functions'][1]['tag'] = f'{{spellcrafter:{{spell:{{valid:1b,id:{self.id},mana:{self.mana},cooldown:{self.cooldown},tier:{self.tier.value},lore:{{"text":"{self.type.icon} {self.display_name.replace('\'','\\\'')}","color":"{self.type.color}","italic":false}}}}}}}}'
-        d['functions'][2]['name'] = {'text': self.display_name, 'color': self.tier.color}
+        d['functions'][1]['tag'] = f'{{spellcrafter:{{spell:{{valid:1b,id:{self.id},mana:{self.mana},cooldown:{self.cooldown},tier:{self.tier.value},lore:{{"text":"{self.type.icon} ","color":"{self.type.color}","italic":false,"extra":[{{"translate":"spellcrafter.spell.{self}.name","fallback":"{self.display_name.replace('\'','\\\'')}"}}]}}}}}}}}'
+        d['functions'][2]['name'] = {'translate': f'spellcrafter.spell.{self}.name', 'fallback': self.display_name, 'color': self.tier.color}
         d['functions'][3]['lore'] = lore
         d['functions'][4]['strings']['values'][0] = f'spellcrafter.spell.{self.name}'
         return d
@@ -245,27 +244,28 @@ class Spell:
         d = deepcopy(ADVANCEMENT)
 
         desc: list[dict] = [{'text':f'\n◆ {self.mana}','color':'aqua'},{'text':f'   ⌚ {round_cooldown(self.cooldown/20)}\n\n','color':'gray'}]
-        desc.append({'text':' '.join(self.description)+'\n','color':'gray'})
+        for i, line in enumerate(self.description):
+            desc.extend([{'translate':f'spellcrafter.spell.{self}.description.{i+1}','fallback':line,'color':'gray','italic':False},{'text':' '}])
+        desc.append({'text':'\n'})
         if self.stats.damage is not None:
-            desc.append({'text':'\nDamage: ','color':'gray','extra':[{'text':f'{round_stat(self.stats.damage/2)} ❤','color':'red'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.damage.name','fallback':'Damage'},{'text':': '},{'text':f'{round_stat(self.stats.damage/2)} ❤','color':'red'}]})
         if self.stats.range is not None:
-            desc.append({'text':'\nRange: ','color':'gray','extra':[{'text':f'{round_stat(self.stats.range)}','color':'red'},{'text':' blocks','color':'dark_gray'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.range.name','fallback':'Range'},{'text':': '},{'text':f'{round_stat(self.stats.range)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.range.unit','fallback':'m','color':'dark_gray'}]})
         if self.stats.speed is not None:
-            desc.append({'text':'\nSpeed: ','color':'gray','extra':[{'text':f'{round_stat(self.stats.speed*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.speed.name','fallback':'Speed'},{'text':': '},{'text':f'{round_stat(self.stats.speed*5)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.speed.unit','fallback':'m/s','color':'dark_gray'}]})
         if self.stats.damage_mod is not None:
-            desc.append({'text':'\nDamage: ','color':'gray','extra':[{'text':f'{round_stat_mod(self.stats.damage_mod/2)} ❤','color':'red'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.damage.name','fallback':'Damage'},{'text':': '},{'text':f'{round_stat_mod(self.stats.damage_mod/2)} ❤','color':'red'}]})
         if self.stats.range_mod is not None:
-            desc.append({'text':'\nRange: ','color':'gray','extra':[{'text':f'{round_stat_mod(self.stats.range_mod)}','color':'red'},{'text':' blocks','color':'dark_gray'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.range.name','fallback':'Range'},{'text':': '},{'text':f'{round_stat_mod(self.stats.range_mod)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.range.unit','fallback':'m','color':'dark_gray'}]})
         if self.stats.speed_mod is not None:
-            desc.append({'text':'\nSpeed: ','color':'gray','extra':[{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' blocks/sec','color':'dark_gray'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.speed.name','fallback':'Speed'},{'text':': '},{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.speed.unit','fallback':'m/s','color':'dark_gray'}]})
         if self.stats.heal is not None:
-            desc.append({'text':'\nHeal: ','color':'gray','extra':[{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.heal.name','fallback':'Heal'},{'text':': '},{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
         if self.stats:
             desc.append({'text':'\n'})
 
         d['display']['icon']['components']['minecraft:custom_model_data']['strings'][0] = f'spellcrafter.spell.{self.name}'
-        d['display']['title']['text'] = self.display_name + ' '*(30-len(self.display_name))
-        d['display']['title']['color'] = self.tier.color
+        d['display']['title'] = [{'translate':f'spellcrafter.spell.{self}.name','fallback':self.display_name,'color': self.tier.color},{'text':' '*(30-len(self.display_name))}]
         d['display']['description'] = desc
         d['parent'] = f'spellcrafter:spells/{self.parent}'
         d['criteria']['requirement']['conditions']['items'][0]['predicates']['minecraft:custom_data'] = f'{{spellcrafter:{{spell:{{id:{self.id}}}}}}}'
@@ -367,9 +367,15 @@ def main() -> None:
                 "size": 1,
                 "lore": [
                     {
-                        "text": f'{spell.type.icon} {spell.display_name}',
+                        "text": f'{spell.type.icon} ',
                         "color": 'gray',
-                        "italic": False
+                        "italic": False,
+                        "extra": [
+                            {
+                                "translate": f'spellcrafter.spell.{spell}.name',
+                                "fallback": f'{spell.display_name}'
+                            }
+                        ]
                     }
                 ],
                 "conditions": [
@@ -543,6 +549,21 @@ def main() -> None:
             }
         }
         save_json(model, resources_root / f'assets/spellcrafter/models/item/spell/{spell}.json')
+
+
+
+    # ------------------------------------------------------------
+    # Resource pack - lang file - replace entries for spell names and descriptions
+    # ------------------------------------------------------------
+    lang: dict[str,str] = read_json(resources_root / 'assets/spellcrafter/lang/en_us.json')
+    lang = {k: v for k, v in lang.items() if not k.startswith('spellcrafter.spell.')}
+
+    for spell in spells:
+        lang[f'spellcrafter.spell.{spell}.name'] = spell.display_name
+        for i, line in enumerate(spell.description):
+            lang[f'spellcrafter.spell.{spell}.description.{i+1}'] = line
+
+    save_json(lang, resources_root / 'assets/spellcrafter/lang/en_us.json', indent=4)
 
 
 

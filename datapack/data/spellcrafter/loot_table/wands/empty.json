@@ -27,13 +27,20 @@
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
-            "name": "Wand"
+            "name": {
+                "translate": "spellcrafter.wand.name",
+                "fallback": "Wand"
+            }
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "custom_name",
-            "name": "Wand"
+            "name": {
+                "translate": "spellcrafter.wand.name",
+                "fallback": "Wand",
+                "italic": false
+            }
         },
         {
             "function": "minecraft:set_custom_data",
