@@ -14,8 +14,7 @@ data merge entity @s {Invulnerable:1b,DeathLootTable:"spellcrafter:empty",Persis
 
 # Get custom name
 data modify storage spellcrafter:tmp summon.name set value []
-execute summon minecraft:text_display run function spellcrafter:as_summon/owner_name
-data modify storage spellcrafter:tmp summon.name append value "'s Bat"
+execute summon minecraft:text_display run function spellcrafter:spells/summon_bat/owner_name
 data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
 
 

@@ -17,8 +17,7 @@ effect give @s minecraft:fire_resistance infinite 2 false
 
 # Get custom name
 data modify storage spellcrafter:tmp summon.name set value []
-execute summon minecraft:text_display run function spellcrafter:as_summon/owner_name
-data modify storage spellcrafter:tmp summon.name append value "'s Angry Goat"
+execute summon minecraft:text_display run function spellcrafter:spells/angry_goat/owner_name
 data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
 
 
