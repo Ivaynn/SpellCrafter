@@ -7,7 +7,7 @@ execute unless predicate spellcrafter:holding_wand run return 0
 
 # Locked wand
 execute store result score $owner spellcrafter.tmp run data get entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.owner
-execute if score $owner spellcrafter.tmp matches 1.. unless score @s spellcrafter.id = $owner spellcrafter.tmp run return run tellraw @s ["",{"text":"> ","color":"red","bold":true},{"text":"This wand is locked!","color":"gray"}]
+execute if score $owner spellcrafter.tmp matches 1.. unless score @s spellcrafter.id = $owner spellcrafter.tmp run return run tellraw @s ["",{text:"> ",color:"red",bold:true},{text:"This wand is locked!",color:"gray"}]
 
 
 # Put wand information on storage & clear wand

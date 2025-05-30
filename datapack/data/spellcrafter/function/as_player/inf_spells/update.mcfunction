@@ -2,9 +2,9 @@
 
 
 # Place buttons
-item replace entity @s inventory.8 with minecraft:knowledge_book[minecraft:item_name={translate:"spellcrafter.gui.prev",fallback:"Previous Page"},minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:1}},minecraft:custom_model_data={"strings":["spellcrafter.gui.arrow_up"]}]
-item replace entity @s inventory.17 with minecraft:knowledge_book[minecraft:item_name={translate:"spellcrafter.gui.trash",fallback:"Trash"},minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:2}},minecraft:custom_model_data={"strings":["spellcrafter.gui.trash"]}]
-item replace entity @s inventory.26 with minecraft:knowledge_book[minecraft:item_name={translate:"spellcrafter.gui.next",fallback:"Next Page"},minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:3}},minecraft:custom_model_data={"strings":["spellcrafter.gui.arrow_down"]}]
+item replace entity @s inventory.8 with minecraft:knowledge_book[minecraft:item_name={translate:"spellcrafter.gui.prev",fallback:"Previous Page"},minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:1}},minecraft:custom_model_data={strings:["spellcrafter.gui.arrow_up"]}]
+item replace entity @s inventory.17 with minecraft:knowledge_book[minecraft:item_name={translate:"spellcrafter.gui.trash",fallback:"Trash"},minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:2}},minecraft:custom_model_data={strings:["spellcrafter.gui.trash"]}]
+item replace entity @s inventory.26 with minecraft:knowledge_book[minecraft:item_name={translate:"spellcrafter.gui.next",fallback:"Next Page"},minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:3}},minecraft:custom_model_data={strings:["spellcrafter.gui.arrow_down"]}]
 
 
 # Pages

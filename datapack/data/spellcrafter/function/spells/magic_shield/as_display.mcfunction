@@ -17,4 +17,4 @@ execute rotated as @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,
 
 
 # Update entity NBT
-data merge entity @s {item:{"id":"minecraft:light_blue_stained_glass_pane"},brightness:{sky:15,block:15},billboard:"fixed",transformation:{scale:[0.85f,0.85f,0.85f]}}
+data merge entity @s {item:{id:"minecraft:light_blue_stained_glass_pane"},brightness:{sky:15,block:15},billboard:"fixed",transformation:{scale:[0.85f,0.85f,0.85f]}}

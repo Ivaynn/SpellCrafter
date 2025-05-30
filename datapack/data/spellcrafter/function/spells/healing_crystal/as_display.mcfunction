@@ -14,4 +14,4 @@ scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
 
 
 # Update entity NBT
-data merge entity @s {item:{"id":"minecraft:red_glazed_terracotta"},billboard:"fixed",transformation:{scale:[0.6f,0.6f,0.6f],right_rotation:[0.73,1,0,1]}}
+data merge entity @s {item:{id:"minecraft:red_glazed_terracotta"},billboard:"fixed",transformation:{scale:[0.6f,0.6f,0.6f],right_rotation:[0.73,1,0,1]}}
