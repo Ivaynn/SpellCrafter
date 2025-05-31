@@ -198,6 +198,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -608,6 +620,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -1199,6 +1223,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -1653,6 +1689,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -2160,6 +2208,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }

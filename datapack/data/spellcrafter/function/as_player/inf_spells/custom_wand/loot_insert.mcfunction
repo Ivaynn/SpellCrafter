@@ -118,3 +118,6 @@ execute if score $spell spellcrafter.tmp matches 117 run return run loot replace
 execute if score $spell spellcrafter.tmp matches 118 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/healing_circle
 execute if score $spell spellcrafter.tmp matches 119 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/healing_crystal
 execute if score $spell spellcrafter.tmp matches 120 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/chaotic_crystal
+execute if score $spell spellcrafter.tmp matches 121 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/upgrade_mana
+execute if score $spell spellcrafter.tmp matches 122 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/upgrade_cooldown
+execute if score $spell spellcrafter.tmp matches 123 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/upgrade_slots

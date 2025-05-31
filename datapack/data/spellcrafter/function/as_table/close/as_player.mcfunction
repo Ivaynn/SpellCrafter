@@ -25,7 +25,7 @@ execute store result score $mana spellcrafter.tmp run data get storage spellcraf
 execute store result score $cooldown spellcrafter.tmp run data get storage spellcrafter:tmp wand.base_cooldown
 
 
-# Special spells that modify the wand item
+# Counters for stackable specials that are applied at the end
 scoreboard players set $spell.sharp spellcrafter.tmp 0
 scoreboard players set $spell.extended spellcrafter.tmp 0
 scoreboard players set $spell.quickstep spellcrafter.tmp 0
@@ -67,6 +67,10 @@ execute if score $attribute_drain spellcrafter.tmp matches 1.. run item modify e
 
 # Special case: locked -> store owner id
 execute if score $spell.locked spellcrafter.tmp matches 1 store result storage spellcrafter:tmp wand.owner int 1 run scoreboard players get @s spellcrafter.id
+
+
+# If no spells, clear wand
+execute unless data storage spellcrafter:tmp wand.spells[0] run return run function spellcrafter:as_table/close/empty
 
 
 # Save mana cost & cooldown to wand object

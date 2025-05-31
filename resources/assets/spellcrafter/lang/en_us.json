@@ -430,5 +430,14 @@
     "spellcrafter.spell.chaotic_crystal.name": "Chaotic Crystal",
     "spellcrafter.spell.chaotic_crystal.description.1": "Summons a magic crystal that shoots",
     "spellcrafter.spell.chaotic_crystal.description.2": "random projectiles. Consecutive copies",
-    "spellcrafter.spell.chaotic_crystal.description.3": "of this spell merge to empower the crystal"
+    "spellcrafter.spell.chaotic_crystal.description.3": "of this spell merge to empower the crystal",
+    "spellcrafter.spell.upgrade_mana.name": "Upgrade Mana",
+    "spellcrafter.spell.upgrade_mana.description.1": "Gets consumed to permanently decrease",
+    "spellcrafter.spell.upgrade_mana.description.2": "the base mana cost of the wand by 10",
+    "spellcrafter.spell.upgrade_cooldown.name": "Upgrade Cooldown",
+    "spellcrafter.spell.upgrade_cooldown.description.1": "Gets consumed to permanently decrease the",
+    "spellcrafter.spell.upgrade_cooldown.description.2": "base cooldown of the wand by 1 second",
+    "spellcrafter.spell.upgrade_slots.name": "Upgrade Slots",
+    "spellcrafter.spell.upgrade_slots.description.1": "Gets consumed to permanently increase",
+    "spellcrafter.spell.upgrade_slots.description.2": "the spell slots of the wand by 1"
 }

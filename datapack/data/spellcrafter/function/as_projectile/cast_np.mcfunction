@@ -61,6 +61,9 @@ execute if score $spell spellcrafter.tmp matches 95 run return run function spel
 execute if score $spell spellcrafter.tmp matches 96 run return 1
 execute if score $spell spellcrafter.tmp matches 112 run return run function spellcrafter:spells/transfer/cast
 execute if score $spell spellcrafter.tmp matches 113 run return run function spellcrafter:spells/steal/cast
+execute if score $spell spellcrafter.tmp matches 121 run return 1
+execute if score $spell spellcrafter.tmp matches 122 run return 1
+execute if score $spell spellcrafter.tmp matches 123 run return 1
 
 
 # Unstackable modifiers

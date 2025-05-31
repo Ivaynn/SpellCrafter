@@ -1966,5 +1966,50 @@
       "random projectiles. Consecutive copies",
       "of this spell merge to empower the crystal"
     ]
+  },
+  {
+    "id": 121,
+    "name": "upgrade_mana",
+    "displayName": "Upgrade Mana",
+    "parent": "root_special",
+    "tier": 2,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "wandModifier": false,
+    "description": [
+      "Gets consumed to permanently decrease",
+      "the base mana cost of the wand by 10"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "upgrade_cooldown",
+    "displayName": "Upgrade Cooldown",
+    "parent": "upgrade_mana",
+    "tier": 2,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "wandModifier": false,
+    "description": [
+      "Gets consumed to permanently decrease the",
+      "base cooldown of the wand by 1 second"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "upgrade_slots",
+    "displayName": "Upgrade Slots",
+    "parent": "upgrade_cooldown",
+    "tier": 2,
+    "mana": 0,
+    "cooldown": 0,
+    "type": "special",
+    "wandModifier": false,
+    "description": [
+      "Gets consumed to permanently increase",
+      "the spell slots of the wand by 1"
+    ]
   }
 ]

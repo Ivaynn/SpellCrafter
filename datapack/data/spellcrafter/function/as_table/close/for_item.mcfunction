@@ -5,18 +5,24 @@
 
 
 # Check if item is a spell
-scoreboard players set $is_spell spellcrafter.tmp 0
-execute if data storage spellcrafter:tmp items[0].components."minecraft:custom_data".spellcrafter.spell.id run scoreboard players set $is_spell spellcrafter.tmp 1
+scoreboard players set $spell spellcrafter.tmp 0
+execute store result score $spell spellcrafter.tmp run data get storage spellcrafter:tmp items[0].components."minecraft:custom_data".spellcrafter.spell.id
+
+
+# Special case: consumable spells that change wand stats
+execute if score $spell spellcrafter.tmp matches 121 run function spellcrafter:spells/upgrade_mana/cast
+execute if score $spell spellcrafter.tmp matches 122 run function spellcrafter:spells/upgrade_cooldown/cast
+execute if score $spell spellcrafter.tmp matches 123 run function spellcrafter:spells/upgrade_slots/cast
 
 
 # Spell cap
-execute unless score $spell_cap spellcrafter.tmp matches 1.. run scoreboard players set $is_spell spellcrafter.tmp 0
-execute if score $is_spell spellcrafter.tmp matches 1 run scoreboard players remove $spell_cap spellcrafter.tmp 1
+execute unless score $spell_cap spellcrafter.tmp matches 1.. run scoreboard players set $spell spellcrafter.tmp 0
+execute if score $spell spellcrafter.tmp matches 1.. run scoreboard players remove $spell_cap spellcrafter.tmp 1
 
 
 # Separate items to keep and items to drop
-execute if score $is_spell spellcrafter.tmp matches 0 run data modify storage spellcrafter:tmp drop append from storage spellcrafter:tmp items[0]
-execute if score $is_spell spellcrafter.tmp matches 1 run data modify storage spellcrafter:tmp keep append from storage spellcrafter:tmp items[0]
+execute if score $spell spellcrafter.tmp matches 0 run data modify storage spellcrafter:tmp drop append from storage spellcrafter:tmp items[0]
+execute if score $spell spellcrafter.tmp matches 1.. run data modify storage spellcrafter:tmp keep append from storage spellcrafter:tmp items[0]
 
 
 # Next item

@@ -20,9 +20,9 @@ loot replace entity @s inventory.16 loot spellcrafter:spells/secret
 
 loot replace entity @s inventory.18 loot spellcrafter:spells/transfer
 loot replace entity @s inventory.19 loot spellcrafter:spells/steal
-item replace entity @s inventory.20 with minecraft:air
-item replace entity @s inventory.21 with minecraft:air
-item replace entity @s inventory.22 with minecraft:air
+loot replace entity @s inventory.20 loot spellcrafter:spells/upgrade_mana
+loot replace entity @s inventory.21 loot spellcrafter:spells/upgrade_cooldown
+loot replace entity @s inventory.22 loot spellcrafter:spells/upgrade_slots
 item replace entity @s inventory.23 with minecraft:air
 item replace entity @s inventory.24 with minecraft:air
 item replace entity @s inventory.25 with minecraft:air

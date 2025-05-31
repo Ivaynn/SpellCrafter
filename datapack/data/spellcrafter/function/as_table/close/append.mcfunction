@@ -2,23 +2,29 @@
 # storage "spellcrafter:tmp wand.spells" must start empty
 
 
-# Save spell slot
-data modify storage spellcrafter:tmp wand.slots append from storage spellcrafter:tmp keep[0].Slot
-
-
 # Get spell data
 data remove storage spellcrafter:tmp spell
 data modify storage spellcrafter:tmp spell set from storage spellcrafter:tmp keep[0].components."minecraft:custom_data".spellcrafter.spell
-
-
-# Get spell id & lore
-data modify storage spellcrafter:tmp wand.spells append from storage spellcrafter:tmp spell.id
-data modify storage spellcrafter:tmp lore append from storage spellcrafter:tmp spell.lore
 scoreboard players set $spell spellcrafter.tmp 0
 execute store result score $spell spellcrafter.tmp run data get storage spellcrafter:tmp spell.id
 
 
-# Special cases
+# Special case: consumables - don't save the spell, just increment the counter
+execute if score $spell spellcrafter.tmp matches 121 run return 1
+execute if score $spell spellcrafter.tmp matches 122 run return 1
+execute if score $spell spellcrafter.tmp matches 123 run return 1
+
+
+# Save spell slot
+data modify storage spellcrafter:tmp wand.slots append from storage spellcrafter:tmp keep[0].Slot
+
+
+# Get spell lore
+data modify storage spellcrafter:tmp wand.spells append from storage spellcrafter:tmp spell.id
+data modify storage spellcrafter:tmp lore append from storage spellcrafter:tmp spell.lore
+
+
+# Special cases: applied to the wand directly (cannot be skipped)
 execute if score $spell spellcrafter.tmp matches 64 run scoreboard players add $spell.sharp spellcrafter.tmp 1
 execute if score $spell spellcrafter.tmp matches 69 run scoreboard players set $spell.secret spellcrafter.tmp 1
 execute if score $spell spellcrafter.tmp matches 70 run scoreboard players set $spell.locked spellcrafter.tmp 1

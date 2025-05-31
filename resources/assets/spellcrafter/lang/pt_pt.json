@@ -430,5 +430,14 @@
     "spellcrafter.spell.chaotic_crystal.name": "...",
     "spellcrafter.spell.chaotic_crystal.description.1": "...",
     "spellcrafter.spell.chaotic_crystal.description.2": "...",
-    "spellcrafter.spell.chaotic_crystal.description.3": "..."
+    "spellcrafter.spell.chaotic_crystal.description.3": "...",
+    "spellcrafter.spell.upgrade_mana.name": "...",
+    "spellcrafter.spell.upgrade_mana.description.1": "...",
+    "spellcrafter.spell.upgrade_mana.description.2": "...",
+    "spellcrafter.spell.upgrade_cooldown.name": "...",
+    "spellcrafter.spell.upgrade_cooldown.description.1": "...",
+    "spellcrafter.spell.upgrade_cooldown.description.2": "...",
+    "spellcrafter.spell.upgrade_slots.name": "...",
+    "spellcrafter.spell.upgrade_slots.description.1": "...",
+    "spellcrafter.spell.upgrade_slots.description.2": "..."
 }
