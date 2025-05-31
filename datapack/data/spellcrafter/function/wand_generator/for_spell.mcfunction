@@ -31,7 +31,7 @@ execute if score $gen.type spellcrafter.tmp matches 1 run scoreboard players set
 
 
 # Insert item
-loot replace entity @s contents loot spellcrafter:random_spell
+loot replace entity @s contents loot spellcrafter:gen/wand_spell
 
 
 # Get spell data

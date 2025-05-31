@@ -81,7 +81,7 @@ function spellcrafter:wand_generator/for_spell
 
 # Get empty wand item
 item replace entity @s contents with minecraft:air
-loot replace entity @s contents loot spellcrafter:wands/empty
+loot replace entity @s contents loot spellcrafter:gen/base_wand
 
 
 # Special case: attribute spells -> calculate and save mana drain

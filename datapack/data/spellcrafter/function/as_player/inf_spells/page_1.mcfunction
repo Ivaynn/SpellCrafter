@@ -8,7 +8,7 @@ function spellcrafter:as_player/inf_spells/custom_wand/update
 
 
 # Menu items
-loot replace entity @s inventory.0 loot spellcrafter:wands/base
+loot replace entity @s inventory.0 loot spellcrafter:wand
 item replace entity @s inventory.1 with minecraft:air
 item replace entity @s inventory.2 with minecraft:air
 item replace entity @s inventory.3 with minecraft:knowledge_book[minecraft:item_name={translate:"spellcrafter.gui.slots",fallback:"Slots",extra:[{text:" ↓"}]},minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:4}},minecraft:custom_model_data={strings:["spellcrafter.gui.slots_down"]}]
