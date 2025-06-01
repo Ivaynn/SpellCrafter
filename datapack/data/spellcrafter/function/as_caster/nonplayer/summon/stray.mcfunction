@@ -1,3 +1,2 @@
 
-scoreboard players set $gen.tier spellcrafter.tmp 3
-execute summon minecraft:stray run function spellcrafter:as_caster/nonplayer/summon/as_summon
+summon minecraft:stray ~ ~ ~ {Tags:["spellcrafter.caster"], PersistenceRequired:1b, DeathLootTable:"spellcrafter:empty", equipment:{head:{id:"minecraft:stone_button",count:1}}, drop_chances:{mainhand:1000000,head:0}, attributes:[{id:"minecraft:follow_range",base:40}]}

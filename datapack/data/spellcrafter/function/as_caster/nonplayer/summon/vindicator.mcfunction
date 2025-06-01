@@ -1,3 +1,2 @@
 
-scoreboard players set $gen.tier spellcrafter.tmp 5
-execute summon minecraft:vindicator run function spellcrafter:as_caster/nonplayer/summon/as_summon
+summon minecraft:vindicator ~ ~ ~ {Tags:["spellcrafter.caster"], PersistenceRequired:1b, DeathLootTable:"spellcrafter:empty", drop_chances:{mainhand:1000000}, attributes:[{id:"minecraft:follow_range",base:40}]}

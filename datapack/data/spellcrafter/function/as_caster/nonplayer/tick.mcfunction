@@ -1,6 +1,12 @@
 #> [tick] as non-player caster, at @s
 
 
+# Initialize missing data
+execute as @s[tag=!spellcrafter.target_dummy] unless score @s spellcrafter.mana matches 0.. run function spellcrafter:as_caster/nonplayer/get_mana
+execute as @s[tag=!spellcrafter.target_dummy] unless predicate spellcrafter:holding_wand run function spellcrafter:as_caster/nonplayer/get_wand
+execute as @s[tag=!spellcrafter.caster] run return 0
+
+
 # Use wand
 scoreboard players set $has_target spellcrafter.tmp 0
 execute on target run scoreboard players set $has_target spellcrafter.tmp 1
