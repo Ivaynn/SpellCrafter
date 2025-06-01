@@ -12,6 +12,7 @@ execute if score $gen.tier spellcrafter.tmp matches 2 store result score @s spel
 execute if score $gen.tier spellcrafter.tmp matches 3 store result score @s spellcrafter.mana run random value 10000..15000
 execute if score $gen.tier spellcrafter.tmp matches 4 store result score @s spellcrafter.mana run random value 20000..35000
 execute if score $gen.tier spellcrafter.tmp matches 5 store result score @s spellcrafter.mana run random value 40000..50000
+scoreboard players set $gen.tier spellcrafter.tmp 0
 
 scoreboard players operation @s spellcrafter.max_mana = @s spellcrafter.mana
 
