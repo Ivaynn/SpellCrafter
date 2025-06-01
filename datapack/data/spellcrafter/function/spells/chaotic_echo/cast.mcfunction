@@ -1,16 +1,16 @@
 #> as projectile, on summon, at @s
 
 
-# Get number from 0 to len(spells)
+# Get number from 1 to len(spells) - 0 is the current spell
 execute store result score $count spellcrafter.tmp run data get storage spellcrafter:tmp wand.spells
+scoreboard players remove $count spellcrafter.tmp 1
 execute store result score $random spellcrafter.tmp run random value 1..100000
 scoreboard players operation $random spellcrafter.tmp %= $count spellcrafter.tmp
-execute unless score $random spellcrafter.tmp matches 0..26 run scoreboard players set $random spellcrafter.tmp 0
+execute unless score $random spellcrafter.tmp matches 1..26 run scoreboard players set $random spellcrafter.tmp 0
 
 
 # Get spell id
 scoreboard players set $echo.spell spellcrafter.tmp 0
-execute if score $random spellcrafter.tmp matches 0 store result score $echo.spell spellcrafter.tmp run data get storage spellcrafter:tmp wand.spells[0]
 execute if score $random spellcrafter.tmp matches 1 store result score $echo.spell spellcrafter.tmp run data get storage spellcrafter:tmp wand.spells[1]
 execute if score $random spellcrafter.tmp matches 2 store result score $echo.spell spellcrafter.tmp run data get storage spellcrafter:tmp wand.spells[2]
 execute if score $random spellcrafter.tmp matches 3 store result score $echo.spell spellcrafter.tmp run data get storage spellcrafter:tmp wand.spells[3]

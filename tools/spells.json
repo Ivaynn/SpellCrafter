@@ -934,7 +934,7 @@
     "parent": "root_projectile",
     "tier": 2,
     "mana": 40,
-    "cooldown": 4,
+    "cooldown": -4,
     "type": "projectile",
     "wandModifier": false,
     "description": [
@@ -1532,7 +1532,7 @@
     "parent": "drill",
     "tier": 3,
     "mana": 60,
-    "cooldown": 4,
+    "cooldown": -4,
     "type": "projectile",
     "wandModifier": false,
     "description": [
@@ -1971,7 +1971,7 @@
     "id": 121,
     "name": "upgrade_mana",
     "displayName": "Upgrade Mana",
-    "parent": "root_special",
+    "parent": "quickstep",
     "tier": 2,
     "mana": 0,
     "cooldown": 0,
@@ -1994,7 +1994,7 @@
     "wandModifier": false,
     "description": [
       "Gets consumed to permanently decrease the",
-      "base cooldown of the wand by 1 second"
+      "base cooldown of the wand by 0.5 seconds"
     ]
   },
   {

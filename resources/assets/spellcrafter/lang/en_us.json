@@ -436,7 +436,7 @@
     "spellcrafter.spell.upgrade_mana.description.2": "the base mana cost of the wand by 10",
     "spellcrafter.spell.upgrade_cooldown.name": "Upgrade Cooldown",
     "spellcrafter.spell.upgrade_cooldown.description.1": "Gets consumed to permanently decrease the",
-    "spellcrafter.spell.upgrade_cooldown.description.2": "base cooldown of the wand by 1 second",
+    "spellcrafter.spell.upgrade_cooldown.description.2": "base cooldown of the wand by 0.5 seconds",
     "spellcrafter.spell.upgrade_slots.name": "Upgrade Slots",
     "spellcrafter.spell.upgrade_slots.description.1": "Gets consumed to permanently increase",
     "spellcrafter.spell.upgrade_slots.description.2": "the spell slots of the wand by 1"

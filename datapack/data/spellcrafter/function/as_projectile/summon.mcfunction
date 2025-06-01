@@ -77,10 +77,13 @@ execute if score $result spellcrafter.tmp matches -1 run kill @s
 execute if score $result spellcrafter.tmp matches -1 run return 0
 
 
-# Make sure projectile stats aren't negative
+# Make sure projectile stats are valid
 execute unless score @s spellcrafter.range matches 0.. run scoreboard players set @s spellcrafter.range 0
+execute unless score @s spellcrafter.range matches ..100 run scoreboard players set @s spellcrafter.range 100
 execute unless score @s spellcrafter.speed matches 1.. run scoreboard players set @s spellcrafter.speed 1
+execute unless score @s spellcrafter.speed matches ..1000 run scoreboard players set @s spellcrafter.speed 1000
 execute unless score @s spellcrafter.damage matches 0.. run scoreboard players set @s spellcrafter.damage 0
+execute unless score @s spellcrafter.damage matches ..100 run scoreboard players set @s spellcrafter.damage 100
 
 
 # Age = range * 4 --> 4 steps = 1 block (projectiles move in steps of 0.25)
