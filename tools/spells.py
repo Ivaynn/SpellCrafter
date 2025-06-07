@@ -397,195 +397,72 @@ def main() -> None:
 
 
     # ------------------------------------------------------------
-    # Random spells for wand generator: a conditional loot table
+    # Random spell loot tables for generators
     # ------------------------------------------------------------
     WEIGHTS =  [[ 10, 6, 3, 2, 2 ],
                 [  7, 9, 6, 3, 3 ],
                 [  3, 4, 8, 6, 4 ],
                 [  0, 1, 3, 7, 5 ],
                 [  0, 0, 0, 2, 6 ]]
-    POOL = {
-        "rolls": 1,
-        "entries": [],
-        "conditions": [
+    EMPTY_LOOT_TABLE = {
+        'pools': [
             {
-                "condition": "minecraft:value_check",
-                "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                        "type": "minecraft:fixed",
-                        "name": "$gen.tier"
-                    },
-                    "score": "spellcrafter.tmp"
-                },
-                "range": 1
-            },
-            {
-                "condition": "minecraft:value_check",
-                "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                        "type": "minecraft:fixed",
-                        "name": "$gen.type"
-                    },
-                    "score": "spellcrafter.tmp"
-                },
-                "range": 1
+                "rolls": 1,
+                "entries": []
             }
         ]
     }
 
-    BLACKLIST = [
-        'upgrade_mana',
-        'upgrade_cooldown',
-        'upgrade_slots',
-    ]
+    ENTRY = {
+        "type": "minecraft:loot_table",
+        "value": {
+            "pools": [
+                {
+                    "rolls": 1,
+                    "entries": []
+                }
+            ]
+        },
+        "weight": None
+    }
 
     random_spell = {'pools': []}
 
     # Go through all possible combinations of $gen.tier and $gen.type
     for gen_tier in SpellTier:
-        for gen_type in SpellType:
 
-            # Create a pool for this combination
-            pool = deepcopy(POOL)
-            pool['conditions'][0]['range'] = gen_tier.value
-            pool['conditions'][1]['range'] = gen_type.value
+        loot_tables = {
+            'all': deepcopy(EMPTY_LOOT_TABLE),
+            'projectile': deepcopy(EMPTY_LOOT_TABLE),
+            'modifier': deepcopy(EMPTY_LOOT_TABLE),
+            'instant': deepcopy(EMPTY_LOOT_TABLE),
+            'special': deepcopy(EMPTY_LOOT_TABLE),
+        }
 
-            # Create entries for spells with this $gen.type
-            for spell in [s for s in spells if s.type == gen_type]:
-
-                if str(spell) in BLACKLIST:
-                    continue
-
-                # Get weight for this combination
-                weight = WEIGHTS[spell.tier.value-1][gen_tier.value-1]
-                if not weight > 0:
-                    continue
-
-                # Add to existing entry if this weight is already in use
-                new_weight = True
-                for entry in pool['entries']:
-                    if weight == entry['weight']:
-                        entry['value']['pools'][0]['entries'].append(
-                            {
-                                'type': 'minecraft:loot_table',
-                                'value': f'spellcrafter:spells/{spell}'
-                            }
-                        )
-                        new_weight = False
-
-                # Create new entry if this weight is new
-                if new_weight:
-                    pool['entries'].append(
-                        {
-                            "type": "minecraft:loot_table",
-                            "value": {
-                                "pools": [
-                                    {
-                                        "rolls": 1,
-                                        "entries": [
-                                            {
-                                                'type': 'minecraft:loot_table',
-                                                'value': f'spellcrafter:spells/{spell}'
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "weight": weight
-                        })
-
-            # Save the created pool (unless it has no entries)
-            if pool['entries']:
-                random_spell['pools'].append(pool)
-
-    save_json(random_spell, datapack_root / f'data/spellcrafter/loot_table/gen/wand_spell.json')
-
-
-
-
-
-    # ------------------------------------------------------------
-    # Random spells for shop: a conditional loot table
-    # ------------------------------------------------------------
-    POOL = {
-        "rolls": 1,
-        "entries": [],
-        "conditions": [
-            {
-                "condition": "minecraft:value_check",
-                "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                        "type": "minecraft:fixed",
-                        "name": "$gen.tier"
-                    },
-                    "score": "spellcrafter.tmp"
-                },
-                "range": 1
-            }
-        ]
-    }
-
-    BLACKLIST = []
-
-    random_spell = {'pools': []}
-    for gen_tier in SpellTier:
-
-        # Create a pool for this tier
-        pool = deepcopy(POOL)
-        pool['conditions'][0]['range'] = gen_tier.value
-
-        # Create entries for spells with this $gen.type
         for spell in spells:
 
-            if str(spell) in BLACKLIST:
-                continue
-
-            # Get weight for this combination
             weight = WEIGHTS[spell.tier.value-1][gen_tier.value-1]
             if not weight > 0:
                 continue
 
-            # Add to existing entry if this weight is already in use
-            new_weight = True
-            for entry in pool['entries']:
-                if weight == entry['weight']:
-                    entry['value']['pools'][0]['entries'].append(
-                        {
-                            'type': 'minecraft:loot_table',
-                            'value': f'spellcrafter:spells/{spell}'
-                        }
-                    )
-                    new_weight = False
+            for key in [str(spell.type), 'all']:
+                matches = [e for e in loot_tables[key]['pools'][0]['entries'] if e['weight'] == weight]
+                if len(matches) > 0:
+                    entry = matches[0]
+                else:
+                    entry = deepcopy(ENTRY)
+                    entry['weight'] = weight
+                    loot_tables[key]['pools'][0]['entries'].append(entry)
 
-            # Create new entry if this weight is new
-            if new_weight:
-                pool['entries'].append(
+                entry['value']['pools'][0]['entries'].append(
                     {
-                        "type": "minecraft:loot_table",
-                        "value": {
-                            "pools": [
-                                {
-                                    "rolls": 1,
-                                    "entries": [
-                                        {
-                                            'type': 'minecraft:loot_table',
-                                            'value': f'spellcrafter:spells/{spell}'
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        "weight": weight
-                    })
-
-        # Save the created pool (unless it has no entries)
-        if pool['entries']:
-            random_spell['pools'].append(pool)
-
-    save_json(random_spell, datapack_root / f'data/spellcrafter/loot_table/gen/shop_spell.json', indent=4)
+                        'type': 'minecraft:loot_table',
+                        'value': f'spellcrafter:spells/{spell}'
+                    }  
+                )
+        
+        for filename in loot_tables.keys():
+            save_json(loot_tables[filename], datapack_root / f'data/spellcrafter/loot_table/gen/tier_{gen_tier.value}/{filename}.json')
 
 
 

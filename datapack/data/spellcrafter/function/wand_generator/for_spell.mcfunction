@@ -31,7 +31,30 @@ execute if score $gen.type spellcrafter.tmp matches 1 run scoreboard players set
 
 
 # Insert item
-loot replace entity @s contents loot spellcrafter:gen/wand_spell
+execute if score $gen.tier spellcrafter.tmp matches 1 if score $gen.type spellcrafter.tmp matches 1 run loot replace entity @s contents loot spellcrafter:gen/tier_1/projectile
+execute if score $gen.tier spellcrafter.tmp matches 1 if score $gen.type spellcrafter.tmp matches 2 run loot replace entity @s contents loot spellcrafter:gen/tier_1/modifier
+execute if score $gen.tier spellcrafter.tmp matches 1 if score $gen.type spellcrafter.tmp matches 3 run loot replace entity @s contents loot spellcrafter:gen/tier_1/instant
+execute if score $gen.tier spellcrafter.tmp matches 1 if score $gen.type spellcrafter.tmp matches 4 run loot replace entity @s contents loot spellcrafter:gen/tier_1/special
+
+execute if score $gen.tier spellcrafter.tmp matches 2 if score $gen.type spellcrafter.tmp matches 1 run loot replace entity @s contents loot spellcrafter:gen/tier_2/projectile
+execute if score $gen.tier spellcrafter.tmp matches 2 if score $gen.type spellcrafter.tmp matches 2 run loot replace entity @s contents loot spellcrafter:gen/tier_2/modifier
+execute if score $gen.tier spellcrafter.tmp matches 2 if score $gen.type spellcrafter.tmp matches 3 run loot replace entity @s contents loot spellcrafter:gen/tier_2/instant
+execute if score $gen.tier spellcrafter.tmp matches 2 if score $gen.type spellcrafter.tmp matches 4 run loot replace entity @s contents loot spellcrafter:gen/tier_2/special
+
+execute if score $gen.tier spellcrafter.tmp matches 3 if score $gen.type spellcrafter.tmp matches 1 run loot replace entity @s contents loot spellcrafter:gen/tier_3/projectile
+execute if score $gen.tier spellcrafter.tmp matches 3 if score $gen.type spellcrafter.tmp matches 2 run loot replace entity @s contents loot spellcrafter:gen/tier_3/modifier
+execute if score $gen.tier spellcrafter.tmp matches 3 if score $gen.type spellcrafter.tmp matches 3 run loot replace entity @s contents loot spellcrafter:gen/tier_3/instant
+execute if score $gen.tier spellcrafter.tmp matches 3 if score $gen.type spellcrafter.tmp matches 4 run loot replace entity @s contents loot spellcrafter:gen/tier_3/special
+
+execute if score $gen.tier spellcrafter.tmp matches 4 if score $gen.type spellcrafter.tmp matches 1 run loot replace entity @s contents loot spellcrafter:gen/tier_4/projectile
+execute if score $gen.tier spellcrafter.tmp matches 4 if score $gen.type spellcrafter.tmp matches 2 run loot replace entity @s contents loot spellcrafter:gen/tier_4/modifier
+execute if score $gen.tier spellcrafter.tmp matches 4 if score $gen.type spellcrafter.tmp matches 3 run loot replace entity @s contents loot spellcrafter:gen/tier_4/instant
+execute if score $gen.tier spellcrafter.tmp matches 4 if score $gen.type spellcrafter.tmp matches 4 run loot replace entity @s contents loot spellcrafter:gen/tier_4/special
+
+execute if score $gen.tier spellcrafter.tmp matches 5 if score $gen.type spellcrafter.tmp matches 1 run loot replace entity @s contents loot spellcrafter:gen/tier_5/projectile
+execute if score $gen.tier spellcrafter.tmp matches 5 if score $gen.type spellcrafter.tmp matches 2 run loot replace entity @s contents loot spellcrafter:gen/tier_5/modifier
+execute if score $gen.tier spellcrafter.tmp matches 5 if score $gen.type spellcrafter.tmp matches 3 run loot replace entity @s contents loot spellcrafter:gen/tier_5/instant
+execute if score $gen.tier spellcrafter.tmp matches 5 if score $gen.type spellcrafter.tmp matches 4 run loot replace entity @s contents loot spellcrafter:gen/tier_5/special
 
 
 # Get spell data
