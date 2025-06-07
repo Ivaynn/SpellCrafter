@@ -1972,7 +1972,7 @@
     "name": "upgrade_mana",
     "displayName": "Upgrade Mana",
     "parent": "quickstep",
-    "tier": 2,
+    "tier": 3,
     "mana": 0,
     "cooldown": 0,
     "type": "special",
@@ -1987,7 +1987,7 @@
     "name": "upgrade_cooldown",
     "displayName": "Upgrade Cooldown",
     "parent": "upgrade_mana",
-    "tier": 2,
+    "tier": 3,
     "mana": 0,
     "cooldown": 0,
     "type": "special",
@@ -2002,7 +2002,7 @@
     "name": "upgrade_slots",
     "displayName": "Upgrade Slots",
     "parent": "upgrade_cooldown",
-    "tier": 2,
+    "tier": 3,
     "mana": 0,
     "cooldown": 0,
     "type": "special",
@@ -2029,5 +2029,20 @@
     "stats": {
       "damage": 16
     }
+  },
+  {
+    "id": 125,
+    "name": "ender_eye",
+    "displayName": "Watchful Eye",
+    "parent": "chaotic_crystal",
+    "tier": 4,
+    "mana": 80,
+    "cooldown": 80,
+    "type": "instant",
+    "wandModifier": false,
+    "description": [
+      "Summons a floating eye that",
+      "reveals nearby casters"
+    ]
   }
 ]

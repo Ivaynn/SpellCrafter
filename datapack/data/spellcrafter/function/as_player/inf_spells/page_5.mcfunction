@@ -24,5 +24,5 @@ loot replace entity @s inventory.20 loot spellcrafter:spells/summon_slime
 loot replace entity @s inventory.21 loot spellcrafter:spells/summon_magma
 loot replace entity @s inventory.22 loot spellcrafter:spells/summon_endermite
 loot replace entity @s inventory.23 loot spellcrafter:spells/angry_goat
-item replace entity @s inventory.24 with minecraft:air
+loot replace entity @s inventory.24 loot spellcrafter:spells/ender_eye
 loot replace entity @s inventory.25 loot spellcrafter:spells/arrow_rain

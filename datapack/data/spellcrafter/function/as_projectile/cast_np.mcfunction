@@ -41,6 +41,7 @@ execute if score $spell spellcrafter.tmp matches 118 run return run function spe
 execute if score $spell spellcrafter.tmp matches 119 run return run function spellcrafter:spells/healing_crystal/cast
 execute if score $spell spellcrafter.tmp matches 120 run return run function spellcrafter:spells/chaotic_crystal/cast
 execute if score $spell spellcrafter.tmp matches 124 run return run function spellcrafter:spells/anchor_explosion/cast
+execute if score $spell spellcrafter.tmp matches 125 run return run function spellcrafter:spells/ender_eye/cast
 
 
 # Special

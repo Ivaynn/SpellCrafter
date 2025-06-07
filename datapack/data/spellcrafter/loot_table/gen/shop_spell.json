@@ -198,18 +198,6 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_mana"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_cooldown"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -399,6 +387,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/healing_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -620,18 +620,6 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_mana"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_cooldown"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -733,6 +721,10 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/anchor_explosion"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/ender_eye"
                                     }
                                 ]
                             }
@@ -922,6 +914,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/healing_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -1078,6 +1082,10 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/anchor_explosion"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/ender_eye"
                                     }
                                 ]
                             }
@@ -1231,18 +1239,6 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_mana"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_cooldown"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -1432,6 +1428,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/healing_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -1697,18 +1705,6 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_mana"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_cooldown"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -1810,6 +1806,10 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/anchor_explosion"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/ender_eye"
                                     }
                                 ]
                             }
@@ -1999,6 +1999,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/healing_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -2220,18 +2232,6 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/chaotic_crystal"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_mana"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_cooldown"
-                                    },
-                                    {
-                                        "type": "minecraft:loot_table",
-                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }
@@ -2333,6 +2333,10 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/anchor_explosion"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/ender_eye"
                                     }
                                 ]
                             }
@@ -2522,6 +2526,18 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/healing_crystal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_mana"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_cooldown"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/upgrade_slots"
                                     }
                                 ]
                             }

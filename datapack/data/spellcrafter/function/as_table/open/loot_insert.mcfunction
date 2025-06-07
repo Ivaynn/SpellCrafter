@@ -122,3 +122,4 @@ execute if score $spell spellcrafter.tmp matches 121 run return run loot insert 
 execute if score $spell spellcrafter.tmp matches 122 run return run loot insert ~ ~ ~ loot spellcrafter:spells/upgrade_cooldown
 execute if score $spell spellcrafter.tmp matches 123 run return run loot insert ~ ~ ~ loot spellcrafter:spells/upgrade_slots
 execute if score $spell spellcrafter.tmp matches 124 run return run loot insert ~ ~ ~ loot spellcrafter:spells/anchor_explosion
+execute if score $spell spellcrafter.tmp matches 125 run return run loot insert ~ ~ ~ loot spellcrafter:spells/ender_eye

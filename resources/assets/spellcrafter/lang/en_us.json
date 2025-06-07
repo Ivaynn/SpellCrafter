@@ -442,5 +442,8 @@
     "spellcrafter.spell.upgrade_slots.description.2": "the spell slots of the wand by 1",
     "spellcrafter.spell.anchor_explosion.name": "Anchor Explosion",
     "spellcrafter.spell.anchor_explosion.description.1": "Summons a Respawn Anchor that",
-    "spellcrafter.spell.anchor_explosion.description.2": "slowly charges an explosion"
+    "spellcrafter.spell.anchor_explosion.description.2": "slowly charges an explosion",
+    "spellcrafter.spell.ender_eye.name": "Watchful Eye",
+    "spellcrafter.spell.ender_eye.description.1": "Summons a floating eye that",
+    "spellcrafter.spell.ender_eye.description.2": "reveals nearby casters"
 }
