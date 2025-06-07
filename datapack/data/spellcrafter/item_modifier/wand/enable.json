@@ -5,6 +5,7 @@
             "minecraft:consumable": {
                 "animation": "none",
                 "consume_seconds": 2147483647,
+                "sound": "minecraft:intentionally_empty",
                 "has_consume_particles": false,
                 "on_consume_effects": []
             }
