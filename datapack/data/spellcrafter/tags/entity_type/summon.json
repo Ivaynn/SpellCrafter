@@ -8,6 +8,7 @@
         "minecraft:goat",
         "minecraft:wind_charge",
         "minecraft:arrow",
-        "minecraft:item_display"
+        "minecraft:item_display",
+        "minecraft:block_display"
     ]
 }

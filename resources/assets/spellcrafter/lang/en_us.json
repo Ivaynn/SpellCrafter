@@ -439,5 +439,8 @@
     "spellcrafter.spell.upgrade_cooldown.description.2": "base cooldown of the wand by 0.5 seconds",
     "spellcrafter.spell.upgrade_slots.name": "Upgrade Slots",
     "spellcrafter.spell.upgrade_slots.description.1": "Gets consumed to permanently increase",
-    "spellcrafter.spell.upgrade_slots.description.2": "the spell slots of the wand by 1"
+    "spellcrafter.spell.upgrade_slots.description.2": "the spell slots of the wand by 1",
+    "spellcrafter.spell.anchor_explosion.name": "Anchor Explosion",
+    "spellcrafter.spell.anchor_explosion.description.1": "Summons a Respawn Anchor that",
+    "spellcrafter.spell.anchor_explosion.description.2": "slowly charges an explosion"
 }

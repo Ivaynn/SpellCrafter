@@ -729,6 +729,10 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/steal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/anchor_explosion"
                                     }
                                 ]
                             }
@@ -1070,6 +1074,10 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/magic_shield"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/anchor_explosion"
                                     }
                                 ]
                             }
@@ -1798,6 +1806,10 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/steal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/anchor_explosion"
                                     }
                                 ]
                             }
@@ -2317,6 +2329,10 @@
                                     {
                                         "type": "minecraft:loot_table",
                                         "value": "spellcrafter:spells/steal"
+                                    },
+                                    {
+                                        "type": "minecraft:loot_table",
+                                        "value": "spellcrafter:spells/anchor_explosion"
                                     }
                                 ]
                             }

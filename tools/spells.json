@@ -617,7 +617,7 @@
     "id": 38,
     "name": "firework_rocket",
     "displayName": "Firework Rocket",
-    "parent": "large_explosion",
+    "parent": "anchor_explosion",
     "tier": 3,
     "mana": 100,
     "cooldown": 10,
@@ -1463,8 +1463,8 @@
     "displayName": "Large Explosion",
     "parent": "explosion",
     "tier": 5,
-    "mana": 150,
-    "cooldown": 20,
+    "mana": 300,
+    "cooldown": 60,
     "type": "instant",
     "wandModifier": false,
     "description": [
@@ -2011,5 +2011,23 @@
       "Gets consumed to permanently increase",
       "the spell slots of the wand by 1"
     ]
+  },
+  {
+    "id": 124,
+    "name": "anchor_explosion",
+    "displayName": "Anchor Explosion",
+    "parent": "large_explosion",
+    "tier": 4,
+    "mana": 150,
+    "cooldown": 25,
+    "type": "instant",
+    "wandModifier": false,
+    "description": [
+      "Summons a Respawn Anchor that",
+      "slowly charges an explosion"
+    ],
+    "stats": {
+      "damage": 16
+    }
   }
 ]

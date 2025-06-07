@@ -439,5 +439,8 @@
     "spellcrafter.spell.upgrade_cooldown.description.2": "...",
     "spellcrafter.spell.upgrade_slots.name": "...",
     "spellcrafter.spell.upgrade_slots.description.1": "...",
-    "spellcrafter.spell.upgrade_slots.description.2": "..."
+    "spellcrafter.spell.upgrade_slots.description.2": "...",
+    "spellcrafter.spell.anchor_explosion.name": "...",
+    "spellcrafter.spell.anchor_explosion.description.1": "...",
+    "spellcrafter.spell.anchor_explosion.description.2": "..."
 }
