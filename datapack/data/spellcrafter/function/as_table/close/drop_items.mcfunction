@@ -1,7 +1,7 @@
 #> as table, at barrel
 # storage "spellcrafter:tmp items" must contain barrel items
 
-playsound minecraft:block.dispenser.dispense player @a ~ ~ ~ 1 1
+playsound minecraft:block.dispenser.dispense player @a[distance=..100] ~ ~ ~ 1 1
 
 setblock ~ ~ ~ minecraft:yellow_shulker_box replace
 data modify block ~ ~ ~ Items set from storage spellcrafter:tmp items

@@ -14,5 +14,5 @@ scoreboard players operation $speed spellcrafter.tmp += $add spellcrafter.tmp
 
 
 # Remove self
-particle minecraft:dust{color:[0.5,0.0,0.0],scale:1} ~ ~ ~ 0.3 0.3 0.3 0 10 force @a
+particle minecraft:dust{color:[0.5,0.0,0.0],scale:1} ~ ~ ~ 0.3 0.3 0.3 0 10 force @a[distance=..100]
 function spellcrafter:as_projectile/remove

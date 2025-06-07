@@ -18,5 +18,5 @@ execute if score damage_caster spellcrafter.options matches 1 as @s[tag=spellcra
 
 
 # Effects
-particle minecraft:glow ~ ~ ~ 3 3 3 1 50 force @a
-playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 2 1.5
+particle minecraft:glow ~ ~ ~ 3 3 3 1 50 force @a[distance=..100]
+playsound minecraft:entity.glow_squid.squirt player @a[distance=..100] ~ ~ ~ 2 1.5

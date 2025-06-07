@@ -32,4 +32,4 @@ scoreboard players operation @s spellcrafter.age *= #4 spellcrafter.math
 
 
 # Effects
-playsound minecraft:entity.illusioner.prepare_mirror player @a ^ ^ ^1 2 2
+playsound minecraft:entity.illusioner.prepare_mirror player @a[distance=..100] ^ ^ ^1 2 2

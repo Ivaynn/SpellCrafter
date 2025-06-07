@@ -11,4 +11,4 @@ execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-1 ~ as @e[d
 
 
 # Effects
-playsound minecraft:entity.splash_potion.break player @a ~ ~ ~ 1 1.2
+playsound minecraft:entity.splash_potion.break player @a[distance=..100] ~ ~ ~ 1 1.2

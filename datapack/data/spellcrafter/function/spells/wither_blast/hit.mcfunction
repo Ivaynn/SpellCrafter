@@ -18,5 +18,5 @@ execute if score damage_caster spellcrafter.options matches 1 as @s[tag=spellcra
 
 
 # Effects
-playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.5
-particle minecraft:large_smoke ~ ~ ~ 0 0 0 .2 5 force @a
+playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 2 1.5
+particle minecraft:large_smoke ~ ~ ~ 0 0 0 .2 5 force @a[distance=..100]

@@ -11,5 +11,5 @@ execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-1 ~ as @e[d
 
 
 # Effects
-particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 0 force @a
-playsound minecraft:entity.warden.sonic_boom player @a ~ ~ ~ 2 1.4
+particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 0 force @a[distance=..100]
+playsound minecraft:entity.warden.sonic_boom player @a[distance=..100] ~ ~ ~ 2 1.4

@@ -4,4 +4,4 @@
 
 # Summon entity
 execute align xyz positioned ~.5 ~ ~.5 summon minecraft:bat run function spellcrafter:spells/summon_bat/as_bat
-playsound minecraft:entity.bat.ambient player @a ~ ~ ~ 1 1
+playsound minecraft:entity.bat.ambient player @a[distance=..100] ~ ~ ~ 1 1

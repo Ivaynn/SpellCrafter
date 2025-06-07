@@ -9,4 +9,4 @@ effect give @e[distance=..5,type=!#spellcrafter:untargetable,tag=!spellcrafter.u
 # Effects
 execute as @s[tag=spellcrafter.spell.hidden] run return 0
 execute as @s[tag=spellcrafter.spell.rainbow] run return run function spellcrafter:spells/rainbow/trail
-particle minecraft:glow ~ ~ ~ 0 0 0 0 0 force @a
+particle minecraft:glow ~ ~ ~ 0 0 0 0 0 force @a[distance=..100]

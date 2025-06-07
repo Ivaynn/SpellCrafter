@@ -18,4 +18,4 @@ effect give @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predica
 
 
 # Effects
-playsound minecraft:entity.phantom.bite player @a ~ ~ ~ 2 0.8
+playsound minecraft:entity.phantom.bite player @a[distance=..100] ~ ~ ~ 2 0.8

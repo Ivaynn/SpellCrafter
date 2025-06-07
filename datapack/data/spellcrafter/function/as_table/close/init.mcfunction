@@ -30,8 +30,8 @@ execute if score $success spellcrafter.tmp matches 0 if data storage spellcrafte
 
 
 # Custom sounds
-execute if score $success spellcrafter.tmp matches 1 run playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 1 1.2
-execute if score $success spellcrafter.tmp matches 0 run playsound minecraft:item.book.page_turn block @a ~ ~ ~ 0.5 1.8
+execute if score $success spellcrafter.tmp matches 1 run playsound minecraft:block.enchantment_table.use block @a[distance=..100] ~ ~ ~ 1 1.2
+execute if score $success spellcrafter.tmp matches 0 run playsound minecraft:item.book.page_turn block @a[distance=..100] ~ ~ ~ 0.5 1.8
 
 
 # Replace barrel

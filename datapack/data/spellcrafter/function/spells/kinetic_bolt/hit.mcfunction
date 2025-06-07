@@ -17,9 +17,9 @@ execute if score $success spellcrafter.tmp matches 0 run return 0
 
 
 # Effects
-execute if score @s spellcrafter.speed matches 4..7 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 2
-execute if score @s spellcrafter.speed matches 8..11 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.8
-execute if score @s spellcrafter.speed matches 12..15 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.6
-execute if score @s spellcrafter.speed matches 16..19 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 1.4
-execute if score @s spellcrafter.speed matches 20..23 run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2.5 1.2
-execute if score @s spellcrafter.speed matches 24.. run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 3 1.0
+execute if score @s spellcrafter.speed matches 4..7 run playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 2 2
+execute if score @s spellcrafter.speed matches 8..11 run playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 2 1.8
+execute if score @s spellcrafter.speed matches 12..15 run playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 2 1.6
+execute if score @s spellcrafter.speed matches 16..19 run playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 2 1.4
+execute if score @s spellcrafter.speed matches 20..23 run playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 2.5 1.2
+execute if score @s spellcrafter.speed matches 24.. run playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 3 1.0

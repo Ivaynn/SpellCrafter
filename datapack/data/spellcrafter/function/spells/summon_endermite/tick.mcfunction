@@ -16,4 +16,4 @@ execute unless entity @s[distance=..10] run return run tp @s ~ ~ ~
 
 
 # Effects
-execute at @s run playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 0.5 1.6
+execute at @s run playsound minecraft:entity.enderman.teleport player @a[distance=..100] ~ ~ ~ 0.5 1.6

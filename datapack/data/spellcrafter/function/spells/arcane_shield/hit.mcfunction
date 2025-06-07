@@ -11,4 +11,4 @@ execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-1 ~ as @e[d
 
 
 # Effects
-playsound minecraft:entity.iron_golem.hurt player @a ~ ~ ~ 1 1.8
+playsound minecraft:entity.iron_golem.hurt player @a[distance=..100] ~ ~ ~ 1 1.8

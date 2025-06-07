@@ -8,5 +8,5 @@ effect give @e[distance=..4,type=#minecraft:undead,type=!#spellcrafter:untargeta
 
 
 # Effects
-particle minecraft:heart ^ ^ ^ 0.5 0.5 0.5 0.4 5 force @a
-playsound minecraft:entity.experience_orb.pickup player @a ~ ~ ~ 1 1.2
+particle minecraft:heart ^ ^ ^ 0.5 0.5 0.5 0.4 5 force @a[distance=..100]
+playsound minecraft:entity.experience_orb.pickup player @a[distance=..100] ~ ~ ~ 1 1.2

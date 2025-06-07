@@ -1,3 +1,3 @@
 #> as projectile, at @s
 
-particle minecraft:happy_villager ~ ~ ~ 0 0 0 0 0 force @a
+particle minecraft:happy_villager ~ ~ ~ 0 0 0 0 0 force @a[distance=..100]

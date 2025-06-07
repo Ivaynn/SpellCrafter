@@ -2,4 +2,4 @@
 # instant cast
 
 execute summon minecraft:item_display run function spellcrafter:spells/summon_crystal/as_display
-playsound minecraft:block.beacon.activate player @a ~ ~ ~ 2 0.8
+playsound minecraft:block.beacon.activate player @a[distance=..100] ~ ~ ~ 2 0.8

@@ -18,5 +18,5 @@ execute if score damage_caster spellcrafter.options matches 1 as @s[tag=spellcra
 
 
 # Effects
-particle minecraft:end_rod ~ ~ ~ .5 .5 .5 0.1 10 force @a
-playsound minecraft:entity.shulker_bullet.hit player @a ~ ~ ~ 1 1
+particle minecraft:end_rod ~ ~ ~ .5 .5 .5 0.1 10 force @a[distance=..100]
+playsound minecraft:entity.shulker_bullet.hit player @a[distance=..100] ~ ~ ~ 1 1

@@ -7,5 +7,5 @@ effect give @e[distance=..4,type=!#spellcrafter:untargetable,tag=!spellcrafter.u
 
 
 # Effects
-particle minecraft:enchanted_hit ~ ~ ~ .5 .5 .5 1 25 force @a
-playsound minecraft:item.armor.equip_chain player @a ~ ~ ~ 1 0.8
+particle minecraft:enchanted_hit ~ ~ ~ .5 .5 .5 1 25 force @a[distance=..100]
+playsound minecraft:item.armor.equip_chain player @a[distance=..100] ~ ~ ~ 1 0.8

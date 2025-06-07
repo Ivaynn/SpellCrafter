@@ -7,4 +7,4 @@ execute summon minecraft:arrow run function spellcrafter:spells/summon_arrow/as_
 
 
 # Effects
-playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 1 1
+playsound minecraft:entity.arrow.shoot player @a[distance=..100] ~ ~ ~ 1 1

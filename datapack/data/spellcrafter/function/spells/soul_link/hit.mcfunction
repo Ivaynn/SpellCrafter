@@ -17,4 +17,4 @@ execute as @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicat
 
 
 # Effects
-playsound minecraft:entity.vex.charge player @a ~ ~ ~ 2 0.7
+playsound minecraft:entity.vex.charge player @a[distance=..100] ~ ~ ~ 2 0.7

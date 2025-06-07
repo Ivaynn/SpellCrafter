@@ -18,5 +18,5 @@ execute if score damage_caster spellcrafter.options matches 1 as @s[tag=spellcra
 
 
 # Effects
-playsound minecraft:entity.snow_golem.death player @a ~ ~ ~ 2 0.9
-particle minecraft:snowflake ~ ~ ~ .5 .5 .5 .2 25 force @a
+playsound minecraft:entity.snow_golem.death player @a[distance=..100] ~ ~ ~ 2 0.9
+particle minecraft:snowflake ~ ~ ~ .5 .5 .5 .2 25 force @a[distance=..100]

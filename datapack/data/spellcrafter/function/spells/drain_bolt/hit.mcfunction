@@ -13,4 +13,4 @@ execute positioned ~ ~-1 ~ as @e[distance=..3,limit=1,sort=nearest,type=#spellcr
 
 
 # Effects
-execute if score $success spellcrafter.tmp matches 1.. run playsound minecraft:entity.allay.item_thrown player @a ~ ~ ~ 2 0.9
+execute if score $success spellcrafter.tmp matches 1.. run playsound minecraft:entity.allay.item_thrown player @a[distance=..100] ~ ~ ~ 2 0.9

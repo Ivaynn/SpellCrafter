@@ -9,7 +9,7 @@ execute align xyz positioned ~.5 ~ ~.5 as @e[limit=1,distance=..0.001,type=minec
 
 
 # Effects
-playsound minecraft:entity.slime.squish_small player @a ~ ~ ~ 1 1
+playsound minecraft:entity.slime.squish_small player @a[distance=..100] ~ ~ ~ 1 1
 
 
 # Counter

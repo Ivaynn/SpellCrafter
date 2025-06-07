@@ -4,4 +4,4 @@
 
 # Summon entity
 execute summon minecraft:item_display run function spellcrafter:spells/healing_circle/as_display
-playsound minecraft:block.brewing_stand.brew player @a ~ ~ ~ 1 1.4
+playsound minecraft:block.brewing_stand.brew player @a[distance=..100] ~ ~ ~ 1 1.4

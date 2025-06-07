@@ -18,4 +18,4 @@ execute if score damage_caster spellcrafter.options matches 1 as @s[tag=spellcra
 
 
 # Effects
-playsound minecraft:entity.slime.squish_small player @a ~ ~ ~ 1 1.2
+playsound minecraft:entity.slime.squish_small player @a[distance=..100] ~ ~ ~ 1 1.2
