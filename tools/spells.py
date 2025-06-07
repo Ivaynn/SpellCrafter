@@ -404,6 +404,7 @@ def main() -> None:
                 [  3, 4, 8, 6, 4 ],
                 [  0, 1, 3, 7, 5 ],
                 [  0, 0, 0, 2, 6 ]]
+
     EMPTY_LOOT_TABLE = {
         'pools': [
             {
@@ -426,9 +427,6 @@ def main() -> None:
         "weight": None
     }
 
-    random_spell = {'pools': []}
-
-    # Go through all possible combinations of $gen.tier and $gen.type
     for gen_tier in SpellTier:
 
         loot_tables = {
@@ -556,7 +554,7 @@ def main() -> None:
     # Done!
     # ------------------------------------------------------------
     print('Success!')
-    print('- Projectile stats must be updated manually in their \'projectile.mcfunction\'')
+    print('- Spell stats must be updated manually')
     print('- PNG files for new spells must be created manually')
     print('- New spells must be added to multiple files manually. Check similar spells')
 
