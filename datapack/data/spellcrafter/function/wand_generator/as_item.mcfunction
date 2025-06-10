@@ -120,8 +120,3 @@ function spellcrafter:wand_generator/for_lore
 
 # Wand modifier
 item modify entity @s contents spellcrafter:wand/lore/wand_mod_add
-
-
-# Reset scores
-scoreboard players set $gen.tier spellcrafter.tmp 0
-scoreboard players set $gen.type spellcrafter.tmp 0

@@ -49,6 +49,7 @@
     "spellcrafter.options.min_cooldown.name": "Recarga da Varinha",
     "spellcrafter.options.min_cooldown.description": "Recarga mínima da varinha\nem segundos",
     "spellcrafter.entity.target_dummy": "Boneco de Treino",
+    "spellcrafter.entity.trader": "Vendedor Místico - Nível %s",
     "spellcrafter.entity.summon.goat": "Bode Irritado de %s",
     "spellcrafter.entity.summon.bat": "Morcego de %s",
     "spellcrafter.entity.summon.endermite": "Endermite de %s",
