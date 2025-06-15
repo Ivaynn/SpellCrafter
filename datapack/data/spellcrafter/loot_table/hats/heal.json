@@ -1,0 +1,74 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:rarity": "rare",
+                "dyed_color": 14776811,
+                "equippable": {
+                    "slot": "head"
+                },
+                "unbreakable": {},
+                "tooltip_display": {
+                    "hidden_components": [
+                        "minecraft:dyed_color",
+                        "minecraft:unbreakable"
+                    ]
+                },
+                "!attribute_modifiers": {}
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{hat:{valid:1b,type:\"heal\"}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "spellcrafter.hat.heal.name",
+                "fallback": "Healer's Hat"
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "translate": "spellcrafter.hat.heal.description.1",
+                    "fallback": "A soothing hat that restores its",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "spellcrafter.hat.heal.description.2",
+                    "fallback": "wearer's vitality over time",
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.hat.heal"
+                ],
+                "mode": "replace_all"
+            }
+        }
+    ]
+}

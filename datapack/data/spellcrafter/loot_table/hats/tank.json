@@ -1,0 +1,93 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:rarity": "rare",
+                "dyed_color": 6710886,
+                "equippable": {
+                    "slot": "head"
+                },
+                "unbreakable": {},
+                "tooltip_display": {
+                    "hidden_components": [
+                        "minecraft:dyed_color",
+                        "minecraft:unbreakable"
+                    ]
+                },
+                "!attribute_modifiers": {}
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{hat:{valid:1b,type:\"tank\"}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "spellcrafter.hat.tank.name",
+                "fallback": "Titan's Hat"
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "translate": "spellcrafter.hat.tank.description.1",
+                    "fallback": "A sturdy hat that shields its",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "spellcrafter.hat.tank.description.2",
+                    "fallback": "wearer from incoming damage",
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.hat.tank"
+                ],
+                "mode": "replace_all"
+            }
+        },
+        {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+                {
+                    "id": "spellcrafter:hat.armor",
+                    "attribute": "minecraft:armor",
+                    "amount": 10,
+                    "operation": "add_value",
+                    "slot": "head"
+                },
+                {
+                    "id": "spellcrafter:hat.movement_speed",
+                    "attribute": "minecraft:movement_speed",
+                    "amount": -0.5,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                }
+            ]
+        }
+    ]
+}

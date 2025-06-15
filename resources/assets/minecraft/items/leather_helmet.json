@@ -8,10 +8,52 @@
         },
         "cases": [
             {
-                "when": "spellcrafter.hat.test",
+                "when": "spellcrafter.hat.tank",
                 "model": {
                     "type": "minecraft:model",
-                    "model": "spellcrafter:item/hat/test"
+                    "model": "spellcrafter:item/hat/tank"
+                }
+            },
+            {
+                "when": "spellcrafter.hat.float",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/hat/float"
+                }
+            },
+            {
+                "when": "spellcrafter.hat.mana",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/hat/mana"
+                }
+            },
+            {
+                "when": "spellcrafter.hat.small",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/hat/small"
+                }
+            },
+            {
+                "when": "spellcrafter.hat.big",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/hat/big"
+                }
+            },
+            {
+                "when": "spellcrafter.hat.damage",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/hat/damage"
+                }
+            },
+            {
+                "when": "spellcrafter.hat.heal",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/hat/heal"
                 }
             }
         ]

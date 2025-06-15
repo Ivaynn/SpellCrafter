@@ -1,0 +1,97 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:rarity": "rare",
+                "dyed_color": 2677489,
+                "equippable": {
+                    "slot": "head"
+                },
+                "unbreakable": {},
+                "tooltip_display": {
+                    "hidden_components": [
+                        "minecraft:dyed_color",
+                        "minecraft:unbreakable"
+                    ]
+                },
+                "!attribute_modifiers": {}
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{hat:{valid:1b,type:\"mana\"}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "spellcrafter.hat.mana.name",
+                "fallback": "Sage's Hat"
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "translate": "spellcrafter.hat.mana.description.1",
+                    "fallback": "A magical hat that channels",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "spellcrafter.hat.mana.description.2",
+                    "fallback": "its wearer's mana flow",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "translate": "item.modifiers.head",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "spellcrafter.stat.mana_regen.name",
+                    "fallback": "Mana Regeneration",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "text": ": "
+                        },
+                        {
+                            "text": "+10 ◆",
+                            "color": "aqua"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.hat.mana"
+                ],
+                "mode": "replace_all"
+            }
+        }
+    ]
+}

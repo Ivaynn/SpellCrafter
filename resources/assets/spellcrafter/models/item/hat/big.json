@@ -1,8 +1,7 @@
 {
-	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "spellcrafter:item/hat/test",
-		"particle": "spellcrafter:item/hat/test"
+		"0": "spellcrafter:item/hat/big",
+		"particle": "spellcrafter:item/hat/big"
 	},
 	"elements": [
 		{

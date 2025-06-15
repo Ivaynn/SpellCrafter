@@ -1,0 +1,107 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:rarity": "rare",
+                "dyed_color": 13203987,
+                "equippable": {
+                    "slot": "head"
+                },
+                "unbreakable": {},
+                "tooltip_display": {
+                    "hidden_components": [
+                        "minecraft:dyed_color",
+                        "minecraft:unbreakable"
+                    ]
+                },
+                "!attribute_modifiers": {}
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{hat:{valid:1b,type:\"big\"}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "spellcrafter.hat.big.name",
+                "fallback": "Giant's Hat"
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "translate": "spellcrafter.hat.big.description.1",
+                    "fallback": "A massive hat that enlarges its",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "spellcrafter.hat.big.description.2",
+                    "fallback": "wearer to match its size",
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.hat.big"
+                ],
+                "mode": "replace_all"
+            }
+        },
+        {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+                {
+                    "id": "spellcrafter:hat.scale",
+                    "attribute": "minecraft:scale",
+                    "amount": 0.5,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                },
+                {
+                    "id": "spellcrafter:hat.jump_strength",
+                    "attribute": "minecraft:jump_strength",
+                    "amount": 0.2,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                },
+                {
+                    "id": "spellcrafter:hat.max_health",
+                    "attribute": "minecraft:max_health",
+                    "amount": 20,
+                    "operation": "add_value",
+                    "slot": "head"
+                },
+                {
+                    "id": "spellcrafter:hat.movement_speed",
+                    "attribute": "minecraft:movement_speed",
+                    "amount": -0.5,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:rarity": "rare",
+                "dyed_color": 11153456,
+                "equippable": {
+                    "slot": "head"
+                },
+                "unbreakable": {},
+                "tooltip_display": {
+                    "hidden_components": [
+                        "minecraft:dyed_color",
+                        "minecraft:unbreakable"
+                    ]
+                },
+                "!attribute_modifiers": {}
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{hat:{valid:1b,type:\"damage\"}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "spellcrafter.hat.damage.name",
+                "fallback": "Battlemage's Hat"
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "translate": "spellcrafter.hat.damage.description.1",
+                    "fallback": "A fierce hat that empowers",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "spellcrafter.hat.damage.description.2",
+                    "fallback": "the wearer's strength",
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.hat.damage"
+                ],
+                "mode": "replace_all"
+            }
+        },
+        {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+                {
+                    "id": "spellcrafter:hat.attack_damage",
+                    "attribute": "minecraft:attack_damage",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head"
+                }
+            ]
+        }
+    ]
+}

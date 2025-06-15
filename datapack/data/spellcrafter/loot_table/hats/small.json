@@ -1,0 +1,100 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:rarity": "rare",
+                "dyed_color": 5952309,
+                "equippable": {
+                    "slot": "head"
+                },
+                "unbreakable": {},
+                "tooltip_display": {
+                    "hidden_components": [
+                        "minecraft:dyed_color",
+                        "minecraft:unbreakable"
+                    ]
+                },
+                "!attribute_modifiers": {}
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{hat:{valid:1b,type:\"small\"}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "spellcrafter.hat.small.name",
+                "fallback": "Pixie's Hat"
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "translate": "spellcrafter.hat.small.description.1",
+                    "fallback": "A tiny hat that shrinks its",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "spellcrafter.hat.small.description.2",
+                    "fallback": "wearer for a perfect fit",
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.hat.small"
+                ],
+                "mode": "replace_all"
+            }
+        },
+        {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+                {
+                    "id": "spellcrafter:hat.scale",
+                    "attribute": "minecraft:scale",
+                    "amount": -0.35,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                },
+                {
+                    "id": "spellcrafter:hat.max_health",
+                    "attribute": "minecraft:max_health",
+                    "amount": -4,
+                    "operation": "add_value",
+                    "slot": "head"
+                },
+                {
+                    "id": "spellcrafter:hat.movement_speed",
+                    "attribute": "minecraft:movement_speed",
+                    "amount": 0.3,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                }
+            ]
+        }
+    ]
+}
