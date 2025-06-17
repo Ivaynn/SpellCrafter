@@ -1,6 +1,12 @@
 #> [tick] as player, at @s
 
 
+# Hats
+execute if score @s spellcrafter.hat matches 3 run function spellcrafter:as_caster/player/hat/mana
+execute if score @s spellcrafter.hat matches 7 run function spellcrafter:as_caster/player/hat/heal
+execute if score @s spellcrafter.hat matches 8 run function spellcrafter:as_caster/player/hat/stealth
+
+
 # Cooldown
 execute unless score @s spellcrafter.cooldown matches 1.. run scoreboard players set @s spellcrafter.cooldown 0
 execute if score @s spellcrafter.cooldown matches 1.. run scoreboard players remove @s spellcrafter.cooldown 1

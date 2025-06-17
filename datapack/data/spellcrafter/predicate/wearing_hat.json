@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "head": {
+                "items": "minecraft:leather_helmet",
+                "predicates": {
+                    "custom_data": "{spellcrafter:{hat:{valid:1b}}}"
+                }
+            }
+        }
+    }
+}

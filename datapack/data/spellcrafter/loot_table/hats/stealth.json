@@ -15,7 +15,7 @@
             "function": "minecraft:set_components",
             "components": {
                 "minecraft:rarity": "rare",
-                "dyed_color": 15000804,
+                "dyed_color": 5136252,
                 "equippable": {
                     "slot": "head"
                 },
@@ -31,15 +31,15 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{hat:{valid:1b,type:2}}}"
+            "tag": "{spellcrafter:{hat:{valid:1b,type:8}}}"
         },
         {
             "function": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": {
-                "translate": "spellcrafter.hat.float.name",
-                "fallback": "Zephyr's Hat"
+                "translate": "spellcrafter.hat.stealth.name",
+                "fallback": "Phantom's Hat"
             }
         },
         {
@@ -48,15 +48,28 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "translate": "spellcrafter.hat.float.description.1",
-                    "fallback": "A light hat that gently lifts",
+                    "translate": "spellcrafter.hat.stealth.description.1",
+                    "fallback": "A mysterious hat that renders",
                     "color": "gray",
                     "italic": false
                 },
                 {
-                    "translate": "spellcrafter.hat.float.description.2",
-                    "fallback": "the wearer's steps",
+                    "translate": "spellcrafter.hat.stealth.description.2",
+                    "fallback": "its wearer completely unseen",
                     "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": ""
+                },
+                {
+                    "translate": "item.modifiers.head",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "effect.minecraft.invisibility",
+                    "color": "gold",
                     "italic": false
                 }
             ]
@@ -65,36 +78,10 @@
             "function": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
-                    "spellcrafter.hat.float"
+                    "spellcrafter.hat.stealth"
                 ],
                 "mode": "replace_all"
             }
-        },
-        {
-            "function": "minecraft:set_attributes",
-            "modifiers": [
-                {
-                    "id": "spellcrafter:hat.gravity",
-                    "attribute": "minecraft:gravity",
-                    "amount": -0.5,
-                    "operation": "add_multiplied_base",
-                    "slot": "head"
-                },
-                {
-                    "id": "spellcrafter:hat.fall_damage_multiplier",
-                    "attribute": "minecraft:fall_damage_multiplier",
-                    "amount": -1,
-                    "operation": "add_multiplied_base",
-                    "slot": "head"
-                },
-                {
-                    "id": "spellcrafter:hat.jump_strength",
-                    "attribute": "minecraft:jump_strength",
-                    "amount": 0.5,
-                    "operation": "add_multiplied_base",
-                    "slot": "head"
-                }
-            ]
         }
     ]
 }

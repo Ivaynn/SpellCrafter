@@ -55,6 +55,13 @@
                     "type": "minecraft:model",
                     "model": "spellcrafter:item/hat/heal"
                 }
+            },
+            {
+                "when": "spellcrafter.hat.stealth",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/hat/stealth"
+                }
             }
         ]
     }

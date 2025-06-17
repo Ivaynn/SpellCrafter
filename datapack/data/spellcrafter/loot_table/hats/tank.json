@@ -31,7 +31,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{hat:{valid:1b,type:\"tank\"}}}"
+            "tag": "{spellcrafter:{hat:{valid:1b,type:1}}}"
         },
         {
             "function": "minecraft:set_name",

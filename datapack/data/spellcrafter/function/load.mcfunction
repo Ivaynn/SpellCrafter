@@ -20,6 +20,7 @@ scoreboard objectives add spellcrafter.inf_page dummy
 scoreboard objectives add spellcrafter.dist dummy
 scoreboard objectives add spellcrafter.tick dummy
 scoreboard objectives add spellcrafter.damage_src dummy
+scoreboard objectives add spellcrafter.hat dummy
 
 scoreboard objectives add spellcrafter.actionbar trigger
 scoreboard objectives add spellcrafter.toggle trigger

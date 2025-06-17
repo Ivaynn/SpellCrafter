@@ -31,7 +31,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{hat:{valid:1b,type:\"mana\"}}}"
+            "tag": "{spellcrafter:{hat:{valid:1b,type:3}}}"
         },
         {
             "function": "minecraft:set_name",
@@ -68,17 +68,13 @@
                     "italic": false
                 },
                 {
-                    "translate": "spellcrafter.stat.mana_regen.name",
-                    "fallback": "Mana Regeneration",
-                    "color": "gray",
+                    "text": "+25% ",
+                    "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": ": "
-                        },
-                        {
-                            "text": "+10 ◆",
-                            "color": "aqua"
+                            "translate": "spellcrafter.stat.mana_regen.name",
+                            "fallback": "Mana Regeneration"
                         }
                     ]
                 }

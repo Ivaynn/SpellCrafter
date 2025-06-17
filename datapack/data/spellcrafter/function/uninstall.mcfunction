@@ -31,6 +31,7 @@ scoreboard objectives remove spellcrafter.toggle
 scoreboard objectives remove spellcrafter.tick
 scoreboard objectives remove spellcrafter.actionbar
 scoreboard objectives remove spellcrafter.damage_src
+scoreboard objectives remove spellcrafter.hat
 
 kill @e[tag=spellcrafter.table]
 kill @e[tag=spellcrafter.projectile]

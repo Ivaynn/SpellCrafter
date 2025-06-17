@@ -31,7 +31,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{hat:{valid:1b,type:\"damage\"}}}"
+            "tag": "{spellcrafter:{hat:{valid:1b,type:6}}}"
         },
         {
             "function": "minecraft:set_name",
