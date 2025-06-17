@@ -14,6 +14,11 @@ execute summon minecraft:text_display run function spellcrafter:shops/trader/tra
 data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
 
 
+# Get random hat
+loot replace entity @s armor.head loot spellcrafter:gen/hat
+data modify entity @s drop_chances.head set value 0
+
+
 # Add 0-1 random trade
 scoreboard players set $gen.type spellcrafter.tmp 0
 execute if predicate spellcrafter:random_50 run function spellcrafter:shops/trader/add_spell_offer
@@ -72,6 +77,10 @@ execute if score $gen.shop.tier spellcrafter.tmp matches 4.. if predicate spellc
 
 scoreboard players set $gen.tier spellcrafter.tmp 5
 execute if score $gen.shop.tier spellcrafter.tmp matches 5.. if predicate spellcrafter:random_50 run function spellcrafter:shops/trader/add_wand_offer
+
+
+# Last trade is the hat
+function spellcrafter:shops/trader/add_hat_offer
 
 
 # Remove temporary items
