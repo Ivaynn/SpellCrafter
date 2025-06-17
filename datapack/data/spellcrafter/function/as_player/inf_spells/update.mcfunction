@@ -15,6 +15,7 @@ execute if score @s spellcrafter.inf_page matches 104 run function spellcrafter:
 execute if score @s spellcrafter.inf_page matches 105 run function spellcrafter:as_player/inf_spells/page_5
 execute if score @s spellcrafter.inf_page matches 106 run function spellcrafter:as_player/inf_spells/page_6
 execute if score @s spellcrafter.inf_page matches 107 run function spellcrafter:as_player/inf_spells/page_7
+execute if score @s spellcrafter.inf_page matches 108 run function spellcrafter:as_player/inf_spells/page_8
 
 
 # Clear buttons (held item)
