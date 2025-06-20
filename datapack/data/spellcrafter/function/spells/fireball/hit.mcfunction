@@ -13,3 +13,7 @@ execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-1 ~ as @e[d
 # Effects
 particle minecraft:flame ~ ~ ~ 0.5 0.5 0.5 0.1 15 force @a[distance=..100]
 playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 2 1.6
+
+
+# Place block
+execute if score destructive_spells spellcrafter.options matches 1 if block ~ ~ ~ #minecraft:replaceable run setblock ~ ~ ~ minecraft:fire replace
