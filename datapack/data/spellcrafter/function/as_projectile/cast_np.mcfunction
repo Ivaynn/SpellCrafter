@@ -10,7 +10,7 @@ execute if score $spell spellcrafter.tmp matches 60 run return run function spel
 # Instant casts
 execute if score $spell spellcrafter.tmp matches 4 run return run function spellcrafter:spells/explosion/cast
 execute if score $spell spellcrafter.tmp matches 5 run return run function spellcrafter:spells/heal/cast
-execute if score $spell spellcrafter.tmp matches 20 run return run function spellcrafter:spells/summon_lightning/cast
+execute if score $spell spellcrafter.tmp matches 20 run return run function spellcrafter:spells/small_explosion/cast
 execute if score $spell spellcrafter.tmp matches 21 run return run function spellcrafter:spells/summon_vex/cast
 execute if score $spell spellcrafter.tmp matches 22 run return run function spellcrafter:spells/teleport/cast
 execute if score $spell spellcrafter.tmp matches 23 run return run function spellcrafter:spells/summon_bat/cast

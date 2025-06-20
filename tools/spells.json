@@ -60,7 +60,7 @@
     "id": 4,
     "name": "explosion",
     "displayName": "Explosion",
-    "parent": "root_instant",
+    "parent": "small_explosion",
     "tier": 4,
     "mana": 75,
     "cooldown": 10,
@@ -335,17 +335,21 @@
   },
   {
     "id": 20,
-    "name": "summon_lightning",
-    "displayName": "Summon Lightning",
-    "parent": "summon_fangs",
-    "tier": 5,
-    "mana": 250,
-    "cooldown": 60,
+    "name": "small_explosion",
+    "displayName": "Small Explosion",
+    "parent": "root_instant",
+    "tier": 3,
+    "mana": 50,
+    "cooldown": 6,
     "type": "instant",
     "wandModifier": false,
     "description": [
-      "Summons a lightning bolt"
-    ]
+      "Deals damage in",
+      "a small radius"
+    ],
+    "stats": {
+      "damage": 6
+    }
   },
   {
     "id": 21,
