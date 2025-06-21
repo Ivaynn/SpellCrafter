@@ -1,11 +1,17 @@
 #> as projectile, at @s
 
+
+# Special case: lightning bolt is handled by its own functions
+execute as @s[tag=spellcrafter.spell.lightning_bolt] run return 0
+
+
+# Get stats
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
 scoreboard players operation $damage spellcrafter.tmp = @s spellcrafter.damage
 scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
 
-
 execute unless score $damage spellcrafter.tmp matches 1.. run return 0
+
 
 # If target is caster, check blind time
 # After blind time, hit caster anyway
