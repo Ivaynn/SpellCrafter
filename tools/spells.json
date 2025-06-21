@@ -762,7 +762,7 @@
     "displayName": "Refresh",
     "parent": "multicast",
     "tier": 4,
-    "mana": -100,
+    "mana": -20,
     "cooldown": 0,
     "type": "special",
     "wandModifier": false,
