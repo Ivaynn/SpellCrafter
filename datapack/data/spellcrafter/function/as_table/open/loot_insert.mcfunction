@@ -75,9 +75,9 @@ execute if score $spell spellcrafter.tmp matches 74 run return run loot insert ~
 execute if score $spell spellcrafter.tmp matches 75 run return run loot insert ~ ~ ~ loot spellcrafter:spells/summon_magma
 execute if score $spell spellcrafter.tmp matches 76 run return run loot insert ~ ~ ~ loot spellcrafter:spells/follow
 execute if score $spell spellcrafter.tmp matches 77 run return run loot insert ~ ~ ~ loot spellcrafter:spells/safe_shot
-execute if score $spell spellcrafter.tmp matches 78 run return run loot insert ~ ~ ~ loot spellcrafter:spells/arcane_shield
+execute if score $spell spellcrafter.tmp matches 78 run return run loot insert ~ ~ ~ loot spellcrafter:spells/bouncy_laser
 execute if score $spell spellcrafter.tmp matches 79 run return run loot insert ~ ~ ~ loot spellcrafter:spells/crystal_laser
-execute if score $spell spellcrafter.tmp matches 80 run return run loot insert ~ ~ ~ loot spellcrafter:spells/toxic_cloud
+execute if score $spell spellcrafter.tmp matches 80 run return run loot insert ~ ~ ~ loot spellcrafter:spells/lightning_bolt
 execute if score $spell spellcrafter.tmp matches 81 run return run loot insert ~ ~ ~ loot spellcrafter:spells/bouncy
 execute if score $spell spellcrafter.tmp matches 82 run return run loot insert ~ ~ ~ loot spellcrafter:spells/wind_charge
 execute if score $spell spellcrafter.tmp matches 83 run return run loot insert ~ ~ ~ loot spellcrafter:spells/extended
@@ -123,3 +123,5 @@ execute if score $spell spellcrafter.tmp matches 122 run return run loot insert 
 execute if score $spell spellcrafter.tmp matches 123 run return run loot insert ~ ~ ~ loot spellcrafter:spells/upgrade_slots
 execute if score $spell spellcrafter.tmp matches 124 run return run loot insert ~ ~ ~ loot spellcrafter:spells/anchor_explosion
 execute if score $spell spellcrafter.tmp matches 125 run return run loot insert ~ ~ ~ loot spellcrafter:spells/ender_eye
+execute if score $spell spellcrafter.tmp matches 126 run return run loot insert ~ ~ ~ loot spellcrafter:spells/toxic_cloud
+execute if score $spell spellcrafter.tmp matches 127 run return run loot insert ~ ~ ~ loot spellcrafter:spells/arcane_shield

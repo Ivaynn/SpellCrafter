@@ -19,8 +19,8 @@ loot replace entity @s inventory.15 loot spellcrafter:spells/drain_bolt
 loot replace entity @s inventory.16 loot spellcrafter:spells/mirror_shot
 
 loot replace entity @s inventory.18 loot spellcrafter:spells/arcane_reaper
-loot replace entity @s inventory.19 loot spellcrafter:spells/arcane_shield
-loot replace entity @s inventory.20 loot spellcrafter:spells/toxic_cloud
+loot replace entity @s inventory.19 loot spellcrafter:spells/bouncy_laser
+loot replace entity @s inventory.20 loot spellcrafter:spells/lightning_bolt
 loot replace entity @s inventory.21 loot spellcrafter:spells/drill
 loot replace entity @s inventory.22 loot spellcrafter:spells/big_drill
 loot replace entity @s inventory.23 loot spellcrafter:spells/resonant_pulse

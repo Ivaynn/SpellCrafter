@@ -578,9 +578,13 @@ def main() -> None:
         if isinstance(data, dict):
             if 'translate' in data.keys():
                 if data['translate'].startswith('spellcrafter'):
-                    if data.get('fallback', '') != translations[data['translate']]:
-                        data['fallback'] = translations[data['translate']]
-                        updated = True
+                    k = data['translate']
+                    if k in translations.keys():
+                        if data.get('fallback', '') != translations[k]:
+                            data['fallback'] = translations[k]
+                            updated = True
+                    else:
+                        print(f'WARN: expected key \'{k}\' not found in \'en_us.json\'')
 
             for k, v in data.items():
                 if isinstance(v, (dict, list)):

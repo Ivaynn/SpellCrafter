@@ -1,4 +1,4 @@
-#> [tick] as projectile, at @s
+#> [tick] as summon, at @s
 
 
 # Effects

@@ -9,15 +9,15 @@ execute as @s[tag=spellcrafter.spell.shulker_bullet] run playsound minecraft:ent
 execute as @s[tag=spellcrafter.spell.poison_dart] run playsound minecraft:entity.splash_potion.throw player @a[distance=..100] ~ ~ ~ 2 1.25
 execute as @s[tag=spellcrafter.spell.freezing_bolt] run playsound minecraft:entity.snow_golem.hurt player @a[distance=..100] ~ ~ ~ 2 0.8
 execute as @s[tag=spellcrafter.spell.boomerang] run playsound minecraft:entity.bat.takeoff player @a[distance=..100] ~ ~ ~ 2 1.6
-execute as @s[tag=spellcrafter.spell.arcane_shield] run playsound minecraft:entity.iron_golem.repair player @a[distance=..100] ~ ~ ~ 2 0.8
 execute as @s[tag=spellcrafter.spell.crystal_laser] run playsound minecraft:item.trident.thunder player @a[distance=..100] ~ ~ ~ 2 2
-execute as @s[tag=spellcrafter.spell.toxic_cloud] run playsound minecraft:entity.splash_potion.break player @a[distance=..100] ~ ~ ~ 2 1.8
 execute as @s[tag=spellcrafter.spell.wither_blast] run playsound minecraft:entity.wither.shoot player @a[distance=..100] ~ ~ ~ 2 1.0
 execute as @s[tag=spellcrafter.spell.vampiric_shot] run playsound minecraft:entity.phantom.hurt player @a[distance=..100] ~ ~ ~ 2 0.7
 execute as @s[tag=spellcrafter.spell.drain_bolt] run playsound minecraft:entity.allay.item_taken player @a[distance=..100] ~ ~ ~ 2 0.8
 execute as @s[tag=spellcrafter.spell.healing_bolt] run playsound minecraft:entity.breeze.jump player @a[distance=..100] ~ ~ ~ 2 1.4
 execute as @s[tag=spellcrafter.spell.soul_link] run playsound minecraft:entity.vex.death player @a[distance=..100] ~ ~ ~ 2 0.8
 execute as @s[tag=spellcrafter.spell.resonant_pulse] run playsound minecraft:entity.warden.attack_impact player @a[distance=..100] ~ ~ ~ 2 0.8
+execute as @s[tag=spellcrafter.spell.bouncy_laser] run playsound minecraft:item.trident.return player @a[distance=..100] ~ ~ ~ 2 1.6
+execute as @s[tag=spellcrafter.spell.lightning_bolt] run playsound minecraft:entity.lightning_bolt.thunder player @a[distance=..100] ~ ~ ~ 2 2
 
 
 # Special case: kinetic bolt's pitch depends on its starting speed

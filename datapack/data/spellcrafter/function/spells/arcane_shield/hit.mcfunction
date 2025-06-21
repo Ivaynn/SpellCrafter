@@ -1,14 +1,7 @@
-#> as projectile, at @s
-# projectile hit
+#> as summon, at target projectile (to be removed)
 
+execute if score $hit_shield spellcrafter.tmp matches 1 run return 0
+scoreboard players set $hit_shield spellcrafter.tmp 1
 
-# Damage target
-scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
-scoreboard players operation $damage spellcrafter.tmp = @s spellcrafter.damage
-scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
-
-execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable] run function spellcrafter:damage/add
-
-
-# Effects
-playsound minecraft:entity.iron_golem.hurt player @a[distance=..100] ~ ~ ~ 1 1.8
+scoreboard players operation @s spellcrafter.age -= $shield_damage spellcrafter.tmp
+execute at @s if score @s spellcrafter.age matches 5.. run playsound minecraft:entity.iron_golem.damage player @a[distance=..100] ~ ~ ~ 1 1.4

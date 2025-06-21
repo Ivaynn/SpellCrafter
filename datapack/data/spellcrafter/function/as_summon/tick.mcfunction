@@ -15,6 +15,8 @@ execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.healing_crystal
 execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.chaotic_crystal] at @s run function spellcrafter:spells/chaotic_crystal/tick
 execute as @s[type=minecraft:block_display,tag=spellcrafter.spell.anchor_explosion] at @s run function spellcrafter:spells/anchor_explosion/tick
 execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.ender_eye] at @s run function spellcrafter:spells/ender_eye/tick
+execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.toxic_cloud] at @s run function spellcrafter:spells/toxic_cloud/tick
+execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.arcane_shield] at @s run function spellcrafter:spells/arcane_shield/tick
 
 
 # Despawn timer

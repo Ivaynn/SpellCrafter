@@ -850,7 +850,7 @@
     "id": 53,
     "name": "poison_dart",
     "displayName": "Poison Dart",
-    "parent": "toxic_cloud",
+    "parent": "lightning_bolt",
     "tier": 2,
     "mana": 35,
     "cooldown": 6,
@@ -1261,22 +1261,21 @@
   },
   {
     "id": 78,
-    "name": "arcane_shield",
-    "displayName": "Arcane Shield",
+    "name": "bouncy_laser",
+    "displayName": "Bouncy Laser",
     "parent": "arcane_reaper",
-    "tier": 4,
-    "mana": 120,
-    "cooldown": 40,
+    "tier": 3,
+    "mana": 80,
+    "cooldown": 25,
     "type": "projectile",
     "wandModifier": false,
     "description": [
-      "Stops all enemy projectiles",
-      "in a small radius"
+      "A quick projectile that bounces",
+      "between up to 3 targets"
     ],
     "stats": {
-      "damage": 0,
-      "range": 100,
-      "speed": 0
+      "damage": 4,
+      "range": 10
     }
   },
   {
@@ -1300,23 +1299,21 @@
   },
   {
     "id": 80,
-    "name": "toxic_cloud",
-    "displayName": "Toxic Cloud",
-    "parent": "arcane_shield",
-    "tier": 3,
-    "mana": 80,
-    "cooldown": 40,
+    "name": "lightning_bolt",
+    "displayName": "Lightning Bolt",
+    "parent": "bouncy_laser",
+    "tier": 4,
+    "mana": 120,
+    "cooldown": 50,
     "type": "projectile",
     "wandModifier": false,
     "description": [
-      "A toxic cloud that applies",
-      "a strong poison to targets",
-      "in a small radius"
+      "A quick projectile that can be",
+      "especially dangerous near water"
     ],
     "stats": {
-      "damage": 0,
-      "range": 60,
-      "speed": 0
+      "damage": 8,
+      "range": 15
     }
   },
   {
@@ -1888,8 +1885,8 @@
     "type": "instant",
     "wandModifier": false,
     "description": [
-      "A large and unbreakable shield",
-      "that blocks projectiles"
+      "A stronge magic wall that",
+      "blocks projectiles"
     ]
   },
   {
@@ -2047,6 +2044,37 @@
     "description": [
       "Summons a floating eye that",
       "reveals nearby casters"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "toxic_cloud",
+    "displayName": "Toxic Cloud",
+    "parent": "healing_circle",
+    "tier": 3,
+    "mana": 80,
+    "cooldown": 40,
+    "type": "instant",
+    "wandModifier": false,
+    "description": [
+      "A toxic cloud that applies",
+      "a strong poison to targets",
+      "in a small radius"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "arcane_shield",
+    "displayName": "Arcane Shield",
+    "parent": "toxic_cloud",
+    "tier": 4,
+    "mana": 120,
+    "cooldown": 40,
+    "type": "instant",
+    "wandModifier": false,
+    "description": [
+      "Stops all enemy projectiles",
+      "in a small radius"
     ]
   }
 ]

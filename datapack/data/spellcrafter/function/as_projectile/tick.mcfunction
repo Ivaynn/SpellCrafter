@@ -25,8 +25,6 @@ execute as @s[tag=spellcrafter.spell.scaling] run function spellcrafter:spells/s
 execute as @s[tag=spellcrafter.spell.return] run function spellcrafter:spells/return/tick
 execute as @s[tag=spellcrafter.spell.boomerang] run function spellcrafter:spells/boomerang/tick
 execute as @s[tag=spellcrafter.spell.accelerate] run function spellcrafter:spells/accelerate/tick
-execute as @s[tag=spellcrafter.spell.arcane_shield] run function spellcrafter:spells/arcane_shield/tick
-execute as @s[tag=spellcrafter.spell.toxic_cloud] run function spellcrafter:spells/toxic_cloud/tick
 execute as @s[tag=spellcrafter.spell.mirror_shot] run function spellcrafter:spells/mirror_shot/tick
 scoreboard players set @s[tag=spellcrafter.spell.harmless] spellcrafter.damage 0
 

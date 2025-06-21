@@ -49,9 +49,9 @@ execute if score $spell spellcrafter.tmp matches 58 run return run function spel
 # 60 -> resonant_pulse -> special cast
 execute if score $spell spellcrafter.tmp matches 63 run return run function spellcrafter:spells/boomerang/projectile
 execute if score $spell spellcrafter.tmp matches 65 run return run function spellcrafter:spells/kinetic_bolt/projectile
-execute if score $spell spellcrafter.tmp matches 78 run return run function spellcrafter:spells/arcane_shield/projectile
+execute if score $spell spellcrafter.tmp matches 78 run return run function spellcrafter:spells/bouncy_laser/projectile
 execute if score $spell spellcrafter.tmp matches 79 run return run function spellcrafter:spells/crystal_laser/projectile
-execute if score $spell spellcrafter.tmp matches 80 run return run function spellcrafter:spells/toxic_cloud/projectile
+execute if score $spell spellcrafter.tmp matches 80 run return run function spellcrafter:spells/lightning_bolt/projectile
 execute if score $spell spellcrafter.tmp matches 91 run return run function spellcrafter:spells/wither_blast/projectile
 execute if score $spell spellcrafter.tmp matches 94 run return run function spellcrafter:spells/big_drill/projectile
 execute if score $spell spellcrafter.tmp matches 98 run return run function spellcrafter:spells/vampiric_shot/projectile
