@@ -1,4 +1,5 @@
 
+import re
 import json
 from enum import Enum
 from pathlib import Path
@@ -526,15 +527,15 @@ def main() -> None:
     # ------------------------------------------------------------
     # Resource pack - lang file - replace entries for spell names and descriptions
     # ------------------------------------------------------------
-    lang: dict[str,str] = read_json(resources_root / 'assets/spellcrafter/lang/en_us.json')
-    lang = {k: v for k, v in lang.items() if not k.startswith('spellcrafter.spell.')}
+    translations: dict[str,str] = read_json(resources_root / 'assets/spellcrafter/lang/en_us.json')
+    translations = {k: v for k, v in translations.items() if not k.startswith('spellcrafter.spell.')}
 
     for spell in spells:
-        lang[f'spellcrafter.spell.{spell}.name'] = spell.display_name
+        translations[f'spellcrafter.spell.{spell}.name'] = spell.display_name
         for i, line in enumerate(spell.description):
-            lang[f'spellcrafter.spell.{spell}.description.{i+1}'] = line
+            translations[f'spellcrafter.spell.{spell}.description.{i+1}'] = line
 
-    save_json(lang, resources_root / 'assets/spellcrafter/lang/en_us.json', indent=4)
+    save_json(translations, resources_root / 'assets/spellcrafter/lang/en_us.json', indent=4)
 
 
 
@@ -542,11 +543,73 @@ def main() -> None:
     # Resource pack - lang files - check keys
     # ------------------------------------------------------------
     for lang_file in Path(resources_root / 'assets/spellcrafter/lang/').iterdir():
-        lang2: dict = read_json(lang_file)
-        for k in lang.keys() - lang2.keys():
+        translations2: dict = read_json(lang_file)
+        for k in translations.keys() - translations2.keys():
             print(f"WARN: expected key '{k}' not found in '{lang_file.name}'")
-        for k in lang2.keys() - lang.keys():
+        for k in translations2.keys() - translations.keys():
             print(f"WARN: unexpected key '{k}' found in '{lang_file.name}'")
+
+
+
+    # ------------------------------------------------------------
+    # Set translate fallbacks to be equal to the "en_us" translations
+    # ------------------------------------------------------------
+    for filename in datapack_root.rglob('*.mcfunction'):
+        text = read_mcfunction(filename)
+        if 'translate' not in text:
+            continue
+
+        for key, value in translations.items():
+            escaped_key = re.escape(key)
+
+            pattern = f'translate:"{escaped_key}",fallback:"[^"]+"'
+            replace = f'translate:"{key}",fallback:"{value}"'.replace('\n',r'\n').replace('\\', r'\\') 
+            new_text = re.sub(pattern, replace, text)
+            if new_text != text:
+                print(f'Updated fallback for \'{key}\' in \'{filename.name}\'')
+            text = new_text
+
+        save_mcfunction(text, filename)
+
+
+    def _update_json_recursive(data: dict | list) -> bool:
+        updated = False
+
+        if isinstance(data, dict):
+            if 'translate' in data.keys():
+                if data['translate'].startswith('spellcrafter'):
+                    if data.get('fallback', '') != translations[data['translate']]:
+                        data['fallback'] = translations[data['translate']]
+                        updated = True
+
+            for k, v in data.items():
+                if isinstance(v, (dict, list)):
+                    if _update_json_recursive(v):
+                        updated = True
+
+        elif isinstance(data, list):
+            for v in data:
+                if isinstance(v, (dict, list)):
+                    if _update_json_recursive(v):
+                        updated = True
+
+        return updated
+
+
+    for filename in datapack_root.rglob('*.json'):
+        if filename.stem in [s.name for s in spells]:
+            continue
+        if filename.name == 'wand_mod_replace.json':
+            continue
+
+        d: dict = read_json(filename)
+
+        if _update_json_recursive(d):
+            print(f'Updated fallback(s) in \'{filename}\'')
+            if filename.name.startswith('root_'):
+                save_json(d, filename)
+            else:
+                save_json(d, filename, indent=4)
 
 
 
