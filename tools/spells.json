@@ -1262,7 +1262,7 @@
   {
     "id": 78,
     "name": "bouncy_laser",
-    "displayName": "Bouncy Laser",
+    "displayName": "Bouncing Blast",
     "parent": "arcane_reaper",
     "tier": 3,
     "mana": 80,
@@ -1270,12 +1270,13 @@
     "type": "projectile",
     "wandModifier": false,
     "description": [
-      "A quick projectile that bounces",
-      "between up to 3 targets"
+      "A quick projectile that",
+      "bounces between targets"
     ],
     "stats": {
-      "damage": 4,
-      "range": 10
+      "damage": 3,
+      "range": 50,
+      "speed": 7
     }
   },
   {
