@@ -26,4 +26,9 @@ scoreboard players operation @s spellcrafter.damage += $damage spellcrafter.tmp
 
 # Schedule damage event
 schedule function spellcrafter:damage/scheduled 1t replace
+
+
+# Only return success if the entity is not in invulnerability frames
+execute store result score $hurt_time spellcrafter.tmp run data get entity @s HurtTime
+execute if score $hurt_time spellcrafter.tmp matches 1.. run return 0
 return 1
