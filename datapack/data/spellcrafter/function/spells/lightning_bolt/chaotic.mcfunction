@@ -9,8 +9,8 @@ execute if score $rem spellcrafter.tmp matches 1.. run return 0
 
 
 # Generate random rotation offset
-execute store result score $offset_r0 spellcrafter.tmp run random value -10..10
-execute store result score $offset_r1 spellcrafter.tmp run random value -10..10
+execute store result score $offset_r0 spellcrafter.tmp run random value -20..20
+execute store result score $offset_r1 spellcrafter.tmp run random value -20..20
 
 
 # Get current rotation

@@ -1,6 +1,10 @@
 #> as projectile, at @s
 
 
+# Hard range cap to prevent crashes caused by too many branches
+execute if score @s spellcrafter.age matches 61.. run scoreboard players set @s spellcrafter.age 60
+
+
 # Check if projectile is on block that boosts its damage
 scoreboard players set $tmp.boost spellcrafter.tmp 0
 execute if block ~ ~ ~ minecraft:water run scoreboard players set $tmp.boost spellcrafter.tmp 1
@@ -14,6 +18,11 @@ function spellcrafter:spells/lightning_bolt/chaotic
 
 # Effects
 function spellcrafter:spells/lightning_bolt/particles
+
+
+# Small chance to summon a branch
+execute store result score $tmp.random spellcrafter.tmp run random value 1..5
+execute if score $tmp.random spellcrafter.tmp matches 1 as @s[tag=!spellcrafter.spell.lightning_bolt.branch] run function spellcrafter:spells/lightning_bolt/create_branch
 
 
 # Get initial damage
