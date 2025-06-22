@@ -7,7 +7,7 @@ execute if score @s spellcrafter.speed matches 0 run return 0
 
 # Get rotation while facing the nearest target (excluding the caster)
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
-execute store result score $spell.homing spellcrafter.tmp run tp @s ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] feet
+execute store result score $spell.homing spellcrafter.tmp run tp @s ~ ~-0.75 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] feet
 
 
 # If no target was found, stop here

@@ -22,9 +22,9 @@ execute unless score @s spellcrafter.age matches 1.. if score @s spellcrafter.sp
 
 
 # Entity collision
-execute if score @s spellcrafter.age matches 1.. as @s[tag=!spellcrafter.spell.safe_shot] if score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] run function spellcrafter:as_projectile/hit_entity
-execute if score @s spellcrafter.age matches 1.. as @s[tag=!spellcrafter.spell.safe_shot] unless score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] run function spellcrafter:as_projectile/hit_entity
-execute if score @s spellcrafter.age matches 1.. as @s[tag=spellcrafter.spell.safe_shot] unless score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-1 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] run function spellcrafter:as_projectile/hit_entity
+execute if score @s spellcrafter.age matches 1.. as @s[tag=!spellcrafter.spell.safe_shot] if score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-0.75 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] run function spellcrafter:as_projectile/hit_entity
+execute if score @s spellcrafter.age matches 1.. as @s[tag=!spellcrafter.spell.safe_shot] unless score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-0.75 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] run function spellcrafter:as_projectile/hit_entity
+execute if score @s spellcrafter.age matches 1.. as @s[tag=spellcrafter.spell.safe_shot] unless score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-0.75 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] run function spellcrafter:as_projectile/hit_entity
 execute if score @s spellcrafter.blind matches 1.. run scoreboard players remove @s spellcrafter.blind 1
 
 

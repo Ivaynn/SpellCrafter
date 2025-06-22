@@ -14,7 +14,7 @@ execute unless score $rem spellcrafter.tmp matches 1 run return 0
 # Get rotation: find neaby caster or cancel
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
 scoreboard players set $success spellcrafter.tmp 0
-execute at @s anchored feet positioned ~ ~-1 ~ facing entity @e[distance=..10,limit=1,sort=nearest,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] feet store success score $success spellcrafter.tmp run tp @s ~ ~1 ~ ~ ~
+execute at @s anchored feet positioned ~ ~-0.75 ~ facing entity @e[distance=..10,limit=1,sort=nearest,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] feet store success score $success spellcrafter.tmp run tp @s ~ ~1 ~ ~ ~
 execute if score $success spellcrafter.tmp matches 1.. run function spellcrafter:spells/healing_crystal/create_projectile
 execute unless score $success spellcrafter.tmp matches 1.. run function spellcrafter:spells/healing_crystal/no_targets
 tp @s ~ ~ ~ ~ ~

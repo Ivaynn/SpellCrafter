@@ -8,4 +8,4 @@ playsound minecraft:entity.generic.explode player @a[distance=..100] ~ ~ ~ 3 1.4
 
 
 # Damage nearby entities
-execute positioned ~ ~-1 ~ as @e[distance=..4,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] run function spellcrafter:spells/small_explosion/as_target
+execute positioned ~ ~-0.75 ~ as @e[distance=..4,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] run function spellcrafter:spells/small_explosion/as_target

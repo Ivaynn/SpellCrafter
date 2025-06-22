@@ -8,8 +8,8 @@ scoreboard players operation $damage spellcrafter.tmp = @s spellcrafter.damage
 scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
 
 scoreboard players set $success spellcrafter.tmp 0
-execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-1 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable] run function spellcrafter:damage/add
-execute positioned ~ ~-1 ~ as @e[distance=..1.5,limit=1,sort=nearest,type=#spellcrafter:caster,type=!#spellcrafter:untargetable,tag=spellcrafter.caster,tag=!spellcrafter.untargetable] run function spellcrafter:spells/drain_bolt/as_target
+execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable] run function spellcrafter:damage/add
+execute positioned ~ ~-0.75 ~ as @e[distance=..1.5,limit=1,sort=nearest,type=#spellcrafter:caster,type=!#spellcrafter:untargetable,tag=spellcrafter.caster,tag=!spellcrafter.untargetable] run function spellcrafter:spells/drain_bolt/as_target
 
 
 # Effects

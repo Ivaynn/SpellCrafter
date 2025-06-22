@@ -3,7 +3,7 @@
 
 # Get rotation while facing the caster
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
-execute store result score $spell.follow spellcrafter.tmp run tp @s ~ ~-1 ~ facing entity @e[limit=1,distance=0.1..15,sort=nearest,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,tag=!spellcrafter.spectator] feet
+execute store result score $spell.follow spellcrafter.tmp run tp @s ~ ~-0.75 ~ facing entity @e[limit=1,distance=0.1..15,sort=nearest,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,tag=!spellcrafter.spectator] feet
 
 
 # If no target was found, stop here

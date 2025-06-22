@@ -17,8 +17,8 @@ execute unless score $damage spellcrafter.tmp matches 1.. run return 0
 # After blind time, hit caster anyway
 # Don't add damage if target is already damaged - this fixes a bug where every step would increase the damage to the target
 scoreboard players set $tmp.damaged spellcrafter.tmp 0
-execute if score @s spellcrafter.blind matches 1.. positioned ~ ~-1 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable,predicate=!spellcrafter:match_id] unless score @s spellcrafter.damage matches 1.. store result score $tmp.damaged spellcrafter.tmp run function spellcrafter:damage/add
-execute unless score @s spellcrafter.blind matches 1.. positioned ~ ~-1 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable] unless score @s spellcrafter.damage matches 1.. store result score $tmp.damaged spellcrafter.tmp run function spellcrafter:damage/add
+execute if score @s spellcrafter.blind matches 1.. positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable,predicate=!spellcrafter:match_id] unless score @s spellcrafter.damage matches 1.. store result score $tmp.damaged spellcrafter.tmp run function spellcrafter:damage/add
+execute unless score @s spellcrafter.blind matches 1.. positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable] unless score @s spellcrafter.damage matches 1.. store result score $tmp.damaged spellcrafter.tmp run function spellcrafter:damage/add
 
 
 # Special case: bouncy laser re-directs on hit
