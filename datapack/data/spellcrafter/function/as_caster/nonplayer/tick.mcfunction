@@ -17,10 +17,6 @@ execute if score @s spellcrafter.cooldown matches 1.. run scoreboard players rem
 
 
 # Mana
-scoreboard players set $mana_drain spellcrafter.tmp 0
-execute if predicate spellcrafter:holding_wand store result score $mana_drain spellcrafter.tmp run data get entity @s equipment.mainhand.components."minecraft:custom_data".spellcrafter.wand.drain
-scoreboard players operation @s spellcrafter.mana -= $mana_drain spellcrafter.tmp
-
 scoreboard players operation @s spellcrafter.mana += @s spellcrafter.mana_reg
 scoreboard players operation @s spellcrafter.mana < @s spellcrafter.max_mana
 

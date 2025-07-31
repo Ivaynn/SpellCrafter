@@ -35,6 +35,7 @@ execute unless data storage spellcrafter:tmp mainhand.components."minecraft:cust
 scoreboard players set $cooldown.this spellcrafter.tmp 0
 execute as @s[type=minecraft:player] run function spellcrafter:as_caster/player/get_cooldown
 execute as @s[type=!minecraft:player] run function spellcrafter:as_caster/nonplayer/get_cooldown
+scoreboard players set @s[type=minecraft:player] spellcrafter.cache.cooldown -1
 execute if score $cooldown.this spellcrafter.tmp matches 4.. run return run scoreboard players set @s spellcrafter.cooldown 4
 execute if score $cooldown.this spellcrafter.tmp matches 1..3 run return run scoreboard players operation @s spellcrafter.cooldown = $cooldown.this spellcrafter.tmp
 
