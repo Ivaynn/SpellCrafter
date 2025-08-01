@@ -7,7 +7,7 @@ execute as @s[tag=!spellcrafter.caster] run return 0
 
 
 # If player is on cooldown, stop here
-execute if score @s spellcrafter.cooldown matches 1.. run return 0
+execute if score @s[tag=!spellcrafter.no_cooldown] spellcrafter.cooldown matches 1.. run return 0
 
 
 # Use wand

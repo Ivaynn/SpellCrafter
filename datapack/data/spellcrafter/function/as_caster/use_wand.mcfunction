@@ -14,7 +14,7 @@ execute unless score @s spellcrafter.id matches 1.. run function spellcrafter:as
 
 
 # Cancel if caster is on priority cooldown
-execute if score @s spellcrafter.cooldown matches 1.. run return 0
+execute if score @s[tag=!spellcrafter.no_cooldown] spellcrafter.cooldown matches 1.. run return 0
 
 
 # Get hand item
@@ -33,7 +33,7 @@ execute unless data storage spellcrafter:tmp mainhand.components."minecraft:cust
 
 # Handle cooldown
 scoreboard players set $cooldown.this spellcrafter.tmp 0
-execute as @s[type=minecraft:player] run function spellcrafter:as_caster/player/get_cooldown
+execute as @s[type=minecraft:player,tag=!spellcrafter.no_cooldown] run function spellcrafter:as_caster/player/get_cooldown
 execute as @s[type=!minecraft:player] run function spellcrafter:as_caster/nonplayer/get_cooldown
 scoreboard players set @s[type=minecraft:player] spellcrafter.cache.cooldown -1
 execute if score $cooldown.this spellcrafter.tmp matches 4.. run return run scoreboard players set @s spellcrafter.cooldown 4
@@ -64,6 +64,7 @@ scoreboard players set $new_cast spellcrafter.tmp 0
 
 
 # Update wand item - save gametime in item data
+execute as @s[tag=spellcrafter.no_cooldown] run return 0
 execute if score $cooldown.this spellcrafter.tmp matches -1 run return 0
 execute store result storage spellcrafter:tmp wand.gametime int 1 run scoreboard players get $gametime spellcrafter.tmp
 item modify entity @s weapon spellcrafter:wand/init_cooldown
