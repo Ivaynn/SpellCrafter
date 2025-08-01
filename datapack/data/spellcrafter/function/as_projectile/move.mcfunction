@@ -3,12 +3,12 @@
 
 
 # Anti-magic
-execute at @s if block ~1 ~ ~ #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
-execute at @s if block ~-1 ~ ~ #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
-execute at @s if block ~ ~1 ~ #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
-execute at @s if block ~ ~-1 ~ #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
-execute at @s if block ~ ~ ~1 #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
-execute at @s if block ~ ~ ~-1 #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
+execute at @s if block ~.5 ~ ~ #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
+execute at @s if block ~-.5 ~ ~ #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
+execute at @s if block ~ ~.5 ~ #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
+execute at @s if block ~ ~-.5 ~ #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
+execute at @s if block ~ ~ ~.5 #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
+execute at @s if block ~ ~ ~-.5 #spellcrafter:anti_magic run return run function spellcrafter:as_projectile/remove
 
 
 # Distance travelled
