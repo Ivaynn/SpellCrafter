@@ -43,9 +43,9 @@ execute if score $cooldown.this spellcrafter.tmp matches 1..3 run return run sco
 # Spend mana or cancel if caster doesn't have enough mana
 execute store result score $mana spellcrafter.tmp run data get storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.mana
 scoreboard players operation $mana spellcrafter.tmp *= #10 spellcrafter.math
-execute unless score $mana spellcrafter.tmp matches 0.. run return run function spellcrafter:as_caster/use_fail
-execute if score @s spellcrafter.mana < $mana spellcrafter.tmp run return run function spellcrafter:as_caster/use_fail
-scoreboard players operation @s spellcrafter.mana -= $mana spellcrafter.tmp
+execute unless score $mana spellcrafter.tmp matches 0..2147483646 run return run function spellcrafter:as_caster/use_fail
+execute as @s[tag=!spellcrafter.inf_mana] if score @s spellcrafter.mana < $mana spellcrafter.tmp run return run function spellcrafter:as_caster/use_fail
+scoreboard players operation @s[tag=!spellcrafter.inf_mana] spellcrafter.mana -= $mana spellcrafter.tmp
 
 
 # Create a projectile with the spell data
