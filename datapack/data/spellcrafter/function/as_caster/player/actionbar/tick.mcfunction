@@ -5,7 +5,7 @@
 # Get data
 scoreboard players set $cooldown.this spellcrafter.tmp 0
 execute if score shared_cooldowns spellcrafter.options matches 1 run scoreboard players operation $cooldown.this spellcrafter.tmp = @s spellcrafter.cooldown
-execute unless score shared_cooldowns spellcrafter.options matches 1 if predicate spellcrafter:holding_wand run function spellcrafter:as_caster/player/actionbar/get_cooldown
+execute unless score shared_cooldowns spellcrafter.options matches 1 if score $holding_wand spellcrafter.tmp matches 1 run function spellcrafter:as_caster/player/actionbar/get_cooldown
 execute if score $cooldown.this spellcrafter.tmp < @s spellcrafter.cooldown run scoreboard players operation $cooldown.this spellcrafter.tmp = @s spellcrafter.cooldown
 
 scoreboard players operation $actionbar.cooldown spellcrafter.tmp = $cooldown.this spellcrafter.tmp

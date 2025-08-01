@@ -1,5 +1,8 @@
 #> [tick] as player, at @s
 
+scoreboard players set $holding_wand spellcrafter.tmp 0
+execute if predicate spellcrafter:holding_wand run scoreboard players set $holding_wand spellcrafter.tmp 1
+
 
 # Invalidate cache every X ticks
 scoreboard players operation $rem spellcrafter.tmp = $gametime spellcrafter.tmp
@@ -22,14 +25,14 @@ execute if score @s spellcrafter.cache.cooldown matches 1.. run scoreboard playe
 
 # Invalidate selected item cache if item slot changes
 scoreboard players operation $cache.slot spellcrafter.tmp = @s spellcrafter.cache.slot
-execute store result score @s spellcrafter.cache.slot run data get entity @s SelectedItemSlot
+execute if score $holding_wand spellcrafter.tmp matches 1 store result score @s spellcrafter.cache.slot run data get entity @s SelectedItemSlot
 execute unless score $cache.slot spellcrafter.tmp = @s spellcrafter.cache.slot run scoreboard players set @s spellcrafter.cache.cooldown -1
 execute unless score $cache.slot spellcrafter.tmp = @s spellcrafter.cache.slot run scoreboard players set @s spellcrafter.cache.drain -1
 
 
 # Mana
 scoreboard players set $mana_drain spellcrafter.tmp 0
-execute if predicate spellcrafter:holding_wand run function spellcrafter:as_caster/player/get_drain
+execute if score $holding_wand spellcrafter.tmp matches 1 run function spellcrafter:as_caster/player/get_drain
 scoreboard players operation @s spellcrafter.mana -= $mana_drain spellcrafter.tmp
 
 scoreboard players operation @s spellcrafter.mana += @s spellcrafter.mana_reg
