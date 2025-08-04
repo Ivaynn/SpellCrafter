@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:block/structure_block"
+        },
+        "cases": [
+            {
+                "when": "spellcrafter.block.wand_editor",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:block/wand_editor"
+                }
+            }
+        ]
+    }
+}

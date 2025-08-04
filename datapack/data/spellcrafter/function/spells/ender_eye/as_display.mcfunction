@@ -1,4 +1,4 @@
-#> execute summon (block_display) at the projectile's position
+#> execute summon (item_display) at the projectile's position
 
 
 # Tag, invulnerability timer, despawn timer

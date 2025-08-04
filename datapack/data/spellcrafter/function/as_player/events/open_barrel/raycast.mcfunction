@@ -3,7 +3,7 @@
 
 
 # Check nearby tables
-execute positioned ~ ~.5 ~ as @e[distance=..1,sort=nearest,type=minecraft:block_display,tag=spellcrafter.table] if score $success spellcrafter.tmp matches 0 at @s positioned ~ ~-1 ~ if predicate spellcrafter:is_open_barrel store result score $success spellcrafter.tmp run function spellcrafter:as_player/events/open_barrel/confirm
+execute positioned ~ ~.5 ~ as @e[distance=..1,sort=nearest,type=minecraft:item_display,tag=spellcrafter.table] if score $success spellcrafter.tmp matches 0 at @s positioned ~ ~-1 ~ if predicate spellcrafter:is_open_barrel store result score $success spellcrafter.tmp run function spellcrafter:as_player/events/open_barrel/confirm
 
 
 # Next iteration

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "spellcrafter:block/wand_editor_bottom",
+        "side": "spellcrafter:block/wand_editor_side",
+        "top": "spellcrafter:block/wand_editor_top"
+    }
+}
