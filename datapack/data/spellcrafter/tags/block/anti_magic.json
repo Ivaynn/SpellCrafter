@@ -1,6 +1,7 @@
 {
     "values": [
         "minecraft:amethyst_block",
-        "minecraft:amethyst_cluster"
+        "minecraft:amethyst_cluster",
+        "minecraft:barrier"
     ]
 }
