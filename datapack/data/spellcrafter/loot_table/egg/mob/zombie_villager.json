@@ -18,28 +18,18 @@
                                         "spellcrafter.egg",
                                         "spellcrafter.egg.zombie_villager"
                                     ]
-                                }
+                                },
+                                "minecraft:item_name": {
+                                    "translate": "item.minecraft.zombie_villager_spawn_egg"
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "SpellCrafter",
+                                        "color": "light_purple",
+                                        "italic": false
+                                    }
+                                ]
                             }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "entity": "this",
-                            "target": "item_name",
-                            "name": {
-                                "translate": "item.minecraft.zombie_villager_spawn_egg"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "entity": "this",
-                            "lore": [
-                                {
-                                    "text": "Tier 2 Enemy",
-                                    "color": "light_purple",
-                                    "italic": false
-                                }
-                            ],
-                            "mode": "replace_all"
                         }
                     ]
                 }
