@@ -75,7 +75,7 @@
     "spellcrafter.options.min_cooldown.name": "Wand Cooldown",
     "spellcrafter.options.min_cooldown.description": "Minimum wand cooldown\nin seconds",
     "spellcrafter.entity.target_dummy": "Target Dummy",
-    "spellcrafter.entity.trader": "Mystic Merchant - Level %s",
+    "spellcrafter.entity.trader": "Mystic Merchant",
     "spellcrafter.entity.summon.goat": "%s's Angry Goat",
     "spellcrafter.entity.summon.bat": "%s's Bat",
     "spellcrafter.entity.summon.endermite": "%s's Endermite",
