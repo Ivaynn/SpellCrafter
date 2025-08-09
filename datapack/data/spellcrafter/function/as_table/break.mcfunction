@@ -5,4 +5,4 @@ execute as @e[distance=..2,type=minecraft:item] if data entity @s {Item:{compone
 kill @s[type=!minecraft:player]
 setblock ~ ~-1 ~ minecraft:air
 
-# TODO: loot spawn a placeable table
+loot spawn ~ ~-.5 ~ loot spellcrafter:egg/table
