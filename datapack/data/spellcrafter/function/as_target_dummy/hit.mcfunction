@@ -5,6 +5,10 @@
 execute if score @s spellcrafter.damage matches 1.. run return 0
 
 
+# Effect
+playsound minecraft:entity.allay.hurt neutral @a[distance=..100] ~ ~ ~ 1 0.8
+
+
 # Calculate damage taken
 execute store result score $damage spellcrafter.tmp run data get entity @s AbsorptionAmount
 data merge entity @s {AbsorptionAmount:2048.0f, Health:1024.0f, attributes:[{id:"minecraft:max_health",base:1024.0},{id:"minecraft:max_absorption",base:2048.0}]}
