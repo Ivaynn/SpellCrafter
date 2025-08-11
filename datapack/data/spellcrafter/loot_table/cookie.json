@@ -1,0 +1,53 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cookie"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:consumable": {
+                    "animation": "eat",
+                    "has_consume_particles": true
+                },
+                "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true
+                },
+                "minecraft:item_name": {
+                    "text": "Mana Cookie",
+                    "color": "aqua"
+                },
+                "minecraft:lore": [
+                    {
+                        "text": "Permanently increases",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "your maximum mana and",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "mana regeneration",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                "custom_data": "{spellcrafter:{cookie:{valid:1b}}}"
+            }
+        }
+    ]
+}

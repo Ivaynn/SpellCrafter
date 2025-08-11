@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:cookie",
+                    "components": {
+                        "minecraft:custom_data": {
+                            "spellcrafter": {
+                                "cookie": {
+                                    "valid": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "spellcrafter:as_player/events/eat_cookie/trigger"
+    }
+}
