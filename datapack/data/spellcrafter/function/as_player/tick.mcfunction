@@ -23,3 +23,7 @@ scoreboard players enable @a spellcrafter.actionbar
 
 # Caster
 execute as @s[tag=spellcrafter.caster,gamemode=!spectator] run function spellcrafter:as_caster/player/tick
+
+
+# Trader
+execute if score trader_spawn spellcrafter.options matches 1..3 run function spellcrafter:as_player/spawn_trader/tick

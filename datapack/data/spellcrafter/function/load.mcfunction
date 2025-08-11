@@ -24,6 +24,7 @@ scoreboard objectives add spellcrafter.hat dummy
 scoreboard objectives add spellcrafter.cache.slot dummy
 scoreboard objectives add spellcrafter.cache.cooldown dummy
 scoreboard objectives add spellcrafter.cache.drain dummy
+scoreboard objectives add spellcrafter.trader_timer dummy
 
 scoreboard objectives add spellcrafter.actionbar trigger
 scoreboard objectives add spellcrafter.toggle trigger

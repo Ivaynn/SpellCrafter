@@ -2,7 +2,6 @@
 # score "$gen.shop.tier spellcrafter.tmp" must contain the tier of the shop
 execute unless score $gen.shop.tier spellcrafter.tmp matches 1..5 run return run kill @s
 
-effect give @s minecraft:glowing 10 0 true
 data merge entity @s {DespawnDelay: 48000, Offers:{Recipes:[{buy:{id:"minecraft:emerald",count:2},sell:{id:"minecraft:emerald",count:1}}]}}
 tag @s add spellcrafter.shop.trader
 scoreboard players operation $gen.tier spellcrafter.tmp = $gen.shop.tier spellcrafter.tmp

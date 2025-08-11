@@ -35,6 +35,7 @@ scoreboard objectives remove spellcrafter.hat
 scoreboard objectives remove spellcrafter.cache.slot
 scoreboard objectives remove spellcrafter.cache.cooldown
 scoreboard objectives remove spellcrafter.cache.drain
+scoreboard objectives remove spellcrafter.trader_timer
 
 kill @e[tag=spellcrafter.table]
 kill @e[tag=spellcrafter.projectile]
