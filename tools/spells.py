@@ -5,6 +5,13 @@ from enum import Enum
 from pathlib import Path
 from dataclasses import dataclass
 from copy import deepcopy
+import logging
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 
 ADVANCEMENT = {
     "display": {
@@ -545,10 +552,9 @@ def main() -> None:
     for lang_file in Path(resources_root / 'assets/spellcrafter/lang/').iterdir():
         translations2: dict = read_json(lang_file)
         for k in translations.keys() - translations2.keys():
-            print(f"WARN: expected key '{k}' not found in '{lang_file.name}'")
+            logging.warning(f'Expected key \'{k}\' not found in \'{lang_file.name}\'')
         for k in translations2.keys() - translations.keys():
-            print(f"WARN: unexpected key '{k}' found in '{lang_file.name}'")
-
+            logging.warning(f'Unexpected key \'{k}\' found in \'{lang_file.name}\'')
 
 
     # ------------------------------------------------------------
@@ -566,7 +572,7 @@ def main() -> None:
             replace = f'translate:"{key}",fallback:"{value}"'.replace('\n',r'\n').replace('\\', r'\\') 
             new_text = re.sub(pattern, replace, text)
             if new_text != text:
-                print(f'Updated fallback for \'{key}\' in \'{filename.name}\'')
+                logging.info(f'Updated fallback for \'{key}\' in \'{filename.name}\'')
             text = new_text
 
         save_mcfunction(text, filename)
@@ -584,7 +590,7 @@ def main() -> None:
                             data['fallback'] = translations[k]
                             updated = True
                     else:
-                        print(f'WARN: expected key \'{k}\' not found in \'en_us.json\'')
+                        logging.warning(f'WARN: expected key \'{k}\' not found in \'en_us.json\'')
 
             for k, v in data.items():
                 if isinstance(v, (dict, list)):
@@ -609,7 +615,7 @@ def main() -> None:
         d: dict = read_json(filename)
 
         if _update_json_recursive(d):
-            print(f'Updated fallback(s) in \'{filename}\'')
+            logging.info(f'Updated fallback(s) in \'{filename}\'')
             if filename.name.startswith('root_'):
                 save_json(d, filename)
             else:
