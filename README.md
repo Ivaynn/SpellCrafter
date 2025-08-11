@@ -119,7 +119,7 @@ You can use advancements to track your progress! Find new spells to expand your 
 
 ## Target Dummy
 
-Target dummies can be used to test your wands. They display the damage taken and they can even use a wand if you give them one.
+Target dummies can be used to test your wands. They display the damage taken and they can even use a wand if you give them one. To remove the dummy, give it an egg or another target dummy's spawn egg.
 
 ![Target Dummy](./docs/target_dummy.png)
 
@@ -130,6 +130,24 @@ Target dummies can be used to test your wands. They display the damage taken and
 
 ```
 /loot give @s loot spellcrafter:egg/dummy
+```
+
+
+
+
+
+<br>
+
+## Mystic Merchant
+
+This wandering trader spawns wearing a magical hat. Their random spawns are linked to players, so you're more likely to see them on servers with other people.
+
+They sell a random selection of spells and a few wands that already have some spells in them. They can also sell their hat and mana cookies, used to permanently increase the player's mana.
+
+Mystic Merchants can be spawned with their egg (only obtainable with commands):
+
+```
+/loot give @s loot spellcrafter:egg/trader
 ```
 
 
@@ -152,7 +170,6 @@ Most human-shaped mobs can also be spawned holding a randomly generated wand.
 
 These enemies always drop their wand when killed. Each mob type has a fixed "Tier" which controls their mana and how strong their spells and wands can be.
 
-![Stray](./docs/stray.png)
 
 
 
