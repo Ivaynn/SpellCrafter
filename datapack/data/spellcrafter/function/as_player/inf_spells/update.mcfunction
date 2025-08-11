@@ -18,8 +18,17 @@ execute if score @s spellcrafter.inf_page matches 107 run function spellcrafter:
 execute if score @s spellcrafter.inf_page matches 108 run function spellcrafter:as_player/inf_spells/page_8
 
 
-# Clear buttons (held item)
+# Clear UI items
 execute if items entity @s player.cursor minecraft:knowledge_book run item replace entity @s player.cursor with minecraft:air
+execute if items entity @s hotbar.0 minecraft:knowledge_book run item replace entity @s hotbar.0 with minecraft:air
+execute if items entity @s hotbar.1 minecraft:knowledge_book run item replace entity @s hotbar.1 with minecraft:air
+execute if items entity @s hotbar.2 minecraft:knowledge_book run item replace entity @s hotbar.2 with minecraft:air
+execute if items entity @s hotbar.3 minecraft:knowledge_book run item replace entity @s hotbar.3 with minecraft:air
+execute if items entity @s hotbar.4 minecraft:knowledge_book run item replace entity @s hotbar.4 with minecraft:air
+execute if items entity @s hotbar.5 minecraft:knowledge_book run item replace entity @s hotbar.5 with minecraft:air
+execute if items entity @s hotbar.6 minecraft:knowledge_book run item replace entity @s hotbar.6 with minecraft:air
+execute if items entity @s hotbar.7 minecraft:knowledge_book run item replace entity @s hotbar.7 with minecraft:air
+execute if items entity @s hotbar.8 minecraft:knowledge_book run item replace entity @s hotbar.8 with minecraft:air
 
 
 # Resume event triggers

@@ -17,7 +17,7 @@ item replace entity @s inventory.5 with minecraft:knowledge_book[minecraft:item_
 item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
 
-item replace entity @s inventory.9 with minecraft:air
+loot replace entity @s inventory.9 loot spellcrafter:cookie
 item replace entity @s inventory.10 with minecraft:air
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:knowledge_book[minecraft:item_name={translate:"spellcrafter.gui.base_cooldown",fallback:"Base Cooldown",extra:[{text:" ↓"}]},minecraft:rarity="common",minecraft:custom_data={spellcrafter:{gui:8}},minecraft:custom_model_data={strings:["spellcrafter.gui.cooldown_down"]}]
