@@ -15,10 +15,10 @@ tag @a[gamemode=!spectator] remove spellcrafter.spectator
 execute unless score @s spellcrafter.id matches 1.. run function spellcrafter:as_caster/new_id
 
 
-# Triggers
-execute as @a unless score @s spellcrafter.toggle matches 0 run function spellcrafter:as_player/trigger_toggle
-scoreboard players enable @a spellcrafter.toggle
-scoreboard players enable @a spellcrafter.actionbar
+# Trigger
+execute unless score @s SpellCrafter matches 0 run function spellcrafter:as_player/trigger/init
+scoreboard players set @s SpellCrafter 0
+scoreboard players enable @s SpellCrafter
 
 
 # Caster

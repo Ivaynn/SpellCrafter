@@ -3,6 +3,7 @@
 
 gamerule maxCommandChainLength 2147483647
 
+scoreboard objectives add SpellCrafter trigger
 scoreboard objectives add spellcrafter.id dummy
 scoreboard objectives add spellcrafter.tmp dummy
 scoreboard objectives add spellcrafter.mana dummy
@@ -25,9 +26,8 @@ scoreboard objectives add spellcrafter.cache.slot dummy
 scoreboard objectives add spellcrafter.cache.cooldown dummy
 scoreboard objectives add spellcrafter.cache.drain dummy
 scoreboard objectives add spellcrafter.trader_timer dummy
-
-scoreboard objectives add spellcrafter.actionbar trigger
-scoreboard objectives add spellcrafter.toggle trigger
+scoreboard objectives add spellcrafter.actionbar dummy
+scoreboard objectives add spellcrafter.toggle dummy
 
 scoreboard objectives add spellcrafter.math dummy
 scoreboard players set #n1 spellcrafter.math -1

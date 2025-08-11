@@ -10,6 +10,7 @@ data remove storage spellcrafter:tmp rotation
 data remove storage spellcrafter:tmp time
 data remove storage spellcrafter:tmp tmp
 
+scoreboard objectives remove SpellCrafter
 scoreboard objectives remove spellcrafter.id
 scoreboard objectives remove spellcrafter.tmp
 scoreboard objectives remove spellcrafter.mana
