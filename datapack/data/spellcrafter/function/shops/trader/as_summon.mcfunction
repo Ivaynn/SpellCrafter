@@ -78,6 +78,10 @@ scoreboard players set $gen.tier spellcrafter.tmp 5
 execute if score $gen.shop.tier spellcrafter.tmp matches 5.. if predicate spellcrafter:random_50 run function spellcrafter:shops/trader/add_wand_offer
 
 
+# Cookies!
+function spellcrafter:shops/trader/add_cookie_offer
+
+
 # Last trade is the hat
 function spellcrafter:shops/trader/add_hat_offer
 
