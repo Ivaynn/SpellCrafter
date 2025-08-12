@@ -8,7 +8,7 @@ function spellcrafter:as_target_dummy/drop_item
 # Drop spawn egg with custom name
 summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone",count:1b},Tags:["spellcrafter.tmp"]}
 loot replace entity @e[limit=1,distance=..0.001,type=minecraft:item,tag=spellcrafter.tmp] contents loot spellcrafter:egg/dummy
-execute if data entity @s CustomName run data modify entity @e[limit=1,distance=..0.001,type=minecraft:item,tag=spellcrafter.tmp] Item.components."minecraft:custom_name" set from entity @s CustomName
+execute if data entity @s CustomName unless data entity @s {CustomName:{translate:"spellcrafter.entity.target_dummy",fallback:"Target Dummy"}} run data modify entity @e[limit=1,distance=..0.001,type=minecraft:item,tag=spellcrafter.tmp] Item.components."minecraft:custom_name" set from entity @s CustomName
 tag @e[limit=1,distance=..0.001,type=minecraft:item,tag=spellcrafter.tmp] remove spellcrafter.tmp
 
 
