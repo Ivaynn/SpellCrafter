@@ -2,7 +2,18 @@
 
 SpellCrafter is a Minecraft data pack adds over 100 unique spells you can combine in endless ways! Inspired by _Noita_, this system lets you craft your own magic, discover rare spells, and create powerful combinations.
 
+> **Note** \
+> This project is currently in its alpha stage - you may encounter bugs and unbalanced features. The `1.0.0` release will introduce new spells, textures and system improvements. You can contribute here (by creating an issue or pull request) or join the Discord server.
 
+
+<!-- TODO: banner image -->
+
+
+<h3 align="center">
+  <a href="https://discord.gg/QAtc7ZgPxS">Discord</a> | 
+  <a href="https://www.planetminecraft.com/data-pack/spellcrafter/">PlanetMinecraft</a> |
+  <a href="https://modrinth.com/project/spellcrafter">Modrinth</a>
+</h3>
 
 
 
