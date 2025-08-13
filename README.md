@@ -21,13 +21,14 @@ SpellCrafter is a Minecraft data pack adds over 100 unique spells you can combin
   <a href="https://www.youtube.com/watch?v=tMNynL_ZzsY">YouTube</a>
 </h3>
 
+Using the resource pack isn't required, but it's highly recommended. You can find it in the [Releases Page](https://github.com/Ivaynn/SpellCrafter/releases) or in the Modrinth and PlanetMinecraft links above.
 
 
 <br>
 
 ## Installation
 
-- Download the [Latest Release](https://github.com/Ivaynn/SpellCrafter/releases)
+- Download the [Latest Release](https://github.com/Ivaynn/SpellCrafter/releases/latest)
 
 - Install the data pack in your world
 

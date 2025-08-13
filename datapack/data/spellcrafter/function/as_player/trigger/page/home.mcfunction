@@ -6,7 +6,7 @@ tellraw @s [{text:"                                    ",color:dark_gray,striket
 
 
 # Header
-tellraw @s ["\n    ",{text:" ✦  ",color:white},{text:"SpellCrafter",color:"#965ed6",click_event:{action:run_command,command:"trigger SpellCrafter"},hover_event:{action:show_text,value:[{text:"/trigger SpellCrafter",color:gray}]}},{text:"  ✦ ",color:white}]
+tellraw @s ["\n    ",{text:" ✦  ",color:white},{text:"SpellCrafter",color:"#965ed6",click_event:{action:run_command,command:"trigger SpellCrafter"},hover_event:{action:show_text,value:[{text:"/trigger SpellCrafter",color:gray}]}},{text:"  ✦ ",color:white},"   ",{text:"[?]",color:"gray",click_event:{action:run_command,command:"trigger SpellCrafter set 2"},hover_event:{action:show_text,value:[{text:"Help",color:gray}]}}]
 
 
 # Spellcasting: enabled/disabled
