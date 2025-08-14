@@ -62,8 +62,8 @@
     "displayName": "Explosion",
     "parent": "small_explosion",
     "tier": 4,
-    "mana": 75,
-    "cooldown": 10,
+    "mana": 125,
+    "cooldown": 25,
     "type": "instant",
     "wandModifier": false,
     "description": [
@@ -194,8 +194,8 @@
     "displayName": "Random Direction",
     "parent": "orbit",
     "tier": 3,
-    "mana": 0,
-    "cooldown": -10,
+    "mana": -10,
+    "cooldown": 0,
     "type": "modifier",
     "wandModifier": true,
     "description": [
@@ -1034,7 +1034,7 @@
       "to its initial position"
     ],
     "stats": {
-      "damage": 10,
+      "damage": 6,
       "range": 55,
       "speed": 10
     }
