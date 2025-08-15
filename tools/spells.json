@@ -789,7 +789,7 @@
     "displayName": "Shield",
     "parent": "heal",
     "tier": 4,
-    "mana": 75,
+    "mana": 250,
     "cooldown": 100,
     "type": "instant",
     "wandModifier": false,
