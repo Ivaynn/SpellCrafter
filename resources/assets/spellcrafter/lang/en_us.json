@@ -433,7 +433,7 @@
     "spellcrafter.spell.delayed_cast.description.3": "something touches it",
     "spellcrafter.spell.transfer.name": "Transfer",
     "spellcrafter.spell.transfer.description.1": "Transfers the ownership of all",
-    "spellcrafter.spell.transfer.description.2": "spells after this to the nearest",
+    "spellcrafter.spell.transfer.description.2": "spells after this to a nearby",
     "spellcrafter.spell.transfer.description.3": "caster, excluding you",
     "spellcrafter.spell.steal.name": "Steal",
     "spellcrafter.spell.steal.description.1": "Gives you the ownership of all",

@@ -1834,13 +1834,13 @@
     "displayName": "Transfer",
     "parent": "locked",
     "tier": 4,
-    "mana": 25,
-    "cooldown": 0,
+    "mana": 100,
+    "cooldown": 20,
     "type": "special",
     "wandModifier": false,
     "description": [
       "Transfers the ownership of all",
-      "spells after this to the nearest",
+      "spells after this to a nearby",
       "caster, excluding you"
     ]
   },
@@ -1850,8 +1850,8 @@
     "displayName": "Steal",
     "parent": "transfer",
     "tier": 4,
-    "mana": 50,
-    "cooldown": 10,
+    "mana": 100,
+    "cooldown": 20,
     "type": "special",
     "wandModifier": false,
     "description": [
