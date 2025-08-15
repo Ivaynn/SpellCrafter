@@ -38,7 +38,7 @@ execute as @s[type=!minecraft:player] run function spellcrafter:as_caster/nonpla
 scoreboard players set @s[type=minecraft:player] spellcrafter.cache.cooldown -1
 execute if score $cooldown.this spellcrafter.tmp matches 4.. run return run scoreboard players set @s spellcrafter.cooldown 4
 execute if score $cooldown.this spellcrafter.tmp matches 1..3 run return run scoreboard players operation @s spellcrafter.cooldown = $cooldown.this spellcrafter.tmp
-scoreboard players set @s spellcrafter.cooldown 1
+execute unless score @s spellcrafter.cooldown matches 1.. run scoreboard players set @s spellcrafter.cooldown 1
 
 
 # Spend mana or cancel if caster doesn't have enough mana
