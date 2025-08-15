@@ -3,7 +3,11 @@
 
 
 # Remove projectiles
-execute as @e[distance=..15,type=minecraft:marker,tag=spellcrafter.projectile] at @s run function spellcrafter:spells/counterspell/as_proj
+execute as @e[distance=..15,type=minecraft:marker,tag=spellcrafter.projectile] run function spellcrafter:spells/counterspell/as_proj
+
+
+# Remove summons
+execute as @e[distance=..15,type=#spellcrafter:summon,tag=spellcrafter.summon] run function spellcrafter:spells/counterspell/as_summon
 
 
 # Effects

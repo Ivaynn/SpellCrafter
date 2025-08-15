@@ -415,14 +415,13 @@
     "name": "counterspell",
     "displayName": "Counterspell",
     "parent": "double_teleport",
-    "tier": 3,
-    "mana": 100,
-    "cooldown": 10,
+    "tier": 4,
+    "mana": 350,
+    "cooldown": 50,
     "type": "instant",
     "wandModifier": false,
     "description": [
-      "Stops all projectiles in a",
-      "large radius"
+      "Stops magic in a large radius"
     ]
   },
   {
