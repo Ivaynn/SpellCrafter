@@ -7,5 +7,5 @@ tag @s add spellcrafter.spell.harmless
 tag @s add spellcrafter.spell.ghost
 
 scoreboard players set @s spellcrafter.speed 0
-scoreboard players set @s spellcrafter.range 25
+scoreboard players add @s spellcrafter.range 15
 scoreboard players set @s spellcrafter.damage 0

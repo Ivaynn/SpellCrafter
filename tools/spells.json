@@ -963,7 +963,7 @@
     "description": [
       "Stops the next projectile from",
       "moving. Its lifetime depends on",
-      "its range"
+      "its range: 5m = 1s"
     ]
   },
   {
@@ -1823,10 +1823,13 @@
     "type": "projectile",
     "wandModifier": false,
     "description": [
-      "Stationary, lasts for",
-      "5 seconds or until",
-      "something touches it"
-    ]
+      "Stationary, lasts for 3 seconds",
+      "or until something touches it.",
+      "Range: +5m = +1s"
+    ],
+    "stats": {
+      "range": 15
+    }
   },
   {
     "id": 112,
