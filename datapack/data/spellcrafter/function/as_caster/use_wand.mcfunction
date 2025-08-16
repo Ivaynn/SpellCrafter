@@ -31,6 +31,11 @@ execute unless data storage spellcrafter:tmp mainhand.components."minecraft:cust
 execute unless data storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.spells[0] run return run function spellcrafter:as_caster/use_fail
 
 
+# Cancel if the wand is from a different version (needs to be updated)
+execute store result score $wand_version spellcrafter.tmp run data get storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.version
+execute unless score $wand_version spellcrafter.tmp = version spellcrafter.options run return run function spellcrafter:as_caster/use_outdated
+
+
 # Handle cooldown
 scoreboard players set $cooldown.this spellcrafter.tmp 0
 execute as @s[type=minecraft:player,tag=!spellcrafter.no_cooldown] run function spellcrafter:as_caster/player/get_cooldown

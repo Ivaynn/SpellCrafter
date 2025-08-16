@@ -13,10 +13,11 @@ execute if data entity @s SelectedItem.components."minecraft:custom_data".spellc
 # Reset scores & storages
 scoreboard players set $mana spellcrafter.tmp 0
 scoreboard players set $cooldown spellcrafter.tmp 0
-data modify storage spellcrafter:tmp wand set value {valid:1b, spells:[], slots:[], owner:0, mod:0, cap:0, cooldown:0, mana:0, base_cooldown:0, base_mana:0, skin:0}
+data modify storage spellcrafter:tmp wand set value {valid:1b, version:0, spells:[], slots:[], owner:0, mod:0, cap:0, cooldown:0, mana:0, base_cooldown:0, base_mana:0, skin:0}
 data modify storage spellcrafter:tmp lore set value []
 data modify storage spellcrafter:tmp drop set value []
 data modify storage spellcrafter:tmp keep set value []
+execute store result storage spellcrafter:tmp wand.version int 1 run scoreboard players get version spellcrafter.options
 data modify storage spellcrafter:tmp wand.mod set from entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.mod
 data modify storage spellcrafter:tmp wand.cap set from entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.cap
 data modify storage spellcrafter:tmp wand.base_cooldown set from entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.base_cooldown

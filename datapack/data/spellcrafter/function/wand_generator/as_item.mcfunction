@@ -23,8 +23,9 @@ scoreboard players set $spell.skip spellcrafter.tmp 0
 
 
 # Generate empty wand
-data modify storage spellcrafter:tmp wand set value {valid:1b, spells:[], slots:[], owner:0, mod:0, cap:0, cooldown:0, mana:0, base_cooldown:0, base_mana:0, skin:0}
+data modify storage spellcrafter:tmp wand set value {valid:1b, version:0, spells:[], slots:[], owner:0, mod:0, cap:0, cooldown:0, mana:0, base_cooldown:0, base_mana:0, skin:0}
 data modify storage spellcrafter:tmp lore set value []
+execute store result storage spellcrafter:tmp wand.version int 1 run scoreboard players get version spellcrafter.options
 
 
 # Base stats: spell counts, base mana & base cooldown
