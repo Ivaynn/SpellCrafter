@@ -16,6 +16,7 @@ execute store result score $spell_cap spellcrafter.tmp run data get storage spel
 # Set mana and cooldown
 execute store result storage spellcrafter:tmp wand.mana int 1 run scoreboard players get $mana spellcrafter.tmp
 execute store result storage spellcrafter:tmp wand.cooldown int 1 run scoreboard players get $cooldown spellcrafter.tmp
+data modify storage spellcrafter:tmp wand.drain set value 0
 
 
 # Create storage with the cooldown in seconds format for the lore
