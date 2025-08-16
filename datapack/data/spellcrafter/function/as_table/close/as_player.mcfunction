@@ -60,7 +60,7 @@ scoreboard players set $attribute_drain spellcrafter.tmp 0
 scoreboard players operation $attribute_drain spellcrafter.tmp += $spell.sharp spellcrafter.tmp
 scoreboard players operation $attribute_drain spellcrafter.tmp += $spell.extended spellcrafter.tmp
 scoreboard players operation $attribute_drain spellcrafter.tmp += $spell.quickstep spellcrafter.tmp
-scoreboard players operation $attribute_drain spellcrafter.tmp *= #15 spellcrafter.math
+scoreboard players operation $attribute_drain spellcrafter.tmp *= #40 spellcrafter.math
 
 execute store result storage spellcrafter:tmp wand.drain int 1 run scoreboard players get $attribute_drain spellcrafter.tmp
 execute if score $attribute_drain spellcrafter.tmp matches 1.. run item modify entity @s weapon spellcrafter:wand/set_attributes
