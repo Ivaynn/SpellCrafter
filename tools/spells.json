@@ -430,8 +430,8 @@
     "displayName": "Ghost",
     "parent": "multishot",
     "tier": 4,
-    "mana": 75,
-    "cooldown": 0,
+    "mana": 250,
+    "cooldown": 30,
     "type": "modifier",
     "wandModifier": true,
     "description": [
