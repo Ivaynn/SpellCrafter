@@ -33,7 +33,7 @@ execute unless data storage spellcrafter:tmp mainhand.components."minecraft:cust
 
 # Cancel if the wand is from a different version (needs to be updated)
 execute store result score $wand_version spellcrafter.tmp run data get storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.version
-execute unless score $wand_version spellcrafter.tmp = version spellcrafter.options run return run function spellcrafter:as_caster/use_outdated
+execute unless score $wand_version spellcrafter.tmp = #version spellcrafter.options run return run function spellcrafter:as_caster/use_outdated
 
 
 # Handle cooldown
