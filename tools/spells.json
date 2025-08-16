@@ -1503,12 +1503,12 @@
     "parent": "reverse",
     "tier": 4,
     "mana": 0,
-    "cooldown": 0,
+    "cooldown": 5,
     "type": "special",
     "wandModifier": false,
     "description": [
-      "Skips the next spell. Sets its",
-      "cooldown and mana cost to 0"
+      "Skips the next spell and",
+      "sets its mana cost to 0"
     ]
   },
   {

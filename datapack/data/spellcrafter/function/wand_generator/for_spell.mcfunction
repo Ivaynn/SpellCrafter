@@ -77,15 +77,15 @@ execute if score $spell spellcrafter.tmp matches 83 run scoreboard players add $
 execute if score $spell spellcrafter.tmp matches 84 run scoreboard players add $spell.quickstep spellcrafter.tmp 1
 
 
-# Special case: "skip" ignores the mana cost and cooldown of the next spell
-execute if score $spell.skip spellcrafter.tmp matches 1 run return run scoreboard players set $spell.skip spellcrafter.tmp 0
-execute if score $spell spellcrafter.tmp matches 92 run scoreboard players set $spell.skip spellcrafter.tmp 1
-
-
 # Spell cooldown
 scoreboard players set $add spellcrafter.tmp 0
 execute store result score $add spellcrafter.tmp run data get storage spellcrafter:tmp spell.cooldown
 scoreboard players operation $cooldown spellcrafter.tmp += $add spellcrafter.tmp
+
+
+# Special case: "skip" ignores the mana cost of the next spell
+execute if score $spell.skip spellcrafter.tmp matches 1 run return run scoreboard players set $spell.skip spellcrafter.tmp 0
+execute if score $spell spellcrafter.tmp matches 92 run scoreboard players set $spell.skip spellcrafter.tmp 1
 
 
 # Mana: prevent overflow - if clone multiplier is too high, just set mana cost to the integer limit
