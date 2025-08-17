@@ -7,10 +7,6 @@ scoreboard players set @s spellcrafter.max_mana 10000
 scoreboard players set @s spellcrafter.mana_reg 25
 
 
-# Prevent inventory use
-function scarena:as_player/inventory_locked
-
-
 # Void death
 execute at @s unless entity @s[y=-61,dy=45] run damage @s 1000000 minecraft:out_of_world
 

@@ -13,6 +13,10 @@ scoreboard players set @s scarena.player.death 0
 execute as @e[distance=..5,type=minecraft:item,tag=!scarena.item] at @s run function scarena:as_player/dropped_item/init
 
 
+# Handle locked inventory
+execute if score @s scarena.player.state matches 1..3 unless score @s spellcrafter.inf_page matches 1.. run function scarena:as_player/inventory_locked
+
+
 # State 0 or undefined: new player -> default to 1
 execute unless score @s scarena.player.state matches 1.. run function scarena:as_player/state/join/lobby
 

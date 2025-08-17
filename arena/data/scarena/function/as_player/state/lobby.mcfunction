@@ -6,10 +6,6 @@
 scoreboard players set @s spellcrafter.cooldown 21
 
 
-# Prevent inventory use
-function scarena:as_player/inventory_locked
-
-
 # Triggers
 scoreboard players enable @s arena
 scoreboard players enable @s private
