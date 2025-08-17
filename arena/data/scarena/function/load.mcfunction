@@ -37,6 +37,7 @@ execute unless score arena_reset scarena.main matches 1.. run scoreboard players
 
 # Scoreboards
 scoreboard objectives add scarena.main dummy
+scoreboard objectives add scarena.tmp dummy
 scoreboard objectives add scarena.player.relog minecraft.custom:leave_game
 scoreboard objectives add scarena.player.death minecraft.custom:deaths
 scoreboard objectives add scarena.player.state dummy

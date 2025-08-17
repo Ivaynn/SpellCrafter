@@ -10,7 +10,7 @@ execute as @a if score @s scarena.player.state matches 2 at @s run function scar
 
 
 # Kill non-players
-
+execute as @e[type=!minecraft:player,x=950,dx=1050,z=-50,dz=100,y=-100,dy=200] at @s run function scarena:arena/remove_entity
 
 
 # Load structures
