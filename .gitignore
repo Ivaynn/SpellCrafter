@@ -1,3 +1,7 @@
 
 *.zip
 *.bbmodel
+
+tools/**
+!tools/**.py
+!tools/spells.json
