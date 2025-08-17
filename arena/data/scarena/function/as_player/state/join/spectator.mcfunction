@@ -9,4 +9,4 @@ execute as @s[gamemode=spectator] run return run function scarena:as_player/stat
 
 # Enable spectator
 gamemode spectator @s
-tp @s @a[limit=1,sort=random,gamemode=!spectator,scores={scarena.player.state=2..}]
+tp @s @a[limit=1,sort=random,gamemode=!spectator,scores={scarena.player.state=3..}]

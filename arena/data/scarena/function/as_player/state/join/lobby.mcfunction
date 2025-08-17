@@ -16,7 +16,7 @@ effect give @s minecraft:saturation infinite 100 true
 
 
 # SpellCrafter
-scoreboard players set @s spellcrafter.inf_page 102
+scoreboard players set @s spellcrafter.inf_page 0
 tag @s remove spellcrafter.caster
 title @s actionbar ""
 scoreboard players set @s spellcrafter.mana_reg 0

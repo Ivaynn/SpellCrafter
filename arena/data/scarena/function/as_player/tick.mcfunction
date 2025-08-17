@@ -9,21 +9,25 @@ scoreboard players set @s scarena.player.relog 0
 scoreboard players set @s scarena.player.death 0
 
 
+# Handle dropped items
+execute as @e[distance=..5,type=minecraft:item,tag=!scarena.item] at @s run function scarena:as_player/dropped_item/init
+
+
 # State 0 or undefined: new player -> default to 1
-execute unless score @s scarena.player.state matches 1.. run scoreboard players set @s scarena.player.state 1
+execute unless score @s scarena.player.state matches 1.. run function scarena:as_player/state/join/lobby
 
 
 # State 1: at lobby
 execute if score @s scarena.player.state matches 1 run function scarena:as_player/state/lobby
 
 
-# State 2: at arena
-execute if score @s scarena.player.state matches 2 run function scarena:as_player/state/arena
+# State 2: at private cell
+execute if score @s scarena.player.state matches 2 run function scarena:as_player/state/private
 
 
 # State 3: at FFA arena
-execute if score @s scarena.player.state matches 3 run say private
+execute if score @s scarena.player.state matches 3 run function scarena:as_player/state/arena
 
 
 # State 4: at game arena
-execute if score @s scarena.player.state matches 4 run say in-game
+execute if score @s scarena.player.state matches 4 run function scarena:as_player/state/game

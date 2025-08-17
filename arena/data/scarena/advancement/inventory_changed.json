@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "scarena:as_player/events/inventory_changed"
+        "function": "scarena:as_player/events/inventory_changed/trigger"
     }
 }

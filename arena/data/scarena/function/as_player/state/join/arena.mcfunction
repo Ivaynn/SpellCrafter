@@ -1,5 +1,5 @@
 #> as player, at @s
-scoreboard players set @s scarena.player.state 2
+scoreboard players set @s scarena.player.state 3
 function scarena:as_player/disable_triggers
 
 
