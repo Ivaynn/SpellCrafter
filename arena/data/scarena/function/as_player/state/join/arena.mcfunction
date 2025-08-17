@@ -19,7 +19,12 @@ execute at @s run tp @s ~ ~.5 ~ facing 1000 ~ 0
 
 
 # SpellCrafter
-scoreboard players set @s spellcrafter.inf_page 102
+scoreboard players set @s spellcrafter.inf_page 0
 tag @s add spellcrafter.caster
+tag @s remove spellcrafter.untargetable
+tag @s remove spellcrafter.inf_mana
+tag @s remove spellcrafter.no_cooldown
 scoreboard players set @s spellcrafter.mana 5000
 scoreboard players set @s spellcrafter.cooldown 0
+
+function scarena:as_player/remove_non_wands

@@ -19,3 +19,6 @@ scoreboard players set @s arena 0
 
 execute if score @s spectator matches 1.. run function scarena:as_player/state/join/spectator
 scoreboard players set @s spectator 0
+
+execute if score @s spawn matches 1.. run function scarena:as_player/state/join/lobby
+scoreboard players set @s spawn 0

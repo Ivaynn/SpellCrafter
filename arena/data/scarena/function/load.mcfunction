@@ -32,6 +32,7 @@ execute positioned 1000 0 0 run forceload add ~60 ~60 ~-60 ~-60
 execute positioned -1000 0 0 run forceload add ~60 ~60 ~-60 ~-60
 execute positioned 0 0 1000 run forceload add ~60 ~60 ~-60 ~-60
 execute positioned 0 0 -1000 run forceload add ~60 ~60 ~-60 ~-60
+execute unless score arena_reset scarena.main matches 1.. run scoreboard players set arena_reset scarena.main 20
 
 
 # Scoreboards
