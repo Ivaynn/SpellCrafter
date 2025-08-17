@@ -1,0 +1,18 @@
+#> [tick] as player, at @s
+# Executed if player is at arena (state 2)
+
+scoreboard players set @s spellcrafter.max_mana 10000
+scoreboard players set @s spellcrafter.mana_reg 20
+
+
+# Void death
+execute at @s unless entity @s[y=-61,dy=45] run damage @s 1000000 minecraft:out_of_world
+
+
+# Triggers
+scoreboard players enable @s spawn
+scoreboard players enable @s queue
+scoreboard players enable @s private
+
+execute if score @s spawn matches 1.. run function scarena:as_player/state/join/lobby
+scoreboard players set @s spawn 0
