@@ -1,8 +1,4 @@
-#> advancement reward
-advancement revoke @s only scarena:inventory_changed
-
-execute unless score @s scarena.player.state matches 1..3 run return 0
-execute if score @s spellcrafter.inf_page matches 1.. run return 0
+#> as player
 
 item replace entity @s inventory.0 with minecraft:amethyst_shard[minecraft:item_name={text:"Inventory Locked",color:"red"}]
 item replace entity @s inventory.1 with minecraft:amethyst_shard[minecraft:item_name={text:"Inventory Locked",color:"red"}]

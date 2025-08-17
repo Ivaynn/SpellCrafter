@@ -4,7 +4,10 @@
 
 # Manage player
 scoreboard players set @s spellcrafter.cooldown 21
-# execute unless entity @s[x=-5,dx=10,z=-5,dz=10] run function scarena:as_player/state/join/lobby
+
+
+# Prevent inventory use
+function scarena:as_player/inventory_locked
 
 
 # Triggers
@@ -22,3 +25,6 @@ scoreboard players set @s spectator 0
 
 execute if score @s spawn matches 1.. run function scarena:as_player/state/join/lobby
 scoreboard players set @s spawn 0
+
+execute if score @s private matches 1.. run function scarena:as_player/state/join/private
+scoreboard players set @s private 0

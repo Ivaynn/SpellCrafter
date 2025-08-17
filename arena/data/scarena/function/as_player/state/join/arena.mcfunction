@@ -5,7 +5,7 @@ function scarena:as_player/disable_triggers
 
 # Reset player
 gamemode survival @s[gamemode=!survival]
-spawnpoint @s 0 -42 0
+spawnpoint @s 0 0 0
 xp set @s 0 points
 xp set @s 0 levels
 effect clear @s

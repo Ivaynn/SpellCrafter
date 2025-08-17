@@ -6,7 +6,7 @@ scoreboard players set arena_reset scarena.main 18000
 
 
 # Teleport players
-execute as @a if score @s scarena.player.state matches 2 at @s run function scarena:as_player/state/join/lobby
+execute as @a if score @s scarena.player.state matches 3 at @s run function scarena:as_player/state/join/lobby
 
 
 # Kill non-players

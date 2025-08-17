@@ -6,7 +6,7 @@ function scarena:as_player/disable_triggers
 # Reset player
 advancement grant @s from spellcrafter:spells/root
 gamemode adventure @s[gamemode=!adventure]
-spawnpoint @s 0 -42 0
+spawnpoint @s 0 0 0
 tp @s 0 -42 0 0 0
 xp set @s 0 points
 xp set @s 0 levels
@@ -22,3 +22,5 @@ title @s actionbar ""
 scoreboard players set @s spellcrafter.mana_reg 0
 scoreboard players set @s spellcrafter.mana 0
 scoreboard players set @s spellcrafter.max_mana 1
+
+function scarena:as_player/remove_non_wands

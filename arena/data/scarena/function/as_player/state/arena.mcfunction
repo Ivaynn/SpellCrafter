@@ -7,6 +7,10 @@ scoreboard players set @s spellcrafter.max_mana 10000
 scoreboard players set @s spellcrafter.mana_reg 25
 
 
+# Prevent inventory use
+function scarena:as_player/inventory_locked
+
+
 # Void death
 execute at @s unless entity @s[y=-61,dy=45] run damage @s 1000000 minecraft:out_of_world
 
@@ -18,3 +22,7 @@ scoreboard players enable @s private
 
 execute if score @s spawn matches 1.. run function scarena:as_player/state/join/lobby
 scoreboard players set @s spawn 0
+
+execute if score @s private matches 1.. run function scarena:as_player/state/join/private
+scoreboard players set @s private 0
+
