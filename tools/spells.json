@@ -1823,8 +1823,7 @@
     "type": "projectile",
     "wandModifier": false,
     "description": [
-      "Stationary, lasts for 3 seconds",
-      "or until something touches it.",
+      "Stationary, lasts for 3 seconds.",
       "Range: +5m = +1s"
     ],
     "stats": {
