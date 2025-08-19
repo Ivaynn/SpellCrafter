@@ -32,4 +32,4 @@ execute positioned ~ -59 ~ run function spellcrafter:as_table/place/init
 execute positioned ~-10 -59 ~-10 run function spellcrafter:as_target_dummy/summon/init
 execute positioned ~-10 -59 ~-10 as @n[distance=..2,tag=spellcrafter.target_dummy] at @s run tp @s ~ ~ ~ -45 0
 
-execute as @a[scores={scarena.player.state=2}] if score @s scarena.player.room_id = $room.id scarena.tmp run tp @s ~ -59 ~6 180 0
+execute as @a[scores={scarena.player.state=2}] if score @s scarena.player.room_id = $room.id scarena.tmp run function scarena:rooms/new/tp_player

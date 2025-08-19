@@ -2,7 +2,7 @@
 
 
 # Player already has a room -> reset it
-execute if score @s scarena.player.room_id matches 1.. run return run function scarena:rooms/new/load
+execute if score @s scarena.player.room_id matches 1.. run return run function scarena:rooms/new/tp_player
 
 
 # Player doesn't have a room -> find an available one
