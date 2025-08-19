@@ -1,6 +1,8 @@
 #> as player, at @s
 scoreboard players set @s scarena.player.state 1
 function scarena:as_player/disable_triggers
+scoreboard players set @s scarena.player.game_id 0
+scoreboard players set @s scarena.player.room_id 0
 
 
 # Reset player
@@ -18,6 +20,7 @@ effect give @s minecraft:saturation infinite 100 true
 # SpellCrafter
 scoreboard players set @s spellcrafter.inf_page 0
 tag @s remove spellcrafter.caster
+tag @s add spellcrafter.untargetable
 title @s actionbar ""
 scoreboard players set @s spellcrafter.mana_reg 0
 scoreboard players set @s spellcrafter.mana 0

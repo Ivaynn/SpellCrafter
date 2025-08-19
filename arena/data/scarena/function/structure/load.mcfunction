@@ -1,5 +1,5 @@
 #> Macro function
-# $name (str): path to structures folder "arena/1", "lobby"
+# $name (str): path to structures folder -> "arena/1"
 # $x (int): coordinate of structure center
 # $z (int): coordinate of structure center
 

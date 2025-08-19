@@ -24,6 +24,7 @@ setworldspawn 0 0 0
 difficulty normal
 weather clear
 fill -2 -1 -2 2 3 2 minecraft:black_concrete hollow
+function scarena:lobby/load
 
 
 # Scoreboards
@@ -32,7 +33,8 @@ scoreboard objectives add scarena.tmp dummy
 scoreboard objectives add scarena.player.relog minecraft.custom:leave_game
 scoreboard objectives add scarena.player.death minecraft.custom:deaths
 scoreboard objectives add scarena.player.state dummy
-scoreboard objectives add scarena.player.gameid dummy
+scoreboard objectives add scarena.player.game_id dummy
+scoreboard objectives add scarena.player.room_id dummy
 
 scoreboard objectives add spawn trigger
 scoreboard objectives add arena trigger
@@ -41,10 +43,18 @@ scoreboard objectives add queue trigger
 scoreboard objectives add surrender trigger
 scoreboard objectives add spectator trigger
 
+scoreboard objectives add scarena.math dummy
+scoreboard players set #n1 scarena.math -1
+scoreboard players set #3 scarena.math 3
+scoreboard players set #32 scarena.math 32
+scoreboard players set #48 scarena.math 48
+
+
 
 # Initialize persistent scores and storages
 execute unless score arena_reset scarena.main matches 1.. run scoreboard players set arena_reset scarena.main 20
 execute unless data storage scarena:queue structures run data modify storage scarena:queue structures set value []
+execute unless data storage scarena:queue rooms run data modify storage scarena:queue rooms set value []
 
 
 # SpellCrafter options
