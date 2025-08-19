@@ -18,7 +18,8 @@ effect give @s minecraft:saturation infinite 100 true
 # SpellCrafter
 scoreboard players set @s spellcrafter.inf_page 102
 tag @s add spellcrafter.caster
-title @s actionbar ""
-scoreboard players set @s spellcrafter.mana_reg 0
-scoreboard players set @s spellcrafter.mana 0
-scoreboard players set @s spellcrafter.max_mana 1
+scoreboard players set @s spellcrafter.mana_reg 25
+scoreboard players set @s spellcrafter.mana 10000
+scoreboard players set @s spellcrafter.max_mana 10000
+
+function scarena:as_player/remove_non_wands

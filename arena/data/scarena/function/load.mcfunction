@@ -45,7 +45,7 @@ scoreboard objectives add scarena.player.gameid dummy
 
 scoreboard objectives add spawn trigger
 scoreboard objectives add arena trigger
-scoreboard objectives add private trigger
+scoreboard objectives add room trigger
 scoreboard objectives add queue trigger
 scoreboard objectives add surrender trigger
 scoreboard objectives add spectator trigger

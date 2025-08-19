@@ -8,7 +8,7 @@ scoreboard players set @s spellcrafter.cooldown 21
 
 # Triggers
 scoreboard players enable @s arena
-scoreboard players enable @s private
+scoreboard players enable @s room
 scoreboard players enable @s queue
 scoreboard players enable @s spectator
 scoreboard players enable @s spawn
@@ -22,5 +22,5 @@ scoreboard players set @s spectator 0
 execute if score @s spawn matches 1.. run function scarena:as_player/state/join/lobby
 scoreboard players set @s spawn 0
 
-execute if score @s private matches 1.. run function scarena:as_player/state/join/private
-scoreboard players set @s private 0
+execute if score @s room matches 1.. run function scarena:as_player/state/join/room
+scoreboard players set @s room 0

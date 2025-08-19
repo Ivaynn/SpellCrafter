@@ -25,8 +25,8 @@ execute unless score @s scarena.player.state matches 1.. run function scarena:as
 execute if score @s scarena.player.state matches 1 run function scarena:as_player/state/lobby
 
 
-# State 2: at private cell
-execute if score @s scarena.player.state matches 2 run function scarena:as_player/state/private
+# State 2: at private room
+execute if score @s scarena.player.state matches 2 run function scarena:as_player/state/room
 
 
 # State 3: at FFA arena
