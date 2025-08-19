@@ -24,3 +24,6 @@ scoreboard players set @s spawn 0
 
 execute if score @s room matches 1.. run function scarena:as_player/state/join/room
 scoreboard players set @s room 0
+
+execute if score @s queue matches 1.. run function scarena:as_player/queue/trigger
+scoreboard players set @s queue 0

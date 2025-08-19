@@ -7,5 +7,9 @@
 execute if score @s scarena.player.state matches 2 run return run function scarena:rooms/new/tp_player
 
 
+# Game death -> let the game system handle it
+execute if score @s scarena.player.state matches 4 run return run function scarena:game/as_player/respawn
+
+
 # Default -> Go to lobby
 function scarena:as_player/state/join/lobby

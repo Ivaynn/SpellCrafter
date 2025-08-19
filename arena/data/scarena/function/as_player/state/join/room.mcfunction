@@ -9,6 +9,7 @@ execute unless score @s scarena.player.room_id matches 1.. run return 0
 # Init
 scoreboard players set @s scarena.player.state 2
 function scarena:as_player/disable_triggers
+scoreboard players set @s scarena.player.game_id 0
 
 
 # Reset player
