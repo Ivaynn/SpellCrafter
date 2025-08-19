@@ -1,4 +1,9 @@
 #> execute summon (marker)
 
-scoreboard players operation @s scarena.player.game_id = $new scarena.player.game_id
-kill @s
+tag @s add scarena.game
+
+scoreboard players operation @s scarena.game.id = $new scarena.game.id
+scoreboard players set @s scarena.game.round 0
+
+
+# Find available slot

@@ -1,6 +1,10 @@
-#> as marker OR player
+#> as marker
 
 
-# Find winner
-scoreboard players operation $game_id scarena.tmp = @s scarena.player.game_id
-execute as @a[scores={scarena.player.state=4}] if score @s scarena.player.game_id = $game_id scarena.tmp run function scarena:game/as_player/exit
+# Reset all players
+scoreboard players operation $game.id scarena.tmp = @s scarena.game.id
+execute as @a[scores={scarena.player.state=4}] if score @s scarena.game.id = $game.id scarena.tmp run function scarena:game/as_player/exit
+
+
+# Remove game manager entity
+kill @s

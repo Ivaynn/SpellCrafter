@@ -1,6 +1,6 @@
 #> as player, at @s
 
-scoreboard players operation @s scarena.player.game_id = $new scarena.player.game_id
+scoreboard players operation @s scarena.game.id = $new scarena.game.id
 
 function scarena:as_player/state/join/game
 scoreboard players set @s spellcrafter.max_mana 1000
@@ -18,3 +18,5 @@ item replace entity @s enderchest.6 from entity @s hotbar.6
 item replace entity @s enderchest.7 from entity @s hotbar.7
 item replace entity @s enderchest.8 from entity @s hotbar.8
 clear @s
+
+scoreboard players set @s scarena.game.round 0

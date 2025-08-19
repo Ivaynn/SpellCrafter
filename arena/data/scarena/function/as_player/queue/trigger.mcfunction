@@ -2,7 +2,7 @@
 
 
 # Already in-game -> ignore
-execute if score @s scarena.player.game_id matches 1.. run return 0
+execute if score @s scarena.game.id matches 1.. run return 0
 
 
 # Case 2 -> always join
@@ -14,5 +14,5 @@ execute if score @s queue matches 3 run return run function scarena:as_player/qu
 
 
 # Otherwise -> toggle join/leave
-execute if score @s scarena.player.game_id matches -1 run return run function scarena:as_player/queue/leave
+execute if score @s scarena.game.id matches -1 run return run function scarena:as_player/queue/leave
 function scarena:as_player/queue/join

@@ -1,3 +1,3 @@
 #> as player
 
-say relog while in-game
+function scarena:game/as_player/exit

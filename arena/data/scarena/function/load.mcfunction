@@ -34,8 +34,10 @@ scoreboard objectives add scarena.tmp dummy
 scoreboard objectives add scarena.player.relog minecraft.custom:leave_game
 scoreboard objectives add scarena.player.death minecraft.custom:deaths
 scoreboard objectives add scarena.player.state dummy
-scoreboard objectives add scarena.player.game_id dummy
 scoreboard objectives add scarena.player.room_id dummy
+scoreboard objectives add scarena.game.id dummy
+scoreboard objectives add scarena.game.round dummy
+scoreboard objectives add scarena.game.slot dummy
 
 scoreboard objectives add scarena.health dummy {text:"❤",color:"red"}
 scoreboard objectives modify scarena.health numberformat styled {color:"red"}
@@ -57,8 +59,8 @@ scoreboard players set #48 scarena.math 48
 
 
 # Initialize persistent scores and storages
-execute unless score game.max_arenas scarena.main matches 1.. run scoreboard players set game.max_arenas scarena.main 3
-execute unless score game.count scarena.main matches 0.. run scoreboard players set game.count scarena.main 0
+execute unless score game.instances scarena.main matches 0.. run scoreboard players set game.instances scarena.main 0
+execute unless score game.max_instances scarena.main matches 1.. run scoreboard players set game.max_instances scarena.main 3
 
 execute unless score arena.reset scarena.main matches 1.. run scoreboard players set arena.reset scarena.main 20
 execute unless score room.max_count scarena.main matches 1.. run scoreboard players set room.max_count scarena.main 9

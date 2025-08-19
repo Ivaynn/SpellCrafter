@@ -1,5 +1,8 @@
 #> as player
 
+scoreboard players set @s scarena.game.id 0
+scoreboard players set @s scarena.game.round 0
+
 clear @s
 
 item replace entity @s hotbar.0 from entity @s enderchest.0
@@ -13,3 +16,5 @@ item replace entity @s hotbar.7 from entity @s enderchest.7
 item replace entity @s hotbar.8 from entity @s enderchest.8
 
 function scarena:as_player/state/join/lobby
+
+schedule function scarena:game/check_players 1t replace
