@@ -50,9 +50,18 @@ scoreboard players set #32 scarena.math 32
 scoreboard players set #48 scarena.math 48
 
 
-
 # Initialize persistent scores and storages
-execute unless score arena_reset scarena.main matches 1.. run scoreboard players set arena_reset scarena.main 20
+execute unless score game.max_arenas scarena.main matches 1.. run scoreboard players set game.max_arenas scarena.main 3
+execute unless score game.count scarena.main matches 0.. run scoreboard players set game.count scarena.main 0
+
+execute unless score arena.reset scarena.main matches 1.. run scoreboard players set arena.reset scarena.main 20
+execute unless score room.max_count scarena.main matches 1.. run scoreboard players set room.max_count scarena.main 9
+
+execute unless score queue.timer scarena.main matches 0.. run scoreboard players set queue.timer scarena.main 0
+execute unless score queue.players scarena.main matches 0.. run scoreboard players set queue.players scarena.main 0
+execute unless score queue.min_players scarena.main matches 1.. run scoreboard players set queue.min_players scarena.main 2
+execute unless score queue.max_players scarena.main matches 1.. run scoreboard players set queue.max_players scarena.main 4
+
 execute unless data storage scarena:queue structures run data modify storage scarena:queue structures set value []
 execute unless data storage scarena:queue rooms run data modify storage scarena:queue rooms set value []
 

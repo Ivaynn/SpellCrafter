@@ -2,7 +2,7 @@
 
 
 # 18k ticks = 15min
-scoreboard players set arena_reset scarena.main 18000
+scoreboard players set arena.reset scarena.main 18000
 
 
 # Teleport players

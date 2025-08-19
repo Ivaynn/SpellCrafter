@@ -10,4 +10,4 @@ execute if score $room.new scarena.tmp matches 1 run return run scoreboard playe
 
 # Next iteration
 scoreboard players add $room.id scarena.tmp 1
-execute unless score $room.id scarena.tmp matches 15.. run function scarena:rooms/new/for_room_id
+execute unless score $room.id scarena.tmp >= room.max_count scarena.main run function scarena:rooms/new/for_room_id

@@ -1,13 +1,13 @@
 #> any
-scoreboard players set queue_timer scarena.main 0
+scoreboard players set queue.timer scarena.main 0
 
 
 # Count players
-scoreboard players set $queue.players scarena.tmp 1
-execute as @a if score @s scarena.player.game_id matches -1 run scoreboard players add $queue.players scarena.tmp 1
-execute unless score $queue.players scarena.tmp matches 2.. run return run tellraw @a ["",{text:"> ",color:"dark_purple",bold:true},{text:"Not enough players to start the game!",color:"gray"}]
+function scarena:as_player/queue/update_count
+execute unless score queue.players scarena.main >= queue.min_players scarena.main run return run tellraw @a ["",{text:"> ",color:"red",bold:true},{text:"Failed to start: there are not enough players!",color:"gray"}]
+execute unless score queue.players scarena.main <= queue.max_players scarena.main run return run tellraw @a ["",{text:"> ",color:"red",bold:true},{text:"Failed to start: there are too many players!",color:"gray"}]
 
 
 # Start game
-tellraw @a ["",{text:"> ",color:"dark_purple",bold:true},{text:"A new game has started with ",color:"gray"},{score:{name:"$queue.players",objective:"scarena.tmp"},color:"gray"},{text:" players!",color:"gray"}]
+tellraw @a ["",{text:"> ",color:"dark_purple",bold:true},{text:"A new game has started with ",color:"gray"},{score:{name:"queue.players",objective:"scarena.main"},color:"gray"},{text:" players!",color:"gray"}]
 function scarena:game/new/init
