@@ -11,6 +11,7 @@ scoreboard players operation @s spellcrafter.age *= $spell.summon_crystal spellc
 
 # Get caster's id
 scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
+function spellcrafter:as_summon/check_limit/init
 
 
 # Update entity NBT

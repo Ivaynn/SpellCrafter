@@ -10,6 +10,7 @@ scoreboard players set @s spellcrafter.age 100
 
 # Get caster's id
 scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
+function spellcrafter:as_summon/check_limit/init
 
 
 # Get caster's rotation

@@ -19,6 +19,7 @@ data modify entity @s CustomName set from storage spellcrafter:tmp summon.name
 
 # Get caster's id
 scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
+function spellcrafter:as_summon/check_limit/init
 
 
 # Scale - can't set the "Size" nbt tag because that causes slimes to create smaller slimes when they die

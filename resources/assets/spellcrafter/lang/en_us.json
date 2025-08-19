@@ -74,6 +74,8 @@
     "spellcrafter.options.projectile_cap.description": "Maximum number of projectiles\nmoving at the same time",
     "spellcrafter.options.min_cooldown.name": "Wand Cooldown",
     "spellcrafter.options.min_cooldown.description": "Minimum wand cooldown\nin seconds",
+    "spellcrafter.options.max_summons.name": "Max Summons",
+    "spellcrafter.options.max_summons.description": "Maximum number of summoned\nentities by player",
     "spellcrafter.options.trader_spawn.name": "Trader Spawning",
     "spellcrafter.options.trader_spawn.description": "Spawn frequency of\nMystic Merchants",
     "spellcrafter.options.trader_spawn.disabled": "disabled",
