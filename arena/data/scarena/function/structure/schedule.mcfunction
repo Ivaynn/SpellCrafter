@@ -16,6 +16,10 @@ execute if score $success scarena.tmp matches 0 run tellraw @a[tag=debug] ["",{t
 execute if score $success scarena.tmp matches 1 run tellraw @a[tag=debug] ["",{text:"> ",color:"gold",bold:true},{text:"Placed structure: ",color:"gray"},{storage:"scarena:queue",nbt:"structures[0]",color:"white"}]
 
 
+# If game structure, run final game load stage
+execute if score $success scarena.tmp matches 1 if data storage scarena:queue structures[0].game run schedule function scarena:game/new/finish 1t
+
+
 # Clear queue entry if successful
 execute if score $success scarena.tmp matches 1 run data remove storage scarena:queue structures[0]
 
