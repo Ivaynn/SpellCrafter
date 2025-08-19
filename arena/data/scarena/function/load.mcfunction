@@ -26,15 +26,6 @@ weather clear
 fill -2 -1 -2 2 3 2 minecraft:black_concrete hollow
 
 
-# Ensure everything is loaded
-execute positioned 0 0 0 run forceload add ~60 ~60 ~-60 ~-60
-execute positioned 1000 0 0 run forceload add ~60 ~60 ~-60 ~-60
-execute positioned -1000 0 0 run forceload add ~60 ~60 ~-60 ~-60
-execute positioned 0 0 1000 run forceload add ~60 ~60 ~-60 ~-60
-execute positioned 0 0 -1000 run forceload add ~60 ~60 ~-60 ~-60
-execute unless score arena_reset scarena.main matches 1.. run scoreboard players set arena_reset scarena.main 20
-
-
 # Scoreboards
 scoreboard objectives add scarena.main dummy
 scoreboard objectives add scarena.tmp dummy
@@ -49,6 +40,11 @@ scoreboard objectives add room trigger
 scoreboard objectives add queue trigger
 scoreboard objectives add surrender trigger
 scoreboard objectives add spectator trigger
+
+
+# Initialize persistent scores and storages
+execute unless score arena_reset scarena.main matches 1.. run scoreboard players set arena_reset scarena.main 20
+execute unless data storage scarena:queue structures run data modify storage scarena:queue structures set value []
 
 
 # SpellCrafter options

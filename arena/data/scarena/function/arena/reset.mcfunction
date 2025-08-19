@@ -13,10 +13,10 @@ execute as @a if score @s scarena.player.state matches 3 at @s run function scar
 execute as @e[type=!minecraft:player,x=950,dx=1050,z=-50,dz=100,y=-100,dy=200] at @s run function scarena:arena/remove_entity
 
 
-# Load structures
-data modify storage scarena:tmp structure set value {name:"arena/1", x:1000, z:0}
-function scarena:structure/load with storage scarena:tmp structure
+# Schedule structure load
+data modify storage scarena:queue structures append value {name:"arena/1", x:1000, z:0}
+schedule function scarena:structure/schedule 1t replace
 
 
 # Complete
-tellraw @a ["",{text:"> ",color:"dark_green",bold:true},{text:"The FFA arena was reset",color:"gray"}]
+tellraw @a ["",{text:"> ",color:"dark_green",bold:true},{text:"The FFA arena is resetting...",color:"gray"}]
