@@ -16,6 +16,7 @@ gamerule doMobSpawning false
 gamerule doMobLoot true
 gamerule doFireTick true
 gamerule announceAdvancements false
+gamerule locatorBar false
 
 
 # World
@@ -36,6 +37,10 @@ scoreboard objectives add scarena.player.state dummy
 scoreboard objectives add scarena.player.game_id dummy
 scoreboard objectives add scarena.player.room_id dummy
 
+scoreboard objectives add scarena.health dummy {text:"❤",color:"red"}
+scoreboard objectives modify scarena.health numberformat styled {color:"red"}
+scoreboard objectives setdisplay below_name scarena.health 
+
 scoreboard objectives add spawn trigger
 scoreboard objectives add arena trigger
 scoreboard objectives add room trigger
@@ -45,6 +50,7 @@ scoreboard objectives add spectator trigger
 
 scoreboard objectives add scarena.math dummy
 scoreboard players set #n1 scarena.math -1
+scoreboard players set #2 scarena.math 2
 scoreboard players set #3 scarena.math 3
 scoreboard players set #32 scarena.math 32
 scoreboard players set #48 scarena.math 48

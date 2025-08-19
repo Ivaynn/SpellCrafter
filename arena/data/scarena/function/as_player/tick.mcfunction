@@ -9,6 +9,10 @@ scoreboard players set @s scarena.player.relog 0
 scoreboard players set @s scarena.player.death 0
 
 
+# Health display
+execute store result score @s scarena.health run data get entity @s Health 0.5
+
+
 # Handle dropped items
 execute as @e[distance=..5,type=minecraft:item,tag=!scarena.item] at @s run function scarena:as_player/dropped_item/init
 
