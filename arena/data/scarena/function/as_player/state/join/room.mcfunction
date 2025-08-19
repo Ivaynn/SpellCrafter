@@ -14,7 +14,6 @@ scoreboard players set @s scarena.player.game_id 0
 
 # Reset player
 gamemode survival @s[gamemode=!survival]
-spawnpoint @s 0 0 0
 effect clear @s
 effect give @s minecraft:instant_health 1 100 true
 effect give @s minecraft:saturation infinite 100 true

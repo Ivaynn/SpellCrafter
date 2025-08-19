@@ -3,6 +3,10 @@
 # if doImmediateRespawn is false -> at death pos
 
 
+# Permanent effects
+effect give @s minecraft:saturation infinite 100 true
+
+
 # Room death -> teleport back to room
 execute if score @s scarena.player.state matches 2 run return run function scarena:rooms/new/tp_player
 

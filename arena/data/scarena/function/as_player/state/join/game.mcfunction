@@ -5,7 +5,6 @@ scoreboard players set @s scarena.player.room_id 0
 
 
 # Reset player
-spawnpoint @s 0 0 0
 xp set @s 0 points
 xp set @s 0 levels
 effect clear @s

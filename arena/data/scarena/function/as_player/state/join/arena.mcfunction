@@ -7,7 +7,7 @@ scoreboard players set @s scarena.player.room_id 0
 
 # Reset player
 gamemode survival @s[gamemode=!survival]
-spawnpoint @s 0 0 0
+spawnpoint @s 0 -42 0 0
 xp set @s 0 points
 xp set @s 0 levels
 effect clear @s
