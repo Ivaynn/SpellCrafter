@@ -74,7 +74,7 @@ execute unless score room.max_count scarena.main matches 1.. run scoreboard play
 execute unless score queue.timer scarena.main matches 0.. run scoreboard players set queue.timer scarena.main 0
 execute unless score queue.players scarena.main matches 0.. run scoreboard players set queue.players scarena.main 0
 execute unless score queue.min_players scarena.main matches 1.. run scoreboard players set queue.min_players scarena.main 2
-execute unless score queue.max_players scarena.main matches 1.. run scoreboard players set queue.max_players scarena.main 4
+execute unless score queue.max_players scarena.main matches 1..9 run scoreboard players set queue.max_players scarena.main 4
 
 execute unless data storage scarena:queue structures run data modify storage scarena:queue structures set value []
 execute unless data storage scarena:queue rooms run data modify storage scarena:queue rooms set value []

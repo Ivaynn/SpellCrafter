@@ -41,7 +41,13 @@ scoreboard players operation @s scarena.game.z = $game.z scarena.tmp
 
 
 # Schedule structure load
-data modify storage scarena:queue structures append value {name:"arena/1", x:0, z:1000, game: true}
+data modify storage scarena:queue structures append value {name:"", x:0, z:1000, game: true}
 execute store result storage scarena:queue structures[-1].x int 1 run scoreboard players get $game.x scarena.tmp
 execute store result storage scarena:queue structures[-1].z int 1 run scoreboard players get $game.z scarena.tmp
+
+execute store result score $game.random scarena.tmp run random value 1..3
+execute if score $game.random scarena.tmp matches 1 run data modify storage scarena:queue structures[-1].name set value "arena/1"
+execute if score $game.random scarena.tmp matches 2 run data modify storage scarena:queue structures[-1].name set value "arena/2"
+execute if score $game.random scarena.tmp matches 3 run data modify storage scarena:queue structures[-1].name set value "arena/3"
+
 schedule function scarena:structure/schedule 1t replace

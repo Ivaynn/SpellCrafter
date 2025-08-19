@@ -1,4 +1,4 @@
 #> as any, at @s
 
 tp @s ~ -100 ~
-kill @s
+kill @s[type=!player,tag=!scarena.game]

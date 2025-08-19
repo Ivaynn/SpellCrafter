@@ -4,6 +4,7 @@
 
 # Summon entity
 execute summon minecraft:arrow run function spellcrafter:spells/summon_arrow/as_arrow
+function spellcrafter:as_summon/check_limit/init
 
 
 # Effects

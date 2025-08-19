@@ -16,6 +16,6 @@ effect give @s minecraft:saturation infinite 100 true
 # SpellCrafter
 scoreboard players set @s spellcrafter.inf_page 0
 tag @s add spellcrafter.caster
-tag @s remove spellcrafter.untargetable
+tag @s add spellcrafter.untargetable
 tag @s remove spellcrafter.inf_mana
 tag @s remove spellcrafter.no_cooldown

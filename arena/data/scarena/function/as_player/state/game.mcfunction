@@ -2,6 +2,10 @@
 # Executed if player is in-game (state 4)
 
 
+# Void death
+execute at @s unless entity @s[y=-61,dy=128] run damage @s 1000000 minecraft:out_of_world
+
+
 # Triggers
 scoreboard players enable @s surrender
 
