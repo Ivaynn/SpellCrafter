@@ -649,7 +649,7 @@
     ],
     "stats": {
       "damage": 2,
-      "range": 40,
+      "range": 15,
       "speed": 1
     }
   },
@@ -1497,8 +1497,8 @@
       "the wither effect"
     ],
     "stats": {
-      "damage": 8,
-      "range": 50,
+      "damage": 6,
+      "range": 40,
       "speed": 5
     }
   },
