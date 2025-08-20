@@ -102,7 +102,7 @@ item modify entity @s weapon spellcrafter:wand/lore/wand_mod_add
 
 
 # Prevent cooldown reset abuse
-scoreboard players set @s spellcrafter.cooldown 4
+execute unless score @s spellcrafter.cooldown matches 4.. run scoreboard players set @s spellcrafter.cooldown 4
 
 
 # Success
