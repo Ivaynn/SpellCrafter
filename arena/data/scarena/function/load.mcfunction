@@ -8,7 +8,7 @@ gamerule spawnRadius 0
 gamerule doTileDrops false
 gamerule naturalRegeneration false
 gamerule keepInventory true
-gamerule sendCommandFeedback true
+gamerule sendCommandFeedback false
 gamerule doImmediateRespawn true
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
@@ -48,7 +48,6 @@ scoreboard objectives add scarena.stats.game.count dummy
 
 scoreboard objectives add scarena.game.id dummy
 scoreboard objectives add scarena.game.round dummy
-scoreboard objectives add scarena.game.lives dummy
 scoreboard objectives add scarena.game.slot dummy
 scoreboard objectives add scarena.game.timer dummy
 scoreboard objectives add scarena.game.x dummy
@@ -57,6 +56,9 @@ scoreboard objectives add scarena.game.z dummy
 scoreboard objectives add scarena.health dummy {text:"❤",color:"red"}
 scoreboard objectives modify scarena.health numberformat styled {color:"red"}
 scoreboard objectives setdisplay below_name scarena.health 
+
+scoreboard objectives add scarena.game.lives dummy
+scoreboard objectives setdisplay list scarena.game.lives
 
 scoreboard objectives add spawn trigger
 scoreboard objectives add arena trigger
@@ -83,7 +85,8 @@ execute unless score game.max_instances scarena.main matches 1.. run scoreboard 
 execute unless score game.round_time scarena.main matches 200.. run scoreboard players set game.round_time scarena.main 6000
 execute unless score game.lives scarena.main matches 1.. run scoreboard players set game.lives scarena.main 6
 
-execute unless score arena.reset scarena.main matches 1.. run scoreboard players set arena.reset scarena.main 20
+execute unless score arena.timer scarena.main matches 1.. run scoreboard players set arena.timer scarena.main 20
+execute unless score arena.interval scarena.main matches 1200.. run scoreboard players set arena.interval scarena.main 36000
 execute unless score room.max_count scarena.main matches 0.. run scoreboard players set room.max_count scarena.main 9
 
 execute unless score queue.timer scarena.main matches 0.. run scoreboard players set queue.timer scarena.main 0
