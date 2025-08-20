@@ -10,7 +10,7 @@ team join rooms @s
 # Init
 scoreboard players set @s scarena.player.state 2
 function scarena:as_player/disable_triggers
-scoreboard players set @s scarena.game.id 0
+scoreboard players set @s[scores={scarena.game.id=1..}] scarena.game.id 0
 
 
 # Reset player

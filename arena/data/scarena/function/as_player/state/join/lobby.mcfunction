@@ -1,7 +1,7 @@
 #> as player, at @s
 scoreboard players set @s scarena.player.state 1
 function scarena:as_player/disable_triggers
-scoreboard players set @s scarena.game.id 0
+scoreboard players set @s[scores={scarena.game.id=1..}] scarena.game.id 0
 scoreboard players set @s scarena.player.room_id 0
 team join lobby @s
 

@@ -99,9 +99,9 @@ execute unless data storage scarena:stats raw run data modify storage scarena:st
 # Teams
 team add lobby
 team modify lobby color gray
-team modify rooms nametagVisibility hideForOtherTeams
+team modify lobby nametagVisibility hideForOtherTeams
 team modify lobby collisionRule never
-team modify lobby friendlyFire true
+team modify lobby friendlyFire false
 team modify lobby deathMessageVisibility never
 
 team add rooms
