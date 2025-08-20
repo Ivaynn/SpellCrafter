@@ -2,11 +2,21 @@
 
 
 # Scoreboard events
-execute unless score @s scarena.player.relog matches 0.. run function scarena:as_player/events/first_join
+execute unless score @s scarena.player.id matches 1.. run function scarena:as_player/events/first_join
 execute if score @s scarena.player.relog matches 1.. run function scarena:as_player/events/relog
 execute if score @s scarena.player.death matches 1.. run function scarena:as_player/events/respawn
 scoreboard players set @s scarena.player.relog 0
 scoreboard players set @s scarena.player.death 0
+
+
+# Stats
+scoreboard players operation @s[scores={scarena.player.state=3}] scarena.stats.arena.kills += @s scarena.player.kills
+scoreboard players operation @s[scores={scarena.player.state=4}] scarena.stats.game.kills += @s scarena.player.kills
+scoreboard players set @s scarena.player.kills 0
+
+scoreboard players enable @s stats
+execute if score @s stats matches 0.. run function scarena:as_player/stats/get/init
+scoreboard players set @s stats -1
 
 
 # Health display

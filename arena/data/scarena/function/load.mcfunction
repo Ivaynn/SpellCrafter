@@ -31,11 +31,20 @@ function scarena:lobby/load
 # Scoreboards
 scoreboard objectives add scarena.main dummy
 scoreboard objectives add scarena.tmp dummy
-scoreboard objectives add scarena.player.relog minecraft.custom:leave_game
-scoreboard objectives add scarena.player.death minecraft.custom:deaths
+scoreboard objectives add scarena.player.relog minecraft.custom:minecraft.leave_game
+scoreboard objectives add scarena.player.death minecraft.custom:minecraft.deaths
 scoreboard objectives add scarena.player.state dummy
 scoreboard objectives add scarena.player.room_id dummy
-scoreboard objectives add scarena.player.wins dummy
+scoreboard objectives add scarena.player.kills minecraft.custom:minecraft.player_kills
+scoreboard objectives add scarena.player.id dummy
+
+scoreboard objectives add scarena.stats.time minecraft.custom:minecraft.play_time
+scoreboard objectives add scarena.stats.arena.kills dummy
+scoreboard objectives add scarena.stats.arena.deaths dummy
+scoreboard objectives add scarena.stats.game.kills dummy
+scoreboard objectives add scarena.stats.game.deaths dummy
+scoreboard objectives add scarena.stats.game.wins dummy
+scoreboard objectives add scarena.stats.game.count dummy
 
 scoreboard objectives add scarena.game.id dummy
 scoreboard objectives add scarena.game.round dummy
@@ -55,6 +64,8 @@ scoreboard objectives add room trigger
 scoreboard objectives add queue trigger
 scoreboard objectives add surrender trigger
 scoreboard objectives add spectator trigger
+scoreboard objectives add stats trigger
+scoreboard objectives add ready trigger
 
 scoreboard objectives add scarena.math dummy
 scoreboard players set #n1 scarena.math -1
@@ -82,6 +93,7 @@ execute unless score queue.max_players scarena.main matches 1..9 run scoreboard 
 
 execute unless data storage scarena:queue structures run data modify storage scarena:queue structures set value []
 execute unless data storage scarena:queue rooms run data modify storage scarena:queue rooms set value []
+execute unless data storage scarena:stats raw run data modify storage scarena:stats raw set value {}
 
 
 # Teams
@@ -90,23 +102,25 @@ team modify lobby color gray
 team modify rooms nametagVisibility hideForOtherTeams
 team modify lobby collisionRule never
 team modify lobby friendlyFire true
+team modify lobby deathMessageVisibility never
 
 team add rooms
 team modify rooms color green
 team modify rooms nametagVisibility never
-team modify rooms friendlyFire false
+team modify rooms deathMessageVisibility never
+team modify rooms friendlyFire true
 
 team add arena
 team modify arena color gold
 team modify arena nametagVisibility always
 team modify arena seeFriendlyInvisibles false
-team modify arena friendlyFire false
+team modify arena friendlyFire true
 
 team add game
 team modify game color dark_purple
 team modify game nametagVisibility always
 team modify game seeFriendlyInvisibles false
-team modify game friendlyFire false
+team modify game friendlyFire true
 
 
 # SpellCrafter options

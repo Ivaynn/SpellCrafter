@@ -7,6 +7,11 @@
 effect give @s minecraft:saturation infinite 100 true
 
 
+# Stats
+scoreboard players add @s[scores={scarena.player.state=3}] scarena.stats.arena.deaths 1
+scoreboard players add @s[scores={scarena.player.state=4}] scarena.stats.game.deaths 1
+
+
 # Room death -> teleport back to room
 execute if score @s scarena.player.state matches 2 run return run function scarena:rooms/new/tp_player
 

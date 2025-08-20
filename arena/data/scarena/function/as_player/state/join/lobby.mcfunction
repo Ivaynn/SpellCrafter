@@ -28,3 +28,4 @@ scoreboard players set @s spellcrafter.mana 0
 scoreboard players set @s spellcrafter.max_mana 1
 
 function scarena:as_player/remove_non_wands
+function scarena:as_player/stats/save/init

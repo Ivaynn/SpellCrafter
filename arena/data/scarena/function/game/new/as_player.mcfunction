@@ -21,3 +21,4 @@ item replace entity @s enderchest.8 from entity @s hotbar.8
 clear @s
 
 loot give @s loot scarena:initial_wand
+scoreboard players add @s scarena.stats.game.count 1
