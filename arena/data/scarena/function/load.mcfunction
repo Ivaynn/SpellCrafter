@@ -84,5 +84,30 @@ execute unless data storage scarena:queue structures run data modify storage sca
 execute unless data storage scarena:queue rooms run data modify storage scarena:queue rooms set value []
 
 
+# Teams
+team add lobby
+team modify lobby color gray
+team modify rooms nametagVisibility hideForOtherTeams
+team modify lobby collisionRule never
+team modify lobby friendlyFire true
+
+team add rooms
+team modify rooms color green
+team modify rooms nametagVisibility never
+team modify rooms friendlyFire false
+
+team add arena
+team modify arena color gold
+team modify arena nametagVisibility always
+team modify arena seeFriendlyInvisibles false
+team modify arena friendlyFire false
+
+team add game
+team modify game color dark_purple
+team modify game nametagVisibility always
+team modify game seeFriendlyInvisibles false
+team modify game friendlyFire false
+
+
 # SpellCrafter options
 scoreboard players set trader_spawn spellcrafter.options 0

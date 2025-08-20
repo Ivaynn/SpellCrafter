@@ -4,6 +4,7 @@
 # Find available room
 function scarena:rooms/new/as_player
 execute unless score @s scarena.player.room_id matches 1.. run return 0
+team join rooms @s
 
 
 # Init

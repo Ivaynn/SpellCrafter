@@ -1,13 +1,15 @@
 #> as player, at arena center
 
 spawnpoint @s ~ -14 ~
-scoreboard players add $game.player.slot scarena.tmp 1
 gamemode adventure @s
 
+tag @s add spellcrafter.caster
 tag @s add spellcrafter.untargetable
+
 effect clear @s
 effect give @s minecraft:instant_health 1 100 true
 effect give @s minecraft:saturation infinite 100 true
+
 scoreboard players operation @s spellcrafter.cooldown = $game.timer scarena.tmp
 
 
@@ -24,6 +26,8 @@ loot give @s loot scarena:emeralds
 
 
 # Build cells
+scoreboard players add $game.player.slot scarena.tmp 1
+
 execute if score $game.player.slot scarena.tmp matches 1 positioned ~8 -10 ~ run function scarena:game/as_marker/pre_round/build_cell
 execute if score $game.player.slot scarena.tmp matches 2 positioned ~-8 -10 ~ run function scarena:game/as_marker/pre_round/build_cell
 execute if score $game.player.slot scarena.tmp matches 3 positioned ~ -10 ~8 run function scarena:game/as_marker/pre_round/build_cell
