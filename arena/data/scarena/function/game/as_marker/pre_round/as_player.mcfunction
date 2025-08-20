@@ -12,6 +12,7 @@ effect give @s minecraft:saturation infinite 100 true
 
 scoreboard players operation @s spellcrafter.cooldown = $game.timer scarena.tmp
 tag @s remove scarena.game.dead
+tag @s remove scarena.game.ready
 
 
 # Lives

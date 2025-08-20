@@ -13,6 +13,7 @@ effect give @s minecraft:saturation infinite 100 true
 scoreboard players set @s spellcrafter.cooldown 100
 scoreboard players operation @s spellcrafter.mana = @s spellcrafter.max_mana
 tag @s remove scarena.game.dead
+tag @s remove scarena.game.ready
 
 
 # Disable ready trigger
