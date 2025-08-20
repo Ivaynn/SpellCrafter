@@ -18,7 +18,7 @@ data remove block ~ ~ ~ Items
 # As player...
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
 scoreboard players set $success spellcrafter.tmp 0
-execute as @a[limit=1,distance=..10,predicate=spellcrafter:match_id] store result score $success spellcrafter.tmp run function spellcrafter:as_table/close/as_player
+execute as @a[limit=1,sort=nearest,predicate=spellcrafter:match_id] store result score $success spellcrafter.tmp run function spellcrafter:as_table/close/as_player
 
 
 # Lose player's id
