@@ -8,7 +8,7 @@ schedule function scarena:game/check_players 1t replace
 
 
 # Has more lives: spectate
-execute if score @s scarena.game.lives matches 1.. run return 0
+execute if score @s scarena.game.lives matches 1.. run return run gamemode spectator @s
 
 
 # No more lives: exit game
