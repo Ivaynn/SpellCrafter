@@ -49,3 +49,8 @@ execute if score @s scarena.player.state matches 3 run function scarena:as_playe
 
 # State 4: at game arena
 execute if score @s scarena.player.state matches 4 run function scarena:as_player/state/game
+
+
+# Spectator out of bounds
+execute as @s[gamemode=spectator] at @s unless entity @s[z=-800,dz=10000] run return run tp @s 0 0 0
+execute as @s[gamemode=spectator] at @s unless entity @s[y=-200,dy=180] run return run tp @s ~ -20 ~
