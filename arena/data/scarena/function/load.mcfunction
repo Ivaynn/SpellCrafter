@@ -35,6 +35,7 @@ scoreboard objectives add scarena.player.relog minecraft.custom:leave_game
 scoreboard objectives add scarena.player.death minecraft.custom:deaths
 scoreboard objectives add scarena.player.state dummy
 scoreboard objectives add scarena.player.room_id dummy
+scoreboard objectives add scarena.player.wins dummy
 
 scoreboard objectives add scarena.game.id dummy
 scoreboard objectives add scarena.game.round dummy

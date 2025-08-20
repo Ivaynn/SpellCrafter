@@ -14,5 +14,5 @@ execute unless score game.instances scarena.main < game.max_instances scarena.ma
 
 
 # Start game
-tellraw @a ["",{text:"> ",color:"dark_purple",bold:true},{text:"A new game has started with ",color:"gray"},{score:{name:"queue.players",objective:"scarena.main"},color:"gray"},{text:" players!",color:"gray"}]
+tellraw @a ["\n",{text:"> ",color:"dark_purple",bold:true},{text:"A new game has started with ",color:"gray"},{score:{name:"queue.players",objective:"scarena.main"},color:"gray"},{text:" players!",color:"gray"},"\n"]
 function scarena:game/new/init
