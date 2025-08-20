@@ -6,6 +6,11 @@ execute unless data storage scarena:queue structures run return run data modify 
 execute unless data storage scarena:queue structures[0] run return run data modify storage scarena:queue structures set value []
 
 
+# If it's a game structure, don't remove the force load
+scoreboard players set $remove_forceload scarena.tmp 1
+execute if data storage scarena:queue structures[0].game run scoreboard players set $remove_forceload scarena.tmp 0
+
+
 # Process this queue entry
 scoreboard players set $success scarena.tmp 1
 function scarena:structure/load with storage scarena:queue structures[0]
@@ -16,8 +21,8 @@ execute if score $success scarena.tmp matches 0 run tellraw @a[tag=debug] ["",{t
 execute if score $success scarena.tmp matches 1 run tellraw @a[tag=debug] ["",{text:"> ",color:"gold",bold:true},{text:"Placed structure: ",color:"gray"},{storage:"scarena:queue",nbt:"structures[0]",color:"white"}]
 
 
-# If game structure, run final game load stage
-execute if score $success scarena.tmp matches 1 if data storage scarena:queue structures[0].game run schedule function scarena:game/new/finish 1t
+# If it's a game structure, run final game load stage
+execute if score $success scarena.tmp matches 1 if data storage scarena:queue structures[0].game run schedule function scarena:game/new/finish 2t
 
 
 # Clear queue entry if successful

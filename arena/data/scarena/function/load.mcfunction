@@ -38,7 +38,7 @@ scoreboard objectives add scarena.player.room_id dummy
 
 scoreboard objectives add scarena.game.id dummy
 scoreboard objectives add scarena.game.round dummy
-scoreboard objectives add scarena.game.points dummy
+scoreboard objectives add scarena.game.lives dummy
 scoreboard objectives add scarena.game.slot dummy
 scoreboard objectives add scarena.game.timer dummy
 scoreboard objectives add scarena.game.x dummy
@@ -59,6 +59,7 @@ scoreboard objectives add scarena.math dummy
 scoreboard players set #n1 scarena.math -1
 scoreboard players set #2 scarena.math 2
 scoreboard players set #3 scarena.math 3
+scoreboard players set #5 scarena.math 5
 scoreboard players set #32 scarena.math 32
 scoreboard players set #48 scarena.math 48
 scoreboard players set #1k scarena.math 1000
@@ -67,6 +68,8 @@ scoreboard players set #1k scarena.math 1000
 # Initialize persistent scores and storages
 execute unless score game.instances scarena.main matches 0.. run scoreboard players set game.instances scarena.main 0
 execute unless score game.max_instances scarena.main matches 1.. run scoreboard players set game.max_instances scarena.main 3
+execute unless score game.round_time scarena.main matches 200.. run scoreboard players set game.round_time scarena.main 2400
+execute unless score game.lives scarena.main matches 1.. run scoreboard players set game.lives scarena.main 6
 
 execute unless score arena.reset scarena.main matches 1.. run scoreboard players set arena.reset scarena.main 20
 execute unless score room.max_count scarena.main matches 1.. run scoreboard players set room.max_count scarena.main 9

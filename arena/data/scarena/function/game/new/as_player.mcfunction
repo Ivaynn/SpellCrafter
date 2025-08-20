@@ -7,6 +7,7 @@ scoreboard players set @s spellcrafter.max_mana 1000
 scoreboard players set @s spellcrafter.mana_reg 10
 scoreboard players set @s spellcrafter.mana 1000
 scoreboard players set @s spellcrafter.cooldown 0
+scoreboard players operation @s scarena.game.lives = game.lives scarena.main
 
 item replace entity @s enderchest.0 from entity @s hotbar.0
 item replace entity @s enderchest.1 from entity @s hotbar.1
@@ -19,4 +20,4 @@ item replace entity @s enderchest.7 from entity @s hotbar.7
 item replace entity @s enderchest.8 from entity @s hotbar.8
 clear @s
 
-scoreboard players set @s scarena.game.round 0
+loot give @s loot scarena:initial_wand

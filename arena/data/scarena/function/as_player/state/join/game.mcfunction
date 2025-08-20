@@ -2,7 +2,6 @@
 scoreboard players set @s scarena.player.state 4
 function scarena:as_player/disable_triggers
 scoreboard players set @s scarena.player.room_id 0
-scoreboard players set @s scarena.game.round 0
 
 
 # Reset player

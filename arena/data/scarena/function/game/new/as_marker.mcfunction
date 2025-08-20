@@ -5,6 +5,7 @@ tag @s add scarena.game.loading
 
 scoreboard players operation @s scarena.game.id = $new scarena.game.id
 scoreboard players set @s scarena.game.round 0
+scoreboard players operation @s scarena.game.timer = game.round_time scarena.main
 
 
 # Find available slot

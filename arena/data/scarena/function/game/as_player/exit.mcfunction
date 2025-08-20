@@ -1,7 +1,6 @@
 #> as player
 
 scoreboard players set @s scarena.game.id 0
-scoreboard players set @s scarena.game.round 0
 
 clear @s
 

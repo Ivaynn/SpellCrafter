@@ -20,7 +20,7 @@ $execute positioned $(x) -16 $(z) run fill ~ ~-1 ~ ~-1 ~-1 ~-1 minecraft:redston
 
 
 # Remove force loaded chunks
-$execute positioned $(x) -16 $(z) run forceload remove ~48 ~48 ~-49 ~-49
+$execute if score $remove_forceload scarena.tmp matches 1 positioned $(x) -16 $(z) run forceload remove ~48 ~48 ~-49 ~-49
 
 
 # Success
