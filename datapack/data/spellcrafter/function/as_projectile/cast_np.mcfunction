@@ -72,7 +72,7 @@ execute if score $spell spellcrafter.tmp matches 123 run return 1
 
 # Unstackable modifiers
 execute if score $spell spellcrafter.tmp matches 8 run return run tag @s add spellcrafter.spell.guide
-execute if score $spell spellcrafter.tmp matches 9 run return run tag @s add spellcrafter.spell.homing
+execute if score $spell spellcrafter.tmp matches 9 run return run function spellcrafter:spells/homing/add
 execute if score $spell spellcrafter.tmp matches 12 run return run tag @s add spellcrafter.spell.random_dir
 execute if score $spell spellcrafter.tmp matches 26 run return run tag @s add spellcrafter.spell.ghost
 execute if score $spell spellcrafter.tmp matches 32 run return run tag @s add spellcrafter.spell.instant
@@ -83,7 +83,7 @@ execute if score $spell spellcrafter.tmp matches 42 run return run tag @s add sp
 execute if score $spell spellcrafter.tmp matches 43 run return run tag @s add spellcrafter.spell.zigzag
 execute if score $spell spellcrafter.tmp matches 44 run return run tag @s add spellcrafter.spell.chaotic
 execute if score $spell spellcrafter.tmp matches 51 run return run tag @s add spellcrafter.spell.spiral
-execute if score $spell spellcrafter.tmp matches 54 run return run tag @s add spellcrafter.spell.aim_assist
+execute if score $spell spellcrafter.tmp matches 54 run return run function spellcrafter:spells/aim_assist/add
 execute if score $spell spellcrafter.tmp matches 55 run return run tag @s add spellcrafter.spell.scaling
 execute if score $spell spellcrafter.tmp matches 59 run return run tag @s add spellcrafter.spell.anchored
 execute if score $spell spellcrafter.tmp matches 61 run return run tag @s add spellcrafter.spell.return

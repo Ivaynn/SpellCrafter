@@ -154,7 +154,10 @@
     "description": [
       "Makes the next projectile follow",
       "the nearest target"
-    ]
+    ],
+    "stats": {
+      "range_mod": -10
+    }
   },
   {
     "id": 10,
@@ -878,7 +881,10 @@
     "description": [
       "Points the next projectile at",
       "the nearest target"
-    ]
+    ],
+    "stats": {
+      "range_mod": -5
+    }
   },
   {
     "id": 55,
