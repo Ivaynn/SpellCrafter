@@ -74,7 +74,7 @@ execute if score $spell spellcrafter.tmp matches 123 run return 1
 execute if score $spell spellcrafter.tmp matches 8 run return run tag @s add spellcrafter.spell.guide
 execute if score $spell spellcrafter.tmp matches 9 run return run function spellcrafter:spells/homing/add
 execute if score $spell spellcrafter.tmp matches 12 run return run tag @s add spellcrafter.spell.random_dir
-execute if score $spell spellcrafter.tmp matches 26 run return run tag @s add spellcrafter.spell.ghost
+execute if score $spell spellcrafter.tmp matches 26 run return run function spellcrafter:spells/ghost/add
 execute if score $spell spellcrafter.tmp matches 32 run return run tag @s add spellcrafter.spell.instant
 execute if score $spell spellcrafter.tmp matches 33 run return run tag @s add spellcrafter.spell.piercing
 execute if score $spell spellcrafter.tmp matches 40 run return run tag @s add spellcrafter.spell.harmless

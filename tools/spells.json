@@ -440,7 +440,10 @@
     "description": [
       "Causes the next projectile to",
       "phase through blocks"
-    ]
+    ],
+    "stats": {
+      "speed_mod": -4
+    }
   },
   {
     "id": 27,
@@ -555,8 +558,7 @@
     "wandModifier": true,
     "description": [
       "Causes the next projectile to",
-      "pierce through targets, dealing",
-      "reduced damage"
+      "pierce through multiple targets"
     ]
   },
   {
