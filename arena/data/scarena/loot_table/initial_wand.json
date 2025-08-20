@@ -48,12 +48,12 @@
             "mode": "replace_all",
             "lore": [
                 {
-                    "text": "◆ 50",
+                    "text": "◆ 55",
                     "color": "aqua",
                     "italic": false,
                     "extra": [
                         {
-                            "text": "   ⌚ 1.5",
+                            "text": "   ⌚ 2.25",
                             "color": "gray",
                             "italic": false
                         },
@@ -82,7 +82,7 @@
         },
         {
             "function": "minecraft:set_custom_data",
-            "tag": "{spellcrafter:{wand:{valid:1b, version:1, mana:50, cooldown:30, spells:[1], slots:[], mod:0, cap:4, base_mana:30, base_cooldown:15, skin:0}}}"
+            "tag": "{spellcrafter:{wand:{valid:1b, version:1, mana:55, cooldown:45, spells:[1], slots:[], mod:0, cap:4, base_mana:35, base_cooldown:30, skin:0}}}"
         }
     ]
 }

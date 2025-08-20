@@ -80,7 +80,7 @@ scoreboard players set #1k scarena.math 1000
 # Initialize persistent scores and storages
 execute unless score game.instances scarena.main matches 0.. run scoreboard players set game.instances scarena.main 0
 execute unless score game.max_instances scarena.main matches 1.. run scoreboard players set game.max_instances scarena.main 3
-execute unless score game.round_time scarena.main matches 200.. run scoreboard players set game.round_time scarena.main 2400
+execute unless score game.round_time scarena.main matches 200.. run scoreboard players set game.round_time scarena.main 6000
 execute unless score game.lives scarena.main matches 1.. run scoreboard players set game.lives scarena.main 6
 
 execute unless score arena.reset scarena.main matches 1.. run scoreboard players set arena.reset scarena.main 20

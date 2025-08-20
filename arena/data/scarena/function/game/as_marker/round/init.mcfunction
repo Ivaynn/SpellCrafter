@@ -2,8 +2,8 @@
 scoreboard players operation @s scarena.game.timer = game.round_time scarena.main
 
 
-execute positioned ~ ~-32 ~ as @e[type=!minecraft:player,distance=..200] at @s run function scarena:arena/remove_entity
-fill ~13 -14 ~13 ~-13 -2 ~-13 minecraft:air replace
+execute positioned ~ ~-32 ~ as @e[type=!minecraft:player,distance=..200,tag=!spellcrafter.table] at @s run function scarena:arena/remove_entity
+# fill ~13 -14 ~13 ~-13 -2 ~-13 minecraft:air replace
 
 scoreboard players set $game.player.slot scarena.tmp 0
 scoreboard players operation $game.id scarena.tmp = @s scarena.game.id

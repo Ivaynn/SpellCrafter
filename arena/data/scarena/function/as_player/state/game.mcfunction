@@ -6,7 +6,7 @@ xp set @s 1 levels
 
 
 # Void death
-execute at @s unless entity @s[y=-61,dy=128] run damage @s 1000000 minecraft:out_of_world
+execute as @s[gamemode=!spectator] at @s unless entity @s[y=-61,dy=128] run damage @s 1000000 minecraft:out_of_world
 
 
 # Triggers

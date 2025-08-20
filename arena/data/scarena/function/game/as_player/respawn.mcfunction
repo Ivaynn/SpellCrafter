@@ -2,6 +2,10 @@
 
 scoreboard players remove @s scarena.game.lives 1
 
+# Mark as dead
+tag @s add scarena.game.dead
+schedule function scarena:game/check_players 1t replace
+
 
 # Has more lives: spectate
 execute if score @s scarena.game.lives matches 1.. run return run gamemode spectator @s
