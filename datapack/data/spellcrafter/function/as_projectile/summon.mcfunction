@@ -47,7 +47,7 @@ execute store result score $wand_mod spellcrafter.tmp run data get storage spell
 
 
 # Blind: don't hit the caster for the first X steps - $new_cast is 1 when this is the first projectile of a cast
-execute if score $new_cast spellcrafter.tmp matches 1 run scoreboard players set @s spellcrafter.blind 10
+execute if score $new_cast spellcrafter.tmp matches 1 run scoreboard players set @s spellcrafter.blind 20
 execute unless score $new_cast spellcrafter.tmp matches 1 run scoreboard players set @s spellcrafter.blind 0
 
 
