@@ -84,7 +84,7 @@ execute unless score game.round_time scarena.main matches 200.. run scoreboard p
 execute unless score game.lives scarena.main matches 1.. run scoreboard players set game.lives scarena.main 6
 
 execute unless score arena.reset scarena.main matches 1.. run scoreboard players set arena.reset scarena.main 20
-execute unless score room.max_count scarena.main matches 1.. run scoreboard players set room.max_count scarena.main 9
+execute unless score room.max_count scarena.main matches 0.. run scoreboard players set room.max_count scarena.main 9
 
 execute unless score queue.timer scarena.main matches 0.. run scoreboard players set queue.timer scarena.main 0
 execute unless score queue.players scarena.main matches 0.. run scoreboard players set queue.players scarena.main 0
