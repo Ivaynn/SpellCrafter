@@ -47,5 +47,5 @@ scoreboard players set #100 spellcrafter.math 100
 
 scoreboard objectives add spellcrafter.options dummy
 scoreboard players set #tick spellcrafter.options 1
-scoreboard players set #version spellcrafter.options 2
+scoreboard players set #version spellcrafter.options 1
 function spellcrafter:options/update
