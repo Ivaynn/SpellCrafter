@@ -13,6 +13,11 @@ effect give @s minecraft:saturation infinite 100 true
 scoreboard players operation @s spellcrafter.cooldown = $game.timer scarena.tmp
 
 
+# Ready check
+scoreboard players set @s ready 0
+scoreboard players enable @s ready
+
+
 # Get emeralds
 scoreboard players operation $emeralds.bonus scarena.tmp = game.lives scarena.main
 scoreboard players operation $emeralds.bonus scarena.tmp -= @s scarena.game.lives

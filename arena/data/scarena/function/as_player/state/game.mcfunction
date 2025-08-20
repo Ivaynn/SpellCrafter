@@ -14,3 +14,7 @@ scoreboard players enable @s surrender
 
 execute if score @s surrender matches 1.. run function scarena:game/as_player/surrender
 scoreboard players set @s surrender 0
+
+
+# score "ready" enable is handled by the game logic
+execute if score @s ready matches 1.. run function scarena:game/as_player/trigger_ready
