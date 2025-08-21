@@ -6,6 +6,7 @@ execute store result score $count spellcrafter.tmp run data get storage spellcra
 scoreboard players remove $count spellcrafter.tmp 1
 execute store result score $random spellcrafter.tmp run random value 1..100000
 scoreboard players operation $random spellcrafter.tmp %= $count spellcrafter.tmp
+scoreboard players add $random spellcrafter.tmp 1
 execute unless score $random spellcrafter.tmp matches 1..26 run scoreboard players set $random spellcrafter.tmp 0
 
 
