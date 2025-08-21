@@ -8,7 +8,7 @@ tag @s add scarena.item
 # Find owner and check scores
 scoreboard players set $item.found_owner scarena.tmp 0
 scoreboard players set $item.inf_spells scarena.tmp 0
-scoreboard players set $item.on_arena scarena.tmp 0
+scoreboard players set $item.player_state scarena.tmp 0
 execute on origin run function scarena:as_player/dropped_item/as_thrower
 
 
@@ -23,11 +23,15 @@ execute if score $item.type scarena.tmp matches 0 if data entity @s Item.compone
 
 
 # Item is a spell and owner has infinite spells -> delete item
-execute if score $item.inf_spells scarena.tmp matches 1 if score $item.type scarena.tmp matches 2 run kill @s
+execute if score $item.inf_spells scarena.tmp matches 1 if score $item.type scarena.tmp matches 2 run return run kill @s
 
 
 # Item is a wand or spell and owner is not in an arena -> ignore item
-execute if score $item.type scarena.tmp matches 1..2 unless score $item.on_arena scarena.tmp matches 1 run return 0
+execute if score $item.type scarena.tmp matches 1..2 unless score $item.player_state scarena.tmp matches 3.. run return 0
+
+
+# Item is not a wand and player is in game -> ignore item
+execute unless score $item.type scarena.tmp matches 1 if score $item.player_state scarena.tmp matches 4 run return 0
 
 
 # Teleport item to owner
