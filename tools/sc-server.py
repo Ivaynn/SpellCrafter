@@ -20,7 +20,7 @@ shutil.copytree(path_arena / 'data/scarena', path_target / 'data/scarena', dirs_
 
 # Custom wand version number - increment this if players should asked to update their wands
 
-version = 3
+version = 4
 
 mcfunction = read_mcfunction(path_target / 'data/spellcrafter/function/load.mcfunction')
 mcfunction = re.sub(r'(scoreboard players set #version spellcrafter\.options) \d+', rf'\1 {version}', mcfunction)
