@@ -121,3 +121,8 @@ function spellcrafter:wand_generator/for_lore
 
 # Wand modifier
 item modify entity @s contents spellcrafter:wand/lore/wand_mod_add
+
+
+# Wand skin
+execute store result storage spellcrafter:tmp wand.skin int 1 run random value 0..8
+item modify entity @s contents spellcrafter:wand/set_skin
