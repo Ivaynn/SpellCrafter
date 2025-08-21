@@ -11,8 +11,7 @@ execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-0.75 ~ as @
 
 
 # Heal targets
-effect give @e[distance=..1.5,type=!#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] minecraft:instant_health 1 0 true
-effect give @e[distance=..1.5,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] minecraft:instant_damage 1 0 true
+effect give @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] minecraft:instant_health 1 0 true
 
 
 # Not hit effects
