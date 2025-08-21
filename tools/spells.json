@@ -544,7 +544,10 @@
       "Turns the next projectile into",
       "an instant burst of energy,",
       "ignoring its speed"
-    ]
+    ],
+    "stats": {
+      "range_mod": -20
+    }
   },
   {
     "id": 33,
