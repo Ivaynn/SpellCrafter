@@ -1606,7 +1606,7 @@
     "displayName": "Vampiric Shot",
     "parent": "soul_link",
     "tier": 3,
-    "mana": 40,
+    "mana": 70,
     "cooldown": 12,
     "type": "projectile",
     "wandModifier": false,
@@ -1615,7 +1615,7 @@
       "if it hits a target"
     ],
     "stats": {
-      "damage": 4,
+      "damage": 2,
       "range": 15,
       "speed": 10,
       "heal": 4
