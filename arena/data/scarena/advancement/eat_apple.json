@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:apple",
+                    "components": {
+                        "minecraft:custom_data": {
+                            "scarena": {
+                                "apple": {
+                                    "valid": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "scarena:as_player/events/eat_apple"
+    }
+}

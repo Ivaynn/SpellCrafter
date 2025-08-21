@@ -15,9 +15,9 @@ scoreboard players set @s[scores={scarena.game.id=1..}] scarena.game.id 0
 
 # Reset player
 gamemode survival @s[gamemode=!survival]
+attribute @s minecraft:max_health base set 20
 effect clear @s
 effect give @s minecraft:instant_health 1 100 true
-effect give @s minecraft:saturation infinite 100 true
 
 
 # SpellCrafter

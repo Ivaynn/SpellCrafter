@@ -8,7 +8,6 @@ tag @s add spellcrafter.untargetable
 
 effect clear @s
 effect give @s minecraft:instant_health 1 100 true
-effect give @s minecraft:saturation infinite 100 true
 
 scoreboard players operation @s spellcrafter.cooldown = $game.timer scarena.tmp
 tag @s remove scarena.game.dead
@@ -16,7 +15,7 @@ tag @s remove scarena.game.ready
 
 
 # Lives
-tellraw @s ["\n",{text:"> ",color:"dark_purple",bold:true},{text:"Your lives:  ",color:"gray"},{score:{name:"@s",objective:"scarena.game.lives"},color:"red"},{text:"/",color:"red"},{score:{name:"game.lives",objective:"scarena.main"},color:"red"},{text:" ❤",color:"red"},"\n"]
+tellraw @a[scores={scarena.player.state=4},predicate=scarena:match_game_id] ["",{text:" • ",color:dark_gray},{selector:"@s",color:"gray"},"  ",{score:{name:"@s",objective:"scarena.game.lives"},color:"red"},{text:" ❤",color:"red"},"\n"]
 
 
 # Enable ready trigger

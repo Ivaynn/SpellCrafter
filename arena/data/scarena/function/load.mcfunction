@@ -47,6 +47,7 @@ scoreboard objectives add scarena.stats.game.wins dummy
 scoreboard objectives add scarena.stats.game.count dummy
 
 scoreboard objectives add scarena.game.id dummy
+scoreboard objectives add scarena.game.apples dummy
 scoreboard objectives add scarena.game.round dummy
 scoreboard objectives add scarena.game.slot dummy
 scoreboard objectives add scarena.game.timer dummy

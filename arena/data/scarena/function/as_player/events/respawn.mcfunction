@@ -3,10 +3,6 @@
 # if doImmediateRespawn is false -> at death pos
 
 
-# Permanent effects
-effect give @s minecraft:saturation infinite 100 true
-
-
 # Stats
 scoreboard players add @s[scores={scarena.player.state=3}] scarena.stats.arena.deaths 1
 scoreboard players add @s[scores={scarena.player.state=4}] scarena.stats.game.deaths 1

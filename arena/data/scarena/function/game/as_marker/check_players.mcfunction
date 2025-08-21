@@ -1,4 +1,6 @@
 #> as marker
+return 0
+
 
 scoreboard players operation $game.id scarena.tmp = @s scarena.game.id
 scoreboard players operation $game.round scarena.tmp = @s scarena.game.round

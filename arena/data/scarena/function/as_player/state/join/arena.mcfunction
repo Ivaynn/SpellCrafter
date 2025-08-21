@@ -10,10 +10,9 @@ gamemode survival @s[gamemode=!survival]
 spawnpoint @s 0 -42 0 0
 xp set @s 0 points
 xp set @s 0 levels
+attribute @s minecraft:max_health base set 40
 effect clear @s
-effect give @s minecraft:health_boost infinite 4 true
 effect give @s minecraft:instant_health 1 100 true
-effect give @s minecraft:saturation infinite 100 true
 
 
 # Teleport

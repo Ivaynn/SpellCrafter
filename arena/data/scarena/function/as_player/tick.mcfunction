@@ -1,4 +1,5 @@
 #> [tick] as player, at @s
+effect give @s minecraft:saturation infinite 100 true
 
 
 # Scoreboard events

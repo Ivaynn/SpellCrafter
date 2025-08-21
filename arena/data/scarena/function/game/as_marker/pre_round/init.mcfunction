@@ -19,7 +19,7 @@ execute if score @s scarena.game.round matches 3.. run scoreboard players set $g
 execute if score @s scarena.game.round matches 5.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 3
 execute if score @s scarena.game.round matches 7.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 4
 execute if score @s scarena.game.round matches 9.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 5
-execute positioned 0 100 0 run function scarena:game/as_marker/pre_round/generate_trades
+execute positioned 0 100 0 summon minecraft:wandering_trader run function scarena:game/as_marker/pre_round/generate_trades
 
 
 # Players
@@ -27,4 +27,5 @@ scoreboard players set $game.player.slot scarena.tmp 0
 scoreboard players operation $game.id scarena.tmp = @s scarena.game.id
 scoreboard players operation $game.round scarena.tmp = @s scarena.game.round
 scoreboard players operation $game.timer scarena.tmp = @s scarena.game.timer
+tellraw @a[scores={scarena.player.state=4},predicate=scarena:match_game_id] ["\n",{text:"     ",color:"gray",strikethrough:true},"  ",{text:"Player lives",color:"light_purple"},"  ",{text:"     ",color:"gray",strikethrough:true}]
 execute as @a[predicate=scarena:match_game_id] run function scarena:game/as_marker/pre_round/as_player

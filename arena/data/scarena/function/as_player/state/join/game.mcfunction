@@ -8,9 +8,9 @@ team join game @s
 # Reset player
 xp set @s 0 points
 xp set @s 0 levels
+attribute @s minecraft:max_health base set 20
 effect clear @s
 effect give @s minecraft:instant_health 1 100 true
-effect give @s minecraft:saturation infinite 100 true
 
 
 # SpellCrafter

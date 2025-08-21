@@ -3,7 +3,6 @@ scoreboard players set @s scarena.player.state 1
 function scarena:as_player/disable_triggers
 scoreboard players set @s[scores={scarena.game.id=1..}] scarena.game.id 0
 scoreboard players set @s scarena.player.room_id 0
-scoreboard players set @s scarena.game.lives 0
 team join lobby @s
 
 
@@ -14,9 +13,9 @@ spawnpoint @s 0 -42 0 0
 tp @s 0 -42 0 0 0
 xp set @s 0 points
 xp set @s 0 levels
+attribute @s minecraft:max_health base set 20
 effect clear @s
 effect give @s minecraft:instant_health 1 100 true
-effect give @s minecraft:saturation infinite 100 true
 
 
 # SpellCrafter
@@ -30,3 +29,8 @@ scoreboard players set @s spellcrafter.max_mana 1
 
 function scarena:as_player/remove_non_wands
 function scarena:as_player/stats/save/init
+
+
+# Clear game stats
+scoreboard players set @s scarena.game.apples 0
+scoreboard players set @s scarena.game.lives 0

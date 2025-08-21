@@ -22,3 +22,8 @@ clear @s
 
 loot give @s loot scarena:initial_wand
 scoreboard players add @s scarena.stats.game.count 1
+
+
+# Max health
+scoreboard players set @s scarena.game.apples 0
+attribute @s minecraft:max_health base set 20
