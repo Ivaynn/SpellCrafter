@@ -2,10 +2,9 @@
 
 scoreboard players set @s ready 0
 scoreboard players enable @s ready
+scoreboard players operation $game.id scarena.tmp = @s scarena.game.id
 
 function scarena:game/as_player/ready/toggle
-
-scoreboard players operation $game.id scarena.tmp = @s scarena.game.id
 scoreboard players set $game.not_ready scarena.tmp 0
 execute as @a[scores={scarena.player.state=4},predicate=scarena:match_game_id,tag=!scarena.game.ready] run scoreboard players add $game.not_ready scarena.tmp 1
 
