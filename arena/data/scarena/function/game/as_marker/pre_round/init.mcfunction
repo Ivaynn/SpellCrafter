@@ -29,3 +29,4 @@ scoreboard players operation $game.round scarena.tmp = @s scarena.game.round
 scoreboard players operation $game.timer scarena.tmp = @s scarena.game.timer
 tellraw @a[scores={scarena.player.state=4},predicate=scarena:match_game_id] ["\n",{text:"     ",color:"gray",strikethrough:true},"  ",{text:"Player lives",color:"light_purple"},"  ",{text:"     ",color:"gray",strikethrough:true}]
 execute as @a[predicate=scarena:match_game_id] run function scarena:game/as_marker/pre_round/as_player
+tellraw @a[scores={scarena.player.state=4},predicate=scarena:match_game_id] ""

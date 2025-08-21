@@ -15,7 +15,7 @@ tag @s remove scarena.game.ready
 
 
 # Lives
-tellraw @a[scores={scarena.player.state=4},predicate=scarena:match_game_id] ["",{text:" • ",color:dark_gray},{selector:"@s",color:"gray"},"  ",{score:{name:"@s",objective:"scarena.game.lives"},color:"red"},{text:" ❤",color:"red"},"\n"]
+tellraw @a[scores={scarena.player.state=4},predicate=scarena:match_game_id] ["",{text:" • ",color:dark_gray},{selector:"@s",color:"gray"},"  ",{score:{name:"@s",objective:"scarena.game.lives"},color:"red"},{text:" ❤",color:"red"}]
 
 
 # Enable ready trigger
