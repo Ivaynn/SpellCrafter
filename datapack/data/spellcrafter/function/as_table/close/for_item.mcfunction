@@ -16,6 +16,7 @@ execute if score $spell spellcrafter.tmp matches 123 run function spellcrafter:s
 
 
 # Spell cap
+execute unless score $spell_cap spellcrafter.tmp matches 1.. if score $spell spellcrafter.tmp matches 1.. run scoreboard players set $table.warning spellcrafter.tmp 1
 execute unless score $spell_cap spellcrafter.tmp matches 1.. run scoreboard players set $spell spellcrafter.tmp 0
 execute if score $spell spellcrafter.tmp matches 1.. run scoreboard players remove $spell_cap spellcrafter.tmp 1
 

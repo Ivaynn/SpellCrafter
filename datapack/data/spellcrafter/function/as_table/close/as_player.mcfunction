@@ -13,6 +13,7 @@ execute if data entity @s SelectedItem.components."minecraft:custom_data".spellc
 # Reset scores & storages
 scoreboard players set $mana spellcrafter.tmp 0
 scoreboard players set $cooldown spellcrafter.tmp 0
+scoreboard players set $table.warning spellcrafter.tmp 0
 data modify storage spellcrafter:tmp wand set value {valid:1b, version:0, spells:[], slots:[], owner:0, mod:0, cap:0, cooldown:0, mana:0, base_cooldown:0, base_mana:0, skin:0}
 data modify storage spellcrafter:tmp lore set value []
 data modify storage spellcrafter:tmp drop set value []
@@ -103,6 +104,10 @@ item modify entity @s weapon spellcrafter:wand/lore/wand_mod_add
 
 # Prevent cooldown reset abuse
 execute unless score @s spellcrafter.cooldown matches 4.. run scoreboard players set @s spellcrafter.cooldown 4
+
+
+# Warning
+execute if score $table.warning spellcrafter.tmp matches 1 run tellraw @s ["",{text:"> ",color:"red", bold:true},{text:"This wand is full! Extra spells have been dropped.",color:"gray"}]
 
 
 # Success
