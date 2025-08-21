@@ -74,6 +74,7 @@ scoreboard players set #n1 scarena.math -1
 scoreboard players set #2 scarena.math 2
 scoreboard players set #3 scarena.math 3
 scoreboard players set #5 scarena.math 5
+scoreboard players set #20 scarena.math 20
 scoreboard players set #32 scarena.math 32
 scoreboard players set #48 scarena.math 48
 scoreboard players set #1k scarena.math 1000
