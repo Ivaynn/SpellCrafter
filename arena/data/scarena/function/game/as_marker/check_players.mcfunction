@@ -1,5 +1,7 @@
 #> as marker
-return 0
+
+# Note: uncomment this line to test game with only 1 player
+# return 0
 
 
 scoreboard players operation $game.id scarena.tmp = @s scarena.game.id

@@ -36,7 +36,9 @@ scoreboard objectives add scarena.player.death minecraft.custom:minecraft.deaths
 scoreboard objectives add scarena.player.state dummy
 scoreboard objectives add scarena.player.room_id dummy
 scoreboard objectives add scarena.player.kills minecraft.custom:minecraft.player_kills
+
 scoreboard objectives add scarena.player.id dummy
+scoreboard objectives setdisplay list scarena.player.id
 
 scoreboard objectives add scarena.stats.time minecraft.custom:minecraft.play_time
 scoreboard objectives add scarena.stats.arena.kills dummy
@@ -53,13 +55,11 @@ scoreboard objectives add scarena.game.slot dummy
 scoreboard objectives add scarena.game.timer dummy
 scoreboard objectives add scarena.game.x dummy
 scoreboard objectives add scarena.game.z dummy
+scoreboard objectives add scarena.game.lives dummy
 
 scoreboard objectives add scarena.health dummy {text:"❤",color:"red"}
 scoreboard objectives modify scarena.health numberformat styled {color:"red"}
 scoreboard objectives setdisplay below_name scarena.health 
-
-scoreboard objectives add scarena.game.lives dummy
-scoreboard objectives setdisplay list scarena.game.lives
 
 scoreboard objectives add spawn trigger
 scoreboard objectives add arena trigger

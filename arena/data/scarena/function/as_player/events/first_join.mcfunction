@@ -7,3 +7,4 @@ scoreboard players operation @s scarena.player.id = $new scarena.player.id
 execute unless items entity @s hotbar.0 * run loot replace entity @s hotbar.0 loot spellcrafter:wand
 
 function scarena:as_player/state/join/room
+function scarena:as_player/stats/save/init
