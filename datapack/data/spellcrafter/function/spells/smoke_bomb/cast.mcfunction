@@ -9,4 +9,4 @@ playsound minecraft:block.fire.extinguish player @a[distance=..100] ~ ~ ~ 2 0.7
 
 
 # Apply effect
-effect give @e[distance=..4,type=!#spellcrafter:untargetable,tag=!spellcrafter.spectator] minecraft:invisibility 5 0 false
+effect give @e[distance=..4,type=!#spellcrafter:untargetable,tag=!spellcrafter.spectator] minecraft:invisibility 2 0 false

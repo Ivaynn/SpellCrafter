@@ -1199,7 +1199,7 @@
     "parent": "shield",
     "tier": 3,
     "mana": 40,
-    "cooldown": 30,
+    "cooldown": 46,
     "type": "instant",
     "wandModifier": false,
     "description": [
