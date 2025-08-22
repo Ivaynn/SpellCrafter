@@ -13,8 +13,8 @@ execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-0.75 ~ as @
 
 # If a target is hit, heal caster
 execute unless score $success spellcrafter.tmp matches 1.. run return 0
-effect give @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,type=!#minecraft:undead,tag=!spellcrafter.spectator] minecraft:instant_health 1 0 true
-effect give @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,type=#minecraft:undead,tag=!spellcrafter.spectator] minecraft:instant_damage 1 0 true
+scoreboard players add @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,tag=!spellcrafter.spectator] spellcrafter.heal 4
+schedule function spellcrafter:damage/scheduled 1t
 
 
 # Effects

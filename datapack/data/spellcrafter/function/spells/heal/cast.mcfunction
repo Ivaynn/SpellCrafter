@@ -3,7 +3,9 @@
 
 
 # Heal targets
-effect give @e[distance=..4,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] minecraft:instant_health 1 1 true
+scoreboard players add @e[distance=..4,type=!#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] spellcrafter.heal 4
+scoreboard players add @e[distance=..4,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] spellcrafter.damage 4
+schedule function spellcrafter:damage/scheduled 1t
 
 
 # Effects

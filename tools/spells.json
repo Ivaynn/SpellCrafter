@@ -88,7 +88,7 @@
       "Heals targets in a small radius"
     ],
     "stats": {
-      "heal": 8
+      "heal": 4
     }
   },
   {
@@ -1670,8 +1670,8 @@
     "displayName": "Healing Bolt",
     "parent": "shulker_bullet",
     "tier": 3,
-    "mana": 60,
-    "cooldown": 25,
+    "mana": 80,
+    "cooldown": 40,
     "type": "projectile",
     "wandModifier": false,
     "description": [
@@ -1954,8 +1954,8 @@
     "displayName": "Healing Crystal",
     "parent": "summon_crystal",
     "tier": 3,
-    "mana": 50,
-    "cooldown": 15,
+    "mana": 70,
+    "cooldown": 35,
     "type": "instant",
     "wandModifier": false,
     "description": [

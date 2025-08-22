@@ -7,6 +7,14 @@
 # execute if score $hurt_time spellcrafter.tmp matches 1.. run return run schedule function spellcrafter:damage/scheduled 1t replace
 
 
+# Heal first
+execute if score @s spellcrafter.heal matches 1.. run function spellcrafter:damage/heal/init
+
+
+# Check if there's damage
+execute unless score @s spellcrafter.damage matches 1.. run return 0
+
+
 # Get damage source
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.damage_src
 execute unless score @s spellcrafter.damage_src matches 1.. run scoreboard players operation @s spellcrafter.damage_src = @s spellcrafter.id

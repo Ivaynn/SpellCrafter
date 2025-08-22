@@ -28,6 +28,7 @@ scoreboard objectives add spellcrafter.cache.drain dummy
 scoreboard objectives add spellcrafter.trader_timer dummy
 scoreboard objectives add spellcrafter.actionbar dummy
 scoreboard objectives add spellcrafter.toggle dummy
+scoreboard objectives add spellcrafter.heal dummy
 
 scoreboard objectives add spellcrafter.math dummy
 scoreboard players set #n1 spellcrafter.math -1
