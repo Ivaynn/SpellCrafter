@@ -16,9 +16,9 @@ fill ~ -14 ~ ~ -13 ~ minecraft:air replace
 # Equal trades for everyone
 execute if score @s scarena.game.round matches 1.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 1
 execute if score @s scarena.game.round matches 3.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 2
-execute if score @s scarena.game.round matches 7.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 3
-execute if score @s scarena.game.round matches 11.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 4
-execute if score @s scarena.game.round matches 15.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 5
+execute if score @s scarena.game.round matches 5.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 3
+execute if score @s scarena.game.round matches 9.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 4
+execute if score @s scarena.game.round matches 13.. run scoreboard players set $gen.shop.tier spellcrafter.tmp 5
 execute positioned 0 100 0 summon minecraft:wandering_trader run function scarena:game/as_marker/pre_round/generate_trades
 
 

@@ -29,8 +29,8 @@ scoreboard players operation $emeralds.bonus scarena.tmp -= @s scarena.game.live
 scoreboard players operation $emeralds.bonus scarena.tmp *= #5 scarena.math
 
 scoreboard players operation $emeralds scarena.tmp = $game.round scarena.tmp
-scoreboard players operation $emeralds scarena.tmp *= #5 scarena.math
-scoreboard players add $emeralds scarena.tmp 20
+scoreboard players operation $emeralds scarena.tmp *= #8 scarena.math
+scoreboard players add $emeralds scarena.tmp 12
 scoreboard players operation $emeralds scarena.tmp += $emeralds.bonus scarena.tmp
 loot give @s loot scarena:emeralds
 
