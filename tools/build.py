@@ -2,7 +2,7 @@ import shutil
 import json
 from pathlib import Path
 
-version = '0.2.0'
+version = '0.2.1'
 
 path = Path('../datapack/pack.mcmeta')
 mcmeta = json.loads(path.read_text(encoding='utf-8'))
