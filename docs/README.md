@@ -3,7 +3,7 @@
 A list of spells, grouped by type
 - [Projectile](#projectile)
 - [Modifier](#modifier)
-- [Instant](#instant)
+- [Instant](#instant-1)
 - [Special](#special)
 
 <br>
