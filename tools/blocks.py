@@ -1,6 +1,6 @@
 
 from pathlib import Path
-from spells import read_json, save_json
+from utils import read_json, save_json
 
 
 def main() -> None:

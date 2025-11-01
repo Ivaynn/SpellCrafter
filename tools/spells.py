@@ -1,6 +1,6 @@
 
 import re
-import json
+from utils import read_json, save_json, read_text, save_text
 from enum import Enum
 from pathlib import Path
 from dataclasses import dataclass
@@ -119,24 +119,6 @@ LOOT_TABLE = {
         }
     ]
 }
-
-def read_json(file_path: Path|str):
-    with open(file_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    return data
-
-def save_json(data: dict|list, file_path: Path|str, indent=None):
-    with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=indent, ensure_ascii=False)
-
-def read_mcfunction(file_path: Path|str):
-    with open(file_path, 'r', encoding='utf-8') as f:
-        text = f.read()
-    return text
-
-def save_mcfunction(text: str, file_path: Path|str):
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(text)
 
 class SpellType(Enum):
     PROJECTILE = 1
@@ -400,7 +382,7 @@ def main() -> None:
             }
         )
     save_json(wand_mods, datapack_root / f'data/spellcrafter/item_modifier/wand/lore/wand_mod_replace.json')
-    save_mcfunction(function_text, datapack_root / f'data/spellcrafter/function/as_projectile/wand_mods.mcfunction')
+    save_text(function_text, datapack_root / f'data/spellcrafter/function/as_projectile/wand_mods.mcfunction')
 
 
 
@@ -480,12 +462,12 @@ def main() -> None:
     mcfunction = ''
     for spell in spells:
         mcfunction += f'execute if score $spell spellcrafter.tmp matches {spell.id} run return run loot replace entity @s inventory.22 loot spellcrafter:spells/{spell}\n'
-    save_mcfunction(mcfunction, datapack_root / 'data/spellcrafter/function/as_player/inf_spells/custom_wand/loot_insert.mcfunction')
+    save_text(mcfunction, datapack_root / 'data/spellcrafter/function/as_player/inf_spells/custom_wand/loot_insert.mcfunction')
 
     mcfunction = ''
     for spell in spells:
         mcfunction += f'execute if score $spell spellcrafter.tmp matches {spell.id} run return run loot insert ~ ~ ~ loot spellcrafter:spells/{spell}\n'
-    save_mcfunction(mcfunction, datapack_root / 'data/spellcrafter/function/as_table/open/loot_insert.mcfunction')
+    save_text(mcfunction, datapack_root / 'data/spellcrafter/function/as_table/open/loot_insert.mcfunction')
 
 
 
@@ -550,6 +532,8 @@ def main() -> None:
     # Resource pack - lang files - check keys
     # ------------------------------------------------------------
     for lang_file in Path(resources_root / 'assets/spellcrafter/lang/').iterdir():
+        if lang_file.name in ['pt_pt.json']:
+            continue
         translations2: dict = read_json(lang_file)
         for k in translations.keys() - translations2.keys():
             logging.warning(f'Expected key \'{k}\' not found in \'{lang_file.name}\'')
@@ -561,7 +545,7 @@ def main() -> None:
     # Set translate fallbacks to be equal to the "en_us" translations
     # ------------------------------------------------------------
     for filename in datapack_root.rglob('*.mcfunction'):
-        text = read_mcfunction(filename)
+        text = read_text(filename)
         if 'translate' not in text:
             continue
 
@@ -575,7 +559,7 @@ def main() -> None:
                 logging.info(f'Updated fallback for \'{key}\' in \'{filename.name}\'')
             text = new_text
 
-        save_mcfunction(text, filename)
+        save_text(text, filename)
 
 
     def _update_json_recursive(data: dict | list) -> bool:
