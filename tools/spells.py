@@ -1,6 +1,6 @@
 
 import re
-from utils import read_json, save_json, read_text, save_text
+from utils import *
 from enum import Enum
 from pathlib import Path
 from dataclasses import dataclass
@@ -266,21 +266,6 @@ class Spell:
 
     def __repr__(self) -> str:
         return f'Spell({self.display_name})'
-
-def round_cooldown(value: float, precision: int = 2) -> int|float:
-    return 0 if value == 0 else round(value, precision)
-
-def round_stat(value: float) -> int|float:
-    return int(value) if value % 1 == 0 else value
-
-def round_stat_mod(value: float) -> str:
-    value = round_stat(value)
-    if value < 0:
-        return '-' + str(abs(value))
-    elif value > 0:
-        return '+' + str(value)
-    else:
-        return '0'
 
 def main() -> None:
 

@@ -10,7 +10,7 @@ SpellCrafter is a Minecraft data pack adds over 100 unique spells you can combin
 <br>
 
 <p align="center">
-  <img src="./docs/banner.png" width="80%">
+  <img src="./docs/img/banner.png" width="80%">
 </p>
 
 
@@ -59,7 +59,7 @@ These traders can spawn naturally, or you can spawn one:
 ### 2. Buy a wand and some spells
 
 Each trader offers a unique, randomly generated selection of spells and wands.
-![Trader](./docs/trader.png)
+![Trader](./docs/img/trader.png)
 
 
 
@@ -67,7 +67,7 @@ Each trader offers a unique, randomly generated selection of spells and wands.
 
 | Wand Editor Recipe | Items |
 | -- | -- |
-| ![Recipe](./docs/recipe_table.png) | 4 Obsidian <br/> 2 Amethyst Shards <br/> 1 Book
+| ![Recipe](./docs/img/recipe_table.png) | 4 Obsidian <br/> 2 Amethyst Shards <br/> 1 Book
 
 ```
 /loot give @s loot spellcrafter:egg/table
@@ -79,7 +79,7 @@ Each trader offers a unique, randomly generated selection of spells and wands.
 
 Here, you can edit the spells of your wand. Put spells in this menu to add them to your wand.
 
-![Wand Editor](./docs/wand_editor.png)
+![Wand Editor](./docs/img/wand_editor.png)
 
 
 
@@ -87,7 +87,7 @@ Here, you can edit the spells of your wand. Put spells in this menu to add them 
 
 Exit the Wand Editor to save the spells to your wand. You can check the item's description to see the spell list, mana cost, cooldown and available slots.
 
-![Wand Description](./docs/wand_description.png)
+![Wand Description](./docs/img/wand_description.png)
 
 
 
@@ -127,7 +127,7 @@ Spells that affect the wand in unique ways and don't fit any of the other catego
 
 You can use advancements to track your progress! Find new spells to expand your collection:
 
-![Advancements](./docs/advancements.png)
+![Advancements](./docs/img/advancements.png)
 
 
 
@@ -139,12 +139,12 @@ You can use advancements to track your progress! Find new spells to expand your 
 
 Target dummies can be used to test your wands. They display the damage taken and they can even use a wand if you give them one. To remove the dummy, give it an egg or another target dummy's spawn egg.
 
-![Target Dummy](./docs/target_dummy.png)
+![Target Dummy](./docs/img/target_dummy.png)
 
 
 | Target Dummy Recipe | Items |
 | -- | -- |
-| ![Recipe](./docs/recipe_dummy.png) | 8 Diamonds <br/> 1 Egg
+| ![Recipe](./docs/img/recipe_dummy.png) | 8 Diamonds <br/> 1 Egg
 
 ```
 /loot give @s loot spellcrafter:egg/dummy
