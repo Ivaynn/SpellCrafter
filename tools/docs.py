@@ -25,7 +25,7 @@ def md_spell(spell: Spell) -> list[str]:
         if spell.stats.speed_mod is not None:
             md.append(f'- **Speed**: {round_stat_mod(spell.stats.speed_mod)} blocks/s')
         if spell.stats.heal is not None:
-            md.append(f'- **Heal**: {round_stat_mod(spell.stats.heal)} ❤')
+            md.append(f'- **Heal**: {round_stat_mod(spell.stats.heal/2)} ❤')
     return md
 
 
@@ -37,6 +37,7 @@ def main() -> None:
         all_spells.append(Spell(spell_data))
 
     md = [
+        '<!-- This file was generated automaticaly - do not edit. -->',
         '# SpellCrafter Spells',
         'A list of spells, grouped by type',
         '- [Projectile](#projectile)',

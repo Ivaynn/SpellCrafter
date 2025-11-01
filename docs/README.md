@@ -1,3 +1,4 @@
+<!-- This file was generated automaticaly - do not edit. -->
 # SpellCrafter Spells
 A list of spells, grouped by type
 - [Projectile](#projectile)
@@ -176,7 +177,7 @@ Spells that shoot a projectile. They usually travel in a straight line and deal 
 - **Damage**: 1 ❤
 - **Range**: 15 blocks
 - **Speed**: 10 blocks/s
-- **Heal**: +4 ❤
+- **Heal**: +2 ❤
 ---
 ### Drain Bolt
 <img src="../resources/assets/spellcrafter/textures/item/spell/drain_bolt.png" align="right" width="50"/>◆ 100 ⌚ 0.5 • Projectile • Epic
@@ -203,7 +204,7 @@ Spells that shoot a projectile. They usually travel in a straight line and deal 
 - **Damage**: 0 ❤
 - **Range**: 15 blocks
 - **Speed**: 10 blocks/s
-- **Heal**: +4 ❤
+- **Heal**: +2 ❤
 ---
 ### Soul Link
 <img src="../resources/assets/spellcrafter/textures/item/spell/soul_link.png" align="right" width="50"/>◆ 70 ⌚ 1.5 • Projectile • Epic
@@ -541,7 +542,7 @@ Spells that get cast instantly and cannot be modified. These can summon entities
 
 *Heals targets in a small radius*
 
-- **Heal**: +4 ❤
+- **Heal**: +2 ❤
 ---
 ### Small Explosion
 <img src="../resources/assets/spellcrafter/textures/item/spell/small_explosion.png" align="right" width="50"/>◆ 90 ⌚ 0.3 • Instant • Rare
