@@ -7,7 +7,7 @@ def md_spell(spell: Spell) -> list[str]:
     md = [
         f'### {spell.display_name}',
         f'<img src="../resources/assets/spellcrafter/textures/item/spell/{spell.name}.png" align="right" width="50"/>'
-        f'◆ {spell.mana} ⌚ {round_cooldown(spell.cooldown/20)} • {spell.type.name.capitalize()} • {spell.tier.name.capitalize()}',
+        f' ◆ {spell.mana} ⌚ {round_cooldown(spell.cooldown/20)} • {spell.type.name.capitalize()} • {spell.tier.name.capitalize()}',
         '\n*' + ' '.join(spell.description) + '*\n'
     ]
 
