@@ -5,7 +5,8 @@ from spells import Spell, SpellType
 
 def md_spell(spell: Spell) -> list[str]:
     md = [
-        f'### ![icon](../resources/assets/spellcrafter/textures/item/spell/{spell.name}.png) {spell.display_name}',
+        f'### {spell.display_name}',
+        f'<img src="../resources/assets/spellcrafter/textures/item/spell/{spell.name}.png" align="right" width="50"/>'
         f'◆ {spell.mana} ⌚ {round_cooldown(spell.cooldown/20)} • {spell.type.name.capitalize()} • {spell.tier.name.capitalize()}',
         '\n*' + ' '.join(spell.description) + '*\n'
     ]
@@ -34,29 +35,39 @@ def main() -> None:
     all_spells: list[Spell] = []
     for spell_data in data:
         all_spells.append(Spell(spell_data))
-    
-    spells_by_type = {
-        'projectiles': [s for s in all_spells if s.type == SpellType.PROJECTILE],
-        'modifiers': [s for s in all_spells if s.type == SpellType.MODIFIER],
-        'instant': [s for s in all_spells if s.type == SpellType.INSTANT],
-        'special': [s for s in all_spells if s.type == SpellType.SPECIAL],
-    }
 
     md = [
         '# SpellCrafter Spells',
-        'A list of spells, grouped by type:',
-        '- [Projectiles](#projectiles)',
-        '- [Modifiers](#modifiers)',
+        'A list of spells, grouped by type',
+        '- [Projectile](#projectile)',
+        '- [Modifier](#modifier)',
         '- [Instant](#instant)',
         '- [Special](#special)',
     ]
 
-    for (spell_type, spells) in spells_by_type.items():
-        md.append(f'\n<br>\n\n## {spell_type.capitalize()}\n')
+    md.append('\n<br>\n\n## Projectile\n\nSpells that shoot a projectile. They usually travel in a straight line and deal damage when they hit something, but this can be modified by other spells. The spell list continues where the projectile ends.\n')
+    for spell in [s for s in all_spells if s.type == SpellType.PROJECTILE]:
+        md.append('---')
+        md.extend(md_spell(spell))
+    md.append('---')
 
-        for spell in spells:
-            md.extend(md_spell(spell))
-            md.append('---')
+    md.append('\n<br>\n\n## Modifier\n\nSpells that modify a projectile. These can be stacked and completely change how the projectile behaves. They can change its damage, range, speed, trajectory, appearance, ...\n')
+    for spell in [s for s in all_spells if s.type == SpellType.MODIFIER]:
+        md.append('---')
+        md.extend(md_spell(spell))
+    md.append('---')
+
+    md.append('\n<br>\n\n## Instant\n\nSpells that get cast instantly and cannot be modified. These can summon entities, protect you, create explosions, teleport entities, create shields, affect nearby projectiles, ...\n')
+    for spell in [s for s in all_spells if s.type == SpellType.INSTANT]:
+        md.append('---')
+        md.extend(md_spell(spell))
+    md.append('---')
+
+    md.append('\n<br>\n\n## Special\n\nSpells that affect the wand in unique ways and don\'t fit any of the other categories. These can modify the wand properties, change spell order, copy other spells, ...\n')
+    for spell in [s for s in all_spells if s.type == SpellType.SPECIAL]:
+        md.append('---')
+        md.extend(md_spell(spell))
+    md.append('---')
 
     save_text('\n'.join(md), '../docs/README.md')
 
