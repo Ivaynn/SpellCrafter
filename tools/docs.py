@@ -6,8 +6,8 @@ from spells import Spell, SpellType
 def md_spell(spell: Spell) -> list[str]:
     md = [
         f'### {spell.display_name}',
-        f'<img src="../resources/assets/spellcrafter/textures/item/spell/{spell.name}.png" align="right" width="50"/>'
-        f' ◆ {spell.mana} ⌚ {round_cooldown(spell.cooldown/20)} • {spell.type.name.capitalize()} • {spell.tier.name.capitalize()}',
+        f'<img src="../resources/assets/spellcrafter/textures/item/spell/{spell.name}.png" align="right" width="50"/>',
+        f'◆ {spell.mana} ⌚ {round_cooldown(spell.cooldown/20)} • {spell.type.name.capitalize()} • {spell.tier.name.capitalize()}',
         '\n*' + ' '.join(spell.description) + '*\n'
     ]
 
@@ -26,6 +26,7 @@ def md_spell(spell: Spell) -> list[str]:
             md.append(f'- **Speed**: {round_stat_mod(spell.stats.speed_mod)} blocks/s')
         if spell.stats.heal is not None:
             md.append(f'- **Heal**: {round_stat_mod(spell.stats.heal/2)} ❤')
+        md.append('')
     return md
 
 
@@ -40,7 +41,7 @@ def main() -> None:
     md = [
         '<!-- This file was generated automaticaly - do not edit. -->',
         '# SpellCrafter Spells',
-        'A list of spells, grouped by type',
+        'All spells, grouped by type, ',
         '- [Projectile](#projectile)',
         '- [Modifier](#modifier)',
         '- [Instant](#instant-1)',
