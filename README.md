@@ -246,7 +246,7 @@ Disables the collection advancements while enabled.
 
 ## Compatibility Notes
 
-- Made for Minecraft Java Edition 1.21.8
+- Made for Minecraft Java Edition 1.21.7+
 - Everything uses the `spellcrafter` namespace/prefix
 
 
