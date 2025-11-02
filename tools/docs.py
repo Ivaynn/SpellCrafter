@@ -35,6 +35,7 @@ def main() -> None:
     all_spells: list[Spell] = []
     for spell_data in data:
         all_spells.append(Spell(spell_data))
+    all_spells = sorted(all_spells, key=lambda spell: spell.display_name)
 
     md = [
         '<!-- This file was generated automaticaly - do not edit. -->',
