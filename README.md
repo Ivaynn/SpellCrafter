@@ -247,6 +247,7 @@ Disables the collection advancements while enabled.
 ## Compatibility Notes
 
 - Made for Minecraft Java Edition 1.21.7+
+- Each SpellCrafter version is made for a specific Minecraft version
 - Everything uses the `spellcrafter` namespace/prefix
 
 
@@ -257,7 +258,13 @@ Disables the collection advancements while enabled.
 
 ## Contributing
 
-Found a bug? Have a suggestion? Join the [Discord](https://discord.gg/QAtc7ZgPxS) or create an [Issue](https://github.com/Ivaynn/SpellCrafter/issues)!
+Found a bug? Have a suggestion? Join the [Discord](https://discord.gg/QAtc7ZgPxS) or create an [Issue](https://github.com/Ivaynn/SpellCrafter/issues) here!
+
+Want to help with translations? [en_us.json](resources/assets/spellcrafter/lang/en_us.json) has all the translation strings, please use it as a template (translations are made by contributors and may not be fully accurate or up to date).
+
+
+
+
 
 
 
