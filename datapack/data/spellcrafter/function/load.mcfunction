@@ -1,7 +1,8 @@
 #> executed by #minecraft:load
 
 
-gamerule maxCommandChainLength 2147483647
+gamerule minecraft:max_command_sequence_length 2147483647
+gamerule minecraft:max_command_forks 2147483647
 
 scoreboard objectives add SpellCrafter trigger
 scoreboard objectives add spellcrafter.id dummy

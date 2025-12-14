@@ -1,10 +1,10 @@
 {
     "pack": {
-        "description": "Ivaynn's SpellCrafter 0.2.1",
+        "description": "Ivaynn's SpellCrafter 0.2.2",
         "min_format": [
-            88,
-            0
+            94,
+            1
         ],
-        "max_format": 88
+        "max_format": 94
     }
 }
