@@ -71,7 +71,7 @@ Spells that shoot a projectile. They usually travel in a straight line and deal 
 <img src="../resources/assets/spellcrafter/textures/item/spell/delayed_cast.png" align="right" width="50"/>
 ◆ 10 ⌚ 0.2 • Projectile • Epic
 
-*Stationary, lasts for 3 seconds. Range: +5m = +1s*
+*Stationary, lasts for 3 seconds. Range: +5 blocks = +1 second*
 
 - **Range**: 15 blocks
 

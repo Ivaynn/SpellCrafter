@@ -437,7 +437,7 @@
     "spellcrafter.spell.casters_aim.description.2": "a direção do seu olhar",
     "spellcrafter.spell.delayed_cast.name": "Conjuração Atrasada",
     "spellcrafter.spell.delayed_cast.description.1": "Permanece imóvel por 3 segundos.",
-    "spellcrafter.spell.delayed_cast.description.2": "Alcance: +5m = +1s",
+    "spellcrafter.spell.delayed_cast.description.2": "Alcance: +5 blocos = +1 segundo",
     "spellcrafter.spell.transfer.name": "Transferência",
     "spellcrafter.spell.transfer.description.1": "Transfere a posse de todos os",
     "spellcrafter.spell.transfer.description.2": "feitiços seguintes para um conjurador",

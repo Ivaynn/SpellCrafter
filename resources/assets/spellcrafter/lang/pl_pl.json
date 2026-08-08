@@ -430,7 +430,7 @@
     "spellcrafter.spell.casters_aim.description.2": "twóją stronę patrzenia",
     "spellcrafter.spell.delayed_cast.name": "Opóźniony Rzut",
     "spellcrafter.spell.delayed_cast.description.1": "Stacjonarny, trwa przez 3 sekundy",
-    "spellcrafter.spell.delayed_cast.description.2": "Zasięg: +5m = +1s",
+    "spellcrafter.spell.delayed_cast.description.2": "Zasięg: +5 bloki = +1 sekundy",
     "spellcrafter.spell.transfer.name": "Przeniesienie",
     "spellcrafter.spell.transfer.description.1": "Przenosi własność wszystkich",
     "spellcrafter.spell.transfer.description.2": "zaklęć po tym do najbliższego",

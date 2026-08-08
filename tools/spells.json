@@ -1835,7 +1835,7 @@
     "wandModifier": false,
     "description": [
       "Stationary, lasts for 3 seconds.",
-      "Range: +5m = +1s"
+      "Range: +5 blocks = +1 second"
     ],
     "stats": {
       "range": 15
