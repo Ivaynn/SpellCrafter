@@ -222,6 +222,14 @@ Disable cooldown restrictions when casting a spell (toggle).
 
 
 
+### Clear Cooldowns
+Clear wand item cooldowns for all wands in your inventory.
+```
+/function spellcrafter:admin/clear_cooldowns
+```
+
+
+
 ### Untargetable
 Become untargetable by spells (toggle).
 ```
