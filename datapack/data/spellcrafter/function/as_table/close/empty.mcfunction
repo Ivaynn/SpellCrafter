@@ -30,4 +30,4 @@ item modify entity @s weapon spellcrafter:wand/lore/empty
 
 
 # Success
-return 1
+scoreboard players set $success spellcrafter.tmp 1

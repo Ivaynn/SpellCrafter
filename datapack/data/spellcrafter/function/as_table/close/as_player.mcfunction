@@ -3,11 +3,11 @@
 
 
 # Check if player is holding wand
-execute unless predicate spellcrafter:holding_wand run return 0
+execute unless predicate spellcrafter:holding_wand run return run tellraw @s ["",{text:"> ",color:"red", bold:true},{text:"You must be holding a wand to apply the spells!",color:"gray"}]
 
 
 # Check if the held wand is empty
-execute if data entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.spells[0] run return 0
+execute if data entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.spells[0] run return run tellraw @s ["",{text:"> ",color:"red", bold:true},{text:"You must be holding an empty wand to apply the spells!",color:"gray"}]
 
 
 # Reset scores & storages
@@ -108,7 +108,8 @@ execute unless score @s spellcrafter.cooldown matches 4.. run scoreboard players
 
 # Warning
 execute if score $table.warning spellcrafter.tmp matches 1 run tellraw @s ["",{text:"> ",color:"red", bold:true},{text:"This wand is full! Extra spells have been dropped.",color:"gray"}]
+execute if score $table.warning spellcrafter.tmp matches 2 run tellraw @s ["",{text:"> ",color:"red", bold:true},{text:"Dropping items that couldn't be applied to the wand.",color:"gray"}]
 
 
 # Success
-return 1
+scoreboard players set $success spellcrafter.tmp 1

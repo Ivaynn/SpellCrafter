@@ -1,4 +1,4 @@
-#> as table, at barrel
+#> as any, at barrel
 # storage "spellcrafter:tmp items" must contain barrel items
 
 playsound minecraft:block.dispenser.dispense player @a[distance=..100] ~ ~ ~ 1 1
