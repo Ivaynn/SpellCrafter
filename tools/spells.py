@@ -240,15 +240,15 @@ class Spell:
         if self.stats.damage is not None:
             desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.damage.name','fallback':'Damage'},{'text':': '},{'text':f'{round_stat(self.stats.damage/2)} ❤','color':'red'}]})
         if self.stats.range is not None:
-            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.range.name','fallback':'Range'},{'text':': '},{'text':f'{round_stat(self.stats.range)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.range.unit','fallback':'m','color':'dark_gray'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.range.name','fallback':'Range'},{'text':': '},{'text':f'{round_stat(self.stats.range)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.range.unit','fallback':'blocks','color':'dark_gray'}]})
         if self.stats.speed is not None:
-            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.speed.name','fallback':'Speed'},{'text':': '},{'text':f'{round_stat(self.stats.speed*5)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.speed.unit','fallback':'m/s','color':'dark_gray'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.speed.name','fallback':'Speed'},{'text':': '},{'text':f'{round_stat(self.stats.speed*5)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.speed.unit','fallback':'blocks/s','color':'dark_gray'}]})
         if self.stats.damage_mod is not None:
             desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.damage.name','fallback':'Damage'},{'text':': '},{'text':f'{round_stat_mod(self.stats.damage_mod/2)} ❤','color':'red'}]})
         if self.stats.range_mod is not None:
-            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.range.name','fallback':'Range'},{'text':': '},{'text':f'{round_stat_mod(self.stats.range_mod)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.range.unit','fallback':'m','color':'dark_gray'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.range.name','fallback':'Range'},{'text':': '},{'text':f'{round_stat_mod(self.stats.range_mod)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.range.unit','fallback':'blocks','color':'dark_gray'}]})
         if self.stats.speed_mod is not None:
-            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.speed.name','fallback':'Speed'},{'text':': '},{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.speed.unit','fallback':'m/s','color':'dark_gray'}]})
+            desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.speed.name','fallback':'Speed'},{'text':': '},{'text':f'{round_stat_mod(self.stats.speed_mod*5)}','color':'red'},{'text':' '},{'translate':'spellcrafter.stat.speed.unit','fallback':'blocks/s','color':'dark_gray'}]})
         if self.stats.heal is not None:
             desc.append({'text':'\n','color':'gray','extra':[{'translate':'spellcrafter.stat.heal.name','fallback':'Heal'},{'text':': '},{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
         if self.stats:
