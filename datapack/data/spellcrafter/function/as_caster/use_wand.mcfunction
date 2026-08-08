@@ -72,5 +72,7 @@ scoreboard players set $new_cast spellcrafter.tmp 0
 # Update wand item - save gametime in item data
 execute as @s[tag=spellcrafter.no_cooldown] run return 0
 execute if score $cooldown.this spellcrafter.tmp matches -1 run return 0
-execute store result storage spellcrafter:tmp wand.gametime int 1 run scoreboard players get $gametime spellcrafter.tmp
+scoreboard players operation $gametime.future spellcrafter.tmp = $gametime spellcrafter.tmp
+scoreboard players operation $gametime.future spellcrafter.tmp += $cooldown.wand spellcrafter.tmp
+execute store result storage spellcrafter:tmp wand.gametime int 1 run scoreboard players get $gametime.future spellcrafter.tmp
 item modify entity @s weapon spellcrafter:wand/init_cooldown
