@@ -1518,8 +1518,8 @@
     "type": "special",
     "wandModifier": false,
     "description": [
-      "Skips the next spell and",
-      "sets its mana cost to 0"
+      "Skips the next spell, setting its",
+      "cooldown and mana cost to 0"
     ]
   },
   {
