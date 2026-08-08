@@ -26,22 +26,26 @@
                     "can_always_eat": true
                 },
                 "minecraft:item_name": {
-                    "text": "Mana Cookie",
+                    "translate": "spellcrafter.item.cookie.name",
+                    "fallback": "Mana Cookie",
                     "color": "aqua"
                 },
                 "minecraft:lore": [
                     {
-                        "text": "Permanently increases",
+                        "translate": "spellcrafter.item.cookie.description.1",
+                        "fallback": "Permanently increases",
                         "color": "gray",
                         "italic": false
                     },
                     {
-                        "text": "your maximum mana and",
+                        "translate": "spellcrafter.item.cookie.description.2",
+                        "fallback": "your maximum mana and",
                         "color": "gray",
                         "italic": false
                     },
                     {
-                        "text": "mana regeneration",
+                        "translate": "spellcrafter.item.cookie.description.3",
+                        "fallback": "mana regeneration",
                         "color": "gray",
                         "italic": false
                     }
