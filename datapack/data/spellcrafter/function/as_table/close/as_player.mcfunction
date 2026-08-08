@@ -23,6 +23,7 @@ data modify storage spellcrafter:tmp wand.mod set from entity @s SelectedItem.co
 data modify storage spellcrafter:tmp wand.cap set from entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.cap
 data modify storage spellcrafter:tmp wand.base_cooldown set from entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.base_cooldown
 data modify storage spellcrafter:tmp wand.base_mana set from entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.base_mana
+data modify storage spellcrafter:tmp wand.gametime set from entity @s SelectedItem.components."minecraft:custom_data".spellcrafter.wand.gametime
 execute store result score $mana spellcrafter.tmp run data get storage spellcrafter:tmp wand.base_mana
 execute store result score $cooldown spellcrafter.tmp run data get storage spellcrafter:tmp wand.base_cooldown
 
