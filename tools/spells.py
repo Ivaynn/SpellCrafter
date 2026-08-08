@@ -307,8 +307,7 @@ def main() -> None:
                                 "condition": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "type_specific": {
-                                        "type": "minecraft:player",
+                                    "minecraft:type_specific/player": {
                                         "advancements": {
                                             f"spellcrafter:spells/{spell}": True
                                         }
