@@ -28,12 +28,12 @@ execute unless data storage spellcrafter:tmp mainhand.components."minecraft:cust
 
 
 # Cancel if the wand doesn't have spells
-execute unless data storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.spells[0] run return run function spellcrafter:as_caster/use_fail
+execute unless data storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.spells[0] run return run function spellcrafter:as_caster/use_fail_no_spells
 
 
 # Cancel if the wand is from a different version (needs to be updated)
 execute store result score $wand_version spellcrafter.tmp run data get storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.version
-execute unless score $wand_version spellcrafter.tmp = #version spellcrafter.options run return run function spellcrafter:as_caster/use_outdated
+execute unless score $wand_version spellcrafter.tmp = #version spellcrafter.options run return run function spellcrafter:as_caster/use_fail_outdated
 
 
 # Handle cooldown
@@ -49,8 +49,8 @@ execute unless score @s spellcrafter.cooldown matches 1.. run scoreboard players
 # Spend mana or cancel if caster doesn't have enough mana
 execute store result score $mana spellcrafter.tmp run data get storage spellcrafter:tmp mainhand.components."minecraft:custom_data".spellcrafter.wand.mana
 scoreboard players operation $mana spellcrafter.tmp *= #10 spellcrafter.math
-execute unless score $mana spellcrafter.tmp matches 0..2147483646 run return run function spellcrafter:as_caster/use_fail
-execute as @s[tag=!spellcrafter.inf_mana] if score @s spellcrafter.mana < $mana spellcrafter.tmp run return run function spellcrafter:as_caster/use_fail
+execute unless score $mana spellcrafter.tmp matches 0..2147483646 run return run function spellcrafter:as_caster/use_fail_no_mana
+execute as @s[tag=!spellcrafter.inf_mana] if score @s spellcrafter.mana < $mana spellcrafter.tmp run return run function spellcrafter:as_caster/use_fail_no_mana
 scoreboard players operation @s[tag=!spellcrafter.inf_mana] spellcrafter.mana -= $mana spellcrafter.tmp
 
 
