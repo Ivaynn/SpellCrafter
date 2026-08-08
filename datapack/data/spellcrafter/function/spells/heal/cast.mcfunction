@@ -2,9 +2,13 @@
 # instant cast
 
 
-# Heal targets
+# Heal non-undead targets
 scoreboard players add @e[distance=..4,type=!#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] spellcrafter.heal 4
-scoreboard players add @e[distance=..4,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] spellcrafter.damage 4
+
+
+# Hurt undead targets
+scoreboard players set $damage spellcrafter.tmp 4
+execute as @e[distance=..4,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] run function spellcrafter:damage/add
 schedule function spellcrafter:damage/scheduled 1t
 
 
