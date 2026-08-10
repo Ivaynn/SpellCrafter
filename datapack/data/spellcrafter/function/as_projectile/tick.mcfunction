@@ -43,7 +43,7 @@ execute as @s[tag=spellcrafter.spell.follow] if score $spell.follow spellcrafter
 # Get damage to be dealt to shields
 scoreboard players operation $shield_damage spellcrafter.tmp = @s spellcrafter.damage
 execute unless score $shield_damage spellcrafter.tmp matches 1.. run scoreboard players set $shield_damage spellcrafter.tmp 1
-scoreboard players operation $shield_damage spellcrafter.tmp *= #5 spellcrafter.math
+scoreboard players operation $shield_damage spellcrafter.tmp *= #10 spellcrafter.math
 
 
 # Move projectile

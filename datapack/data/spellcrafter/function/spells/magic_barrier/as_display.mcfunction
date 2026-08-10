@@ -5,7 +5,8 @@
 tag @s add spellcrafter.summon
 tag @s add spellcrafter.spell.magic_barrier
 scoreboard players set @s spellcrafter.cooldown 0
-scoreboard players set @s spellcrafter.age 600
+scoreboard players set @s spellcrafter.age 400
+scoreboard players set @s spellcrafter.blind 4
 
 
 # Get caster's id
