@@ -13,8 +13,9 @@ scoreboard players operation @s spellcrafter.id = $id spellcrafter.tmp
 function spellcrafter:as_summon/check_limit/init
 
 
-# Get caster's rotation
-execute rotated as @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] run tp @s ~ ~ ~ ~ ~
+# Get projectile's rotation
+tp @s ~ ~ ~ ~ ~
+# execute rotated as @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] run tp @s ~ ~ ~ ~ ~
 
 
 # Update entity NBT
