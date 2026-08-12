@@ -37,7 +37,7 @@ execute if score $mana_drain spellcrafter.tmp > @s spellcrafter.mana run functio
 
 scoreboard players operation @s spellcrafter.mana -= $mana_drain spellcrafter.tmp
 
-scoreboard players operation @s spellcrafter.mana += @s spellcrafter.mana_reg
+execute if score $mana_drain spellcrafter.tmp matches 0 run scoreboard players operation @s spellcrafter.mana += @s spellcrafter.mana_reg
 scoreboard players operation @s spellcrafter.mana < @s spellcrafter.max_mana
 
 execute unless score @s spellcrafter.mana matches 0.. run scoreboard players set @s spellcrafter.mana 0
