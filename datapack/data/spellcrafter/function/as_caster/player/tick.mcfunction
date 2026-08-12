@@ -33,6 +33,8 @@ execute unless score $cache.slot spellcrafter.tmp = @s spellcrafter.cache.slot r
 # Mana
 scoreboard players set $mana_drain spellcrafter.tmp 0
 execute if score $holding_wand spellcrafter.tmp matches 1 run function spellcrafter:as_caster/player/get_drain
+execute if score $mana_drain spellcrafter.tmp > @s spellcrafter.mana run function spellcrafter:as_caster/player/apply_exhaustion
+
 scoreboard players operation @s spellcrafter.mana -= $mana_drain spellcrafter.tmp
 
 scoreboard players operation @s spellcrafter.mana += @s spellcrafter.mana_reg
