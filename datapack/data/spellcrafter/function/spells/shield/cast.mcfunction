@@ -3,7 +3,7 @@
 
 
 # Shield targets
-effect give @e[distance=..4,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable] minecraft:resistance 1 255 false
+effect give @e[distance=..4,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable] minecraft:absorption 2 9 false
 
 
 # Effects
