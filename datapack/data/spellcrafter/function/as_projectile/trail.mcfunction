@@ -4,8 +4,8 @@
 # Collide with shields
 scoreboard players set $hit_shield spellcrafter.tmp 0
 execute as @e[distance=0.001..3, type=minecraft:item_display, tag=spellcrafter.spell.arcane_shield, predicate=!spellcrafter:match_id] run function spellcrafter:spells/arcane_shield/hit
-execute as @e[distance=0.001..1.1, type=minecraft:item_display, tag=spellcrafter.spell.magic_barrier] run function spellcrafter:spells/magic_barrier/hit
-execute as @e[distance=0.001..0.9, type=minecraft:item_display, tag=spellcrafter.spell.magic_shield] run function spellcrafter:spells/magic_shield/hit
+execute unless score @s spellcrafter.blind matches 1.. as @e[distance=0.001..1.1, type=minecraft:item_display, tag=spellcrafter.spell.magic_barrier] run function spellcrafter:spells/magic_barrier/hit
+execute unless score @s spellcrafter.blind matches 1.. as @e[distance=0.001..0.9, type=minecraft:item_display, tag=spellcrafter.spell.magic_shield] run function spellcrafter:spells/magic_shield/hit
 execute if score $hit_shield spellcrafter.tmp matches 1 run return run function spellcrafter:as_projectile/remove
 
 
