@@ -3,7 +3,7 @@
 
 # Count projectiles check threshold and avoid lag
 scoreboard players set $projectile_count spellcrafter.tmp 0
-execute store result score $gametime spellcrafter.tmp run time query gametime
+scoreboard players add $gametime spellcrafter.tmp 1
 
 
 # Tick functions for different types of entities
