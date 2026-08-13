@@ -14,3 +14,11 @@ execute positioned ~ ~-0.75 ~ as @e[distance=..8,type=!#spellcrafter:untargetabl
 
 # Remove summon
 kill @s[type=!minecraft:player]
+
+
+# Destroy blocks
+execute unless score destructive_spells spellcrafter.options matches 1 run return 0
+
+fill ~2 ~1 ~1 ~-2 ~-1 ~-1 minecraft:air replace #spellcrafter:explode_large destroy
+fill ~1 ~2 ~1 ~-1 ~-2 ~-1 minecraft:air replace #spellcrafter:explode_large destroy
+fill ~1 ~1 ~2 ~-1 ~-1 ~-2 minecraft:air replace #spellcrafter:explode_large destroy
