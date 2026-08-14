@@ -11,13 +11,4 @@ execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-0.75 ~ as @
 schedule function spellcrafter:damage/scheduled 1t
 
 
-# Heal non-undead targets
-execute positioned ~ ~-0.75 ~ run scoreboard players add @e[distance=..1.5,type=!#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] spellcrafter.heal 4
-
-
-# Hurt undead targets
-scoreboard players set $damage spellcrafter.tmp 4
-execute positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] run function spellcrafter:damage/add
-
-
 # Not hit effects
