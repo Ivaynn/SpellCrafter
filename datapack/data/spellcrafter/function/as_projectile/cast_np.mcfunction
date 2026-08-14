@@ -101,6 +101,7 @@ execute if score $spell spellcrafter.tmp matches 108 run return run tag @s add s
 execute if score $spell spellcrafter.tmp matches 109 run return run tag @s add spellcrafter.spell.casters_pull
 execute if score $spell spellcrafter.tmp matches 110 run return run tag @s add spellcrafter.spell.casters_aim
 execute if score $spell spellcrafter.tmp matches 114 run return run tag @s add spellcrafter.spell.height_lock
+execute if score $spell spellcrafter.tmp matches 128 run return run function spellcrafter:spells/damaging_area/add
 
 
 # Stackable modifiers

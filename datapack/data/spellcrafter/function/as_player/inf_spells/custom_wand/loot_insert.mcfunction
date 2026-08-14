@@ -125,3 +125,4 @@ execute if score $spell spellcrafter.tmp matches 124 run return run loot replace
 execute if score $spell spellcrafter.tmp matches 125 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/ender_eye
 execute if score $spell spellcrafter.tmp matches 126 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/toxic_cloud
 execute if score $spell spellcrafter.tmp matches 127 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/arcane_shield
+execute if score $spell spellcrafter.tmp matches 128 run return run loot replace entity @s inventory.22 loot spellcrafter:spells/damaging_area

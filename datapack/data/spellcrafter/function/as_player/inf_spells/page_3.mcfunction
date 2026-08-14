@@ -13,7 +13,7 @@ loot replace entity @s inventory.9 loot spellcrafter:spells/range_dec
 loot replace entity @s inventory.10 loot spellcrafter:spells/range_inc
 loot replace entity @s inventory.11 loot spellcrafter:spells/long_shot
 loot replace entity @s inventory.12 loot spellcrafter:spells/anchored
-item replace entity @s inventory.13 with minecraft:air
+loot replace entity @s inventory.13 loot spellcrafter:spells/damaging_area
 loot replace entity @s inventory.14 loot spellcrafter:spells/piercing
 loot replace entity @s inventory.15 loot spellcrafter:spells/hidden
 loot replace entity @s inventory.16 loot spellcrafter:spells/rainbow
