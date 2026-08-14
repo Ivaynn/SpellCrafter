@@ -41,7 +41,7 @@ def main() -> None:
     md = [
         '<!-- This file was generated automaticaly - do not edit. -->',
         '# SpellCrafter Spells',
-        'All spells, grouped by type, ',
+        'All spells, grouped by type, sorted alphabetically:',
         '- [Projectile](#projectile)',
         '- [Modifier](#modifier)',
         '- [Instant](#instant-1)',
