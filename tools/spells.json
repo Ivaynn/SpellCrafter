@@ -770,7 +770,7 @@
     "parent": "multicast",
     "tier": 4,
     "mana": -100,
-    "cooldown": 20,
+    "cooldown": 10,
     "type": "special",
     "wandModifier": false,
     "description": [
@@ -783,7 +783,7 @@
     "displayName": "Haste",
     "parent": "refresh",
     "tier": 4,
-    "mana": 100,
+    "mana": 50,
     "cooldown": -20,
     "type": "special",
     "wandModifier": false,
