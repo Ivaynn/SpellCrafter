@@ -35,6 +35,7 @@ scoreboard players set $spell.quickstep spellcrafter.tmp 0
 scoreboard players set $spell.secret spellcrafter.tmp 0
 scoreboard players set $spell.locked spellcrafter.tmp 0
 scoreboard players set $spell.skip spellcrafter.tmp 0
+scoreboard players set $spell.shuffle spellcrafter.tmp 0
 
 
 # Separate items in storages "spellcrafter:tmp keep" and "spellcrafter:tmp drop"
