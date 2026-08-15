@@ -2,7 +2,6 @@
 
 
 # Prevent lost items
-execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.0 #spellcrafter:wand if items entity @s inventory.0 * run item replace entity @s player.cursor from entity @s inventory.0
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.1 minecraft:air if items entity @s inventory.1 * run item replace entity @s player.cursor from entity @s inventory.1
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.2 minecraft:air if items entity @s inventory.2 * run item replace entity @s player.cursor from entity @s inventory.2
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.3 minecraft:knowledge_book if items entity @s inventory.3 * run item replace entity @s player.cursor from entity @s inventory.3
@@ -15,12 +14,11 @@ execute unless score $page_changed spellcrafter.tmp matches 1 unless items entit
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.10 minecraft:air if items entity @s inventory.10 * run item replace entity @s player.cursor from entity @s inventory.10
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.11 minecraft:air if items entity @s inventory.11 * run item replace entity @s player.cursor from entity @s inventory.11
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.12 minecraft:knowledge_book if items entity @s inventory.12 * run item replace entity @s player.cursor from entity @s inventory.12
-execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.13 #spellcrafter:wand unless items entity @s inventory.13 minecraft:knowledge_book if items entity @s inventory.13 * unless items entity @s player.cursor * run item replace entity @s player.cursor from entity @s inventory.13
+execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.13 #spellcrafter:wand unless items entity @s inventory.13 minecraft:knowledge_book if items entity @s inventory.13 * if items entity @s player.cursor minecraft:knowledge_book run item replace entity @s player.cursor from entity @s inventory.13
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.14 minecraft:knowledge_book if items entity @s inventory.14 * run item replace entity @s player.cursor from entity @s inventory.14
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.15 minecraft:air if items entity @s inventory.15 * run item replace entity @s player.cursor from entity @s inventory.15
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.16 minecraft:air if items entity @s inventory.16 * run item replace entity @s player.cursor from entity @s inventory.16
 
-execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.18 #spellcrafter:wand if items entity @s inventory.18 * run item replace entity @s player.cursor from entity @s inventory.18
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.19 minecraft:air if items entity @s inventory.19 * run item replace entity @s player.cursor from entity @s inventory.19
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.20 minecraft:air if items entity @s inventory.20 * run item replace entity @s player.cursor from entity @s inventory.20
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.21 minecraft:knowledge_book if items entity @s inventory.21 * run item replace entity @s player.cursor from entity @s inventory.21
