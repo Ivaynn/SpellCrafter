@@ -13,4 +13,4 @@ execute if score $speed spellcrafter.tmp matches 1..3 run playsound minecraft:en
 execute if score $speed spellcrafter.tmp matches 4..6 run playsound minecraft:entity.bat.takeoff player @a[distance=..100] ^ ^ ^ 2 1.4
 execute if score $speed spellcrafter.tmp matches 7..9 run playsound minecraft:entity.bat.takeoff player @a[distance=..100] ^ ^ ^ 2 1.5
 execute if score $speed spellcrafter.tmp matches 10..12 run playsound minecraft:entity.bat.takeoff player @a[distance=..100] ^ ^ ^ 2 1.6
-execute if score $speed spellcrafter.tmp matches 13..19 run playsound minecraft:entity.bat.takeoff player @a[distance=..100] ^ ^ ^ 2 1.7
+execute if score $speed spellcrafter.tmp matches 13.. run playsound minecraft:entity.bat.takeoff player @a[distance=..100] ^ ^ ^ 2 1.7

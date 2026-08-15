@@ -10,7 +10,12 @@ execute store result score $spell.follow spellcrafter.tmp run tp @s ~ ~-0.75 ~ f
 execute if score $spell.follow spellcrafter.tmp matches 0 run return 0
 
 
+# Avoid hitting the caster
+execute if entity @n[distance=..4,sort=nearest,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,tag=!spellcrafter.spectator] at @s run tp @s ~ ~ ~ ~90 ~
+
+
 # Negative speed
+execute if score @s spellcrafter.speed matches ..-1 at @s run tp @s ~ ~ ~ ~180 ~
 execute if score @s spellcrafter.speed matches ..-1 at @s run tp @s ~ ~ ~ facing ^ ^ ^-1
 
 
@@ -24,4 +29,5 @@ tp @s ~ ~ ~ ~ ~
 
 
 # Update rotation
+scoreboard players set $turn_speed spellcrafter.tmp 15
 function spellcrafter:spells/homing/update_rot

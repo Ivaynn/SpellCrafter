@@ -3,7 +3,7 @@
 
 # Get rotation while facing the caster
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
-execute store result score $spell.orbit spellcrafter.tmp positioned ~ ~-0.75 ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,tag=!spellcrafter.spectator] feet rotated ~90 ~ run tp @s ~ ~ ~ ~ ~
+execute store result score $spell.orbit spellcrafter.tmp positioned ~ ~ ~ facing entity @e[limit=1,distance=0.1..30,sort=nearest,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,tag=!spellcrafter.spectator] eyes rotated ~90 ~ run tp @s ~ ~ ~ ~ ~
 
 
 # If no target was found, stop here
@@ -11,6 +11,7 @@ execute if score $spell.orbit spellcrafter.tmp matches 0 run return 0
 
 
 # Negative speed
+execute if score @s spellcrafter.speed matches ..-1 at @s run tp @s ~ ~ ~ ~180 ~
 execute if score @s spellcrafter.speed matches ..-1 at @s run tp @s ~ ~ ~ facing ^ ^ ^-1
 
 
@@ -24,4 +25,6 @@ tp @s ~ ~ ~ ~ ~
 
 
 # Update rotation
+scoreboard players operation $turn_speed spellcrafter.tmp = @s spellcrafter.speed
+scoreboard players operation $turn_speed spellcrafter.tmp *= #5 spellcrafter.math
 function spellcrafter:spells/homing/update_rot

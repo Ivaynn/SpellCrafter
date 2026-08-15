@@ -1435,7 +1435,10 @@
     "description": [
       "Makes the next projectile",
       "orbit around you"
-    ]
+    ],
+    "stats": {
+      "range_mod": 20
+    }
   },
   {
     "id": 88,

@@ -94,7 +94,7 @@ execute if score $spell spellcrafter.tmp matches 68 run return run tag @s add sp
 execute if score $spell spellcrafter.tmp matches 76 run return run tag @s add spellcrafter.spell.follow
 execute if score $spell spellcrafter.tmp matches 77 run return run tag @s add spellcrafter.spell.safe_shot
 execute if score $spell spellcrafter.tmp matches 81 run return run tag @s add spellcrafter.spell.bouncy
-execute if score $spell spellcrafter.tmp matches 87 run return run tag @s add spellcrafter.spell.orbit
+execute if score $spell spellcrafter.tmp matches 87 run return run function spellcrafter:spells/orbit/add
 execute if score $spell spellcrafter.tmp matches 103 run return run tag @s add spellcrafter.spell.aim_up
 execute if score $spell spellcrafter.tmp matches 104 run return run tag @s add spellcrafter.spell.aim_down
 execute if score $spell spellcrafter.tmp matches 108 run return run tag @s add spellcrafter.spell.casters_call
