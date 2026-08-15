@@ -26,7 +26,6 @@ execute as @s[tag=spellcrafter.spell.return] run function spellcrafter:spells/re
 execute as @s[tag=spellcrafter.spell.boomerang] run function spellcrafter:spells/boomerang/tick
 execute as @s[tag=spellcrafter.spell.accelerate] run function spellcrafter:spells/accelerate/tick
 execute as @s[tag=spellcrafter.spell.mirror_shot] run function spellcrafter:spells/mirror_shot/tick
-execute as @s[tag=spellcrafter.spell.damaging_area] run function spellcrafter:spells/damaging_area/tick
 scoreboard players set @s[tag=spellcrafter.spell.harmless] spellcrafter.damage 0
 
 

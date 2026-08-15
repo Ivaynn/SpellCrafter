@@ -24,6 +24,8 @@ execute as @s[tag=spellcrafter.spell.wither_blast] run return run function spell
 execute as @s[tag=spellcrafter.spell.big_drill] run return run function spellcrafter:spells/big_drill/trail
 execute as @s[tag=spellcrafter.spell.lightning_bolt] run return run function spellcrafter:spells/lightning_bolt/trail
 
+execute as @s[tag=spellcrafter.spell.damaging_area] run function spellcrafter:spells/damaging_area/trail
+
 
 # Hidden skips all functions that are just particles
 execute as @s[tag=spellcrafter.spell.hidden] run return 0
