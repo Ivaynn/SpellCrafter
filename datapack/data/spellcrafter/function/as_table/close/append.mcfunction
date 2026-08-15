@@ -56,7 +56,8 @@ execute if score $spell spellcrafter.tmp matches 6 run scoreboard players operat
 execute if score $spell spellcrafter.tmp matches 6 run scoreboard players operation $clone_multiplier spellcrafter.tmp *= #2 spellcrafter.math 
 
 # Mana: apply cost reductions
-execute if score $spell spellcrafter.tmp matches 52 run function spellcrafter:spells/shuffle/mana_cost
+execute if score $spell spellcrafter.tmp matches 52 run scoreboard players set $spell.shuffle spellcrafter.tmp 1
+execute if score $spell.shuffle spellcrafter.tmp matches 1 if score $add spellcrafter.tmp matches 1.. run scoreboard players operation $add spellcrafter.tmp /= #2 spellcrafter.math
 
 # Mana: update
 scoreboard players operation $mana spellcrafter.tmp += $add spellcrafter.tmp

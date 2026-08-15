@@ -18,7 +18,8 @@
                 "minecraft:enchantment_glint_override": true,
                 "minecraft:consumable": {
                     "animation": "eat",
-                    "has_consume_particles": true
+                    "has_consume_particles": true,
+                    "consume_seconds": 1
                 },
                 "minecraft:food": {
                     "nutrition": 0,

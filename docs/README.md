@@ -1,6 +1,6 @@
 <!-- This file was generated automaticaly - do not edit. -->
 # SpellCrafter Spells
-All spells, grouped by type, 
+All spells, grouped by type, sorted alphabetically:
 - [Projectile](#projectile)
 - [Modifier](#modifier)
 - [Instant](#instant-1)
@@ -688,7 +688,7 @@ Spells that get cast instantly and cannot be modified. These can summon entities
 ---
 ### Counterspell
 <img src="../resources/assets/spellcrafter/textures/item/spell/counterspell.png" align="right" width="50"/>
-◆ 350 ⌚ 2.5 • Instant • Epic
+◆ 350 ⌚ 2.5 • Instant • Rare
 
 *Stops magic in a large radius*
 
@@ -944,7 +944,7 @@ Spells that affect the wand in unique ways and don't fit any of the other catego
 ---
 ### Haste
 <img src="../resources/assets/spellcrafter/textures/item/spell/haste.png" align="right" width="50"/>
-◆ 100 ⌚ -1.0 • Special • Epic
+◆ 50 ⌚ -1.0 • Special • Epic
 
 *Reduces the wand's cooldown*
 
@@ -972,7 +972,7 @@ Spells that affect the wand in unique ways and don't fit any of the other catego
 ---
 ### Refresh
 <img src="../resources/assets/spellcrafter/textures/item/spell/refresh.png" align="right" width="50"/>
-◆ -100 ⌚ 1.0 • Special • Epic
+◆ -100 ⌚ 0.5 • Special • Epic
 
 *Reduces the wand's mana cost*
 
@@ -1011,19 +1011,19 @@ Spells that affect the wand in unique ways and don't fit any of the other catego
 <img src="../resources/assets/spellcrafter/textures/item/spell/skip.png" align="right" width="50"/>
 ◆ 0 ⌚ 0.25 • Special • Epic
 
-*Skips the next spell and sets its mana cost to 0*
+*Skips the next spell, setting its cooldown and mana cost to 0*
 
 ---
 ### Steal
 <img src="../resources/assets/spellcrafter/textures/item/spell/steal.png" align="right" width="50"/>
-◆ 100 ⌚ 1.0 • Special • Epic
+◆ 100 ⌚ 1.0 • Special • Rare
 
 *Gives you the ownership of all projectiles in a large radius*
 
 ---
 ### Transfer
 <img src="../resources/assets/spellcrafter/textures/item/spell/transfer.png" align="right" width="50"/>
-◆ 100 ⌚ 1.0 • Special • Epic
+◆ 100 ⌚ 1.0 • Special • Rare
 
 *Transfers the ownership of all spells after this to a nearby caster, excluding you*
 
