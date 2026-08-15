@@ -2089,5 +2089,21 @@
       "Stops all enemy projectiles",
       "in a small radius"
     ]
+  },
+  {
+    "id": 128,
+    "name": "damaging_area",
+    "displayName": "Damaging Area",
+    "parent": "root_modifier",
+    "tier": 5,
+    "mana": 120,
+    "cooldown": "30",
+    "type": "modifier",
+    "wandModifier": false,
+    "description": [
+      "Gives the next projectile an",
+      "area that quickly damages",
+      "enemies"
+    ]
   }
 ]

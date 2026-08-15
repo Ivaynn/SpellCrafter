@@ -488,5 +488,9 @@
     "spellcrafter.spell.toxic_cloud.description.3": "in a small radius",
     "spellcrafter.spell.arcane_shield.name": "Arcane Shield",
     "spellcrafter.spell.arcane_shield.description.1": "Stops all enemy projectiles",
-    "spellcrafter.spell.arcane_shield.description.2": "in a small radius"
+    "spellcrafter.spell.arcane_shield.description.2": "in a small radius",
+    "spellcrafter.spell.damaging_area.name": "Damaging Area",
+    "spellcrafter.spell.damaging_area.description.1": "Gives the next projectile an",
+    "spellcrafter.spell.damaging_area.description.2": "area that quickly damages",
+    "spellcrafter.spell.damaging_area.description.3": "enemies"
 }
