@@ -1,17 +1,8 @@
-#> [tick] as projectile, as @s
+#> [tick] as projectile, at @s
 
-particle enchanted_hit ~0.5 ~ ~ 0 0.5 0.5 0 5
-particle enchanted_hit ~-0.5 ~ ~ 0 0.5 0.5 0 5
-particle enchanted_hit ~ ~0.5 ~ 0.5 0 0.5 0 5
-particle enchanted_hit ~ ~-0.5 ~ 0.5 0 0.5 0 5
-particle enchanted_hit ~ ~ ~0.5 0.5 0 0.5 0 5
-particle enchanted_hit ~ ~ ~0.5 0.5 0 0.5 0 5
-
-
-execute unless entity @e[dx=0,dy=0,dz=0,tag=!spellcrafter.untargetable] run return fail
+particle minecraft:enchanted_hit ~ ~ ~ 1.1 1.1 1.1 0.5 5 force @a
+particle minecraft:enchanted_hit ~ ~ ~ 1.1 1.1 1.1 0.5 20 normal @a
 
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
-scoreboard players set $damage spellcrafter.tmp 10
-scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
-
-execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,type=!#spellcrafter:untargetable] run function spellcrafter:damage/add
+scoreboard players set $damage spellcrafter.tmp 8
+execute positioned ~ ~-0.75 ~ as @e[distance=..3,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] unless score @s spellcrafter.damage matches 1.. run function spellcrafter:damage/add

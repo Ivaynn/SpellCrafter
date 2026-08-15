@@ -2104,6 +2104,10 @@
       "Gives the next projectile an",
       "area that quickly damages",
       "enemies"
-    ]
+    ],
+    "stats": {
+      "damage": 8,
+      "range_mod": -15
+    }
   }
 ]
