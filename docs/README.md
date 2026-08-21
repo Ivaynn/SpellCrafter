@@ -370,6 +370,16 @@ Spells that modify a projectile. These can be stacked and completely change how 
 *Makes the next projectile curve upwards*
 
 ---
+### Damaging Area
+<img src="../resources/assets/spellcrafter/textures/item/spell/damaging_area.png" align="right" width="50"/>
+◆ 120 ⌚ 1.5 • Modifier • Legendary
+
+*Gives the next projectile an area that quickly damages enemies*
+
+- **Damage**: 4 ❤
+- **Range**: -15 blocks
+
+---
 ### Empower
 <img src="../resources/assets/spellcrafter/textures/item/spell/empower.png" align="right" width="50"/>
 ◆ 80 ⌚ 0.2 • Modifier • Rare
@@ -474,6 +484,8 @@ Spells that modify a projectile. These can be stacked and completely change how 
 ◆ 20 ⌚ 0 • Modifier • Uncommon
 
 *Makes the next projectile orbit around you*
+
+- **Range**: +20 blocks
 
 ---
 ### Piercing
@@ -788,6 +800,13 @@ Spells that get cast instantly and cannot be modified. These can summon entities
 ◆ 15 ⌚ 0.5 • Instant • Common
 
 *Basic defensive magic*
+
+---
+### Moss Touch
+<img src="../resources/assets/spellcrafter/textures/item/spell/moss_touch.png" align="right" width="50"/>
+◆ 250 ⌚ 3.0 • Instant • Legendary
+
+*Spreads moss in a small radius, slowing targets*
 
 ---
 ### Overcharged Crystal
