@@ -1,7 +1,7 @@
 #> [tick] as projectile, at @s
 
-particle minecraft:enchanted_hit ~ ~ ~ 1.1 1.1 1.1 0.5 1 force @a
-particle minecraft:enchanted_hit ~ ~ ~ 1.1 1.1 1.1 0.5 5 normal @a
+particle minecraft:enchanted_hit ~ ~ ~ 1.1 1.1 1.1 0.5 1 force @a[distance=..100]
+particle minecraft:enchanted_hit ~ ~ ~ 1.1 1.1 1.1 0.5 5 normal @a[distance=..100]
 
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
 scoreboard players set $damage spellcrafter.tmp 8
