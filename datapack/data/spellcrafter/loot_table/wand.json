@@ -66,6 +66,16 @@
             ]
         },
         {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.wand.stick"
+                ],
+                "mode": "replace_all"
+            },
+            "conditions": []
+        },
+        {
             "function": "minecraft:set_custom_data",
             "tag": "{spellcrafter:{wand:{valid:1b, version:0, mana:0, cooldown:0, spells:[], slots:[], mod:0, cap:27, base_mana:0, base_cooldown:0, skin:0}}}"
         }

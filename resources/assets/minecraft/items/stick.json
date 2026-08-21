@@ -11,14 +11,14 @@
                 "when": "spellcrafter.wand.stick",
                 "model": {
                     "type": "minecraft:model",
-                    "model": "minecraft:item/stick"
+                    "model": "spellcrafter:item/wand/stick"
                 }
             },
             {
-                "when": "spellcrafter.wand.leaf",
+                "when": "spellcrafter.wand.classic",
                 "model": {
                     "type": "minecraft:model",
-                    "model": "spellcrafter:item/wand/leaf"
+                    "model": "spellcrafter:item/wand/classic"
                 }
             },
             {
@@ -68,6 +68,20 @@
                 "model": {
                     "type": "minecraft:model",
                     "model": "spellcrafter:item/wand/zeus"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.leaf",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/leaf"
+                }
+            },
+            {
+                "when": "spellcrafter.wand.moon",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/wand/moon"
                 }
             }
         ]

@@ -94,6 +94,7 @@ execute store result score $spell_cap spellcrafter.tmp run data get storage spel
 item modify entity @s weapon spellcrafter:wand/update
 item modify entity @s weapon spellcrafter:wand/lore/stats
 execute unless data entity @s SelectedItem.components.minecraft:custom_name run item modify entity @s weapon spellcrafter:wand/reset_name
+item modify entity @s weapon spellcrafter:wand/set_skin
 
 
 # Add spells to item lore
