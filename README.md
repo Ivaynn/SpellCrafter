@@ -264,14 +264,27 @@ Disables the collection advancements while enabled.
 
 <br>
 
-## Contributing
+## Contribute
 
-Found a bug? Have a suggestion? Join the [Discord](https://discord.gg/QAtc7ZgPxS) or create an [Issue](https://github.com/Ivaynn/SpellCrafter/issues) here!
+Found a bug? Have a suggestion? Join the [Discord](https://discord.gg/QAtc7ZgPxS), create an [issue](https://github.com/Ivaynn/SpellCrafter/issues) or a [pull request](https://github.com/Ivaynn/SpellCrafter/pulls).
 
-Want to help with translations? [en_us.json](resources/assets/spellcrafter/lang/en_us.json) has all the translation strings, please use it as a template (translations are made by contributors and may not be fully accurate or up to date).
+Want to help with translations? [en_us.json](resources/assets/spellcrafter/lang/en_us.json) contains all the translation strings, use it as a template. Translations are made by contributors and may not be fully accurate or up to date.
 
 
 
+### Special Thanks
+
+- Players at [legitimoose.com](https://legitimoose.com) for testing and giving feedback
+- [dobrosabokja](https://github.com/DobroSaBokja) for feedback and direct contributions on GitHub
+- [Reblok](https://www.planetminecraft.com/member/reblok/) for the new wand textures ([a5e3c3b](https://github.com/Ivaynn/SpellCrafter/commit/a5e3c3ba6414c5a3651c5668ac4647ba22e1f795))
+- **narcikitty** for the `pt_br` translations
+- **sus_dev** for the `pl_pl` translations
+
+
+<br>
+
+> [!NOTE]
+> Not affiliated with `legitimoose.com` - only using this server to host an arena game with SpellCrafter. To play, join and use `/world 453ef6d7-fb32-4bf4-bc27-e2fd7e238d23`
 
 
 
