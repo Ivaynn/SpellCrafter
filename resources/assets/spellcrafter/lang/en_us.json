@@ -492,5 +492,8 @@
     "spellcrafter.spell.damaging_area.name": "Damaging Area",
     "spellcrafter.spell.damaging_area.description.1": "Gives the next projectile an",
     "spellcrafter.spell.damaging_area.description.2": "area that quickly damages",
-    "spellcrafter.spell.damaging_area.description.3": "enemies"
+    "spellcrafter.spell.damaging_area.description.3": "enemies",
+    "spellcrafter.spell.moss_touch.name": "Moss Touch",
+    "spellcrafter.spell.moss_touch.description.1": "Spreads moss in a small",
+    "spellcrafter.spell.moss_touch.description.2": "radius, slowing targets"
 }

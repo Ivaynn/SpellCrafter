@@ -13,8 +13,8 @@ loot replace entity @s inventory.9 loot spellcrafter:spells/small_explosion
 loot replace entity @s inventory.10 loot spellcrafter:spells/explosion
 loot replace entity @s inventory.11 loot spellcrafter:spells/large_explosion
 loot replace entity @s inventory.12 loot spellcrafter:spells/anchor_explosion
-loot replace entity @s inventory.13 loot spellcrafter:spells/firework_rocket
-loot replace entity @s inventory.14 loot spellcrafter:spells/summon_fangs
+loot replace entity @s inventory.13 loot spellcrafter:spells/moss_touch
+item replace entity @s inventory.14 with minecraft:air
 loot replace entity @s inventory.15 loot spellcrafter:spells/wind_charge
 loot replace entity @s inventory.16 loot spellcrafter:spells/summon_arrow
 

@@ -126,3 +126,4 @@ execute if score $spell spellcrafter.tmp matches 125 run return run loot insert 
 execute if score $spell spellcrafter.tmp matches 126 run return run loot insert ~ ~ ~ loot spellcrafter:spells/toxic_cloud
 execute if score $spell spellcrafter.tmp matches 127 run return run loot insert ~ ~ ~ loot spellcrafter:spells/arcane_shield
 execute if score $spell spellcrafter.tmp matches 128 run return run loot insert ~ ~ ~ loot spellcrafter:spells/damaging_area
+execute if score $spell spellcrafter.tmp matches 129 run return run loot insert ~ ~ ~ loot spellcrafter:spells/moss_touch

@@ -628,7 +628,7 @@
     "id": 38,
     "name": "firework_rocket",
     "displayName": "Firework Rocket",
-    "parent": "anchor_explosion",
+    "parent": "arrow_rain",
     "tier": 3,
     "mana": 100,
     "cooldown": 10,
@@ -2112,5 +2112,20 @@
       "damage": 8,
       "range_mod": -15
     }
+  },
+  {
+    "id": 129,
+    "name": "moss_touch",
+    "displayName": "Moss Touch",
+    "parent": "anchor_explosion",
+    "tier": 5,
+    "mana": 250,
+    "cooldown": 60,
+    "type": "instant",
+    "wandModifier": false,
+    "description": [
+      "Spreads moss in a small",
+      "radius, slowing targets"
+    ]
   }
 ]

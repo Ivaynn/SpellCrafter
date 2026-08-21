@@ -44,6 +44,7 @@ execute if score $spell spellcrafter.tmp matches 124 run return run function spe
 execute if score $spell spellcrafter.tmp matches 125 run return run function spellcrafter:spells/ender_eye/cast
 execute if score $spell spellcrafter.tmp matches 126 run return run function spellcrafter:spells/toxic_cloud/cast
 execute if score $spell spellcrafter.tmp matches 127 run return run function spellcrafter:spells/arcane_shield/cast
+execute if score $spell spellcrafter.tmp matches 129 run return run function spellcrafter:spells/moss_touch/cast
 
 
 # Special
