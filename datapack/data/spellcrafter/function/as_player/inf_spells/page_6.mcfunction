@@ -14,7 +14,7 @@ loot replace entity @s inventory.10 loot spellcrafter:spells/healing_crystal
 loot replace entity @s inventory.11 loot spellcrafter:spells/chaotic_crystal
 loot replace entity @s inventory.12 loot spellcrafter:spells/firework_rocket
 loot replace entity @s inventory.13 loot spellcrafter:spells/summon_fangs
-item replace entity @s inventory.14 with minecraft:air
+loot replace entity @s inventory.14 loot spellcrafter:spells/mirror_image
 loot replace entity @s inventory.15 loot spellcrafter:spells/healing_circle
 loot replace entity @s inventory.16 loot spellcrafter:spells/toxic_cloud
 

@@ -9,6 +9,7 @@
         "minecraft:wind_charge",
         "minecraft:arrow",
         "minecraft:item_display",
-        "minecraft:block_display"
+        "minecraft:block_display",
+        "minecraft:mannequin"
     ]
 }

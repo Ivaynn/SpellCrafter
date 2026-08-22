@@ -18,6 +18,7 @@ execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.ender_eye] at @
 execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.toxic_cloud] at @s run function spellcrafter:spells/toxic_cloud/tick
 execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.arcane_shield] at @s run function spellcrafter:spells/arcane_shield/tick
 execute as @s[type=minecraft:item_display,tag=spellcrafter.spell.magic_barrier] at @s run function spellcrafter:spells/magic_barrier/tick
+execute as @s[type=minecraft:mannequin,tag=spellcrafter.spell.mirror_image] at @s run function spellcrafter:spells/mirror_image/tick
 
 
 # Despawn timer

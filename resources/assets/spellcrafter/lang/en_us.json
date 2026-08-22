@@ -495,5 +495,7 @@
     "spellcrafter.spell.damaging_area.description.3": "enemies",
     "spellcrafter.spell.moss_touch.name": "Moss Touch",
     "spellcrafter.spell.moss_touch.description.1": "Spreads moss in a small",
-    "spellcrafter.spell.moss_touch.description.2": "radius, slowing targets"
+    "spellcrafter.spell.moss_touch.description.2": "radius, slowing targets",
+    "spellcrafter.spell.mirror_image.name": "Mirror Image",
+    "spellcrafter.spell.mirror_image.description.1": "Creates a copy of yourself"
 }

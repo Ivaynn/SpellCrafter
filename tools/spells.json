@@ -2127,5 +2127,19 @@
       "Spreads moss in a small",
       "radius, slowing targets"
     ]
+  },
+  {
+    "id": 130,
+    "name": "mirror_image",
+    "displayName": "Mirror Image",
+    "parent": "ender_eye",
+    "tier": 5,
+    "mana": 200,
+    "cooldown": 100,
+    "type": "instant",
+    "wandModifier": false,
+    "description": [
+      "Creates a copy of yourself"
+    ]
   }
 ]
