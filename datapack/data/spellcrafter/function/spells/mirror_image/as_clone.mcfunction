@@ -31,7 +31,8 @@ item replace entity @s armor.head from entity @n[distance=..0.001,type=#spellcra
 item replace entity @s armor.chest from entity @n[distance=..0.001,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] armor.chest
 item replace entity @s armor.legs from entity @n[distance=..0.001,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] armor.legs
 item replace entity @s armor.feet from entity @n[distance=..0.001,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] armor.feet
-item replace entity @s weapon from entity @n[distance=..0.001,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] weapon
+item replace entity @s weapon.mainhand from entity @n[distance=..0.001,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] weapon.mainhand
+item replace entity @s weapon.offhand from entity @n[distance=..0.001,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] weapon.offhand
 
 
 # Get caster's id

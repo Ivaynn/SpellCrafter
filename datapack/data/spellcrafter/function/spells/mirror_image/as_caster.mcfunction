@@ -9,7 +9,7 @@ execute as @s[type=!minecraft:player] run return fail
 
 
 # Delete previous mirror
-execute as @e[distance=..100,predicate=spellcrafter:match_id,tag=spellcrafter.summon,tag=spellcrafter.spell.mirror_image] run function spellcrafter:as_summon/remove
+execute as @e[distance=..100,type=minecraft:mannequin,predicate=spellcrafter:match_id,tag=spellcrafter.summon,tag=spellcrafter.spell.mirror_image] run function spellcrafter:as_summon/remove
 
 
 # Summon
