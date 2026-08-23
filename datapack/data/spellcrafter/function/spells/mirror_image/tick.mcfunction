@@ -11,7 +11,7 @@ execute if score $caster.hat spellcrafter.tmp matches 8 run effect give @s minec
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
 
 scoreboard players set $caster.found spellcrafter.tmp 0
-execute as @n[distance=..15,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,tag=!spellcrafter.spectator] run function spellcrafter:spells/mirror_image/tick_as_caster
+execute as @n[distance=..30,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id,tag=!spellcrafter.spectator] run function spellcrafter:spells/mirror_image/tick_as_caster
 execute if score $caster.found spellcrafter.tmp matches 0 run return 0
 
 
