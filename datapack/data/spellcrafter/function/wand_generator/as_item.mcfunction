@@ -125,5 +125,10 @@ item modify entity @s contents spellcrafter:wand/lore/wand_mod_add
 
 
 # Wand skin
-execute store result storage spellcrafter:tmp wand.skin int 1 run random value 0..8
+execute store result score $skin_id spellcrafter.tmp run random value 0..10
+execute if score $skin_id spellcrafter.tmp matches 1 run scoreboard players set $skin_id spellcrafter.tmp 0
+execute if score $skin_id spellcrafter.tmp matches 4 run scoreboard players set $skin_id spellcrafter.tmp 0
+execute if score $skin_id spellcrafter.tmp matches 8 run scoreboard players set $skin_id spellcrafter.tmp 0
+
+execute store result storage spellcrafter:tmp wand.skin int 1 run scoreboard players get $skin_id spellcrafter.tmp
 item modify entity @s contents spellcrafter:wand/set_skin
