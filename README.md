@@ -274,7 +274,8 @@ Want to help with translations? [en_us.json](resources/assets/spellcrafter/lang/
 
 ### Special Thanks
 
-- Players at [legitimoose.com](https://legitimoose.com) for testing and giving feedback
+- **Menaicimus** and **LaBaguettee** for testing and feedback during the early prototyping phase
+- Players at [legitimoose.com](https://legitimoose.com) for playtesting, feedback and suggestions
 - [dobrosabokja](https://github.com/DobroSaBokja) for feedback and direct contributions on GitHub
 - [Reblok](https://www.planetminecraft.com/member/reblok/) for the new wand textures ([a5e3c3b](https://github.com/Ivaynn/SpellCrafter/commit/a5e3c3ba6414c5a3651c5668ac4647ba22e1f795))
 - **narcikitty** for the `pt_br` translations
