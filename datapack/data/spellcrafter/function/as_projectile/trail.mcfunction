@@ -17,14 +17,14 @@ execute as @s[tag=!spellcrafter.spell.anchored,tag=spellcrafter.spell.wave] run 
 
 
 # Special cases (does more than particles)
+execute as @s[tag=spellcrafter.spell.damaging_area] run function spellcrafter:spells/damaging_area/trail
+
 execute as @s[tag=spellcrafter.spell.revealing_bolt] run return run function spellcrafter:spells/revealing_bolt/trail
 execute as @s[tag=spellcrafter.spell.freezing_bolt] run return run function spellcrafter:spells/freezing_bolt/trail
 execute as @s[tag=spellcrafter.spell.drill] run return run function spellcrafter:spells/drill/trail
 execute as @s[tag=spellcrafter.spell.wither_blast] run return run function spellcrafter:spells/wither_blast/trail
 execute as @s[tag=spellcrafter.spell.big_drill] run return run function spellcrafter:spells/big_drill/trail
 execute as @s[tag=spellcrafter.spell.lightning_bolt] run return run function spellcrafter:spells/lightning_bolt/trail
-
-execute as @s[tag=spellcrafter.spell.damaging_area] run function spellcrafter:spells/damaging_area/trail
 
 
 # Hidden skips all functions that are just particles
