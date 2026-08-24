@@ -13,5 +13,5 @@ execute as @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicat
 
 
 # Effects
-particle minecraft:reverse_portal ~ ~ ~ 0.3 0.3 0.3 0.5 50 force @a[distance=..100]
+particle minecraft:reverse_portal ~ ~ ~ 0.3 0.3 0.3 0.5 25 force @a[distance=..100]
 playsound minecraft:entity.player.teleport player @a[distance=..100] ~ ~ ~ 1 1

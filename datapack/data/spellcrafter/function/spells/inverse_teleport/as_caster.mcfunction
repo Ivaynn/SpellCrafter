@@ -2,7 +2,7 @@
 
 
 # Effects at the caster pos
-execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.3 0.3 0.3 0.5 50 force @a[distance=..100]
+execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.3 0.3 0.3 0.5 20 force @a[distance=..100]
 execute at @s run playsound minecraft:entity.player.teleport player @a[distance=..100] ~ ~ ~ 1 1
 
 
@@ -11,5 +11,5 @@ tp @e[distance=..0.001,limit=1,type=!#spellcrafter:untargetable,tag=!spellcrafte
 
 
 # Effects at the target pos
-particle minecraft:reverse_portal ~ ~1 ~ 0.3 0.3 0.3 0.5 50 force @a[distance=..100]
+particle minecraft:reverse_portal ~ ~1 ~ 0.3 0.3 0.3 0.5 20 force @a[distance=..100]
 playsound minecraft:entity.player.teleport player @a[distance=..100] ~ ~ ~ 1 1
