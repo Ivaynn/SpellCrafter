@@ -5,3 +5,4 @@ tellraw @s ["        ",{text:"Click to start...",italic:true,color:gray,click_ev
 
 
 
+function spellcrafter:as_player/trigger/page/welcome
