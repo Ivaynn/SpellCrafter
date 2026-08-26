@@ -1,6 +1,10 @@
 #> as player, at barrel (player id matches table id)
 
 
+# Check if player is holding book
+execute if predicate spellcrafter:holding_book run return run function spellcrafter:as_table/open/book/as_player
+
+
 # Check if player is holding wand
 execute unless predicate spellcrafter:holding_wand run return 0
 

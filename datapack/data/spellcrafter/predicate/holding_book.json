@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": [
+                    "minecraft:written_book",
+                    "minecraft:writable_book"
+                ],
+                "predicates": {
+                    "custom_data": "{spellcrafter:{book:{valid:1b}}}"
+                }
+            }
+        }
+    }
+}

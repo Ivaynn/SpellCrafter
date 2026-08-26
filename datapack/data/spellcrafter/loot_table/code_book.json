@@ -1,0 +1,48 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:writable_book"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_name": {
+                    "translate": "spellcrafter.item.code_book.name",
+                    "fallback": "Import Wand",
+                    "color": "#965ed6"
+                },
+                "minecraft:lore": [
+                    {
+                        "translate": "spellcrafter.item.code_book.description.1",
+                        "fallback": "1. Open this book",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "spellcrafter.item.code_book.description.2",
+                        "fallback": "2. Paste your wand code in the first page",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "spellcrafter.item.code_book.description.3",
+                        "fallback": "3. Open a Wand Editor while holding the book",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                "custom_data": "{spellcrafter:{book:{valid:1b}}}"
+            }
+        }
+    ]
+}

@@ -10,7 +10,7 @@ execute unless score $page_changed spellcrafter.tmp matches 1 unless items entit
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.6 minecraft:air if items entity @s inventory.6 * run item replace entity @s player.cursor from entity @s inventory.6
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.7 minecraft:air if items entity @s inventory.7 * run item replace entity @s player.cursor from entity @s inventory.7
 
-execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.9 minecraft:cookie if items entity @s inventory.9 * run item replace entity @s player.cursor from entity @s inventory.9
+execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.9 minecraft:writable_book if items entity @s inventory.9 * run item replace entity @s player.cursor from entity @s inventory.9
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.10 minecraft:air if items entity @s inventory.10 * run item replace entity @s player.cursor from entity @s inventory.10
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.11 minecraft:air if items entity @s inventory.11 * run item replace entity @s player.cursor from entity @s inventory.11
 execute unless score $page_changed spellcrafter.tmp matches 1 unless items entity @s inventory.12 minecraft:knowledge_book if items entity @s inventory.12 * run item replace entity @s player.cursor from entity @s inventory.12
@@ -48,7 +48,7 @@ item replace entity @s inventory.5 with minecraft:knowledge_book[minecraft:item_
 item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
 
-loot replace entity @s inventory.9 loot spellcrafter:cookie
+loot replace entity @s inventory.9 loot spellcrafter:code_book
 item modify entity @s inventory.9 spellcrafter:set_count_16
 item replace entity @s inventory.10 with minecraft:air
 item replace entity @s inventory.11 with minecraft:air
