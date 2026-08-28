@@ -526,7 +526,7 @@
     ],
     "stats": {
       "damage": 2,
-      "range": 5,
+      "range": 10,
       "speed": 1
     }
   },

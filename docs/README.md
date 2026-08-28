@@ -20,7 +20,7 @@ Spells that shoot a projectile. They usually travel in a straight line and deal 
 *Devours nearby projectiles, absorbing their power*
 
 - **Damage**: 1 ❤
-- **Range**: 5 blocks
+- **Range**: 10 blocks
 - **Speed**: 1 blocks/s
 
 ---
@@ -800,6 +800,13 @@ Spells that get cast instantly and cannot be modified. These can summon entities
 ◆ 15 ⌚ 0.5 • Instant • Common
 
 *Basic defensive magic*
+
+---
+### Mirror Image
+<img src="../resources/assets/spellcrafter/textures/item/spell/mirror_image.png" align="right" width="50"/>
+◆ 200 ⌚ 5.0 • Instant • Legendary
+
+*Creates a copy of yourself*
 
 ---
 ### Moss Touch
