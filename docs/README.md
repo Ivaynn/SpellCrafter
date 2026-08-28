@@ -441,7 +441,7 @@ Spells that modify a projectile. These can be stacked and completely change how 
 <img src="../resources/assets/spellcrafter/textures/item/spell/hidden.png" align="right" width="50"/>
 ◆ 30 ⌚ 0 • Modifier • Legendary
 
-*Conceals the next projectile's trail, but reduces its damage*
+*Conceals the next projectile's trail, but cuts its damage in half*
 
 ---
 ### Homing
@@ -576,7 +576,7 @@ Spells that modify a projectile. These can be stacked and completely change how 
 <img src="../resources/assets/spellcrafter/textures/item/spell/safe_shot.png" align="right" width="50"/>
 ◆ 25 ⌚ 0 • Modifier • Uncommon
 
-*Prevents the next projectile from hitting you, but reduces its damage*
+*Prevents the next projectile from hitting you, but cuts its damage in half*
 
 ---
 ### Scaling

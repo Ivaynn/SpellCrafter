@@ -685,7 +685,7 @@
     "wandModifier": true,
     "description": [
       "Conceals the next projectile's",
-      "trail, but reduces its damage"
+      "trail, but cuts its damage in half"
     ]
   },
   {
@@ -1265,8 +1265,8 @@
     "wandModifier": true,
     "description": [
       "Prevents the next projectile",
-      "from hitting you, but reduces",
-      "its damage"
+      "from hitting you, but cuts its",
+      "damage in half"
     ]
   },
   {
