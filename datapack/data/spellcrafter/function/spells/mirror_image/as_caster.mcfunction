@@ -1,7 +1,7 @@
 #> as caster, at projectile, on summon
 
 
-effect give @s[distance=..7.5] minecraft:invisibility 3 0 true
+effect give @s[distance=..7.5] minecraft:invisibility 1 0 true
 
 
 # Non-player casters are not supported

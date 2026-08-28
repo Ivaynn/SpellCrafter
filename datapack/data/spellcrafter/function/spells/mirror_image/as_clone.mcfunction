@@ -8,7 +8,7 @@ tag @s add spellcrafter.spell.mirror_image
 scoreboard players set @s spellcrafter.cooldown 0
 scoreboard players set @s spellcrafter.age 300
 
-effect give @s minecraft:invisibility 3 0 true
+effect give @s minecraft:invisibility 1 0 true
 effect give @s minecraft:resistance infinite 100 true
 
 
