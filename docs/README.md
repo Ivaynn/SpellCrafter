@@ -841,7 +841,7 @@ Spells that get cast instantly and cannot be modified. These can summon entities
 ---
 ### Smoke Bomb
 <img src="../resources/assets/spellcrafter/textures/item/spell/smoke_bomb.png" align="right" width="50"/>
-◆ 40 ⌚ 2.3 • Instant • Rare
+◆ 40 ⌚ 5.0 • Instant • Rare
 
 *Creates a smoke bomb that turns targets invisible for a brief moment*
 
