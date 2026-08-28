@@ -90,6 +90,34 @@
                     "type": "minecraft:model",
                     "model": "spellcrafter:item/gui/empty_wand"
                 }
+            },
+            {
+                "when": "spellcrafter.gui.spell_projectile",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/spell_projectile"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.spell_modifier",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/spell_modifier"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.spell_instant",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/spell_instant"
+                }
+            },
+            {
+                "when": "spellcrafter.gui.spell_special",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "spellcrafter:item/gui/spell_special"
+                }
             }
         ]
     }
