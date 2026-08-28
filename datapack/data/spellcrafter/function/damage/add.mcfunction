@@ -9,7 +9,7 @@ execute as @s[tag=spellcrafter.untargetable] run return 0
 
 # Check if this entity is the caster
 execute unless score damage_caster spellcrafter.options matches 1 if score @s spellcrafter.id = $id spellcrafter.tmp run return 0
-execute if score $spell.safe_shot spellcrafter.tmp matches 1 if score @s spellcrafter.id = $id spellcrafter.tmp run return 0
+# execute if score $spell.safe_shot spellcrafter.tmp matches 1 if score @s spellcrafter.id = $id spellcrafter.tmp run return 0
 
 
 # Check if damage value is valid

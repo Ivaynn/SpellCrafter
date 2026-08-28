@@ -8,12 +8,12 @@ scoreboard players operation $damage spellcrafter.tmp = @s spellcrafter.damage
 scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
 
 scoreboard players set $success spellcrafter.tmp 0
-execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable,predicate=!spellcrafter:match_id] store result score $success spellcrafter.tmp run function spellcrafter:damage/add
+execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable,predicate=!spellcrafter:match_id] store result score $success spellcrafter.tmp run function spellcrafter:damage/from_projectile
 
 
 # Damage caster
 execute unless score $success spellcrafter.tmp matches 1.. run return 0
-execute as @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] run function spellcrafter:damage/add
+execute as @e[limit=1,type=#spellcrafter:caster,tag=spellcrafter.caster,predicate=spellcrafter:match_id] run function spellcrafter:damage/from_projectile
 
 
 # Effects

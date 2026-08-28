@@ -11,10 +11,10 @@ execute at @s if block ~ ~0.5 ~ minecraft:water run scoreboard players set $in_w
 
 
 # Target not in water: use base damage and range
-execute if score $in_water spellcrafter.tmp matches 0 as @s[distance=..1.5] run function spellcrafter:damage/add
+execute if score $in_water spellcrafter.tmp matches 0 as @s[distance=..1.5] run function spellcrafter:damage/from_projectile
 execute if score $in_water spellcrafter.tmp matches 0 run return 1
 
 
 # Target in water: double damage and range
 scoreboard players operation $damage spellcrafter.tmp *= #2 spellcrafter.math
-function spellcrafter:damage/add
+function spellcrafter:damage/from_projectile

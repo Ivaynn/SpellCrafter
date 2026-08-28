@@ -9,4 +9,4 @@ execute positioned ~ ~-0.75 ~ as @e[distance=..2,type=!#minecraft:undead,type=!#
 
 # Hurt undead targets
 scoreboard players set $damage spellcrafter.tmp 4
-execute positioned ~ ~-0.75 ~ as @e[distance=..2,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] unless score @s spellcrafter.damage matches 1.. run function spellcrafter:damage/add
+execute positioned ~ ~-0.75 ~ as @e[distance=..2,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] unless score @s spellcrafter.damage matches 1.. run function spellcrafter:damage/from_projectile

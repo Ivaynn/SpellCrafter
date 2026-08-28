@@ -12,4 +12,4 @@ execute at @s if block ~ ~0.5 ~ minecraft:water run scoreboard players set $in_w
 
 # Target in water: double damage
 execute if score $in_water spellcrafter.tmp matches 1 run scoreboard players operation $damage spellcrafter.tmp *= #2 spellcrafter.math
-function spellcrafter:damage/add
+function spellcrafter:damage/from_projectile
