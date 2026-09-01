@@ -1,0 +1,42 @@
+name: Deploy Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/assets/{spell,wand,gui}
+          cp -r web/* _site/
+          cp resources/assets/spellcrafter/textures/item/wand/classic.png _site/favicon.png
+          cp resources/assets/spellcrafter/textures/item/spell/*.png _site/assets/spell/
+          cp resources/assets/spellcrafter/textures/item/wand/*.png _site/assets/wand/
+          cp resources/assets/spellcrafter/textures/item/gui/*.png _site/assets/gui/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
