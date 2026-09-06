@@ -5,3 +5,8 @@
 tools/**
 !tools/**.py
 !tools/spells.json
+
+web/**
+!web/**/*.js
+!web/**/*.html
+!web/**/*.css
