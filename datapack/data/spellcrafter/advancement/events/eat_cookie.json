@@ -19,6 +19,6 @@
         }
     },
     "rewards": {
-        "function": "spellcrafter:as_player/events/eat_cookie/trigger"
+        "function": "spellcrafter:as_player/events/eat_cookie"
     }
 }

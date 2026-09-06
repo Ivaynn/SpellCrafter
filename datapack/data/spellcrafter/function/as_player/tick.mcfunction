@@ -21,6 +21,10 @@ scoreboard players set @s SpellCrafter 0
 scoreboard players enable @s SpellCrafter
 
 
+# Open table
+execute as @s[tag=spellcrafter.player.open_table] run function spellcrafter:as_table/open/trigger/init
+
+
 # Caster
 execute as @s[tag=spellcrafter.caster,gamemode=!spectator] run function spellcrafter:as_caster/player/tick
 

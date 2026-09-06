@@ -17,6 +17,6 @@
         }
     },
     "rewards": {
-        "function": "spellcrafter:as_player/events/open_barrel/trigger"
+        "function": "spellcrafter:as_player/events/open_barrel"
     }
 }

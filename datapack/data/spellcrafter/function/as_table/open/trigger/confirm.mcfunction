@@ -7,4 +7,4 @@ execute if data block ~ ~ ~ lock run return 0
 
 # Success
 function spellcrafter:as_table/open/init
-return 1
+scoreboard players set $iter spellcrafter.tmp -1

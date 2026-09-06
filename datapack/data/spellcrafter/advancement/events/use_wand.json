@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "spellcrafter:as_player/events/use_wand/trigger"
+        "function": "spellcrafter:as_player/events/use_wand"
     }
 }
