@@ -270,11 +270,13 @@ Found a bug? Have a suggestion? Join the [Discord](https://discord.gg/QAtc7ZgPxS
 
 Want to help with translations? [en_us.json](resources/assets/spellcrafter/lang/en_us.json) contains all the translation strings, use it as a template. Translations are made by contributors and may not be fully accurate or up to date.
 
+When contributing with assets (textures or models), only submit work that you made yourself or that you have the rights to share. By contributing, you agree that they can be used, modified and redistributed under this project's [MIT license](./LICENSE).
+
 
 
 ### Special Thanks
 
-- **Menaicimus** and **LaBaguettee** for testing and feedback during the early prototyping phase
+- **Menaicimus** and **LaBaguettee** for testing and feedback during the early prototyping stage
 - Players at [legitimoose.com](https://legitimoose.com) for playtesting, feedback and suggestions
 - [dobrosabokja](https://github.com/DobroSaBokja) for feedback and direct contributions on GitHub
 - [Reblok](https://www.planetminecraft.com/member/reblok/) for the new wand textures ([a5e3c3b](https://github.com/Ivaynn/SpellCrafter/commit/a5e3c3ba6414c5a3651c5668ac4647ba22e1f795))
