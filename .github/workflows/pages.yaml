@@ -2,6 +2,10 @@ name: Deploy Pages
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - tools/spells.json
 
 permissions:
   contents: read
@@ -24,8 +28,6 @@ jobs:
           cp -r web/* _site/
           cp resources/assets/spellcrafter/textures/item/wand/classic.png _site/favicon.png
           cp resources/assets/spellcrafter/textures/item/spell/*.png _site/assets/spell/
-          cp resources/assets/spellcrafter/textures/item/wand/*.png _site/assets/wand/
-          cp resources/assets/spellcrafter/textures/item/gui/*.png _site/assets/gui/
           cp tools/spells.json _site/assets/spells.json
 
       - uses: actions/upload-pages-artifact@v5
