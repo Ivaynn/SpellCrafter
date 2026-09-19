@@ -2100,7 +2100,7 @@
     "parent": "root_modifier",
     "tier": 5,
     "mana": 120,
-    "cooldown": "30",
+    "cooldown": 30,
     "type": "modifier",
     "wandModifier": false,
     "description": [
