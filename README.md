@@ -118,7 +118,7 @@ Spells that get cast instantly and cannot be modified. These can summon entities
 Spells that affect the wand in unique ways and don't fit any of the other categories. These can modify the wand properties, change spell order, copy other spells, ...
 
 
-A complete list of spells is available [here](./docs/README.md).
+A complete list of spells is available at https://ivaynn.github.io/SpellCrafter.
 
 
 
