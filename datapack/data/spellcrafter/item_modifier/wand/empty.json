@@ -1,12 +1,15 @@
-[
-    {
-        "function": "minecraft:set_components",
-        "components": {
-            "!minecraft:attribute_modifiers": {}
+{
+    "type": "minecraft:sequence",
+    "functions": [
+        {
+            "type": "minecraft:set_components",
+            "components": {
+                "!minecraft:attribute_modifiers": {}
+            }
+        },
+        {
+            "type": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{wand:{valid:1b, spells:[], slots:[]}}}"
         }
-    },
-    {
-        "function": "minecraft:set_custom_data",
-        "tag": "{spellcrafter:{wand:{valid:1b, spells:[], slots:[]}}}"
-    }
-]
+    ]
+}

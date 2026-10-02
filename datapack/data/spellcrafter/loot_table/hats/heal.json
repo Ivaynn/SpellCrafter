@@ -10,9 +10,9 @@
             ]
         }
     ],
-    "functions": [
+    "modifier": [
         {
-            "function": "minecraft:set_components",
+            "type": "minecraft:set_components",
             "components": {
                 "minecraft:rarity": "rare",
                 "dyed_color": 14776811,
@@ -30,11 +30,11 @@
             }
         },
         {
-            "function": "minecraft:set_custom_data",
+            "type": "minecraft:set_custom_data",
             "tag": "{spellcrafter:{hat:{valid:1b,type:7}}}"
         },
         {
-            "function": "minecraft:set_name",
+            "type": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": {
@@ -43,7 +43,7 @@
             }
         },
         {
-            "function": "minecraft:set_lore",
+            "type": "minecraft:set_lore",
             "entity": "this",
             "mode": "replace_all",
             "lore": [
@@ -80,7 +80,7 @@
             ]
         },
         {
-            "function": "minecraft:set_custom_model_data",
+            "type": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
                     "spellcrafter.hat.heal"

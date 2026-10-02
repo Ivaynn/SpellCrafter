@@ -1,16 +1,14 @@
-[
-    {
-        "function": "minecraft:copy_custom_data",
-        "source": {
-            "type": "minecraft:storage",
-            "source": "spellcrafter:tmp"
-        },
-        "ops": [
-            {
-                "source": "wand",
-                "target": "spellcrafter.wand",
-                "op": "replace"
-            }
-        ]
-    }
-]
+{
+    "type": "minecraft:copy_custom_data",
+    "source": {
+        "type": "minecraft:storage",
+        "source": "spellcrafter:tmp"
+    },
+    "ops": [
+        {
+            "source": "wand",
+            "target": "spellcrafter.wand",
+            "op": "replace"
+        }
+    ]
+}

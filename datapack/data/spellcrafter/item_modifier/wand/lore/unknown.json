@@ -1,34 +1,32 @@
-[
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            {
-                "text": "◆ ?",
-                "color": "aqua",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "   ⌚ ?",
-                        "color": "gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "   ❒ ?/?",
-                        "color": "dark_gray",
-                        "italic": false
-                    }
-                ]
-            },
-            {
-                "text": ""
-            },
-            {
-                "text": " Unknown",
-                "color": "gray",
-                "italic": true
-            }
-        ]
-    }
-]
+{
+    "type": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "replace_all",
+    "lore": [
+        {
+            "text": "◆ ?",
+            "color": "aqua",
+            "italic": false,
+            "extra": [
+                {
+                    "text": "   ⌚ ?",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "   ❒ ?/?",
+                    "color": "dark_gray",
+                    "italic": false
+                }
+            ]
+        },
+        {
+            "text": ""
+        },
+        {
+            "text": " Unknown",
+            "color": "gray",
+            "italic": true
+        }
+    ]
+}

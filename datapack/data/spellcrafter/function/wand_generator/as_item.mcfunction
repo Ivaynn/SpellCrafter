@@ -94,7 +94,7 @@ scoreboard players operation $attribute_drain spellcrafter.tmp += $spell.quickst
 scoreboard players operation $attribute_drain spellcrafter.tmp *= #15 spellcrafter.math
 
 execute store result storage spellcrafter:tmp wand.drain int 1 run scoreboard players get $attribute_drain spellcrafter.tmp
-execute if score $attribute_drain spellcrafter.tmp matches 1.. run item modify entity @s contents spellcrafter:wand/set_attributes
+execute if score $attribute_drain spellcrafter.tmp matches 1.. run function spellcrafter:as_table/close/set_attributes
 
 
 # Save mana cost & cooldown to wand object

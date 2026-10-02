@@ -3,16 +3,10 @@
         "requirement": {
             "trigger": "minecraft:default_block_use",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "minecraft:location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": "minecraft:barrel"
-                            }
-                        }
-                    }
-                ]
+                "location": {
+                    "type": "minecraft:match_block",
+                    "blocks": "minecraft:barrel"
+                }
             }
         }
     },

@@ -42,20 +42,18 @@ ADVANCEMENT = {
         "requirement": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                                "spellcrafter.inf_page": {
-                                    "min": 1
-                                }
+                "player": {
+                    "type": "minecraft:inverted",
+                    "term": {
+                        "type": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "spellcrafter.inf_page": {
+                                "min": 1
                             }
                         }
                     }
-                ],
+                },
                 "items": [
                     {
                         "items": "minecraft:enchanted_book",
@@ -81,9 +79,9 @@ LOOT_TABLE = {
             ]
         }
     ],
-    "functions": [
+    "modifier": [
         {
-            "function": "minecraft:set_components",
+            "type": "minecraft:set_components",
             "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "epic",
@@ -91,17 +89,17 @@ LOOT_TABLE = {
             }
         },
         {
-            "function": "minecraft:set_custom_data",
+            "type": "minecraft:set_custom_data",
             "tag": "..."
         },
         {
-            "function": "minecraft:set_name",
+            "type": "minecraft:set_name",
             "entity": "this",
             "target": "item_name",
             "name": "..."
         },
         {
-            "function": "minecraft:set_lore",
+            "type": "minecraft:set_lore",
             "entity": "this",
             "mode": "replace_all",
             "lore": [
@@ -109,7 +107,7 @@ LOOT_TABLE = {
             ]
         },
         {
-            "function": "minecraft:set_custom_model_data",
+            "type": "minecraft:set_custom_model_data",
             "strings": {
                 "values": [
                     "..."
@@ -224,10 +222,10 @@ class Spell:
             lore.append({'translate':'spellcrafter.stat.heal.name','fallback':'Heal','color':'gray','italic':False,'extra':[{'text':': '},{'text':f'{round_stat(self.stats.heal/2)} ❤','color':'red'}]})
         lore.extend([{'text':''},{'text':f'{self.type.icon} ','color':f'{self.type.color}','italic':False,'extra':[{'translate':f'spellcrafter.type.{self.type}','fallback':str(self.type).capitalize()}]}])
 
-        d['functions'][1]['tag'] = f'{{spellcrafter:{{spell:{{valid:1b,id:{self.id},mana:{self.mana},cooldown:{self.cooldown},tier:{self.tier.value},lore:{{"text":"{self.type.icon} ","color":"{self.type.color}","italic":false,"extra":[{{"translate":"spellcrafter.spell.{self}.name","fallback":"{self.display_name.replace('\'','\\\'')}"}}]}}}}}}}}'
-        d['functions'][2]['name'] = {'translate': f'spellcrafter.spell.{self}.name', 'fallback': self.display_name, 'color': self.tier.color}
-        d['functions'][3]['lore'] = lore
-        d['functions'][4]['strings']['values'][0] = f'spellcrafter.spell.{self.name}'
+        d['modifier'][1]['tag'] = f'{{spellcrafter:{{spell:{{valid:1b,id:{self.id},mana:{self.mana},cooldown:{self.cooldown},tier:{self.tier.value},lore:{{"text":"{self.type.icon} ","color":"{self.type.color}","italic":false,"extra":[{{"translate":"spellcrafter.spell.{self}.name","fallback":"{self.display_name.replace('\'','\\\'')}"}}]}}}}}}}}'
+        d['modifier'][2]['name'] = {'translate': f'spellcrafter.spell.{self}.name', 'fallback': self.display_name, 'color': self.tier.color}
+        d['modifier'][3]['lore'] = lore
+        d['modifier'][4]['strings']['values'][0] = f'spellcrafter.spell.{self.name}'
         return d
 
     def get_advancement(self) -> dict:
@@ -302,19 +300,17 @@ def main() -> None:
             advancement["criteria"][f"spellcrafter:{spell}"] = \
                 {"trigger": "minecraft:tick",
                     "conditions": {
-                        "player": [
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "minecraft:type_specific/player": {
-                                        "advancements": {
-                                            f"spellcrafter:spells/{spell}": True
-                                        }
+                        "player": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "minecraft:type_specific/player": {
+                                    "advancements": {
+                                        f"spellcrafter:spells/{spell}": True
                                     }
                                 }
                             }
-                        ]
+                        }
                     }
                 }
         save_json(advancement, json_path)
@@ -324,7 +320,7 @@ def main() -> None:
     # ------------------------------------------------------------
     # Wand modifiers: mcfunction and item modifier json
     # ------------------------------------------------------------
-    wand_mods = []
+    wand_mod_sequence = []
     function_text = ''
     for spell in spells:
         function_text += f'execute if score $wand_mod spellcrafter.tmp matches {spell.id} run return {int(spell.wand_mod)}\n'
@@ -332,9 +328,9 @@ def main() -> None:
             continue
         if spell.type == SpellType.PROJECTILE and spell.wand_mod:
             raise ValueError('A projectile cannot be a wand modifier.')
-        wand_mods.append(
+        wand_mod_sequence.append(
             {
-                "function": "minecraft:set_lore",
+                "type": "minecraft:set_lore",
                 "entity": "this",
                 "mode": "replace_section",
                 "offset": 2,
@@ -352,19 +348,18 @@ def main() -> None:
                         ]
                     }
                 ],
-                "conditions": [
-                    {
-                        "condition": "minecraft:value_check",
-                        "value": {
-                            "type": "minecraft:storage",
-                            "storage": "spellcrafter:tmp",
-                            "path": "wand.mod"
-                        },
-                        "range": spell.id
-                    }
-                ]
+                "condition": {
+                    "type": "minecraft:int_value_check",
+                    "value": {
+                        "type": "minecraft:storage",
+                        "storage": "spellcrafter:tmp",
+                        "path": "wand.mod"
+                    },
+                    "test": spell.id
+                }
             }
         )
+    wand_mods = {"type": "minecraft:sequence", "functions": wand_mod_sequence}
     save_json(wand_mods, datapack_root / f'data/spellcrafter/item_modifier/wand/lore/wand_mod_replace.json')
     save_text(function_text, datapack_root / f'data/spellcrafter/function/as_projectile/wand_mods.mcfunction')
 

@@ -1,21 +1,24 @@
-[
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "target": "item_name",
-        "name": {
-            "translate": "spellcrafter.wand.name",
-            "fallback": "Wand"
+{
+    "type": "minecraft:sequence",
+    "functions": [
+        {
+            "type": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "spellcrafter.wand.name",
+                "fallback": "Wand"
+            }
+        },
+        {
+            "type": "minecraft:set_name",
+            "entity": "this",
+            "target": "custom_name",
+            "name": {
+                "translate": "spellcrafter.wand.name",
+                "fallback": "Wand",
+                "italic": false
+            }
         }
-    },
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "target": "custom_name",
-        "name": {
-            "translate": "spellcrafter.wand.name",
-            "fallback": "Wand",
-            "italic": false
-        }
-    }
-]
+    ]
+}

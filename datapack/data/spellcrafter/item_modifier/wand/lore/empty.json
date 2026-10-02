@@ -1,28 +1,25 @@
-[
-    {
-        "function": "minecraft:reference",
-        "name": "spellcrafter:wand/lore/stats"
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "append",
-        "lore": [
-            {
-                "text": " ",
-                "extra": [
-                    {
-                        "translate": "spellcrafter.wand.empty",
-                        "fallback": "Empty",
-                        "color": "dark_gray",
-                        "italic": true
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "function": "minecraft:reference",
-        "name": "spellcrafter:wand/lore/wand_mod_add"
-    }
-]
+{
+    "type": "minecraft:sequence",
+    "functions": [
+        "spellcrafter:wand/lore/stats",
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "append",
+            "lore": [
+                {
+                    "text": " ",
+                    "extra": [
+                        {
+                            "translate": "spellcrafter.wand.empty",
+                            "fallback": "Empty",
+                            "color": "dark_gray",
+                            "italic": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "spellcrafter:wand/lore/wand_mod_add"
+    ]
+}

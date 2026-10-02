@@ -3,12 +3,7 @@
         "requirement": {
             "trigger": "minecraft:using_item",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "spellcrafter:holding_wand"
-                    }
-                ]
+                "player": "spellcrafter:holding_wand"
             }
         }
     },

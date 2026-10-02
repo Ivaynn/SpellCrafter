@@ -1,16 +1,14 @@
-[
-    {
-        "function": "minecraft:copy_custom_data",
-        "source": {
-            "type": "minecraft:storage",
-            "source": "spellcrafter:tmp"
-        },
-        "ops": [
-            {
-                "source": "inf_save.new",
-                "target": "spellcrafter.inf_save",
-                "op": "replace"
-            }
-        ]
-    }
-]
+{
+    "type": "minecraft:copy_custom_data",
+    "source": {
+        "type": "minecraft:storage",
+        "source": "spellcrafter:tmp"
+    },
+    "ops": [
+        {
+            "source": "inf_save.new",
+            "target": "spellcrafter.inf_save",
+            "op": "replace"
+        }
+    ]
+}

@@ -1,67 +1,67 @@
-[
-    {
-        "function": "minecraft:set_attributes",
-        "modifiers": [
-            {
-                "id": "spellcrafter:spell.sharp",
-                "attribute": "minecraft:attack_damage",
-                "amount": {
-                    "type": "minecraft:score",
-                    "target": {
-                        "type": "minecraft:fixed",
-                        "name": "$spell.sharp"
+{
+    "type": "minecraft:set_attributes",
+    "modifiers": [
+        {
+            "id": "spellcrafter:spell.sharp",
+            "attribute": "minecraft:attack_damage",
+            "amount": {
+                "type": "minecraft:mul",
+                "inputs": [
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "spellcrafter:tmp",
+                        "path": "attributes.sharp"
                     },
-                    "score": "spellcrafter.tmp",
-                    "scale": 2
-                },
-                "operation": "add_value",
-                "slot": "mainhand"
+                    {
+                        "type": "minecraft:constant",
+                        "value": 2
+                    }
+                ]
             },
-            {
-                "id": "spellcrafter:spell.extended.entity",
-                "attribute": "minecraft:entity_interaction_range",
-                "amount": {
-                    "type": "minecraft:score",
-                    "target": {
-                        "type": "minecraft:fixed",
-                        "name": "$spell.extended"
-                    },
-                    "score": "spellcrafter.tmp",
-                    "scale": 1
-                },
-                "operation": "add_value",
-                "slot": "mainhand"
+            "operation": "add_value",
+            "slot": "mainhand"
+        },
+        {
+            "id": "spellcrafter:spell.extended.entity",
+            "attribute": "minecraft:entity_interaction_range",
+            "amount": {
+                "type": "minecraft:storage",
+                "storage": "spellcrafter:tmp",
+                "path": "attributes.extended"
             },
-            {
-                "id": "spellcrafter:spell.extended.block",
-                "attribute": "minecraft:block_interaction_range",
-                "amount": {
-                    "type": "minecraft:score",
-                    "target": {
-                        "type": "minecraft:fixed",
-                        "name": "$spell.extended"
-                    },
-                    "score": "spellcrafter.tmp",
-                    "scale": 1
-                },
-                "operation": "add_value",
-                "slot": "mainhand"
+            "operation": "add_value",
+            "slot": "mainhand"
+        },
+        {
+            "id": "spellcrafter:spell.extended.block",
+            "attribute": "minecraft:block_interaction_range",
+            "amount": {
+                "type": "minecraft:storage",
+                "storage": "spellcrafter:tmp",
+                "path": "attributes.extended"
             },
-            {
-                "id": "spellcrafter:spell.quickstep",
-                "attribute": "minecraft:movement_speed",
-                "amount": {
-                    "type": "minecraft:score",
-                    "target": {
-                        "type": "minecraft:fixed",
-                        "name": "$spell.quickstep"
+            "operation": "add_value",
+            "slot": "mainhand"
+        },
+        {
+            "id": "spellcrafter:spell.quickstep",
+            "attribute": "minecraft:movement_speed",
+            "amount": {
+                "type": "minecraft:mul",
+                "inputs": [
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "spellcrafter:tmp",
+                        "path": "attributes.quickstep"
                     },
-                    "score": "spellcrafter.tmp",
-                    "scale": 0.2
-                },
-                "operation": "add_multiplied_base",
-                "slot": "mainhand"
-            }
-        ]
-    }
-]
+                    {
+                        "type": "minecraft:constant",
+                        "value": 0.2
+                    }
+                ]
+            },
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+        }
+    ]
+}
