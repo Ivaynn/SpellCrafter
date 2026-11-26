@@ -11,10 +11,16 @@ scoreboard players operation $rem spellcrafter.tmp %= #40 spellcrafter.math
 execute unless score $rem spellcrafter.tmp matches 1 run return 0
 
 
-# Get rotation: find nearest player or cancel
+# Get rotation: find nearest target or cancel
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
 scoreboard players set $success spellcrafter.tmp 0
-execute at @s anchored feet positioned ~ ~-0.75 ~ facing entity @e[distance=..10,limit=1,sort=nearest,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id,predicate=!spellcrafter:homing_immune] feet store success score $success spellcrafter.tmp run tp @s ~ ~1 ~ ~ ~
+
+execute if score @s spellcrafter.age matches ..40 at @s anchored feet positioned ~ ~-0.75 ~ facing entity @e[distance=..9,limit=1,sort=nearest,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id,predicate=!spellcrafter:homing_immune] feet store success score $success spellcrafter.tmp run tp @s ~ ~1 ~ ~ ~
+execute if score @s spellcrafter.age matches 41..80 at @s anchored feet positioned ~ ~-0.75 ~ facing entity @e[distance=..14,limit=1,sort=nearest,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id,predicate=!spellcrafter:homing_immune] feet store success score $success spellcrafter.tmp run tp @s ~ ~1 ~ ~ ~
+execute if score @s spellcrafter.age matches 81..120 at @s anchored feet positioned ~ ~-0.75 ~ facing entity @e[distance=..19,limit=1,sort=nearest,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id,predicate=!spellcrafter:homing_immune] feet store success score $success spellcrafter.tmp run tp @s ~ ~1 ~ ~ ~
+execute if score @s spellcrafter.age matches 121..160 at @s anchored feet positioned ~ ~-0.75 ~ facing entity @e[distance=..24,limit=1,sort=nearest,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id,predicate=!spellcrafter:homing_immune] feet store success score $success spellcrafter.tmp run tp @s ~ ~1 ~ ~ ~
+execute if score @s spellcrafter.age matches 161.. at @s anchored feet positioned ~ ~-0.75 ~ facing entity @e[distance=..29,limit=1,sort=nearest,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id,predicate=!spellcrafter:homing_immune] feet store success score $success spellcrafter.tmp run tp @s ~ ~1 ~ ~ ~
+
 execute if score $success spellcrafter.tmp matches 1.. run function spellcrafter:spells/summon_crystal/create_projectile
 execute unless score $success spellcrafter.tmp matches 1.. run function spellcrafter:spells/summon_crystal/no_targets
 tp @s ~ ~ ~ ~ ~
