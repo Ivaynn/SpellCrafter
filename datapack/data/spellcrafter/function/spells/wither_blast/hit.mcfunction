@@ -7,14 +7,14 @@ scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
 scoreboard players operation $damage spellcrafter.tmp = @s spellcrafter.damage
 scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
 
-execute if score $damage spellcrafter.tmp matches 1.. positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable] run function spellcrafter:damage/from_projectile
+execute if score $damage spellcrafter.tmp matches 1.. as @e[distance=..10,type=!#spellcrafter:untargetable] if function spellcrafter:util/hitbox run function spellcrafter:damage/from_projectile
 
 
 # Wither effect
 scoreboard players operation $id spellcrafter.tmp = @s spellcrafter.id
-execute unless score damage_caster spellcrafter.options matches 1 positioned ~ ~-0.75 ~ run effect give @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] minecraft:wither 5 1 false
-execute if score damage_caster spellcrafter.options matches 1 as @s[tag=!spellcrafter.spell.safe_shot] positioned ~ ~-0.75 ~ run effect give @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] minecraft:wither 5 1 false
-execute if score damage_caster spellcrafter.options matches 1 as @s[tag=spellcrafter.spell.safe_shot] positioned ~ ~-0.75 ~ run effect give @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] minecraft:wither 5 1 false
+execute unless score damage_caster spellcrafter.options matches 1 as @e[distance=..10,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] if function spellcrafter:util/hitbox run effect give @s minecraft:wither 5 1 false
+execute if score damage_caster spellcrafter.options matches 1 as @s[tag=!spellcrafter.spell.safe_shot] as @e[distance=..10,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] if function spellcrafter:util/hitbox run effect give @s minecraft:wither 5 1 false
+execute if score damage_caster spellcrafter.options matches 1 as @s[tag=spellcrafter.spell.safe_shot] as @e[distance=..10,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] if function spellcrafter:util/hitbox run effect give @s minecraft:wither 5 1 false
 
 
 # Effects

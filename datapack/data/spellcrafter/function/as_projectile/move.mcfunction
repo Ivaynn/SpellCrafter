@@ -31,9 +31,14 @@ execute unless score @s spellcrafter.age matches 1.. if score @s spellcrafter.sp
 
 
 # Entity collision
-execute if score @s spellcrafter.age matches 1.. as @s[tag=!spellcrafter.spell.safe_shot] if score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-0.75 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] run function spellcrafter:as_projectile/hit_entity
-execute if score @s spellcrafter.age matches 1.. as @s[tag=!spellcrafter.spell.safe_shot] unless score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-0.75 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] run function spellcrafter:as_projectile/hit_entity
-execute if score @s spellcrafter.age matches 1.. as @s[tag=spellcrafter.spell.safe_shot] unless score @s spellcrafter.blind matches 1.. at @s positioned ~ ~-0.75 ~ if entity @e[distance=..1.5,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] run function spellcrafter:as_projectile/hit_entity
+scoreboard players set $projectile.can_hit_caster spellcrafter.tmp 0
+execute if entity @s[tag=!spellcrafter.spell.safe_shot] unless score @s spellcrafter.blind matches 1.. run scoreboard players set $projectile.can_hit_caster spellcrafter.tmp 1
+
+scoreboard players set $projectile.hit spellcrafter.tmp 0
+execute if score $projectile.can_hit_caster spellcrafter.tmp matches 1 at @s as @e[distance=..10,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] if function spellcrafter:util/hitbox run scoreboard players set $projectile.hit spellcrafter.tmp 1
+execute if score $projectile.hit spellcrafter.tmp matches 1 if score $projectile.can_hit_caster spellcrafter.tmp matches 0 at @s as @e[distance=..10,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator,predicate=!spellcrafter:match_id] if function spellcrafter:util/hitbox run scoreboard players set $projectile.hit spellcrafter.tmp 1
+
+execute if score $projectile.hit spellcrafter.tmp matches 1 run function spellcrafter:as_projectile/hit_entity
 execute if score @s spellcrafter.blind matches 1.. run scoreboard players remove @s spellcrafter.blind 1
 
 

@@ -36,8 +36,8 @@ scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
 
 
 # No boost: normal damage and range
-execute if score $tmp.boost spellcrafter.tmp matches 0 if score @s spellcrafter.blind matches 1.. positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable,predicate=!spellcrafter:match_id] run function spellcrafter:spells/lightning_bolt/as_target
-execute if score $tmp.boost spellcrafter.tmp matches 0 unless score @s spellcrafter.blind matches 1.. positioned ~ ~-0.75 ~ as @e[distance=..1.5,type=!#spellcrafter:untargetable] run function spellcrafter:spells/lightning_bolt/as_target
+execute if score $tmp.boost spellcrafter.tmp matches 0 if score @s spellcrafter.blind matches 1.. as @e[distance=..10,type=!#spellcrafter:untargetable,predicate=!spellcrafter:match_id] if function spellcrafter:util/hitbox run function spellcrafter:spells/lightning_bolt/as_target
+execute if score $tmp.boost spellcrafter.tmp matches 0 unless score @s spellcrafter.blind matches 1.. as @e[distance=..10,type=!#spellcrafter:untargetable] if function spellcrafter:util/hitbox run function spellcrafter:spells/lightning_bolt/as_target
 
 
 # Boost: increased damage and range
