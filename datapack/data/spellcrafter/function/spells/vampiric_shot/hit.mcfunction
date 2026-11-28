@@ -8,7 +8,7 @@ scoreboard players operation $damage spellcrafter.tmp = @s spellcrafter.damage
 scoreboard players operation $blind spellcrafter.tmp = @s spellcrafter.blind
 
 scoreboard players set $success spellcrafter.tmp 0
-execute if score $damage spellcrafter.tmp matches 1.. as @e[distance=..10,type=!#spellcrafter:untargetable] if function spellcrafter:util/hitbox store result score $success spellcrafter.tmp run function spellcrafter:damage/from_projectile
+execute if score $damage spellcrafter.tmp matches 1.. positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,type=!#spellcrafter:untargetable] store result score $success spellcrafter.tmp run function spellcrafter:damage/from_projectile
 
 
 # If a target is hit, heal caster

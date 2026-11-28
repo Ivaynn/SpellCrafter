@@ -10,7 +10,7 @@ execute if score $ray spellcrafter.tmp matches 1.. unless block ^-.2 ^-.2 ^ #spe
 
 
 # Target collision (target takes the hit)
-execute if score $ray spellcrafter.tmp matches 1.. if function spellcrafter:util/hitbox run function spellcrafter:spells/flash/hit
+execute if score $ray spellcrafter.tmp matches 1.. positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0,dy=0,dz=0] run function spellcrafter:spells/flash/hit
 
 
 # Next iteration

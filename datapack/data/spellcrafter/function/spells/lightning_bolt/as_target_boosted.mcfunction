@@ -11,7 +11,7 @@ execute at @s if block ~ ~0.5 ~ minecraft:water run scoreboard players set $in_w
 
 
 # Target not in water: use base damage and range
-execute if score $in_water spellcrafter.tmp matches 0 if function spellcrafter:util/hitbox run function spellcrafter:damage/from_projectile
+execute if score $in_water spellcrafter.tmp matches 0 positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0,dy=0,dz=0] run function spellcrafter:damage/from_projectile
 execute if score $in_water spellcrafter.tmp matches 0 run return 1
 
 

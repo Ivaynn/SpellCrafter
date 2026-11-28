@@ -4,9 +4,9 @@ particle minecraft:dust_color_transition{from_color:[0.9,0.4,0.4],scale:2.5,to_c
 
 
 # Heal non-undead targets
-execute as @e[distance=..10,type=!#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] unless score @s spellcrafter.heal matches 1.. if function spellcrafter:util/hitbox run scoreboard players add @s spellcrafter.heal 4
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,type=!#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] unless score @s spellcrafter.heal matches 1.. run scoreboard players add @s spellcrafter.heal 4
 
 
 # Hurt undead targets
 scoreboard players set $damage spellcrafter.tmp 4
-execute as @e[distance=..10,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] unless score @s spellcrafter.damage matches 1.. if function spellcrafter:util/hitbox run function spellcrafter:damage/from_projectile
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,type=#minecraft:undead,type=!#spellcrafter:untargetable,tag=!spellcrafter.untargetable,tag=!spellcrafter.spectator] unless score @s spellcrafter.damage matches 1.. run function spellcrafter:damage/from_projectile
