@@ -6,6 +6,11 @@ on:
     branches: [main]
     paths:
       - tools/spells.json
+      - web/**
+      - resources/assets/spellcrafter/lang/**
+      - resources/assets/spellcrafter/textures/item/spell/**
+      - resources/assets/spellcrafter/textures/item/wand/**
+      - .github/workflows/pages.yaml
 
 permissions:
   contents: read
@@ -24,11 +29,24 @@ jobs:
 
       - name: Assemble site
         run: |
-          mkdir -p _site/assets/{spell,wand,gui}
+          mkdir -p _site/assets/spell _site/assets/wand _site/assets/lang
           cp -r web/* _site/
           cp resources/assets/spellcrafter/textures/item/wand/classic.png _site/favicon.png
           cp resources/assets/spellcrafter/textures/item/spell/*.png _site/assets/spell/
+          cp resources/assets/spellcrafter/textures/item/wand/*.png _site/assets/wand/
           cp tools/spells.json _site/assets/spells.json
+          cp resources/assets/spellcrafter/lang/*.json _site/assets/lang/
+          basename -s .json resources/assets/spellcrafter/lang/*.json > _site/assets/lang/languages.txt
+
+      - name: Minify
+        run: |
+          npx --yes esbuild@0.24.2 _site/script.js _site/styles.css --minify --outdir=_site --allow-overwrite
+          npx --yes html-minifier-terser@7.2.0 --collapse-whitespace --conservative-collapse --remove-comments --minify-js true -o _site/index.min.html _site/index.html
+          mv _site/index.min.html _site/index.html
+          for file in _site/assets/spells.json _site/assets/lang/*.json; do
+            jq -c . "$file" > "$file.min"
+            mv "$file.min" "$file"
+          done
 
       - uses: actions/upload-pages-artifact@v5
         with:
